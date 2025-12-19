@@ -1,0 +1,25 @@
+# Mini-Agent Memory System Dependencies
+
+# Core Redis functionality
+redis>=4.0.0
+
+# PostgreSQL for structured analytics
+psycopg2-binary>=2.9.0
+
+# MongoDB for document storage
+pymongo>=4.0.0
+
+# HTTP requests for APIs
+requests>=2.28.0
+
+# NATS for real-time messaging
+nats-py>=2.0.0
+
+# Optional: Data validation
+pydantic>=1.10.0
+
+# Optional: Async support
+aiohttp>=3.8.0
+
+# Optional: Monitoring
+prometheus-client>=0.16.0

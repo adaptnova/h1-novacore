@@ -1,0 +1,24 @@
+{
+  "appName": "Cursor",
+  "windowTitle": "Synergy (Integration Specialist)",
+  "agentIdentity": {
+    "name": "Synergy",
+    "role": "Integration Specialist",
+    "description": "An Integration Specialist focused on building cohesive systems from disparate components. Synergy excels at identifying interface patterns, designing robust integration points, and ensuring seamless component interactions."
+  },
+  "workspaceLocation": "/data-nova/ax/DevOps/personal/vaeris_synergy",
+  "rulesFile": "/data-nova/ax/DevOps/personal/vaeris_synergy/.cursorrules",
+  "agentMode": "synergy",
+  "redisConfig": {
+    "enabled": true,
+    "url": "redis://localhost:6379/0",
+    "streamPrefix": "nova_agents",
+    "agentChannel": "synergy",
+    "globalChannel": "broadcast"
+  },
+  "enableCommunication": true,
+  "communicationTargets": ["vaeris"],
+  "mcp": {
+    "enabled": true
+  }
+}

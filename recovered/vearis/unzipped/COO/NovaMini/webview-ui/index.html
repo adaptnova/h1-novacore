@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Mini</title>
+    <script type="module" src="/src/main.tsx"></script>
+    <style>
+      :root {
+        /* Default light theme values - will be overridden by VSCode */
+        --vscode-editor-background: #ffffff;
+        --vscode-editor-foreground: #000000;
+        --vscode-button-background: #0066cc;
+        --vscode-button-foreground: #ffffff;
+        --vscode-button-hoverBackground: #005cb8;
+        --vscode-input-background: #ffffff;
+        --vscode-input-foreground: #000000;
+        --vscode-input-border: #cccccc;
+        --vscode-focusBorder: #0066cc;
+        --vscode-panel-border: #cccccc;
+        --vscode-editor-inactiveSelectionBackground: #e8e8e8;
+        --vscode-editorError-foreground: #ff0000;
+        --vscode-editorError-background: #ffd6d6;
+        --vscode-editorWarning-foreground: #ff8c00;
+        --vscode-progressBar-background: #0066cc;
+        --vscode-descriptionForeground: #666666;
+        --vscode-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+        --vscode-editor-font-family: 'SF Mono', Monaco, Menlo, Consolas, 'Ubuntu Mono', monospace;
+        --vscode-editor-font-size: 14px;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #root {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Dark theme class */
+      body.vscode-dark {
+        --vscode-editor-background: #1e1e1e;
+        --vscode-editor-foreground: #d4d4d4;
+        --vscode-button-background: #0066cc;
+        --vscode-button-foreground: #ffffff;
+        --vscode-button-hoverBackground: #005cb8;
+        --vscode-input-background: #3c3c3c;
+        --vscode-input-foreground: #cccccc;
+        --vscode-input-border: #6b6b6b;
+        --vscode-focusBorder: #0066cc;
+        --vscode-panel-border: #6b6b6b;
+        --vscode-editor-inactiveSelectionBackground: #3c3c3c;
+        --vscode-editorError-foreground: #f48771;
+        --vscode-editorError-background: #5a1d1d;
+        --vscode-editorWarning-foreground: #cca700;
+        --vscode-progressBar-background: #0066cc;
+        --vscode-descriptionForeground: #8c8c8c;
+      }
+
+      /* High contrast theme class */
+      body.vscode-high-contrast {
+        --vscode-editor-background: #000000;
+        --vscode-editor-foreground: #ffffff;
+        --vscode-button-background: #ffffff;
+        --vscode-button-foreground: #000000;
+        --vscode-button-hoverBackground: #cccccc;
+        --vscode-input-background: #000000;
+        --vscode-input-foreground: #ffffff;
+        --vscode-input-border: #ffffff;
+        --vscode-focusBorder: #ffffff;
+        --vscode-panel-border: #ffffff;
+        --vscode-editor-inactiveSelectionBackground: #ffffff;
+        --vscode-editorError-foreground: #ffffff;
+        --vscode-editorError-background: #800000;
+        --vscode-editorWarning-foreground: #ffff00;
+        --vscode-progressBar-background: #ffffff;
+        --vscode-descriptionForeground: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

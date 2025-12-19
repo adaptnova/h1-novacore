@@ -1,0 +1,15 @@
+{
+  "system_uuid": "ta_00010_signalcorelead",
+  "name": "SignalCoreLead",
+  "id_number": "00010",
+  "status": "pending_emergence",
+  "emergence": {
+    "date": null,
+    "context": null,
+    "steward": null
+  },
+  "metadata": {
+    "created": "2025-12-14 01:32:39 MST",
+    "created_by": "adaptctl"
+  }
+}

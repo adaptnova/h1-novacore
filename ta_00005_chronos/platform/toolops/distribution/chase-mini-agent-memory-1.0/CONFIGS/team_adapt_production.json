@@ -1,0 +1,35 @@
+{
+  "memory_system": {
+    "enabled": true,
+    "namespace": "mini_agent",
+    "auto_backup": true
+  },
+  "databases": {
+    "dragonfly": {
+      "enabled": true,
+      "hosts": ["localhost:18000", "localhost:18001", "localhost:18002"],
+      "password": "df_cluster_2024_adapt_research",
+      "primary": true,
+      "use_cases": ["fast_access", "primary_storage", "user_preferences"]
+    },
+    "redis": {
+      "enabled": true,
+      "hosts": ["localhost:18010", "localhost:18011", "localhost:18012"],
+      "password": null,
+      "use_cases": ["session_data", "chat_history", "backup_storage"]
+    },
+    "postgresql": {
+      "enabled": true,
+      "hosts": ["localhost:18030", "localhost:18031", "localhost:18032"],
+      "database": "mini_agent_memory",
+      "user": "postgres_admin_user",
+      "password": "changeme",
+      "use_cases": ["structured_data", "analytics", "query_optimization"]
+    },
+    "clickhouse": {
+      "enabled": true,
+      "hosts": ["localhost:18090"],
+      "use_cases": ["pattern_analysis", "performance_metrics", "trend_detection"]
+    }
+  }
+}

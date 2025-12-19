@@ -1,0 +1,17 @@
+2025-03-15 23:22:06.566 [info] update#setState disabled
+2025-03-15 23:22:06.567 [info] update#ctor - updates are disabled as there is no update URL
+2025-03-15 23:26:00.664 [info] Extension host with pid 3292254 exited with code: 15, signal: unknown.
+2025-03-15 23:26:00.665 [error] [UtilityProcess id: 1, type: extensionHost, pid: 3292254]: crashed with code 15 and reason 'killed'
+2025-03-15 23:26:00.666 [error] [UtilityProcess type: shared-process, pid: 3292269]: crashed with code 15 and reason 'killed'
+2025-03-15 23:26:00.667 [error] ptyHost terminated unexpectedly with code 15
+2025-03-15 23:26:00.668 [warning] [UtilityProcess type: ptyHost, pid: 3292319]: unable to kill the process
+2025-03-15 23:26:00.682 [error] CodeWindow: renderer process gone (reason: clean-exit, code: <unknown>)
+2025-03-15 23:26:00.846 [error] [UtilityProcessWorker]: terminated unexpectedly with code 15, signal: unknown
+2025-03-15 23:26:00.848 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 3292270]: crashed with code 15 and reason 'killed'
+2025-03-15 23:26:05.122 [error] [uncaught exception in main]: TypeError: Object has been destroyed
+2025-03-15 23:26:05.122 [error] TypeError: Object has been destroyed
+    at file:///data-nova/00/vscodium-bin/resources/app/out/main.js:50:5830
+    at App.B (file:///data-nova/00/vscodium-bin/resources/app/out/main.js:28:7982)
+    at App.emit (node:events:530:35)
+    at BrowserWindow.<anonymous> (node:electron/js2c/browser_init:2:12336)
+    at BrowserWindow.emit (node:events:530:35)

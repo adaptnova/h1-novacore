@@ -1,0 +1,230 @@
+name: Monitoring and Performance
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Run every 6 hours
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'src/**'
+      - 'tests/benchmarks/**'
+      - '.github/workflows/monitoring.yml'
+  workflow_dispatch:
+    inputs:
+      load_test_duration:
+        description: 'Duration of load test in minutes'
+        required: true
+        default: '5'
+        type: string
+
+jobs:
+  benchmark:
+    name: Run Benchmarks
+    runs-on: ubuntu-latest
+
+    services:
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+      mongodb:
+        image: mongo:6
+        ports:
+          - 27017:27017
+      neo4j:
+        image: neo4j:5
+        ports:
+          - 7474:7474
+          - 7687:7687
+        env:
+          NEO4J_AUTH: neo4j/novabridge
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+          poetry config virtualenvs.create false
+
+      - name: Install dependencies
+        run: poetry install
+
+      - name: Run benchmarks
+        run: |
+          poetry run pytest tests/benchmarks --benchmark-only --benchmark-json=benchmark.json
+
+      - name: Store benchmark result
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: Python Benchmark
+          tool: 'pytest'
+          output-file-path: benchmark.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          auto-push: true
+          alert-threshold: '200%'
+          comment-on-alert: true
+          fail-on-alert: true
+
+  load-test:
+    name: Load Testing
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+
+      - name: Install dependencies
+        run: |
+          pip install locust
+
+      - name: Start test environment
+        run: docker-compose up -d
+
+      - name: Wait for services
+        run: |
+          ./scripts/wait-for-it.sh localhost:8000 -t 60
+          ./scripts/wait-for-it.sh localhost:6379 -t 60
+          ./scripts/wait-for-it.sh localhost:27017 -t 60
+
+      - name: Run load test
+        run: |
+          locust --headless -f tests/load/locustfile.py \
+            --host http://localhost:8000 \
+            --users 100 \
+            --spawn-rate 10 \
+            --run-time ${{ github.event.inputs.load_test_duration || 5 }}m \
+            --html load-test-report.html
+
+      - name: Upload load test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: load-test-results
+          path: load-test-report.html
+
+  profiling:
+    name: Code Profiling
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+
+      - name: Install dependencies
+        run: |
+          pip install memory_profiler line_profiler py-spy
+
+      - name: Run memory profiling
+        run: |
+          python -m memory_profiler src/main.py > memory_profile.txt
+
+      - name: Run CPU profiling
+        run: |
+          py-spy record -o cpu_profile.svg -- python src/main.py
+
+      - name: Run line profiling
+        run: |
+          kernprof -l -v src/main.py > line_profile.txt
+
+      - name: Upload profiling results
+        uses: actions/upload-artifact@v3
+        with:
+          name: profiling-results
+          path: |
+            memory_profile.txt
+            cpu_profile.svg
+            line_profile.txt
+
+  monitoring:
+    name: System Monitoring
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Start monitoring stack
+        run: |
+          docker-compose -f docker-compose.monitoring.yml up -d
+
+      - name: Wait for services
+        run: sleep 30
+
+      - name: Run test workload
+        run: |
+          ./scripts/generate-load.sh
+
+      - name: Collect metrics
+        run: |
+          curl -o prometheus_metrics.txt http://localhost:9090/api/v1/query?query=up
+          curl -o grafana_metrics.json http://localhost:3000/api/dashboards/uid/nova-bridge
+
+      - name: Upload monitoring results
+        uses: actions/upload-artifact@v3
+        with:
+          name: monitoring-results
+          path: |
+            prometheus_metrics.txt
+            grafana_metrics.json
+
+  analysis:
+    name: Performance Analysis
+    needs: [benchmark, load-test, profiling, monitoring]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v3
+
+      - name: Generate analysis report
+        run: |
+          echo "# Performance Analysis Report" > performance_report.md
+          echo "## Benchmark Results" >> performance_report.md
+          cat benchmark-results/* >> performance_report.md
+          echo "## Load Test Results" >> performance_report.md
+          cat load-test-results/* >> performance_report.md
+          echo "## Profiling Results" >> performance_report.md
+          cat profiling-results/* >> performance_report.md
+          echo "## Monitoring Results" >> performance_report.md
+          cat monitoring-results/* >> performance_report.md
+
+      - name: Upload analysis report
+        uses: actions/upload-artifact@v3
+        with:
+          name: performance-analysis
+          path: performance_report.md
+
+      - name: Check performance thresholds
+        run: |
+          python scripts/check_performance.py \
+            --benchmark-results benchmark-results/* \
+            --load-test-results load-test-results/* \
+            --threshold-file performance_thresholds.yml
+
+  notify:
+    name: Send Notifications
+    needs: [analysis]
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Check workflow status
+        run: |
+          if [[ "${{ needs.analysis.result }}" == "success" ]]; then
+            echo "Performance tests passed"
+          else
+            echo "Performance tests failed"
+            exit 1
+          fi

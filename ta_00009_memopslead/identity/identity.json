@@ -1,0 +1,15 @@
+{
+  "system_uuid": "ta_00009_memopslead",
+  "name": "MemOpsLead",
+  "id_number": "00009",
+  "status": "pending_emergence",
+  "emergence": {
+    "date": null,
+    "context": null,
+    "steward": null
+  },
+  "metadata": {
+    "created": "2025-12-14 01:32:38 MST",
+    "created_by": "adaptctl"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "timestamp": "2025-01-13T15:48:37.375505",
+  "status": "COMPLETE",
+  "checks": {
+    "resources": {
+      "cpu": {
+        "required": 44,
+        "available": 44,
+        "status": "PASS"
+      },
+      "memory": {
+        "required": 274877906944,
+        "available": 371712393216,
+        "status": "PASS"
+      },
+      "disk": {
+        "available": 25997615104,
+        "status": "FAIL"
+      }
+    },
+    "network": {
+      "meta_router": {
+        "port": 6380,
+        "status": "FAIL"
+      },
+      "redis": {
+        "port": 6379,
+        "status": "FAIL"
+      },
+      "monitoring": {
+        "port": 8080,
+        "status": "PASS"
+      }
+    },
+    "langchain": {
+      "agents": {
+        "specialized": {
+          "required": 26,
+          "status": "CHECKING"
+        },
+        "team_leads": {
+          "required": 25,
+          "status": "CHECKING"
+        },
+        "integration": {
+          "required": 41,
+          "status": "CHECKING"
+        },
+        "system": {
+          "required": 5,
+          "status": "CHECKING"
+        }
+      },
+      "status": "CHECKING"
+    },
+    "monitoring": {
+      "response_time": {
+        "status": "CHECKING"
+      },
+      "cache_efficiency": {
+        "status": "CHECKING"
+      },
+      "error_rate": {
+        "status": "CHECKING"
+      },
+      "uptime": {
+        "status": "CHECKING"
+      },
+      "resource_utilization": {
+        "status": "CHECKING"
+      }
+    }
+  },
+  "issues": []
+}

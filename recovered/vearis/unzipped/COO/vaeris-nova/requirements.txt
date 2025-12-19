@@ -1,0 +1,53 @@
+# Core dependencies
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-openai>=0.0.5
+langchain-anthropic>=0.1.1
+langchain-mistralai>=0.0.3
+langchain-google-genai>=0.0.5
+langchain-community>=0.0.14
+langchain-experimental>=0.0.49
+langchain-text-splitters>=0.0.1
+langgraph>=0.0.21
+
+# LLM providers
+openai>=1.5.0
+anthropic>=0.8.0
+google-generativeai>=0.3.1
+mistralai>=0.0.7
+
+# Embeddings
+sentence-transformers>=2.2.2
+
+# Vector stores
+faiss-cpu>=1.7.4
+chromadb>=0.4.22
+
+# Utilities
+pydantic>=2.4.0
+typing-extensions>=4.7.1
+python-dotenv>=1.0.0
+tenacity>=8.2.2
+httpx>=0.24.1
+tqdm>=4.66.1
+
+# Memory backends
+redis>=4.6.0
+pymongo>=4.5.0
+
+# Tools support
+beautifulsoup4>=4.12.2
+wikipedia>=1.4.0
+pandas>=2.0.3
+GitPython>=3.1.40
+docker>=6.1.3
+
+# Web server
+flask>=2.3.3
+flask-socketio>=5.3.6
+flask-cors>=4.0.0
+gunicorn>=21.2.0
+eventlet>=0.33.3
+
+# UI
+aiohttp>=3.8.5

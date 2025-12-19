@@ -1,0 +1,204 @@
+{
+  "description": "TeamADAPT Database Configuration - MIGRATED TO SYSTEMD (2025-11-20)",
+  "migration_date": "2025-11-20 11:35:00 MST",
+  "migration_status": "75% Complete (6/8 services successfully migrated)",
+  "databases": {
+    "dragonfly_cluster_node1": {
+      "host": "localhost",
+      "port": 18000,
+      "password": "df_cluster_2024_adapt_research",
+      "type": "dragonfly",
+      "status": "RUNNING",
+      "migration": "systemd"
+    },
+    "dragonfly_cluster_node2": {
+      "host": "localhost",
+      "port": 18001,
+      "password": "df_cluster_2024_adapt_research",
+      "type": "dragonfly",
+      "status": "RUNNING",
+      "migration": "systemd"
+    },
+    "dragonfly_cluster_node3": {
+      "host": "localhost",
+      "port": 18002,
+      "password": "df_cluster_2024_adapt_research",
+      "type": "dragonfly",
+      "status": "RUNNING",
+      "migration": "systemd"
+    },
+    "redis_cluster_node1": {
+      "host": "localhost",
+      "port": 18010,
+      "password": "changeme",
+      "type": "redis",
+      "status": "RUNNING",
+      "migration": "systemd",
+      "mode": "cluster"
+    },
+    "redis_cluster_node2": {
+      "host": "localhost",
+      "port": 18011,
+      "password": "changeme",
+      "type": "redis",
+      "status": "RUNNING",
+      "migration": "systemd",
+      "mode": "cluster"
+    },
+    "redis_cluster_node3": {
+      "host": "localhost",
+      "port": 18012,
+      "password": "changeme",
+      "type": "redis",
+      "status": "RUNNING",
+      "migration": "systemd",
+      "mode": "cluster"
+    },
+    "redpanda_node1": {
+      "host": "localhost",
+      "port": 18020,
+      "admin_port": 18023,
+      "rpc_port": 18024,
+      "type": "redpanda",
+      "status": "RUNNING",
+      "version": "v25.2.9",
+      "migration": "systemd"
+    },
+    "redpanda_node2": {
+      "host": "localhost",
+      "port": 18021,
+      "admin_port": 18027,
+      "rpc_port": 18028,
+      "type": "redpanda",
+      "status": "RUNNING",
+      "version": "v25.2.9",
+      "migration": "systemd"
+    },
+    "redpanda_node3": {
+      "host": "localhost",
+      "port": 18022,
+      "admin_port": 18031,
+      "rpc_port": 18032,
+      "type": "redpanda",
+      "status": "RUNNING",
+      "version": "v25.2.9",
+      "migration": "systemd"
+    },
+    "postgresql_primary": {
+      "host": "localhost",
+      "port": 18030,
+      "username": "postgres_admin_user",
+      "password": "changeme",
+      "database": "teamadapt",
+      "type": "postgresql",
+      "status": "RUNNING",
+      "migration": "systemd",
+      "mode": "cluster"
+    },
+    "postgresql_replica": {
+      "host": "localhost",
+      "port": 18031,
+      "username": "postgres_replica_user",
+      "password": "changeme",
+      "database": "teamadapt_replica",
+      "type": "postgresql",
+      "status": "RUNNING",
+      "migration": "systemd",
+      "mode": "cluster"
+    },
+    "postgresql_analytics": {
+      "host": "localhost",
+      "port": 18032,
+      "username": "postgres_analytics_user",
+      "password": "changeme",
+      "database": "teamadapt_analytics",
+      "type": "postgresql",
+      "status": "RUNNING",
+      "migration": "systemd",
+      "mode": "cluster"
+    },
+    "neo4j": {
+      "host": "localhost",
+      "http_port": 18060,
+      "bolt_port": 18061,
+      "username": "neo4j",
+      "password": "changeme",
+      "type": "neo4j",
+      "status": "RUNNING (needs restart)",
+      "note": "Port configuration updated, requires restart"
+    },
+    "weaviate": {
+      "host": "localhost",
+      "port": 18050,
+      "type": "weaviate",
+      "status": "FAILED",
+      "note": "Raft clustering issues, use Docker instead"
+    },
+    "nats": {
+      "host": "nats://localhost:18020",
+      "port": 18020,
+      "username": "admin",
+      "password": "teamadapt123",
+      "type": "nats",
+      "status": "RUNNING",
+      "version": "v2.10.18",
+      "migration": "systemd",
+      "port_changed": "4222 → 18020"
+    },
+    "questdb": {
+      "host": "localhost",
+      "port": 18091,
+      "ilp_port": 9009,
+      "type": "questdb",
+      "status": "RUNNING",
+      "version": "8.0.0"
+    },
+    "clickhouse": {
+      "host": "localhost",
+      "port": 18090,
+      "native_port": 9000,
+      "type": "clickhouse",
+      "status": "RUNNING",
+      "version": "18.16.1",
+      "migration": "systemd"
+    },
+    "grafana": {
+      "host": "localhost",
+      "port": 18031,
+      "username": "admin",
+      "password": "admin",
+      "type": "grafana",
+      "status": "RUNNING",
+      "migration": "systemd",
+      "port_changed": "3000 → 18031"
+    }
+  },
+  "installed_services": {
+    "faiss": {
+      "status": "INSTALLED",
+      "version": "1.12.0",
+      "type": "python_library"
+    },
+    "elasticsearch_client": {
+      "status": "INSTALLED",
+      "type": "python_library",
+      "note": "Client only, server not configured"
+    },
+    "materialize": {
+      "status": "INSTALLED_CLI",
+      "version": "0.3.0",
+      "type": "cli_tool"
+    }
+  },
+  "scan_ranges": {
+    "database_ports": [18000, 18001, 18002, 18010, 18011, 18012, 18020, 18021, 18022, 18030, 18031, 18032, 18060, 18061, 18090, 18091],
+    "admin_ports": [18023, 18024, 18027, 18028, 18031, 18032],
+    "http_ports": [18050, 18060, 18090, 18091]
+  },
+  "migration_notes": {
+    "successfully_migrated": "6/8 services to systemd",
+    "remaining_docker_only": ["pgadmin4", "weaviate"],
+    "port_standardization": "All core services now use 18xxx ports",
+    "next_steps": "Complete Neo4j restart, finalize Grafana dashboards"
+  }
+}

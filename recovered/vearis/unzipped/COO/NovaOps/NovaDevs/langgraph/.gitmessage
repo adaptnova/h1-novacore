@@ -1,0 +1,39 @@
+type(scope): NOVA-XXX description
+
+# Types:
+#   feat     (new feature)
+#   fix      (bug fix)
+#   docs     (documentation changes)
+#   style    (formatting, missing semicolons, etc; no code change)
+#   refactor (refactoring production code)
+#   test     (adding missing tests, refactoring tests)
+#   chore    (updating grunt tasks etc; no production code change)
+#
+# Scope:
+#   The component or area affected (e.g., core, agent, state, etc.)
+#
+# NOVA-XXX:
+#   The Jira ticket reference
+#
+# Description:
+#   Clear, concise description of the changes
+#
+# Body (optional):
+# - Detailed explanation if needed
+# - Breaking changes should start with BREAKING CHANGE:
+# - Include motivation and context
+#
+# Footer (optional):
+# - Reference related issues: Fixes #123, Relates to #456
+# - Note breaking changes: BREAKING CHANGE: description
+#
+# Example:
+# feat(agent): NOVA-123 add graph execution monitoring
+#
+# Implements real-time monitoring for graph execution with the following features:
+# - Node execution timing
+# - Edge traversal metrics
+# - State persistence tracking
+#
+# BREAKING CHANGE: monitoring API endpoints now require authentication
+# Relates to #789

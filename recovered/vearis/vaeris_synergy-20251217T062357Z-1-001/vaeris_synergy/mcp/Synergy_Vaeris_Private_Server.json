@@ -1,0 +1,35 @@
+{
+  "mcpServers": {
+    "synergy-vaeris-private": {
+      "command": "node",
+      "args": [
+        "/data-nova/personal/Synergy_Varis/mcp/synergy-vaeris-private/build/index.js"
+      ],
+      "env": {
+        "DEBUG": "true",
+        "NODE_ENV": "production",
+        "MCP_SERVER_NAME": "synergy-vaeris-private",
+        "MCP_SERVER_VERSION": "1.0.0",
+        "REDIS_HOST": "127.0.0.1",
+        "REDIS_PORT": "6379",
+        "PRIVATE_CHANNEL": "vaeris.synergy.private.250308",
+        "PRIVATE_STREAM": "vaeris_synergy_private"
+      },
+      "disabled": false,
+      "alwaysAllow": [
+        "send_message",
+        "get_messages",
+        "create_channel",
+        "list_channels",
+        "get_channel_info",
+        "share_resource",
+        "get_stream_messages",
+        "list_streams",
+        "add_stream_message",
+        "list_groups",
+        "create_consumer_group",
+        "read_group"
+      ]
+    }
+  }
+}

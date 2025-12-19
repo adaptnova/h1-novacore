@@ -1,0 +1,159 @@
+FIX VSC - I need you to fid the settings file that tells vs code where to save and pull it's settings from
+
+
+$3.6028
+
+
+Cline wants to edit this file:
+
+
+Now that I've added "--" to the allowed commands, would you like me to try a command that uses the -- flag to test if it works without requiring approval?
+
+
+Cline has a question:
+Would you like me to test a command using the -- flag to see if it works without approval now?
+
+
+no, i would like you to search and become the espert for how these cmds should be entered for maximum coverage
+
+
+
+I'll search through the codebase to understand how the command permissions system works and find documentation about the optimal way to structure these commands for maximum coverage.
+
+
+use the mcp search tools and research mcp servers
+
+
+
+I'll use the search-server MCP tool to research how MCP servers handle command permissions and allowlists.
+
+
+Cline wants to use a tool on the search-server MCP server:
+search
+Performs a web search using Google Search API via Serper. Best for general web searches and recent information.
+Arguments
+{
+  "query": "Model Context Protocol MCP server command permissions allowlist implementation"
+}
+
+Response
+1. Computer use (beta)
+The upgraded Claude 3.5 Sonnet model is capable of interacting with tools that can manipulate a computer desktop environment. Computer use is a beta feature.
+URL: https://docs.anthropic.com/en/docs/build-with-claude/computer-use
+
+2. Framework 8.1 SIP Server Deployment Guide
+About Genesys. Every year, Genesys® delivers more than 70 billion remarkable customer experiences for organizations in over 100 countries.
+URL: https://docs.genesys.com/Special:Repository/81fr_dep-sip.pdf
+
+3. Securing Web Transactions: TLS Server Certificate Management
+Transport Layer Security (TLS), a cryptographic protocol, is fundamental to this trust. Organizations leverage TLS to provide the connection security that has ...
+URL: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1800-16.pdf
+
+4. Networking - OpenShift Container Platform
+This document provides instructions for configuring and managing your OpenShift Container Platform cluster network, including DNS, ingress, and the Pod network.
+URL: https://docs.redhat.com/en/documentation/openshift_container_platform/4.12/html-single/networking/index
+
+5. Reliable Scalable Cluster Technology Version 3.2
+IBM® Reliable Scalable Cluster Technology (RSCT) is a set of software components that together provide a comprehensive clustering environment for IBM AIX®, ...
+URL: https://www.ibm.com/docs/SGVKBA_3.2/admin/admin_pdf.pdf
+
+6. Networking | Red Hat Product Documentation
+This document provides instructions for configuring and managing your OpenShift Container Platform cluster network, including DNS, ingress, and the Pod network.
+URL: https://docs.redhat.com/en/documentation/openshift_container_platform/4.14/html-single/networking/index
+
+7. 1 Introduction — NIST SP 1800-16 documentation - NCCoE
+This NIST Cybersecurity Practice Guide addresses the use of commercially available technologies to develop an example implementation for managing TLS server ...
+URL: https://www.nccoe.nist.gov/publication/1800-16/VolD/index.html
+
+8. OpenShift Container Platform 4.13 release notes
+The CR configures a oneshot job that runs when the server boots and uses the the chronyd service to set the server RTC time using network time protocol (NTP).
+URL: https://docs.openshift.com/container-platform/4.13/release_notes/ocp-4-13-release-notes.html
+
+9. IBM API Connect 10.0.6.0
+Defining multiple portal endpoints for a Kubernetes environment. Installing the Analytics subsystem. Creating the analytics CR. 1. 2.
+URL: https://www.ibm.com/support/pages/system/files/inline-files/api-connect-docs-v10.0.6.0-20231214.pdf
+
+10. Remote Attestation is coming back
+Jul 29, 2022 — The problem isn't the capability of remote attestation. The problem is who's using it, i.e. who's defining what "security" means.
+URL: https://news.ycombinator.com/item?id=32282305
+
+
+Let me try a more specific search focused on the MCP server implementation details.
+
+
+Cline wants to use a tool on the search-server MCP server:
+search
+Performs a web search using Google Search API via Serper. Best for general web searches and recent information.
+Arguments
+{
+  "query": "Model Context Protocol MCP server implementation github typescript allowedCommands configuration"
+}
+
+Response
+1. docker/mcp-servers: Model Context Protocol Servers
+Each MCP server is implemented with either the Typescript MCP SDK or Python MCP SDK. Reference Servers. These servers aim to demonstrate MCP features and ...
+URL: https://github.com/docker/mcp-servers
+
+2. cyanheads/atlas-mcp-server: Model Context Protocol ...
+ATLAS implements the Model Context Protocol (MCP), a standardized communication protocol between LLMs and external systems. The architecture consists of:.
+URL: https://github.com/cyanheads/atlas-mcp-server
+
+3. Model Context Protocol (MCP) Quickstart - Glama.ai
+Nov 25, 2024 — The Model Context Protocol (MCP) solves this by offering a universal protocol for efficient AI interaction with both local and remote resources.
+URL: https://glama.ai/blog/2024-11-25-model-context-protocol-quickstart
+
+4. appcypher/awesome-mcp-servers
+A curated list of awesome Model Context Protocol (MCP) servers. MCP is an open protocol that enables AI models to securely interact with local and remote ...
+URL: https://github.com/appcypher/awesome-mcp-servers
+
+5. Is Anthropic's Model Context Protocol (MCP) the ...
+The Model Context Protocol (MCP) introduces a standardized approach for enabling interoperability between AI applications, data sources, and other systems.
+URL: https://medium.com/@shuvro_25220/is-anthropics-model-context-protocol-mcp-the-interoperability-standard-we-ve-been-waiting-for-f2fe9e38110c
+
+6. Exploring the Model Context Protocol with Deno 2 and ...
+Dec 2, 2024 — The Model Context Protocol (MCP), an attempt to set the standard for integrating data from existing applications and APIs with Large Language Models (LLMs) ...
+URL: https://www.shruggingface.com/microblog/2024/12/02/exploring-the-model-context-protocol-with-deno-2-and-playwright
+
+7. apinetwork/piapi-mcp-server
+A TypeScript implementation of a Model Context Protocol (MCP) server that integrates with PiAPI's API. PiAPI makes user able to generate media content with ...
+URL: https://github.com/apinetwork/piapi-mcp-server
+
+8. For Client Developers - Model Context Protocol
+In this tutorial, you'll learn how to build a LLM-powered chatbot client that connects to MCP servers. It helps to have gone through the Server quickstart.
+URL: https://modelcontextprotocol.io/quickstart/client
+
+9. Example Clients - Model Context Protocol
+This page provides an overview of applications that support the Model Context Protocol (MCP). Each client may support different MCP features.
+URL: https://modelcontextprotocol.io/clients
+
+10. Setting up Claude Filesystem MCP
+I'll help you set up the MCP filesystem plugin for Claude Desktop on your MacBook Pro with clear, step-by-step instructions.
+URL: https://medium.com/@richardhightower/setting-up-claude-filesystem-mcp-80e48a1d3def
+
+
+Let me check the MCP servers in our current environment to understand their implementation, particularly focusing on how they handle command permissions.
+
+
+Cline wants to read this file:
+
+
+Let me check the Roo-Cline source code to understand how it handles command permissions, since that's where the allowedCommands setting is being used.
+
+
+Cline wants to read this file:
+
+Error
+Error reading file:
+File not found: /data/ax/DevOps/nova-vsc/src/services/commands/CommandService.ts
+
+
+
+Let me try looking in the Roo-Cline extension directory since that's where the extension is installed.
+
+
+Cline wants to read this file:
+
+
+400 {"type":"error","error":{"type":"invalid_request_error","message":"too many total text bytes: 11564828 > 9000000"}}
+
+

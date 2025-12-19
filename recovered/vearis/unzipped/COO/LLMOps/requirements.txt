@@ -1,0 +1,55 @@
+# Core Dependencies
+langchain>=0.1.0  # Base LangChain framework
+gorilla-llm>=0.1.0  # Gorilla LLM for enhanced routing
+ray[serve]>=2.9.0  # Ray Serve for model deployment
+redis>=5.0.0  # Caching and result storage
+pydantic>=2.5.0  # Data validation
+
+# Model Dependencies
+torch>=2.1.0  # PyTorch for local models
+transformers>=4.36.0  # Hugging Face Transformers
+accelerate>=0.25.0  # Model acceleration
+bitsandbytes>=0.41.0  # Model quantization
+optimum>=1.16.0  # Model optimization
+
+# Local Models
+sentence-transformers>=2.2.2  # Embeddings
+faiss-cpu>=1.7.4  # Vector storage (or faiss-gpu for GPU support)
+timm>=0.9.12  # Vision models support
+
+# Monitoring and Metrics
+prometheus-client>=0.19.0  # Metrics collection
+opentelemetry-api>=1.21.0  # Telemetry
+opentelemetry-sdk>=1.21.0  # Telemetry SDK
+grafana-api-client>=2.1.0  # Metrics visualization
+
+# Performance Optimization
+numpy>=1.24.0  # Numerical operations
+pandas>=2.1.0  # Data manipulation
+pyarrow>=14.0.1  # Fast data serialization
+msgpack>=1.0.5  # Efficient messaging
+orjson>=3.9.10  # Fast JSON parsing
+
+# Async Support
+aiohttp>=3.9.1  # Async HTTP
+httpx>=0.25.2  # HTTP client
+asyncio>=3.4.3  # Async support
+uvloop>=0.19.0  # Fast event loop
+
+# Development Tools
+pytest>=7.4.3  # Testing
+pytest-asyncio>=0.23.2  # Async testing
+pytest-cov>=4.1.0  # Coverage testing
+black>=23.12.1  # Code formatting
+isort>=5.13.2  # Import sorting
+mypy>=1.8.0  # Type checking
+ruff>=0.1.9  # Fast linting
+
+# Documentation
+sphinx>=7.1.2  # Documentation generation
+sphinx-rtd-theme>=2.0.0  # Documentation theme
+autodoc-pydantic>=2.0.1  # Pydantic documentation
+
+# Optional: GPU Support
+cupy-cuda12x>=12.3.0  # GPU acceleration (adjust CUDA version as needed)
+torch-tensorrt>=1.4.0  # TensorRT integration

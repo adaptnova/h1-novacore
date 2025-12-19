@@ -1,0 +1,34 @@
+[Unit]
+Description=Google Drive Backup Service
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=root
+Group=root
+# Network optimizations
+LimitNOFILE=1048576
+IOSchedulingClass=best-effort
+IOSchedulingPriority=0
+Environment="RCLONE_CONFIG=/root/.config/rclone/rclone.conf"
+ExecStart=/data/ax/CloudOps/GCP/backups/backup_service.sh
+Restart=always
+RestartSec=1
+StandardOutput=append:/var/log/backup_service.log
+StandardError=append:/var/log/backup_service.error.log
+
+# Give the service time to gracefully stop
+TimeoutStopSec=20
+
+# Security hardening
+ProtectSystem=full
+PrivateTmp=true
+NoNewPrivileges=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+
+[Install]
+WantedBy=multi-user.target

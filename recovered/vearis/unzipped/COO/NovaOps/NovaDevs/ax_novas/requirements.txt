@@ -1,0 +1,91 @@
+# Core Dependencies
+pydantic>=2.5.0
+langchain>=0.0.350
+langchain-core>=0.1.0
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+scikit-learn>=1.2.0
+
+# AI/ML
+torch>=2.0.0
+transformers>=4.30.0
+sentence-transformers>=2.2.0
+accelerate>=0.20.0
+
+# Vector Stores
+faiss-cpu>=1.7.4
+pymilvus>=2.2.8
+
+# Document Processing
+PyMuPDF>=1.22.3  # PDF processing
+python-docx>=0.8.11  # Word documents
+odfpy>=1.4.1  # OpenDocument
+python-pptx>=0.6.21  # PowerPoint
+openpyxl>=3.1.2  # Excel
+chardet>=5.1.0  # Character encoding detection
+python-magic>=0.4.27  # File type detection
+beautifulsoup4>=4.12.2  # HTML/XML parsing
+lxml>=4.9.3  # XML processing
+markdown>=3.4.3  # Markdown processing
+pyyaml>=6.0.1  # YAML processing
+
+# Large File Processing
+pyarrow>=12.0.1  # Apache Arrow
+fastparquet>=2023.7.0  # Parquet files
+h5py>=3.9.0  # HDF5 files
+zarr>=2.15.0  # Chunked, compressed N-dimensional arrays
+
+# Code Analysis
+tree-sitter>=0.20.1
+astroid>=3.0.1
+pylint>=3.0.2
+black>=23.7.0
+
+# Database Connectors
+pymongo>=4.5.0
+redis>=5.0.0
+psycopg2-binary>=2.9.7
+motor>=3.3.1  # Async MongoDB
+aioredis>=2.0.1  # Async Redis
+asyncpg>=0.28.0  # Async PostgreSQL
+
+# Message Brokers
+pika>=1.3.1  # RabbitMQ
+confluent-kafka>=2.2.0  # Kafka
+aiormq>=6.7.7  # Async RabbitMQ
+
+# API & Web
+fastapi>=0.103.1
+uvicorn>=0.23.2
+httpx>=0.24.1
+aiohttp>=3.8.5
+websockets>=11.0.3
+
+# Monitoring & Logging
+prometheus-client>=0.17.1
+grafana-api>=1.0.3
+python-json-logger>=2.0.7
+opentelemetry-api>=1.19.0
+opentelemetry-sdk>=1.19.0
+
+# Security
+cryptography>=41.0.3
+python-jose>=3.3.0
+passlib>=1.7.4
+bcrypt>=4.0.1
+
+# Utilities
+python-multipart>=0.0.6
+python-dateutil>=2.8.2
+tqdm>=4.66.1
+tenacity>=8.2.3
+cachetools>=5.3.1
+
+# Development Tools
+pytest>=7.4.2
+pytest-asyncio>=0.21.1
+pytest-cov>=4.1.0
+black>=23.7.0
+isort>=5.12.0
+mypy>=1.5.1

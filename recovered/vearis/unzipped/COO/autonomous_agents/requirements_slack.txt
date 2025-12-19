@@ -1,0 +1,11 @@
+# Slack Integration
+slack-sdk>=3.26.1  # Slack API client
+aiohttp>=3.9.1    # Async HTTP client
+pyyaml>=6.0.1     # YAML support for reports
+
+# Utilities
+python-dotenv>=1.0.0  # Environment variable management
+typing-extensions>=4.9.0  # Type hinting support
+
+# Logging
+python-json-logger>=2.0.7  # JSON logging support

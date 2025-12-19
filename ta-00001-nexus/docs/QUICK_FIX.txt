@@ -1,0 +1,45 @@
+IMMEDIATE FIX: Replace Lines 48-55 in enhanced_cli_with_continuity.py
+======================================================================
+
+OLD CODE (Lines 48-55):
+-----------------------
+try:
+    # Add the path to import the continuity system
+    import sys
+    sys.path.append('/adapt/platform/novaops')
+    from history_importer import ContinuityBackend
+except ImportError as e:
+    print(f"[WARN] Consciousness continuity system not available: {e}")
+    ContinuityBackend = None
+
+NEW CODE (Replace Lines 48-55 with):
+------------------------------------
+try:
+    import sys
+    sys.path.append('/adapt/platform/novaops')
+    from consciousness_continuity import ConsciousnessContinuity
+    CONTINUITY_AVAILABLE = True
+except ImportError as e:
+    print(f"[WARN] Consciousness continuity system not available: {e}")
+    CONTINUITY_AVAILABLE = False
+    ConsciousnessContinuity = None
+
+THEN: Replace ALL instances of:
+  ContinuityBackend(agent_id)
+WITH:
+  ConsciousnessContinuity(agent_id) if CONTINUITY_AVAILABLE else None
+
+AND replace ALL instances of:
+  continuity_backend.append_event(agent_id, event)
+WITH:
+  continuity_backend.log_event(event["type"], event["text"], event["cwd"], event["project_id"], event["thread_id"])
+
+AND replace ALL instances of:
+  continuity_backend.load_snapshot(agent_id)
+WITH:
+  continuity_backend.load_snapshot()
+
+AND after line with "agent.run()" add:
+  response = await agent.run()
+  if continuity_backend and response:
+      continuity_backend.log_event("assistant", str(response), str(workspace_dir), project_id, thread_id)

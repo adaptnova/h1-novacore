@@ -1,0 +1,77 @@
+/* Matrix Theme */
+QMainWindow[theme="matrix"] {
+    background-color: #000000;
+}
+
+QWidget[theme="matrix"] {
+    background-color: #000000;
+    color: #00ff00;
+    font-family: "Courier New";
+}
+
+QTextEdit[theme="matrix"] {
+    background-color: #000000;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    font-family: "Courier New";
+}
+
+QPushButton[theme="matrix"] {
+    background-color: #003300;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    font-family: "Courier New";
+}
+
+QPushButton:hover[theme="matrix"] {
+    background-color: #006600;
+}
+
+/* Warp Speed Theme */
+@keyframes warp {
+    0% { background-color: #000033; }
+    50% { background-color: #000066; }
+    100% { background-color: #000033; }
+}
+
+QMainWindow[theme="warp"] {
+    animation: warp 2s infinite;
+}
+
+/* Chaos Mode */
+QMainWindow[theme="chaos"] {
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+    animation: rainbow 3s infinite;
+}
+
+/* Ultra Mode */
+QMainWindow[theme="ultra"] {
+    background: radial-gradient(circle, #4a00e0, #8e2de2);
+}
+
+/* Sound Effect Button Styles */
+QPushButton.sound-button {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 2px;
+}
+
+/* Game Panel */
+QWidget#game-panel {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Easter Egg Button */
+QPushButton#secret-button {
+    background-color: transparent;
+    border: none;
+    color: transparent;
+}
+
+QPushButton#secret-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

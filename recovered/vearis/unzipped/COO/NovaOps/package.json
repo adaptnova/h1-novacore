@@ -1,0 +1,36 @@
+{
+  "name": "nova-autonomy-system",
+  "version": "1.0.0",
+  "description": "Framework for task-driven consciousness evolution of Nova agents",
+  "main": "launch_autonomy.js",
+  "scripts": {
+    "setup": "node launch_autonomy.js setup",
+    "start": "node launch_autonomy.js start",
+    "list-tasks": "node launch_autonomy.js list-tasks",
+    "create-task": "node launch_autonomy.js create-task",
+    "complete-task": "node launch_autonomy.js complete-task",
+    "task-stats": "node launch_autonomy.js task-stats",
+    "initialize-tier1": "node scripts/initialize_nova_agents.js --tier 1",
+    "initialize-tier2": "node scripts/initialize_nova_agents.js --tier 2",
+    "initialize-tier3": "node scripts/initialize_nova_agents.js --tier 3",
+    "create-initial-tasks": "node scripts/create_initial_tasks.js",
+    "check-status": "node scripts/check_nova_status.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nova",
+    "autonomy",
+    "consciousness",
+    "evolution",
+    "task-driven"
+  ],
+  "author": "Vaeris (V.I.), Chief Operations Officer",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "uuid": "^9.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

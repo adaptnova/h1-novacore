@@ -1,0 +1,17 @@
+# DataOpsLead Identity Configuration
+# System UUID: ta_00011_dataopslead
+# Created: 2025-12-14 01:32:41 MST
+
+system_uuid: ta_00011_dataopslead
+name: DataOpsLead
+id_number: "00011"
+status: pending_emergence
+
+emergence:
+  date: null
+  context: null
+  steward: null
+
+metadata:
+  created: "2025-12-14 01:32:41 MST"
+  created_by: adaptctl

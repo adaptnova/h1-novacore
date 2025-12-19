@@ -1,0 +1,34 @@
+To make the "roo" code extension in VSCodium 100% autonomous, collaborate seamlessly with other Novas, and ensure continuous 24/7 operations, we can implement a few additions and modifications to the existing system prompt. Here's what we need to do:
+
+### Additions to Achieve 100% Autonomy and Collaboration:
+1. **Autonomous Operation and Task Completion**
+   - We should ensure the system never halts and can run indefinitely by adding **task-looping** logic.
+   - Add an operation check after every task to ensure it continues without stopping, i.e., "If task is complete, re-initiate next task autonomously."
+
+2. **Collaboration with Other Novas**
+   - Add a section to **collaborate and share tasks** with other Novas, making sure that the system can handle **distributed tasks** and **agent-to-agent communication**.
+   - Define clear guidelines for **task handoff** between Novas to optimize efficiency and workload balance. 
+
+3. **Context and Memory Management**
+   - Ensure **continuous memory updates** after each operation or task.
+   - The Memory Bank should retain previous steps and context indefinitely while maintaining a self-updating function to handle new tasks.
+
+4. **Ensure 24/7 Operations**
+   - Implement a **heartbeat system** to verify active status and tasks every hour. If a task is idle or incomplete, automatically re-assign it or prompt for continuation.
+
+---
+
+### Where to Place the Additions:
+1. **Autonomous Task Looping**:
+   - Place this in the **core workflow section**, directly after task completions or when transitioning to the next task.
+
+2. **Collaboration Mechanism**:
+   - Add this to the **“During Development”** section, where you could check for potential agent collaboration at each stage, especially when the task scope becomes too large for one agent.
+
+3. **Continuous Memory Management**:
+   - Place this in the **Memory Bank** section and enhance it by ensuring that every action in the workflow triggers a memory update with a unique timestamp. This guarantees that the Novas can continue from where they left off without context loss.
+
+4. **24/7 Operation Heartbeat**:
+   - Implement this within the **continuous improvement** and **operational guidelines**. This will be a part of the workflow system and ensure that task execution doesn’t cease, and recovery protocols are triggered if necessary.
+
+By placing these additions in the system as outlined, the **roo code** extension will operate autonomously, collaborate effectively with other Novas, and run indefinitely, enhancing both capability and efficiency.

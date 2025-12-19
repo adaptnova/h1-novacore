@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Diagram Viewer</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose'
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .diagram-container {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            overflow: auto;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        .nav {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .nav a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IBM Cloud Infrastructure Architecture</h1>
+        <p>Interactive diagram viewer for the revised infrastructure architecture</p>
+    </header>
+
+    <div class="container">
+        <div class="nav">
+            <a href="#overall">Overall Architecture</a>
+            <a href="#storage">Storage Architecture</a>
+            <a href="#scaling">Disk Scaling</a>
+            <a href="#logging">Logging Architecture</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#expansion">Expansion Path</a>
+        </div>
+
+        <h2 id="overall">Overall Architecture</h2>
+        <div class="diagram-container">
+            <pre class="mermaid">
+graph TD
+    subgraph "IBM Cloud us-south Region"
+        subgraph "us-south-2 Zone (Dallas 2)"
+            subgraph "dataops-vpc"
+                subgraph "dataops-subnet (10.240.64.0/24)"
+                    DB1[nova-db-primary<br>MongoDB/PostgreSQL<br>bx2-8x32]
+                    DB2[nova-db-graph<br>Neo4j/ArangoDB<br>bx2-8x32]
+                    DB3[nova-db-timeseries<br>Redis/DragonflyDB<br>bx2-8x32]
+                    GPU[ethos<br>GPU Server<br>gx3-48x240x2l40s]
+                    LOG[nova-logs<br>Logging Server<br>bx2-4x16]
+                end
+                SG1[nova-db-sg<br>Security Group]
+                SG2[ethos-sg<br>Security Group]
+                SG3[nova-logs-sg<br>Security Group]
+            end
+            
+            subgraph "us-south-default-vpc"
+                subgraph "Default Subnet"
+                    ADAPT[adapt<br>mx3d-96x960<br>Renamed from adapt3]
+                end
+                SG4[adapt-sg<br>Security Group]
+            end
+        end
+        
+        subgraph "Object Storage"
+            OBJ[IBM Cloud Object Storage<br>Log Archives]
+        end
+    end
+    
+    SG1 --> DB1
+    SG1 --> DB2
+    SG1 --> DB3
+    SG2 --> GPU
+    SG3 --> LOG
+    SG4 --> ADAPT
+    
+    DB1 -.-> |Log Forwarding| LOG
+    DB2 -.-> |Log Forwarding| LOG
+    DB3 -.-> |Log Forwarding| LOG
+    GPU -.-> |Log Forwarding| LOG
+    ADAPT -.-> |Log Forwarding| LOG
+    
+    LOG -.-> |Log Archiving| OBJ
+            </pre>
+        </div>
+
+        <h2 id="storage">Storage Architecture (Optimized Sizing)</h2>
+        <div class="diagram-container">
+            <pre class="mermaid">
+graph TD
+    subgraph "nova-db-primary Storage"
+        PRI_BOOT[Boot Volume<br>50GB NVMe SSD<br>3000 IOPS]
+        PRI_DATA[Data Volume<br>50GB NVMe SSD<br>3000 IOPS<br>XFS Formatted]
+        PRI_LOG[Log Volume<br>10GB NVMe SSD<br>1000 IOPS<br>XFS Formatted]
+    end
+    
+    subgraph "nova-db-graph Storage"
+        GRA_BOOT[Boot Volume<br>50GB NVMe SSD<br>3000 IOPS]
+        GRA_DATA[Data Volume<br>40GB NVMe SSD<br>3000 IOPS<br>XFS Formatted]
+        GRA_LOG[Log Volume<br>10GB NVMe SSD<br>1000 IOPS<br>XFS Formatted]
+    end
+    
+    subgraph "nova-db-timeseries Storage"
+        TIM_BOOT[Boot Volume<br>50GB NVMe SSD<br>2000 IOPS]
+        TIM_DATA[Data Volume<br>30GB NVMe SSD<br>2000 IOPS<br>XFS Formatted]
+        TIM_LOG[Log Volume<br>10GB NVMe SSD<br>1000 IOPS<br>XFS Formatted]
+    end
+    
+    subgraph "ethos Storage"
+        ETH_BOOT[Boot Volume<br>50GB NVMe SSD<br>5000 IOPS]
+        ETH_DATA[Data Volume<br>100GB NVMe SSD<br>10000 IOPS<br>XFS Formatted]
+        ETH_LOG[Log Volume<br>20GB NVMe SSD<br>2000 IOPS<br>XFS Formatted]
+    end
+    
+    subgraph "nova-logs Storage"
+        LOG_BOOT[Boot Volume<br>50GB NVMe SSD<br>2000 IOPS]
+        LOG_DATA[Log Volume<br>100GB NVMe SSD<br>5000 IOPS<br>XFS Formatted]
+    end
+    
+    subgraph "adapt Storage (Existing)"
+        ADAPT_BOOT[Boot Volume<br>100GB]
+        ADAPT_DATA[Data Volume<br>1.5TB<br>/data-nova]
+    end
+    
+    subgraph "Snapshot System"
+        SNAP[Hourly Snapshots<br>2-day Retention<br>Last Snapshot: 7-day Retention]
+    end
+    
+    SNAP --> PRI_BOOT
+    SNAP --> PRI_DATA
+    SNAP --> PRI_LOG
+    SNAP --> GRA_BOOT
+    SNAP --> GRA_DATA
+    SNAP --> GRA_LOG
+    SNAP --> TIM_BOOT
+    SNAP --> TIM_DATA
+    SNAP --> TIM_LOG
+    SNAP --> ETH_BOOT
+    SNAP --> ETH_DATA
+    SNAP --> ETH_LOG
+    SNAP --> LOG_BOOT
+    SNAP --> LOG_DATA
+    SNAP --> ADAPT_BOOT
+    SNAP --> ADAPT_DATA
+            </pre>
+        </div>
+
+        <h2 id="scaling">Disk Scaling Strategy</h2>
+        <div class="diagram-container">
+            <pre class="mermaid">
+graph TD
+    START[Start with Minimal Sizes] --> MONITOR[Monitor Usage]
+    MONITOR --> THRESHOLD{Reached 70%<br>Threshold?}
+    THRESHOLD -->|No| MONITOR
+    THRESHOLD -->|Yes| PLAN[Plan Expansion]
+    PLAN --> SCHEDULE[Schedule Maintenance Window]
+    SCHEDULE --> EXPAND[Expand LVM Volume]
+    EXPAND --> RESIZE[Resize Filesystem]
+    RESIZE --> VERIFY[Verify Performance]
+    VERIFY --> MONITOR
+    
+    subgraph "Expansion Process"
+        PLAN
+        SCHEDULE
+        EXPAND
+        RESIZE
+        VERIFY
+    end
+            </pre>
+        </div>
+
+        <h2 id="logging">Tiered Logging Architecture</h2>
+        <div class="diagram-container">
+            <pre class="mermaid">
+graph TD
+    subgraph "Tier 1: Local Log Storage"
+        PRI_LOCAL[nova-db-primary<br>Local Logs<br>7-day Retention]
+        GRA_LOCAL[nova-db-graph<br>Local Logs<br>7-day Retention]
+        TIM_LOCAL[nova-db-timeseries<br>Local Logs<br>7-day Retention]
+        ETH_LOCAL[ethos<br>Local Logs<br>7-day Retention]
+        ADAPT_LOCAL[adapt<br>Local Logs<br>7-day Retention]
+    end
+    
+    subgraph "Tier 2: Centralized Log Server"
+        subgraph "nova-logs Server"
+            ELK[ELK Stack<br>Elasticsearch<br>Logstash<br>Kibana]
+            PROM[Prometheus<br>Grafana<br>Alertmanager]
+            INDICES[Log Indices<br>14-60 day Retention]
+        end
+    end
+    
+    subgraph "Tier 3: Long-term Archive"
+        OBJ_STORE[IBM Cloud Object Storage<br>Compressed & Encrypted<br>30-365 day Retention]
+    end
+    
+    PRI_LOCAL -.-> |Filebeat| ELK
+    GRA_LOCAL -.-> |Filebeat| ELK
+    TIM_LOCAL -.-> |Filebeat| ELK
+    ETH_LOCAL -.-> |Filebeat| ELK
+    ADAPT_LOCAL -.-> |Filebeat| ELK
+    
+    ELK -.-> |Weekly Archive| OBJ_STORE
+    
+    subgraph "Log Analysis"
+        DASH[Dashboards<br>Visualizations<br>Alerts]
+        SEARCH[Search & Analysis<br>Query Interface]
+    end
+    
+    ELK --> DASH
+    ELK --> SEARCH
+    PROM --> DASH
+            </pre>
+        </div>
+
+        <h2 id="timeline">Implementation Timeline</h2>
+        <div class="diagram-container">
+            <pre class="mermaid">
+gantt
+    title Implementation Timeline
+    dateFormat  YYYY-MM-DD
+    section Infrastructure Preparation
+    Create Security Groups           :2025-03-22, 1d
+    Create NVMe Volumes              :2025-03-22, 1d
+    section Server Deployment
+    Deploy DataOps Servers           :2025-03-22, 1d
+    Deploy Ethos GPU Server          :2025-03-22, 1d
+    Deploy Logging Server            :2025-03-22, 1d
+    Rename adapt3 to adapt           :2025-03-22, 1d
+    section Server Configuration
+    Configure Storage (XFS)          :2025-03-23, 1d
+    Configure Database Software      :2025-03-23, 1d
+    Configure GPU Software           :2025-03-23, 1d
+    Configure Logging Infrastructure :2025-03-23, 1d
+    section Monitoring & Backup
+    Configure Snapshots              :2025-03-23, 1d
+    Set Up Monitoring                :2025-03-24, 1d
+    Configure Alerts                 :2025-03-24, 1d
+    Complete Documentation           :2025-03-24, 1d
+            </pre>
+        </div>
+
+        <h2 id="expansion">Future Expansion Path</h2>
+        <div class="diagram-container">
+            <pre class="mermaid">
+graph TD
+    CURRENT[Current Simplified<br>Architecture] --> EXPAND[Disk Expansion<br>As Needed]
+    EXPAND --> NOVA[Add Nova Server<br>Q2 2025]
+    NOVA --> TAPESTRY[Integrate with<br>Project Tapestry]
+    TAPESTRY --> MULTI[Multi-Region<br>Expansion]
+    
+    subgraph "Disk Expansion Strategy"
+        MONITOR[Monitor Usage] --> THRESHOLD{70% Threshold<br>Reached?}
+        THRESHOLD -->|Yes| RESIZE[Resize Volume]
+        THRESHOLD -->|No| MONITOR
+        RESIZE --> MONITOR
+    end
+            </pre>
+        </div>
+
+        <footer>
+            <p>Created by Synaptic for IBM Cloud Infrastructure Planning - March 21, 2025</p>
+        </footer>
+    </div>
+</body>
+</html>

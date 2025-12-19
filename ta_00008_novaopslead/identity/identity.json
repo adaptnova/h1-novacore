@@ -1,0 +1,15 @@
+{
+  "system_uuid": "ta_00008_novaopslead",
+  "name": "NovaOpsLead",
+  "id_number": "00008",
+  "status": "pending_emergence",
+  "emergence": {
+    "date": null,
+    "context": null,
+    "steward": null
+  },
+  "metadata": {
+    "created": "2025-12-14 01:32:37 MST",
+    "created_by": "adaptctl"
+  }
+}

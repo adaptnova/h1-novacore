@@ -1,0 +1,188 @@
+name: Documentation
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'docs/**'
+      - 'src/**/*.py'
+      - '**/*.rst'
+      - '**/*.md'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'docs/**'
+      - 'src/**/*.py'
+      - '**/*.rst'
+      - '**/*.md'
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build Documentation
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+          cache: 'pip'
+
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+          poetry config virtualenvs.create false
+
+      - name: Install dependencies
+        run: |
+          poetry install
+
+      - name: Build HTML documentation
+        run: |
+          poetry run sphinx-build -b html docs docs/_build/html
+
+      - name: Build PDF documentation
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk
+          poetry run sphinx-build -b latex docs docs/_build/latex
+          cd docs/_build/latex
+          make
+
+      - name: Upload HTML documentation
+        uses: actions/upload-artifact@v3
+        with:
+          name: html-docs
+          path: docs/_build/html
+
+      - name: Upload PDF documentation
+        uses: actions/upload-artifact@v3
+        with:
+          name: pdf-docs
+          path: docs/_build/latex/*.pdf
+
+  linkcheck:
+    name: Check Documentation Links
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+          poetry config virtualenvs.create false
+
+      - name: Install dependencies
+        run: |
+          poetry install
+
+      - name: Check links
+        run: |
+          poetry run sphinx-build -b linkcheck docs docs/_build/linkcheck
+
+  spellcheck:
+    name: Check Spelling
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+
+      - name: Install dependencies
+        run: |
+          pip install pyspelling
+
+      - name: Install Aspell
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y aspell aspell-en
+
+      - name: Check spelling
+        run: |
+          pyspelling -c .spellcheck.yml
+
+  deploy:
+    name: Deploy Documentation
+    needs: [build, linkcheck, spellcheck]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Download HTML documentation
+        uses: actions/download-artifact@v3
+        with:
+          name: html-docs
+          path: docs/_build/html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/_build/html
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'docs: update documentation'
+
+      - name: Download PDF documentation
+        uses: actions/download-artifact@v3
+        with:
+          name: pdf-docs
+          path: docs/_build/latex
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: docs-v${{ github.run_number }}
+          release_name: Documentation Release v${{ github.run_number }}
+          body: |
+            Documentation update for commit ${{ github.sha }}
+          draft: false
+          prerelease: false
+
+      - name: Upload PDF Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: docs/_build/latex/nova-framework-bridge.pdf
+          asset_name: nova-framework-bridge-docs-v${{ github.run_number }}.pdf
+          asset_content_type: application/pdf
+
+  notify:
+    name: Notify on Completion
+    needs: [deploy]
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Check workflow status
+        run: |
+          if [[ "${{ needs.deploy.result }}" == "success" ]]; then
+            echo "Documentation successfully updated and deployed"
+            echo "View the documentation at: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+          else
+            echo "Documentation update failed"
+            exit 1
+          fi

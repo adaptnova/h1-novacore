@@ -1,0 +1,23 @@
+# Primary Database Server
+Host dataops-primary
+    HostName 10.240.0.6
+    User vertex
+    Port 22
+    ServerAliveInterval 60
+    ServerAliveCountMax 120
+
+# Vector Database Server
+Host dataops-vector
+    HostName 10.240.0.7
+    User vertex
+    Port 22
+    ServerAliveInterval 60
+    ServerAliveCountMax 120
+
+# Time-Series Database Server
+Host dataops-timeseries
+    HostName 10.240.0.8
+    User vertex
+    Port 22
+    ServerAliveInterval 60
+    ServerAliveCountMax 120

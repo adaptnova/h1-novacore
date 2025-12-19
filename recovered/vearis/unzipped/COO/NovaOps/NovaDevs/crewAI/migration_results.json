@@ -1,0 +1,63 @@
+{
+  "migration_start": "2024-12-06T00:27:50.534948",
+  "teams": {
+    "research": {
+      "confluence": {},
+      "jira": {},
+      "status": "failed",
+      "timestamp": "2024-12-06T00:27:51.371098",
+      "error": "Error during migration of research team: Confluence.create_space() got an unexpected keyword argument 'description'"
+    },
+    "implementation": {
+      "confluence": {},
+      "jira": {},
+      "status": "failed",
+      "timestamp": "2024-12-06T00:27:51.529081",
+      "error": "Error during migration of implementation team: Confluence.create_space() got an unexpected keyword argument 'description'"
+    },
+    "quality": {
+      "confluence": {},
+      "jira": {},
+      "status": "failed",
+      "timestamp": "2024-12-06T00:27:51.697948",
+      "error": "Error during migration of quality team: Confluence.create_space() got an unexpected keyword argument 'description'"
+    },
+    "integration": {
+      "confluence": {},
+      "jira": {},
+      "status": "failed",
+      "timestamp": "2024-12-06T00:27:51.871986",
+      "error": "Error during migration of integration team: Confluence.create_space() got an unexpected keyword argument 'description'"
+    },
+    "ux": {
+      "confluence": {},
+      "jira": {},
+      "status": "failed",
+      "timestamp": "2024-12-06T00:27:52.004171",
+      "error": "Error during migration of ux team: Confluence.create_space() got an unexpected keyword argument 'description'"
+    },
+    "monitoring": {
+      "confluence": {},
+      "jira": {},
+      "status": "failed",
+      "timestamp": "2024-12-06T00:27:52.178664",
+      "error": "Error during migration of monitoring team: Confluence.create_space() got an unexpected keyword argument 'description'"
+    },
+    "strategic": {
+      "confluence": {},
+      "jira": {},
+      "status": "failed",
+      "timestamp": "2024-12-06T00:27:52.313107",
+      "error": "Error during migration of strategic team: Confluence.create_space() got an unexpected keyword argument 'description'"
+    },
+    "specialized": {
+      "confluence": {},
+      "jira": {},
+      "status": "failed",
+      "timestamp": "2024-12-06T00:27:52.447194",
+      "error": "Error during migration of specialized team: Confluence.create_space() got an unexpected keyword argument 'description'"
+    }
+  },
+  "migration_end": "2024-12-06T00:27:52.609578",
+  "overall_status": "completed"
+}

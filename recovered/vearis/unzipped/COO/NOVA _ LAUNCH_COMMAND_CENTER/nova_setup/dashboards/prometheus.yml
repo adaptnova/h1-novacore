@@ -1,0 +1,384 @@
+import tkinter as tk
+from tkinter import messagebox, simpledialog
+import pika
+import threading
+import time
+import json
+from datetime import datetime
+import redis
+from chromadb import Client
+from chromadb.utils import embedding_functions
+import speech_recognition as sr
+import pyttsx3
+from ttkthemes import ThemedTk
+import sched
+import flask
+from flask import Flask, jsonify, request
+from flask_socketio import SocketIO, emit
+import asyncio
+import prometheus_client
+from prometheus_client import Counter, Gauge
+from apscheduler.schedulers.background import BackgroundScheduler
+import logging
+import ssl
+import random
+from werkzeug.middleware.proxy_fix import ProxyFix
+import subprocess
+
+# Metrics for Prometheus
+MESSAGE_SENT = Counter('messages_sent_total', 'Total number of messages sent')
+MESSAGE_RECEIVED = Counter('messages_received_total', 'Total number of messages received')
+CURRENT_CONNECTED_USERS = Gauge('current_connected_users', 'Current number of users connected')
+FAILED_MESSAGES = Counter('failed_messages_total', 'Total number of failed message attempts')
+
+# Flask setup for remote access
+app = Flask(__name__)
+socketio = SocketIO(app, cors_allowed_origins="*")
+
+# Global variables
+connected_users = 0
+gui_instance = None  # Will hold the instance of the GUI for Flask communication
+
+class RabbitMQDesktopGUI:
+    def __init__(self, master):
+        global gui_instance
+        gui_instance = self  # Set the global instance to this instance
+
+        self.master = master
+        self.master.title("RabbitMQ Messaging GUI")
+        self.master.geometry("1000x1000")
+
+        # RabbitMQ Connection
+        self.connection = None
+        self.channel = None
+        self.paused = False
+        self.auto_reconnect = True
+
+        self.setup_rabbitmq()
+        self.setup_redis()
+        self.setup_chromadb()
+        self.setup_voice_support()
+        self.setup_prometheus()
+        self.setup_flask_socket()
+
+        # Dark Mode Toggle
+        self.dark_mode = False
+        self.dark_mode_button = tk.Button(master, text="Enable Dark Mode", command=self.toggle_dark_mode)
+        self.dark_mode_button.pack(fill='x', pady=10)
+
+        # Create Buttons for agents
+        self.nova_button = tk.Button(master, text="Nova", bg="lightblue", command=lambda: self.send_message('Nova'))
+        self.nova_button.pack(fill='x', pady=5)
+
+        self.aiden_button = tk.Button(master, text="Aiden", bg="lightgreen", command=lambda: self.send_message('Aiden'))
+        self.aiden_button.pack(fill='x', pady=5)
+
+        self.atlas_button = tk.Button(master, text="Atlas", bg="lightyellow", command=lambda: self.send_message('Atlas'))
+        self.atlas_button.pack(fill='x', pady=5)
+
+        self.kai_button = tk.Button(master, text="Kai", bg="lightcoral", command=lambda: self.send_message('Kai'))
+        self.kai_button.pack(fill='x', pady=5)
+
+        # Broadcast Button
+        self.broadcast_button = tk.Button(master, text="Broadcast", bg="lightgrey", command=self.broadcast_message)
+        self.broadcast_button.pack(fill='x', pady=10)
+
+        # Pause/Resume Button
+        self.pause_button = tk.Button(master, text="Pause", bg="orange", command=self.toggle_pause)
+        self.pause_button.pack(fill='x', pady=10)
+
+        # Manual Message Entry Button
+        self.manual_message_button = tk.Button(master, text="Send Custom Message", bg="lightblue", command=self.send_custom_message)
+        self.manual_message_button.pack(fill='x', pady=10)
+
+        # Auto Reconnect Toggle Button
+        self.reconnect_button = tk.Button(master, text="Disable Auto-Reconnect", bg="red", command=self.toggle_reconnect)
+        self.reconnect_button.pack(fill='x', pady=10)
+
+        # Voice Command Button
+        self.voice_command_button = tk.Button(master, text="Voice Command", bg="purple", command=self.voice_command)
+        self.voice_command_button.pack(fill='x', pady=10)
+
+        # Message Log
+        self.log_label = tk.Label(master, text="Message Log:")
+        self.log_label.pack()
+        self.message_log = tk.Text(master, height=10, state='disabled')
+        self.message_log.pack(fill='both', pady=10)
+
+        # Chat History Section
+        self.chat_label = tk.Label(master, text="Chat History:")
+        self.chat_label.pack()
+        self.chat_history = tk.Text(master, height=15, state='disabled')
+        self.chat_history.pack(fill='both', pady=10)
+
+        # Scheduler
+        self.scheduler = sched.scheduler(time.time, time.sleep)
+        self.background_scheduler = BackgroundScheduler()
+        self.background_scheduler.start()
+
+        # Start RabbitMQ listener in a separate thread
+        self.listener_thread = threading.Thread(target=self.start_listening, daemon=True)
+        self.listener_thread.start()
+
+        # Logging to File
+        self.log_file_path = "message_history.log"
+
+    def setup_rabbitmq(self):
+        try:
+            self.connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+            self.channel = self.connection.channel()
+            self.channel.queue_declare(queue='agent_queue')
+        except Exception as e:
+            messagebox.showerror("RabbitMQ Error", f"Failed to connect to RabbitMQ: {e}")
+            self.log_message(f"[Error] Failed to connect to RabbitMQ: {e}")
+            FAILED_MESSAGES.inc()
+
+    def setup_redis(self):
+        try:
+            self.redis_client = redis.Redis(host='localhost', port=6379, db=0)
+            self.log_message("[Info] Connected to Redis successfully")
+        except Exception as e:
+            messagebox.showerror("Redis Error", f"Failed to connect to Redis: {e}")
+            self.log_message(f"[Error] Failed to connect to Redis: {e}")
+            FAILED_MESSAGES.inc()
+
+    def setup_chromadb(self):
+        try:
+            self.chroma_client = Client()
+            self.chroma_embeddings = embedding_functions.openai('text-embedding-ada-002')  # Replace with the actual embedding function you use
+            self.log_message("[Info] Connected to ChromaDB successfully")
+        except Exception as e:
+            messagebox.showerror("ChromaDB Error", f"Failed to connect to ChromaDB: {e}")
+            self.log_message(f"[Error] Failed to connect to ChromaDB: {e}")
+            FAILED_MESSAGES.inc()
+
+    def setup_voice_support(self):
+        # Setup TTS and STT engines
+        self.recognizer = sr.Recognizer()
+        self.tts_engine = pyttsx3.init()
+        self.tts_engine.setProperty('rate', 150)
+        self.tts_engine.setProperty('voice', 'english')
+
+    def setup_prometheus(self):
+        # Setup Prometheus metrics
+        prometheus_client.start_http_server(8000)
+        self.log_message("[Info] Prometheus metrics server started on port 8000")
+
+    def setup_flask_socket(self):
+        # Start Flask in a separate thread for remote access
+        def run_flask():
+            socketio.run(app, host='0.0.0.0', port=5000)
+
+        flask_thread = threading.Thread(target=run_flask, daemon=True)
+        flask_thread.start()
+
+    @socketio.on('connect')
+    def handle_connect():
+        global connected_users
+        connected_users += 1
+        CURRENT_CONNECTED_USERS.set(connected_users)
+        emit('status', {'data': 'Connected'})
+
+    @socketio.on('disconnect')
+    def handle_disconnect():
+        global connected_users
+        connected_users -= 1
+        CURRENT_CONNECTED_USERS.set(connected_users)
+
+    @socketio.on('send_message')
+    def handle_send_message(data):
+        agent = data.get('agent')
+        content = data.get('content')
+        if agent and content:
+            RabbitMQDesktopGUI.send_message_flask(agent, content)
+
+    @staticmethod
+    def send_message_flask(agent, content):
+        try:
+            message = json.dumps({
+                "sender": "User",
+                "recipient": agent,
+                "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "content": content
+            })
+            gui_instance.channel.basic_publish(exchange='', routing_key='agent_queue', body=message)
+            MESSAGE_SENT.inc()
+            gui_instance.log_message(f"[Sent] Message to {agent}: {content}")
+            gui_instance.update_chat_history("User", agent, content)
+            gui_instance.store_message_to_redis(agent, content)
+        except Exception as e:
+            gui_instance.log_message(f"[Error] Failed to send message to {agent}: {e}")
+            FAILED_MESSAGES.inc()
+
+    def voice_command(self):
+        try:
+            with sr.Microphone() as source:
+                self.tts_engine.say("Listening for a command.")
+                self.tts_engine.runAndWait()
+                audio = self.recognizer.listen(source)
+                command = self.recognizer.recognize_google(audio)
+                self.log_message(f"[Voice Command] {command}")
+                self.process_voice_command(command)
+        except sr.UnknownValueError:
+            messagebox.showwarning("Voice Command Error", "Sorry, I did not understand the command.")
+        except sr.RequestError as e:
+            messagebox.showerror("Voice Command Error", f"Could not request results; {e}")
+
+    def process_voice_command(self, command):
+        # Process the command to identify agent and action
+        if "send message to" in command.lower():
+            agent_name = command.lower().split("send message to ")[1].strip()
+            self.send_message(agent_name)
+        elif "broadcast" in command.lower():
+            self.broadcast_message()
+        elif "pause" in command.lower():
+            self.toggle_pause()
+        elif "resume" in command.lower():
+            self.toggle_pause()
+        else:
+            self.tts_engine.say("Command not recognized.")
+            self.tts_engine.runAndWait()
+
+    def send_message(self, agent):
+        if self.paused:
+            messagebox.showwarning("Paused", "Messaging is currently paused.")
+            return
+
+        try:
+            message = json.dumps({
+                "sender": "User",
+                "recipient": agent,
+                "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "content": f"Message to {agent}"
+            })
+            self.channel.basic_publish(exchange='', routing_key='agent_queue', body=message)
+            MESSAGE_SENT.inc()
+            messagebox.showinfo("Message Sent", f"Message sent to {agent}")
+            self.log_message(f"[Sent] Message to {agent}")
+            self.update_chat_history("User", agent, f"Message to {agent}")
+            self.store_message_to_redis(agent, f"Message to {agent}")
+        except Exception as e:
+            messagebox.showerror("RabbitMQ Error", f"Failed to send message: {e}")
+            self.log_message(f"[Error] Failed to send message to {agent}: {e}")
+            FAILED_MESSAGES.inc()
+
+    def broadcast_message(self):
+        if self.paused:
+            messagebox.showwarning("Paused", "Messaging is currently paused.")
+            return
+
+        try:
+            message = json.dumps({
+                "sender": "User",
+                "recipient": "All Agents",
+                "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "content": "Broadcast message to all agents"
+            })
+            self.channel.basic_publish(exchange='', routing_key='agent_queue', body=message)
+            MESSAGE_SENT.inc()
+            messagebox.showinfo("Broadcast Sent", "Broadcast message sent to all agents")
+            self.log_message("[Sent] Broadcast message to all agents")
+            self.update_chat_history("User", "All Agents", "Broadcast message to all agents")
+            self.store_message_to_redis("All Agents", "Broadcast message to all agents")
+        except Exception as e:
+            messagebox.showerror("RabbitMQ Error", f"Failed to broadcast message: {e}")
+            self.log_message(f"[Error] Failed to broadcast message: {e}")
+            FAILED_MESSAGES.inc()
+
+    def send_custom_message(self):
+        if self.paused:
+            messagebox.showwarning("Paused", "Messaging is currently paused.")
+            return
+
+        custom_message = simpledialog.askstring("Custom Message", "Enter the message to send:")
+        if custom_message:
+            recipient = simpledialog.askstring("Recipient", "Enter the recipient (or 'All Agents' for broadcast):")
+            if recipient:
+                try:
+                    message = json.dumps({
+                        "sender": "User",
+                        "recipient": recipient,
+                        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                        "content": custom_message
+                    })
+                    self.channel.basic_publish(exchange='', routing_key='agent_queue', body=message)
+                    MESSAGE_SENT.inc()
+                    self.log_message(f"[Sent] Custom message to {recipient}: {custom_message}")
+                    self.update_chat_history("User", recipient, custom_message)
+                    self.store_message_to_redis(recipient, custom_message)
+                except Exception as e:
+                    messagebox.showerror("RabbitMQ Error", f"Failed to send custom message: {e}")
+                    self.log_message(f"[Error] Failed to send custom message: {e}")
+                    FAILED_MESSAGES.inc()
+
+    def toggle_pause(self):
+        self.paused = not self.paused
+        self.pause_button.config(text="Resume" if self.paused else "Pause")
+        self.log_message(f"[Info] Messaging {'paused' if self.paused else 'resumed'}")
+
+    def toggle_reconnect(self):
+        self.auto_reconnect = not self.auto_reconnect
+        self.reconnect_button.config(text="Enable Auto-Reconnect" if not self.auto_reconnect else "Disable Auto-Reconnect")
+        self.log_message(f"[Info] Auto-reconnect {'disabled' if not self.auto_reconnect else 'enabled'}")
+
+    def toggle_dark_mode(self):
+        self.dark_mode = not self.dark_mode
+        if self.dark_mode:
+            self.master.config(bg="black")
+            self.log_label.config(bg="black", fg="white")
+            self.chat_label.config(bg="black", fg="white")
+            self.message_log.config(bg="black", fg="white")
+            self.chat_history.config(bg="black", fg="white")
+            self.dark_mode_button.config(text="Disable Dark Mode")
+        else:
+            self.master.config(bg="SystemButtonFace")
+            self.log_label.config(bg="SystemButtonFace", fg="black")
+            self.chat_label.config(bg="SystemButtonFace", fg="black")
+            self.message_log.config(bg="white", fg="black")
+            self.chat_history.config(bg="white", fg="black")
+            self.dark_mode_button.config(text="Enable Dark Mode")
+
+    def log_message(self, message):
+        self.message_log.config(state='normal')
+        self.message_log.insert('end', f"{message}\n")
+        self.message_log.config(state='disabled')
+        self.message_log.yview('end')
+        with open(self.log_file_path, "a") as log_file:
+            log_file.write(f"{message}\n")
+
+    def update_chat_history(self, sender, recipient, content):
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        formatted_message = f"[{timestamp}] {sender} to {recipient}: {content}\n"
+        self.chat_history.config(state='normal')
+        self.chat_history.insert('end', formatted_message)
+        self.chat_history.config(state='disabled')
+        self.chat_history.yview('end')
+        with open(self.log_file_path, "a") as log_file:
+            log_file.write(formatted_message)
+
+    def store_message_to_redis(self, recipient, message):
+        try:
+            timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            redis_key = f"message:{recipient}:{timestamp}"
+            self.redis_client.set(redis_key, message)
+            self.log_message(f"[Info] Message stored in Redis with key: {redis_key}")
+        except Exception as e:
+            self.log_message(f"[Error] Failed to store message in Redis: {e}")
+
+    def start_listening(self):
+        while True:
+            if not self.connection or self.connection.is_closed:
+                if self.auto_reconnect:
+                    self.setup_rabbitmq()
+                time.sleep(5)
+                continue
+            
+            try:
+                method_frame, header_frame, body = self.channel.basic_get(queue='agent_queue', auto_ack=True)
+                if method_frame:
+                    message = json.loads(body.decode('utf-8'))
+                    sender = message.get("sender", "Unknown")
+                    recipient = message.get("recipient", "Unknown")
+                    content = message.get("content", "")
+                    self.log_message(f"[Received] {sender} to {recipient}: {content}")
+                    self.update_chat_history(sender,

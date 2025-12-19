@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "red_team"
+    },
+    {
+      "path": "oai_swarm"
+    },
+    {
+      "path": "deep_pavlov"
+    },
+    {
+      "path": "camel"
+    }
+  ],
+  "settings": {
+    "window.title": "NovaDevs - VSCodium"
+  }
+}

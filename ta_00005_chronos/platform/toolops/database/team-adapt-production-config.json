@@ -1,0 +1,148 @@
+{
+  "description": "TeamADAPT Database Configuration - Production Ports",
+  "databases": {
+    "redis": {
+      "host": "localhost",
+      "port": 6379,
+      "password": null,
+      "type": "redis",
+      "status": "running"
+    },
+    "redis_cluster_node1": {
+      "host": "localhost",
+      "port": 18010,
+      "password": "redis_cluster_2024",
+      "type": "redis",
+      "status": "running"
+    },
+    "redis_cluster_node2": {
+      "host": "localhost",
+      "port": 18011,
+      "password": "redis_cluster_2024",
+      "type": "redis",
+      "status": "running"
+    },
+    "redis_cluster_node3": {
+      "host": "localhost",
+      "port": 18012,
+      "password": "redis_cluster_2024",
+      "type": "redis",
+      "status": "running"
+    },
+    "dragonfly_cluster_node1": {
+      "host": "localhost",
+      "port": 18000,
+      "password": "df_cluster_2024_adapt_research",
+      "type": "dragonfly",
+      "status": "running"
+    },
+    "dragonfly_cluster_node2": {
+      "host": "localhost",
+      "port": 18001,
+      "password": "df_cluster_2024_adapt_research",
+      "type": "dragonfly",
+      "status": "running"
+    },
+    "dragonfly_cluster_node3": {
+      "host": "localhost",
+      "port": 18002,
+      "password": "df_cluster_2024_adapt_research",
+      "type": "dragonfly",
+      "status": "running"
+    },
+    "redpanda": {
+      "host": "localhost",
+      "port": 18020,
+      "type": "redpanda",
+      "status": "running",
+      "description": "Event streaming platform"
+    },
+    "postgresql": {
+      "host": "localhost",
+      "port": 18030,
+      "type": "postgresql",
+      "status": "running",
+      "description": "OLTP transactions",
+      "admin_ui": "http://localhost:18053 (pgAdmin)"
+    },
+    "pgadmin": {
+      "host": "localhost",
+      "port": 18053,
+      "type": "http",
+      "status": "running",
+      "description": "PostgreSQL Admin UI",
+      "url": "http://localhost:18053"
+    },
+    "neo4j": {
+      "host": "localhost",
+      "port": 18060,
+      "type": "neo4j",
+      "status": "running",
+      "description": "Graph database"
+    },
+    "weaviate": {
+      "host": "localhost",
+      "port": 18050,
+      "type": "weaviate",
+      "status": "running",
+      "description": "Vector database",
+      "api_url": "http://localhost:18050",
+      "graphql_url": "http://localhost:18050/v1/graphql"
+    },
+    "nats": {
+      "host": "nats://localhost:4222",
+      "port": 4222,
+      "type": "nats",
+      "status": "running",
+      "description": "Message broker"
+    },
+    "questdb": {
+      "host": "localhost",
+      "port": 18091,
+      "type": "questdb",
+      "status": "running",
+      "description": "Time-series database",
+      "console_url": "http://localhost:18091",
+      "http_port": 18091
+    },
+    "clickhouse": {
+      "host": "localhost",
+      "port": 18090,
+      "type": "clickhouse",
+      "status": "running",
+      "description": "OLAP analytics",
+      "http_port": 18090
+    }
+  },
+  "monitoring": {
+    "prometheus": {
+      "host": "localhost",
+      "port": 9090,
+      "type": "prometheus",
+      "url": "http://localhost:9090",
+      "status": "running"
+    },
+    "grafana": {
+      "host": "localhost",
+      "port": 3000,
+      "type": "grafana",
+      "url": "http://localhost:3000",
+      "status": "running",
+      "credentials": "admin/admin"
+    }
+  },
+  "scan_ranges": {
+    "database_ports": [6379, 6380, 18000, 18001, 18002, 18010, 18011, 18012, 18020, 18030, 18050, 18053, 18060, 18090, 18091, 4222, 27017, 9042, 6333],
+    "http_admin_ports": [18050, 18053, 18090, 18091, 3000],
+    "monitoring_ports": [9090, 3000]
+  },
+  "service_notes": {
+    "all_services_running": true,
+    "total_database_services": 14,
+    "total_monitoring_services": 2,
+    "architecture": "multi-model database stack",
+    "performance": "all <100ms latency",
+    "deployment_date": "2025-11-15",
+    "lead": "Fleetwise DBOps"
+  }
+}

@@ -1,0 +1,293 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                   NEXUS CONTINUITY - MODULARIZATION PLAN                     ║
+║                         (Working with Tesseract)                             ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+CURRENT STATE (Template)
+════════════════════════
+  📄 dbops_template_cli.py (319 lines)
+     ├── ContinuityBackend class (all DB logic in one class)
+     └── main() function (CLI logic mixed in)
+     
+  ❌ Problem: Monolithic - hard to test, maintain, scale
+  ✅ Solution: Break into microservices
+
+
+PROPOSED MICROSERVICES
+═══════════════════════
+
+┌────────────────────────────────────────────────────────────────┐
+│                    ORCHESTRATOR SERVICE                        │
+│  (Main Coordinator - knows about all other services)           │
+└────────────┬──────────────────────────────┬───────────────────┘
+             │                              │
+             │ calls                        │ publishes
+             ▼                              ▼
+  ┌──────────┴─────────┐         ┌──────────┴──────────┐
+  │   MICROSERVICES    │         │   MESSAGE BUS       │
+  │                    │         │   (NATS)            │
+  │ 1. SNAPSHOT        │         │                     │
+  │    (DragonflyDB)   │         │  Subjects:          │
+  │    Fast state      │         │  - nova.events      │
+  │                    │         │  - nova.{agent}.*   │
+  │ 2. EVENT STORE     │         │                     │
+  │    (MongoDB)       │         └──────────┬──────────┘
+  │    Event history   │                    │
+  │                    │                    ▼
+  │ 3. GRAPH           │         ┌──────────────────────┐
+  │    (Neo4j)         │         │  VECTOR MEMORY       │
+  │    Relationships   │         │  (Qdrant)            │
+  │                    │         │  Semantic search     │
+  └────────────────────┘         └──────────────────────┘
+      
+      
+SERVICE RESPONSIBILITIES
+════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ SNAPSHOT SERVICE                                                      │
+├─────────────────────────────────────────────────────────────────────┤
+│ Purpose: Ultra-fast state restoration (<10ms)                       │
+│                                                                         │
+│ What it stores:                                                        │
+│   • Last project/thread                                               │
+│   • Recent history (bounded lists)                                    │
+│   • Current working directory                                         │
+│                                                                         │
+│ When used:                                                             │
+│   ✓ On startup - restore last state instantly                         │
+│   ✓ During chat - track active context                                │
+│                                                                         │
+│ API:                                                                   │
+│   load_snapshot(agent_id) → dict                                      │
+│   save_snapshot(agent_id, snapshot)                                   │
+└─────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ EVENT STORE SERVICE                                                   │
+├─────────────────────────────────────────────────────────────────────┤
+│ Purpose: Complete event history with rich queries                     │
+│                                                                         │
+│ What it stores:                                                        │
+│   • Every user message                                                │
+│   • Every assistant response                                          │
+│   • Every tool call                                                   │
+│   • Full metadata (project, thread, cwd, timestamp)                   │
+│                                                                         │
+│ When used:                                                             │
+│   ✓ Chat messages - append all events                                 │
+│   ✓ History queries - "show me last 10 messages"                      │
+│   ✓ Full-text search - "find messages about X"                        │
+│                                                                         │
+│ API:                                                                   │
+│   append_event(event) → event_id                                      │
+│   get_events(agent_id, filters) → List[events]                        │
+│   search_events(query, filters) → List[events]                        │
+└─────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ GRAPH SERVICE                                                         │
+├─────────────────────────────────────────────────────────────────────┤
+│ Purpose: Relationship mapping and collaboration tracking              │
+│                                                                         │
+│ What it stores:                                                        │
+│   • Agents, Projects, Threads, Workspaces as nodes                    │
+│   • WORKS_ON, PARTICIPATES_IN, WORKS_IN as relationships              │
+│                                                                         │
+│ When used:                                                             │
+│   ✓ Show connections - "what projects is nexus working on?"          │
+│   ✓ Collaboration - "who else worked on this project?"                │
+│   ✓ History - "nexus was here 3 days ago"                             │
+│                                                                         │
+│ API:                                                                   │
+│   link_agent_to_project(agent_id, project_id)                         │
+│   get_agent_graph(agent_id) → Graph                                   │
+│   find_connected_agents(agent_id) → List[agents]                      │
+└─────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ VECTOR MEMORY SERVICE                                                 │
+├─────────────────────────────────────────────────────────────────────┤
+│ Purpose: Semantic search and intelligent memory retrieval             │
+│                                                                         │
+│ What it stores:                                                        │
+│   • Text embeddings (vector representations)                          │
+│   • Semantic similarity scores                                        │
+│   • Metadata for retrieval                                            │
+│                                                                         │
+│ When used:                                                             │
+│   ✓ Smart queries - "what was I working on similar to this?"         │
+│   ✓ Context recall - "remind me about..."                             │
+│   ✓ RAG - "answer using past conversations"                           │
+│                                                                         │
+│ API:                                                                   │
+│   embed_and_store(text, metadata) → vector_id                         │
+│   semantic_search(query, agent_id) → List[similar_events]             │
+│   get_similar_events(event_id) → List[events]                         │
+└─────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ MESSAGE BUS SERVICE                                                   │
+├─────────────────────────────────────────────────────────────────────┤
+│ Purpose: Event streaming and pub/sub                                  │
+│                                                                         │
+│ What it does:                                                          │
+│   • Publish events to NATS subjects                                   │
+│   • Enable real-time subscriptions                                    │
+│   • Async event processing                                            │
+│                                                                         │
+│ When used:                                                             │
+│   ✓ Real-time dashboards - show live events                           │
+│   ✓ Monitoring - alert on patterns                                    │
+│   ✓ Integration - notify other systems                                │
+│                                                                         │
+│ API:                                                                   │
+│   publish_event(subject, event)                                       │
+│   subscribe(subject, callback)                                        │
+│   stream_events(subject) → AsyncIterable[events]                      │
+└─────────────────────────────────────────────────────────────────────┘
+
+
+EVENT FLOW
+══════════
+
+  User types message
+         │
+         ▼
+  ┌──────────────────┐
+  │  CLI FRONTEND    │
+  │  (Parse Input)   │
+  └────────┬─────────┘
+           │
+           ▼
+  ┌──────────────────────────────┐
+  │   CONTINUITY ORCHESTRATOR    │
+  │   (Routes to all services)   │
+  └──────┬───────────┬───────────┘
+         │           │
+         ▼           ▼
+  ┌──────────┐  ┌─────────┐
+  │ SNAPSHOT │  │  EVENT  │
+  │  SERVICE │  │ SERVICE │
+  └────┬─────┘  └────┬────┘
+       │             │
+       ▼             ▼
+  ┌────────────────────────┐
+  │     GRAPH SERVICE      │
+  └────────┬───────────────┘
+           │
+           ▼
+  ┌──────────────────────────┐
+  │    MESSAGE BUS (NATS)    │
+  │    (Publish events)      │
+  └──────────┬───────────────┘
+             │
+             ▼
+      Subscribers receive
+      (monitoring, logging,
+       integrations)
+
+
+FILE STRUCTURE
+══════════════
+
+/adapt/platform/novaops/
+├── cli/                      ← User interface layer
+│   ├── main.py
+│   ├── commands/
+│   └── ui/
+│
+├── services/                 ← All microservices
+│   ├── base.py              ← Common base class
+│   ├── snapshot_service.py  ← DragonflyDB
+│   ├── event_service.py     ← MongoDB
+│   ├── graph_service.py     ← Neo4j
+│   ├── message_bus_service.py ← NATS
+│   ├── vector_service.py    ← Qandr
+│   └── orchestrator.py      ← Main coordinator
+│
+├── api/                      ← HTTP/GRPC interfaces
+│   ├── http/
+│   └── grpc/
+│
+├── core/                     ← Shared utilities
+│   ├── config.py
+│   ├── logging.py
+│   └── health.py
+│
+├── utils/                    ← Helper functions
+│   ├── embedding.py
+│   └── validation.py
+│
+└── template/                 ← Reference (dbops_template_cli.py)
+
+
+IMPLEMENTATION ORDER (5 WEEKS)
+═══════════════════════════════
+
+Week 1: Core Services
+  • Extract SnapshotService
+  • Extract EventService
+  • Create Orchestrator
+  • End-to-end test
+
+Week 2: Graph + Message Bus
+  • Extract GraphService
+  • Extract MessageBusService
+  • Add health checks
+  • Service discovery
+
+Week 3: Vector Memory
+  • Create VectorService
+  • Add embeddings
+  • Semantic search
+  • RAG capabilities
+
+Week 4: API + Deployment
+  • FastAPI endpoints
+  • systemd services
+  • Docker/K8s
+  • Monitoring
+
+Week 5: Frontend + LLM
+  • Rich/Textual UI
+  • LLM integration
+  • Interactive mode
+  • Documentation
+
+
+COLLABORATION WITH TESSERACT
+════════════════════════════
+
+Tesseract (NovaOps)            │ Me (DBOps)
+═══════════════════════════════╪══════════════════════
+• DB infrastructure setup      │ • Service architecture
+• Service deployment           │ • API design
+• Performance tuning           │ • Code implementation
+• Monitoring/dashboards        │ • Service integration
+• Logging/observability        │ • Testing
+
+
+BENEFITS OF THIS DESIGN
+════════════════════════
+
+✓ Modularity      - Each service independent
+✓ Scalability     - Scale services separately
+✓ Reliability     - Graceful degradation
+✓ Performance     - <10ms snapshot restore
+✓ Observability   - Full logging/metrics
+✓ Extensibility   - Easy to add features
+✓ Testability     - 90%+ test coverage
+
+
+READY TO START? 🚀
+═══════════════════
+
+Next steps with Tesseract:
+1. Review this architecture
+2. Decide on Phase 1 approach
+3. Set up development environment
+4. Create services/base.py
+5. Extract first microservice (SnapshotService)
+
+Let's build something amazing!

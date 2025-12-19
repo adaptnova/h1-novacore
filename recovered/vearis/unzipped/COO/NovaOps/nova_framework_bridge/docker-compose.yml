@@ -1,0 +1,175 @@
+version: '3.8'
+
+services:
+  # Nova Framework Bridge Service
+  nova-bridge:
+    build:
+      context: .
+      target: development
+    volumes:
+      - .:/opt/pysetup
+      - ./logs:/opt/pysetup/logs
+    environment:
+      - REDIS_HOST=redis
+      - MONGODB_URI=mongodb://mongodb:27017/nova_bridge
+      - NEO4J_URI=bolt://neo4j:7687
+      - MILVUS_HOST=milvus
+      - MILVUS_PORT=19530
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+      - mongodb
+      - neo4j
+      - milvus
+      - postgres
+    networks:
+      - nova-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Redis for short-term memory
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - nova-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+
+  # MongoDB for long-term memory
+  mongodb:
+    image: mongo:6
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb-data:/data/db
+    networks:
+      - nova-network
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # Neo4j for knowledge graphs
+  neo4j:
+    image: neo4j:5
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4j-data:/data
+    environment:
+      - NEO4J_AUTH=neo4j/novabridge
+      - NEO4J_dbms_memory_pagecache_size=1G
+      - NEO4J_dbms_memory_heap_initial__size=1G
+      - NEO4J_dbms_memory_heap_max__size=1G
+    networks:
+      - nova-network
+    healthcheck:
+      test: ["CMD", "wget", "http://localhost:7474", "-q", "-O", "-"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # Milvus for vector storage
+  milvus:
+    image: milvusdb/milvus:latest
+    ports:
+      - "19530:19530"
+      - "19121:19121"
+    volumes:
+      - milvus-data:/var/lib/milvus
+    environment:
+      - ETCD_HOST=etcd
+      - MINIO_ADDRESS=minio:9000
+    networks:
+      - nova-network
+    depends_on:
+      - etcd
+      - minio
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:19121/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # PostgreSQL with TimescaleDB
+  postgres:
+    image: timescale/timescaledb:latest-pg14
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=nova
+      - POSTGRES_PASSWORD=novabridge
+      - POSTGRES_DB=nova_bridge
+    networks:
+      - nova-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nova"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # Etcd for Milvus
+  etcd:
+    image: quay.io/coreos/etcd:v3.5.5
+    environment:
+      - ETCD_AUTO_COMPACTION_MODE=revision
+      - ETCD_AUTO_COMPACTION_RETENTION=1000
+      - ETCD_QUOTA_BACKEND_BYTES=4294967296
+    volumes:
+      - etcd-data:/etcd
+    networks:
+      - nova-network
+    healthcheck:
+      test: ["CMD", "etcdctl", "endpoint", "health"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  # MinIO for Milvus
+  minio:
+    image: minio/minio:RELEASE.2023-03-20T20-16-18Z
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio-data:/data
+    environment:
+      - MINIO_ACCESS_KEY=minioadmin
+      - MINIO_SECRET_KEY=minioadmin
+    command: server /data --console-address ":9001"
+    networks:
+      - nova-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+volumes:
+  redis-data:
+  mongodb-data:
+  neo4j-data:
+  milvus-data:
+  postgres-data:
+  etcd-data:
+  minio-data:
+
+networks:
+  nova-network:
+    driver: bridge

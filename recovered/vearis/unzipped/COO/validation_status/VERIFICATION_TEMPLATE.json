@@ -1,0 +1,43 @@
+{
+  "component": "COMPONENT_NAME",
+  "status": "READY",
+  "verification_time": "2025-01-23 23:29 MST",
+  "metrics": {
+    "latency": "0ms",
+    "throughput": "0 ops/sec",
+    "error_rate": "0%",
+    "resource_utilization": {
+      "cpu": "0%",
+      "memory": "0%",
+      "disk": "0%",
+      "network": "0 Mbps"
+    }
+  },
+  "dependencies": {
+    "required": [],
+    "status": "ALL_READY"
+  },
+  "integration_points": {
+    "upstream": [],
+    "downstream": [],
+    "status": "VERIFIED"
+  },
+  "security": {
+    "authentication": "VERIFIED",
+    "authorization": "VERIFIED",
+    "encryption": "ENABLED",
+    "audit_logging": "ACTIVE"
+  },
+  "performance_tests": {
+    "load_test": "PASSED",
+    "stress_test": "PASSED",
+    "failover_test": "PASSED"
+  },
+  "notes": "",
+  "verification_team": "",
+  "sign_off": {
+    "verified_by": "",
+    "position": "",
+    "timestamp": ""
+  }
+}

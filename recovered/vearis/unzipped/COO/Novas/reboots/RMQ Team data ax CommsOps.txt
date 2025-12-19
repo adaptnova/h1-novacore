@@ -1,0 +1,11 @@
+RMQ Team: /data/ax/CommsOps/rabbitmq
+MemOps: /data/ax/MemOps
+DataOps: /data/ax/DataOps
+Nova: /data/ax/NovaOps/nova
+ToolOps: /data/ax/ToolOps
+IntegrOps: /data/ax/IntegrOps
+NovaSynth: /data/ax/NovaOps/novasynth
+SysOps: /data/ax/SysOps
+RayOps: /data/ax/RayOps
+Fixer: /data/ax/NovaOps/fixer
+VSCode: /data/ax/NovaOps/vscode

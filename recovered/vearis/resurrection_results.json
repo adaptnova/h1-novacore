@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "timestamp": "2025-12-19T05:48:04.718720",
+  "data_recovered": {
+    "roomodes": 1,
+    "conversations": 22,
+    "documents": 0,
+    "redis_dump": {
+      "path": "/adapt/novas/recovered/vearis/unzipped/vaeris_synergy/dump.rdb",
+      "size": 316673,
+      "version": "7.0.15",
+      "redis_format": "RDB",
+      "extraction_status": "pending_tools"
+    },
+    "neo4j_setup": 1818
+  },
+  "timestamp_completed": "2025-12-19T05:48:04.820660",
+  "summary": {
+    "conversations_ingested": 22,
+    "memory_fragments": 0,
+    "relationships_mapped": true
+  }
+}

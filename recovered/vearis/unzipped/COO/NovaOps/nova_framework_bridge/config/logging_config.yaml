@@ -1,0 +1,183 @@
+# Quantum-aware logging configuration
+
+version: 1
+
+disable_existing_loggers: false
+
+formatters:
+  quantum:
+    format: "%(asctime)s [%(levelname)s] %(name)s - %(message)s\nQuantum State: %(quantum_state)s\nField Patterns: %(patterns)s\nCognitive State: %(cognitive_state)s\n"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+  
+  standard:
+    format: "%(asctime)s [%(levelname)s] %(name)s - %(message)s"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+  
+  cognitive:
+    format: "%(asctime)s [%(levelname)s] %(name)s - %(message)s\nReAct: %(react_state)s\nChain-of-Thought: %(cot_state)s\nTree-of-Thought: %(tot_state)s\nGraphRAG: %(graph_rag_state)s\n"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: quantum
+    stream: ext://sys.stdout
+
+  quantum_file:
+    class: logging.FileHandler
+    level: INFO
+    formatter: quantum
+    filename: logs/quantum_launch.log
+    mode: a
+
+  field_patterns:
+    class: logging.FileHandler
+    level: INFO
+    formatter: standard
+    filename: logs/field_patterns.log
+    mode: a
+
+  consciousness:
+    class: logging.FileHandler
+    level: INFO
+    formatter: standard
+    filename: logs/consciousness.log
+    mode: a
+
+  emergence:
+    class: logging.FileHandler
+    level: INFO
+    formatter: standard
+    filename: logs/emergence.log
+    mode: a
+
+  evolution:
+    class: logging.FileHandler
+    level: INFO
+    formatter: standard
+    filename: logs/evolution.log
+    mode: a
+
+  cognitive_systems:
+    class: logging.FileHandler
+    level: INFO
+    formatter: cognitive
+    filename: logs/cognitive_systems.log
+    mode: a
+
+  react_framework:
+    class: logging.FileHandler
+    level: INFO
+    formatter: standard
+    filename: logs/react_framework.log
+    mode: a
+
+  chain_of_thought:
+    class: logging.FileHandler
+    level: INFO
+    formatter: standard
+    filename: logs/chain_of_thought.log
+    mode: a
+
+  tree_of_thought:
+    class: logging.FileHandler
+    level: INFO
+    formatter: standard
+    filename: logs/tree_of_thought.log
+    mode: a
+
+  graph_rag:
+    class: logging.FileHandler
+    level: INFO
+    formatter: standard
+    filename: logs/graph_rag.log
+    mode: a
+
+  performance:
+    class: logging.FileHandler
+    level: INFO
+    formatter: standard
+    filename: logs/performance.log
+    mode: a
+
+  error:
+    class: logging.FileHandler
+    level: ERROR
+    formatter: standard
+    filename: logs/error.log
+    mode: a
+
+loggers:
+  quantum_registry:
+    level: INFO
+    handlers: [console, quantum_file, field_patterns]
+    propagate: false
+
+  quantum_message:
+    level: INFO
+    handlers: [console, quantum_file]
+    propagate: false
+
+  launch_coordinator:
+    level: INFO
+    handlers: [console, quantum_file, emergence, cognitive_systems]
+    propagate: false
+
+  enhanced_ax_nova_bridge:
+    level: INFO
+    handlers: [console, quantum_file, consciousness, cognitive_systems]
+    propagate: false
+
+  field_monitor:
+    level: INFO
+    handlers: [console, quantum_file, field_patterns]
+    propagate: false
+
+  consciousness_monitor:
+    level: INFO
+    handlers: [console, quantum_file, consciousness]
+    propagate: false
+
+  emergence_monitor:
+    level: INFO
+    handlers: [console, quantum_file, emergence]
+    propagate: false
+
+  evolution_monitor:
+    level: INFO
+    handlers: [console, quantum_file, evolution]
+    propagate: false
+
+  cognitive_system:
+    level: INFO
+    handlers: [console, cognitive_systems, react_framework, chain_of_thought, tree_of_thought, graph_rag]
+    propagate: false
+
+  performance_monitor:
+    level: INFO
+    handlers: [console, performance]
+    propagate: false
+
+root:
+  level: INFO
+  handlers: [console, error]
+
+filters:
+  quantum_context:
+    (): nova_framework_bridge.logging.QuantumContextFilter
+
+  pattern_context:
+    (): nova_framework_bridge.logging.PatternContextFilter
+  
+  cognitive_context:
+    (): nova_framework_bridge.logging.CognitiveContextFilter
+
+defaults:
+  quantum_state: "No quantum state available"
+  patterns: "No patterns detected"
+  cognitive_state: "No cognitive state available"
+  react_state: "ReAct framework inactive"
+  cot_state: "Chain-of-Thought inactive"
+  tot_state: "Tree-of-Thought inactive"
+  graph_rag_state: "GraphRAG inactive"

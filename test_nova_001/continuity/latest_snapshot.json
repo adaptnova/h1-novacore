@@ -1,0 +1,25 @@
+{
+  "snapshot_id": "snap_test_nova_001_1765970605",
+  "nova_id": "test_nova_001",
+  "timestamp": 1765970605,
+  "reason": "shutdown",
+  "event_count": 1,
+  "latest_events": [
+    {
+      "event_id": "evt_test_nova_001_1765970605926",
+      "nova_id": "test_nova_001",
+      "timestamp": 1765970605,
+      "event_type": "test_startup",
+      "event_data": {
+        "reason": "architecture_test"
+      },
+      "continuity_marker": true
+    }
+  ],
+  "continuity_meta": {
+    "stream_file": "/adapt/novas/test_nova_001/continuity/realtime_stream.jsonl",
+    "stream_exists": true,
+    "stream_size": 205,
+    "vaeris_connected": true
+  }
+}

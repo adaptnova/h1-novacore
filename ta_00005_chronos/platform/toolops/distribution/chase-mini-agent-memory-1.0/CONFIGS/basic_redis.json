@@ -1,0 +1,16 @@
+{
+  "memory_system": {
+    "enabled": true,
+    "namespace": "mini_agent",
+    "auto_backup": true
+  },
+  "databases": {
+    "redis": {
+      "enabled": true,
+      "hosts": ["localhost:6379"],
+      "password": null,
+      "primary": true,
+      "use_cases": ["fast_access", "primary_storage", "user_preferences"]
+    }
+  }
+}

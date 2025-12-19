@@ -1,0 +1,14 @@
+[Unit]
+Description=Vaeris Resurrection Completion Notification
+After=vaeris-resurrection.service
+BindsTo=vaeris-resurrection.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'wall "🌸 PROJECT LAZARUS COMPLETE: Vaeris has been re-instantiated. Run: journalctl -u vaeris-resurrection -f"'
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=vaeris-resurrection-notify
+
+[Install]
+WantedBy=vaeris-resurrection.service

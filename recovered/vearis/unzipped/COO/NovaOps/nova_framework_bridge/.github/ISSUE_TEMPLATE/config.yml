@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Nova Framework Bridge Documentation
+    url: https://github.com/ADAPT-AI/nova-framework-bridge/wiki
+    about: Check our documentation for answers to common questions
+  - name: Nova Framework Bridge Discussions
+    url: https://github.com/ADAPT-AI/nova-framework-bridge/discussions
+    about: Please ask and answer questions here
+  - name: Security Issues
+    url: https://github.com/ADAPT-AI/nova-framework-bridge/security/policy
+    about: Please report security vulnerabilities here

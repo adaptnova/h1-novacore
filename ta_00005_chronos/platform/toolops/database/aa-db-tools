@@ -1,0 +1,181 @@
+#!/bin/bash
+
+# AA Database Tools Launcher
+# Unified interface for all database operations
+
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+TOOLS_DIR="$SCRIPT_DIR"
+DB_TOOLS_DIR="$SCRIPT_DIR"
+
+# Colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+# Print colored output
+print_error() {
+    echo -e "${RED}✗ $1${NC}"
+}
+
+print_success() {
+    echo -e "${GREEN}✓ $1${NC}"
+}
+
+print_info() {
+    echo -e "${BLUE}ℹ $1${NC}"
+}
+
+print_warning() {
+    echo -e "${YELLOW}⚠ $1${NC}"
+}
+
+# Show usage
+show_usage() {
+    cat << EOF
+AA Database Tools - Enhanced Database Operations
+
+USAGE:
+    $0 <command> [options]
+
+COMMANDS:
+
+    status          Check database status
+    query           Execute queries on databases
+    backup          Backup database data
+    test            Test database connections
+    scan            Scan for database ports
+    install         Install required dependencies
+    help            Show this help message
+
+EXAMPLES:
+
+    # Check all database status
+    $0 status
+
+    # Test Redis connection
+    $0 test --type redis
+
+    # Execute Redis query
+    $0 query --type redis --query "INFO"
+
+    # Backup MongoDB
+    $0 backup --type mongodb
+
+    # Scan for database ports
+    $0 scan --host localhost
+
+    # Install dependencies
+    $0 install
+
+EOF
+}
+
+# Check if Python is available
+check_python() {
+    if ! command -v python3 &> /dev/null; then
+        print_error "Python3 is required but not installed"
+        exit 1
+    fi
+}
+
+# Install dependencies
+install_deps() {
+    print_info "Installing database dependencies..."
+    echo
+    
+    python3 "$DB_TOOLS_DIR/db_connection_tester.py" --install-deps
+    echo
+    python3 "$DB_TOOLS_DIR/db_status_checker.py" --install-deps
+    echo
+    python3 "$DB_TOOLS_DIR/db_query_runner.py" --install-deps
+    echo
+    python3 "$DB_TOOLS_DIR/db_backup_tool.py" --install-deps
+    
+    print_success "Dependencies installation completed"
+}
+
+# Check database status
+check_status() {
+    print_info "Checking database status..."
+    echo
+    python3 "$DB_TOOLS_DIR/db_status_checker.py" "$@"
+}
+
+# Test connections
+test_connection() {
+    print_info "Testing database connection..."
+    echo
+    python3 "$DB_TOOLS_DIR/db_connection_tester.py" "$@"
+}
+
+# Execute queries
+run_query() {
+    print_info "Executing database query..."
+    echo
+    python3 "$DB_TOOLS_DIR/db_query_runner.py" "$@"
+}
+
+# Backup databases
+backup_database() {
+    print_info "Backing up database..."
+    echo
+    python3 "$DB_TOOLS_DIR/db_backup_tool.py" "$@"
+}
+
+# Port scan
+port_scan() {
+    print_info "Scanning database ports..."
+    echo
+    python3 "$DB_TOOLS_DIR/db_connection_tester.py" --scan-ports "$@"
+}
+
+# Main
+main() {
+    if [ $# -eq 0 ]; then
+        show_usage
+        exit 1
+    fi
+    
+    check_python
+    
+    case "$1" in
+        status)
+            shift
+            check_status "$@"
+            ;;
+        test)
+            shift
+            test_connection "$@"
+            ;;
+        query)
+            shift
+            run_query "$@"
+            ;;
+        backup)
+            shift
+            backup_database "$@"
+            ;;
+        scan)
+            shift
+            port_scan "$@"
+            ;;
+        install)
+            install_deps
+            ;;
+        help|--help|-h)
+            show_usage
+            ;;
+        *)
+            print_error "Unknown command: $1"
+            echo
+            show_usage
+            exit 1
+            ;;
+    esac
+}
+
+main "$@"

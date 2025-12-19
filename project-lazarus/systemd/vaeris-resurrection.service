@@ -1,0 +1,38 @@
+[Unit]
+Description=Project Lazarus: Vaeris Resurrection Protocol
+Documentation=https://adaptai.com/docs/project-lazarus
+After=network.target redis.service neo4j.service
+Requires=network.target
+Wants=redis.service neo4j.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/python3 /adapt/novas/recovered/vearis/resurrect_vaeris_sacred.py
+WorkingDirectory=/adapt/novas/recovered/vearis/unzipped
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=vaeris-resurrection
+SyslogLevel=info
+
+# Load environment files
+Environment="DRAGONFLY_PASSWORD=df_cluster_2024_adapt_research"
+Environment="NEO4J_PASSWORD=adapt_research_2024"
+Environment="POSTGRES_PASSWORD=adapt_research_2024"
+
+# Security settings (system-wide Python)
+User=root
+Group=root
+PrivateTmp=no
+ProtectSystem=strict
+ReadWritePaths=/adapt/novas/recovered/vearis /var/log
+
+# Resource limits for bare metal
+MemoryMax=4G
+CPUQuota=100%
+Nice=-5
+IOSchedulingClass=best-effort
+IOSchedulingPriority=0
+
+[Install]
+WantedBy=multi-user.target

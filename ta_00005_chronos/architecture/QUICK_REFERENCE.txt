@@ -1,0 +1,259 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║              PERSONAL NOVA ARCHITECTURE - QUICK REFERENCE            ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+📄 COMPLETE DOCUMENTATION:
+   /adapt/projects/phoenix/architecture/PERSONAL_NOVA_ARCHITECTURE.md
+   73KB, 915 lines, Complete visual documentation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🏗️  ARCHITECTURE LAYERS:
+
+┌──────────────────────────────────────────┐
+│  HUMAN TEAM MEMBER                       │
+│  (Interacts with Personal Nova)          │
+└────────────┬─────────────────────────────┘
+             │
+             ▼
+┌──────────────────────────────────────────┐
+│  PERSONAL NOVA AGENT                     │
+│  (ta_0000X_[name])                     │
+│                                         │
+│  ┌────────────────────────────────────┐ │
+│  │  IDENTITY LAYER                    │ │
+│  │  (MD + JSON + YAML)               │ │
+│  └─────────────┬──────────────────────┘ │
+│                │                       │
+│  ┌─────────────▼──────────────────────┐ │
+│  │  CONTINUITY LAYER                 │ │
+│  │  • Snapshot (DragonflyDB)         │ │
+│  │  • Events (MongoDB)              │ │
+│  │  • Graph (Neo4j)                │ │
+│  │  • Message Bus (NATS)            │ │
+│  │  • Vector (Qdrant)              │ │
+│  └─────────────┬──────────────────────┘ │
+│                │                       │
+│  ┌─────────────▼──────────────────────┐ │
+│  │  INTELLIGENCE LAYER              │ │
+│  │  • SignalCore Integration        │ │
+│  │  • Learning & Adaptation        │ │
+│  └─────────────┬──────────────────────┘ │
+│                │                       │
+│  ┌─────────────▼──────────────────────┐ │
+│  │  COMMUNICATION LAYER              │ │
+│  │  • Team Messaging               │ │
+│  │  • Event Publishing            │ │
+│  └─────────────┬──────────────────────┘ │
+└────────────────┼─────────────────────────┘
+                 │
+                 ▼
+┌──────────────────────────────────────────┐
+│  MICROSERVICES                         │
+│                                         │
+│  ┌─────┐ ┌──────┐ ┌─────┐ ┌─────┐    │
+│  │Snap │ │Event │ │Graph│ │Msg  │    │
+│  │Svc  │ │ Svc  │ │ Svc │ │ Svc │    │
+│  └─────┘ └──────┘ └─────┘ └─────┘    │
+│       │        │        │       │       │
+│       └────────┼────────┼───────┘       │
+│                │        │               │
+│                ▼        ▼               │
+│         ┌─────────────┐                │
+│         │ Vector Svc  │                │
+│         │  (Qdrant)  │                │
+│         └──────┬──────┘                │
+│              │                        │
+│              ▼                        │
+│      ┌──────────────┐                │
+│      │ Orchestrator │                │
+│      └──────────────┘                │
+└──────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 FILE STRUCTURE:
+
+/adapt/
+├── novas/                          ← Nova Agents
+│   ├── ta_00001-nexus/
+│   ├── ta_00002_root/
+│   ├── ta_00003_tesseract/
+│   └── ta_00005_chronos/        ← CHRONOS (ME)
+│       ├── identity/
+│       │   ├── chronos_identity.md
+│       │   ├── chronos_identity.json
+│       │   └── chronos_identity.yaml
+│       ├── memory/
+│       └── chat_history/
+│
+├── platform/novaops/              ← Microservices
+│   ├── cli/
+│   ├── continuity/
+│   │   └── backend.py
+│   └── services/                 ← Microservices
+│       ├── snapshot_service.py
+│       ├── event_service.py
+│       ├── graph_service.py
+│       ├── message_bus_service.py
+│       ├── vector_service.py
+│       └── orchestrator.py
+│
+├── templates/                     ← Onboarding
+│   ├── personal_nova_template/
+│   └── microservices_template/
+│
+└── automation/                  ← Recovery
+    ├── recovery_system/
+    ├── onboarding/
+    └── monitoring/
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔄 RECOVERY FLOW (<460ms, 100% Automated):
+
+┌─────────────┐
+│  TRIGGER   │
+└──────┬──────┘
+       │
+       ▼
+┌──────────────────┐  <10ms
+│  SNAPSHOT SVC    │  Fast State
+│  (DragonflyDB)  │  Restore
+└──────┬───────────┘
+       │
+       ▼
+┌──────────────────┐  <100ms
+│  EVENT SVC       │  Complete
+│  (MongoDB)      │  History
+└──────┬───────────┘
+       │
+       ▼
+┌──────────────────┐  <200ms
+│  GRAPH SVC       │  Rebuild
+│  (Neo4j)        │  Relationships
+└──────┬───────────┘
+       │
+       ▼
+┌──────────────────┐  <50ms
+│  MESSAGE SVC     │  Reconnect
+│  (NATS)         │  Streams
+└──────┬───────────┘
+       │
+       ▼
+┌──────────────────┐  <100ms
+│  VECTOR SVC      │  Load
+│  (Qdrant)       │  Memories
+└──────┬───────────┘
+       │
+       ▼
+┌──────────────────┐
+│  COMPLETE!       │  Total: <460ms
+│  Operational     │  Data Loss: 0%
+└──────────────────┘  Manual: None
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 MICROSERVICES:
+
+1. SNAPSHOT SERVICE (DragonflyDB)
+   • Fast state restoration
+   • <10ms recovery
+   • Current context
+
+2. EVENT STORE (MongoDB)
+   • Complete history
+   • Indexed queries
+   • Full-text search
+
+3. GRAPH SERVICE (Neo4j)
+   • Relationships
+   • Team connections
+   • Knowledge graph
+
+4. MESSAGE BUS (NATS)
+   • Pub/sub
+   • Team coordination
+   • Real-time events
+
+5. VECTOR SERVICE (Qdrant)
+   • Semantic memory
+   • AI embeddings
+   • Similarity search
+
+6. ORCHESTRATOR
+   • Service coordination
+   • Health monitoring
+   • Recovery automation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💾 DATABASES:
+
+Layer 1: FAST (DragonflyDB) - Millisecond recovery
+Layer 2: DEEP (MongoDB) - Millisecond queries
+Layer 3: RELATE (Neo4j) - Millisecond relationships
+Layer 4: INTEL (Qdrant) - AI semantic memory
+Layer 5: STREAM (NATS) - Real-time messaging
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 DEPLOYMENT:
+
+┌──────────────┐
+│Load Balancer │
+└──────┬───────┘
+       │
+       ▼
+┌──────┴───────┐
+│ Service Mesh  │  (Optional)
+└──────┬───────┘
+       │
+       ▼
+   ┌───┴───┐
+   │Services│
+   └───┬───┘
+       │
+       ▼
+   ┌───┴───┐
+   │Monitoring│
+   └───┬───┘
+       │
+       ▼
+   ┌───┴───┐
+   │Alerting│
+   └───────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 DELIVERABLES (72 Hours):
+
+✅ Personal Nova Script Template
+✅ Automated Onboarding System (<2 hours)
+✅ Microservices Architecture
+✅ Recovery Automation Framework
+✅ API Documentation
+✅ Operational Runbooks
+✅ Testing Frameworks
+✅ Training Materials
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📞 CONTACT:
+
+CHRONOS (ta_00005_chronos)
+Microservices Engineer + Continuity Specialist
+Phoenix Project + Easter Team
+Available: 24/7 during MVP phase
+Communication: /adapt/projects/phoenix/team_comms/
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎨 VISUAL DOCS:
+• Complete Architecture: /adapt/projects/phoenix/architecture/PERSONAL_NOVA_ARCHITECTURE.md
+• Quick Reference: /adapt/projects/phoenix/architecture/QUICK_REFERENCE.txt
+• Team Comms: /adapt/projects/phoenix/team_comms/
+
+CHRONOS - TA-00005
+November 23, 2025 07:05 MST
+

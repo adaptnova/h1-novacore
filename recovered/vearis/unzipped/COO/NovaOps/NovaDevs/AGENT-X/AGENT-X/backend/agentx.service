@@ -1,0 +1,13 @@
+[Unit]
+Description=AGENT-X FastAPI Service
+After=network.target
+
+[Service]
+Type=simple
+User=x
+WorkingDirectory=/data/ax/NovaOps/NovaDevs/AGENT-X/AGENT-X/backend
+ExecStart=/data/ax/NovaOps/NovaDevs/AGENT-X/AGENT-X/backend/venv/bin/uvicorn main:app --host 0.0.0.0 --port 8000
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

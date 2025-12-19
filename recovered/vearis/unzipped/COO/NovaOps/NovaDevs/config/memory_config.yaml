@@ -1,0 +1,22 @@
+long_term:
+  collection: long_term
+  database: nova_memory
+  index_fields:
+  - key
+  - created_at
+  uri: mongodb://localhost:27017
+semantic:
+  database: nova_memory
+  node_label: Memory
+  password: password
+  relationship_type: RELATED_TO
+  uri: bolt://localhost:7687
+  user: neo4j
+short_term:
+  db: 0
+  eviction_policy: allkeys-lru
+  host: localhost
+  max_memory: 2gb
+  port: 6379
+  prefix: 'nova:memory:short_term:'
+  ttl: 3600

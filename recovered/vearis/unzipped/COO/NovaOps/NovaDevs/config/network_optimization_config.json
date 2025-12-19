@@ -1,0 +1,100 @@
+{
+  "network": {
+    "tcp_settings": {
+      "window_size": "16M",
+      "buffer_size": {
+        "read": "8M",
+        "write": "8M"
+      },
+      "congestion_control": "bbr",
+      "max_backlog": 65536
+    },
+    "socket_settings": {
+      "send_buffer": "8M",
+      "receive_buffer": "8M",
+      "max_connections": 65535,
+      "keepalive": true,
+      "tcp_nodelay": true
+    },
+    "jumbo_frames": {
+      "enabled": true,
+      "mtu": 9000,
+      "interface": "all"
+    },
+    "qos": {
+      "priority": {
+        "realtime_traffic": 0,
+        "interactive_traffic": 1,
+        "bulk_traffic": 2
+      },
+      "bandwidth_allocation": {
+        "realtime": "40%",
+        "interactive": "35%",
+        "bulk": "25%"
+      }
+    }
+  },
+  "system": {
+    "memory": {
+      "huge_pages": "enabled",
+      "vm_swappiness": 10,
+      "cache_pressure": 50,
+      "dirty_ratio": 40,
+      "dirty_background_ratio": 10
+    },
+    "io": {
+      "scheduler": "deadline",
+      "read_ahead_kb": 8192,
+      "max_sectors_kb": 1024,
+      "queue_depth": 256
+    },
+    "cpu": {
+      "governor": "performance",
+      "energy_perf_bias": "performance",
+      "numa_balancing": "enabled"
+    }
+  },
+  "monitoring": {
+    "metrics": {
+      "collection_interval": "10s",
+      "retention_period": "7d",
+      "batch_size": 1000
+    },
+    "thresholds": {
+      "network": {
+        "bandwidth_min": "350MB/s",
+        "bandwidth_target": "500MB/s",
+        "latency_max": "50ms",
+        "packet_loss_max": "0.001%"
+      },
+      "system": {
+        "cpu_usage_max": "80%",
+        "memory_usage_max": "85%",
+        "io_wait_max": "10%"
+      }
+    },
+    "alerts": {
+      "bandwidth_drop": "critical",
+      "latency_spike": "warning",
+      "packet_loss": "critical",
+      "system_overload": "warning"
+    }
+  },
+  "scaling": {
+    "preparation": {
+      "target_instances": {
+        "next": 88,
+        "future": 176
+      },
+      "expected_bandwidth": {
+        "88_instance": "700MB/s",
+        "176_instance": "1100MB/s"
+      }
+    },
+    "thresholds": {
+      "trigger_up": "85%",
+      "trigger_down": "30%",
+      "cooldown_period": "5m"
+    }
+  }
+}

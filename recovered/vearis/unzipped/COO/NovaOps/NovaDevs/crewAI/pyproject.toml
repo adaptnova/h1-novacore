@@ -1,0 +1,76 @@
+[tool.poetry]
+name = "crewai"
+version = "1.0.0"
+description = "Autonomous AI Agent Framework"
+authors = ["CrewAI Team <team@crewai.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/joaomdmoura/crewAI"
+documentation = "https://docs.crewai.com"
+keywords = ["ai", "agents", "autonomous", "framework"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+langchain = "^0.1.0"
+pydantic = "^2.0.0"
+redis = "^5.0.0"
+pymongo = "^4.6.0"
+neo4j = "^5.14.0"
+faiss-cpu = "^1.7.4"
+chromadb = "^0.4.0"
+prometheus-client = "^0.19.0"
+grafana-api = "^1.0.3"
+confluent-kafka = "^2.3.0"
+istio-api = "^1.20.0"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.12.0"
+isort = "^5.13.0"
+flake8 = "^6.1.0"
+mypy = "^1.7.0"
+pre-commit = "^3.5.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=crewai"
+
+[tool.coverage.run]
+source = ["crewai"]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "pass",
+    "raise ImportError",
+]

@@ -1,0 +1,1 @@
+{"event_id": "evt_test_nova_001_1765970605926", "nova_id": "test_nova_001", "timestamp": 1765970605, "event_type": "test_startup", "event_data": {"reason": "architecture_test"}, "continuity_marker": true}

@@ -1,0 +1,17 @@
+2025-03-15 22:25:30.991 [info] Latency measurements for local backend
+window<->ptyhost (message port): 0.70ms
+window<->ptyhostservice<->ptyhost: 4.20ms
+ptyhostservice<->ptyhost: 3.11ms []
+2025-03-15 22:25:30.992 [info] Latency measurements for local backend
+window<->ptyhost (message port): 0.80ms
+window<->ptyhostservice<->ptyhost: 5.00ms
+ptyhostservice<->ptyhost: 4.46ms []
+2025-03-15 22:30:26.612 [error] The terminal's pty host process exited, the connection to all terminal processes was lost []
+2025-03-15 22:30:26.902 [info] Latency measurements for local backend
+window<->ptyhost (message port): 0.70ms
+window<->ptyhostservice<->ptyhost: 1.10ms
+ptyhostservice<->ptyhost: 0.45ms []
+2025-03-15 22:30:26.902 [info] Latency measurements for local backend
+window<->ptyhost (message port): 0.70ms
+window<->ptyhostservice<->ptyhost: 1.30ms
+ptyhostservice<->ptyhost: 0.41ms []

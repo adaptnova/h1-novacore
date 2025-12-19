@@ -1,0 +1,85 @@
+{
+  "description": "Configuration template for AA Database Tools",
+  "databases": {
+    "redis": {
+      "host": "localhost",
+      "port": 6379,
+      "password": null,
+      "ssl": false,
+      "timeout": 5
+    },
+    "redis_alt": {
+      "host": "localhost",
+      "port": 6380,
+      "password": null,
+      "ssl": true,
+      "timeout": 5
+    },
+    "mongodb": {
+      "connection_string": "mongodb://localhost:27017",
+      "username": null,
+      "password": null,
+      "auth_source": "admin",
+      "timeout": 5000
+    },
+    "mongodb_auth": {
+      "connection_string": "mongodb://username:password@localhost:27017",
+      "auth_source": "admin",
+      "timeout": 5000
+    },
+    "cassandra": {
+      "host": "localhost",
+      "port": 9042,
+      "keyspace": null,
+      "username": null,
+      "password": null,
+      "protocol_version": 4,
+      "timeout": 5
+    },
+    "cassandra_auth": {
+      "host": "localhost",
+      "port": 9042,
+      "keyspace": "mykeyspace",
+      "username": "cassandra",
+      "password": "secret",
+      "protocol_version": 4,
+      "timeout": 5
+    },
+    "qdrant": {
+      "host": "localhost",
+      "port": 6333,
+      "ssl": false,
+      "timeout": 5
+    },
+    "nats": {
+      "host": "nats://localhost:4222",
+      "username": null,
+      "password": null,
+      "timeout": 5
+    },
+    "dragonfly": {
+      "host": "localhost",
+      "port": 6379,
+      "timeout": 5
+    }
+  },
+  "common": {
+    "backup_directory": "./backups",
+    "log_level": "INFO",
+    "json_output": false
+  },
+  "usage_examples": {
+    "use_default_redis": {
+      "description": "Use default Redis connection",
+      "command": "./aa-db-tools test --type redis"
+    },
+    "use_custom_mongodb": {
+      "description": "Use custom MongoDB connection",
+      "command": "./aa-db-tools status --type mongodb --connection mongodb://user:pass@localhost:27017"
+    },
+    "backup_with_config": {
+      "description": "Use configuration file",
+      "command": "python3 db_backup_tool.py --config config.json --type redis --host localhost"
+    }
+  }
+}

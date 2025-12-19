@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nova Simple Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #1e1e1e;
+            color: #fff;
+        }
+        .chat-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #2d2d2d;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .chat-messages {
+            height: 400px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #363636;
+            border-radius: 4px;
+        }
+        .message {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+            max-width: 80%;
+        }
+        .message.sent {
+            background: #2b5797;
+            margin-left: auto;
+            color: white;
+        }
+        .message.received {
+            background: #444;
+            margin-right: auto;
+            color: white;
+        }
+        .input-area {
+            display: flex;
+            gap: 10px;
+        }
+        input {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background: #444;
+            color: white;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background: #2b5797;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #1e3d6b;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <h2>Nova Chat Test</h2>
+        <div class="chat-messages" id="messages"></div>
+        <div class="input-area">
+            <input type="text" id="message" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script>
+        const socket = io();
+        const messages = document.getElementById('messages');
+        const messageInput = document.getElementById('message');
+
+        socket.on('connect', () => {
+            addMessage('System', 'Connected to chat');
+            // Connect as Chase
+            socket.emit('connect_nova', { nova_id: 'Chase' });
+        });
+
+        socket.on('message', (data) => {
+            addMessage(data.from || 'Nova', data.payload.message, 'received');
+        });
+
+        socket.on('system_message', (data) => {
+            addMessage('System', data.message);
+        });
+
+        function sendMessage() {
+            const message = messageInput.value.trim();
+            if (message) {
+                socket.emit('send_message', {
+                    target: 'Nova',
+                    message: message
+                });
+                addMessage('Chase', message, 'sent');
+                messageInput.value = '';
+            }
+        }
+
+        function addMessage(from, content, type = 'system') {
+            const div = document.createElement('div');
+            div.className = `message ${type}`;
+            div.textContent = `${from}: ${content}`;
+            messages.appendChild(div);
+            messages.scrollTop = messages.scrollHeight;
+        }
+
+        messageInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# Core Requirements
+Flask>=2.0.3
+Flask-SocketIO>=5.2.0
+prometheus_client>=0.14.1
+pika>=1.2.0
+redis>=4.1.0
+requests>=2.27.1
+pyyaml>=6.0
+Flask-Cors>=3.0.10

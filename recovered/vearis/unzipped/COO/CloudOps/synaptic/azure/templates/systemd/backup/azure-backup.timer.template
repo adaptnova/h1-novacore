@@ -1,0 +1,17 @@
+[Unit]
+Description=Timer for Azure Data Backup Service
+Requires=azure-backup.service
+
+[Timer]
+# Run every 15 minutes
+OnCalendar=*:0/15
+# Ensure backup runs ASAP if system was down during scheduled time
+Persistent=true
+# Add randomized delay to prevent resource contention
+RandomizedDelaySec=60
+
+# Accuracy sets the maximum accuracy of the timer
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

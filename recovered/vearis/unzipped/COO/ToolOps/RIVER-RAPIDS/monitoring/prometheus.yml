@@ -1,0 +1,31 @@
+# Prometheus configuration for ToolOps RabbitMQ monitoring
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - localhost:9093
+
+# Rule files
+rule_files:
+  - "rabbitmq_rules.yml"
+
+# Scrape configurations
+scrape_configs:
+  - job_name: 'rabbitmq'
+    scrape_interval: 15s
+    static_configs:
+      - targets: ['10.10.0.19:15692']
+    metrics_path: /metrics
+    scheme: http
+
+  - job_name: 'rabbitmq_health'
+    scrape_interval: 15s
+    static_configs:
+      - targets: ['10.10.0.19:15692']
+    metrics_path: /health
+    scheme: http

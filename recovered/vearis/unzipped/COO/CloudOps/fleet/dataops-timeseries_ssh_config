@@ -1,0 +1,27 @@
+# SSH Config for dataops-timeseries Server
+# Created: 2025-03-22
+# Author: Zorion (IBM Cloud Strategist & Provisioning Engineer)
+
+# dataops-timeseries Server (root user)
+Host dataops-timeseries-root
+    HostName 
+    User root
+    IdentityFile /home/x/.ssh/ibm-admin_rsa
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+# dataops-timeseries Server (vertex user)
+Host dataops-timeseries
+    HostName 
+    User vertex
+    IdentityFile /home/x/.ssh/ibm-admin_rsa
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+# dataops-timeseries Server (x user)
+Host dataops-timeseries-x
+    HostName 
+    User x
+    IdentityFile /home/x/.ssh/ibm-admin_rsa
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
