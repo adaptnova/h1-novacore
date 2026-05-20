@@ -1,9 +1,0 @@
-# Grafana Datasource Configuration - grafana_datasource.yml
-apiVersion: 1
-providers:
-  - name: 'Prometheus'
-    type: 'prometheus'
-    url: 'http://localhost:9090'
-    access: 'proxy'
-    isDefault: true
-    editable: true

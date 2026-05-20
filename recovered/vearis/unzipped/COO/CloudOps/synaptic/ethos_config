@@ -1,6 +1,0 @@
-Host ethos
-    HostName 10.240.0.5
-    User ethos
-    Port 22
-    ServerAliveInterval 60
-    ServerAliveCountMax 120

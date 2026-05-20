@@ -1,1 +1,0 @@
-2025-03-15 22:25:10.638 [error] [File Watcher (node.js)] Failed to watch /home/x/.vscode-oss/extensions for changes using fs.watch() (Error: EMFILE: too many open files, watch '/home/x/.vscode-oss/extensions')

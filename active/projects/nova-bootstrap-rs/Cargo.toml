@@ -1,0 +1,48 @@
+[package]
+name = "nova-bootstrap"
+version = "1.0.0"
+edition = "2021"
+authors = ["Adapt AI Nova Operations"]
+description = "Automated nova creation and Paperclip company integration"
+license = "MIT"
+
+[dependencies]
+# CLI
+clap = { version = "4.4", features = ["derive"] }
+dialoguer = "0.11"
+colored = "2.1"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+serde_json = "1.0"
+
+# Async runtime
+tokio = { version = "1.35", features = ["full"] }
+reqwest = { version = "0.12", features = ["json"] }
+
+# Filesystem
+walkdir = "2.4"
+
+# Utilities
+thiserror = "1.0"
+anyhow = "1.0"
+uuid = { version = "1.6", features = ["v4"] }
+chrono = { version = "0.4", features = ["serde"] }
+regex = "1.10"
+sha2 = "0.10"
+hex = "0.4"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Templates
+handlebars = "5.0"
+
+[dev-dependencies]
+tempfile = "3.9"
+
+[[bin]]
+name = "nova"
+path = "src/main.rs"
