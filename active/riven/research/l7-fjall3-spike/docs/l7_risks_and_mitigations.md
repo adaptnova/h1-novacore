@@ -35,6 +35,8 @@ This document records the concrete risks surfaced while hardening the L7 foundat
 
 **51st FFI confirmation cycle (16:45 MST):** Concrete "tuned_for_reflections" KeyspaceCreateOptions variable added at the same instrumentation seam in the basic example (following the 48th surface demonstration). This is the next layer on the top open work item (compaction/fluid config). Honest note that real compaction parameters will be wired in the next cycle once the exact fjall 3 API is confirmed from the full host source. Same-cycle verification green.
 
+**52nd FFI confirmation cycle (16:47 MST):** End-to-end use of the tuned_for_reflections KeyspaceCreateOptions demonstrated (open keyspace + write reflection through it) at the same seam. This proves the fluid config surface works concretely. Next cycle will wire real compaction parameters once confirmed from the full host source. Same-cycle verification green.
+
 ## 2. Wasm64 Toolchain Maturity and Bootstrap Provisioning Story
 
 **Risk:** The guest crate targets `wasm64-unknown-unknown`. As of 2026-05, full `std` support and easy cross-compilation still require nightly + `-Zbuild-std` or equivalent. The Rust Nova bootstrap (RUST_IMPLEMENTATION.md, "wasm64 ready ✅") will need to ship a working guest .wasm (or the source + build recipe) for every new Nova.

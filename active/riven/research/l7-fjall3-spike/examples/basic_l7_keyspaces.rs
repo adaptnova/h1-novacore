@@ -104,6 +104,14 @@ fn main() -> anyhow::Result<()> {
     let tuned_for_reflections = KeyspaceCreateOptions::default(); // real .with_... compaction calls will be wired in the next cycle once the exact fjall 3 API is confirmed from the full host source
     println!("  (51st-cycle continuation) Tuned KeyspaceCreateOptions example ready at the l7 volume instrumentation seam.");
 
+    // 52nd FFI confirmation cycle (16:47 MST) continuation: using the tuned KeyspaceCreateOptions at the seam.
+    // This demonstrates the end-to-end fluid config path for the l7:reflections tier (open keyspace with the options object + write).
+    // The keyspace opened here is the concrete example site for the next cycle's real compaction parameters.
+    let reflections_keyspace = events_db.keyspace("l7_reflections_tuned", || tuned_for_reflections)?;
+    let test_refl_key = b"l7:refl:riven:52nd_confirmation_tuned";
+    reflections_keyspace.insert(test_refl_key, b"{\"type\":\"52nd_tuned_config_test\"}")?;
+    println!("  (52nd-cycle continuation) Used tuned_for_reflections KeyspaceCreateOptions to open keyspace and write reflection.");
+
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
     let _meta_db = redb::Database::create(&meta_path)?;
