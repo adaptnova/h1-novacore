@@ -12,10 +12,22 @@ anyhow = "1"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 async-trait = "0.1"
+wasmtime = { version = "18", features = ["cranelift"] }  # For L7 host Linker provisioning (prototype)
 
 [dev-dependencies]
 tempfile = "3"
+wasmtime = { version = "18", features = ["cranelift"] }
+tokio = { version = "1", features = ["rt", "macros", "time"] }
+async-nats = "0.35"
 
 [[example]]
 name = "basic_l7_keyspaces"
 path = "examples/basic_l7_keyspaces.rs"
+
+[[example]]
+name = "l7_reflective_roundtrip"
+path = "examples/l7_reflective_roundtrip.rs"
+
+[[example]]
+name = "l7_host_linker_wiring"
+path = "examples/l7_host_linker_wiring.rs"
