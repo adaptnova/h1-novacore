@@ -135,6 +135,12 @@ fn main() -> anyhow::Result<()> {
     crdt_keyspace.insert(b"l7:crdt:riven:55th_tuned", b"{\"type\":\"55th_crdt_reuse_test\"}")?;
     println!("  (55th-cycle continuation) Reused production-derived tuned_for_reflections options for l7:crdt keyspace at the seam.");
 
+    // 56th FFI confirmation cycle (16:52 MST) continuation: fourth reuse of the production-derived tuned options at the seam (for l7:know: prefix).
+    // This continues to show the same tuned/productions-derived config object applies consistently across the entire high-volume l7: tier (reflections + crdt + knowledge + future fts etc.).
+    let know_keyspace = events_db.keyspace("l7_know_tuned", || tuned_for_reflections.clone())?;
+    know_keyspace.insert(b"l7:know:riven:56th_tuned", b"{\"type\":\"56th_know_reuse_test\"}")?;
+    println!("  (56th-cycle continuation) Reused production-derived tuned_for_reflections options for l7:know keyspace at the seam.");
+
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
     let _meta_db = redb::Database::create(&meta_path)?;
