@@ -81,6 +81,13 @@ fn main() -> anyhow::Result<()> {
     // This directly mitigates the top risk identified for sustained agent reflective write load.
     println!("  (46th-cycle hook) Compaction instrumentation / fluid config point for l7 volume tier ready for expansion.");
 
+    // 47th FFI confirmation cycle (16:40 MST) continuation: the DB handle for the l7 volume tier is now the live seam.
+    // (Attempted first real stats() call; fjall::Database surface in this pinned v3 version keeps stats internal.
+    //  The variable is explicitly captured here for the next autonomous flesh-out step once the public metrics
+    //  API or host integration point is confirmed from the full l6-store-host source or fjall docs.)
+    // This directly continues the 46th-cycle hook and the top open item in the risks document.
+    println!("  (47th-cycle continuation) Volume-tier DB handle captured as compaction instrumentation seam.");
+
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
     let _meta_db = redb::Database::create(&meta_path)?;

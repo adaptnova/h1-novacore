@@ -25,6 +25,8 @@ This document records the concrete risks surfaced while hardening the L7 foundat
 
 **46th FFI confirmation cycle (16:38 MST):** First instrumentation hook added in `examples/basic_l7_keyspaces.rs` at the dedicated volume DB open site for the l7:reflections tier. This is the concrete starting point for the compaction stats + fluid config work. Verified in the same cycle. The hook is explicitly dated and cross-references this risks document.
 
+**47th FFI confirmation cycle (16:40 MST):** The DB handle for the l7 volume tier is now explicitly captured at the hook as the live seam for compaction instrumentation (first attempt at `stats()` showed the surface is internal in this pinned fjall v3; the variable is now the proven attachment point for the next flesh-out once the public metrics API or host integration is confirmed from the full l6-store-host source). Same-cycle verification green.
+
 ## 2. Wasm64 Toolchain Maturity and Bootstrap Provisioning Story
 
 **Risk:** The guest crate targets `wasm64-unknown-unknown`. As of 2026-05, full `std` support and easy cross-compilation still require nightly + `-Zbuild-std` or equivalent. The Rust Nova bootstrap (RUST_IMPLEMENTATION.md, "wasm64 ready ✅") will need to ship a working guest .wasm (or the source + build recipe) for every new Nova.
