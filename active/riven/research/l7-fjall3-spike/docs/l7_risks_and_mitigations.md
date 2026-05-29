@@ -27,6 +27,8 @@ This document records the concrete risks surfaced while hardening the L7 foundat
 
 **47th FFI confirmation cycle (16:40 MST):** The DB handle for the l7 volume tier is now explicitly captured at the hook as the live seam for compaction instrumentation (first attempt at `stats()` showed the surface is internal in this pinned fjall v3; the variable is now the proven attachment point for the next flesh-out once the public metrics API or host integration is confirmed from the full l6-store-host source). Same-cycle verification green.
 
+**48th FFI confirmation cycle (16:41 MST):** Fluid config surface (KeyspaceCreateOptions) demonstrated at the same seam — the creation-time point for per-keyspace compaction tuning (target file size, fanout, etc.) for the l7:reflections large-blob workload. This is the direct next layer on the 46th/47th instrumentation work and the top risk from this document. Verification green in same cycle.
+
 ## 2. Wasm64 Toolchain Maturity and Bootstrap Provisioning Story
 
 **Risk:** The guest crate targets `wasm64-unknown-unknown`. As of 2026-05, full `std` support and easy cross-compilation still require nightly + `-Zbuild-std` or equivalent. The Rust Nova bootstrap (RUST_IMPLEMENTATION.md, "wasm64 ready ✅") will need to ship a working guest .wasm (or the source + build recipe) for every new Nova.

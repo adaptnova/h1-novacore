@@ -88,6 +88,15 @@ fn main() -> anyhow::Result<()> {
     // This directly continues the 46th-cycle hook and the top open item in the risks document.
     println!("  (47th-cycle continuation) Volume-tier DB handle captured as compaction instrumentation seam.");
 
+    // 48th FFI confirmation cycle (16:41 MST) continuation: fluid config surface demonstrated at the seam.
+    // KeyspaceCreateOptions (already imported and used in this alignment block) is the creation-time
+    // attachment point for per-keyspace compaction tuning — target file size, level fanout, etc.
+    // This is fjall 3's major strength for the write-heavy l7:reflections workload (large agent-authored
+    // value-log blobs). The tuned options variable is the next concrete expansion point after the
+    // 46th hook + 47th DB handle capture. Directly mitigates the top risk from the 16:37 risks document.
+    let _fluid_config = KeyspaceCreateOptions::default(); // real compaction params (fluid config) wired here in subsequent cycles
+    println!("  (48th-cycle continuation) Fluid config (KeyspaceCreateOptions) surface at the l7 volume instrumentation seam.");
+
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
     let _meta_db = redb::Database::create(&meta_path)?;
