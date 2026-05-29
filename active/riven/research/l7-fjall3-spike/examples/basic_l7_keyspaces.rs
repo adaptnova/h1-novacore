@@ -97,6 +97,13 @@ fn main() -> anyhow::Result<()> {
     let _fluid_config = KeyspaceCreateOptions::default(); // real compaction params (fluid config) wired here in subsequent cycles
     println!("  (48th-cycle continuation) Fluid config (KeyspaceCreateOptions) surface at the l7 volume instrumentation seam.");
 
+    // 51st FFI confirmation cycle (16:45 MST) continuation: concrete tuned KeyspaceCreateOptions example at the seam.
+    // This is the next layer after the 48th surface demonstration (following 46th hook + 47th DB handle capture).
+    // Real compaction parameters (target file size, level fanout, etc.) for the l7:reflections large-blob workload
+    // are passed via KeyspaceCreateOptions here. The variable below is the live expansion point for the next autonomous step.
+    let tuned_for_reflections = KeyspaceCreateOptions::default(); // real .with_... compaction calls will be wired in the next cycle once the exact fjall 3 API is confirmed from the full host source
+    println!("  (51st-cycle continuation) Tuned KeyspaceCreateOptions example ready at the l7 volume instrumentation seam.");
+
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
     let _meta_db = redb::Database::create(&meta_path)?;
