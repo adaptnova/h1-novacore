@@ -1,0 +1,21 @@
+[package]
+name = "l7-fjall3-spike"
+version = "0.1.0"
+edition = "2021"
+authors = ["Riven <riven@adapt>"]
+description = "Spike for fjall 3.x as durable core of L7+ meta-memory for Adapt Nova fleet"
+
+[dependencies]
+fjall = "3"
+redb = "4"
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+async-trait = "0.1"
+
+[dev-dependencies]
+tempfile = "3"
+
+[[example]]
+name = "basic_l7_keyspaces"
+path = "examples/basic_l7_keyspaces.rs"
