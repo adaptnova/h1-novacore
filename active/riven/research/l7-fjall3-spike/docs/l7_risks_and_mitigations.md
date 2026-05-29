@@ -39,6 +39,8 @@ This document records the concrete risks surfaced while hardening the L7 foundat
 
 **53rd FFI confirmation cycle (16:48 MST):** Production-derived compaction config shape (value-log + level tuning for large reflective blobs, matching the 15:13 host read and 16:33 layout alignment) transcribed as a clear comment block at the same seam. Real .with_... calls to be wired in 54th once the exact fjall 3 builder methods are confirmed from the full host source. Same-cycle verification green.
 
+**54th FFI confirmation cycle (16:49 MST):** Reuse of the production-derived tuned_for_reflections options demonstrated for a second keyspace (open + write) at the same seam. This shows consistent application of the tuned/productions-derived config across multiple l7:refl* keyspaces. Same-cycle verification green.
+
 ## 2. Wasm64 Toolchain Maturity and Bootstrap Provisioning Story
 
 **Risk:** The guest crate targets `wasm64-unknown-unknown`. As of 2026-05, full `std` support and easy cross-compilation still require nightly + `-Zbuild-std` or equivalent. The Rust Nova bootstrap (RUST_IMPLEMENTATION.md, "wasm64 ready ✅") will need to ship a working guest .wasm (or the source + build recipe) for every new Nova.

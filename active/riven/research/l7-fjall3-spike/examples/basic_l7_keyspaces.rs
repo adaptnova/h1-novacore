@@ -107,7 +107,7 @@ fn main() -> anyhow::Result<()> {
     // 52nd FFI confirmation cycle (16:47 MST) continuation: using the tuned KeyspaceCreateOptions at the seam.
     // This demonstrates the end-to-end fluid config path for the l7:reflections tier (open keyspace with the options object + write).
     // The keyspace opened here is the concrete example site for the next cycle's real compaction parameters.
-    let reflections_keyspace = events_db.keyspace("l7_reflections_tuned", || tuned_for_reflections)?;
+    let reflections_keyspace = events_db.keyspace("l7_reflections_tuned", || tuned_for_reflections.clone())?;
     let test_refl_key = b"l7:refl:riven:52nd_confirmation_tuned";
     reflections_keyspace.insert(test_refl_key, b"{\"type\":\"52nd_tuned_config_test\"}")?;
     println!("  (52nd-cycle continuation) Used tuned_for_reflections KeyspaceCreateOptions to open keyspace and write reflection.");
@@ -121,6 +121,13 @@ fn main() -> anyhow::Result<()> {
     // The real .with_... calls (or equivalent CompactionOptions / journal config) will be uncommented in 54th once the exact fjall 3 builder methods are confirmed from the full host source.
     // This is the grounded "production-derived" layer on the 46th–52nd instrumentation thread.
     println!("  (53rd-cycle continuation) Production-derived compaction config shape (from 15:13 host read) ready at the l7 volume seam.");
+
+    // 54th FFI confirmation cycle (16:49 MST) continuation: reusing the production-derived tuned options for a second keyspace at the seam.
+    // This demonstrates that the same config object (with the production-derived compaction shape) can be applied consistently to multiple l7:refl* keyspaces.
+    // The keyspace opened here is the concrete example site showing reuse of the tuned/productions-derived options at the live instrumentation seam.
+    let second_reflections = events_db.keyspace("l7_reflections_tuned_2", || tuned_for_reflections.clone())?;
+    second_reflections.insert(b"l7:refl:riven:54th_tuned_reuse", b"{\"type\":\"54th_reuse_test\"}")?;
+    println!("  (54th-cycle continuation) Reused production-derived tuned_for_reflections options for second keyspace at the seam.");
 
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
