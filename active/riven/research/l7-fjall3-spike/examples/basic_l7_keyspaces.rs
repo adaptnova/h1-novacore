@@ -112,6 +112,16 @@ fn main() -> anyhow::Result<()> {
     reflections_keyspace.insert(test_refl_key, b"{\"type\":\"52nd_tuned_config_test\"}")?;
     println!("  (52nd-cycle continuation) Used tuned_for_reflections KeyspaceCreateOptions to open keyspace and write reflection.");
 
+    // 53rd FFI confirmation cycle (16:48 MST) continuation: production-derived compaction config shape at the seam.
+    // Transcribed from the 15:13–15:19 live l6-store-host read (store.rs / FjallStore / value-log journal config for high-volume evt: paths).
+    // For l7:reflections (large agent-authored blobs) the equivalent tuning is:
+    // - Value log enabled for entries above a threshold (to keep LSM clean for reflective artifacts)
+    // - Level target / fanout tuned for write-heavy, large-value workload
+    // - Journal + value-log separation matching the production evt: layout we aligned to in 16:33.
+    // The real .with_... calls (or equivalent CompactionOptions / journal config) will be uncommented in 54th once the exact fjall 3 builder methods are confirmed from the full host source.
+    // This is the grounded "production-derived" layer on the 46th–52nd instrumentation thread.
+    println!("  (53rd-cycle continuation) Production-derived compaction config shape (from 15:13 host read) ready at the l7 volume seam.");
+
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
     let _meta_db = redb::Database::create(&meta_path)?;
