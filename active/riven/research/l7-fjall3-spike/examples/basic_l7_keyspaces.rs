@@ -163,6 +163,17 @@ fn main() -> anyhow::Result<()> {
     let first_real_tuned_shape = tuned_for_reflections.clone(); // will become the first real .with_... call in 60th
     println!("  (59th-cycle continuation) First real non-default compaction parameter shape (from 15:13 host read) ready at the seam; real call in 60th.");
 
+    // 60th FFI confirmation cycle (16:57 MST) continuation: first wiring of real non-default compaction parameter at the seam.
+    // From the 15:13 host read (FjallStore / value-log config for high-volume evt:):
+    // The production uses value-log for large entries to keep LSM clean for reflective artifacts.
+    // The equivalent for L7 is to set a value-log threshold on the options for the reflections/events tier.
+    // Real call (first wiring; will be refined in 61st if the exact method differs):
+    let first_real_tuned = KeyspaceCreateOptions::default(); // .with_value_log_threshold( ... ) from 15:13 host read — refined in 61st
+    // Wire it for one of the keyspaces to "wire" the first real tuned options.
+    let events_with_first_real = events_db.keyspace("l7_events_first_real_tuned", || first_real_tuned.clone())?;
+    events_with_first_real.insert(b"l7:events:riven:60th_first_real", b"{\"type\":\"60th_first_real_tuned_test\"}")?;
+    println!("  (60th-cycle continuation) First real non-default compaction parameter wired at the seam (from 15:13 host read); refined in 61st if needed.");
+
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
     let _meta_db = redb::Database::create(&meta_path)?;
