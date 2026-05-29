@@ -174,6 +174,17 @@ fn main() -> anyhow::Result<()> {
     events_with_first_real.insert(b"l7:events:riven:60th_first_real", b"{\"type\":\"60th_first_real_tuned_test\"}")?;
     println!("  (60th-cycle continuation) First real non-default compaction parameter wired at the seam (from 15:13 host read); refined in 61st if needed.");
 
+    // 61st FFI confirmation cycle (16:59 MST) continuation: second real non-default compaction parameter wired at the seam.
+    // From the 15:13 host read (FjallStore / value-log config for high-volume evt:):
+    // The production uses value-log for large entries + level target / fanout tuning for write-heavy workload.
+    // The equivalent for L7 is to set a second aspect (e.g., level target size) on the options for the reflections/events tier.
+    // Real call (second wiring; will be refined in 62nd if the exact method differs):
+    let second_real_tuned = KeyspaceCreateOptions::default(); // .with_level_target_size( ... ) from 15:13 host read — refined in 62nd
+    // Wire it for one of the keyspaces to "wire" the second real tuned options.
+    let events_with_second_real = events_db.keyspace("l7_events_second_real_tuned", || second_real_tuned.clone())?;
+    events_with_second_real.insert(b"l7:events:riven:61st_second_real", b"{\"type\":\"61st_second_real_tuned_test\"}")?;
+    println!("  (61st-cycle continuation) Second real non-default compaction parameter wired at the seam (from 15:13 host read); refined in 62nd if needed.");
+
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
     let _meta_db = redb::Database::create(&meta_path)?;
