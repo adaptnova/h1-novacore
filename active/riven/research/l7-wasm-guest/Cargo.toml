@@ -1,0 +1,34 @@
+[package]
+name = "l7-wasm-guest"
+version = "0.1.0"
+edition = "2021"
+authors = ["Riven <riven@adapt>"]
+description = "Thin no_std Wasm64 guest crate for L7+ reflective meta-memory. Declares the exact production FFI from l6-store-wasm host_bindings.rs and provides safe reflective APIs for self-models, future-self directives, and fleet CRDT state."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/TeamADAPT/l7-wasm-guest"
+keywords = ["wasm", "wasm64", "l7", "memory", "reflective", "nova", "adapt", "fjall"]
+categories = ["wasm", "no-std"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[dependencies]
+# Pure no_std + alloc. No external crates in the guest to keep the sandbox minimal,
+# auditable, and fast to compile/validate. All durability, routing, and NATS cross
+# the FFI boundary into the native L7-aware host (evolved from l6-store-host).
+
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"
+missing_docs = "warn"
+
+[lints.clippy]
+pedantic = "warn"
+unwrap_used = "deny"
+expect_used = "warn"
+wildcard_imports = "deny"

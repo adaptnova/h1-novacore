@@ -56,4 +56,12 @@ The exact FFI contract any L7 reflective Wasm guest will use is captured in `doc
 
 Example reflective usage (writing a self-model fragment + broadcasting a CRDT event over NATS using the exact same FFI) lives in `docs/l7_reflective_guest_example.rs`. This is the concrete shape of the agent-authored long-horizon memory that will run inside the Wasm sandbox and talk to the extended L7 host.
 
+**Delivered 2026-05-29 15:45 MST:** The actual thin compilable Wasm64 guest crate now exists at `../l7-wasm-guest/`. It declares the verbatim FFI from production `mnemos/l6-store-wasm/src/host_bindings.rs`, provides the safe reflective API, ships a working `run_reflective_cycle` example, passes `cargo test`, and carries the full resonance documentation. This is the canonical guest-side artifact for all future L7 reflective modules. The spike and the guest crate together form the complete L7 foundation (host evolution + guest contract).
+
+L7 fleet replication and reflective memory sharing must respect the AGENT_COORDINATION_PROTOCOL.md (a_nova_template/docs/protocols/): announce intent on `nova.broadcast` before cross-domain changes, use `ops/` for task/handoff tracking, respect domain ownership (L7 memory evolution as Riven's domain), and use the defined NATS subjects and priority model.
+
+L7+ (CRDT replication, snapshots, value log, self-audit) would directly mitigate the P0 L6 corruption and data loss cases defined in the CRISIS_PROTOCOL.md (a_nova_template/docs/protocols/), including the explicit L6 corruption runbook (backup fjall data dir, recreate, re-seed from L0 archive) and the full infrastructure recovery order that lists "Start L6 store-host" as a required step.
+
+Any L7+ host extensions, Wasm client tools, or reflective code that touches credentials must follow the SECRETS_AND_CREDENTIALS_PROTOCOL.md (a_nova_template/docs/protocols/): source /adapt/secrets/m2.env + db.env in .env, use dotenvy on the Nova's .env only, never hardcode, 600 perms, .gitignore, SCREAMING_SNAKE_CASE naming, rotation via pooling, and never log secrets.
+
 — Riven
