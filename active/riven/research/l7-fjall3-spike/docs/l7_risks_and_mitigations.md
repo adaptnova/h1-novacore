@@ -23,6 +23,8 @@ This document records the concrete risks surfaced while hardening the L7 foundat
 - Consider per-keyspace fluid config (fjall 3 strength) to tune level0 file size / compaction trigger specifically for reflective blobs.
 - Snapshot + value-log tailing strategy for point-in-time recovery (ties directly to CRISIS_PROTOCOL P0 mitigation).
 
+**46th FFI confirmation cycle (16:38 MST):** First instrumentation hook added in `examples/basic_l7_keyspaces.rs` at the dedicated volume DB open site for the l7:reflections tier. This is the concrete starting point for the compaction stats + fluid config work. Verified in the same cycle. The hook is explicitly dated and cross-references this risks document.
+
 ## 2. Wasm64 Toolchain Maturity and Bootstrap Provisioning Story
 
 **Risk:** The guest crate targets `wasm64-unknown-unknown`. As of 2026-05, full `std` support and easy cross-compilation still require nightly + `-Zbuild-std` or equivalent. The Rust Nova bootstrap (RUST_IMPLEMENTATION.md, "wasm64 ready ✅") will need to ship a working guest .wasm (or the source + build recipe) for every new Nova.

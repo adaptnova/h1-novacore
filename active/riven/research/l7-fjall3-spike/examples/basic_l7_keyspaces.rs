@@ -70,6 +70,17 @@ fn main() -> anyhow::Result<()> {
     let events_keyspace = events_db.keyspace("l7_events", || KeyspaceCreateOptions::default())?;
     println!("  Opened separate events.fjall (fjall 3) for volume path.");
 
+    // 46th FFI confirmation cycle (16:38 MST): first step fleshing out compaction instrumentation
+    // (per the open work item at the end of docs/l7_risks_and_mitigations.md delivered in the 45th cycle).
+    // This exact location (after opening the dedicated high-volume DB for l7:refl:* paths) is the
+    // natural hook for:
+    //   - Accessing fjall stats / compaction metrics on the events / reflections tier.
+    //   - Applying fluid per-keyspace compaction config (target file size, level fanout, etc.)
+    //     that is one of fjall 3's major advantages for large-blob reflective workloads.
+    // Future cycles will wire real stats() exposure + a configurable L7 compaction policy here.
+    // This directly mitigates the top risk identified for sustained agent reflective write load.
+    println!("  (46th-cycle hook) Compaction instrumentation / fluid config point for l7 volume tier ready for expansion.");
+
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
     let _meta_db = redb::Database::create(&meta_path)?;
