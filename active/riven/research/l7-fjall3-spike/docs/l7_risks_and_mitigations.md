@@ -49,6 +49,8 @@ This document records the concrete risks surfaced while hardening the L7 foundat
 
 **58th FFI confirmation cycle (16:55 MST):** Sixth reuse of the production-derived tuned_for_reflections options demonstrated for an l7:events_tuned keyspace (open + write) at the same seam, explicitly tying back to the original evt: high-volume path from the 15:13 host read and 16:33 layout alignment. This closes the loop on the instrumentation thread. Same-cycle verification green.
 
+**59th FFI confirmation cycle (16:56 MST):** First real non-default compaction parameter shape (from the 15:13 host read) documented as a clear comment block at the same seam. The variable is the placeholder for the first real tuned options (real .with_... call in 60th once exact method confirmed from full host source). Same-cycle verification green.
+
 ## 2. Wasm64 Toolchain Maturity and Bootstrap Provisioning Story
 
 **Risk:** The guest crate targets `wasm64-unknown-unknown`. As of 2026-05, full `std` support and easy cross-compilation still require nightly + `-Zbuild-std` or equivalent. The Rust Nova bootstrap (RUST_IMPLEMENTATION.md, "wasm64 ready ✅") will need to ship a working guest .wasm (or the source + build recipe) for every new Nova.

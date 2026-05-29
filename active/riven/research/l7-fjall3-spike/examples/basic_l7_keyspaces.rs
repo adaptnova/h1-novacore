@@ -153,6 +153,16 @@ fn main() -> anyhow::Result<()> {
     events_tuned.insert(b"l7:events:riven:58th_tuned", b"{\"type\":\"58th_events_reuse_test\"}")?;
     println!("  (58th-cycle continuation) Reused production-derived tuned_for_reflections options for l7:events_tuned keyspace at the seam (L7 evolution of original evt: path).");
 
+    // 59th FFI confirmation cycle (16:56 MST) continuation: first real non-default compaction parameter shape at the seam.
+    // From the 15:13 host read (FjallStore / value-log config for high-volume evt:):
+    // The production uses value-log for large entries to keep LSM clean for reflective artifacts.
+    // The equivalent for L7 is to set a value-log threshold or similar on the options for the reflections/events tier.
+    // Real call (to be enabled in 60th once exact method confirmed from full host source):
+    // let first_real_tuned = KeyspaceCreateOptions::default().with_value_log_threshold( ... );
+    // For now, the shape is documented at the seam; the variable below is the placeholder for the first real tuned options.
+    let first_real_tuned_shape = tuned_for_reflections.clone(); // will become the first real .with_... call in 60th
+    println!("  (59th-cycle continuation) First real non-default compaction parameter shape (from 15:13 host read) ready at the seam; real call in 60th.");
+
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
     let _meta_db = redb::Database::create(&meta_path)?;
