@@ -147,6 +147,12 @@ fn main() -> anyhow::Result<()> {
     fts_keyspace.insert(b"l7:fts_secondary:riven:57th_tuned", b"{\"type\":\"57th_fts_reuse_test\"}")?;
     println!("  (57th-cycle continuation) Reused production-derived tuned_for_reflections options for l7:fts_secondary keyspace at the seam.");
 
+    // 58th FFI confirmation cycle (16:55 MST) continuation: sixth reuse of the production-derived tuned options at the seam (for l7:events_tuned / volume path, tying back to original evt: from 15:13 host read and 16:33 alignment).
+    // This closes the loop: the same tuned/productions-derived config is now shown as the L7 evolution of the original high-volume evt: path.
+    let events_tuned = events_db.keyspace("l7_events_tuned", || tuned_for_reflections.clone())?;
+    events_tuned.insert(b"l7:events:riven:58th_tuned", b"{\"type\":\"58th_events_reuse_test\"}")?;
+    println!("  (58th-cycle continuation) Reused production-derived tuned_for_reflections options for l7:events_tuned keyspace at the seam (L7 evolution of original evt: path).");
+
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
     let _meta_db = redb::Database::create(&meta_path)?;
