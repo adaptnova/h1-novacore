@@ -1,6 +1,8 @@
 # L7+ Wasm FFI Contract (Derived from Production L6)
 
-**Source of truth (as of 2026-05-29):** Reverse-engineered from the production `l6-store-wasm` crate at `/adapt/novas/active/mnemos/l6-store-wasm/src/host_bindings.rs` and `lib.rs`.
+**Source of truth (as of 2026-05-29 15:19 MST):** Exact declarations read from `/adapt/novas/active/mnemos/l6-store-wasm/src/host_bindings.rs` (and usage in `lib.rs`). A full-tree search (background 114s + targeted follow-up) for any matching provider implementations ("pub fn host_store", "extern.*host_store", calls to the symbols outside the wasm crate) returned **zero results** in any non-target, non-registry .rs under /adapt. The current running host (platform + mnemos copies) satisfies the imports via native StoreState calls in the request handlers; the Linker::func_wrap provisioning is the planned boundary that is not yet visible in greppable source for the store hot path.
+
+This contract is now the immutable foundation for all L7+ Wasm guest work.
 
 This is the exact interface that Wasm modules (including future L7+ reflective computation) use to talk to the native host. The host is responsible for routing based on key prefixes (e.g., "evt:" → fjall, "snap:"/"cur:" → redb in L6).
 

@@ -37,9 +37,12 @@ Prior docs in this spike used approximate module names (fjall_store.rs, redb_sto
 
 The design principle stated in the host README is now confirmed at source level: "OS-dependent I/O stays in the native shim. The wasm module contains only the pure store logic..."
 
-In the current snapshot the NATS/gRPC request paths still execute against native StoreState (the wasm module is loaded but not yet invoked for the store hot path). The FFI contract (host_store_* functions supplied via wasmtime Linker at instantiation) remains the intended boundary for moving the pure blocking logic into the guest — this is the exact seam L7+ will use and extend.
+**FFI Boundary Ground Truth (2026-05-29 15:19 MST — Riven):** 
+- Guest declarations live precisely at `/adapt/novas/active/mnemos/l6-store-wasm/src/host_bindings.rs` (extern "C" with host_store_read/write/delete/list using the classic length-query + buffer pattern, plus host_nats_publish/subscribe, and the #[no_mangle] l6_on_nats_message callback the host calls on inbound messages). The wasm crate's lib.rs shows the safe no_std wrappers.
+- Provider implementations: A complete /adapt tree search (background + targeted) found **zero** definitions or Linker::func_wrap sites for any host_store_* symbol in any Adapt .rs outside build targets and cargo registry (wasmtime-wit-bindgen, wasmtime-wasi). 
+- Current deployed reality (the l6-store-host source read earlier): WasmLoader is present and can load a module, but every request path (NATS handler, gRPC service, process_store_request) calls the native Rust StoreState directly. The full "guest does blocking logic via FFI, host only does I/O + durability + Linker satisfaction" is the architectural intent and the seam L7+ will complete, not the running hot path today.
 
-All subsequent L7 spike work (production_mirror module, FFI sketches, keyspace extensions, CRDT/NATS replication) is now strictly derived from these exact artifacts.
+All subsequent L7 spike work (production_mirror module, FFI sketches, keyspace extensions, CRDT/NATS replication, Wasm client example) is now strictly derived from these exact artifacts and this confirmed boundary. The production_mirror in this spike encodes the native side that future Linker closures will delegate to.
 
 ## High-Level Design
 
