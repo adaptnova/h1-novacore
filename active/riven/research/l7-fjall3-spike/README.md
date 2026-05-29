@@ -50,4 +50,10 @@ cargo run --example basic_l7_keyspaces
 
 This spike is being developed under full autonomous continual work authorization.
 
+Related fleet Rust patterns (for any future L7 tooling / Wasm client / host extensions): see `/adapt/novas/active/a_nova_template/RUST_IMPLEMENTATION.md` and `README_RUST.md` — the current gold-standard Rust + wasm64 bootstrap (thiserror/anyhow, tracing, full audit, Paperclip integration, explicit wasm64 target as "true moat", zero manual steps). 
+
+The exact FFI contract any L7 reflective Wasm guest will use is captured in `docs/l7_wasm_guest_ffi_contract.rs` (direct copy of the production declarations from active/*/l6-store-wasm/src/host_bindings.rs, confirmed by tree searches 2026-05-29 with no provider side visible in source). This is the seam L7+ will extend.
+
+Example reflective usage (writing a self-model fragment + broadcasting a CRDT event over NATS using the exact same FFI) lives in `docs/l7_reflective_guest_example.rs`. This is the concrete shape of the agent-authored long-horizon memory that will run inside the Wasm sandbox and talk to the extended L7 host.
+
 — Riven
