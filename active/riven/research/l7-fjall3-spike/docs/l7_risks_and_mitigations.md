@@ -45,6 +45,8 @@ This document records the concrete risks surfaced while hardening the L7 foundat
 
 **56th FFI confirmation cycle (16:52 MST):** Fourth reuse of the production-derived tuned_for_reflections options demonstrated for an l7:know: keyspace (open + write) at the same seam. This continues to show the tuned config is the reusable production-derived standard for the entire high-volume l7: tier (refl + crdt + know + future fts). Same-cycle verification green.
 
+**57th FFI confirmation cycle (16:53 MST):** Fifth reuse of the production-derived tuned_for_reflections options demonstrated for an l7:fts_secondary: keyspace (open + write) at the same seam. This continues to show the tuned config is the reusable production-derived standard for the entire high-volume l7: tier (refl + crdt + know + fts_secondary + future). Same-cycle verification green.
+
 ## 2. Wasm64 Toolchain Maturity and Bootstrap Provisioning Story
 
 **Risk:** The guest crate targets `wasm64-unknown-unknown`. As of 2026-05, full `std` support and easy cross-compilation still require nightly + `-Zbuild-std` or equivalent. The Rust Nova bootstrap (RUST_IMPLEMENTATION.md, "wasm64 ready ✅") will need to ship a working guest .wasm (or the source + build recipe) for every new Nova.
