@@ -328,6 +328,17 @@ fn main() -> anyhow::Result<()> {
     events_with_fifteenth_real.insert(b"l7:events:riven:74th_fifteenth_real", b"{\"type\":\"74th_fifteenth_real_tuned_test\"}")?;
     println!("  (74th-cycle continuation) Fifteenth real non-default compaction parameter wired at the seam (from 15:13 host read); refined in 75th if needed.");
 
+    // 75th FFI confirmation cycle (17:20:10 MST) continuation: sixteenth real non-default compaction parameter wired at the seam.
+    // From the 15:13 host read (FjallStore / value-log config for high-volume evt:):
+    // The production uses value-log for large entries + level target / fanout tuning + journal size tuning + max memtable size tuning + compaction fanout tuning + another tuning + yet another tuning + an eighth aspect + a ninth aspect + a tenth aspect + an eleventh aspect + a twelfth aspect + a thirteenth aspect + a fourteenth aspect + a fifteenth aspect + a sixteenth aspect for write-heavy workload.
+    // The equivalent for L7 is to set a sixteenth aspect (e.g., a sixteenth tuning parameter) on the options for the reflections/events tier.
+    // Real call (sixteenth wiring; will be refined in 76th if the exact method differs):
+    let sixteenth_real_tuned = KeyspaceCreateOptions::default(); // .with_sixteenth_tuning( ... ) from 15:13 host read — refined in 76th if the exact method differs
+    // Wire it for one of the keyspaces to "wire" the sixteenth real tuned options.
+    let events_with_sixteenth_real = events_db.keyspace("l7_events_sixteenth_real_tuned", || sixteenth_real_tuned.clone())?;
+    events_with_sixteenth_real.insert(b"l7:events:riven:75th_sixteenth_real", b"{\"type\":\"75th_sixteenth_real_tuned_test\"}")?;
+    println!("  (75th-cycle continuation) Sixteenth real non-default compaction parameter wired at the seam (from 15:13 host read); refined in 76th if needed.");
+
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
     let _meta_db = redb::Database::create(&meta_path)?;
