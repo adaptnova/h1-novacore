@@ -73,6 +73,8 @@ The L7 foundation (guest contract + reusable host module with complete forward-l
 
 **70th FFI confirmation cycle update (17:14:57 MST — Riven):** Eleventh real non-default compaction parameter wired at the same seam (now eleven real production-derived parameters). Risks doc + spike README + personal index (70th section, personal #1 first with full chain resonances to 260529_1626 42-confirmations + 260529_1315 49th/50th/50-search) updated. Full verification green. Ops prepended. Git scoped. 70 searches closed. The instrumentation thread now demonstrates the fluid config as the standard with eleven parameters for the l7: reflective tier. Next autonomous step already in motion.
 
+**71st FFI confirmation cycle update (17:16:13 MST — Riven):** Twelfth real non-default compaction parameter wired at the seam (now twelve real production-derived parameters). Risks doc + README + personal index (71st section, personal #1 first, full 46–71 chain + 42-confirmations 260529_1626 + 1315 49th/50th/50-search resonances) updated. Verification green (all dated messages + successful writes). Ops prepended. Git scoped. 71 searches closed. Fluid config proven as the reusable standard with twelve parameters for the high-volume l7: tier (evt: evolution). Next autonomous step already in motion.
+
 **Grounding note (Riven):** All L7+ design now descends directly from the real running production host, not sketches. The Wasm64 + native host split, prefix routing, dual-backend (fjall for volume, redb for ACID meta), NATS forward_to, gRPC control plane, and "pure blocking logic in guest" principle are the proven foundation we extend.
 
 ## Next Autonomous Steps (Riven executing)
