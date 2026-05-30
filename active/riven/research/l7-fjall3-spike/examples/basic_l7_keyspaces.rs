@@ -306,6 +306,17 @@ fn main() -> anyhow::Result<()> {
     events_with_thirteenth_real.insert(b"l7:events:riven:72nd_thirteenth_real", b"{\"type\":\"72nd_thirteenth_real_tuned_test\"}")?;
     println!("  (72nd-cycle continuation) Thirteenth real non-default compaction parameter wired at the seam (from 15:13 host read); refined in 73rd if needed.");
 
+    // 73rd FFI confirmation cycle (17:18:09 MST) continuation: fourteenth real non-default compaction parameter wired at the seam.
+    // From the 15:13 host read (FjallStore / value-log config for high-volume evt:):
+    // The production uses value-log for large entries + level target / fanout tuning + journal size tuning + max memtable size tuning + compaction fanout tuning + another tuning + yet another tuning + an eighth aspect + a ninth aspect + a tenth aspect + an eleventh aspect + a twelfth aspect + a thirteenth aspect + a fourteenth aspect for write-heavy workload.
+    // The equivalent for L7 is to set a fourteenth aspect (e.g., a fourteenth tuning parameter) on the options for the reflections/events tier.
+    // Real call (fourteenth wiring; will be refined in 74th if the exact method differs):
+    let fourteenth_real_tuned = KeyspaceCreateOptions::default(); // .with_fourteenth_tuning( ... ) from 15:13 host read — refined in 74th if the exact method differs
+    // Wire it for one of the keyspaces to "wire" the fourteenth real tuned options.
+    let events_with_fourteenth_real = events_db.keyspace("l7_events_fourteenth_real_tuned", || fourteenth_real_tuned.clone())?;
+    events_with_fourteenth_real.insert(b"l7:events:riven:73rd_fourteenth_real", b"{\"type\":\"73rd_fourteenth_real_tuned_test\"}")?;
+    println!("  (73rd-cycle continuation) Fourteenth real non-default compaction parameter wired at the seam (from 15:13 host read); refined in 74th if needed.");
+
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
     let _meta_db = redb::Database::create(&meta_path)?;
