@@ -1,0 +1,22 @@
+# Thin repo discipline (TeamADAPT / Riven)
+# Only permanent source + docs belong in version control.
+
+# Build artifacts (massive, ephemeral)
+/target/
+
+# Cargo lock for zero-dependency cdylib is pure noise
+Cargo.lock
+
+# Rust/Cargo noise
+**/*.rs.bk
+Cargo.lock.bk
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db

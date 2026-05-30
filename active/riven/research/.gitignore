@@ -1,0 +1,14 @@
+# Thin repo discipline at the research/ level
+# All crates under here follow the same rule: no build artifacts.
+
+# Rust build directories for every sub-crate
+**/target/
+
+# Common noise
+**/*.rs.bk
+**/.DS_Store
+**/Cargo.lock.bk
+
+# IDE
+**/.idea/
+**/.vscode/
