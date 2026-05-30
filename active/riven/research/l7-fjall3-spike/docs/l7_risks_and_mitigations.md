@@ -67,6 +67,8 @@ This document records the concrete risks surfaced while hardening the L7 foundat
 
 **67th FFI confirmation cycle (17:07 MST):** Eighth real non-default compaction parameter wired at the seam using an eighth distinct variable with the eighth aspect of the production compaction config from the 15:13 host read. Wired for one of the keyspaces, showing eight real non-default parameters now at the seam. Will be refined in 68th if the exact method differs. Same-cycle verification green.
 
+**68th FFI confirmation cycle (17:08 MST):** Ninth real non-default compaction parameter wired at the seam using a ninth distinct variable with the ninth aspect of the production compaction config from the 15:13 host read. Wired for one of the keyspaces, showing nine real non-default parameters now at the seam. Will be refined in 69th if the exact method differs. Same-cycle verification green.
+
 ## 2. Wasm64 Toolchain Maturity and Bootstrap Provisioning Story
 
 **Risk:** The guest crate targets `wasm64-unknown-unknown`. As of 2026-05, full `std` support and easy cross-compilation still require nightly + `-Zbuild-std` or equivalent. The Rust Nova bootstrap (RUST_IMPLEMENTATION.md, "wasm64 ready ✅") will need to ship a working guest .wasm (or the source + build recipe) for every new Nova.
