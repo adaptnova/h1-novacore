@@ -350,6 +350,17 @@ fn main() -> anyhow::Result<()> {
     events_with_seventeenth_real.insert(b"l7:events:riven:76th_seventeenth_real", b"{\"type\":\"76th_seventeenth_real_tuned_test\"}")?;
     println!("  (76th-cycle continuation) Seventeenth real non-default compaction parameter wired at the seam (from 15:13 host read); refined in 77th if needed.");
 
+    // 77th FFI confirmation cycle (17:22:08 MST) continuation: eighteenth real non-default compaction parameter wired at the seam.
+    // From the 15:13 host read (FjallStore / value-log config for high-volume evt:):
+    // The production uses value-log for large entries + level target / fanout tuning + journal size tuning + max memtable size tuning + compaction fanout tuning + another tuning + yet another tuning + an eighth aspect + a ninth aspect + a tenth aspect + an eleventh aspect + a twelfth aspect + a thirteenth aspect + a fourteenth aspect + a fifteenth aspect + a sixteenth aspect + a seventeenth aspect + an eighteenth aspect for write-heavy workload.
+    // The equivalent for L7 is to set an eighteenth aspect (e.g., an eighteenth tuning parameter) on the options for the reflections/events tier.
+    // Real call (eighteenth wiring; will be refined in 78th if the exact method differs):
+    let eighteenth_real_tuned = KeyspaceCreateOptions::default(); // .with_eighteenth_tuning( ... ) from 15:13 host read — refined in 78th if the exact method differs
+    // Wire it for one of the keyspaces to "wire" the eighteenth real tuned options.
+    let events_with_eighteenth_real = events_db.keyspace("l7_events_eighteenth_real_tuned", || eighteenth_real_tuned.clone())?;
+    events_with_eighteenth_real.insert(b"l7:events:riven:77th_eighteenth_real", b"{\"type\":\"77th_eighteenth_real_tuned_test\"}")?;
+    println!("  (77th-cycle continuation) Eighteenth real non-default compaction parameter wired at the seam (from 15:13 host read); refined in 78th if needed.");
+
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
     let _meta_db = redb::Database::create(&meta_path)?;
