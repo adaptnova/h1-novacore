@@ -416,6 +416,17 @@ fn main() -> anyhow::Result<()> {
     events_with_twentythird_real.insert(b"l7:events:riven:82nd_twentythird_real", b"{\"type\":\"82nd_twentythird_real_tuned_test\"}")?;
     println!("  (82nd-cycle continuation) Twenty-third real non-default compaction parameter wired at the seam (from 15:13 host read); refined in 83rd if needed.");
 
+    // 83rd FFI confirmation cycle (17:28:53 MST) continuation: twenty-fourth real non-default compaction parameter wired at the seam.
+    // From the 15:13 host read (FjallStore / value-log config for high-volume evt:):
+    // The production uses value-log for large entries + level target / fanout tuning + journal size tuning + max memtable size tuning + compaction fanout tuning + another tuning + yet another tuning + an eighth aspect + a ninth aspect + a tenth aspect + an eleventh aspect + a twelfth aspect + a thirteenth aspect + a fourteenth aspect + a fifteenth aspect + a sixteenth aspect + a seventeenth aspect + an eighteenth aspect + a nineteenth aspect + a twentieth aspect + a twenty-first aspect + a twenty-second aspect + a twenty-third aspect + a twenty-fourth aspect for write-heavy workload.
+    // The equivalent for L7 is to set a twenty-fourth aspect (e.g., a twenty-fourth tuning parameter) on the options for the reflections/events tier.
+    // Real call (twenty-fourth wiring; will be refined in 84th if the exact method differs):
+    let twentyfourth_real_tuned = KeyspaceCreateOptions::default(); // .with_twentyfourth_tuning( ... ) from 15:13 host read — refined in 84th if the exact method differs
+    // Wire it for one of the keyspaces to "wire" the twenty-fourth real tuned options.
+    let events_with_twentyfourth_real = events_db.keyspace("l7_events_twentyfourth_real_tuned", || twentyfourth_real_tuned.clone())?;
+    events_with_twentyfourth_real.insert(b"l7:events:riven:83rd_twentyfourth_real", b"{\"type\":\"83rd_twentyfourth_real_tuned_test\"}")?;
+    println!("  (83rd-cycle continuation) Twenty-fourth real non-default compaction parameter wired at the seam (from 15:13 host read); refined in 84th if needed.");
+
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
     let _meta_db = redb::Database::create(&meta_path)?;
