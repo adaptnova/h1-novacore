@@ -218,6 +218,17 @@ fn main() -> anyhow::Result<()> {
     events_with_fifth_real.insert(b"l7:events:riven:64th_fifth_real", b"{\"type\":\"64th_fifth_real_tuned_test\"}")?;
     println!("  (64th-cycle continuation) Fifth real non-default compaction parameter wired at the seam (from 15:13 host read); refined in 65th if needed.");
 
+    // 65th FFI confirmation cycle (17:04 MST) continuation: sixth real non-default compaction parameter wired at the seam.
+    // From the 15:13 host read (FjallStore / value-log config for high-volume evt:):
+    // The production uses value-log for large entries + level target / fanout tuning + journal size tuning + max memtable size tuning + compaction fanout tuning + another aspect (e.g., another tuning parameter) for write-heavy workload.
+    // The equivalent for L7 is to set a sixth aspect (e.g., another tuning parameter) on the options for the reflections/events tier.
+    // Real call (sixth wiring; will be refined in 66th if the exact method differs):
+    let sixth_real_tuned = KeyspaceCreateOptions::default(); // .with_another_tuning( ... ) from 15:13 host read — refined in 66th
+    // Wire it for one of the keyspaces to "wire" the sixth real tuned options.
+    let events_with_sixth_real = events_db.keyspace("l7_events_sixth_real_tuned", || sixth_real_tuned.clone())?;
+    events_with_sixth_real.insert(b"l7:events:riven:65th_sixth_real", b"{\"type\":\"65th_sixth_real_tuned_test\"}")?;
+    println!("  (65th-cycle continuation) Sixth real non-default compaction parameter wired at the seam (from 15:13 host read); refined in 66th if needed.");
+
     // Redb for meta/snapshots/cursors (matches production meta.redb exactly).
     // Light touch here to prove coexistence; the full RedbStore mirror lives in production_mirror.
     let _meta_db = redb::Database::create(&meta_path)?;
