@@ -47,7 +47,19 @@ Use this for every Nova birth, retarget, or project-team onboarding. The old pro
 - [ ] L5 raw session source write works.
 - [ ] L6 NATS publish works or reports explicit skip reason.
 
-## E. Historical backfill and mirrors
+## E. Infrastructure, graph/vector, trace/playback
+
+- [ ] NATS direct/event/memory subjects exist and accept probe publish/request.
+- [ ] Nexus route/channel registration exists for direct and assigned team/project rooms.
+- [ ] DragonflyDB namespace probe works for presence, heartbeat, cache, locks, counters.
+- [ ] Redpanda durable topics exist and probe publish/read works.
+- [ ] NebulaDB graph space exists and Nova/project/channel/memory provenance vertices + edges upsert/query.
+- [ ] Vector DB/L3 semantic probe embeds and retrieves identity + realtime turn.
+- [ ] Hermes runtime DBs/JSONL mirrors are present and no stale lock blocks launch.
+- [ ] E2E trace records the full user→Hermes→LLM→MemFirst→Nexus/fanout path.
+- [ ] Playback can reconstruct the trace and identify the first broken hop without mutating production state.
+
+## F. Historical backfill and mirrors
 
 - [ ] Historical Codex/Hermes/session exports are copied into `history/` or `memory/l0/intake/sessions/` as appropriate.
 - [ ] Durable facts are distilled into `MEMORY.md`; raw transcript is preserved, not pasted blindly into durable memory.
@@ -72,5 +84,15 @@ realtime_post_llm_ingestion:
   l5: PASS
   l6: PASS|SKIPPED(reason)
 historical_backfill: DONE|NOT_REQUIRED|SEPARATE_PENDING
+infra_channels_databases_monitoring:
+  nats: PASS|FAIL
+  nexus: PASS|FAIL|SKIPPED(reason)
+  dragonflydb: PASS|FAIL
+  redpanda: PASS|FAIL
+  nebuladb: PASS|FAIL|SKIPPED(reason)
+  vector_db: PASS|FAIL|SKIPPED(reason)
+  hermes_databases: PASS|FAIL
+  e2e_trace: PASS|FAIL
+  playback: PASS|FAIL
 structured_identity_prompt: PASS
 ```

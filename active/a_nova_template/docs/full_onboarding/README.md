@@ -9,7 +9,8 @@ This directory is the consolidated full onboarding pack. It plugs the old projec
 2. `02_hermes_runtime.md` — Hermes profile/config/session/runtime setup.
 3. `03_memfirst_realtime.md` — seed + realtime pre/post LLM memory ingestion/injection.
 4. `04_session_backfill_and_mirror.md` — historical imports and Codex/Veyra mirror pattern.
-5. `verify_full_onboarding.py` — static verifier for generated Nova homes.
+5. `05_infra_channels_databases_monitoring.md` — NATS, Nexus, DragonflyDB, Redpanda, NebulaDB graph, vector DB, Hermes DBs, E2E trace, and playback monitoring.
+6. `verify_full_onboarding.py` — static verifier for generated Nova homes.
 
 ## Existing docs rule
 
