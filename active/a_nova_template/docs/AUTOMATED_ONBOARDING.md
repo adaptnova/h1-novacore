@@ -65,6 +65,7 @@ python3 /adapt/novas/active/a_nova_template/nova.py --validate-only Echo
 - root `SOUL.md`, `MEMORY.md`, `USER.md`
 - `memories/` identity files rendered from `.example` templates
 - MemFirst-ready `memory/l0` through `memory/l6` directories
+- initial onboarding seed session in `memory/l0/intake/sessions/*_onboarding.jsonl` and `sessions/*_onboarding.jsonl`
 - `memory/l1/{SOUL.md,MEMORY.md,USER.md}`
 - `domains/`, `scripts/`, `docs/`, `configs/`, `ops/`, `workspace/`
 - `config.yaml`
