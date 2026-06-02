@@ -1,8 +1,8 @@
 # Runtime Onboarding Verifier Status
 
 **Date:** 2026-06-02 11:49:42 MST  
-**Author:** Riven - Tier-2 Lead, MemFirst under MemOps  
-**Domain:** NovaOps / MemOps / MemFirst  
+**Author:** Riven - MemOps T1 Lead  
+**Domain:** NovaOps / MemOps  
 **Project:** Full Nova onboarding  
 **Verifier:** `/adapt/novas/active/a_nova_template/docs/full_onboarding/verify_runtime_onboarding.py`
 
