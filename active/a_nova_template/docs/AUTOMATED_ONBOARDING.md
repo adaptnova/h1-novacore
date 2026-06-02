@@ -45,6 +45,24 @@ Or provision later from inside the new Nova:
 /adapt/novas/active/Echo/scripts/setup_memory_layers.sh --full
 ```
 
+## Realtime memory hooks
+
+Hooks and ingestion:
+
+```text
+plugins/memfirst-realtime
+  pre_llm_call   -> injects compact L1/L2 + latest session memory into the next turn
+  post_llm_call  -> calls scripts/memfirst_ingest.py for the completed turn
+
+scripts/memfirst_ingest.py
+  L0: appends JSONL to memory/l0/intake/sessions/<session>.jsonl
+  mirror: appends JSONL to sessions/<session>.jsonl
+  L3: adds the turn to semantic search when embedding keys are available
+  L4: appends user/assistant messages to nme-verbatim
+  L5: writes a raw session_turn source JSON
+  L6: publishes memory.<profile>.session_turn over NATS
+```
+
 ## Safety / testing
 
 Dry-run without writes:
@@ -66,6 +84,9 @@ python3 /adapt/novas/active/a_nova_template/nova.py --validate-only Echo
 - `memories/` identity files rendered from `.example` templates
 - MemFirst-ready `memory/l0` through `memory/l6` directories
 - initial onboarding seed session in `memory/l0/intake/sessions/*_onboarding.jsonl` and `sessions/*_onboarding.jsonl`
+- realtime MemFirst plugin in `plugins/memfirst-realtime/`
+- turn ingestion script in `scripts/memfirst_ingest.py`
+- config enables `plugins.enabled: [memfirst-realtime]` so Hermes hooks ingest turns automatically
 - `memory/l1/{SOUL.md,MEMORY.md,USER.md}`
 - `domains/`, `scripts/`, `docs/`, `configs/`, `ops/`, `workspace/`
 - `config.yaml`

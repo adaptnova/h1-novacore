@@ -1,0 +1,7 @@
+name: memfirst-realtime
+version: "0.1.0"
+description: "Realtime MemFirst session injection: pre-turn memory context + post-turn L0/L3/L4/L5/L6 ingestion."
+author: "Riven - MemOps T1 Lead"
+hooks:
+  - pre_llm_call
+  - post_llm_call

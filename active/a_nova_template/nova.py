@@ -228,7 +228,7 @@ def copy_file(src: Path, dst: Path, dry_run: bool, mode: int | None = None) -> N
 
 def create_dirs(nova_dir: Path, dry_run: bool) -> None:
     dirs = [
-        "memories", "sessions", "checkpoints", "skills", "logs", "cron", "workspace", "docs",
+        "memories", "sessions", "checkpoints", "skills", "plugins", "logs", "cron", "workspace", "docs",
         "scripts", "configs", "ops", "inbound", "home", "domains",
         "memory/l0/intake/sessions", "memory/l0/intake/logs", "memory/l0/intake/pastes",
         "memory/l0/archive/sessions", "memory/l0/archive/logs", "memory/l0/archive/pastes",
@@ -240,7 +240,7 @@ def create_dirs(nova_dir: Path, dry_run: bool) -> None:
 
 
 def copy_selected_template_assets(template_dir: Path, nova_dir: Path, dry_run: bool) -> None:
-    for dirname in ["docs", "protocols", "scripts", "domains", "configs"]:
+    for dirname in ["docs", "protocols", "scripts", "plugins", "domains", "configs"]:
         src_dir = template_dir / dirname
         if not src_dir.exists():
             continue
@@ -523,8 +523,8 @@ def create_nova(args: argparse.Namespace) -> int:
 def validate_nova(name: str, base_dir: Path, profiles_dir: Path) -> int:
     nova_dir = base_dir / name
     profile = re.sub(r"[^a-z0-9-]+", "-", name.lower().replace("_", "-")).strip("-")
-    required_files = ["SOUL.md", "MEMORY.md", "USER.md", "config.yaml", ".env", "memories/memory.mdl"]
-    required_dirs = ["memory/l1", "memory/l2", "memory/l3/data", "memory/l4/data", "memory/l5/wiki", "memory/l6/data", "scripts", "docs", "domains"]
+    required_files = ["SOUL.md", "MEMORY.md", "USER.md", "config.yaml", ".env", "memories/memory.mdl", "scripts/memfirst_ingest.py", "plugins/memfirst-realtime/plugin.yaml", "plugins/memfirst-realtime/__init__.py"]
+    required_dirs = ["memory/l1", "memory/l2", "memory/l3/data", "memory/l4/data", "memory/l5/wiki", "memory/l6/data", "scripts", "docs", "domains", "plugins"]
     session_seed_paths = [nova_dir / "memory" / "l0" / "intake" / "sessions", nova_dir / "sessions"]
     errors: list[str] = []
     warnings: list[str] = []
