@@ -363,6 +363,79 @@ def register_profile(identity: NovaIdentity, dry_run: bool, skip: bool) -> None:
         print(f"WARN: Hermes registration skipped/failed: {exc}", file=sys.stderr)
 
 
+def preflight_runtime(provisioner: Path, dry_run: bool = False) -> bool:
+    """Validate services/secrets/binaries needed for full MemFirst provisioning."""
+    script = r'''
+set +x
+errors=0
+check_file() { if [ -f "$1" ]; then echo "  $2: PASS"; else echo "  $2: FAIL missing $1"; errors=$((errors+1)); fi; }
+check_exec() { if [ -x "$1" ]; then echo "  $2: PASS"; else echo "  $2: FAIL missing/not executable $1"; errors=$((errors+1)); fi; }
+check_cmd() { if command -v "$1" >/dev/null 2>&1; then echo "  command_$1: PASS"; else echo "  command_$1: FAIL"; errors=$((errors+1)); fi; }
+
+check_file /adapt/secrets/m2.env secrets_m2_env
+check_file /adapt/secrets/db.env secrets_db_env
+check_exec __PROVISIONER__ provisioner
+check_exec /adapt/platform/novaops/toolops/memory/nme-static/nme-l1 binary_nme_l1
+check_exec /adapt/platform/novaops/toolops/memory/l3-semantic/target/release/nme-semantic binary_l3_semantic
+check_exec /adapt/platform/novaops/toolops/memory/l4-verbatim/target/release/nme-verbatim binary_l4_verbatim
+check_exec /adapt/platform/novaops/toolops/memory/l6-store-host/l6-store-host binary_l6_store_host
+check_cmd nats
+check_cmd redis-cli
+check_cmd rpk
+
+if [ -f /adapt/secrets/db.env ]; then set -a; . /adapt/secrets/db.env; set +a; fi
+if [ -f /adapt/secrets/m2.env ]; then set -a; . /adapt/secrets/m2.env; set +a; fi
+
+if [ -n "${VOYAGE_API_KEY:-}${VOYAGE_AI_API_KEY:-}" ]; then echo "  embedding_key: PASS"; else echo "  embedding_key: FAIL"; errors=$((errors+1)); fi
+if [ -n "${STORE_AUTH_TOKEN:-}" ]; then echo "  store_auth_token: PASS"; else echo "  store_auth_token: WARN missing (required by hardened L6 direct startup; provisioner may generate/export it)"; fi
+
+NATS_SERVER="${NATS_URL:-nats://localhost:18020}"
+if command -v nats >/dev/null 2>&1 && nats --server "$NATS_SERVER" ${NATS_USER:+--user "$NATS_USER"} ${NATS_PASSWORD:+--password "$NATS_PASSWORD"} server check connection >/tmp/nova_preflight_nats.out 2>/tmp/nova_preflight_nats.err; then
+  echo "  service_nats: PASS"
+else
+  echo "  service_nats: FAIL"
+  errors=$((errors+1))
+fi
+
+if [ -n "${DRAGONFLY_URL:-}" ]; then
+  redis_cmd=(redis-cli -u "$DRAGONFLY_URL" ping)
+else
+  PASS="${DRAGONFLY_PASSWORD:-${REDIS_PASSWORD:-${NATS_PASSWORD:-}}}"
+  if [ -n "$PASS" ]; then redis_cmd=(redis-cli -h 127.0.0.1 -p 18000 -a "$PASS" --no-auth-warning ping); else redis_cmd=(redis-cli -h 127.0.0.1 -p 18000 ping); fi
+fi
+if command -v redis-cli >/dev/null 2>&1 && "${redis_cmd[@]}" >/tmp/nova_preflight_redis.out 2>/tmp/nova_preflight_redis.err; then
+  echo "  service_dragonfly: PASS"
+else
+  echo "  service_dragonfly: FAIL"
+  errors=$((errors+1))
+fi
+
+BROKERS="${REDPANDA_BROKERS:-127.0.0.1:18021}"
+if command -v rpk >/dev/null 2>&1 && rpk cluster info --brokers "$BROKERS" >/tmp/nova_preflight_rpk.out 2>/tmp/nova_preflight_rpk.err; then
+  echo "  service_redpanda: PASS"
+else
+  echo "  service_redpanda: FAIL"
+  errors=$((errors+1))
+fi
+
+if [ -d /adapt/platform/novaops/_shared/wiki ]; then echo "  obsidian_vault: PASS"; else echo "  obsidian_vault: FAIL"; errors=$((errors+1)); fi
+exit "$errors"
+'''.replace("__PROVISIONER__", str(provisioner))
+    if dry_run:
+        print("DRY full-runtime preflight")
+        return True
+    print("full_runtime_preflight:")
+    result = subprocess.run(["bash", "-lc", script], text=True, capture_output=True)
+    print(result.stdout, end="")
+    if result.returncode != 0:
+        if result.stderr:
+            print(result.stderr, file=sys.stderr)
+        print(f"full_runtime_preflight_result: FAIL ({result.returncode} blocker(s))")
+        return False
+    print("full_runtime_preflight_result: PASS")
+    return True
+
+
 def run_memfirst(identity: NovaIdentity, provisioner: Path, dry_run: bool, verify_only: bool) -> None:
     command = [str(provisioner), identity.nova_name]
     if verify_only:
@@ -372,6 +445,8 @@ def run_memfirst(identity: NovaIdentity, provisioner: Path, dry_run: bool, verif
         return
     if not provisioner.exists():
         raise FileNotFoundError(f"MemFirst provisioner not found: {provisioner}")
+    if not preflight_runtime(provisioner):
+        raise RuntimeError("full MemFirst runtime preflight failed; fix services/secrets before --memfirst")
     subprocess.run(command, check=True)
 
 
@@ -452,6 +527,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--validate", action="store_true", help="Validate after creation")
     parser.add_argument("--validate-only", metavar="NAME", help="Validate an existing Nova")
     parser.add_argument("--memfirst", action="store_true", help="Run full MemFirst provisioner after profile creation")
+    parser.add_argument("--preflight-runtime", action="store_true", help="Validate services/secrets/binaries required for --memfirst, then exit")
     parser.add_argument("--skip-hermes-register", action="store_true", help="Skip hermes profile use")
     return parser
 
@@ -461,6 +537,8 @@ def main(argv: list[str] | None = None) -> int:
     try:
         base_dir = Path(args.base_dir).expanduser().resolve()
         profiles_dir = resolve_profiles_dir(args)
+        if args.preflight_runtime:
+            return 0 if preflight_runtime(Path(args.provisioner)) else 1
         if args.validate_only:
             return validate_nova(args.validate_only, base_dir, profiles_dir)
         if not args.name and not args.config:

@@ -25,11 +25,19 @@ python3 /adapt/novas/active/a_nova_template/nova.py --config /tmp/echo.yaml --va
 
 ## Full MemFirst provisioning
 
-When NATS/Dragonfly/Redpanda/secrets are ready:
+First check runtime readiness:
+
+```bash
+python3 /adapt/novas/active/a_nova_template/nova.py --preflight-runtime
+```
+
+When NATS/Dragonfly/Redpanda/secrets/binaries are ready:
 
 ```bash
 python3 /adapt/novas/active/a_nova_template/nova.py --name Echo --validate --memfirst
 ```
+
+`--memfirst` automatically runs the same full-runtime preflight before it calls the MemFirst provisioner.
 
 Or provision later from inside the new Nova:
 
