@@ -4,11 +4,16 @@ This directory is the consolidated full onboarding pack. It plugs the old projec
 
 ## Source order
 
+0. `00_existing_docs_map.md` — routes every existing doc in `docs/` so old references do not compete with the full onboarding gate.
 1. `01_full_onboarding_checklist.md` — operator checklist and acceptance gates.
 2. `02_hermes_runtime.md` — Hermes profile/config/session/runtime setup.
 3. `03_memfirst_realtime.md` — seed + realtime pre/post LLM memory ingestion/injection.
 4. `04_session_backfill_and_mirror.md` — historical imports and Codex/Veyra mirror pattern.
 5. `verify_full_onboarding.py` — static verifier for generated Nova homes.
+
+## Existing docs rule
+
+Existing docs stay. They are scoped in `00_existing_docs_map.md` as architecture, protocol, migration, or historical references. If they conflict with this directory's acceptance criteria, `docs/full_onboarding/` wins for onboarding completion.
 
 ## Canonical command
 

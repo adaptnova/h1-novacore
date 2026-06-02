@@ -79,6 +79,8 @@ python3 /adapt/novas/active/a_nova_template/docs/full_onboarding/verify_full_onb
 
 This verifies Hermes config YAML, profile/plugin readiness, L0 onboarding seeds, realtime hook declarations, and identity mirror basics. Runtime L3/L4/L5/L6 fanout still needs the realtime probe when services/secrets are available.
 
+Existing docs in `docs/` are routed by `docs/full_onboarding/00_existing_docs_map.md`; old architecture/protocol docs remain useful, but the full onboarding overlay is the acceptance gate.
+
 ## Safety / testing
 
 Dry-run without writes:
