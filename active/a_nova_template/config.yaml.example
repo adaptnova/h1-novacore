@@ -14,15 +14,15 @@ toolsets:
 - hermes-cli
 - terminal
 agent:
- max_turns: 90000
- gateway_timeout: 1800
- restart_drain_timeout: 60
- api_max_retries: 6
- service_tier: ''
- tool_use_enforcement: auto
- gateway_timeout_warning: 900
- gateway_notify_interval: 180
- gateway_auto_continue_freshness: 3600
+  max_turns: 90000
+  gateway_timeout: 1800
+  restart_drain_timeout: 60
+  api_max_retries: 6
+  service_tier: ''
+  tool_use_enforcement: auto
+  gateway_timeout_warning: 900
+  gateway_notify_interval: 180
+  gateway_auto_continue_freshness: 3600
   image_input_mode: auto
   verbose: false
   reasoning_effort: medium
@@ -141,14 +141,14 @@ auxiliary:
     api_key: ${NVIDIA_API_KEY}
     timeout: 30
     extra_body: {}
- title_generation:
+title_generation:
   provider: auto
   model: nim/glm-4.7
   base_url: ''
   api_key: ''
   timeout: 30
   extra_body: {}
- flush_memories:
+flush_memories:
   model: nim/glm-4.7
 display:
   compact: false
@@ -175,7 +175,7 @@ display:
     nats:
       enabled: true
       extra:
-        url: "nats://admin:Echovaeris1966!!@localhost:18020"
+        url: "${NATS_URL}"
         subjects:
           - "nova.{agent_name}.direct"
           - "nova.*.direct"

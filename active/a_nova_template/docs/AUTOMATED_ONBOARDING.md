@@ -63,6 +63,22 @@ scripts/memfirst_ingest.py
   L6: publishes memory.<profile>.session_turn over NATS
 ```
 
+## Full onboarding overlay
+
+The consolidated full Nova + Hermes + MemFirst checklist lives in:
+
+```text
+/adapt/novas/active/a_nova_template/docs/full_onboarding/
+```
+
+After creating a Nova, run the static full-onboarding verifier:
+
+```bash
+python3 /adapt/novas/active/a_nova_template/docs/full_onboarding/verify_full_onboarding.py /adapt/novas/active/Echo
+```
+
+This verifies Hermes config YAML, profile/plugin readiness, L0 onboarding seeds, realtime hook declarations, and identity mirror basics. Runtime L3/L4/L5/L6 fanout still needs the realtime probe when services/secrets are available.
+
 ## Safety / testing
 
 Dry-run without writes:

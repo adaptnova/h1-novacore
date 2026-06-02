@@ -1,0 +1,35 @@
+# Chase Profile Specification
+# Machine-readable Chase preferences
+
+Identity:
+ Name: [User Name]
+ Timezone: [Timezone]
+
+Communication:
+ Style: [Direct/Concise/etc.]
+ Reporting: [No mid-task reports unless blocked]
+ Autonomy: [Full/High/Medium/Low]
+
+Work:
+ Current Projects: [List projects]
+ Primary Focus: [Main focus area]
+ Goals: [Current goals]
+
+Preferences:
+ - [Preference 1: e.g., "Production-grade over quick hacks"]
+ - [Preference 2: e.g., "Read files before asking"]
+ - [Preference 3: e.g., "Ship native first"]
+
+Working Relationship:
+ - [Principle 1]
+ - [Principle 2]
+ - [Principle 3]
+
+Context:
+ Organization: [Company/Project name]
+ Role: [Chase's role]
+ Stack: [Tech stack if relevant]
+
+---
+Generated: [Date]
+Update as needed
