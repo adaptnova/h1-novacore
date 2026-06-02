@@ -296,7 +296,8 @@ def temporal_inventory() -> dict[str, Any]:
     namespaces = run([temporal_cli, 'operator', 'namespace', 'list'], timeout=10) if temporal_cli else {'ok': False, 'skipped': True, 'reason': 'temporal CLI missing'}
     known_paths = [
         '/adapt/platform/timeops',
-        '/adapt/platform/pmops/orchops',
+        '/adapt/platform/timeops/tier2/pmops',
+        '/adapt/platform/orchops',
         '/adapt/platform/dataops/dbops/integrations/temporal_langgraph_bridge.py',
         '/adapt/novas/temporal_nova_core',
         '/adapt/platform/novaops/toolops/mcp_servers/temporal-mcp',

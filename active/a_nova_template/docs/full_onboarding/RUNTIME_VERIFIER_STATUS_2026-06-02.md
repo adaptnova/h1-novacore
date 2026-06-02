@@ -1,8 +1,8 @@
 # Runtime Onboarding Verifier Status
 
 **Date:** 2026-06-02 11:49:42 MST  
-**Author:** Riven - MemOps T1 Lead  
-**Domain:** NovaOps / MemOps  
+**Author:** Riven - Tier-2 Lead, MemFirst under MemOps  
+**Domain:** NovaOps / MemOps / MemFirst  
 **Project:** Full Nova onboarding  
 **Verifier:** `/adapt/novas/active/a_nova_template/docs/full_onboarding/verify_runtime_onboarding.py`
 
@@ -131,10 +131,11 @@ temporal_io_touch_inventory:
   temporal_cli: /home/x/.temporalio/bin/temporal
   cluster_health: true
   namespaces: true
-  known_touch_paths_count: 6
+  known_touch_paths_count: 7
   known_touch_paths:
     - /adapt/platform/timeops
-    - /adapt/platform/pmops/orchops
+    - /adapt/platform/timeops/tier2/pmops
+    - /adapt/platform/orchops
     - /adapt/platform/dataops/dbops/integrations/temporal_langgraph_bridge.py
     - /adapt/novas/temporal_nova_core
     - /adapt/platform/novaops/toolops/mcp_servers/temporal-mcp
