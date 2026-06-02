@@ -185,6 +185,22 @@ infra_channels_databases_monitoring:
   hermes_databases: PASS|FAIL
   e2e_trace: PASS|FAIL
   playback: PASS|FAIL
+  temporal_io_touch_inventory: PASS|FAIL|SKIPPED(reason)
+```
+
+Temporal.io touch inventory is required because Temporal workers/workflows can silently own or replay parts of the runtime. The runtime verifier inventories, without mutating workflows:
+
+```yaml
+temporal_io_touch_inventory:
+  checks:
+    - temporal CLI availability
+    - user/system service units
+    - running temporal processes/workers
+    - ports 7233/8233 and related listeners
+    - cluster health
+    - namespaces
+    - known repo/config touch paths
+  rule: inventory only; do not start/stop workflows during onboarding verification unless explicitly directed
 ```
 
 A Nova is not production-onboarded until at least one complete user→Hermes→LLM→MemFirst→Nexus/trace path can be replayed from recorded trace data.
