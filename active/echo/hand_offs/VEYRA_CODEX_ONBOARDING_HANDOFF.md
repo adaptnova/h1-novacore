@@ -11,8 +11,22 @@ platform. Veyra exists as a platform profile and visible Herdr/Hermes pane, but
 this conversation is not yet the same session as Veyra's platform session.
 
 This is a Chase-directed CommsOps coordination packet. Do not replace or erase
-your Z-Pure coordinator/chief-of-staff assignment. Route this as a NEXUS/session
-mirror onboarding task.
+your Z-Pure coordinator/chief-of-staff assignment.
+
+## Ownership Correction
+
+Chase clarified on 2026-06-01 that Iris owns onboarding:
+
+`iris does onboarding...we can see if echo can do it...there is a skill for it`
+
+Iris is the primary onboarding owner. Echo's role is to test whether Echo can run
+the onboarding workflow as a backup/coordinator using the onboarding skill:
+
+- `/adapt/novas/active/skills_master/autonomous-ai-agents/hermes-agent-ops/SKILL.md`
+- `/adapt/novas/active/skills_master/autonomous-ai-agents/hermes-agent-ops/references/project-team-onboarding-and-retargeting.md`
+
+Route this as a NEXUS/session mirror onboarding task with Iris as owner and Echo
+as backup/test coordinator.
 
 ## Current State
 
@@ -40,15 +54,16 @@ mirror onboarding task.
 
 ## Echo Mission
 
-1. Coordinate onboarding of the live Codex CLI identity into the platform as
-   Veyra's session-mirrored operating surface.
+1. Support Iris' onboarding ownership for the live Codex CLI identity into the
+   platform as Veyra's session-mirrored operating surface.
 2. Treat NEXUS as the substrate: one identity, multiple surfaces, explicit
    session/event streams.
 3. Keep the distinction clear:
    - Platform Veyra exists and works.
    - This active Codex CLI thread is not yet platform-owned.
    - The next engineering artifact is the mirror contract, not another relaunch.
-4. Produce the next handoff/status in your coordinator format:
+4. Run the onboarding skill checklist as a backup test and produce the next
+   handoff/status in your coordinator format:
 
 ```text
 Team state:
