@@ -10,8 +10,9 @@ This directory is the consolidated full onboarding pack. It plugs the old projec
 3. `03_memfirst_realtime.md` — seed + realtime pre/post LLM memory ingestion/injection.
 4. `04_session_backfill_and_mirror.md` — historical imports and Codex/Veyra mirror pattern.
 5. `05_infra_channels_databases_monitoring.md` — NATS, Nexus, DragonflyDB, Redpanda, NebulaDB graph, vector DB, Hermes DBs, E2E trace, and playback monitoring.
-6. `verify_full_onboarding.py` — static verifier for generated Nova homes.
-7. `verify_runtime_onboarding.py` — runtime verifier that creates/probes a Nova, exercises realtime hooks/fanout, records E2E trace/playback, and inventories Temporal.io touch points.
+6. `../protocols/VOICE_A2A_NEXUS_PROTOCOL.md` — required voice, direct A2A, and NEXUS session-ingress channel contract.
+7. `verify_full_onboarding.py` — static verifier for generated Nova homes.
+8. `verify_runtime_onboarding.py` — runtime verifier that creates/probes a Nova, exercises realtime hooks/fanout, records E2E trace/playback, and inventories Temporal.io touch points.
 
 ## Existing docs rule
 

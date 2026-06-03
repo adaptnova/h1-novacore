@@ -9,12 +9,19 @@ nats:
   purpose: realtime command/event bus
   subjects:
     direct: nova.<profile>.direct
+    meet: nova.<profile>.meet
+    ping: nova.<profile>.ping
     events: nova.<profile>.events
     memory_turns: memory.<profile>.session_turn
-    nexus: nexus.<profile>.*
+    nexus_direct: nexus.agent.<profile>.direct
+    nexus_inbox: nexus.agent.<profile>.inbox
+    nexus_wildcard: nexus.agent.<profile>.>
+    session_events: nova.sessions.<profile>.events
   required_checks:
     - connection succeeds with configured env
     - direct subject accepts publish/request
+    - NEXUS direct or inbox subject accepts full-message session-ingress envelope
+    - full-message NEXUS push lands in Hermes session nexus_<profile>_<sender>
     - memory subject receives session-turn event
     - reply_to/correlation_id round trip works
 
@@ -25,12 +32,14 @@ nexus:
     - direct channel
     - room/team channels
     - route owner / fallback target
+    - xAI/Grok realtime voice provider plan or explicit Deepgram fallback
     - source surfaces: hermes_cli, nats_direct, voice, codex_mirror where applicable
   required_checks:
     - Nova can be resolved by profile/name
     - direct route exists
     - room membership exists if assigned to a team/project
     - route emits correlation_id for trace/playback
+    - session-ingress route reports source_surface=nexus_inbox and delivery=api_session
 
 dragonflydb:
   purpose: ephemeral runtime state, presence, locks, cache, counters

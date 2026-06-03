@@ -51,6 +51,13 @@ Use this for every Nova birth, retarget, or project-team onboarding. The old pro
 
 - [ ] NATS direct/event/memory subjects exist and accept probe publish/request.
 - [ ] Nexus route/channel registration exists for direct and assigned team/project rooms.
+- [ ] Voice/A2A/NEXUS contract is verified:
+  - [ ] `nova.<profile>.direct` accepts public direct A2A payloads.
+  - [ ] `nova.<profile>.meet` accepts public room payloads.
+  - [ ] `nexus.agent.<profile>.direct` or `.inbox` accepts full-message session-ingress payloads.
+  - [ ] Full NEXUS push lands in Hermes session `nexus_<profile>_<sender>`.
+  - [ ] Successful route metadata reports `source_surface=nexus_inbox`, `delivery_policy=session_only`, and `delivery=api_session`.
+  - [ ] xAI/Grok voice plan is available or Deepgram fallback is explicitly recorded.
 - [ ] DragonflyDB namespace probe works for presence, heartbeat, cache, locks, counters.
 - [ ] Redpanda durable topics exist and probe publish/read works.
 - [ ] NebulaDB graph space exists and Nova/project/channel/memory provenance vertices + edges upsert/query.
@@ -94,5 +101,13 @@ infra_channels_databases_monitoring:
   hermes_databases: PASS|FAIL
   e2e_trace: PASS|FAIL
   playback: PASS|FAIL
+voice_a2a_nexus:
+  public_direct_subject: PASS
+  public_meet_subject: PASS
+  nexus_direct_or_inbox_subject: PASS
+  session_event_subject: PASS
+  full_push_session_delivery: PASS
+  reply_to_round_trip: PASS|NOT_REQUIRED
+  xai_voice_plan_or_fallback: PASS
 structured_identity_prompt: PASS
 ```
