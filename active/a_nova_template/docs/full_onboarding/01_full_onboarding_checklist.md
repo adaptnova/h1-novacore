@@ -56,7 +56,8 @@ Use this for every Nova birth, retarget, or project-team onboarding. The old pro
   - [ ] `nova.<profile>.meet` accepts public room payloads.
   - [ ] `nexus.agent.<profile>.direct` or `.inbox` accepts full-message session-ingress payloads.
   - [ ] Full NEXUS push lands in Hermes session `nexus_<profile>_<sender>`.
-  - [ ] Successful route metadata reports `source_surface=nexus_inbox`, `delivery_policy=session_only`, and `delivery=api_session`.
+  - [ ] Quiet route metadata reports `source_surface=nexus_inbox`, `delivery_policy=session_only`, and `delivery=api_session`.
+  - [ ] Phone/headless voice uses wake-first `delivery_policy=session_and_visible`.
   - [ ] xAI/Grok voice plan is available or Deepgram fallback is explicitly recorded.
 - [ ] DragonflyDB namespace probe works for presence, heartbeat, cache, locks, counters.
 - [ ] Redpanda durable topics exist and probe publish/read works.
@@ -107,6 +108,7 @@ voice_a2a_nexus:
   nexus_direct_or_inbox_subject: PASS
   session_event_subject: PASS
   full_push_session_delivery: PASS
+  wake_first_voice_policy: PASS
   reply_to_round_trip: PASS|NOT_REQUIRED
   xai_voice_plan_or_fallback: PASS
 structured_identity_prompt: PASS

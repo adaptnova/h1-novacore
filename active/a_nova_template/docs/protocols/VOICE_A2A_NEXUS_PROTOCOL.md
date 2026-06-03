@@ -101,21 +101,35 @@ room
 defer_if_busy
 ```
 
-Default to `session_only` for voice and headless A2A. Use `visible_tui` only
-when operator-visible terminal delivery is explicitly required.
+Default phone/headless voice to `session_and_visible`. This probes/wakes a
+visible TUI route when one exists, then falls back to Hermes API-session
+delivery when no visible responder is available.
+
+Use `session_only` for quiet operational handoffs that should not wake a
+visible terminal. Use `visible_tui` only when operator-visible terminal delivery
+is explicitly required.
 
 ## Full-Push Rule
 
 Current CommsOps routing delivers the full message body into the selected
-recipient session. The canonical bridge does not merely send an alert.
+recipient route. The canonical bridge does not merely send an alert.
 
-Expected route metadata on a successful full push:
+Expected route metadata on a successful quiet full push:
 
 ```text
 source_surface=nexus_inbox
 delivery_policy=session_only
 delivery=api_session
 hermes_session_id=nexus_<target>_<sender>
+```
+
+Expected route metadata on a successful wake-first voice push depends on
+visible availability:
+
+```text
+source_surface=nexus_inbox
+delivery_policy=session_and_visible
+delivery=visible_tui|api_session
 ```
 
 If `reply_to` is supplied, the caller should receive streamed chunks and a final
@@ -133,6 +147,7 @@ voice_a2a_nexus:
   nexus_direct_or_inbox_subject: PASS
   session_event_subject: PASS
   full_push_session_delivery: PASS
+  wake_first_voice_policy: PASS
   reply_to_round_trip: PASS|NOT_REQUIRED
   xai_voice_plan_or_fallback: PASS
 ```
