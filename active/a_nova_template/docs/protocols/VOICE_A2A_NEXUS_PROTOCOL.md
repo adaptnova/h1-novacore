@@ -101,13 +101,14 @@ room
 defer_if_busy
 ```
 
-Default phone/headless voice to `session_and_visible`. This probes/wakes a
-visible TUI route when one exists, then falls back to Hermes API-session
-delivery when no visible responder is available.
+Default phone/headless voice to `session_only`. Phone voice must reach the
+Hermes daemon/API session without waiting on visible terminal probes.
 
-Use `session_only` for quiet operational handoffs that should not wake a
-visible terminal. Use `visible_tui` only when operator-visible terminal delivery
-is explicitly required.
+Use `session_and_visible` only when wake-first operator-visible delivery is
+explicitly requested. That policy probes/wakes a visible TUI route when one
+exists, then falls back to Hermes API-session delivery when no visible responder
+is available. Use `visible_tui` only when operator-visible terminal delivery is
+strictly required.
 
 ## Full-Push Rule
 
@@ -147,7 +148,8 @@ voice_a2a_nexus:
   nexus_direct_or_inbox_subject: PASS
   session_event_subject: PASS
   full_push_session_delivery: PASS
-  wake_first_voice_policy: PASS
+  headless_session_only_policy: PASS
+  wake_first_visible_policy: PASS|NOT_REQUIRED
   reply_to_round_trip: PASS|NOT_REQUIRED
   xai_voice_plan_or_fallback: PASS
 ```
