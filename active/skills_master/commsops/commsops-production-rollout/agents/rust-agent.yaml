@@ -1,0 +1,12 @@
+interface:
+  skill_name: "commsops-production-rollout"
+  display_name: "CommsOps Production Rollout"
+  source_path: "/adapt/novas/active/skills_master/commsops/commsops-production-rollout/SKILL.md"
+  runtime_status: "bootstrap-contract"
+  required_loader_behavior:
+    - "discover **/SKILL.md under /adapt/novas/active/skills_master"
+    - "parse YAML frontmatter fields name, description, version, metadata"
+    - "index skills by name and metadata.hermes.tags"
+    - "expose loaded skill path, description, body hash, and loaded timestamp"
+    - "treat references, scripts, and agents directories as relative to the skill directory"
+  readiness_claim: "Rust services are Rust-native in the CommsOps hot path; Rust agents are not fully skill-loader wired until they can report this skill as loaded."

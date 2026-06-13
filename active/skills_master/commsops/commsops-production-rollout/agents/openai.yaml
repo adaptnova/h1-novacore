@@ -1,0 +1,4 @@
+interface:
+  display_name: "CommsOps Production Rollout"
+  short_description: "Roll out and prove CommsOps/n-voice production readiness"
+  default_prompt: "Use commsops-production-rollout to preflight, restart, prove, log, and commit a controlled CommsOps/n-voice production rollout across A2A, voice, MemFab, Temporal, Paperclip, and Codex bridge surfaces."
