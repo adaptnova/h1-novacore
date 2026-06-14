@@ -1,0 +1,7 @@
+interface:
+  display_name: "Paperclip Agent Setup"
+  short_description: "Set up Paperclip companies, Codex agents, instruction bundles, and issue waves."
+  default_prompt: "Use $paperclip-agent-setup to create or repair a Paperclip company agent team with Codex local config, managed instruction docs, project workspace, and sprint issues."
+
+policy:
+  allow_implicit_invocation: true

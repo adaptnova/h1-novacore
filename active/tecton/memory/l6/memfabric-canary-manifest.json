@@ -1,0 +1,109 @@
+{
+  "schema": "adapt.nova.memory_spine.canary_manifest.v1",
+  "created_at": "2026-06-13T17:35:21-07:00",
+  "created_by": "Axiom",
+  "nova": {
+    "agent_id": "tecton",
+    "display_name": "Tecton",
+    "incarnation_id": "chrysalis:7a5726edec5ba3126390232ed0ba80962611d164fff5eb2f68b9dcc294b3f343",
+    "public_verifying_key_hash_ref": "817d88410e6a5318320f7d5c37bbd5f89f3e4dcff04299e5c0fb80c8b4cd3d07",
+    "name_claim_hash_ref": "b2e6af6c7e98353e806cc13ac214e925259a9b14eb24f917d14f17261cac1946"
+  },
+  "layers": {
+    "l0_intake": {
+      "enabled": true,
+      "paths": [
+        "memory/l0/intake/sessions",
+        "memory/l0/intake/logs",
+        "memory/l0/intake/pastes"
+      ]
+    },
+    "l1_identity": {
+      "enabled": true,
+      "paths": [
+        "memory/l1/SOUL.md",
+        "memory/l1/MEMORY.md",
+        "memory/l1/USER.md"
+      ],
+      "bridge_policy": "hash_and_reference_only"
+    },
+    "l2_structured_injection": {
+      "enabled": true,
+      "paths": [
+        "memory/l2/memory.mmd",
+        "memory/l2/domains",
+        "memory/l2/tools"
+      ]
+    },
+    "l3_semantic": {
+      "enabled": true,
+      "paths": [
+        "memory/l3/data/adaptai",
+        "memory/l3/data/iremember",
+        "memory/l3/data/shared"
+      ]
+    },
+    "l4_verbatim": {
+      "enabled": true,
+      "paths": [
+        "memory/l4/data"
+      ],
+      "bridge_policy": "redacted_hit_metadata_only"
+    },
+    "l5_consolidation": {
+      "enabled": true,
+      "paths": [
+        "memory/l5/data",
+        "memory/l5/raw"
+      ],
+      "bridge_policy": "summary_hash_and_source_refs"
+    },
+    "l6_bridge": {
+      "enabled": true,
+      "paths": [
+        "memory/l6",
+        "memory/l6/data/l6_meta.redb"
+      ],
+      "bridge_policy": "memfabric_canonical_refs"
+    }
+  },
+  "domains": [
+    "adaptai",
+    "iremember",
+    "z-pure"
+  ],
+  "memfabric": {
+    "canonical_topic": "memfab.memory.events.v1",
+    "audit_topic": "memfab.audit.events.v1",
+    "dead_letter_topic": "memfab.memory.dead_letters.v1",
+    "qdrant_collection": "memfab_memory",
+    "graph_space": "memfab_frontier",
+    "temporal_namespace": "memfab-frontier"
+  },
+  "contract": {
+    "write_event": true,
+    "recall": true,
+    "promote": true,
+    "replay": true,
+    "redact": true,
+    "health": true
+  },
+  "privacy": {
+    "raw_soul_bridge": false,
+    "raw_private_memory_bridge": false,
+    "raw_verbatim_bridge": false,
+    "allowed_evidence": [
+      "hashes",
+      "ids",
+      "offsets",
+      "schema_versions",
+      "redacted_summaries",
+      "source_references"
+    ]
+  },
+  "canary": {
+    "status": "canary_passed_with_graph_degraded",
+    "next_step": "resolve_graph_degraded_marker_then_three_nova_ring",
+    "requires_iris_before_fleet_rollout": true
+  }
+}

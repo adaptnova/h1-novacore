@@ -1,0 +1,7 @@
+interface:
+  display_name: "Company Project Setup"
+  short_description: "Build launch packets for agent companies"
+  default_prompt: "Use $company-project-setup to turn this project idea into an agent roster, model matrix, sprint packs, and a /goal prompt."
+
+policy:
+  allow_implicit_invocation: true

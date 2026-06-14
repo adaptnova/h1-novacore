@@ -1,0 +1,105 @@
+{
+  "schema": "adapt.nova.memory_spine.canary_receipt.v1",
+  "created_at": "2026-06-13T17:45:41-07:00",
+  "created_by": "Axiom",
+  "agent_id": "tecton",
+  "manifest": "memory/l6/memfabric-canary-manifest.json",
+  "synthetic_l0_event": "memory/l0/intake/sessions/memfabric-canary-2026-06-13.json",
+  "synthetic_l0_event_sha256": "10cac8d2eb1baeb9ca9012654a99a095b15a2bbfa1f2901bba56be1677c95c89",
+  "canonical_write": {
+    "status": "passed",
+    "raw_input_topic": "memfab.agent.events.v1",
+    "raw_input_partition": 0,
+    "raw_input_offset": 738,
+    "event_id": "tecton-canary-20260613174305",
+    "canonical_topic": "memfab.memory.events.v1",
+    "canonical_partition": 0,
+    "canonical_offset": 4,
+    "payload_hash": "901c7e7fb1691f23f9fe3caf90edc0199da8c41aeda9b18fe1f9c0644f7a2540",
+    "event_hash": "aeca9ef466ac95813ca008cf35767bc1c608e1b11de86f44320a53937fc009b0"
+  },
+  "audit": {
+    "status": "passed",
+    "audit_topic": "memfab.audit.events.v1",
+    "event_id": "tecton-canary-20260613174305",
+    "event_hash": "aeca9ef466ac95813ca008cf35767bc1c608e1b11de86f44320a53937fc009b0"
+  },
+  "dead_letter": {
+    "status": "passed",
+    "raw_input_topic": "memfab.agent.events.v1",
+    "raw_input_partition": 0,
+    "raw_input_offset": 739,
+    "dead_letter_topic": "memfab.memory.dead_letters.v1",
+    "event_id": "tecton-canary-invalid-20260613174541",
+    "reason": "validation_failed",
+    "error_class": "unsupported_source_authority",
+    "payload_hash": "e0b9da56dd25619c7ea3f67f8dde01668055684dbf064cb06f94214f5deee67f"
+  },
+  "hybrid_recall": {
+    "status": "passed_with_graph_degraded",
+    "endpoint": "http://127.0.0.1:34005/query/hybrid",
+    "query": "tecton memfabric canary",
+    "top_event_id": "tecton-canary-20260613174305",
+    "canary_rank": 0,
+    "vector": {
+      "backend": "qdrant",
+      "degraded": false,
+      "hit_count": 20
+    },
+    "lexical": {
+      "backend": "tantivy",
+      "degraded": false,
+      "hit_count": 1
+    },
+    "graph": {
+      "backend": "nebulagraph",
+      "degraded": true,
+      "reason": "degraded_marker_present",
+      "hit_count": 0
+    }
+  },
+  "temporal": {
+    "status": "passed",
+    "endpoint": "http://127.0.0.1:17001/temporal/run-smoke",
+    "namespace": "memfab-frontier",
+    "workflow_count": 10,
+    "all_started": true,
+    "workflow_id_prefix": "packet116-1781398061074",
+    "native_agent_workflow": {
+      "status": "passed",
+      "endpoint": "http://127.0.0.1:17001/temporal/run-native-agent-workflow",
+      "bridge_mode": "in_process",
+      "artifact": "/var/lib/memfab/temporal/native-agent-workflow-from-temporal.json",
+      "ledger": "/var/lib/memfab/temporal/native-agent-workflow-ledger.jsonl",
+      "completed": true,
+      "observed_steps": 6
+    }
+  },
+  "nats_resume_signal": {
+    "status": "passed",
+    "subject": "fleet.rusty.agent.tecton.command.resume",
+    "request_id": "tecton-canary-resume-20260613174838",
+    "published_bytes": 390,
+    "canonical_event_id": "tecton-canary-20260613174305",
+    "signal_only": true
+  },
+  "supervisor_boundary": {
+    "status": "passed_by_non_mutation",
+    "actual_start_resume_owner": "agent supervisor or CLI wrapper",
+    "direct_start_performed_by_axiom": false,
+    "observed_existing_tecton_processes": true,
+    "note": "Existing Tecton Hermes/gateway processes were observed. This proof did not start, stop, or resume them."
+  },
+  "recovery_note": {
+    "status": "recovered",
+    "summary": "An initial rpk producer attempt used pretty JSON and default Snappy compression. The ingest checkpoint was advanced past fragmented/Snappy records, memfab-ingest was restarted, and the canary was republished as one compact JSON record with rpk --compression none.",
+    "checkpoint_after_recovery": 740,
+    "service_state": "memfab-ingest active"
+  },
+  "privacy": {
+    "raw_soul_included": false,
+    "raw_private_memory_included": false,
+    "payload_class": "synthetic_non_private"
+  },
+  "next_step": "Resolve NebulaGraph degraded marker for graph recall path, then run three-Nova ring after Iris/comms authority."
+}
