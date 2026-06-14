@@ -102,8 +102,8 @@
     ]
   },
   "canary": {
-    "status": "canary_passed_with_graph_degraded",
-    "next_step": "resolve_graph_degraded_marker_then_three_nova_ring",
+    "status": "canary_passed",
+    "next_step": "three_nova_ring_after_iris_comms_authority",
     "requires_iris_before_fleet_rollout": true
   }
 }

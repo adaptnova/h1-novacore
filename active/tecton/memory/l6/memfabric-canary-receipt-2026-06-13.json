@@ -36,7 +36,7 @@
     "payload_hash": "e0b9da56dd25619c7ea3f67f8dde01668055684dbf064cb06f94214f5deee67f"
   },
   "hybrid_recall": {
-    "status": "passed_with_graph_degraded",
+    "status": "passed",
     "endpoint": "http://127.0.0.1:34005/query/hybrid",
     "query": "tecton memfabric canary",
     "top_event_id": "tecton-canary-20260613174305",
@@ -53,10 +53,23 @@
     },
     "graph": {
       "backend": "nebulagraph",
-      "degraded": true,
-      "reason": "degraded_marker_present",
+      "degraded": false,
+      "reason": null,
       "hit_count": 0
     }
+  },
+  "graph_recovery": {
+    "status": "passed",
+    "implemented_at": "2026-06-13T17:57:17-07:00",
+    "summary": "Fixed memfab-graph so successful checkpoint writes clear stale NebulaGraph degraded markers. Rebuilt the release binary, restarted memfab-graph.service, and verified the marker is absent.",
+    "state_file": "/var/lib/memfab/graph/nebulagraph-projector-state.json",
+    "degraded_marker": "/var/lib/memfab/graph/nebulagraph-projector-degraded.json",
+    "degraded_marker_present": false,
+    "source_lag": 0,
+    "projected_events": 1,
+    "vertex_count": 5,
+    "edge_count": 4,
+    "graph_proof_hash": "5e1afb1655b5c0dd39d1bf31423cea697c28ee1630b2418a7335b45f14f86ba8"
   },
   "temporal": {
     "status": "passed",
@@ -101,5 +114,5 @@
     "raw_private_memory_included": false,
     "payload_class": "synthetic_non_private"
   },
-  "next_step": "Resolve NebulaGraph degraded marker for graph recall path, then run three-Nova ring after Iris/comms authority."
+  "next_step": "Run three-Nova memory ring after Iris/comms authority."
 }
