@@ -1,0 +1,7 @@
+interface:
+  display_name: "Paperclip Board Audit"
+  short_description: "Audit boards, classify blockers, and enforce task-loop discipline."
+  default_prompt: "Use $paperclip-board-audit to observe this Paperclip board, classify blocked or stale work, decompose the next task, and report a clean disposition."
+
+policy:
+  allow_implicit_invocation: true
