@@ -39,21 +39,21 @@ Paperclip coordinates execution. Git, systemd, service health, and MemFabric evi
 
 ## Current Board State
 
-- `RUS-22`: Nova Memory Spine v1 control packet, blocked by Paperclip disposition recovery.
-- `RUS-23`: Pack 1A truth inventory, blocked.
-- `RUS-24`: Pack 1B memory substrate/database map, blocked.
-- `RUS-25`: Pack 1C Nova Memory Contract v1, blocked.
-- `RUS-26`: Pack 1D wake/resume control boundary, blocked.
-- `RUS-27`: Pack 1E canary gates, blocked.
-- `RUS-28`: Pack 2 canary implementation, backlog.
-- `RUS-29`: Pack 3 canary live proof, backlog.
+- `RUS-22`: Nova Memory Spine v1 control packet, done.
+- `RUS-23`: Pack 1A truth inventory, done.
+- `RUS-24`: Pack 1B memory substrate/database map, done.
+- `RUS-25`: Pack 1C Nova Memory Contract v1, done.
+- `RUS-26`: Pack 1D wake/resume control boundary, done.
+- `RUS-27`: Pack 1E canary gates, done.
+- `RUS-28`: Pack 2 canary implementation, done.
+- `RUS-29`: Pack 3 canary live proof, board-ready done after graph recovery.
 - `RUS-30`: Pack 4 fleet rollout template, backlog.
 - `RUS-31`: Pack 5 all-Novas rollout, backlog.
 - `RUS-32`: Pack 6 cognitive layer readiness review, backlog.
-- `RUS-33`: Vector strike-team launch-packet retry, blocked by Paperclip disposition handling.
+- `RUS-33`: Vector strike-team launch-packet retry, done as disposition artifact.
 
-Decision: do not create a duplicate strategic lane. Use `Nova Memory Spine v1` as the real track,
-repair Paperclip disposition separately, and execute the canary path from this packet.
+Decision: do not create a duplicate strategic lane. Use `Nova Memory Spine v1` as the real track
+and execute the canary path from this packet.
 
 ## Current Memory Inventory
 
@@ -151,10 +151,16 @@ Already proven:
 - Active Nova memory replay canary used synthetic active-Nova-shaped input and proved canonical
   ingest, audit, dead-letter, restart, and duplicate no-op handling without copying private memory.
 
-Known weakness:
+Previous weakness:
 
 - Active Nova replay hybrid query completed but returned degraded vector/lexical/graph backends
   with zero hits. The canary must therefore prove projection-backed recall, not just write/audit.
+
+Current status:
+
+- Tecton canary now proves projection-backed recall with Qdrant, Tantivy, and NebulaGraph all
+  non-degraded. The stale NebulaGraph degraded marker recovery bug was fixed in MemFabric graph
+  projection.
 
 ## Single-Nova Proof Path
 
@@ -479,11 +485,7 @@ Not allowed:
 
 ## Open Blockers
 
-- Paperclip disposition handling blocked `RUS-33` after two successful Vector runs but no
-  deliverables.
-- Several `Nova Memory Spine v1` first-wave issues are blocked under Axiom and need board cleanup.
 - TeamADAPT PostgreSQL node on port 18030 is failed while the main PostgreSQL cluster is active.
-- Active Nova replay query proof previously returned no projection hits.
 - Final comms routing/Iris assignment authority is not confirmed live in this packet.
 
 ## Next Action
@@ -518,6 +520,33 @@ all-Nova wake/resume.
   - Tantivy lexical: healthy, 1 hit
   - NebulaGraph path: degraded marker present, 0 hits
 - Temporal proof passed through `memfab-frontier` with 10 workflow starts.
+- Native Temporal agent workflow proof passed with six observed steps.
+- NATS resume signal was published to `fleet.rusty.agent.tecton.command.resume` as signal-only.
+- Supervisor boundary passed by non-mutation: existing Tecton processes were observed, but this
+  proof did not start, stop, or resume them.
+
+2026-06-13 17:57:17 MST:
+
+- `RUS-29` live-proof hardening is board-ready done.
+- MemFabric graph recovery bug was fixed in `crates/memfab-graph/src/nebula_live.rs`: successful
+  projector checkpoint writes now clear stale `nebulagraph-projector-degraded.json` markers.
+- Added a regression test proving `save_state` clears a stale degraded marker.
+- Release binary was rebuilt and `memfab-graph.service` was restarted.
+- Live graph state:
+  - degraded marker: absent
+  - source lag: `0`
+  - projected events: `1`
+  - vertices: `5`
+  - edges: `4`
+  - graph proof hash: `5e1afb1655b5c0dd39d1bf31423cea697c28ee1630b2418a7335b45f14f86ba8`
+- Hybrid recall passed again with the canary as rank 0:
+  - Qdrant vector: healthy, 20 hits
+  - Tantivy lexical: healthy, 1 hit
+  - NebulaGraph: healthy, 0 direct causal hits for this query
+- Tecton canary manifest now records `canary_passed`.
+- Tecton receipt now records graph recovery evidence.
+- Paperclip live board was updated through the local trusted API. `[RUS-29](/RUS/issues/RUS-29)`
+  is closed as `done` with MemFabric commit `e4672be` and Nova evidence commit `000b90c`.
 - NATS signal was published to `fleet.rusty.agent.tecton.command.resume` as signal-only evidence.
 - Supervisor/CLI boundary held: no direct start/resume was performed by this canary path.
 
