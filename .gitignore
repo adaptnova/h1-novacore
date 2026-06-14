@@ -128,6 +128,9 @@ dmypy.json
 postgres-data/
 *.pid
 
+# Nova runtime memory stores
+active/*/memory/l6/data/
+
 # OS Files
 .DS_Store
 Thumbs.db
