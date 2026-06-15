@@ -1,0 +1,19 @@
+# Runtime artifacts
+.env
+*.lock
+*.pid
+*.sock
+*.tmp
+/audio_cache/
+/cache/
+/checkpoints/
+/logs/
+/sessions/
+/state.db
+/response_store.db
+
+# Runtime memory intake; keep directory markers tracked.
+memory/l0/intake/sessions/*
+!memory/l0/intake/sessions/.gitkeep
+memory/l5/raw/*
+!memory/l5/raw/.gitkeep

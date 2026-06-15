@@ -1,0 +1,14 @@
+{
+  "schema": "nova.profile.rust_template.v1",
+  "name": "canary-forge",
+  "label": "Canary Forge",
+  "tier": "canary",
+  "domain": "commsops",
+  "runtime": "n-voice-nova-worker",
+  "provider": "xai",
+  "model": "grok-4.3",
+  "nats_direct": "nova.canary-forge.direct",
+  "nats_meet": "nova.canary-forge.meet",
+  "generated_by": "Veyra, CommsOps - Tier 1 lead",
+  "generated_at": "2026-06-15T05:07:21.562917991Z"
+}
