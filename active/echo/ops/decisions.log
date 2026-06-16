@@ -1,5 +1,11 @@
 # Decisions Log
 
+## 2026-06-16 14:47:09 — SIGNED_BY_ECHO
+Decision recorded: Encode Chase as Board and Echo as the top-level Build 1
+Paperclip agent manager; require Skipper to create one Paperclip agent record per
+active Build 1 role, all using Codex local adapter with `gpt-5.5` and high
+reasoning, while excluding Riven for this phase.
+
 ## 2026-06-16 14:36:45 — SIGNED_BY_ECHO
 Decision recorded: Promote Vertex, Cosmos, and Zap from routeable-only status to
 routeable plus visible full-permission Codex work terminals for the next phase;

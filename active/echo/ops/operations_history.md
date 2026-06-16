@@ -1,5 +1,11 @@
 # Operations History
 
+## 2026-06-16 14:47:09 — SIGNED_BY_ECHO
+Created and dispatched the detailed Skipper Build 1 Paperclip setup packet,
+including company, project, agent, file-path, instruction-bundle, Codex model,
+and Echo reporting-chain requirements; delivered via NEXUS sequence 141020 and
+submitted a visible execution prompt to Skipper's Codex terminal.
+
 ## 2026-06-16 14:36:45 — SIGNED_BY_ECHO
 Launched Vertex, Cosmos, and Zap as visible full-permission Codex terminals in
 their active nova directories for the next Build 1 phase; verified Codex child
