@@ -1,0 +1,38 @@
+{
+  "timestamp_local": "2026-06-16 15:32:41",
+  "agent": "Veyra",
+  "scope": "Build 1 Paperclip execution setup",
+  "paperclip": {
+    "api": "http://127.0.0.1:3100",
+    "company_id": "f6557328-479a-4550-9839-85f50070a9e3",
+    "health": "ok",
+    "deployment_mode": "local_trusted"
+  },
+  "root_causes": [
+    "Paperclip server PATH resolved codex to /usr/bin/codex v0.34.0, while the working CLI is /home/x/.local/bin/codex v0.140.0.",
+    "Paperclip recorded Codex stream 400 errors as heartbeat status succeeded, so issue liveness monitors saw missing disposition rather than adapter failure.",
+    "The adapter default cheap model profile used gpt-5.3-codex-spark, which is quota blocked until 2026-06-18 13:45.",
+    "Recovery-action resolution woke temporary recovery owners before intended owner reassignment, creating stale Echo child runs that had to be cancelled."
+  ],
+  "repairs": [
+    "Set all 10 Build 1 agents adapterConfig.command to /home/x/.local/bin/codex.",
+    "Set all 10 Build 1 agents primary model to gpt-5.4 with modelReasoningEffort high.",
+    "Set all 10 Build 1 agents runtimeConfig.modelProfiles.cheap.adapterConfig.model to gpt-5.4-mini and command to /home/x/.local/bin/codex.",
+    "Restored heartbeat wake flags wakeOnDemand, wakeOnOnDemand, wakeOnAssignment, and wakeOnAutomation for all 10 agents.",
+    "Resolved stale active recovery actions on BUI-1, BUI-3, BUI-4, BUI-5, BUI-6, BUI-7, BUI-8, BUI-9, and BUI-10.",
+    "Restored intended issue owners and relaunched owner lanes in parallel."
+  ],
+  "verification": [
+    "Direct CLI probe succeeded for /home/x/.local/bin/codex with gpt-5.4.",
+    "Direct CLI probe succeeded for /home/x/.local/bin/codex with gpt-5.4-mini.",
+    "Direct CLI probe failed for /usr/bin/codex v0.34.0 on gpt-5.4, matching Paperclip failures.",
+    "Post-repair process table showed Paperclip-launched Codex processes under /home/x/.local/bin/codex with --model gpt-5.4.",
+    "Owner wakeups were queued/running for Veyra, Axiom, Vertex, Zap, Iris, Chronos, and Cosmos after cancelling stale Echo child runs."
+  ],
+  "remaining_risks": [
+    "Paperclip should classify Codex JSON stream errors as failed heartbeat runs instead of succeeded.",
+    "Paperclip recovery-action resolution can wake the recovery owner before intended owner reassignment; this creates avoidable stale child runs.",
+    "Some Codex runs still emit nonfatal MCP startup errors for nexus_control and playwright."
+  ],
+  "signed_by": "Veyra, CommsOps - Tier 1 lead"
+}

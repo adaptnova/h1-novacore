@@ -1,0 +1,5 @@
+# Decisions Log
+
+## 2026-06-16 15:32:41 — Veyra, CommsOps - Tier 1 lead
+Decision recorded: Treat the prior Build 1 Paperclip state as not complete because successful heartbeat records were masking Codex stream failures. Root causes were the stale `/usr/bin/codex` command path, quota-blocked `gpt-5.3-codex-spark` recovery profile, and stale recovery actions created before owner reassignment. Chose per-agent adapter command overrides and per-agent `cheap` model-profile overrides instead of a broad system PATH mutation.
+
