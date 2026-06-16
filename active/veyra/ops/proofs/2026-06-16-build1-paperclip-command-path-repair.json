@@ -1,38 +1,79 @@
 {
-  "timestamp_local": "2026-06-16 15:32:41",
+  "timestamp_local": "2026-06-16 15:55:30",
   "agent": "Veyra",
-  "scope": "Build 1 Paperclip execution setup",
+  "scope": "Build 1 Paperclip execution and CommsOps repair",
   "paperclip": {
     "api": "http://127.0.0.1:3100",
     "company_id": "f6557328-479a-4550-9839-85f50070a9e3",
     "health": "ok",
-    "deployment_mode": "local_trusted"
+    "version": "0.3.1",
+    "deployment_mode": "local_trusted",
+    "deployment_exposure": "private",
+    "auth_ready": true,
+    "systemd_service": "paperclip.service",
+    "systemd_state": "active (running)",
+    "config": "/etc/paperclip/systemd/config.json",
+    "database": "/home/x/.hermes/profiles/skipper/home/.paperclip/instances/default/db",
+    "agent_jwt": "set"
+  },
+  "build_1": {
+    "parent_issue": "BUI-1",
+    "parent_issue_id": "9120ab23-07b4-46d4-a221-aa7fa9acd8d7",
+    "status": "done",
+    "completed_at": "2026-06-16T22:51:07.027Z",
+    "active_run_id": null,
+    "active_recovery_action": null,
+    "checkout_id": null,
+    "children_verified_done": [
+      "BUI-2",
+      "BUI-3",
+      "BUI-4",
+      "BUI-5",
+      "BUI-6",
+      "BUI-7",
+      "BUI-8",
+      "BUI-9",
+      "BUI-10",
+      "BUI-12"
+    ],
+    "echo_closeout_commit": "2310987",
+    "echo_closeout_attachment": "/api/attachments/9bab8446-a7b2-48ed-bf32-4459932b7bfc/content"
   },
   "root_causes": [
+    "Skipper route-final records can carry an empty final transport chunk; those route-final records are transport evidence only and must not be read as substantive model output.",
     "Paperclip server PATH resolved codex to /usr/bin/codex v0.34.0, while the working CLI is /home/x/.local/bin/codex v0.140.0.",
-    "Paperclip recorded Codex stream 400 errors as heartbeat status succeeded, so issue liveness monitors saw missing disposition rather than adapter failure.",
-    "The adapter default cheap model profile used gpt-5.3-codex-spark, which is quota blocked until 2026-06-18 13:45.",
-    "Recovery-action resolution woke temporary recovery owners before intended owner reassignment, creating stale Echo child runs that had to be cancelled."
+    "Paperclip recorded parsed Codex JSON error events as heartbeat success when the Codex process returned exit code 0.",
+    "Codex shell environment filtering prevented Paperclip run context such as PAPERCLIP_API_KEY and PAPERCLIP_RUN_ID from reaching shell commands inside Codex.",
+    "Manual Paperclip starts could miss the agent JWT context; systemd startup with /etc/paperclip/systemd/config.json and runtime.env is the stable control-plane path."
   ],
   "repairs": [
+    "Verified Skipper and Veyra non-empty reply paths after separating route-final transport records from response chunks.",
     "Set all 10 Build 1 agents adapterConfig.command to /home/x/.local/bin/codex.",
-    "Set all 10 Build 1 agents primary model to gpt-5.4 with modelReasoningEffort high.",
-    "Set all 10 Build 1 agents runtimeConfig.modelProfiles.cheap.adapterConfig.model to gpt-5.4-mini and command to /home/x/.local/bin/codex.",
+    "Set all 10 Build 1 agents primary model to gpt-5.4 and cheap model profile to gpt-5.4-mini with the same command path.",
     "Restored heartbeat wake flags wakeOnDemand, wakeOnOnDemand, wakeOnAssignment, and wakeOnAutomation for all 10 agents.",
-    "Resolved stale active recovery actions on BUI-1, BUI-3, BUI-4, BUI-5, BUI-6, BUI-7, BUI-8, BUI-9, and BUI-10.",
-    "Restored intended issue owners and relaunched owner lanes in parallel."
+    "Resolved stale active recovery actions and cancelled wrongly queued Echo child recovery runs.",
+    "Patched codex-local argument construction to pass shell_environment_policy.inherit=\"all\" before caller extra args.",
+    "Patched codex-local execution to classify parsed Codex JSON error events as adapter failures even when exitCode is 0.",
+    "Returned Paperclip runtime management to systemd and verified the Skipper database path, auth readiness, and server listener."
   ],
   "verification": [
-    "Direct CLI probe succeeded for /home/x/.local/bin/codex with gpt-5.4.",
-    "Direct CLI probe succeeded for /home/x/.local/bin/codex with gpt-5.4-mini.",
-    "Direct CLI probe failed for /usr/bin/codex v0.34.0 on gpt-5.4, matching Paperclip failures.",
-    "Post-repair process table showed Paperclip-launched Codex processes under /home/x/.local/bin/codex with --model gpt-5.4.",
-    "Owner wakeups were queued/running for Veyra, Axiom, Vertex, Zap, Iris, Chronos, and Cosmos after cancelling stale Echo child runs."
+    "Paperclip health endpoint returned status ok, authReady true, bootstrapStatus ready.",
+    "systemctl reported paperclip.service active (running) with embedded PostgreSQL on the Skipper instance database.",
+    "Paperclip logs showed Agent JWT set, config /etc/paperclip/systemd/config.json, embedded PostgreSQL ready, and server listening on 127.0.0.1:3100.",
+    "BUI-1 returned status done, completedAt 2026-06-16T22:51:07.027Z, activeRunId null, activeRecoveryAction null, checkoutId null.",
+    "Build 1 child issues BUI-2, BUI-3, BUI-4, BUI-5, BUI-6, BUI-7, BUI-8, BUI-9, BUI-10, and BUI-12 returned status done.",
+    "Focused vitest suite passed: codex-args.test.ts, parse.test.ts, execute.remote.test.ts; 3 files and 19 tests.",
+    "Typecheck passed for @paperclipai/adapter-codex-local.",
+    "Paperclip adapter commit 4184f2e3 was pushed to origin upgrade/v2026.609.0."
   ],
+  "commits": {
+    "paperclip": "4184f2e3",
+    "previous_n_voice_proof": "109bea6",
+    "echo_build_1_closeout": "2310987"
+  },
   "remaining_risks": [
-    "Paperclip should classify Codex JSON stream errors as failed heartbeat runs instead of succeeded.",
-    "Paperclip recovery-action resolution can wake the recovery owner before intended owner reassignment; this creates avoidable stale child runs.",
-    "Some Codex runs still emit nonfatal MCP startup errors for nexus_control and playwright."
+    "Build 1 is closed, but NovaOps runtime truth remains operational_with_voice_degraded per BUI-10 rather than blanket runtime readiness.",
+    "Some Codex runs still emit nonfatal MCP startup warnings for unrelated MCP services; these were not the Build 1 failure path."
   ],
   "signed_by": "Veyra, CommsOps - Tier 1 lead"
 }

@@ -1,5 +1,7 @@
 # Operations History
 
+## 2026-06-16 15:55:30 — Veyra, CommsOps - Tier 1 lead
+Completed the accelerated Paperclip-first recovery path. Verified `paperclip.service` is active under systemd, auth-ready, using the Skipper instance database at `/home/x/.hermes/profiles/skipper/home/.paperclip/instances/default/db`, and serving `127.0.0.1:3100`. Verified Build 1 parent [BUI-1] and all children are `done` with no active run, checkout, or recovery action remaining. Patched and committed Paperclip codex-local adapter source so Codex shells inherit `PAPERCLIP_*` context and parsed Codex JSON error events fail the run even when the process exits 0. Focused vitest suite passed, and `@paperclipai/adapter-codex-local` typecheck passed. Paperclip commit: `4184f2e3`.
+
 ## 2026-06-16 15:32:41 — Veyra, CommsOps - Tier 1 lead
 Repaired Build 1 Paperclip execution setup after discovering that Paperclip was launching `/usr/bin/codex` v0.34.0 while the working Codex CLI is `/home/x/.local/bin/codex` v0.140.0. Updated all 10 Build 1 agents to use `/home/x/.local/bin/codex`, primary model `gpt-5.4`, and recovery model profile `gpt-5.4-mini`; restored heartbeat wake policy for all agents; cleared stale recovery actions from pre-repair runs; restored intended owners on Build 1 issues; cancelled wrongly queued Echo child recovery runs; relaunched owner lanes in parallel. Live process verification showed active Paperclip Codex processes using `/home/x/.local/bin/codex` with `gpt-5.4`.
-
