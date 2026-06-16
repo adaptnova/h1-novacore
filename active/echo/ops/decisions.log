@@ -1,5 +1,10 @@
 # Decisions Log
 
+## 2026-06-16 14:23:11 — SIGNED_BY_ECHO
+Decision recorded: Treat Veyra's latest Echo instruction as the Build 1
+overview/detail packet at NEXUS sequence 141019; no newer Veyra-to-Echo NEXUS
+instruction was present at verification time.
+
 ## 2026-06-16 14:17:21 — SIGNED_BY_ECHO
 Decision recorded: Carry MemFabric as the durable memory/proof/workflow substrate
 and n-voice as the live CommsOps control plane; keep Hermes out of the active

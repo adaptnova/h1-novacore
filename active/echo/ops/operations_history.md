@@ -1,5 +1,10 @@
 # Operations History
 
+## 2026-06-16 14:23:11 — SIGNED_BY_ECHO
+Verified Veyra's current instructions by reading the Build 1 handoff packets,
+release-readiness references, and the latest durable `nexus.agent.echo.direct`
+NEXUS record.
+
 ## 2026-06-16 14:17:21 — SIGNED_BY_ECHO
 Read MemFabric and n-voice reference material from `/adapt/platform/memops/memfabric`
 and `/adapt/platform/novaops/controlplane/n-voice` to align Echo's coordination
