@@ -1,5 +1,11 @@
 # Operations History
 
+## 2026-06-16 14:52:08 — SIGNED_BY_ECHO
+Escalated Build 1 CommsOps repair to Veyra via durable NEXUS sequence 141021 and
+visible Veyra Codex prompt after Skipper returned an empty route-final reply;
+Veyra's Rust-worker reply also returned empty route-final at NOVA_LIFECYCLE
+sequence 32005, confirming the issue is broader than Skipper.
+
 ## 2026-06-16 14:47:09 — SIGNED_BY_ECHO
 Created and dispatched the detailed Skipper Build 1 Paperclip setup packet,
 including company, project, agent, file-path, instruction-bundle, Codex model,

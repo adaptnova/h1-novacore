@@ -1,5 +1,11 @@
 # Decisions Log
 
+## 2026-06-16 14:52:08 — SIGNED_BY_ECHO
+Decision recorded: Treat current n-voice Rust-worker replies from Skipper and
+Veyra as transport-only until content-bearing chunks are restored; use visible
+Codex/Paperclip paths for Skipper-dependent Build 1 work while CommsOps repairs
+the reply path.
+
 ## 2026-06-16 14:47:09 — SIGNED_BY_ECHO
 Decision recorded: Encode Chase as Board and Echo as the top-level Build 1
 Paperclip agent manager; require Skipper to create one Paperclip agent record per
