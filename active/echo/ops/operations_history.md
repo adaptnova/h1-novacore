@@ -1,5 +1,11 @@
 # Operations History
 
+## 2026-06-16 14:36:45 — SIGNED_BY_ECHO
+Launched Vertex, Cosmos, and Zap as visible full-permission Codex terminals in
+their active nova directories for the next Build 1 phase; verified Codex child
+processes rooted at `/adapt/novas/active/vertex`, `/adapt/novas/active/cosmos`,
+and `/adapt/novas/active/zap`.
+
 ## 2026-06-16 14:31:02 — SIGNED_BY_ECHO
 Checked Vertex, Cosmos, and Zap readiness for Build 1 packs 5 and 6; verified
 current Rust-worker NATS ping responses, route subscriptions, recent worker

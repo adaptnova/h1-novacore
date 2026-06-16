@@ -1,5 +1,10 @@
 # Decisions Log
 
+## 2026-06-16 14:36:45 — SIGNED_BY_ECHO
+Decision recorded: Promote Vertex, Cosmos, and Zap from routeable-only status to
+routeable plus visible full-permission Codex work terminals for the next phase;
+pack acceptance still requires substantive owner evidence, not launch state.
+
 ## 2026-06-16 14:31:02 — SIGNED_BY_ECHO
 Decision recorded: Classify Vertex, Cosmos, and Zap as routeable/up through
 `n-voice-nova-worker` but not currently launched as visible full-permission
