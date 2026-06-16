@@ -1,5 +1,10 @@
 # Operations History
 
+## 2026-06-16 14:31:02 — SIGNED_BY_ECHO
+Checked Vertex, Cosmos, and Zap readiness for Build 1 packs 5 and 6; verified
+current Rust-worker NATS ping responses, route subscriptions, recent worker
+proof-turn logs, and absence of visible/personal Codex sessions for those lanes.
+
 ## 2026-06-16 14:23:11 — SIGNED_BY_ECHO
 Verified Veyra's current instructions by reading the Build 1 handoff packets,
 release-readiness references, and the latest durable `nexus.agent.echo.direct`
