@@ -1,0 +1,88 @@
+# Nova Template .gitignore
+# Prevents committing secrets, runtime state, and user data to GitHub
+
+# Secrets and credentials
+.env
+auth.json
+*.key
+*.secret
+*.token
+
+# Runtime state
+state.db
+state.db-shm
+state.db-wal
+.gateway_state.json
+processes.json
+.clean_shutdown
+.update_check
+
+# Session data (conversation history)
+sessions/*.jsonl
+sessions/*.json
+
+# Checkpoints (conversation state)
+checkpoints/*/
+
+# Logs
+logs/*.log
+logs/*.json
+*.log
+!ops/decisions.log
+
+# Cache
+cache/
+*.cache
+models_dev_cache.json
+ollama_cloud_models_cache.json
+.skills_prompt_snapshot.json
+
+# Platform-specific
+channel_directory.json
+gateway_state.json
+interrupt_debug.log
+
+# User data
+memories/MEMORY.md
+memories/USER.md
+memories/user.mdl
+memories/*.lock
+
+# Response store
+response_store.db
+
+# Paste history
+pastes/
+
+# Workspace (temporary files)
+workspace/*
+
+# Hermes-specific
+.hermes_history
+interrupt_debug.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# DO NOT ignore - these should be tracked:
+# memories/SOUL.md (identity)
+# memories/memory.mdl (identity spec)
+# config.yaml.example (template)
+# docs/ (documentation)
+# skills/ (skill definitions)

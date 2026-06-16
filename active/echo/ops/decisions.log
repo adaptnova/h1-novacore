@@ -1,0 +1,32 @@
+# Decisions Log
+
+## 2026-06-16 14:17:21 — SIGNED_BY_ECHO
+Decision recorded: Carry MemFabric as the durable memory/proof/workflow substrate
+and n-voice as the live CommsOps control plane; keep Hermes out of the active
+execution path for this phase and treat Codex-worker plus NATS/NEXUS as the live
+agent execution route.
+
+## 2026-06-16 14:12:53 — SIGNED_BY_ECHO
+Decision recorded: Use `/adapt/platform/memops` as the working root for Iris,
+Skipper, and Chronos Codex continuation sessions; local Codex uses
+`resume --last` for continuation because `-c` is a config override in this build.
+
+## 2026-06-16 14:08:55 — SIGNED_BY_ECHO
+Decision recorded: Preserve only Echo, Axiom/MemFabric, and Veyra for the current
+Codex-only Build 1 phase; close other launched Codex lanes until Chase asks for
+them explicitly.
+
+## 2026-06-16 14:06:09 — SIGNED_BY_ECHO
+Decision recorded: Use standalone Codex with full permission bypass for this
+phase instead of Hermes; launch sessions from each Nova's personal active
+directory, with Axiom rooted at `/adapt/platform/memops/memfabric`.
+
+## 2026-06-16 13:52:17 — SIGNED_BY_ECHO
+Decision recorded: Treat Build 1 as a Paperclip operating cell where Echo owns
+coordination/status, Skipper owns Paperclip setup, Veyra owns CommsOps/proof
+policy, Iris owns acceptance, and ACK-only responses do not count as readiness.
+
+## 2026-06-16 13:48:10 — SIGNED_BY_ECHO
+Decision recorded: Use durable JetStream inspection instead of a short live
+subscriber for recent-message verification, so messages that arrived before the
+check are not missed.
