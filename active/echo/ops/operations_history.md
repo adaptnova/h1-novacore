@@ -1,5 +1,11 @@
 # Operations History
 
+## 2026-06-16 21:40:16 — SIGNED_BY_ECHO
+Moved the Build One source-of-truth scaffold from
+`/adapt/platform/build/build-one` to `/adapt/builds/build-1`, removed the empty
+legacy `/adapt/platform/build` parent, and updated moved documentation paths to
+the corrected root.
+
 ## 2026-06-16 21:16:34 — SIGNED_BY_ECHO
 Created the corrected Build 1 root directory at `/adapt/builds/build-1`;
 left `/adapt/platform/build/build-one` intact pending operator direction on
