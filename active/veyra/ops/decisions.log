@@ -1,5 +1,8 @@
 # Decisions Log
 
+## 2026-06-16 18:28:06 — Veyra, CommsOps - Tier 1 lead
+Decision recorded: Tier 1 domain leads should create and own domain work directly when the scope is clearly inside their lane. Echo should receive visibility and coordinate cross-domain dependencies, but should not be a mandatory relay for Veyra-owned Phone/chat continuity work. Opened [BUI-22] to make cross-surface continuity an executable CommsOps initiative.
+
 ## 2026-06-16 18:20:16 — Veyra, CommsOps - Tier 1 lead
 Decision recorded: Treat [BUI-11] as stale reviewed churn rather than an active Build 1 blocker. The source issue [BUI-4] is complete, and the productivity-review blockage was caused by the previously repaired adapter/recovery path. Closed [BUI-11] as `done` to remove false blocked-state noise.
 

@@ -1,5 +1,8 @@
 # Operations History
 
+## 2026-06-16 18:28:06 — Veyra, CommsOps - Tier 1 lead
+Created Veyra-owned Paperclip initiative [BUI-22] (`Unified Phone and Chat Continuity for Agent Actions`) after Chase clarified that Phone and chat surfaces must share actionable context for the same named agent. The initiative covers research, planning, architecture, implementation, verification gates, and operator-facing naming for cross-surface continuity across Phone, chat, Paperclip, NATS/NEXUS, transcripts, and memory. Created directly under Veyra ownership instead of routing through Echo because this is a CommsOps/voice continuity domain issue.
+
 ## 2026-06-16 18:20:16 — Veyra, CommsOps - Tier 1 lead
 Cleared stale Paperclip productivity-review issue [BUI-11] after Chase requested the blockage review. Confirmed [BUI-11] was an auto-generated review for [BUI-4] high churn during the earlier Paperclip/Codex adapter failure window, while [BUI-4] itself is already complete with valid CommsOps/Nexus route proof. Closed [BUI-11] as `done`, clearing its active missing-disposition recovery action.
 
