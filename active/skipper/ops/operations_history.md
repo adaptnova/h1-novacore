@@ -1,5 +1,19 @@
 # Operations History
 
+## 2026-06-17 13:38:59 — SIGNED_BY_SKIPPER
+Investigated Chase's report that Vaeris was erroring in Paperclip. Found two
+separate failure modes: Vaeris heartbeat runs
+`4f53bf86-10f0-4de0-b510-f6b963469e39` and
+`1186876e-3b07-44b2-9c3d-c24c9155b10c` failed at
+`2026-06-17T16:26:52Z` and `2026-06-17T16:27:07Z` with the Codex
+`You've hit your usage limit ... try again at 11:19 AM` adapter error; current
+Paperclip identity/inbox calls for Vaeris timed out while `/api/health` still
+returned `ok`. Server logs also showed identifier/comment/document routes
+failing with `could not access file "pg_trgm": No such file or directory`,
+while the running embedded Postgres executable is marked deleted/stale.
+Confirmed no current Paperclip heartbeat child belongs to Vaeris; active
+heartbeat children belong to other Build 1 agents.
+
 ## 2026-06-17 11:33:10 — SIGNED_BY_SKIPPER
 Investigated why Vaeris's Paperclip access-cleanup A2A was not answered when
 sent. Confirmed the message arrived on `nova.skipper.direct` at
