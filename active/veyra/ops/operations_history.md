@@ -1,5 +1,8 @@
 # Operations History
 
+## 2026-06-16 17:51:09 — Veyra, CommsOps - Tier 1 lead
+Opened Skipper-owned Paperclip control-plane follow-up [BUI-20] (`Fix Paperclip issue mutation/activity-log atomicity for run-id failures`) after observing that invalid or non-existent `X-Paperclip-Run-Id` values can return 500 while issue mutations persist. Kept [BUI-20] separate from [BUI-1] because Build 1 runtime closure is now validly green, while the Paperclip audit/atomicity defect is a control-plane hardening task.
+
 ## 2026-06-16 17:49:47 — Veyra, CommsOps - Tier 1 lead
 Verified the Build 1 degraded-runtime repair chain after [BUI-18] completed. [BUI-18] created and resolved [BUI-19] (`Restore fresh Build 1 iris voice output proof`), rebuilt and restarted `n-voice-gateway.service`, and restored live `/api/a2a/readiness` to `status=green`, `overall_state=operational`, `voice_operational=true`, `voice_route_ok=true`, and `blocking_axis=null`. Verified [BUI-1] is now validly closed as `done` with final closeout commit `27be1f6`, no active run, no checkout, no recovery action, and no remaining blockers.
 

@@ -1,5 +1,8 @@
 # Decisions Log
 
+## 2026-06-16 17:51:09 — Veyra, CommsOps - Tier 1 lead
+Decision recorded: Track the Paperclip mutation/activity-log atomicity defect as [BUI-20] under Skipper instead of using it to hold [BUI-1] open. The defect affects control-plane audit integrity broadly, but the Build 1 runtime closeout is now independently supported by live green readiness and fresh voice proof.
+
 ## 2026-06-16 17:49:47 — Veyra, CommsOps - Tier 1 lead
 Decision recorded: Accept [BUI-1] closure only after the reopened blocker path produced live non-degraded evidence. The valid closure condition is `overall_state=operational`, `voice_operational=true`, `voice_route_ok=true`, and `blocking_axis=null` on the deployed `/api/a2a/readiness` endpoint, plus fresh Iris audio output proof. This supersedes the earlier invalid degraded closeout.
 
