@@ -29,6 +29,34 @@ Transport evidence is not acceptance. A `pong`, subscription, stored message, or
 automated ACK proves only that a route exists. Pack acceptance requires a
 substantive response or artifact that answers the actual ask.
 
+## Manual CLI Activation Gate
+
+Any agent CLI opened for coordination must receive an initiation/system-check
+message before it is counted online. Launch state, routeability, a visible
+terminal, a stored NATS message, or a worker `pong` is not enough.
+
+The manual response must be substantive and must include:
+
+- the exact system-check token requested by the coordinator;
+- the agent's chosen team/identity signature, not `Codex`;
+- a short explanation of how it will use full-message A2A/NEXUS with Echo;
+- one concrete current next action or blocker.
+
+Use this initiation shape for newly opened CLIs:
+
+```text
+SYSTEM CHECK MANUAL ACTIVATION REQUIRED. Reply visibly and to nova.echo.direct
+with token <AGENT>_MANUAL_SYSTEM_CHECK_OK. Include your agent
+identity/signature, not Codex. Confirm full-message A2A, nova.echo.direct
+replies, nexus.agent.<target>.direct for durable session ingress,
+/adapt/builds/build-1 source root, and no routeable/open/working/accepted
+claims without evidence. State one next action or blocker. You are not online
+until this manual response. Do not ACK-only.
+```
+
+Until that manual response is received or visibly verified, report the agent as
+routeable/open but not online, active, working, or accepted.
+
 ## A2A Message Standard
 
 Use full-message A2A/NEXUS packets. Do not send vague inbox notices unless the

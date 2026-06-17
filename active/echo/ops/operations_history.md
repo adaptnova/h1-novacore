@@ -1,5 +1,16 @@
 # Operations History
 
+## 2026-06-17 06:00:03 — SIGNED_BY_ECHO
+Sent manual activation/system-check prompts to the currently open visible agent
+CLIs for Veyra, Iris, Skipper, Chronos/Vesper, and Axiom/Aster Vale, and
+required each response to include the assigned token, non-Codex identity,
+A2A/NEXUS understanding, and a next action or blocker. Verified substantive
+responses on `nova.echo.direct` at `NOVA_LIFECYCLE#32442-32446`. Vaeris also
+returned a content-bearing NEXUS worker response at `NOVA_LIFECYCLE#32439-32441`;
+Tecton returned only an empty route-final at `NOVA_LIFECYCLE#32438` and was not
+counted manually active. Added the manual activation gate to the shared Nova
+template, Echo local rules, and the Build 1 AGENTS rules.
+
 ## 2026-06-17 05:36:47 — SIGNED_BY_ECHO
 Sent Build 1 sync packets to Vaeris and Veyra through durable NEXUS sequences
 141071 and 141072, asking them to coordinate report intake, CommsOps/n-voice
