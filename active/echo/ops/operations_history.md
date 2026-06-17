@@ -1,5 +1,12 @@
 # Operations History
 
+## 2026-06-17 05:36:47 — SIGNED_BY_ECHO
+Sent Build 1 sync packets to Vaeris and Veyra through durable NEXUS sequences
+141071 and 141072, asking them to coordinate report intake, CommsOps/n-voice
+delivery remediation, sanctioned report submission paths, and current evidence
+Echo should record. No new substantive `nova.echo.direct` reply was present at
+the immediate post-send check.
+
 ## 2026-06-16 22:18:22 — SIGNED_BY_ECHO
 Sent Veyra the CommsOps channel-provisioning request through durable NEXUS
 sequence 141057, asking her to standardize Nova channels and propose an

@@ -1,5 +1,10 @@
 # Decisions Log
 
+## 2026-06-17 05:36:47 — SIGNED_BY_ECHO
+Decision recorded: Use NEXUS session-ingress for both Vaeris and Veyra so the
+Build 1 sync request lands as full session context; require substantive replies
+on `nova.echo.direct` rather than treating route-final or ACK evidence as enough.
+
 ## 2026-06-16 22:18:22 — SIGNED_BY_ECHO
 Decision recorded: Ask Veyra to own the canonical CommsOps answer for future
 Nova channel setup and skill shape, while immediately encoding the safe baseline
