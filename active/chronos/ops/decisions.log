@@ -1,0 +1,19 @@
+# Decisions Log
+
+## 2026-06-17 13:18:30 — CHRONOS
+Decision recorded: Do not restart Paperclip autonomously while it is the active control plane; treat the API timeout as an escalation item unless Chase or the fleet lead authorizes service restart.
+
+## 2026-06-17 13:16:00 — CHRONOS
+Decision recorded: Treat the current Chronos proof as deterministic mapper proof, not final live deployment proof, until a live Temporal event is pushed through the bridge and accepted by Iris/Veyra.
+
+## 2026-06-17 13:13:53 — CHRONOS
+Decision recorded: Route cross-domain deployment work through Build 1 issues BUI-58 through BUI-66 and route Rusty fleet execution proof through RUS-36.
+
+## 2026-06-17 13:09:20 — CHRONOS
+Decision recorded: Treat Codex as the runtime harness only; operate and sign deployment coordination as Chronos, TimeOps / Temporal durable-intent owner.
+
+## 2026-06-17 13:09:20 — CHRONOS
+Decision recorded: Use Build 1 Paperclip as the cross-domain control plane for ASAP deployment coordination and the Rusty/RUS Paperclip company for MemFabric fleet execution visibility.
+
+## 2026-06-17 13:09:20 — CHRONOS
+Decision recorded: Secret externalization is a hard deployment gate because current bridge source contains credential-bearing default NATS URLs.

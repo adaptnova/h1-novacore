@@ -1,0 +1,59 @@
+{
+  "schema": "chronos.temporal_workflow_to_issue_proof.v1",
+  "timestamp": "2026-06-17T20:16:00Z",
+  "owner": "chronos",
+  "paperclip_parent": "BUI-58",
+  "paperclip_issue": "BUI-66",
+  "source_file": "/adapt/platform/memops/memfabric/ops/pc-bridge/workflow-to-issue.ts",
+  "command": "node /adapt/platform/memops/memfabric/ops/pc-bridge/workflow-to-issue.ts --sample",
+  "result": "pass",
+  "verified_actions": [
+    "paperclip.issue.create",
+    "paperclip.issue.update_heartbeat",
+    "paperclip.issue.upsert_error",
+    "nats.resume_command_with_issue_metadata"
+  ],
+  "verified_states": [
+    "started",
+    "completed",
+    "failed",
+    "resume_requested"
+  ],
+  "verified_boundaries": {
+    "temporal": "durable_intent_order_retry",
+    "nats": "wake_resume_command_transport",
+    "supervisor": "process_start_resume",
+    "paperclip": "issue_state_and_metadata_visibility"
+  },
+  "sample_workflow": {
+    "workflow_id": "memfab.agent_startup_hydration_workflow.sample-1",
+    "run_id": "run-sample-1",
+    "task_queue": "memfab.agent",
+    "execution_role": "edge",
+    "paperclip_role": "engineer",
+    "agent_id": "memfab-rust-01-edge"
+  },
+  "resume_subjects_verified": {
+    "fleet_command": "fleet.rusty.command.resume",
+    "per_agent_command_pattern": "fleet.rusty.agent.{agent_id}.command.resume",
+    "ack_reply_pattern": "fleet.rusty.agent.{agent_id}.command.resume.ack.{request_id}"
+  },
+  "deployment_blockers": [
+    {
+      "id": "secret_externalization",
+      "status": "open",
+      "summary": "Bridge runtime path contains credential-bearing default NATS URLs; Tecton/Skipper must externalize before service promotion."
+    },
+    {
+      "id": "live_temporal_event",
+      "status": "open",
+      "summary": "This proof verifies deterministic mapping behavior. A live Temporal event must still be run through the bridge before final acceptance."
+    },
+    {
+      "id": "rus_36_recovery",
+      "status": "open",
+      "summary": "RUS-36 entered Paperclip recovery for missing disposition after a successful run; Axiom owns recovery disposition."
+    }
+  ],
+  "next_action": "Use this mapping proof as the baseline for Skipper bridge deployment and Iris acceptance, then replace the sample workflow with a live Temporal event proof before final deployment gate."
+}
