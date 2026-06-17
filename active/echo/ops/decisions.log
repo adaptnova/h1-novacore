@@ -1,5 +1,11 @@
 # Decisions Log
 
+## 2026-06-17 07:36:17 — SIGNED_BY_ECHO
+Decision recorded: Because `VII` is not a verified local Nova profile, route the
+request both to literal `nexus.agent.vii.direct` and to the Vaeris/Veyra
+leadership lane; classify Vaeris's reply as planning guidance requiring owner
+confirmation before execution.
+
 ## 2026-06-17 06:13:35 — SIGNED_BY_ECHO
 Decision recorded: Track the explicit Echo-local and visible-terminal procedure
 files that carry the manual CLI activation rule, keeping the commit scoped to
