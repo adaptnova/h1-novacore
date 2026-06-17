@@ -1,5 +1,11 @@
 # Decisions Log
 
+## 2026-06-16 22:02:28 — SIGNED_BY_ECHO
+Decision recorded: Send Build 1 alignment to active routed owners, omit Riven
+from the active pack map per Chase's correction, handle Axiom through the visible
+MemFabric Codex terminal because `nova.axiom.*` has no responder, and make the
+template rule generic: named packs remain active unless explicitly reclassified.
+
 ## 2026-06-16 21:45:13 — SIGNED_BY_ECHO
 Decision recorded: Treat Veyra's CommsOps domain reel at
 `/adapt/platform/commsops/commsops-domain-reel` as the archive pickup path for

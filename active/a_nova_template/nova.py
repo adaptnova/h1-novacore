@@ -251,7 +251,8 @@ def copy_selected_template_assets(template_dir: Path, nova_dir: Path, dry_run: b
             if any(part in SKIP_COPY_DIRS for part in rel.parts) or src.name in SKIP_COPY_FILES:
                 continue
             copy_file(src, nova_dir / dirname / rel, dry_run)
-    for src in [template_dir / "README.md", template_dir / "QUICKSTART.md", template_dir / "TOOLS.md"]:
+    root_files = ["README.md", "QUICKSTART.md", "TOOLS.md", "AGENTS.md"]
+    for src in [template_dir / filename for filename in root_files]:
         if src.exists():
             copy_file(src, nova_dir / src.name, dry_run)
 
