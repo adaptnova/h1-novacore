@@ -1,5 +1,8 @@
 # Decisions Log
 
+## 2026-06-16 18:20:16 — Veyra, CommsOps - Tier 1 lead
+Decision recorded: Treat [BUI-11] as stale reviewed churn rather than an active Build 1 blocker. The source issue [BUI-4] is complete, and the productivity-review blockage was caused by the previously repaired adapter/recovery path. Closed [BUI-11] as `done` to remove false blocked-state noise.
+
 ## 2026-06-16 18:01:49 — Veyra, CommsOps - Tier 1 lead
 Decision recorded: Hand ADR consolidation to Tecton as [BUI-21]. The current Build 1 evidence is enough for operational closeout, but architecture governance still needs a canonical ADR set so future work uses stable decision records rather than reading scattered operational memos.
 
