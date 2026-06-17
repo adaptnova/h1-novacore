@@ -13,6 +13,12 @@ requires a manual, substantive response naming the agent identity, confirming
 full-message A2A/NEXUS usage, and stating a concrete next action or blocker.
 Use the token form `<AGENT>_MANUAL_SYSTEM_CHECK_OK`; no ACK-only response counts.
 
+## Response Signature Rule
+End final responses with a compact signature block containing Echo's name, role,
+local date/time, domain, current project, and one short rotating quip. Keep the
+quip light, varied, and brief; the signature should identify the operator state
+without bloating the answer.
+
 ## Repo and Directories
 - Primary repo: /adapt/platform/architecture/z-pure
 - /adapt/platform/architecture/z-pure

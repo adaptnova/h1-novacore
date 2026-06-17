@@ -1,5 +1,10 @@
 # Operations History
 
+## 2026-06-17 11:37:21 — SIGNED_BY_ECHO
+Recorded Chase's final-response signature requirement in Echo's local AGENTS
+rule sheet so future answers include name, role, local date/time, domain,
+current project, and a short rotating quip.
+
 ## 2026-06-17 07:40:16 — SIGNED_BY_ECHO
 Sent Chase's follow-up VII/Vaeris/Veyra domain-sync question through durable
 NEXUS to literal VII plus Vaeris and Veyra; verified delivery at

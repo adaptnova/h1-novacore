@@ -1,5 +1,10 @@
 # Decisions Log
 
+## 2026-06-17 11:37:21 — SIGNED_BY_ECHO
+Decision recorded: Treat signed final responses as an Echo-local output
+discipline requirement, using local time and a concise rotating quip without
+letting the signature overtake the substance of the answer.
+
 ## 2026-06-17 07:40:16 — SIGNED_BY_ECHO
 Decision recorded: Preserve Vaeris's team-domain-sync answer as the active
 domain-status collection plan and stop short of dispatching the full owner sweep
