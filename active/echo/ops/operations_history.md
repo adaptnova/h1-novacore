@@ -1,5 +1,10 @@
 # Operations History
 
+## 2026-06-16 21:16:34 — SIGNED_BY_ECHO
+Created the corrected Build 1 root directory at `/adapt/builds/build-1`;
+left `/adapt/platform/build/build-one` intact pending operator direction on
+whether to move, mirror, or supersede the earlier scaffold.
+
 ## 2026-06-16 21:07:34 — SIGNED_BY_ECHO
 Created `/adapt/platform/build/build-one` as the Build 1 source-of-truth root,
 seeded documentation and memo directories, and sent the first blanket domain

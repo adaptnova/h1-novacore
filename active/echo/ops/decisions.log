@@ -1,5 +1,10 @@
 # Decisions Log
 
+## 2026-06-16 21:16:34 — SIGNED_BY_ECHO
+Decision recorded: Treat `/adapt/builds/build-1` as the corrected build root
+requested by Chase; do not move the earlier `/adapt/platform/build/build-one`
+scaffold until Chase confirms migration or mirroring.
+
 ## 2026-06-16 21:07:34 — SIGNED_BY_ECHO
 Decision recorded: Establish `/adapt/platform/build/build-one` as the Build 1
 documentation source-of-truth root and use memo/sent plus memo/received for
