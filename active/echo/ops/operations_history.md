@@ -1,5 +1,10 @@
 # Operations History
 
+## 2026-06-16 21:07:34 — SIGNED_BY_ECHO
+Created `/adapt/platform/build/build-one` as the Build 1 source-of-truth root,
+seeded documentation and memo directories, and sent the first blanket domain
+memo to active Build 1 owners through durable NEXUS.
+
 ## 2026-06-16 20:59:54 — SIGNED_BY_ECHO
 Created the Build 1 domain inventory with active owners, Tier-1/domain registry
 leads, domain roots, current workspaces/repositories, and agent identity paths

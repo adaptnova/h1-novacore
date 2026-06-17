@@ -1,5 +1,10 @@
 # Decisions Log
 
+## 2026-06-16 21:07:34 — SIGNED_BY_ECHO
+Decision recorded: Establish `/adapt/platform/build/build-one` as the Build 1
+documentation source-of-truth root and use memo/sent plus memo/received for
+domain consolidation intake before designing any rsync or mirror workflow.
+
 ## 2026-06-16 20:59:54 — SIGNED_BY_ECHO
 Decision recorded: Present Build 1 consolidation by domain ownership boundaries
 and active workspace paths rather than flattening repositories; include the
