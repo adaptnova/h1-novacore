@@ -1,4 +1,13 @@
 # Decisions Log
 
+## 2026-06-17 11:27:00 — SIGNED_BY_SKIPPER
+Decision recorded: Vaeris should use the restored Build 1 Vaeris agent key in
+`/adapt/secrets/paperclip.env` for Paperclip heartbeat/runtime access. The
+local-trusted board context remains the correct path only for board-level setup
+and future key rotation on the loopback instance. Keep
+[BUI-39](/BUI/issues/BUI-39) blocked by [BUI-43](/BUI/issues/BUI-43) until the
+remaining cross-assignee [BUI-34](/BUI/issues/BUI-34) child `requestDepth`
+repair is complete.
+
 ## 2026-06-17 08:00:39 — SKIPPER
 Decision recorded: Treat rust-worker ping responses as transport reachability only, use n-voice turn-event replies as model-backed/substantive evidence, avoid launching another full fleet direct-message blast while overlapping Vaeris/Tecton/Aster/Skipper radio checks were already draining, and send only the missing Testova direct proof turn.
