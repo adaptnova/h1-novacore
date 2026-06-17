@@ -1,5 +1,12 @@
 # Decisions Log
 
+## 2026-06-17 11:33:10 — SIGNED_BY_SKIPPER
+Decision recorded: Treat `nova.skipper.direct` messages as durable but not
+automatically visible to this interactive Skipper Codex session while
+`SUB_skipper` remains idle. Until the consumer is repaired or a live subscriber
+is running, manually check recent `NOVA_LIFECYCLE` records for
+`nova.skipper.direct` before concluding that Skipper has no pending A2A work.
+
 ## 2026-06-17 11:27:00 — SIGNED_BY_SKIPPER
 Decision recorded: Vaeris should use the restored Build 1 Vaeris agent key in
 `/adapt/secrets/paperclip.env` for Paperclip heartbeat/runtime access. The

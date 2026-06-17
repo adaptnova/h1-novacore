@@ -1,5 +1,15 @@
 # Operations History
 
+## 2026-06-17 11:33:10 — SIGNED_BY_SKIPPER
+Investigated why Vaeris's Paperclip access-cleanup A2A was not answered when
+sent. Confirmed the message arrived on `nova.skipper.direct` at
+`2026-06-17T16:05:45Z` as stream sequence `32891`, but Skipper's persistent
+`SUB_skipper` consumer has not delivered messages for about six days and had 31
+unprocessed records. Confirmed the later Skipper response on
+`nova.vaeris.direct` at sequence `32892` and Vaeris's model-backed
+acknowledgement back to `nova.skipper.direct` at sequences `32893` through
+`32895`.
+
 ## 2026-06-17 11:27:00 — SIGNED_BY_SKIPPER
 Verified the live Build 1 Paperclip credential cleanup requested by Vaeris on
 [BUI-39](/BUI/issues/BUI-39). Confirmed the Paperclip API health endpoint is
