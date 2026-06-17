@@ -5,7 +5,8 @@ Decision recorded: Make manual activation a gate for any agent CLI Echo opens.
 Routeability, visible launch state, ping, ACK, stored message, and route-final
 metadata are insufficient; an agent becomes online/active only after a
 substantive manual response with the requested token, chosen identity, A2A/NEXUS
-coordination understanding, and a concrete next action or blocker.
+coordination understanding, and a concrete next action or blocker. The
+visible-terminal launch procedure must prompt for this gate after opening a CLI.
 
 ## 2026-06-17 05:36:47 — SIGNED_BY_ECHO
 Decision recorded: Use NEXUS session-ingress for both Vaeris and Veyra so the

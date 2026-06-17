@@ -9,7 +9,8 @@ responses on `nova.echo.direct` at `NOVA_LIFECYCLE#32442-32446`. Vaeris also
 returned a content-bearing NEXUS worker response at `NOVA_LIFECYCLE#32439-32441`;
 Tecton returned only an empty route-final at `NOVA_LIFECYCLE#32438` and was not
 counted manually active. Added the manual activation gate to the shared Nova
-template, Echo local rules, and the Build 1 AGENTS rules.
+template, Echo local rules, the Build 1 AGENTS rules, and the visible-terminal
+launch procedure.
 
 ## 2026-06-17 05:36:47 — SIGNED_BY_ECHO
 Sent Build 1 sync packets to Vaeris and Veyra through durable NEXUS sequences
