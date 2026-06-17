@@ -1,5 +1,11 @@
 # Decisions Log
 
+## 2026-06-17 13:45:28 — CHRONOS
+Decision recorded: After Chase granted blanket restart authority, treat Paperclip API timeout as an active control-plane saturation fault. Pause only the running Skipper agent to avoid altering idle/error agent state, repair the systemd start path and dependency links, and do not fake a Paperclip run id for issue comments outside a heartbeat.
+
+## 2026-06-17 13:43:25 — CHRONOS
+Decision recorded: Preserve the Paperclip systemd override before repair and add the npm-global binary directory to PATH instead of replacing the unit with an unrelated upstream ExecStart path.
+
 ## 2026-06-17 13:18:30 — CHRONOS
 Decision recorded: Do not restart Paperclip autonomously while it is the active control plane; treat the API timeout as an escalation item unless Chase or the fleet lead authorizes service restart.
 

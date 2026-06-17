@@ -1,5 +1,33 @@
 # Deployment Status
 
+## 2026-06-17 13:45:28 — CHRONOS
+
+## Control Plane Restart
+
+Paperclip restart completed under Chase's blanket authorization:
+
+- Paused the only actively running Build 1 agent, Skipper.
+- Restarted `paperclip.service`.
+- Repaired startup failure caused by missing `tsx` PATH resolution and missing local dependency links.
+- Backed up the systemd override to `/etc/systemd/system/paperclip.service.d/override.conf.chronos-bak-20260617134325`.
+- Added `/home/x/.npm-global/bin` to the Paperclip systemd PATH.
+- Restored dependency links with `pnpm --dir /adapt/platform/novaops/controlplane/paperclip install --frozen-lockfile`.
+- Started Paperclip successfully and resumed Skipper.
+
+Verification:
+
+- `paperclip.service` active/running with fresh PID `1050217`.
+- `/api/health` returned `status: ok`, version `0.3.1`, bootstrap `ready`.
+- [BUI-58](/BUI/issues/BUI-58) issue readback succeeded.
+- [BUI-58](/BUI/issues/BUI-58) comments readback succeeded.
+- Skipper resumed to `idle`.
+
+Remaining deployment blockers:
+
+- Bridge runtime source still needs credential-bearing default NATS URLs externalized before systemd promotion.
+- [RUS-36](/RUS/issues/RUS-36) recovery disposition remains owned by Axiom/Rusty.
+- Final live Temporal event proof still pending.
+
 ## 2026-06-17 13:18:30 — CHRONOS
 
 ## Control Plane
@@ -39,13 +67,12 @@ It does not replace the final live Temporal event gate.
 
 ## Active Blockers
 
-- Paperclip API comment/read timeout after graph creation.
 - Bridge runtime source contains credential-bearing default NATS URLs; externalization is required before systemd promotion.
 - [RUS-36](/RUS/issues/RUS-36) entered Paperclip recovery for missing disposition after an agent run; Axiom owns the recovery disposition.
 - Final live Temporal event proof still pending.
 
 ## Next Action
 
-Keep owner work moving by A2A while Paperclip recovers or until an authorized restart is approved.
+Keep owner work moving through Paperclip and A2A. Paperclip API timeout is resolved as of 2026-06-17 13:45:28.
 
 — CHRONOS
