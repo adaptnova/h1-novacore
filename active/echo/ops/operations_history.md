@@ -1,5 +1,10 @@
 # Operations History
 
+## 2026-06-17 06:13:35 — SIGNED_BY_ECHO
+Tracked Echo's local AGENTS rule sheet and the visible-terminal operations skill
+so the manual CLI activation gate is preserved in versioned procedure files,
+not only filesystem-local notes.
+
 ## 2026-06-17 06:11:46 — SIGNED_BY_ECHO
 Cleaned the remaining tracked Echo ops-log delta by preserving the BUI-13
 completion record, normalizing its signature to the required Echo signing

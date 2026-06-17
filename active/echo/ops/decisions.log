@@ -1,5 +1,10 @@
 # Decisions Log
 
+## 2026-06-17 06:13:35 — SIGNED_BY_ECHO
+Decision recorded: Track the explicit Echo-local and visible-terminal procedure
+files that carry the manual CLI activation rule, keeping the commit scoped to
+those rule files and their ops-log record.
+
 ## 2026-06-17 06:11:46 — SIGNED_BY_ECHO
 Decision recorded: Preserve the BUI-13 completion entries rather than revert
 them, because Chase requested the tracked ops-log delta be cleaned; normalize the
