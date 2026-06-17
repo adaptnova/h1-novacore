@@ -1,5 +1,10 @@
 # Decisions Log
 
+## 2026-06-16 20:59:54 — SIGNED_BY_ECHO
+Decision recorded: Present Build 1 consolidation by domain ownership boundaries
+and active workspace paths rather than flattening repositories; include the
+Riven/Axiom discrepancy explicitly and apply Chase's current no-Riven correction.
+
 ## 2026-06-16 14:52:08 — SIGNED_BY_ECHO
 Decision recorded: Treat current n-voice Rust-worker replies from Skipper and
 Veyra as transport-only until content-bearing chunks are restored; use visible
