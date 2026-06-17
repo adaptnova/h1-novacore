@@ -1,5 +1,10 @@
 # Decisions Log
 
+## 2026-06-16 21:45:13 — SIGNED_BY_ECHO
+Decision recorded: Treat Veyra's CommsOps domain reel at
+`/adapt/platform/commsops/commsops-domain-reel` as the archive pickup path for
+Build 1 planning; do not start rsync/mirror execution from this handoff alone.
+
 ## 2026-06-16 21:40:16 — SIGNED_BY_ECHO
 Decision recorded: Move the Build One source-of-truth scaffold into
 `/adapt/builds/build-1` and remove the legacy `/adapt/platform/build/build-one`
