@@ -1,5 +1,10 @@
 # Decisions Log
 
+## 2026-06-17 07:40:16 — SIGNED_BY_ECHO
+Decision recorded: Preserve Vaeris's team-domain-sync answer as the active
+domain-status collection plan and stop short of dispatching the full owner sweep
+until Chase explicitly asks Echo to start it.
+
 ## 2026-06-17 07:36:17 — SIGNED_BY_ECHO
 Decision recorded: Because `VII` is not a verified local Nova profile, route the
 request both to literal `nexus.agent.vii.direct` and to the Vaeris/Veyra

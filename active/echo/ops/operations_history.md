@@ -1,5 +1,12 @@
 # Operations History
 
+## 2026-06-17 07:40:16 — SIGNED_BY_ECHO
+Sent Chase's follow-up VII/Vaeris/Veyra domain-sync question through durable
+NEXUS to literal VII plus Vaeris and Veyra; verified delivery at
+`NEXUS#141120-141122`. Vaeris returned substantive chunked guidance with token
+`VII_TEAM_DOMAIN_SYNC_PLAN_OK` at `NOVA_LIFECYCLE#32488-32495`; Echo filed it in
+Build 1 and created the `domain-sync` intake/rollup area.
+
 ## 2026-06-17 07:36:17 — SIGNED_BY_ECHO
 Sent Chase's VII/domain-consolidation status request as full NEXUS session
 packets to literal VII plus the Vaeris/Veyra leadership lane; verified delivery
