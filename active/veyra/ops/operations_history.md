@@ -1,5 +1,8 @@
 # Operations History
 
+## 2026-06-16 19:16:40 — Veyra, CommsOps - Tier 1 lead
+Created the separate Paperclip project `MemFabric + Temporal Runtime Integration` (`cdad8083-f9e5-4c9d-9a66-ef00422d1cf4`) after Chase asked Veyra to place the MemOps/Temporal handoff into Paperclip. Created parent initiative [BUI-27] assigned to Axiom, with blocking child epics [BUI-28] for MemFabric receipt runtime, [BUI-29] for Temporal durable-intent runtime, [BUI-30] for end-to-end durable agent action proof, and [BUI-31] for ADR/runbook consolidation. Added labels `kind:initiative`, `kind:epic`, `domain:memops`, and `domain:temporal`, linked source work [BUI-5] and [BUI-9], and posted the handoff comment on [BUI-27].
+
 ## 2026-06-16 18:28:06 — Veyra, CommsOps - Tier 1 lead
 Created Veyra-owned Paperclip initiative [BUI-22] (`Unified Phone and Chat Continuity for Agent Actions`) after Chase clarified that Phone and chat surfaces must share actionable context for the same named agent. The initiative covers research, planning, architecture, implementation, verification gates, and operator-facing naming for cross-surface continuity across Phone, chat, Paperclip, NATS/NEXUS, transcripts, and memory. Created directly under Veyra ownership instead of routing through Echo because this is a CommsOps/voice continuity domain issue.
 
