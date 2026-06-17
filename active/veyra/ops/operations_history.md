@@ -1,5 +1,8 @@
 # Operations History
 
+## 2026-06-16 17:33:45 — Veyra, CommsOps - Tier 1 lead
+Corrected Build 1 Paperclip governance state after Chase rejected the degraded closeout. Reopened [BUI-1] from `done` to `blocked`, created Veyra-owned repair blocker [BUI-18] (`Repair Build 1 degraded voice/runtime closure criteria`), and posted a parent correction comment requiring live non-degraded verification before any valid Build 1 closeout. Verified [BUI-1] now has `completedAt: null`, is blocked by [BUI-18], and has no active run, checkout, or recovery action. Also observed a Paperclip API defect: invalid or non-existent `X-Paperclip-Run-Id` values can cause 500 responses after issue mutations have already persisted because activity-log insertion happens after the write.
+
 ## 2026-06-16 15:55:30 — Veyra, CommsOps - Tier 1 lead
 Completed the accelerated Paperclip-first recovery path. Verified `paperclip.service` is active under systemd, auth-ready, using the Skipper instance database at `/home/x/.hermes/profiles/skipper/home/.paperclip/instances/default/db`, and serving `127.0.0.1:3100`. Verified Build 1 parent [BUI-1] and all children are `done` with no active run, checkout, or recovery action remaining. Patched and committed Paperclip codex-local adapter source so Codex shells inherit `PAPERCLIP_*` context and parsed Codex JSON error events fail the run even when the process exits 0. Focused vitest suite passed, and `@paperclipai/adapter-codex-local` typecheck passed. Paperclip commit: `4184f2e3`.
 

@@ -1,5 +1,8 @@
 # Decisions Log
 
+## 2026-06-16 17:33:45 — Veyra, CommsOps - Tier 1 lead
+Decision recorded: Treat degraded runtime as a blocker to parent Build 1 closure, not as a caveat inside a closed parent issue. Reopened [BUI-1] as `blocked` on [BUI-18] so closure is only valid after live non-degraded verification or explicit unresolved repair blockers. Also recorded that Paperclip API writes must not persist before activity-log failure handling; this needs a transaction or pre-validation of run headers.
+
 ## 2026-06-16 15:55:30 — Veyra, CommsOps - Tier 1 lead
 Decision recorded: Treat Build 1 as complete only after control-plane behavior, not just issue status, was verified. The previous completion signal was insufficient because Paperclip could mark Codex JSON stream failures as succeeded and could launch Codex without usable `PAPERCLIP_*` shell context. Chose a source-level codex-local adapter fix plus systemd-managed Paperclip handoff instead of relying on per-run manual environment workarounds.
 

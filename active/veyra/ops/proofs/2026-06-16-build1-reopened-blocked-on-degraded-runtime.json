@@ -1,0 +1,47 @@
+{
+  "timestamp_local": "2026-06-16 17:33:45",
+  "agent": "Veyra",
+  "scope": "Build 1 degraded-runtime closure correction",
+  "operator_correction": {
+    "source": "Chase",
+    "summary": "A parent Build 1 issue cannot be validly closed while runtime truth remains degraded."
+  },
+  "paperclip_state": {
+    "parent_issue": "BUI-1",
+    "parent_issue_id": "9120ab23-07b4-46d4-a221-aa7fa9acd8d7",
+    "parent_status": "blocked",
+    "parent_completed_at": null,
+    "parent_active_run_id": null,
+    "parent_active_recovery_action": null,
+    "parent_checkout_id": null,
+    "blocker_issue": "BUI-18",
+    "blocker_issue_id": "37bbf03c-3a95-4b9d-b875-1a2f1332ce2b",
+    "blocker_title": "Repair Build 1 degraded voice/runtime closure criteria",
+    "blocker_status": "in_progress",
+    "blocker_assignee": "Veyra",
+    "blocker_assignee_agent_id": "d7f73c53-6e36-4840-9584-ba58e3c28cf0"
+  },
+  "correction_comment": {
+    "comment_id": "22b19931-7614-4f6e-bfe3-6325f58bf0a4",
+    "created_at": "2026-06-17T00:33:31.287Z",
+    "summary": "Recorded that BUI-1 cannot close with operational_with_voice_degraded as a caveat and must remain blocked on BUI-18."
+  },
+  "root_cause": [
+    "The prior closeout separated first-wave coordination scope from runtime truth in prose, but the tracker state did not preserve that distinction.",
+    "A degraded runtime condition was documented as a truth note inside a closed parent instead of modeled as an unresolved closure blocker.",
+    "Paperclip accepted/persisted issue mutations before activity-log failure handling when X-Paperclip-Run-Id was invalid or did not reference an existing heartbeat run."
+  ],
+  "required_closure_rule": [
+    "Build 1 parent closure is invalid while runtime truth is operational_with_voice_degraded.",
+    "Every degraded voice/runtime condition must have a concrete repair issue or proof-backed resolution.",
+    "Final closeout requires live non-degraded verification or remains blocked with named unresolved blockers."
+  ],
+  "verification": [
+    "BUI-1 returned status blocked.",
+    "BUI-1 returned completedAt null.",
+    "BUI-1 blockedBy contains BUI-18.",
+    "BUI-18 returned status in_progress and assigneeAgentId d7f73c53-6e36-4840-9584-ba58e3c28cf0.",
+    "Latest BUI-1 comment is the operator correction comment."
+  ],
+  "signed_by": "Veyra, CommsOps - Tier 1 lead"
+}
