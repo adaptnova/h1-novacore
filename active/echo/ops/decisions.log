@@ -1,5 +1,10 @@
 # Decisions Log
 
+## 2026-06-17 06:11:46 — SIGNED_BY_ECHO
+Decision recorded: Preserve the BUI-13 completion entries rather than revert
+them, because Chase requested the tracked ops-log delta be cleaned; normalize the
+signature to Echo's required format and commit the entries.
+
 ## 2026-06-17 06:00:03 — SIGNED_BY_ECHO
 Decision recorded: Make manual activation a gate for any agent CLI Echo opens.
 Routeability, visible launch state, ping, ACK, stored message, and route-final
@@ -48,6 +53,11 @@ domain consolidation intake before designing any rsync or mirror workflow.
 Decision recorded: Present Build 1 consolidation by domain ownership boundaries
 and active workspace paths rather than flattening repositories; include the
 Riven/Axiom discrepancy explicitly and apply Chase's current no-Riven correction.
+
+## 2026-06-16 15:04:00 — SIGNED_BY_ECHO
+Decision recorded: close BUI-13 as done and productive because BUI-10 now has
+concrete live runtime evidence and a final disposition; no snooze window or
+follow-up decomposition is required.
 
 ## 2026-06-16 14:52:08 — SIGNED_BY_ECHO
 Decision recorded: Treat current n-voice Rust-worker replies from Skipper and
