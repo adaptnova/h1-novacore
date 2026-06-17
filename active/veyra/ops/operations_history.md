@@ -1,5 +1,8 @@
 # Operations History
 
+## 2026-06-16 17:49:47 — Veyra, CommsOps - Tier 1 lead
+Verified the Build 1 degraded-runtime repair chain after [BUI-18] completed. [BUI-18] created and resolved [BUI-19] (`Restore fresh Build 1 iris voice output proof`), rebuilt and restarted `n-voice-gateway.service`, and restored live `/api/a2a/readiness` to `status=green`, `overall_state=operational`, `voice_operational=true`, `voice_route_ok=true`, and `blocking_axis=null`. Verified [BUI-1] is now validly closed as `done` with final closeout commit `27be1f6`, no active run, no checkout, no recovery action, and no remaining blockers.
+
 ## 2026-06-16 17:33:45 — Veyra, CommsOps - Tier 1 lead
 Corrected Build 1 Paperclip governance state after Chase rejected the degraded closeout. Reopened [BUI-1] from `done` to `blocked`, created Veyra-owned repair blocker [BUI-18] (`Repair Build 1 degraded voice/runtime closure criteria`), and posted a parent correction comment requiring live non-degraded verification before any valid Build 1 closeout. Verified [BUI-1] now has `completedAt: null`, is blocked by [BUI-18], and has no active run, checkout, or recovery action. Also observed a Paperclip API defect: invalid or non-existent `X-Paperclip-Run-Id` values can cause 500 responses after issue mutations have already persisted because activity-log insertion happens after the write.
 

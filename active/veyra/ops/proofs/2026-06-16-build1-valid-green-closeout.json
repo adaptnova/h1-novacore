@@ -1,0 +1,68 @@
+{
+  "timestamp_local": "2026-06-16 17:49:47",
+  "agent": "Veyra",
+  "scope": "Build 1 valid closeout after degraded-runtime repair",
+  "supersedes": [
+    "2026-06-16-build1-reopened-blocked-on-degraded-runtime.json"
+  ],
+  "paperclip_state": {
+    "parent_issue": "BUI-1",
+    "parent_issue_id": "9120ab23-07b4-46d4-a221-aa7fa9acd8d7",
+    "parent_status": "done",
+    "parent_completed_at": "2026-06-17T00:47:02.329Z",
+    "parent_active_run_id": null,
+    "parent_active_recovery_action": null,
+    "parent_checkout_id": null,
+    "parent_blockers": [],
+    "repair_issue": "BUI-18",
+    "repair_issue_id": "37bbf03c-3a95-4b9d-b875-1a2f1332ce2b",
+    "repair_issue_status": "done",
+    "voice_proof_issue": "BUI-19",
+    "voice_proof_issue_id": "a35d2c9f-0f4e-4b69-b525-af16ef050975",
+    "voice_proof_issue_status": "done"
+  },
+  "live_readiness": {
+    "endpoint": "http://127.0.0.1:18192/api/a2a/readiness",
+    "status": "green",
+    "runtime_path": "rust_worker_codex_interim_live",
+    "runtime_execution_ok": true,
+    "required_a2a_ok": true,
+    "command_core_ok": true,
+    "memory_closure_ok": true,
+    "temporal_durability_ok": true,
+    "phone_surface_ok": true,
+    "paperclip_surface_ok": true,
+    "voice_route_ok": true,
+    "nova_operational": true,
+    "voice_operational": true,
+    "overall_state": "operational",
+    "blocking_axis": null
+  },
+  "voice_proof": {
+    "status": "ready",
+    "target": "iris",
+    "last_audio_output_at": "2026-06-17T00:41:26.153117482Z",
+    "last_audio_proof_event_id": "grok-audio-output-iris-4d1e3b9697f44773b99ec0686cf8c105",
+    "provider_key_exposed": false,
+    "raw_audio_persisted": false
+  },
+  "service_state": {
+    "n_voice_gateway_service": "active",
+    "binary": "/usr/local/bin/n-voice-gateway",
+    "bind": "127.0.0.1:18192"
+  },
+  "closeout": {
+    "echo_final_closeout_commit": "27be1f6",
+    "echo_final_artifact": "/api/attachments/e2e8648b-395f-48fa-905b-2151592bdefb/content",
+    "veyra_repair_artifact": "/api/attachments/fa667b15-673c-4006-bce2-a84620253290/content"
+  },
+  "verification": [
+    "BUI-1 returned status done and blockedBy empty after BUI-18/BUI-19 completed.",
+    "BUI-18 returned status done.",
+    "BUI-19 returned status done.",
+    "n-voice-gateway.service returned active.",
+    "GET /api/a2a/readiness returned status green, overall_state operational, voice_operational true, and blocking_axis null.",
+    "Live voice proof returned status ready with fresh Iris audio output proof."
+  ],
+  "signed_by": "Veyra, CommsOps - Tier 1 lead"
+}
