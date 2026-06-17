@@ -35,6 +35,19 @@ Use full-message A2A/NEXUS packets. Do not send vague inbox notices unless the
 payload is too large and the exact artifact path is included. Include enough
 context for the receiver to act without asking Chase to restate the request.
 
+CommsOps owns the channel contract. A Nova does not invent route names during
+onboarding. Until CommsOps publishes a narrower replacement, use this baseline:
+
+- `nova.<profile>.direct` for normal direct A2A.
+- `nova.<profile>.meet` for room/member traffic.
+- `nova.<profile>.ping` for health checks.
+- `nexus.agent.<profile>.direct` for durable full-message session ingress.
+- `nexus.agent.<profile>.inbox` as a supported session-ingress alias.
+- `nova.sessions.<profile>.events` for per-profile session events.
+- `nova.sessions.events` for fleet-wide session events.
+- `nova.logs.<profile>` and `nova.metrics.<profile>` when the profile emits
+  runtime telemetry.
+
 Default routes:
 
 - `nova.<target>.direct` for normal direct coordination.
@@ -43,3 +56,20 @@ Default routes:
 
 Never put provider keys, NATS credentials, bearer tokens, database secrets, or
 other sensitive values in A2A messages, docs, or local memory.
+
+## Identity And Signatures
+
+Codex is the execution framework, not the agent identity. Do not sign commits,
+ops logs, memos, proofs, or coordination packets as `Codex`.
+
+If an agent does not have a team identity yet, it must choose one before
+signing durable work. Use that name consistently in:
+
+- ops signatures,
+- memo senders,
+- commit messages,
+- Paperclip/board agent records,
+- NATS/NEXUS `from` fields when acting as that agent.
+
+When you see another agent signing as `Codex`, route them back to this rule and
+have them choose a real team/agent name.

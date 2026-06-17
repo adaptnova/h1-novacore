@@ -1,5 +1,14 @@
 # Operations History
 
+## 2026-06-16 22:18:22 — SIGNED_BY_ECHO
+Sent Veyra the CommsOps channel-provisioning request through durable NEXUS
+sequence 141057, asking her to standardize Nova channels and propose an
+owner-agnostic setup skill for future Nova creation. Veyra's worker returned an
+empty route-final at `NOVA_LIFECYCLE#32122`, so Echo also pasted the same
+request into Veyra's visible Codex terminal. Added channel-contract awareness
+and non-`Codex` identity/signature rules to the shared Nova `AGENTS.md`
+template.
+
 ## 2026-06-16 22:02:28 — SIGNED_BY_ECHO
 Sent the Build 1 pack-alignment packet to routed core owners through durable
 NEXUS sequences 141046-141053, delivered the same packet to Axiom's visible

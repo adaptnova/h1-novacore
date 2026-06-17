@@ -1,5 +1,10 @@
 # Decisions Log
 
+## 2026-06-16 22:18:22 — SIGNED_BY_ECHO
+Decision recorded: Ask Veyra to own the canonical CommsOps answer for future
+Nova channel setup and skill shape, while immediately encoding the safe baseline
+channels and the non-`Codex` signing identity rule in the shared Nova template.
+
 ## 2026-06-16 22:02:28 — SIGNED_BY_ECHO
 Decision recorded: Send Build 1 alignment to active routed owners, omit Riven
 from the active pack map per Chase's correction, handle Axiom through the visible
