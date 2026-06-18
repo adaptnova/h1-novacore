@@ -1,5 +1,17 @@
 # Operations History
 
+## 2026-06-17 22:53:24 — SIGNED_BY_SKIPPER
+Shut down Paperclip at Chase's request so no new Paperclip traffic goes through
+the server. A normal `systemctl stop paperclip.service` timed out, so installed
+`/etc/systemd/system/paperclip.service.d/shutdown-hold.conf` with `Restart=no`,
+reloaded systemd, killed the remaining `paperclip.service` cgroup, and stopped
+and disabled the user-level `paperclip-fleet-kanban.service`. Verified
+`paperclip.service` is `inactive/dead`, `paperclip-fleet-kanban.service` is
+`inactive/dead`, port `127.0.0.1:3100` rejects `/api/health`, and no
+Paperclip server, embedded Postgres, or Paperclip heartbeat child processes are
+running. Remaining listeners on `31001-31009` are MemFabric agents, not
+Paperclip.
+
 ## 2026-06-17 13:38:59 — SIGNED_BY_SKIPPER
 Investigated Chase's report that Vaeris was erroring in Paperclip. Found two
 separate failure modes: Vaeris heartbeat runs

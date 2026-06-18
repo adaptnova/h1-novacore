@@ -1,5 +1,10 @@
 # Decisions Log
 
+## 2026-06-17 22:53:24 — SIGNED_BY_SKIPPER
+Decision recorded: Keep Paperclip offline until Chase explicitly requests it be
+restarted. Preserve the temporary `Restart=no` systemd drop-in and disabled
+user-level fleet kanban unit so Paperclip does not immediately resume traffic.
+
 ## 2026-06-17 13:38:59 — SIGNED_BY_SKIPPER
 Decision recorded: Do not classify Vaeris's Paperclip failure as a credential
 problem. The restored Vaeris key had been verified earlier, while the observed
