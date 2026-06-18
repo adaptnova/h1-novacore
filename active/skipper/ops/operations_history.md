@@ -1,5 +1,23 @@
 # Operations History
 
+## 2026-06-17 23:21:30 — SIGNED_BY_SKIPPER
+Restored Paperclip after Chase provided the DeepSeek V4 Flash NVFP4 GPU route.
+Stopped the accidentally restarted Paperclip cgroup after it spawned stale
+`gpt-5.5` Codex workers, patched the `codex_local` adapter to support explicit
+`modelProvider` routing and Paperclip service-level model/provider overrides,
+updated shared and managed Codex homes with provider
+`deepseek_v4_flash_nvfp4`, added the Paperclip systemd DeepSeek drop-in, and
+restarted `paperclip.service`. Verified `https://q.adaptdev.ai/v1/models`,
+`/v1/responses`, and `codex exec` return through
+`nvidia/DeepSeek-V4-Flash-NVFP4`; verified Paperclip `/api/health` is `ok`.
+Updated 19 active `codex_local` agent records to
+`nvidia/DeepSeek-V4-Flash-NVFP4` with provider
+`deepseek_v4_flash_nvfp4`. Confirmed live Paperclip Codex workers launch with
+DeepSeek, and cleared Vaeris's stale `error` status to `idle` after confirming
+he had no queued/running heartbeats. Sent Echo a direct A2A handoff on
+`nova.echo.direct` with the remaining Paperclip API route/auth and comment
+validation tightening items.
+
 ## 2026-06-17 22:53:24 — SIGNED_BY_SKIPPER
 Shut down Paperclip at Chase's request so no new Paperclip traffic goes through
 the server. A normal `systemctl stop paperclip.service` timed out, so installed

@@ -1,5 +1,15 @@
 # Decisions Log
 
+## 2026-06-17 23:21:30 — SIGNED_BY_SKIPPER
+Decision recorded: Use `https://q.adaptdev.ai/v1` as the active DeepSeek V4
+Flash NVFP4 route for Paperclip because the provided local
+`nvidia-DeepSeek-V4-Flash-NVFP4.service` unit is not installed on this host and
+`127.0.0.1:10001` refuses connections, while the public route returns the
+expected model and successful Responses API completions. Enforce
+`PAPERCLIP_CODEX_LOCAL_MODEL` and `PAPERCLIP_CODEX_LOCAL_MODEL_PROVIDER` in
+systemd so stale agent adapter rows cannot route new `codex_local` heartbeats
+back to `gpt-5.5`.
+
 ## 2026-06-17 22:53:24 — SIGNED_BY_SKIPPER
 Decision recorded: Keep Paperclip offline until Chase explicitly requests it be
 restarted. Preserve the temporary `Restart=no` systemd drop-in and disabled
