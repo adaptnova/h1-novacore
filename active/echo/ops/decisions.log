@@ -1,5 +1,10 @@
 # Decisions Log
 
+## 2026-06-18 01:28:23 — SIGNED_BY_ECHO
+Decision recorded: Keep normal `codex`, `xx`, and `cx` sessions on the main
+OpenAI-backed config, and scope GPU-server/q.adaptdev.ai use to the explicit
+`xxd` launcher via per-command `-c` overrides rather than global config state.
+
 ## 2026-06-17 11:37:21 — SIGNED_BY_ECHO
 Decision recorded: Treat signed final responses as an Echo-local output
 discipline requirement, using local time and a concise rotating quip without

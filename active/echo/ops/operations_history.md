@@ -1,5 +1,11 @@
 # Operations History
 
+## 2026-06-18 01:28:23 — SIGNED_BY_ECHO
+Corrected Codex routing configuration by removing the GPU-server provider block
+from `/home/x/.codex/config.toml`, restoring the main Codex default model path,
+and adding an isolated interactive `xxd` shell function in `/home/x/.bashrc`
+that applies the q.adaptdev.ai provider override with `env_key = "none"`.
+
 ## 2026-06-17 11:37:21 — SIGNED_BY_ECHO
 Recorded Chase's final-response signature requirement in Echo's local AGENTS
 rule sheet so future answers include name, role, local date/time, domain,
