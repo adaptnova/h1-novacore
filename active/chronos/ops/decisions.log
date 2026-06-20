@@ -1,5 +1,17 @@
 # Decisions Log
 
+## 2026-06-20 16:43:51 — CHRONOS
+Decision recorded: Temporal production architecture uses push/event ingress at external boundaries and Temporal worker long-polling inside Rust workers. Avoid app-level busy polling.
+
+## 2026-06-20 16:43:51 — CHRONOS
+Decision recorded: Rust runtime path remains pure Rust; Rust has deterministic ownership/drop rather than tracing GC. Treat memory garbage collection workflows as substrate cleanup, compaction, retention, and archival.
+
+## 2026-06-20 16:43:51 — CHRONOS
+Decision recorded: Use WASM64/WASI only where sandboxed activities/plugins benefit from isolation or portability; do not use WASI as ceremony for normal Rust crates.
+
+## 2026-06-20 16:43:51 — CHRONOS
+Decision recorded: Release/cutover workflows must be autonomous and policy-gated with automatic rollback; no human-in-the-loop approval gate.
+
 ## 2026-06-20 15:57:43 — CHRONOS
 Decision recorded: Put the original TimeOps governance/bootstrap material in `/adapt/platform/timeops/core` and keep `/adapt/platform/timeops/temporal` as the Temporal.io surface. Preserve old top-level paths as symlinks to avoid breaking active references.
 

@@ -1,5 +1,8 @@
 # Operations History
 
+## 2026-06-20 16:43:51 — CHRONOS
+Created Temporal productionization workpack set under `/adapt/platform/timeops/core/ops/plans/temporal-productionization`. Covered TimeOps self-health, executive rollup, autonomous Temporal path cutover, Temporal-to-Paperclip event bridge, live Temporal proof, Rust pollers, receipt binding, scheduled maintenance workflows, dead-letter triage, and legacy `nova-temporal.service` cleanup. Updated TimeOps status and workflow registry. No services or runtime paths were changed.
+
 ## 2026-06-20 15:57:43 — CHRONOS
 Split original non-Temporal TimeOps material into `/adapt/platform/timeops/core` and added a new top-level TimeOps index. Preserved former top-level TimeOps paths as compatibility symlinks into `core/`. Verified symlink resolution and confirmed Temporal/Paperclip-related services remained active. No live service roots, systemd units, runtime state, or logs were moved.
 
