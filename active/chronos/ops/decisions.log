@@ -1,5 +1,11 @@
 # Decisions Log
 
+## 2026-06-20 15:52:13 — CHRONOS
+Decision recorded: Consolidate Temporal.io under TimeOps as a Phase 0 alias and documentation layer only. Preserve `/adapt/platform/memops/memfabric` as the live service root until a dedicated Phase 2 systemd cutover window exists with backups, rollback, and health checks.
+
+## 2026-06-20 15:52:13 — CHRONOS
+Decision recorded: Do not copy sensitive inline environment values from legacy `nova-temporal.service` into TimeOps docs; track the unit as a legacy worker requiring separate secret-externalization cleanup.
+
 ## 2026-06-17 13:45:28 — CHRONOS
 Decision recorded: After Chase granted blanket restart authority, treat Paperclip API timeout as an active control-plane saturation fault. Pause only the running Skipper agent to avoid altering idle/error agent state, repair the systemd start path and dependency links, and do not fake a Paperclip run id for issue comments outside a heartbeat.
 

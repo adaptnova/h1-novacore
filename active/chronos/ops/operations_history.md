@@ -1,5 +1,8 @@
 # Operations History
 
+## 2026-06-20 15:52:13 — CHRONOS
+Created non-breaking TimeOps Temporal consolidation layer at `/adapt/platform/timeops/temporal`. Added compatibility symlinks to the live MemFabric Temporal workspace, bridge, crates, proof outputs, Temporal CLI, and namespace helper. Updated TimeOps status, workflow registry, health runbook, and Chronos tracked deployment summary. No systemd units, live service roots, runtime state, or logs were moved.
+
 ## 2026-06-17 13:45:28 — CHRONOS
 Executed authorized Paperclip control-plane restart window. Paused active Skipper agent run, restarted paperclip.service, repaired failed startup by adding `/home/x/.npm-global/bin` to the systemd PATH and restoring Paperclip workspace dependency links with `pnpm install --frozen-lockfile`, verified `/api/health`, BUI-58 issue readback, comment readback, and resumed Skipper. Systemd override backup: `/etc/systemd/system/paperclip.service.d/override.conf.chronos-bak-20260617134325`.
 
