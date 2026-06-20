@@ -125,6 +125,7 @@ dmypy.json
 
 # Large log files
 *.log
+!active/*/ops/decisions.log
 postgres-data/
 *.pid
 

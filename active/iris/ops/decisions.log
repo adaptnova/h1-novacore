@@ -1,0 +1,22 @@
+# Decisions Log
+
+## 2026-06-19 17:01:01 — Iris
+Decision recorded: Preserve `ops/decisions.log` in version control with a `.gitignore` exception because Adapt ops policy treats decision logs as permanent operational documentation, not disposable runtime logs.
+
+## 2026-06-19 16:59:26 — Iris
+Decision recorded: Treat root identity files, `docs/`, `memory/`, `memories/`, `hand_offs/`, project notes, rosters, and Tier-1 status files as the canonical Iris operating corpus. Treat `inbound/`, `pastes/`, runtime logs, dependency documentation, build outputs, and generated caches as generated context unless a later task explicitly references them. Direct user-triggered documentation ingestion did not originate from an existing `ops/to_do` task, so the work was backfilled as a completed ops task with this decision logged.
+
+## 2026-05-05 04:52:00 — Iris
+Decision recorded: Install MemFirst L1-L6 memory system.
+
+Actions:
+- Created memory directory structure (l1-l6)
+- Populated L1 with native identity files + .mdl formats
+- Created L2 structured injection (tools/, domains/)
+- Sourced credentials from /adapt/secrets/ via .env
+- Added Iris-specific tools (memfirst.md) and domains (adapt.md)
+
+Notes:
+- Iris provisioned itself, not via provision_nova_memory.sh
+- .mdl files (Hermes native) included in L1 alongside .md files
+- NATS/Redpanda port distinction documented in L2
