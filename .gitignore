@@ -131,6 +131,36 @@ postgres-data/
 # Nova runtime memory stores
 active/*/memory/l6/data/
 
+# Nova profile runtime artifacts
+active/*/.env
+active/*/.hermes_history
+active/*/.skills_prompt_snapshot.json
+active/*/.blob_seq_ids_migrated
+active/*/auth.json
+active/*/auth.lock
+active/*/state.db*
+active/*/response_store.db*
+active/*/chroma.sqlite3
+active/*/gateway.lock
+active/*/gateway.pid
+active/*/gateway_state.json
+active/*/*_cache.json
+active/*/context_length_cache.yaml
+active/*/audio_cache/
+active/*/cache/
+active/*/checkpoints/
+active/*/cron/output/
+active/*/home/
+active/*/image_cache/
+active/*/inbound/
+active/*/logs/
+active/*/lsp/node_modules/
+active/*/pairing/
+active/*/pastes/
+active/*/sessions/
+active/*/skills.bak*/
+active/*/state-snapshots/
+
 # OS Files
 .DS_Store
 Thumbs.db
