@@ -1,5 +1,8 @@
 # Operations History
 
+## 2026-06-20 16:53:02 — CHRONOS
+Implemented Pack 01 event boundary push and Temporal worker long-poll contract in `crates/memfab-temporal-contract`. Added accepted ingress DTOs, route resolution for all five MemFabric task queues, fail-closed rejected polling patterns, and receipt-seeded workflow routing. Updated the TimeOps Temporal health runbook with the push/long-poll boundary. Verified with `cargo fmt -p memfab-temporal-contract`, `cargo test -p memfab-temporal-contract ingress`, `cargo clippy -p memfab-temporal-contract -- -D warnings`, and `cargo test -p memfab-temporal-contract`.
+
 ## 2026-06-20 16:43:51 — CHRONOS
 Created Temporal productionization workpack set under `/adapt/platform/timeops/core/ops/plans/temporal-productionization`. Covered TimeOps self-health, executive rollup, autonomous Temporal path cutover, Temporal-to-Paperclip event bridge, live Temporal proof, Rust pollers, receipt binding, scheduled maintenance workflows, dead-letter triage, and legacy `nova-temporal.service` cleanup. Updated TimeOps status and workflow registry. No services or runtime paths were changed.
 

@@ -1,5 +1,11 @@
 # Decisions Log
 
+## 2026-06-20 16:53:02 — CHRONOS
+Decision recorded: Pack 01 ingress contract lives in `memfab-temporal-contract` as shared Rust contract state. Boundary integrations push start/signal events into Temporal; worker processes remain the only long-polling layer.
+
+## 2026-06-20 16:53:02 — CHRONOS
+Decision recorded: Reject unbounded database polling, unbounded Paperclip polling, and shell-loop liveness checks at the contract level. Use push boundary events, Paperclip event bridge paths, Temporal schedules, and systemd watchdogs instead.
+
 ## 2026-06-20 16:43:51 — CHRONOS
 Decision recorded: Temporal production architecture uses push/event ingress at external boundaries and Temporal worker long-polling inside Rust workers. Avoid app-level busy polling.
 

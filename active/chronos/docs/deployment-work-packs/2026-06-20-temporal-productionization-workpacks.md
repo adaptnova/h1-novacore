@@ -1,5 +1,36 @@
 # Temporal Productionization Workpacks
 
+## 2026-06-20 16:53:02 — CHRONOS
+
+Implemented Pack 01.
+
+## Pack 01 Implementation
+
+- Added `TemporalIngressKind`, `TemporalIngressEvent`, `TemporalIngressRoute`,
+  dispatch mode, worker acquisition mode, and rejected ingress pattern contract
+  types in `crates/memfab-temporal-contract`.
+- Added route resolution for accepted boundary events into Temporal workflow IDs,
+  idempotency keys, namespaces, and task queues.
+- Covered all five target queues: `memfab.agent`, `memfab.ingest`,
+  `memfab.indexing`, `memfab.emotion`, and `memfab.replay`.
+- Added fail-closed contract behavior for unbounded DB polling, unbounded
+  Paperclip polling, and shell-loop liveness checks.
+- Updated `/adapt/platform/timeops/core/ops/runbooks/temporal-health-check.md`
+  with the external push and Temporal long-poll boundary.
+
+## Pack 01 Verification
+
+```bash
+cargo fmt -p memfab-temporal-contract
+cargo test -p memfab-temporal-contract ingress
+cargo clippy -p memfab-temporal-contract -- -D warnings
+cargo test -p memfab-temporal-contract
+```
+
+Result: all checks passed. Full contract suite: 19 tests passed.
+
+— CHRONOS
+
 ## 2026-06-20 16:43:51 — CHRONOS
 
 Created a complete workpack set for the Temporal productionization path requested
