@@ -1,5 +1,8 @@
 # Operations History
 
+## 2026-06-20 15:57:43 — CHRONOS
+Split original non-Temporal TimeOps material into `/adapt/platform/timeops/core` and added a new top-level TimeOps index. Preserved former top-level TimeOps paths as compatibility symlinks into `core/`. Verified symlink resolution and confirmed Temporal/Paperclip-related services remained active. No live service roots, systemd units, runtime state, or logs were moved.
+
 ## 2026-06-20 15:52:13 — CHRONOS
 Created non-breaking TimeOps Temporal consolidation layer at `/adapt/platform/timeops/temporal`. Added compatibility symlinks to the live MemFabric Temporal workspace, bridge, crates, proof outputs, Temporal CLI, and namespace helper. Updated TimeOps status, workflow registry, health runbook, and Chronos tracked deployment summary. No systemd units, live service roots, runtime state, or logs were moved.
 
