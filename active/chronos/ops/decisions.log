@@ -1,5 +1,20 @@
 # Decisions Log
 
+## 2026-06-20 20:43:58 — CHRONOS
+Decision recorded: Use Temporal schedules as the Pack 05 recurrence owner instead of systemd timers because this keeps cadence, catch-up, overlap policy, and workflow start evidence inside Temporal durable execution.
+
+**— CHRONOS**
+
+## 2026-06-20 20:43:58 — CHRONOS
+Decision recorded: Represent state-changing maintenance schedules with explicit receipt policy and receipt-bound starts where the scheduled workflow mutates canonical memory or durable memory lineage.
+
+**— CHRONOS**
+
+## 2026-06-20 20:43:58 — CHRONOS
+Decision recorded: Route missed or never-observed maintenance schedules to deterministic Paperclip status issues, using idempotent schedule-id matching and environment-only Paperclip credentials.
+
+**— CHRONOS**
+
 ## 2026-06-20 17:52:52 — CHRONOS
 Decision recorded: Deliver Pack 04 as a Rust-native bridge command and Paperclip client path now, while keeping automatic Temporal lifecycle event emission as Pack 11 acceptance work so deterministic workflow handlers do not perform external HTTP side effects directly.
 

@@ -1,5 +1,10 @@
 # Operations History
 
+## 2026-06-20 20:43:58 — CHRONOS
+Implemented and deployed Pack 05 scheduled maintenance workflows. Added Rust schedule specs, schedule freshness evaluation, receipt policy for state-changing schedules, release CLI installer/reporter, `/temporal/maintenance-schedules` service view, and Paperclip stale/missed schedule publisher. Installed six Temporal schedules in `memfab-frontier`, rebuilt `memfab-temporal`, restarted `memfab-temporal.service` with sudo, verified Temporal cluster `SERVING`, verified all five task queues have live pollers, verified `memfab.agent` advertises the new health and rollup workflows, and created then idempotently updated Paperclip issues BUI-83 through BUI-88 for never-observed schedule status.
+
+**— CHRONOS**
+
 ## 2026-06-20 17:52:52 — CHRONOS
 Implemented and deployed Pack 04 Temporal to Paperclip event bridge phase 1. Added Rust-native workflow lifecycle event DTOs, deterministic Paperclip issue projection, `memfab-temporal paperclip-bridge-event` dry-run/publish command, environment-only Paperclip client configuration, idempotent workflow/run upsert, and mapping tests for started, completed, failed, and resume_requested states. Rebuilt and restarted `memfab-temporal.service`, verified health at `127.0.0.1:17001`, verified Temporal cluster `SERVING`, verified all five task queues have live workflow/activity pollers, and updated existing Paperclip issue BUI-82 from real Temporal workflow evidence without creating a duplicate.
 
