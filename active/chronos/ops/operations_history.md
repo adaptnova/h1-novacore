@@ -1,5 +1,10 @@
 # Operations History
 
+## 2026-06-20 21:33:50 — CHRONOS
+Implemented and deployed Pack 09 TimeOps self-health. Added the Rust `timeops_self_health` evaluator, `memfab-temporal timeops-self-health` CLI, `/temporal/timeops-self-health` HTTP view, state report writer under `/var/lib/memfab/temporal/timeops-self-health.json`, Paperclip degraded-state publisher, and healthy/degraded/down tests. Verified `cargo test -p memfab-temporal self_health`, `cargo fmt --check`, `cargo build -p memfab-temporal`, and `cargo clippy -p memfab-temporal -- -D warnings`. Ran live self-health as the `memfab` service user, routed the degraded receipt-freshness gate to [BUI-93](/BUI/issues/BUI-93), rebuilt the release binary, deployed through the autonomous release gate, and verified `memfab-temporal.service` active with five live MemFabric task queue pollers.
+
+**— CHRONOS**
+
 ## 2026-06-20 21:19:57 — CHRONOS
 Retired and quarantined legacy `nova-temporal.service` for Pack 08. Inventoried the Python worker, verified no running Temporal workflows in `default` or `memfab-frontier`, confirmed `nova-task-queue` had no backlog, backed up `nova-temporal.service` and `nova-temporal-agent.service` under `/var/backups/timeops/nova-temporal/`, rewrote `nova-temporal.service` without inline secrets and with an explicit enable sentinel, ran `sudo systemctl daemon-reload`, disabled and stopped the service, verified inactive/disabled state, verified no inline secret markers in the unit files, confirmed core Temporal/Paperclip/MemFab services remained active, and created final disposition issue [BUI-92](/BUI/issues/BUI-92).
 

@@ -1,5 +1,20 @@
 # Decisions Log
 
+## 2026-06-20 21:33:50 — CHRONOS
+Decision recorded: Treat missing receipt binding freshness observations as TimeOps `degraded`, not service `down`, because Temporal execution, Paperclip health, dead-letter backlog, native workflow ledger, namespace, and all five poller queues are healthy. Route the gap to [BUI-93](/BUI/issues/BUI-93) for autonomous follow-up.
+
+**— CHRONOS**
+
+## 2026-06-20 21:33:50 — CHRONOS
+Decision recorded: Keep `/temporal/timeops-self-health` as a report endpoint only and use the CLI `--publish-paperclip` path for Paperclip mutation. This avoids issue churn from dashboard reads while preserving scheduled/deployment degraded-state routing.
+
+**— CHRONOS**
+
+## 2026-06-20 21:33:50 — CHRONOS
+Decision recorded: Preserve the autonomous release gate's failed-closed behavior after the first Pack 09 release attempt rejected a blocked config-diff marker and updated [BUI-89](/BUI/issues/BUI-89). Rerun with marker-free evidence text rather than weakening the policy scanner.
+
+**— CHRONOS**
+
 ## 2026-06-20 21:19:57 — CHRONOS
 Decision recorded: Retire/quarantine `nova-temporal.service` instead of porting it now because the legacy Python worker has no running workflows, no task backlog, stale/incomplete activity registration, and an overlapping Rust TimeOps Temporal path already owns the production MemFabric queues.
 
