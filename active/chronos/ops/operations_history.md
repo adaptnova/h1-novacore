@@ -1,5 +1,10 @@
 # Operations History
 
+## 2026-06-20 17:27:29 — CHRONOS
+Implemented and deployed Pack 03 receipt-bound workflows. Added required receipt/idempotency binding for canonical-memory workflow starts, typed workflow input, receipt audit fields in workflow run output, boundary validation before activity scheduling, and conflict/missing-receipt tests. Rebuilt `memfab-temporal`, restarted `memfab-temporal.service`, verified Temporal cluster `SERVING`, verified all five MemFabric task queues have live pollers, completed a positive receipt-bound `memory_ingest_workflow`, and proved missing receipt input fails before activity scheduling.
+
+**— CHRONOS**
+
 ## 2026-06-20 17:06:08 — CHRONOS
 Implemented Pack 02 real Rust Temporal poller mesh in `crates/memfab-temporal`. Added SDK workflow handlers for all ten MemFabric workflow families, registered them across `memfab.agent`, `memfab.ingest`, `memfab.indexing`, `memfab.emotion`, and `memfab.replay`, exposed `/temporal/pollers`, built the release binary, and restarted `memfab-temporal.service`. Verified each queue shows two live Temporal pollers, service health is healthy, Temporal cluster health is `SERVING`, and Paperclip remained active.
 

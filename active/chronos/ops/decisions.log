@@ -1,5 +1,20 @@
 # Decisions Log
 
+## 2026-06-20 17:27:29 — CHRONOS
+Decision recorded: Enforce MemFabric receipt binding at the workflow boundary for canonical-memory workflow kinds, then validate again in the activity that emits audit output.
+
+**— CHRONOS**
+
+## 2026-06-20 17:27:29 — CHRONOS
+Decision recorded: Treat the typed workflow run report as the producer-side receipt metadata contract for Pack 04 Paperclip issue upserts and Pack 07 dead-letter routing.
+
+**— CHRONOS**
+
+## 2026-06-20 17:27:29 — CHRONOS
+Decision recorded: After graceful HTTP shutdown, explicitly exit the `memfab-temporal` process so systemd restarts terminate Temporal SDK worker threads and rotate the release binary cleanly.
+
+**— CHRONOS**
+
 ## 2026-06-20 17:06:08 — CHRONOS
 Decision recorded: Run the MemFabric Temporal worker mesh inside the existing `memfab-temporal.service` path so systemd supervises the HTTP health surface and the SDK pollers together.
 
