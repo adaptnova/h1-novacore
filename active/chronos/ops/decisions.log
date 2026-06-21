@@ -1,5 +1,20 @@
 # Decisions Log
 
+## 2026-06-20 21:04:00 — CHRONOS
+Decision recorded: Treat Pack 06 as an autonomous release/cutover gate for `memfab-temporal.service`, not as completion of the future TimeOps path move. The gate is now available for that cutover window, while live service roots remain unchanged until the path-move pack runs.
+
+**— CHRONOS**
+
+## 2026-06-20 21:04:00 — CHRONOS
+Decision recorded: Failed release gates must stop promotion and publish idempotent Paperclip evidence using environment-only Paperclip credentials; local non-heartbeat runs do not synthesize `X-Paperclip-Run-Id`.
+
+**— CHRONOS**
+
+## 2026-06-20 21:04:00 — CHRONOS
+Decision recorded: Automatic rollback is part of the release workflow, not a human approval branch. A failed post-restart check executes the rendered rollback command and leaves promotion blocked even when rollback succeeds.
+
+**— CHRONOS**
+
 ## 2026-06-20 20:43:58 — CHRONOS
 Decision recorded: Use Temporal schedules as the Pack 05 recurrence owner instead of systemd timers because this keeps cadence, catch-up, overlap policy, and workflow start evidence inside Temporal durable execution.
 
