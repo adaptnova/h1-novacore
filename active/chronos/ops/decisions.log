@@ -1,5 +1,20 @@
 # Decisions Log
 
+## 2026-06-20 21:47:46 — CHRONOS
+Decision recorded: Treat Pack 10 rollup status as source-backed `blocked` rather than forcing a green executive view. Temporal is healthy, but Paperclip blockers, never-observed schedules, and receipt freshness gaps are real unresolved inputs and must remain visible in [BUI-94](/BUI/issues/BUI-94).
+
+**— CHRONOS**
+
+## 2026-06-20 21:47:46 — CHRONOS
+Decision recorded: Let the service HTTP rollup run without Paperclip API credentials and reserve authenticated Paperclip issue counts/publishing for the CLI path where environment credentials are explicitly injected. This keeps systemd service config free of Paperclip mutation secrets.
+
+**— CHRONOS**
+
+## 2026-06-20 21:47:46 — CHRONOS
+Decision recorded: Render executive status as both JSON and Markdown so machines can consume counts and source paths while Paperclip receives a concise linked status issue body.
+
+**— CHRONOS**
+
 ## 2026-06-20 21:33:50 — CHRONOS
 Decision recorded: Treat missing receipt binding freshness observations as TimeOps `degraded`, not service `down`, because Temporal execution, Paperclip health, dead-letter backlog, native workflow ledger, namespace, and all five poller queues are healthy. Route the gap to [BUI-93](/BUI/issues/BUI-93) for autonomous follow-up.
 
