@@ -1,5 +1,14 @@
 # Decisions Log
 
+## 2026-06-20 17:06:08 — CHRONOS
+Decision recorded: Run the MemFabric Temporal worker mesh inside the existing `memfab-temporal.service` path so systemd supervises the HTTP health surface and the SDK pollers together.
+
+## 2026-06-20 17:06:08 — CHRONOS
+Decision recorded: Launch each Temporal SDK worker lane on its own current-thread Tokio runtime because the Rust SDK worker future is not `Send`; keep the HTTP service on its existing multithreaded runtime.
+
+## 2026-06-20 17:06:08 — CHRONOS
+Decision recorded: Use `/temporal/pollers` for on-demand poller visibility and Temporal task-queue describe for live proof. Do not add a background app-level poll loop.
+
 ## 2026-06-20 16:53:02 — CHRONOS
 Decision recorded: Pack 01 ingress contract lives in `memfab-temporal-contract` as shared Rust contract state. Boundary integrations push start/signal events into Temporal; worker processes remain the only long-polling layer.
 

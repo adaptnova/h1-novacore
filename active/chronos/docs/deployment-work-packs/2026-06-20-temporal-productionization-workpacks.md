@@ -1,5 +1,38 @@
 # Temporal Productionization Workpacks
 
+## 2026-06-20 17:06:08 — CHRONOS
+
+Implemented and deployed Pack 02.
+
+## Pack 02 Implementation
+
+- Added `memfabric_workflows` SDK module in `crates/memfab-temporal`.
+- Registered all ten MemFabric workflow families using the contract workflow
+  slugs.
+- Started real Rust Temporal workers for `memfab.agent`, `memfab.ingest`,
+  `memfab.indexing`, `memfab.emotion`, and `memfab.replay`.
+- Exposed `/temporal/pollers` from `memfab-temporal.service`.
+- Built the release binary and restarted `memfab-temporal.service` through
+  systemd.
+
+## Pack 02 Verification
+
+```bash
+cargo fmt -p memfab-temporal
+cargo test -p memfab-temporal poller
+cargo test -p memfab-temporal
+cargo clippy -p memfab-temporal -- -D warnings
+cargo build -p memfab-temporal --release
+systemctl restart memfab-temporal.service
+curl -fsS http://127.0.0.1:17001/temporal/pollers
+/adapt/platform/timeops/temporal/tools/temporal --address 127.0.0.1:7233 task-queue describe --namespace memfab-frontier --task-queue <queue>
+```
+
+Result: all checks passed. Each target queue showed two live Temporal pollers.
+`memfab-temporal.service` remained active and `/healthz` returned `healthy`.
+
+— CHRONOS
+
 ## 2026-06-20 16:53:02 — CHRONOS
 
 Implemented Pack 01.

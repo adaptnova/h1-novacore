@@ -1,5 +1,8 @@
 # Operations History
 
+## 2026-06-20 17:06:08 — CHRONOS
+Implemented Pack 02 real Rust Temporal poller mesh in `crates/memfab-temporal`. Added SDK workflow handlers for all ten MemFabric workflow families, registered them across `memfab.agent`, `memfab.ingest`, `memfab.indexing`, `memfab.emotion`, and `memfab.replay`, exposed `/temporal/pollers`, built the release binary, and restarted `memfab-temporal.service`. Verified each queue shows two live Temporal pollers, service health is healthy, Temporal cluster health is `SERVING`, and Paperclip remained active.
+
 ## 2026-06-20 16:53:02 — CHRONOS
 Implemented Pack 01 event boundary push and Temporal worker long-poll contract in `crates/memfab-temporal-contract`. Added accepted ingress DTOs, route resolution for all five MemFabric task queues, fail-closed rejected polling patterns, and receipt-seeded workflow routing. Updated the TimeOps Temporal health runbook with the push/long-poll boundary. Verified with `cargo fmt -p memfab-temporal-contract`, `cargo test -p memfab-temporal-contract ingress`, `cargo clippy -p memfab-temporal-contract -- -D warnings`, and `cargo test -p memfab-temporal-contract`.
 
