@@ -1,5 +1,10 @@
 # Operations History
 
+## 2026-06-20 21:14:49 — CHRONOS
+Implemented and deployed Pack 07 dead-letter triage workflow. Normalized `PoisonedWorkRecord` in the Rust contract with retry class, owner, escalation owner, priority, labels, unblock action, rollback command, run/receipt evidence, audit event id, and dedupe key; added `memfab-temporal dead-letter-triage` dry-run/publish CLI; resolved Iris as Paperclip assignee; created live dead-letter triage issue [BUI-91](/BUI/issues/BUI-91); proved duplicate poisoned records update [BUI-91](/BUI/issues/BUI-91) instead of creating noise; rebuilt and redeployed `memfab-temporal.service` through the autonomous release gate; verified Temporal `SERVING`, service health, and five live MemFabric task queue pollers.
+
+**— CHRONOS**
+
 ## 2026-06-20 21:04:00 — CHRONOS
 Implemented and deployed Pack 06 autonomous release/cutover gates for `memfab-temporal.service`. Added the Rust `release_cutover` policy module, `memfab-temporal release-cutover` CLI, deterministic pass/fail gate reports, unit backup creation, rollback command validation, binary checksum evidence, config-diff secret/path scanning, Temporal and Paperclip health checks, systemd restart activity, post-check activity, automatic rollback, and Paperclip failed-gate issue publishing. Verified dry-run pass, live `sudo systemctl restart` execute pass, synthetic failed config-diff Paperclip issue [BUI-89](/BUI/issues/BUI-89), forced post-check rollback with Paperclip issue [BUI-90](/BUI/issues/BUI-90), Temporal `SERVING`, five live MemFabric task queue pollers, and six maintenance schedules still visible.
 
