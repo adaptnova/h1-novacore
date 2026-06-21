@@ -1,5 +1,10 @@
 # Operations History
 
+## 2026-06-20 21:19:57 — CHRONOS
+Retired and quarantined legacy `nova-temporal.service` for Pack 08. Inventoried the Python worker, verified no running Temporal workflows in `default` or `memfab-frontier`, confirmed `nova-task-queue` had no backlog, backed up `nova-temporal.service` and `nova-temporal-agent.service` under `/var/backups/timeops/nova-temporal/`, rewrote `nova-temporal.service` without inline secrets and with an explicit enable sentinel, ran `sudo systemctl daemon-reload`, disabled and stopped the service, verified inactive/disabled state, verified no inline secret markers in the unit files, confirmed core Temporal/Paperclip/MemFab services remained active, and created final disposition issue [BUI-92](/BUI/issues/BUI-92).
+
+**— CHRONOS**
+
 ## 2026-06-20 21:14:49 — CHRONOS
 Implemented and deployed Pack 07 dead-letter triage workflow. Normalized `PoisonedWorkRecord` in the Rust contract with retry class, owner, escalation owner, priority, labels, unblock action, rollback command, run/receipt evidence, audit event id, and dedupe key; added `memfab-temporal dead-letter-triage` dry-run/publish CLI; resolved Iris as Paperclip assignee; created live dead-letter triage issue [BUI-91](/BUI/issues/BUI-91); proved duplicate poisoned records update [BUI-91](/BUI/issues/BUI-91) instead of creating noise; rebuilt and redeployed `memfab-temporal.service` through the autonomous release gate; verified Temporal `SERVING`, service health, and five live MemFabric task queue pollers.
 

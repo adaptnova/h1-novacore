@@ -1,5 +1,20 @@
 # Decisions Log
 
+## 2026-06-20 21:19:57 — CHRONOS
+Decision recorded: Retire/quarantine `nova-temporal.service` instead of porting it now because the legacy Python worker has no running workflows, no task backlog, stale/incomplete activity registration, and an overlapping Rust TimeOps Temporal path already owns the production MemFabric queues.
+
+**— CHRONOS**
+
+## 2026-06-20 21:19:57 — CHRONOS
+Decision recorded: Rewrite the legacy unit with no inline secrets and an explicit `/etc/teamadapt/nova-temporal.enabled` start sentinel before disabling it, so accidental starts fail closed while rollback remains possible from the backed-up unit.
+
+**— CHRONOS**
+
+## 2026-06-20 21:19:57 — CHRONOS
+Decision recorded: Do not reactivate the legacy Python path until the inline Redis password in `nova_temporal_engine.py` is moved to a root-owned environment file.
+
+**— CHRONOS**
+
 ## 2026-06-20 21:14:49 — CHRONOS
 Decision recorded: Assign Pack 07 dead-letter triage issues to Iris in Paperclip and keep domain escalation explicit in the issue body. This makes Iris the accountable triage owner while preserving Axiom/Chronos routing for the actual subsystem fix.
 
