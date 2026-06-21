@@ -1,5 +1,20 @@
 # Decisions Log
 
+## 2026-06-20 23:01:33 — CHRONOS
+Decision recorded: Replace the deterministic/sample mapper proof with release-binary live Temporal proof [BUI-96](/BUI/issues/BUI-96). Acceptance requires a real workflow ID, real run ID, receipt/idempotency metadata, production bridge publish, and Paperclip readback containing the exact workflow/run identifiers.
+
+**— CHRONOS**
+
+## 2026-06-20 23:01:33 — CHRONOS
+Decision recorded: Use an observational `executive_status_rollup_workflow` for Pack 11 proof because it produces a real Temporal run without mutating canonical memory, while still carrying a MemFabric receipt/idempotency key through the workflow input and Paperclip event metadata.
+
+**— CHRONOS**
+
+## 2026-06-20 23:01:33 — CHRONOS
+Decision recorded: Do not use `pkill` for Pack 11 recovery or deployment. Paperclip recovery used `sudo systemctl start paperclip.service` after the service was found inactive, and deployment used the existing policy-gated `memfab-temporal.service` release workflow.
+
+**— CHRONOS**
+
 ## 2026-06-20 21:47:46 — CHRONOS
 Decision recorded: Treat Pack 10 rollup status as source-backed `blocked` rather than forcing a green executive view. Temporal is healthy, but Paperclip blockers, never-observed schedules, and receipt freshness gaps are real unresolved inputs and must remain visible in [BUI-94](/BUI/issues/BUI-94).
 
