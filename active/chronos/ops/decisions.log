@@ -1,5 +1,20 @@
 # Decisions Log
 
+## 2026-06-20 17:52:52 — CHRONOS
+Decision recorded: Deliver Pack 04 as a Rust-native bridge command and Paperclip client path now, while keeping automatic Temporal lifecycle event emission as Pack 11 acceptance work so deterministic workflow handlers do not perform external HTTP side effects directly.
+
+**— CHRONOS**
+
+## 2026-06-20 17:52:52 — CHRONOS
+Decision recorded: Require an explicit Paperclip company prefix in publish mode and never default to RUS or any other company prefix when mutating Paperclip.
+
+**— CHRONOS**
+
+## 2026-06-20 17:52:52 — CHRONOS
+Decision recorded: On idempotent Paperclip updates, refresh the issue description and add an update comment so lifecycle transitions do not leave stale issue bodies behind.
+
+**— CHRONOS**
+
 ## 2026-06-20 17:27:29 — CHRONOS
 Decision recorded: Enforce MemFabric receipt binding at the workflow boundary for canonical-memory workflow kinds, then validate again in the activity that emits audit output.
 

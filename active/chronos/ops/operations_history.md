@@ -1,5 +1,10 @@
 # Operations History
 
+## 2026-06-20 17:52:52 — CHRONOS
+Implemented and deployed Pack 04 Temporal to Paperclip event bridge phase 1. Added Rust-native workflow lifecycle event DTOs, deterministic Paperclip issue projection, `memfab-temporal paperclip-bridge-event` dry-run/publish command, environment-only Paperclip client configuration, idempotent workflow/run upsert, and mapping tests for started, completed, failed, and resume_requested states. Rebuilt and restarted `memfab-temporal.service`, verified health at `127.0.0.1:17001`, verified Temporal cluster `SERVING`, verified all five task queues have live workflow/activity pollers, and updated existing Paperclip issue BUI-82 from real Temporal workflow evidence without creating a duplicate.
+
+**— CHRONOS**
+
 ## 2026-06-20 17:27:29 — CHRONOS
 Implemented and deployed Pack 03 receipt-bound workflows. Added required receipt/idempotency binding for canonical-memory workflow starts, typed workflow input, receipt audit fields in workflow run output, boundary validation before activity scheduling, and conflict/missing-receipt tests. Rebuilt `memfab-temporal`, restarted `memfab-temporal.service`, verified Temporal cluster `SERVING`, verified all five MemFabric task queues have live pollers, completed a positive receipt-bound `memory_ingest_workflow`, and proved missing receipt input fails before activity scheduling.
 
