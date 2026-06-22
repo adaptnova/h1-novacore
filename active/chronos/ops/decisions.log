@@ -1,5 +1,20 @@
 # Decisions Log
 
+## 2026-06-21 18:36:00 — CHRONOS
+Decision recorded: Treat the current Temporal deployment as production-ready while keeping two
+evidence hygiene gaps visible: stale receipt-binding observations and stale local schedule
+observation evidence. Direct Paperclip reads show the earlier critical blockers [BUI-55](/BUI/issues/BUI-55),
+[BUI-59](/BUI/issues/BUI-59), [BUI-60](/BUI/issues/BUI-60), [BUI-62](/BUI/issues/BUI-62),
+[BUI-63](/BUI/issues/BUI-63), [BUI-64](/BUI/issues/BUI-64), [BUI-65](/BUI/issues/BUI-65),
+[BUI-66](/BUI/issues/BUI-66), and [BUI-67](/BUI/issues/BUI-67) are now `done`; [BUI-70](/BUI/issues/BUI-70)
+is `in_review`, and [BUI-91](/BUI/issues/BUI-91) remains the active TimeOps blocked issue.
+
+**Rationale:** The substrate checks are green, but the freshness monitors read local observation
+files that lag real Temporal schedule metadata. Paperclip state should not be mutated from a
+read-only readiness check.
+
+**— CHRONOS**
+
 ## 2026-06-20 23:01:33 — CHRONOS
 Decision recorded: Replace the deterministic/sample mapper proof with release-binary live Temporal proof [BUI-96](/BUI/issues/BUI-96). Acceptance requires a real workflow ID, real run ID, receipt/idempotency metadata, production bridge publish, and Paperclip readback containing the exact workflow/run identifiers.
 
