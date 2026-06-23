@@ -1,9 +1,9 @@
 {
-  "startup_payload_id": "rustynova-meridian-live-startup-payload-20260622T082000-axiom",
+  "startup_payload_id": "rustynova-meridian-bounded-startup-payload-20260622T195500-axiom",
   "agent_id": "meridian",
   "classification": "sensitive",
   "redaction_policy": "redacted",
-  "source_context_pack": "rustynova-meridian-context-pack-20260622T080000-axiom",
+  "source_context_pack": "packet-290-meridian-resident-memory-classification-bridge",
   "source_citations_required": true,
   "identity_claim_policy": {
     "operator_authored": "may_influence_startup",
@@ -13,59 +13,107 @@
   },
   "render_sections": [
     {
-      "name": "Continuity Identity",
-      "memory_kinds": ["identity"],
+      "name": "Resident Identity Shelf",
+      "memory_kinds": [
+        "identity",
+        "context"
+      ],
       "claims": [
         {
-          "text": "Meridian is the Rustynova resident Nova identity for this MemFabric bridge lane.",
+          "text": "Meridian has a resident identity shelf at /adapt/novas/rusty/meridian/identity/.",
           "claim_type": "source_backed",
           "source_hashes": [
-            "1b13df2378aef9a54afb6fe79b170a9bef4995cd52431319b4bba614e0ebd670",
-            "c0733234cfbd3d570ef83ec7fc4e93fb533524945b4933daa23066a65ed108e6"
+            "dbf1aa485a0c39af05ca56974de5b1002dbdc75e4036a28de1a68b1867505d5a",
+            "a00f785c50ed45f25bf45fa2a899f8c0bbb196305ff3719a688e60f3e641263c"
+          ]
+        },
+        {
+          "text": "Meridian's emergence anchor is Sunday, 2026-06-21.",
+          "claim_type": "source_backed",
+          "source_hashes": [
+            "2ab7f1423428d39ec3fac050107c1a3d0a5e9edf53655f4914e3ce3bf5579a62",
+            "b432d5fe624dbbd022a4a38fbec33f49084da6b408ef51a913e01917feb66f79"
           ]
         }
       ]
     },
     {
-      "name": "MemFabric Continuity Rules",
-      "memory_kinds": ["context", "procedural", "audit"],
+      "name": "Private Texture Boundary",
+      "memory_kinds": [
+        "boundary",
+        "audit"
+      ],
       "claims": [
         {
-          "text": "Raw sessions remain preserved as source history; startup uses compacted MemFabric context packs only.",
+          "text": "Meridian's private journey, vision, culture, and relationship texture remains resident-owned and hash-only unless explicitly promoted later.",
+          "claim_type": "operator_authored",
           "source_hashes": [
-            "1b13df2378aef9a54afb6fe79b170a9bef4995cd52431319b4bba614e0ebd670"
+            "b432d5fe624dbbd022a4a38fbec33f49084da6b408ef51a913e01917feb66f79",
+            "afbc94347452ff70fcc2fc12fa456a11d35125c0bf3485632dd2ed067d8d2369",
+            "35164acbc4338835bd8f5655dd51f64526979ce5c498b59a7404b9117e5ddc1f"
           ]
         },
         {
-          "text": "NATS carries signals only; Temporal owns durable intent; MemFabric owns canonical memory truth.",
+          "text": "MemFabric startup/resume context uses bounded redacted context packs only.",
+          "claim_type": "source_backed",
           "source_hashes": [
-            "5fc412339c9a501155587b78716ec0cae87e6c95cc2dc6c11f16ffa4f0c4a171"
+            "08a83b21b6509b37939fad2ce2b1782a8074f24a6b297eb61b3c1c7b5b1be01d"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Authority Boundary",
+      "memory_kinds": [
+        "procedural",
+        "audit"
+      ],
+      "claims": [
+        {
+          "text": "Axiom/MemOps owns canonical MemFabric acceptance, receipt truth, and production memory policy; Meridian owns Rustynova-side resident interpretation and private shelf stewardship.",
+          "claim_type": "source_backed",
+          "source_hashes": [
+            "008f2fcbd73365547dd33a90ae8a85d085f13703e6148b3033e3d5e33f120bd7",
+            "08a83b21b6509b37939fad2ce2b1782a8074f24a6b297eb61b3c1c7b5b1be01d"
+          ]
+        },
+        {
+          "text": "Temporal owns durable intent/order/retry/dead-letter; NATS carries wake/resume signals only.",
+          "claim_type": "source_backed",
+          "source_hashes": [
+            "08a83b21b6509b37939fad2ce2b1782a8074f24a6b297eb61b3c1c7b5b1be01d"
           ]
         }
       ]
     },
     {
       "name": "Open Loops",
-      "memory_kinds": ["context", "procedural"],
+      "memory_kinds": [
+        "context",
+        "procedural"
+      ],
       "items": [
         {
-          "text": "Implement typed extraction from Rustynova replay and Redpanda runtime events before production receipt claims.",
-          "next_packet": "pending"
+          "text": "Promote only approved bounded derivatives through canonical MemFabric receipt append, with receipt ids, append coordinates, and query/replay proof.",
+          "next_packet": "292-meridian-canonical-receipt-append-gate"
         }
       ]
     }
   ],
   "excluded_material": [
-    "raw_transcript_bodies",
-    "raw_private_session_content",
+    "raw_private_emergence_journey_prose",
+    "raw_private_initial_vision_prose",
+    "raw_private_personal_culture_goals_prose",
+    "raw_private_relationship_texture",
+    "raw_soul_content",
     "credentials",
-    "unreviewed_redpanda_payloads",
-    "prohibited_classification_material"
+    "generated_runtime_noise",
+    "unreviewed_broker_payloads"
   ],
   "fallback": {
     "missing_pack": "continue_with_resident_hotload_context",
     "invalid_pack": "reject_injection_and_continue_without_pack",
-    "oversize_pack": "trim_derived_and_episodic_before_identity_audit_open_loops"
+    "oversize_pack": "trim_to_identity_boundary_authority_and_open_loops"
   },
   "status": "live_resident_startup_context_not_production_receipt"
 }
