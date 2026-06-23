@@ -41,7 +41,7 @@ Do not use this for generic NATS message sending. Use `nova-a2a-comms` for that.
 
 ```text
 /adapt/platform/commsops
-/adapt/platform/commsops/ops/runbooks/production-cutover-runbook.md
+/adapt/platform/commsops/commsops-domain-reel/ops/runbooks/production-cutover-runbook.md
 /adapt/platform/commsops/ops/proofs
 /adapt/platform/novaops/controlplane/n-voice
 /adapt/platform/novaops/controlplane/pipecat-voice
@@ -54,7 +54,7 @@ Do not use this for generic NATS message sending. Use `nova-a2a-comms` for that.
 Before executing a rollout, read the current runbook and the latest proof:
 
 ```bash
-sed -n '1,220p' /adapt/platform/commsops/ops/runbooks/production-cutover-runbook.md
+sed -n '1,220p' /adapt/platform/commsops/commsops-domain-reel/ops/runbooks/production-cutover-runbook.md
 ls -1t /adapt/platform/commsops/ops/proofs/*production* /adapt/platform/commsops/ops/proofs/*sprint16* 2>/dev/null | head
 ```
 
