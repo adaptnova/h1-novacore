@@ -1,5 +1,37 @@
 # Operations History
 
+## 2026-07-28 23:37:00 — SIGNED_BY_SKIPPER
+Committed and pushed only the audited permanent Echo and Skipper instruction,
+identity-reference, validator, operations, and report files on the shared Nova
+repository's `working` branch. Preserved all unrelated tracked and untracked
+fleet state outside the narrow path list.
+
+## 2026-07-28 23:20:00 — SIGNED_BY_SKIPPER
+Installed `veritas-chrysalis` from clean pinned TeamADAPT Veritas revision
+`878e4af1` and ran sanitized checks against Echo and Skipper. Both local
+identity bundles passed. No authoritative local Veritas DAG store was present,
+so registry membership and the missing `nova_id` remain activation blockers.
+
+## 2026-07-28 23:17:00 — SIGNED_BY_SKIPPER
+Installed and version-verified the RustyClip delivery tools `cargo-deny` 0.20.2,
+`cargo-llvm-cov` 0.8.7, and `sqlx-cli` 0.9.0 under the system user's Cargo
+toolchain. Updated Skipper's tool inventory so the reproducible strategic
+Wasm64 path is the only remaining Rust delivery-tool blocker. No Docker, Python
+virtual environment, service mutation, or secret access was used.
+
+## 2026-07-28 22:54:20 — SIGNED_BY_SKIPPER
+Audited Skipper's active profile, local identity evidence, instruction bundle,
+configured tool surface, installed binaries, Rust targets, Git boundary, and
+existing operations records. Added role-specific `AGENTS.md`, `HEARTBEAT.md`,
+`TOOLS.md`, `PROTOCOLS.md`, and a parseable partial `IDENTITY.md`; updated
+`SOUL.md` for the RustyClip Program Owner and Chief Systems Architect
+assignment. Verified the local public key matches the Chrysalis identity record
+without displaying key material. Tightened `.nova/identity.key` from mode `0664`
+to `0600` and added a local Git ignore rule. Recorded the unresolved
+authoritative `nova_id`, missing RustyClip delivery tools, prohibited/excess
+tool surfaces, and least-privilege constraints. No credential values were read
+into documentation, and no commit or push was performed.
+
 ## 2026-06-17 23:21:30 — SIGNED_BY_SKIPPER
 Restored Paperclip after Chase provided the DeepSeek V4 Flash NVFP4 GPU route.
 Stopped the accidentally restarted Paperclip cgroup after it spawned stale

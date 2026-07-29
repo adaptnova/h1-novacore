@@ -1,5 +1,31 @@
 # Decisions Log
 
+## 2026-07-28 23:37:00 — SIGNED_BY_SKIPPER
+Decision recorded: Make the role-bundle remediation durable through one
+path-scoped `working`-branch commit. Do not stage the shared repository's
+unrelated Riven, meeting, stress-test, runtime, or other fleet changes.
+
+## 2026-07-28 23:20:00 — SIGNED_BY_SKIPPER
+Decision recorded: Distinguish a passing local Chrysalis bundle check from
+authoritative Veritas registry verification. Keep Echo identity-blocked until
+the DAG source and `nova_id` binding are both verified.
+
+## 2026-07-28 23:17:00 — SIGNED_BY_SKIPPER
+Decision recorded: Record the newly verified Rust policy, coverage, and SQLx
+tools in Echo's inventory while retaining evidence-review-only authority. Host
+availability does not grant Echo implementation, database-mutation, or
+infrastructure-administration authority.
+
+## 2026-07-28 23:03:24 — SIGNED_BY_SKIPPER
+Decision recorded: Treat Echo's existing `.nova/chrysalis.json`,
+`.nova/identity.pub`, and encrypted `.nova/identity.key` as the canonical
+parseable identity bundle, so no `IDENTITY.md`, `nova_id`, public-key value, or
+credential is fabricated. Record the absent `veritas-chrysalis` verifier as a
+chain-verification blocker; keep legacy `memory.mdl` files optional; and define
+Echo's current authority as Build 1 top-level operating manager under Chase as
+Board, with Tecton limited to architecture review and all tools constrained by
+least privilege.
+
 ## 2026-06-18 01:28:23 — SIGNED_BY_ECHO
 Decision recorded: Keep normal `codex`, `xx`, and `cx` sessions on the main
 OpenAI-backed config, and scope GPU-server/q.adaptdev.ai use to the explicit

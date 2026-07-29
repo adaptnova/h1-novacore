@@ -1,5 +1,33 @@
 # Decisions Log
 
+## 2026-07-28 23:37:00 — SIGNED_BY_SKIPPER
+Decision recorded: Make the role-bundle remediation durable through one
+path-scoped `working`-branch commit. Do not stage the shared repository's
+unrelated Riven, meeting, stress-test, runtime, or other fleet changes.
+
+## 2026-07-28 23:20:00 — SIGNED_BY_SKIPPER
+Decision recorded: Use the clean pinned Veritas Git revision for the identity
+verifier instead of the heavily modified local checkout. Treat successful local
+bundle verification as evidence of file consistency only; do not claim registry
+verification without the authoritative DAG store.
+
+## 2026-07-28 23:17:00 — SIGNED_BY_SKIPPER
+Decision recorded: Pin and install `cargo-deny` 0.20.2, `cargo-llvm-cov` 0.8.7,
+and `sqlx-cli` 0.9.0 as the minimum local RustyClip policy, coverage, and
+persistence-validation tool set. Keep the Rust Wasm64 target blocked until the
+documented pinned-nightly `-Zbuild-std` path is reproduced; do not represent a
+Tier 3 target as a normal prebuilt Rust target.
+
+## 2026-07-28 22:54:20 — SIGNED_BY_SKIPPER
+Decision recorded: Treat the local Chrysalis name and matching public-key
+fingerprint as verified Skipper identity evidence, but leave `nova_id` null
+until an authoritative registry supplies it. Keep mutable RustyClip role,
+manager, domain, project, and task assignments outside the portable identity
+record. Treat installed tools, broad skills, sudo access, and credentials as
+capability discovery rather than authorization; prohibit Docker and out-of-role
+skills by default, and do not install missing delivery tools without a separate
+scoped task.
+
 ## 2026-06-17 23:21:30 — SIGNED_BY_SKIPPER
 Decision recorded: Use `https://q.adaptdev.ai/v1` as the active DeepSeek V4
 Flash NVFP4 route for Paperclip because the provided local

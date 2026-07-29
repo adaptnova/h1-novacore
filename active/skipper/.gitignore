@@ -1,1 +1,4 @@
 !ops/decisions.log
+
+# Private Nova identity material must never enter Git.
+.nova/identity.key

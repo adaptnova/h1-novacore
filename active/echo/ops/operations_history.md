@@ -1,5 +1,44 @@
 # Operations History
 
+## 2026-07-28 23:37:00 — SIGNED_BY_SKIPPER
+Committed and pushed only the audited permanent Echo and Skipper instruction,
+identity-reference, validator, operations, and report files on the shared Nova
+repository's `working` branch. Preserved all unrelated tracked and untracked
+fleet state outside the narrow path list.
+
+## 2026-07-28 23:20:00 — SIGNED_BY_SKIPPER
+Ran the newly installed pinned `veritas-chrysalis` verifier against Echo's
+profile. The local bundle passed, but no authoritative local Veritas DAG store
+was available, so registry membership and `nova_id` remain unresolved. Updated
+the profile validator to discover the installed verifier and distinguish local
+bundle success from missing DAG evidence; Bash, ShellCheck, and the full
+validator pass with zero errors and four explicit warnings.
+
+## 2026-07-28 23:17:00 — SIGNED_BY_SKIPPER
+Reverified Echo's host-visible Rust evidence tools after the authorized
+RustyClip toolchain installation and updated `TOOLS.md` plus the durable audit
+report with `cargo-deny` 0.20.2, `cargo-llvm-cov` 0.8.7, and `sqlx-cli` 0.9.0.
+These binaries remain evidence-inspection tools for Echo unless a separate
+implementation assignment grants authority.
+
+## 2026-07-28 23:04:59 — SIGNED_BY_SKIPPER
+Published the durable Echo identity, instruction, and tool audit at
+`ops/reports/2026-07-28-echo-identity-instruction-tool-audit.md`, including
+verified facts, exact capability gaps, least-privilege findings, validation
+evidence, and the unchanged no-commit/no-push repository state.
+
+## 2026-07-28 23:03:24 — SIGNED_BY_SKIPPER
+Audited Echo's active profile, cryptographic identity bundle, runtime path,
+instruction files, configured toolsets, executable tool surface, messaging
+state, and least-privilege boundaries. Replaced stale Tecton/Z-Pure role text
+with Echo's Build 1 top-level manager role under Chase as Board; created
+`HEARTBEAT.md` and `PROTOCOLS.md`; synchronized the Hermes-loadable SOUL and
+MEMORY copies; updated the local validator for the current instruction and
+Chrysalis contract; hardened public identity metadata to mode 0644; and removed
+credential-like literals from the local Nova onboarding protocol. Validation
+completed with zero errors and four explicit warnings. No commit, push, service
+restart, external message, credential readout, or private-key access occurred.
+
 ## 2026-06-18 01:28:23 — SIGNED_BY_ECHO
 Corrected Codex routing configuration by removing the GPU-server provider block
 from `/home/x/.codex/config.toml`, restoring the main Codex default model path,
