@@ -24,31 +24,94 @@ verification_status: blocked
 
 # Skipper Identity
 
-## Verified Facts
+## Scope
+
+This file is the conditional portable identity record for the active directory
+`/adapt/novas/active/skipper`. It records only verified or explicitly unknown
+identity facts. It does not grant a role, Domain, Project, membership,
+capability, task, lease, quorum slot, or lifecycle transition.
+
+## Locally Verified Facts
 
 - The local Chrysalis identity record names `skipper`.
-- `.nova/identity.pub` is 32 bytes and exactly matches the record's
+- `.nova/identity.pub` is 32 bytes and matches the Chrysalis record's
   `verifying_key_hex`.
-- The public-key file's SHA-256 fingerprint is recorded in the parseable header.
-- The private key exists locally and was tightened from mode `0664` to `0600` during
-  the 2026-07-28 audit.
-- The configured profile working directory is `/adapt/novas/active/skipper`.
+- The public-key file's SHA-256 fingerprint is recorded in the parseable
+  header.
+- The private key exists locally and was recorded at mode `0600` during the
+  2026-07-28 audit.
+- The configured active directory is `/adapt/novas/active/skipper`.
 
-No key material is duplicated in this file.
+No private key, credential, or complete key material is duplicated here.
+These local facts do not establish authoritative registry identity or
+membership.
 
-## Identity Blocker
+## Unresolved Authoritative Fields
 
-No authoritative `nova_id` was found in the local identity record or sanitized
-profile metadata. Do not derive a UUID from the public key, genesis hash, directory
-name, or any Paperclip record. Any protocol that requires a Nova UUID remains
-blocked until an authoritative identity registry supplies and verifies it.
+The following fields remain deliberately null because no trusted source has
+supplied and verified them:
 
-`verification_status: blocked` means the local name and cryptographic public-key
-reference are verified, while UUID-level registry binding is unresolved. It does not
-mean that another identity may be substituted.
+| Field | Required authoritative evidence |
+| --- | --- |
+| `nova_id` | Signed registry record assigning Skipper's immutable Nova ID |
+| `public_key` | Registry-bound public key or key ID matching the local key |
+| `identity_version` | Active signed identity-version record |
+| `lifecycle_state` | Current signed lifecycle state, expected to be eligible for operation |
+| `provenance.issuer` | Trusted issuer identity and trust-root path |
+| `provenance.created_at` | Issuer-recorded identity creation timestamp |
+
+Do not derive or backfill these values from the public-key fingerprint,
+genesis hash, directory name, canonical slug, Paperclip record, role prose,
+Git history, NATS subject, model session, or another Nova's registry entry.
+
+## Operational Effect
+
+`verification_status: blocked` means the local canonical name, directory, and
+public-key reference are internally consistent, while authoritative UUID,
+version, lifecycle, issuer, and registry binding are unresolved.
+
+Until closure:
+
+- Skipper cannot count as a requester, implementer, reviewer, approver,
+  applicator, reconciler, or R3 emergency principal in a RustyClip quorum.
+- Skipper cannot sign authoritative decisions, evidence, leases, handoffs, or
+  identity-asserting Nova messages.
+- Identity-dependent publication, deployment, system mutation, production
+  operation, and maintenance fail closed.
+- No alias, subagent, session, model process, Paperclip agent record, or other
+  Nova identity may substitute for Skipper.
+- Read-only inspection and explicitly authorized local documentation work may
+  continue when it does not claim authoritative identity or cause a privileged
+  side effect.
+
+## Closure Evidence
+
+Set `verification_status` to an active verified state only after all of the
+following evidence exists and passes independent audit:
+
+1. A signed authoritative registry record supplies non-null `nova_id`,
+   registry-bound public key or key ID, `identity_version`,
+   `lifecycle_state`, issuer, and creation time.
+2. The registry public key matches `.nova/identity.pub` through a
+   non-secret, reproducible comparison.
+3. The registry record validates to the pinned trust root and authoritative
+   Veritas registry/DAG at the recorded identity version.
+4. The lifecycle state and role binding independently establish current
+   eligibility for the intended governed role.
+5. The active-directory path and instruction-bundle digest are bound to the
+   same identity version without path ambiguity.
+6. An independent eligible identity auditor signs the validation evidence and
+   records the exact registry revision, trust root, bundle digest, and
+   timestamp.
+7. Negative tests reject a mismatched key, duplicate `nova_id`, stale identity
+   version, inactive lifecycle state, untrusted issuer, and substituted
+   profile.
+
+A local key match, self-attestation, transport response, role assignment,
+directory ownership, or successful tool invocation is not closure evidence.
 
 ## Assignment Boundary
 
-Roles, managers, domains, projects, memberships, tasks, and current lifecycle state
-are intentionally excluded from this portable identity record. Current role and
-project assignments belong in `AGENTS.md` and the authoritative control plane.
+Current role, manager, Domain, Project, membership, task, run, and lease
+assignments belong in `AGENTS.md` and the authoritative control plane. They
+remain intentionally excluded from this portable identity record.

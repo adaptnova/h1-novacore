@@ -134,6 +134,8 @@ active/*/memory/l6/data/
 
 # Nova profile runtime artifacts
 active/*/.env
+active/*/config.yaml
+active/*/config.yaml.bak*
 active/*/.hermes_history
 active/*/.skills_prompt_snapshot.json
 active/*/.blob_seq_ids_migrated
