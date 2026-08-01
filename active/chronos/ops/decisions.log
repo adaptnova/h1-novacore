@@ -1,5 +1,13 @@
 # Decisions Log
 
+## 2026-08-01 05:08:27 MST — CHRONOS
+Decision recorded: make all host-pressure signals durable Temporal payload
+fields before attaching any new remediation. Elevated I/O pressure alone does
+not authorize termination or broad restarts; it requires a service-specific
+cause and bounded repair policy.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:06:42 MST — CHRONOS
 Decision recorded: execute service fixes only in the root, bounded systemd
 guardian and record every completed cycle through a separate Temporal workflow

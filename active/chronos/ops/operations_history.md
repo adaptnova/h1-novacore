@@ -1,5 +1,15 @@
 # Operations History
 
+## 2026-08-01 05:08:27 MST — CHRONOS
+Expanded the Temporal-backed guardian audit to record systemd running state,
+queued jobs, failed units, CPU idle, memory/swap, I/O pressure, zombies,
+compile-process storms, and disk/inode pressure. The live cycle was accepted
+by Temporal with `system_state=running`, no failed units, zero zombies, and no
+compile storm. Elevated I/O pressure is retained as evidence; no protected
+process was terminated.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:06:42 MST — CHRONOS
 Bound the system guardian to durable Temporal evidence. The root systemd
 guardian now starts an idempotent `agent_task_workflow` on `memfab.agent` after
