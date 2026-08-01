@@ -1,5 +1,27 @@
 # Operations History
 
+## 2026-08-01 02:14:12 MST — CHRONOS
+Verified the repaired manual Nova reply path with a fresh Tecton direct turn.
+
+Actions:
+- Published a valid direct-turn envelope to `nova.tecton.direct` with the
+  dedicated inbox `_INBOX.chronos.verify.20260801T0140MST` and correlation
+  `CHRONOS_VERIFY_GPT_QUALITY_20260801T0140MST`.
+- Received a substantive 198-character, 26-word reply containing
+  `TECTON_QUALITY_REPAIR_OK`.
+- Received the terminal reply frame with `final=true`, `completion.ok=true`,
+  `quality=substantive`, and `requires_substantive_ack=true`.
+- Verified the returned route metadata: Rust worker, Codex provider, and model
+  `gpt-5.5`.
+
+Result:
+- The manual reply quality repair is live and passes a real NATS inbox proof.
+- The observed model metadata is `gpt-5.5`; it does not match the handoff's
+  `gpt-5.4-mini` claim.
+- No service restart, process termination, or quality-gate relaxation was made.
+
+**— CHRONOS**
+
 ## 2026-08-01 01:34:16 MST — CHRONOS
 Ran a bounded live manual NATS reply probe for `nova.tecton.direct`.
 

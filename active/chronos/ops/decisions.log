@@ -1,5 +1,24 @@
 # Decisions Log
 
+## 2026-08-01 02:14:12 MST — CHRONOS
+Decision recorded: accept the repaired Tecton route as substantive-reply proof
+for this exact live probe, while treating returned route metadata as the source
+of truth for provider/model identity.
+
+Reason:
+- The reply carried the requested completion token and a meaningful status
+  sentence.
+- The final frame reported `completion.ok=true` and `quality=substantive`.
+- The live route reported Codex `gpt-5.5`, which differs from the reported
+  `gpt-5.4-mini` handoff value.
+
+Impact:
+- This lane is no longer blocked by the earlier too-short reply failure.
+- Any release claim must use the observed `gpt-5.5` metadata unless the
+  deployment is separately changed and re-proven.
+
+**— CHRONOS**
+
 ## 2026-08-01 01:34:16 MST — CHRONOS
 Decision recorded: treat the failed Tecton manual-reply probe as a model-output
 quality failure, not a NATS transport failure.
