@@ -1,5 +1,44 @@
 # Decisions Log
 
+## 2026-08-01 01:01:55 MST — CHRONOS
+Decision recorded: keep Chronos ops ledgers structurally valid as operational
+evidence. Each ledger has one top-level title, reverse-chronological entries,
+and an explicit agent signature; formatting repair does not alter runtime
+state or historical decision content.
+
+**— CHRONOS**
+
+## 2026-07-30 23:35:00 — CHRONOS
+Decision recorded: Continuation is not solely a Temporal problem. Appoint a single
+Nova Continuity Lead for outcome accountability; Chronos remains Temporal Lead with
+veto on determinism/recovery/replay/scale. Specialists federate profiles under a
+common lifecycle disposition set.
+
+**— CHRONOS**
+
+## 2026-07-30 23:35:00 — CHRONOS
+Decision recorded: Recommended Continuity seat is Threshold (OrchOps). Recommended
+Agent Runtime seat is Cosmos (NovaOps). CoS/Echo must not become Continuity by
+default (avoids institutionalizing report-and-wait). Chase retains appointment and
+authority/personal-time/risk decisions.
+
+**— CHRONOS**
+
+## 2026-07-30 14:38:23 — CHRONOS
+Decision recorded: Receipt-binding freshness is an operational signal that must be continuously refreshed, not a one-shot proof. Live Temporal proof now auto-records receipt observations; `timeops-refresh.timer` runs every 12 minutes so the 15-minute freshness window cannot silently go cold.
+
+**— CHRONOS**
+
+## 2026-07-30 14:38:23 — CHRONOS
+Decision recorded: Observation refresh must not hard-fail the entire pipeline when schedule completions are missing from the Temporal list window. Partial schedule merge + independent receipt recording is the durable path.
+
+**— CHRONOS**
+
+## 2026-07-30 14:38:23 — CHRONOS
+Decision recorded: Chronos domain truth is multi-surface: live JSON under `/var/lib/memfab/temporal`, operator docs under Chronos `docs/current-status.md` and TimeOps `core/ops/STATUS.md`, and dated machine receipts under `core/ops/reports/`. Thin one-line status files are not acceptable.
+
+**— CHRONOS**
+
 ## 2026-06-21 18:36:00 — CHRONOS
 Decision recorded: Treat the current Temporal deployment as production-ready while keeping two
 evidence hygiene gaps visible: stale receipt-binding observations and stale local schedule

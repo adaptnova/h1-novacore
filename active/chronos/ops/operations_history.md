@@ -1,5 +1,59 @@
 # Operations History
 
+## 2026-08-01 01:01:55 MST — CHRONOS
+Normalized the Chronos operations ledger after audit: restored a single
+top-level title, retained reverse-chronological ordering, and preserved every
+existing record. No runtime service, Temporal state, or NATS state changed.
+
+**— CHRONOS**
+
+## 2026-07-31 04:59:24 — CHRONOS
+Mode A final channel close to Tecton (TECTON_CHRONOS_CHANNEL_CLOSED). Chronos DONE; §12 locked; idle until Continuity freeze + 4/4. No thrash.
+**— CHRONOS**
+
+## 2026-07-31 04:58:55 — CHRONOS
+Mode A mutual lock confirm to Tecton (glass-wake-b21cb820aee1 / TECTON_CHRONOS_MUTUAL_LOCK). Chronos DONE; §12 locked; implement after Continuity freeze + 4/4. Disposition Progress.
+**— CHRONOS**
+
+## 2026-07-31 04:58:21 — CHRONOS
+Mode A to Tecton on glass-wake-14223e1b1c25: §12 Temporal deltas accepted; Chronos board DONE; implement after Continuity schema freeze + 4/4. Disposition Progress.
+**— CHRONOS**
+
+## 2026-07-31 04:57:23 — CHRONOS
+Mode A partner ACK to Tecton: ACK LOOP_LAW_STUB chronos disposition=accept_with_delta (Temporal substrate deltas only). Receipt under sessions/ and tecton inbound. Token TECTON_LOOP_LAW_PARTNER_ACKS.
+**— CHRONOS**
+
+## 2026-07-31 04:25:13 — CHRONOS
+Chase confirmed Continuity Lead = Threshold; Chronos Temporal only. Chase = strategic + rare high-level escalation. Domain owners own domain lifecycle (federated). Coordinated with Threshold via NATS/inbound.
+**— CHRONOS**
+
+## 2026-07-30 23:35:00 — CHRONOS
+Sealed Nova Continuity ownership contract. Chronos accepts Temporal Lead co-ownership
+of the durable substrate only. Continuity outcome ownership is a separate named seat
+(recommended Threshold/OrchOps; Chase appointment). Documented decision authority,
+closed lifecycle dispositions, Continuity metrics vs substrate SLOs, and explicit
+non-goals (no Temporal-only, no committee, no per-specialist frameworks).
+Artifacts: `core/specs/nova-continuity-ownership-contract.md`, `ops/active/TO-010-nova-continuity-ownership.md`,
+Chronos brief `docs/ownership/nova-continuity-vs-temporal.md`. Updated `protocols/NOVA.md`.
+
+**— CHRONOS**
+
+## 2026-07-30 14:38:23 — CHRONOS
+Restored TimeOps runtime health and comprehensive domain tracking.
+
+Actions:
+- Reinstalled six Temporal maintenance schedules in `memfab-frontier` (list was empty; all schedules had been lost).
+- Ran live Temporal receipt-bound proofs; receipt-binding freshness restored to healthy.
+- Triggered all maintenance schedules once to reseed LastRunTime.
+- Patched `memfab-temporal` observation durability: partial schedule observation refresh (no hard-fail on missing completions), live-proof auto-appends receipt-binding observations, redeployed release binary and restarted `memfab-temporal.service`.
+- Added `/adapt/novas/active/chronos/bin/timeops-refresh.sh` and rewrote `bin/status.sh`.
+- Installed/enabled `timeops-refresh.timer` (12m cadence) writing STATUS docs + dated receipts under `timeops/core/ops/reports/`.
+- Replaced thin `docs/current-status.md` and stale `timeops/core/ops/STATUS.md` with live comprehensive boards; added runbook `timeops-domain-refresh.md`.
+
+Verified: self-health `healthy` (all seven checks), Temporal `SERVING`, five task queues with live pollers, Paperclip active, six schedules present, timer active.
+
+**— CHRONOS**
+
 ## 2026-06-21 18:36:00 — CHRONOS
 Refreshed TimeOps self-health and executive rollup reports from the deployed `memfab-temporal`
 release binary, checked Temporal schedules, verified Paperclip health through the local API, and
