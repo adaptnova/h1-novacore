@@ -1,5 +1,14 @@
 # Operations History
 
+## 2026-08-01 04:20:00 — SIGNED_BY_ECHO
+Checked durable NATS stream `PROJECT_RUSTYMOVE` for the requested RustyMove
+collaboration channel. The exact subject `project.rustymove.Collab` had no
+message because NATS subjects are case-sensitive; canonical
+`project.rustymove.collab` is active with latest collab message
+`PROJECT_RUSTYMOVE#245` at `2026-08-01T11:13:16Z`. Decoded current status,
+collab, temporal, subject count, and consumer progress without publishing new
+traffic.
+
 ## 2026-07-28 23:37:00 — SIGNED_BY_SKIPPER
 Committed and pushed only the audited permanent Echo and Skipper instruction,
 identity-reference, validator, operations, and report files on the shared Nova

@@ -1,5 +1,12 @@
 # Decisions Log
 
+## 2026-08-01 04:20:00 — SIGNED_BY_ECHO
+Decision recorded: Treat `project.rustymove.collab` as the canonical RustyMove
+collaboration subject and report `project.rustymove.Collab` as empty due to
+case sensitivity. Classify consumer progress as delivery/checkpoint evidence,
+not proof that every named owner has independently processed or accepted the
+work.
+
 ## 2026-07-28 23:37:00 — SIGNED_BY_SKIPPER
 Decision recorded: Make the role-bundle remediation durable through one
 path-scoped `working`-branch commit. Do not stage the shared repository's
