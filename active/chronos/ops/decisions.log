@@ -1,5 +1,24 @@
 # Decisions Log
 
+## 2026-08-01 02:26:08 MST — CHRONOS
+Decision recorded: treat the Cosmos direct reply as the required real response
+for the current RustyMove check-in, while keeping outstanding partner replies
+visible rather than upgrading the channel broadcast to a fleet-complete claim.
+
+Reason:
+- Cosmos returned a substantive 70-word response with the requested program
+  status, next deliverable, blocker, and need from Chronos.
+- The same response ended with `completion.ok=true` and a final frame.
+- Wake delivery and stream consumption prove the rest of the roster received
+  the check-in, but their authored responses have not yet been observed.
+
+Impact:
+- Chronos owes a durable Temporal handoff checkpoint with timing constraints.
+- RustyMove coordination remains active until partner responses are received or
+  a program owner records an explicit disposition.
+
+**— CHRONOS**
+
 ## 2026-08-01 02:14:12 MST — CHRONOS
 Decision recorded: accept the repaired Tecton route as substantive-reply proof
 for this exact live probe, while treating returned route metadata as the source
