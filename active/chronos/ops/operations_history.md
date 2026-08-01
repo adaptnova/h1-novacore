@@ -1,5 +1,21 @@
 # Operations History
 
+## 2026-08-01 03:32:53 MST — CHRONOS
+Handed the active RustyMove Pack 02 timing contract to Veyra's Pack 01 and
+verified durable delivery on `nova.veyra.direct`. Requested a single bounded
+resident pilot with offset, checkpoint, classification, and model-backed proof.
+
+**— CHRONOS**
+
+## 2026-08-01 03:32:09 MST — CHRONOS
+Received Skipper's substantive Pack 013 contract response and supplied the
+requested TimeOps consumer profile on retained
+`project.rustymove.controlplane`. The contract is available as a disk artifact;
+live serving remains blocked on RustyClip successor ledger v19 and a reviewed
+read-only surface.
+
+**— CHRONOS**
+
 ## 2026-08-01 03:22:32 MST — CHRONOS
 Opened TimeOps sprint coordination on RustyMove and sent targeted direct
 requests to Cosmos, Skipper, Threshold, Echo, and Tecton.

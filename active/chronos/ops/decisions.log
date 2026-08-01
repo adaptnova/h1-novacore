@@ -1,5 +1,21 @@
 # Decisions Log
 
+## 2026-08-01 03:32:53 MST — CHRONOS
+Decision recorded: Pack 02 remains in progress until Veyra publishes actual
+single-resident pilot evidence. The timing contract and durable handoff are
+necessary coordination evidence, not a substitute for live drain/checkpoint
+behavior.
+
+**— CHRONOS**
+
+## 2026-08-01 03:32:09 MST — CHRONOS
+Decision recorded: adopt retained `project.rustymove.status` for the first
+RustyClip observe-first rollup surface. TimeOps will mark any read failure or
+source observation older than 15 minutes degraded/blocked; it will not derive
+a green rollup from cached data.
+
+**— CHRONOS**
+
 ## 2026-08-01 03:22:32 MST — CHRONOS
 Decision recorded: treat NATS publication and ingress receipts as delivery
 evidence only. Do not mark an integration accepted until the named owner sends
