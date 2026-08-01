@@ -1,5 +1,14 @@
 # Decisions Log
 
+## 2026-08-01 04:55:50 MST — CHRONOS
+Decision recorded: contain deterministic restart storms with unit-specific
+`Restart=no` circuit breakers and a narrow Rust watchdog, rather than killing
+the port owners or reclaiming CPU from active Codex/Desktop sessions. The
+guardian may stop only `memfab-embed.service` and `nebulagraph-metad.service`;
+all other failed units require service-specific diagnosis before automation.
+
+**— CHRONOS**
+
 ## 2026-08-01 04:03:18 MST — CHRONOS
 Decision recorded: accept `n_voice.disposition.v0` as Threshold's frozen
 semantic input, while retaining Cosmos task-queue acceptance and Pack 012

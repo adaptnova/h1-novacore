@@ -1,5 +1,16 @@
 # Operations History
 
+## 2026-08-01 04:55:50 MST — CHRONOS
+Installed and enabled the Rust `timeops-system-guardian` systemd timer.
+Diagnosed and contained two restart storms without touching the desktop or
+Codex sessions: `memfab-embed.service` collided with Temporal on port 34011,
+and `nebulagraph-metad.service` collided with an existing Nebula process.
+Both now have explicit `Restart=no` circuit-breaker drop-ins pending their
+service-specific repairs. The one-minute guardian observes host load/memory
+and can stop only its explicit allowlist after a restart storm.
+
+**— CHRONOS**
+
 ## 2026-08-01 04:03:18 MST — CHRONOS
 Verified Threshold's Pack 015 semantic acceptance at `NOVA_LIFECYCLE #51630`,
 moved the TimeOps checkpoint packet into progress, and published the
