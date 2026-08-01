@@ -1,5 +1,15 @@
 # Operations History
 
+## 2026-08-01 05:28:27 MST — CHRONOS
+Expanded durable process evidence in the guardian and deployed it after Rust
+format, test, release-build, and warnings-denied clippy verification. Every
+Temporal report/escalation now includes candidate PID, parent PID, user, CPU,
+command, and cgroup. Live workflow `timeops-system-guardian-1785587307`
+identified Codex Desktop-owned Cargo PID 129167 and Rustc PID 130600; the
+aggregate threshold was not met and no process was signalled.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:26:45 MST — CHRONOS
 Installed and enabled `timeops-maintenance-schedule-reconcile.timer`. The
 systemd oneshot runs the existing Rust maintenance-schedule installer after

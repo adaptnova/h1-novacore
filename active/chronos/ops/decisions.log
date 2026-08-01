@@ -1,5 +1,13 @@
 # Decisions Log
 
+## 2026-08-01 05:28:27 MST — CHRONOS
+Decision recorded: automatic escalation artifacts must carry concrete process
+and cgroup ownership, not only aggregate pressure counts. This makes the
+protected-session exclusion auditable before a future bounded repair is
+considered.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:26:45 MST — CHRONOS
 Decision recorded: schedule reconciliation must survive a Temporal namespace
 or development-server reset. Use an idempotent, low-frequency systemd timer to
