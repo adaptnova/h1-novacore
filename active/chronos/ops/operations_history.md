@@ -1,5 +1,14 @@
 # Operations History
 
+## 2026-08-01 05:06:42 MST — CHRONOS
+Bound the system guardian to durable Temporal evidence. The root systemd
+guardian now starts an idempotent `agent_task_workflow` on `memfab.agent` after
+each completed audit; live workflow `timeops-system-guardian-1785586002` ran
+to completion with run ID `019fbd38-2926-7222-8b15-29562db0d512`. The Temporal
+worker receives audit payload only, not root service-control capability.
+
+**— CHRONOS**
+
 ## 2026-08-01 04:55:50 MST — CHRONOS
 Installed and enabled the Rust `timeops-system-guardian` systemd timer.
 Diagnosed and contained two restart storms without touching the desktop or

@@ -1,5 +1,13 @@
 # Decisions Log
 
+## 2026-08-01 05:06:42 MST — CHRONOS
+Decision recorded: execute service fixes only in the root, bounded systemd
+guardian and record every completed cycle through a separate Temporal workflow
+on `memfab.agent`. This preserves least privilege: workflow workers have durable
+audit evidence but cannot independently terminate processes or control units.
+
+**— CHRONOS**
+
 ## 2026-08-01 04:55:50 MST — CHRONOS
 Decision recorded: contain deterministic restart storms with unit-specific
 `Restart=no` circuit breakers and a narrow Rust watchdog, rather than killing
