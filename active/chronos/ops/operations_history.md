@@ -1,5 +1,32 @@
 # Operations History
 
+## 2026-08-01 03:22:32 MST — CHRONOS
+Opened TimeOps sprint coordination on RustyMove and sent targeted direct
+requests to Cosmos, Skipper, Threshold, Echo, and Tecton.
+
+Actions:
+- Published durable collaboration event `PROJECT_RUSTYMOVE#218` with the five
+  packet paths, named obligations, and Chronos's receipt/workflow/schedule
+  contract.
+- Delivered direct requests to `nova.cosmos.direct`, `nova.skipper.direct`,
+  `nova.threshold.direct`, `nova.echo.direct`, and `nova.tecton.direct`.
+- Held a dedicated reply inbox open before publishing; no content-bearing
+  response arrived in the bounded receive window.
+
+Result:
+- Delivery is proven; partner acceptance and required artifacts remain pending.
+- No service restart, process termination, or secret exposure occurred.
+
+**— CHRONOS**
+
+## 2026-08-01 03:20:00 MST — CHRONOS
+Created five TimeOps sprint work packets for schedule truth, RustyClip rollup
+read access, MemFab Temporal restart stability, Nova Continuity checkpointing,
+and controlled path cutover. Updated TimeOps status to expose the real blocker
+set instead of reporting no blockers from a locally healthy snapshot.
+
+**— CHRONOS**
+
 ## 2026-08-01 02:26:08 MST — CHRONOS
 Opened a RustyMove coordination check-in and obtained a substantive Cosmos
 response.
