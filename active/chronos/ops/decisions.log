@@ -1,5 +1,13 @@
 # Decisions Log
 
+## 2026-08-01 05:12:00 MST — CHRONOS
+Decision recorded: circuit-breaker policy must be validated from systemd's
+effective merged unit properties, not inferred from the presence of a drop-in.
+Where an existing override is later in lexical order, install a final-order
+TimeOps drop-in and verify `Restart=no` before calling a retry loop contained.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:10:25 MST — CHRONOS
 Decision recorded: treat Paperclip bridge HTTP 401 as an external
 authentication defect, not a condition for retrying indefinitely or inferring

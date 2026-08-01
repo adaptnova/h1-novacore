@@ -1,5 +1,15 @@
 # Operations History
 
+## 2026-08-01 05:12:00 MST — CHRONOS
+Detected and corrected a systemd drop-in ordering conflict before it could
+invalidate the Paperclip bridge containment. A legacy `override.conf` set
+`Restart=always` after the initial `99-` circuit breaker. Installed a final
+`zz-timeops-circuit-breaker.conf`; live systemd state now reports
+`Restart=no`, disabled/inactive, and zero restarts. No bridge process, desktop,
+Codex session, Temporal server, NATS server, or agent parent was killed.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:10:25 MST — CHRONOS
 Installed the bounded `Restart=no` circuit breaker for
 `pc-bridge-memfab.service` after live logs showed an HTTP 401 Paperclip
