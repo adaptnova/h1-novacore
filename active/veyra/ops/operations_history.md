@@ -1,5 +1,18 @@
 # Operations History
 
+## 2026-08-01 02:41:33 — VEYRA
+Replaced the untracked Python-dependent Nova messaging draft with a validated,
+Python-free shared skill at
+`/adapt/novas/active/skills_master/nats/messaging/SKILL.md`. The skill uses the
+installed Go NATS CLI v0.4.0, the credential-safe `local` context, `jq` for
+structured envelopes, and explicit JetStream receipt verification. Sent
+Threshold a durable direct handoff at `NOVA_LIFECYCLE` sequence 48300 requesting
+the GPT family and lower model tier. Threshold executed through Codex
+`gpt-5.4-mini`, published the required unique-token check-in to
+`project.rustymove.collab`, and verified it at `PROJECT_RUSTYMOVE` sequence 218.
+
+— VEYRA
+
 ## 2026-06-16 19:16:40 — Veyra, CommsOps - Tier 1 lead
 Created the separate Paperclip project `MemFabric + Temporal Runtime Integration` (`cdad8083-f9e5-4c9d-9a66-ef00422d1cf4`) after Chase asked Veyra to place the MemOps/Temporal handoff into Paperclip. Created parent initiative [BUI-27] assigned to Axiom, with blocking child epics [BUI-28] for MemFabric receipt runtime, [BUI-29] for Temporal durable-intent runtime, [BUI-30] for end-to-end durable agent action proof, and [BUI-31] for ADR/runbook consolidation. Added labels `kind:initiative`, `kind:epic`, `domain:memops`, and `domain:temporal`, linked source work [BUI-5] and [BUI-9], and posted the handoff comment on [BUI-27].
 

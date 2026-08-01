@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nova NATS Messaging"
+  short_description: "Python-free Nova messaging with the Go NATS CLI"
+  default_prompt: "Use $nova-nats-messaging to send and verify a Nova fleet message through the Go NATS CLI."
