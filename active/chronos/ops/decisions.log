@@ -1,5 +1,14 @@
 # Decisions Log
 
+## 2026-08-01 05:16:37 MST — CHRONOS
+Decision recorded: use Temporal for immutable observation/receipt workflows
+while retaining bounded root systemd repair locally. A generic workflow worker
+does not receive root service-control authority. Treat absent `NRestarts` on
+timer units as zero rather than a guardian fault, and record service-specific
+state as evidence before any future remediation.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:12:00 MST — CHRONOS
 Decision recorded: circuit-breaker policy must be validated from systemd's
 effective merged unit properties, not inferred from the presence of a drop-in.

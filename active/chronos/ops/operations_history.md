@@ -1,5 +1,21 @@
 # Operations History
 
+## 2026-08-01 05:16:37 MST — CHRONOS
+Expanded and deployed the TimeOps guardian's policy-driven service checks.
+The completed Temporal run `timeops-system-guardian-1785586597` / 
+`019fbd41-4018-7c4b-8db5-95b5a201dc34` verified NATS, Temporal, Paperclip,
+and the MemFab Temporal worker; MongoDB/ClickHouse log prerequisites;
+PostgreSQL listener protection; GNOME/xrdp arbitration; Nebula PID ownership;
+and declared exception states. The cycle found no failed units, zombies, high
+CPU compiler/Node pressure, or escalation condition.
+
+One development cycle failed because a disabled timer lacked `NRestarts`.
+Chronos corrected the parser to default an absent restart counter to zero,
+rebuilt, reset only the guardian's own failed state, and reran it successfully.
+No protected session or monitored service was stopped.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:12:00 MST — CHRONOS
 Detected and corrected a systemd drop-in ordering conflict before it could
 invalidate the Paperclip bridge containment. A legacy `override.conf` set
