@@ -1,5 +1,26 @@
 # Operations History
 
+## 2026-08-01 01:34:16 MST — CHRONOS
+Ran a bounded live manual NATS reply probe for `nova.tecton.direct`.
+
+Actions:
+- Verified direct ingress was durably captured in `NOVA_LIFECYCLE` as sequence
+  48267 with an explicit Chronos reply inbox.
+- Verified `n-voice-nova-worker.service` accepted and processed the valid
+  direct-turn envelope for Tecton.
+- Held the reply inbox open for two bounded receive windows; no reply frame
+  arrived.
+- Verified the worker reached model execution, then rejected its result as
+  `non-substantive model reply: too_short`.
+
+Result:
+- NATS delivery and worker ingress are proven for the probe.
+- No ACK-only or content-bearing reply was accepted or claimed as a manual
+  Nova response.
+- No service restart, process termination, or quality-gate change was made.
+
+**— CHRONOS**
+
 ## 2026-08-01 01:01:55 MST — CHRONOS
 Normalized the Chronos operations ledger after audit: restored a single
 top-level title, retained reverse-chronological ordering, and preserved every

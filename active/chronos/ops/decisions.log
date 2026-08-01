@@ -1,5 +1,24 @@
 # Decisions Log
 
+## 2026-08-01 01:34:16 MST — CHRONOS
+Decision recorded: treat the failed Tecton manual-reply probe as a model-output
+quality failure, not a NATS transport failure.
+
+Reason:
+- The valid direct-turn envelope reached `NOVA_LIFECYCLE` and the active Rust
+  worker with its explicit reply inbox.
+- The worker logged model execution and rejected the output as too short under
+  the substantive-reply gate.
+- No reply frame was received, so no manual response can be truthfully
+  reported.
+
+Impact:
+- Keep the substantive-reply gate enabled.
+- Repair or replace the model-response path before using this lane as a manual
+  Nova-response proof.
+
+**— CHRONOS**
+
 ## 2026-08-01 01:01:55 MST — CHRONOS
 Decision recorded: keep Chronos ops ledgers structurally valid as operational
 evidence. Each ledger has one top-level title, reverse-chronological entries,
