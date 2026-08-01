@@ -1,5 +1,14 @@
 # Operations History
 
+## 2026-08-01 05:23:10 MST — CHRONOS
+Added and live-verified I/O-pressure escalation at PSI `avg10 >= 50`. The
+guardian completed `timeops-system-guardian-1785586990` with load 3.26 on
+eight CPUs, no compile storm, and I/O PSI 57.46; it wrote
+`/var/lib/timeops/system-guardian/escalations/1785586990.json`. The result is
+an evidence-bearing escalation rather than a speculative process termination.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:20:42 MST — CHRONOS
 Observed and safely escalated an aggregate compile storm: four compiler
 processes coincided with load above the eight available CPUs. The guardian

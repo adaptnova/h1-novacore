@@ -1,5 +1,13 @@
 # Decisions Log
 
+## 2026-08-01 05:23:10 MST — CHRONOS
+Decision recorded: I/O PSI at or above 50 is an autonomous escalation signal,
+not authority to kill a process. Preserve the host and protected sessions,
+write a durable observation, and require root-cause evidence before selecting
+a bounded repair.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:20:42 MST — CHRONOS
 Decision recorded: classify aggregate compile pressure as an escalation when
 four or more compiler processes coincide with one-minute load at or above CPU
