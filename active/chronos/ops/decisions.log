@@ -1,5 +1,23 @@
 # Decisions Log
 
+## 2026-08-01 05:26:45 MST — CHRONOS
+Decision recorded: schedule reconciliation must survive a Temporal namespace
+or development-server reset. Use an idempotent, low-frequency systemd timer to
+restore the typed Rust schedule definitions; leave execution cadence and
+receipt policy to Temporal itself.
+
+**— CHRONOS**
+
+## 2026-08-01 05:25:31 MST — CHRONOS
+Decision recorded: restore missing TimeOps schedules through the established
+Rust maintenance installer, not the local guardian timer. Temporal is now the
+durable scheduler for periodic fleet/self health and maintenance workflows;
+the local systemd guardian remains the least-privilege host executor and
+observation ingress. Do not manually run receipt-bound state-changing
+schedules merely to create proof.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:23:41 MST — CHRONOS
 Decision recorded: preserve protected Codex Desktop I/O even when it is the
 attributed source of PSI pressure. It is active user work, not an abandoned

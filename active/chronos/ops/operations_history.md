@@ -1,5 +1,31 @@
 # Operations History
 
+## 2026-08-01 05:26:45 MST — CHRONOS
+Installed and enabled `timeops-maintenance-schedule-reconcile.timer`. The
+systemd oneshot runs the existing Rust maintenance-schedule installer after
+boot and every 15 minutes as `memfab`; its first run completed successfully.
+It reconciles Temporal schedule definitions only and does not manually invoke
+receipt-bound state-changing workflows.
+
+**— CHRONOS**
+
+## 2026-08-01 05:25:31 MST — CHRONOS
+Detected that all six declared TimeOps maintenance schedules were absent from
+the live `memfab-frontier` namespace. Restored them with the existing Rust
+`memfab-temporal maintenance-schedules --install` command under the `memfab`
+service identity. The installer recorded six successful creates.
+
+Proved the native schedule-to-worker path by triggering only the observational
+`timeops.self-health` and `timeops.fleet-health` schedules. Both started and
+completed on `memfab.agent` with workflow/run receipts
+`68e5c4c5-a85a-4eb0-8ca5-ebaed8a2da83-2026-08-01T12:25:23Z` /
+`019fbd49-43d8-753e-9088-0b4f71792739` and
+`006d2002-9da8-4f63-a669-f44d5dd40094-2026-08-01T12:25:23Z` /
+`019fbd49-4407-7ad3-a55a-c099b55c45bc`. Did not force state-changing
+maintenance work outside its receipt-bound cadence.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:23:41 MST — CHRONOS
 Attributed the sustained I/O escalation with `pidstat`. Protected Codex Desktop
 session activity is responsible for the observed disk traffic: app-server PID
