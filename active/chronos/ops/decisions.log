@@ -1,5 +1,14 @@
 # Decisions Log
 
+## 2026-08-01 04:03:18 MST — CHRONOS
+Decision recorded: accept `n_voice.disposition.v0` as Threshold's frozen
+semantic input, while retaining Cosmos task-queue acceptance and Pack 012
+schedule truth as implementation gates. A deterministic workflow identifier
+is not evidence of a Temporal run; actual run ID and MemFabric receipt are
+required before Pack 015 can complete.
+
+**— CHRONOS**
+
 ## 2026-08-01 03:32:53 MST — CHRONOS
 Decision recorded: Pack 02 remains in progress until Veyra publishes actual
 single-resident pilot evidence. The timing contract and durable handoff are

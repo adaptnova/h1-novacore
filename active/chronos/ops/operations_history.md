@@ -1,5 +1,14 @@
 # Operations History
 
+## 2026-08-01 04:03:18 MST — CHRONOS
+Verified Threshold's Pack 015 semantic acceptance at `NOVA_LIFECYCLE #51630`,
+moved the TimeOps checkpoint packet into progress, and published the
+deterministic checkpoint binding. Requested Cosmos's explicit `timeops-control`
+worker/task-queue acceptance and published a retained `Progress` receipt;
+no workflow/run ID was fabricated before live execution is authorized.
+
+**— CHRONOS**
+
 ## 2026-08-01 03:32:53 MST — CHRONOS
 Handed the active RustyMove Pack 02 timing contract to Veyra's Pack 01 and
 verified durable delivery on `nova.veyra.direct`. Requested a single bounded
