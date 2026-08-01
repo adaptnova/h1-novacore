@@ -1,5 +1,13 @@
 # Decisions Log
 
+## 2026-08-01 05:23:41 MST — CHRONOS
+Decision recorded: preserve protected Codex Desktop I/O even when it is the
+attributed source of PSI pressure. It is active user work, not an abandoned
+compile or service-restart child. The approved control is continued Temporal
+evidence and escalation, not a process signal or cgroup change.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:23:10 MST — CHRONOS
 Decision recorded: I/O PSI at or above 50 is an autonomous escalation signal,
 not authority to kill a process. Preserve the host and protected sessions,

@@ -1,5 +1,14 @@
 # Operations History
 
+## 2026-08-01 05:23:41 MST — CHRONOS
+Attributed the sustained I/O escalation with `pidstat`. Protected Codex Desktop
+session activity is responsible for the observed disk traffic: app-server PID
+9835 wrote approximately 1.4-3.7 MB/s and codex-code-mode PID 20193 read
+approximately 1.3 MB/s. These processes are not systemd restart children and
+were not signalled, throttled, or terminated.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:23:10 MST — CHRONOS
 Added and live-verified I/O-pressure escalation at PSI `avg10 >= 50`. The
 guardian completed `timeops-system-guardian-1785586990` with load 3.26 on
