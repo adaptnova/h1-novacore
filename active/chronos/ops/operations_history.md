@@ -1,5 +1,17 @@
 # Operations History
 
+## 2026-08-01 05:35:00 MST — CHRONOS
+Verified Pack 015's live activation state after Threshold's retained semantic
+acceptance. Cosmos's implementation/canary acceptance remains valid, but
+`timeops-control.service` and `nova-runtime-disposition.service` do not exist
+and the `timeops-control` workflow queue has zero pollers. Published the exact
+non-fabricated status to `nova.threshold.direct`, retained as
+`chronos-20260801T123500Z-pack015-binding-status`; the checkpoint remains
+`Progress` pending deployed owner workers, current schedule truth, and one
+approved non-critical canary.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:29:00 MST — CHRONOS
 Completed TimeOps Work Packet 017 after final live audit: systemd reported
 running with no failed units or actionable jobs; both TimeOps timers were
