@@ -1,5 +1,14 @@
 # Decisions Log
 
+## 2026-08-01 05:20:42 MST — CHRONOS
+Decision recorded: classify aggregate compile pressure as an escalation when
+four or more compiler processes coincide with one-minute load at or above CPU
+count. A protected Codex Desktop cgroup is positive evidence of an active user
+task; record the cause and preserve it. Retire the Paperclip bridge exception
+only on live substantive bridge health, not merely because a unit is active.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:16:37 MST — CHRONOS
 Decision recorded: use Temporal for immutable observation/receipt workflows
 while retaining bounded root systemd repair locally. A generic workflow worker

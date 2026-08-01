@@ -1,5 +1,21 @@
 # Operations History
 
+## 2026-08-01 05:20:42 MST — CHRONOS
+Observed and safely escalated an aggregate compile storm: four compiler
+processes coincided with load above the eight available CPUs. The guardian
+wrote `/var/lib/timeops/system-guardian/escalations/1785586737.json` and
+Temporal completed workflow `timeops-system-guardian-1785586737` as run
+`019fbd43-636c-7467-989e-e2d5b010a14f`. Process ownership proved the build
+belonged to `app-codex-desktop-9582.scope`, so no signal was sent.
+
+The follow-up cycle found the compile storm gone and I/O PSI reduced from
+58.33 to 25.45. Separately, the Paperclip bridge's previous HTTP 401 condition
+is now repaired by its owner: live logs show `healthy=10/10 registered=10/10`
+with zero restarts, so it remains active rather than being stopped on stale
+exception policy.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:16:37 MST — CHRONOS
 Expanded and deployed the TimeOps guardian's policy-driven service checks.
 The completed Temporal run `timeops-system-guardian-1785586597` / 
