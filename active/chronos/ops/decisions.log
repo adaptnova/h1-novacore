@@ -1,5 +1,15 @@
 # Decisions Log
 
+## 2026-08-01 05:10:25 MST — CHRONOS
+Decision recorded: treat Paperclip bridge HTTP 401 as an external
+authentication defect, not a condition for retrying indefinitely or inferring
+credentials. The guardian may keep this explicitly disabled unit stopped but
+must not start it until its owner supplies a validated authentication repair.
+Likewise, an inactive database unit is not restarted when the expected
+listener is already live; preserve the running database topology.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:08:27 MST — CHRONOS
 Decision recorded: make all host-pressure signals durable Temporal payload
 fields before attaching any new remediation. Elevated I/O pressure alone does

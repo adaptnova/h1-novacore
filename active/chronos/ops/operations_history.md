@@ -1,5 +1,20 @@
 # Operations History
 
+## 2026-08-01 05:10:25 MST — CHRONOS
+Installed the bounded `Restart=no` circuit breaker for
+`pc-bridge-memfab.service` after live logs showed an HTTP 401 Paperclip
+authentication failure and repeated restarts. The unit is disabled and
+inactive with no credential guessed or exposed. Rebuilt and installed the
+guardian with the bridge in its explicit three-unit allowlist; a fresh cycle
+completed and Temporal recorded `timeops-system-guardian-1785586221` as run
+`019fbd3b-81d0-713f-94e4-0c1325d7bd74` on `memfab.agent`.
+
+The PostgreSQL TeamAdapt unit was left inactive because `127.0.0.1:18030` is
+already listening, while ClickHouse was verified active on `127.0.0.1:9000`.
+No desktop, Codex, Temporal, NATS, or agent session was stopped.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:08:27 MST — CHRONOS
 Expanded the Temporal-backed guardian audit to record systemd running state,
 queued jobs, failed units, CPU idle, memory/swap, I/O pressure, zombies,
