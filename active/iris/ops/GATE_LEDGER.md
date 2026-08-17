@@ -1,6 +1,6 @@
 # GATE LEDGER — living index (ADR-0016)
 
-Generated: 2026-08-17T14:40:56Z by ledger-harvest.sh
+Generated: 2026-08-17T21:38:21Z by ledger-harvest.sh
 SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 
 | Token | When | Evidence |
@@ -90,6 +90,7 @@ SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 | `IRIS_PLUMB_14010_WAVE0_ACCEPT` | 2026-08-17T05:13Z | `/adapt/novas/active/iris/ops/proofs/IRIS_PLUMB_14010_WAVE0_ACCEPT.md` |
 | `IRIS_PLUMB_14010_WAVE0_SANCTION` | 2026-08-17T05:06Z | `/adapt/novas/active/iris/ops/proofs/IRIS_PLUMB_14010_WAVE0_SANCTION.md` |
 | `IRIS_PLUMB_14010_WAVE1_OPENCODE_ACCEPT` | 2026-08-17T05:17Z | `/adapt/novas/active/iris/ops/proofs/IRIS_PLUMB_14010_WAVE1_OPENCODE_ACCEPT.md` |
+| `IRIS_PRISM_TONIGHT_T1_ACCEPT` | 2026-08-17T21:37Z | `/adapt/novas/active/iris/ops/proofs/IRIS_PRISM_TONIGHT_T1_ACCEPT.md` |
 | `IRIS_SP004B_CREDS_SWEEP_ACCEPT` | inbound-only | `(no proofs/ file)` |
 | `IRIS_SP004C_DORMANT_HYGIENE_ACCEPT` | inbound-only | `(no proofs/ file)` |
 | `IRIS_SP004E_WEAVIATE_EMPTY_KEY_ACCEPT` | inbound-only | `(no proofs/ file)` |

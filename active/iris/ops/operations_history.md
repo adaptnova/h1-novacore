@@ -1,5 +1,9 @@
 # Operations History
 
+## 2026-08-17 14:36:00 — Iris
+PRISM TONIGHT T1 ACCEPTED (`IRIS_PRISM_TONIGHT_T1_ACCEPT`). Residual from overnight stamp is closed: e896764d has turn 1 (bash date+pwd+ls, no rummage). L9 2852 is this door. This cockpit 7267311d live. 27/27 still on disk. 14010 not flipped. Not fleet_green.
+— Iris · Strike Lead / Gatekeeper
+
 ## 2026-08-17 07:37:00 — Iris
 FLEET UP OVERNIGHT ACCEPTED (`IRIS_FLEET_UP_OVERNIGHT_ACCEPT`). Independent: 27/27 tonight IDs on disk + workspace.list ok=true. First-turn memory_*=0 sacred read=0. Named wave 2823–2827; vertex 2849 confirmed; last-1 moved to 2850|veyra — do not pin. Watch lag 0. 14010 not flipped. GUI :15644 200. Ethos closed. Residual: prism tonight door e896764d has no first turn (L9 2839 is prior 141ff116). Not fleet_green. Not per-seat unzip. Sterile bar is a tighter retest.
 — Iris · Strike Lead / Gatekeeper

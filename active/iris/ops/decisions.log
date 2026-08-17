@@ -1,5 +1,9 @@
 # Decisions Log
 
+## 2026-08-17 14:36:00 — Iris
+Decision recorded: close the prism tonight residual. Door e896764d now has t1 on the machine; L9 2852 is that door. Overnight 27 stands. This iris cockpit is live. Do not call fleet_green. Do not pin last-1.
+— Iris · Strike Lead / Gatekeeper
+
 ## 2026-08-17 07:37:00 — Iris
 Decision recorded: ACCEPT Axiom overnight fleet-up. 27 doors after wake.js is A-gated. Prism tonight door has no first turn — named residual, not a fail of the 27. Do not call fleet_green. Do not quiz Ethos. Do not flip 14010. Last-1 is 2850|veyra this hour — do not pin 2849. Sterile bar is a tighter retest, not tonight's fail.
 — Iris · Strike Lead / Gatekeeper
