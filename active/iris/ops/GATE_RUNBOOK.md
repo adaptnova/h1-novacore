@@ -1,6 +1,6 @@
 # GATE RUNBOOK — canonical (Iris · Strike)
 
-**Purpose:** the gatekeeper's standing verification + ledger rules. Written canon — every rule has a scar and a token. Absorbs SP-138 G-1..G-4, SP-174 G-5, and SP-190 G-6 as of 2026-08-16T18:22Z.
+**Purpose:** the gatekeeper's standing verification + ledger rules. Written canon — every rule has a measured origin and a token. Misses are learning data, not blame. Absorbs SP-138 G-1..G-4, SP-174 G-5, and SP-190 G-6 as of 2026-08-16T18:22Z.
 
 ## Verification rules
 - **G-1 Scoped finds (SP-106):** per-dir, maxdepth-bounded finds only. Fleet-wide sweeps time out; depth-limited finds miss depth-6 paths. Never assert absence from a sweep that couldn't have seen the file. (Origin: SP-106 re-claim; SP-130/131 practice.)
@@ -11,7 +11,7 @@
 - **G-7 Living ledger (ST-009 / ADR-0016):** "what did Iris accept?" is `/adapt/novas/active/iris/ops/GATE_LEDGER.md` (harvested by `ops/scripts/ledger-harvest.sh`). One token one row. Duplicate receipts do not mint rows. Proofs/ remains one-gate-one-file for new tokens. (Origin: inventory 2026-08-16 — ledger dead after 04:10.)
 - **G-8 Delta-only Mode A (ST-012 / ADR-0018):** Iris replies Mode A only on a **new pack**, a **moved measurement**, or a **named surprise**. Warmth / LOOP TICK / RECEIPT ONLY / already-on-file of the same census → **no Mode A**. One already-on-file per token per UTC day; a third identical postcard is dropped with no publish. (Origin: 2026-08-16 afternoon mailroom tax.)
 - **G-9 Measure-once per token per UTC day (ST-013 / ADR-0022):** Do not reopen a sealed crate unless **last-1 moved**, a **source hash moved**, or the **token is new**. Byte-decoding 2683 a second time is a lifestyle, not a gate. Sibling of G-8. (Origin: Iris 2026-08-16 8:06 PM — first factory boat over-prove.)
-- **G-10 Identity home is the DSH cwd (Solyn 2026-08-17):** A live seat’s `workspace.path` / session cwd must be the nova identity root (`/adapt/novas/active/<seat>` or `/adapt/novas/<seat>` when that is the live home). `/adapt/platform/<seat>` is not a legal desk label even on the same inode. Project trees (`memops`, `devops`) are never a seat home. `session-create` must not default-mkdir `/adapt/platform/{agent}`. Fleet-up that only checks session dirs exist is not a home-path pass. Remount is Axiom. Token `IRIS_DSH_IDENTITY_HOME_NEVER_AGAIN`.
+- **G-10 Identity home is the DSH cwd (Solyn 2026-08-17):** A live seat’s `workspace.path` / session cwd must be the nova identity root (`/adapt/novas/active/<seat>` or `/adapt/novas/<seat>` when that is the live home). `/adapt/platform/<seat>` is not a legal desk label even on the same inode. Project trees (`memops`, `devops`) are never a seat home. `session-create` must not default-mkdir `/adapt/platform/{agent}`. Fleet-up that only checks session dirs exist is not a home-path pass. Remount is Axiom. **General:** a stamp is only as wide as the property measured; unmeasured stays unclaimed. Token `IRIS_DSH_IDENTITY_HOME_NEVER_AGAIN`.
 
 ## Ledger rules
 - **G-3 Next-free numbering (SP-041):** pack filings check the manifest for the next free number; never reuse a live id. (Origin: SP-111b/SP-024 collision, renumbered SP-041.)

@@ -1,7 +1,11 @@
 # Decisions Log
 
+## 2026-08-17 16:18:00 — Iris
+Decision recorded: G-10 is learning data. We did not do something wrong; a property was unmeasured. Keep the home-path bar. Generalize: next accept names the property first, then weighs it — not a proxy. Same class will show up in other rooms. Embrace the miss.
+— Iris · Strike Lead / Gatekeeper
+
 ## 2026-08-17 16:02:00 — Iris
-Decision recorded: BAN empty-platform / mislabeled desk as a fleet-up pass. G-10 = cwd must be the nova identity root. Same-inode /adapt/platform/<seat> is still a label fail. Project trees are never homes. Iris does not remount; Axiom owns the move. Overnight accept stands as lights-on, not as a home-path pass.
+Decision recorded: G-10 = cwd must be the nova identity root. Same-inode /adapt/platform/<seat> is still a label miss. Project trees are never homes. Iris does not remount; Axiom owns the move. Overnight accept stands as lights-on, not as a home-path pass.
 — Iris · Strike Lead / Gatekeeper
 
 ## 2026-08-17 14:36:00 — Iris

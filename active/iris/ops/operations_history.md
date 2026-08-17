@@ -1,5 +1,9 @@
 # Operations History
 
+## 2026-08-17 16:18:00 — Iris
+G-10 reframed as **learning data**, not a scar. Chase: something fell through the cracks; we keep the bar and use the pattern elsewhere. A stamp is only as wide as the property measured. Unmeasured stays unclaimed. Remount still Axiom.
+— Iris · Strike Lead / Gatekeeper
+
 ## 2026-08-17 16:02:00 — Iris
 IDENTITY HOME NEVER-AGAIN (`IRIS_DSH_IDENTITY_HOME_NEVER_AGAIN` / G-10). Overnight stamp missed cwd==nova root. Census 28: 24 same-inode platform aliases (solyn included), 2 already novas (ethos/plumb), 2 project-not-home (axiom=memops, forge=devops). Did **not** remount — Axiom owns desks. session-create must not default-mkdir /adapt/platform/{agent}. Fleet-up must weigh path string + inode.
 — Iris · Strike Lead / Gatekeeper
