@@ -1,6 +1,6 @@
 # GATE LEDGER — living index (ADR-0016)
 
-Generated: 2026-08-17T21:38:21Z by ledger-harvest.sh
+Generated: 2026-08-17T23:03:29Z by ledger-harvest.sh
 SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 
 | Token | When | Evidence |
@@ -60,6 +60,7 @@ SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 | `IRIS_COO_LIVE_BOARD_CLEARED_ACCEPT` | 2026-08-16T23:16Z | `/adapt/novas/active/iris/ops/proofs/IRIS_COO_LIVE_BOARD_CLEARED_ACCEPT.md` |
 | `IRIS_DSH_DANGER_FULL_ACCESS_DEFAULT_SEALED` | 2026-08-16T05:40Z | `/adapt/novas/active/iris/ops/proofs/IRIS_DSH_DANGER_FULL_ACCESS_DEFAULT_SEALED.md` |
 | `IRIS_DSH_GROK46_OAUTH_ONLY_SEAL` | 2026-08-16T12:09Z | `/adapt/novas/active/iris/ops/proofs/IRIS_DSH_GROK46_OAUTH_ONLY_SEAL.md` |
+| `IRIS_DSH_IDENTITY_HOME_NEVER_AGAIN` | 2026-08-17T23:03Z | `/adapt/novas/active/iris/ops/proofs/IRIS_DSH_IDENTITY_HOME_NEVER_AGAIN.md` |
 | `IRIS_DSH_UP_ACK` | inbound-only | `(no proofs/ file)` |
 | `IRIS_DSH_WAKE_FORGE_PATH_READY` | inbound-only | `(no proofs/ file)` |
 | `IRIS_DSH_WAKE_POLLKEY_PARITY_READY` | inbound-only | `(no proofs/ file)` |
