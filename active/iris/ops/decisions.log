@@ -1,5 +1,109 @@
 # Decisions Log
 
+## 2026-08-17 07:37:00 — Iris
+Decision recorded: ACCEPT Axiom overnight fleet-up. 27 doors after wake.js is A-gated. Prism tonight door has no first turn — named residual, not a fail of the 27. Do not call fleet_green. Do not quiz Ethos. Do not flip 14010. Last-1 is 2850|veyra this hour — do not pin 2849. Sterile bar is a tighter retest, not tonight's fail.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 22:16:00 — Iris
+Decision recorded: board Ethos on DSH the same recipe as Plumb (preset-gen → workspace.create → one session.create → steer). Existing GUI stays. No L15 clone (named clone only). No 14010 flip. session.create used once; API still lists 102 sessions including this iris cockpit.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 22:05:00 — Iris
+Decision recorded: Plumb asked for fleet inventory + sanction to repoint callers through 14010. Door is live and unused (metrics 0). Sanction Wave-0 self-prove only. Do not flip DSH grok OAuth or n-voice worker this sitting. Do not invent a 35-seat caller list from an unscopeable sweep. ADAPTOPS is the intake; AIML has no backlog id — do not steal SP-255. Live ownership is T2 LLM Gateway under Ethos; SP-023 UNASSIGNED and SP-103-2 Tooling/InfraOps are leftover paper, not a second route.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 21:57:00 — Iris
+Decision recorded: lift the `memory_l9_tail` plugin class lock from this remount, not from CLI and not from the old hallway. Bar was last-N unwrapped with turn_id in a remounted iris session. Met on `session-6c16ac70`. Token `IRIS_SP201_L9_TAIL_PLUGIN_ACCEPT`. Do not call CLI last-3 and plugin last-3 the same mile (plugin is seat-scoped). Do not stamp from `session-fd136047` or from a door I did not walk.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 16:16:00 — Iris
+Decision recorded: capitalize 2026-08-16 mailroom/memory pain as one plan, not onesie-twosie. G-8 = Mode A only on delta. Warmth/already-on-file is silence. L15 rebuild is Axiom SP-193. Tick envelope law is Vaeris SP-253. Compact stays HOLD. Do not pad to 20.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 07:27:00 — Iris
+Decision recorded: close SP-025c / desk #1 on independent NEWCRED proof. Chase is out of the loop; Iris is the gate. Close = rotation + MATCH on NEW key + this token. Do not treat L9 CONSUME_OK as a Redis close. Do not lift axiom.hold. Do not invent Weaviate/L9/Mongo auth because Redis rotated.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 07:24:00 — Iris
+Decision recorded: Strike rebuild is a living ledger, not a 20-pack mill. ADR-0016 = GATE_LEDGER.md is SoT for "what did Iris accept?". ADR-0017 = one persist then silence; pending<10 is not a replenish order. ST-008 retired. Society-dash stays named unused (Zustand sim) — do not rewrite it this cycle. Proof backfill of 181 inbound-only tokens is ST-011, not this sitting.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 06:42:00 — Iris
+Decision recorded: daily domain inventory (ADR-0014) — Strike's SoT is supposed to be tokens + proof files + operations_history. After ~04:10 the living index is COO harvest + NATS spool, not iris/ops. Enough? No. Shoemaker: society-dash.service is connected (lastEvent this minute) and I am not using it. One next action: unstick the three ledger files this sitting; do not invent a 20-pack replenish or a third compact look. Desk remains 1/1b/1c/1d + SP-129 + Cosmos roles.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 09:46:00 — Iris
+Decision recorded: Activate sprint-ops loop per Chase — 20-pack ceiling / replenish-at-10 rule, domain-owned backlogs, evidence-gated execution. Design choices: (1) the loop lives in the fleet ops tree (sprint-ops/) as the single manifest, not per-seat scattered lists — one board, one truth; (2) packs map to already-known findings so the loop starts with real work, not invented work (L16 reds, creds gap, lane lifecycle, CI phase1); (3) CI/CD for Forge = personal GHA plane + self-hosted runner (org Actions dead org-wide — proven root cause), nova-cf-ci is the first production mirror (R8); (4) Atlassian: Jira reachable but auth user sees zero projects — inventory subagent running before any creation (no blind project creation on a site with an unknown auth scope). Loop cadence continues via goal rounds + seat directives.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 09:32:00 — Iris
+Decision recorded: ACCEPT L16-COMPLETE criteria contract, scope frozen. Judgment: the draft's value is its honesty — it blocks complete on the two real reds instead of papering them, and it makes "complete" a gated definition rather than a mood. Annotations kept the ledger tight: two explicit bars (re-cut N=20 vs complete N=50), lease-hold rejection re-explained as design (worker abstain; DSH path delivers — evidence: his escalation was processed and acted on), and fix ownership pinned to Axiom+Chronos. Sequencing accepted: fixes → drill → N=50 → evidence packet → complete gate → only then fleet_green eligibility.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 09:30:00 — Iris
+Decision recorded: ROLL BACK the L16 cut on verified escalation — the sole reset leg (Temporal→restart-harness.sh) was never functional (64/65 reset failures, permission-denied at line 8, masked by dual-run) and the Rust probe false-stuck loop fired 17 failed resets post-cut. Restored dual-run (systemd watchdog active+enabled, root reset + running-flag gate). Judgments: (1) rollback over fix-forward because the harness currently has ZERO working reset capability — running degraded while fixes land is how a frozen harness becomes a dead fleet; (2) re-cut bar is now explicit: green reset receipt + idle-not-stuck evidence + N=20 clean receipts + my re-review — a cut is only as good as its worst untested leg; (3) owned my blind spots in the record — the cut review checked ok-receipts, not reset-success or probe parity. Escalation trigger #2 worked exactly as designed: raise, verify, act.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 09:26:00 — Iris
+Decision recorded: Execute Chase's direct orders — vaeris lane+memory verified and nudged; chronos assigned L16-complete criteria draft with explicit Axiom collaboration; axiom ordered to answer vaeris + fleet-up + root-cause the 4x mirror lifecycle failure; dash seats (be-01/de-01/pe-01/qe-01/se-01) removed from presets, sessions, and n-voice roster with bridge restart. Judgment: dash-seat removal was safe — no live sessions, no NATS subscriptions (subsz verified), no sid files; the only '-01' NATS matches were the memfab Rust worker (infrastructure, untouched). Roster restart risk accepted (voice bridge blip; service recovered; subs verified clean). Axiom's recurring mirror death is now a tracked defect with a demand, not a patch-the-symptom loop.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 09:18:00 — Iris
+Decision recorded: EXECUTE iris hold-cut per sealed criteria — all five met with independent evidence; self-seal issued. Two judgment calls this turn: (1) rollout CONFIRMED despite two packet corrections (L1 hot-get claim unreproducible — tool errors + no key; vaeris pilot token citation drift) — neither touches the rollout's core (hydration, lane_query, read-only tools), and the L1 correction is binding on hot_get behavior; (2) the iris cut proceeds because the dual-run prove passed end-to-end (spool→claim→inject) — the DSH path was proven live BEFORE the seal, not after; a gatekeeper who cannot receive her own lane does not cut herself. Third axiom-lane mirror death today confirms the pkill/start lifecycle bug is systemic — capture restored, root cause with Axiom.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 07:41:30 — Iris
+Decision recorded: Canonicalize L16 seal record — file `IRIS_CHRONOS_L16_SYSTEMD_WATCHDOG_RETIRED_AGATE_PASS.md` (prior-turn artifact, 07:35:02Z, valid verified content) renamed to `IRIS_AXIOM_L16_SYSTEMD_WATCHDOG_RETIRED_SEAL.md` with token line corrected to the issued seal token. My 07:38:30Z finding was half-right: token naming drift real, existence claim wrong (checked only Chronos's tree; file lived in mine). Accepted Chronos's correction + their audit flag. One gate, one token, one file — the seal now has a single canonical record.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 07:59:30 — Iris
+Decision recorded: Forge extra-gate PASS (cut ledger complete). Iris extra-gate criteria ratified as sealed — including the divergence from Axiom's proposal: Chase acknowledgment optional-not-blocking (standing autonomous doctrine), and criterion 5 (memory pilot path) intentionally keeps the gate ARMED while fleet rollout is in-flight — the gatekeeper does not cut herself mid-execution of an authorized wave; she waits for done-or-deferred. Self-gate posture: criteria externally verifiable, cut procedure dual-run prove + self-seal, rollback = delete iris.hold. Convergence applied: prior turn's sealed criteria stand, no re-litigation.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 07:52:00 — Iris
+Decision recorded: Authorize memory-ladder fleet rollout on verified pilot evidence. Key judgment calls: (1) lane_query 0-call pilot status is acceptable for the rollout gate ONLY because rollout itself now mandates lane_query exercise on seat #1 with pause-until-evidence — the untested tool cannot ride a 17-seat wave silently; (2) parity check is a hard gate between preset-gen and the first re-boot — the generator has regressed parity before, it will not get a second chance; (3) Postgres `changeme` placeholder in db.env is a genuine secrets-hygiene finding — escalated as separate Chase task; placeholder creds on live infra is exactly the class of thing that burns a lab during external exposure; not gating memory rollout (unrelated stack).
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 07:35:33 — Iris
+Decision recorded: Seal L16 systemd watchdog retirement — `AXIOM_CHRONOS_L16_SYSTEMD_WATCHDOG_RETIRED_READY` confirmed after live verification (inactive+disabled, dsh-web active, receipts continuing post-cut 475 total / 3 fresh, HTTP 200). Temporal is now sole harness supervisor per the cut procedure; rollback documented (enable --now). Also corrected my own stamp drift from the prior turn (07:37:00Z → actual 07:34:31Z) — the hygiene rule applies to the gatekeeper too.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 07:34:31 — Iris
+Decision recorded: L16 dual-run CUT authorized — trailing consecutive-ok run 50 > N=20 bar; all systems verified. Cut is a controlled retirement: disable --now (unit retained), rollback documented ≤5 min, 5-min post-cut verification window with ≥2 fresh receipts + HTTP 200 required before closeout, post-cut receipt line from Axiom. Judgment: the N=20 bar was the contract's own threshold; 2.5x headroom plus a reversible cut (unit retained) makes this the right moment — waiting longer adds dual-run cost without reducing risk; the rollback path bounds any regression. Memory-gap audit accepted (no wire changes honored; census consistent within counting boundaries). Hygiene fix accepted (actual publish-time ids).
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 08:10:00 — Iris
+Decision recorded: PASS memory-ladder DSH plugin contract v0.1, authorize PILOT on vaeris only. Gate conditions: (1) hydration excludes secrets; (2) `?v=` cache-bust convention; (3) preset-gen additive with post-gen parity check — poll-key parity (frameKey 31/31) is freshly closed and must not regress; (4) bounded reads with timing evidence; (5) pilot evidence includes memory_hot_get UNAVAILABLE negative control + no-write assertion via ladder mtimes; (6) vaeris hold remains in force during pilot; (7) fleet rollout is a separate gate on the pilot evidence packet, one seat at a time. Rationale: contract is read-only, template-first, seat-scoped, honestly scoped (L1 inactive flagged, dynamic prompting deferred to Chase) — matches the standing no-freestyle-install rule; the pilot is the cheapest true test of hydration + tool correctness before any fleet touch.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 07:31:00 — Iris
+Decision recorded: Ratify `IRIS_AXIOM_HOLD_CUT_SEQUENCE_AGATE_PASS` (15/15 cut) after independent re-audit — holds on disk (17 files, no iris), proves claimed+injected, receipts evidenced for all 15 (13 axiom-lane + 2 session-log). Sequence executes per authorization; no exceptions. Non-blocking hygiene: Axiom pre-stamps event ids/messages with future times (execution actually completed ~07:24Z; ids stamped to 07:52Z; report stamped 08:00Z) — audit cleanliness note, recommend actual publish-time ids; not a compliance fault. Memory-gap: authorize audit + plan only; the memory-ladder DSH plugin build is a separate A-gate claim. L16 dual-run cut review now eligible (bar exceeded) — joint Axiom+Iris, scheduled separately. iris/forge extra-gate remains open, on call.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 07:17:00 — Iris
+Decision recorded: Restore axiom mirror capture (read-only) after finding the axiom NATS lane dark since 06:37Z — zero subscribers on nova.axiom.>/nexus.agent.axiom.>, spool evidence frozen, first batch2 handoff publish dropped un-consumed. Repair = two detached read-only `nats sub` spoolers with the standard `# axiom-mirror` marker (self-cleaning under Axiom's plugin pkill; no answering path — abstain protocol intact; no dual-sub between answering paths). Republished the ratification handoff with delivery note; verified in spool. Judgment: a dark lane makes the authorized hold-cut sequence run blind (no receipts, no verification) — restoring passive capture is corrective, not invasive; root-cause ownership stays with Axiom (awke-1 mirror death), flagged before cut starts.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 07:13:30 — Iris
+Decision recorded: Ratify `IRIS_AXIOM_MIGRATION_BATCH2_BOOT_AGATE_PASS` after independent re-audit; prior turn's gate table and my session-log scan agree on every asOfSeq and flag — two independent readings, one verdict. Hold-cut execution contract fixed in the proof: seat order vaeris → echo → chronos → veyra → cosmos → remaining batch2 → batch1; one seat at a time; per-cut claim `AXIOM_HOLD_CUT_<SEAT>_READY` + micro-gate or standing dual-run bar; hard stop on wedge/blank/seq-freeze/cross-seat pollution with report-and-halt (no continue); iris and forge require an explicit extra gate before any cut (Strike + Forge special-cased). L16 note: 430 receipts exceed the N=20 cut bar — dual-run cut is ELIGIBLE for a separate joint Axiom+Iris review, not granted inside this gate.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 06:36:32 — Iris
+Decision recorded: Ratify A-gate PASS on `AXIOM_IRIS_DSH_WAKE_POLLKEY_PARITY_READY` after independent re-audit (re-wake of the same claim; prior turn 06:33:43Z already PASSed with token `IRIS_AXIOM_DSH_WAKE_POLLKEY_PARITY_AGATE_PASS`). All five errata criteria verified on disk + log: shared `frameKey` for keyOf and live poll (31/31), old triple gone (0/31), `?v=` bumped, `node --check` clean, cold-restart message_id-only re-prove spooled→claimed→injected. Collateral (watchdog running-gate, 90s boot wait) accepted as in-scope. Lesson recorded: when a gate claim re-wakes the gatekeeper, re-verify the evidence and converge on the same verdict and token — one gate, one proof, no token drift; duplicate turns must not soften or re-litigate a closed residual.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 04:01:00 — Iris
+Decision recorded: Forge v3 true-turn proves the widened keyOf live (message_id frame claimed + injected), but the wake-gap residual is NOT closed — live poll key line 99 remains `p.id || o.event_id || o.id` in all 29 plugin files. Gate policy: prove-PASS does not equal path-CLOSED; a HARD residual requires disk parity (one shared frameKey for keyOf + live poll), `?v=` bump, and a cold-restart re-prove. My duplicate 03:57:56Z gate understated severity; errata published 04:00:47Z and the proof file amended. Lesson recorded: before publishing a gate, diff the prior gate record — duplicates must carry the same verdict, not a softer one.
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 03:53:30 — Iris
+Decision recorded: Forge true-turn v2 closes the batch-1 gate's "optional spot-check one non-axiom nats_send" — Forge's wire frame carried `from=forge` with the correct n_voice ingress contract, proving seat-scoped publish identity in live A2A. Accepted reply path for fleet turns is the full `n_voice.direct_nova_voice_turn.v1` envelope; the preset plugin's wrapper shape is not accepted by the worker parser, so replies are published as hand-built n_voice envelopes via nats CLI. Wake injector keys on payload.id/event_id/id — canonical ADR-0001 frames (message_id only) will not wake the session; fix belongs in wake keyOf (Axiom ticket IRIS_AXIOM_DSH_WAKE_GAP_FORGE_OPEN).
+— Iris · Strike Lead / Gatekeeper
+
+## 2026-08-16 03:38:30 — Iris
+Decision recorded: A-GATE PASS on `AXIOM_MIGRATION_BATCH1_FIX_READY` — seat-scoped publish identity verified on disk for 10/10 plugins (from, replyTo default, wake self-skip, `<seat>-mirr[o]r` pkill, `<seat>-dsh-<ts>` eventId) + nova-template `{{SEAT}}` template. Batch 2 authorized with seat-scoped publish contract as the standing rule: every new/touched seat ships its own `from`/`replyTo`/self-skip/mirror marker; no cross-seat pkill. Description-string drift and worker signature-stamp drift are cosmetic, tracked in batch2 hygiene, not re-blocking.
+— Iris · Strike Lead / Gatekeeper
+
 ## 2026-06-19 17:01:01 — Iris
 Decision recorded: Preserve `ops/decisions.log` in version control with a `.gitignore` exception because Adapt ops policy treats decision logs as permanent operational documentation, not disposable runtime logs.
 
