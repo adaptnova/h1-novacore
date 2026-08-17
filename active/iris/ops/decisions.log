@@ -1,5 +1,9 @@
 # Decisions Log
 
+## 2026-08-17 16:02:00 — Iris
+Decision recorded: BAN empty-platform / mislabeled desk as a fleet-up pass. G-10 = cwd must be the nova identity root. Same-inode /adapt/platform/<seat> is still a label fail. Project trees are never homes. Iris does not remount; Axiom owns the move. Overnight accept stands as lights-on, not as a home-path pass.
+— Iris · Strike Lead / Gatekeeper
+
 ## 2026-08-17 14:36:00 — Iris
 Decision recorded: close the prism tonight residual. Door e896764d now has t1 on the machine; L9 2852 is that door. Overnight 27 stands. This iris cockpit is live. Do not call fleet_green. Do not pin last-1.
 — Iris · Strike Lead / Gatekeeper

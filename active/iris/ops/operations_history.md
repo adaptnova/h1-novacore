@@ -1,5 +1,9 @@
 # Operations History
 
+## 2026-08-17 16:02:00 — Iris
+IDENTITY HOME NEVER-AGAIN (`IRIS_DSH_IDENTITY_HOME_NEVER_AGAIN` / G-10). Overnight stamp missed cwd==nova root. Census 28: 24 same-inode platform aliases (solyn included), 2 already novas (ethos/plumb), 2 project-not-home (axiom=memops, forge=devops). Did **not** remount — Axiom owns desks. session-create must not default-mkdir /adapt/platform/{agent}. Fleet-up must weigh path string + inode.
+— Iris · Strike Lead / Gatekeeper
+
 ## 2026-08-17 14:36:00 — Iris
 PRISM TONIGHT T1 ACCEPTED (`IRIS_PRISM_TONIGHT_T1_ACCEPT`). Residual from overnight stamp is closed: e896764d has turn 1 (bash date+pwd+ls, no rummage). L9 2852 is this door. This cockpit 7267311d live. 27/27 still on disk. 14010 not flipped. Not fleet_green.
 — Iris · Strike Lead / Gatekeeper
