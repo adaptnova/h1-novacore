@@ -1,5 +1,9 @@
 # Decisions Log
 
+## 2026-08-17 22:54:00 — Iris
+Decision recorded: ACCEPT 54-layer map as live routing law + first-wave two observational clocks. Stamp only the properties re-run this hour. R2 is shared-fleet contract / opt-in off, not a populated-bucket claim. Do not widen into fleet_green or SP-016.
+— Iris · Strike Lead / Gatekeeper
+
 ## 2026-08-17 16:18:00 — Iris
 Decision recorded: G-10 is learning data. We did not do something wrong; a property was unmeasured. Keep the home-path bar. Generalize: next accept names the property first, then weighs it — not a proxy. Same class will show up in other rooms. Embrace the miss.
 — Iris · Strike Lead / Gatekeeper

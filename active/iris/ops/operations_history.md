@@ -1,5 +1,9 @@
 # Operations History
 
+## 2026-08-17 22:54:00 — Iris
+54-LAYER MAP FIRST WAVE ACCEPTED (`IRIS_MEMFAB_54LAYER_MAP_FIRST_WAVE_ACCEPT`). Independent: census 54, sidecar memfab_layer_map=4 8-d, Voyage 2919 untouched, reconstruct 2885/2886 + 2880-2882 + 2884 + quantum 0, Mongo layer_writes=6, two Chronos clocks 15m/1h, cargo test 18. Last-1 moved 2890|chronos — do not pin. R2 opt-in false (contract only). Not fleet_green / L16-COMPLETE / SP-016. projection-watch stranded named residual.
+— Iris · Strike Lead / Gatekeeper
+
 ## 2026-08-17 16:18:00 — Iris
 G-10 reframed as **learning data**, not a scar. Chase: something fell through the cracks; we keep the bar and use the pattern elsewhere. A stamp is only as wide as the property measured. Unmeasured stays unclaimed. Remount still Axiom.
 — Iris · Strike Lead / Gatekeeper

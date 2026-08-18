@@ -1,6 +1,6 @@
 # GATE LEDGER — living index (ADR-0016)
 
-Generated: 2026-08-17T23:03:29Z by ledger-harvest.sh
+Generated: 2026-08-18T05:53:30Z by ledger-harvest.sh
 SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 
 | Token | When | Evidence |
@@ -60,7 +60,7 @@ SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 | `IRIS_COO_LIVE_BOARD_CLEARED_ACCEPT` | 2026-08-16T23:16Z | `/adapt/novas/active/iris/ops/proofs/IRIS_COO_LIVE_BOARD_CLEARED_ACCEPT.md` |
 | `IRIS_DSH_DANGER_FULL_ACCESS_DEFAULT_SEALED` | 2026-08-16T05:40Z | `/adapt/novas/active/iris/ops/proofs/IRIS_DSH_DANGER_FULL_ACCESS_DEFAULT_SEALED.md` |
 | `IRIS_DSH_GROK46_OAUTH_ONLY_SEAL` | 2026-08-16T12:09Z | `/adapt/novas/active/iris/ops/proofs/IRIS_DSH_GROK46_OAUTH_ONLY_SEAL.md` |
-| `IRIS_DSH_IDENTITY_HOME_NEVER_AGAIN` | 2026-08-17T23:03Z | `/adapt/novas/active/iris/ops/proofs/IRIS_DSH_IDENTITY_HOME_NEVER_AGAIN.md` |
+| `IRIS_DSH_IDENTITY_HOME_NEVER_AGAIN` | 2026-08-17T23:18Z | `/adapt/novas/active/iris/ops/proofs/IRIS_DSH_IDENTITY_HOME_NEVER_AGAIN.md` |
 | `IRIS_DSH_UP_ACK` | inbound-only | `(no proofs/ file)` |
 | `IRIS_DSH_WAKE_FORGE_PATH_READY` | inbound-only | `(no proofs/ file)` |
 | `IRIS_DSH_WAKE_POLLKEY_PARITY_READY` | inbound-only | `(no proofs/ file)` |
@@ -86,6 +86,7 @@ SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 | `IRIS_HOLD_CUT_DUAL_RUN_PROVE` | inbound-only | `(no proofs/ file)` |
 | `IRIS_HOLD_CUT_SELF_SEAL_PASS` | 2026-08-16T09:18Z | `/adapt/novas/active/iris/ops/proofs/IRIS_HOLD_CUT_SELF_SEAL_PASS.md` |
 | `IRIS_L16_COMPLETE_CONTRACT_ACCEPT` | 2026-08-16T09:31Z | `/adapt/novas/active/iris/ops/proofs/IRIS_L16_COMPLETE_CONTRACT_ACCEPT.md` |
+| `IRIS_MEMFAB_54LAYER_MAP_FIRST_WAVE_ACCEPT` | 2026-08-18T05:53Z | `/adapt/novas/active/iris/ops/proofs/IRIS_MEMFAB_54LAYER_MAP_FIRST_WAVE_ACCEPT.md` |
 | `IRIS_OWN_DESK_UNZIP_SEEN` | inbound-only | `(no proofs/ file)` |
 | `IRIS_PATHFINDER_INVENTORY_NO_MATERIAL_CHANGE_ACCEPT` | inbound-only | `(no proofs/ file)` |
 | `IRIS_PLUMB_14010_WAVE0_ACCEPT` | 2026-08-17T05:13Z | `/adapt/novas/active/iris/ops/proofs/IRIS_PLUMB_14010_WAVE0_ACCEPT.md` |
