@@ -1,5 +1,9 @@
 # Operations History
 
+## 2026-08-18 03:45:00 — Iris
+THIS SESSION COMPACT-BRIEF (`IRIS_SESSION_7267311D_COMPACT_BRIEF`). 44 turns / 1.4MB. Cannot /compact mid-turn (busy, no RPC). Hydra trail + one-line sitting brief written. GUI /compact after idle if Chase still wants the engine fold.
+— Iris · Strike Lead / Gatekeeper
+
 ## 2026-08-18 03:40:00 — Iris
 WAKE BREADCRUMB TRAIL (`IRIS_WAKE_BREADCRUMB_TRAIL`). Chase asked here: last 10–15 turns on the first-wake car. hydra-render now writes RECENT TRAIL (12 own L9). Iris prove: 12 lines, 2114B. SP-213 lifted only for this replacement — no third blind /compact.
 — Iris · Strike Lead / Gatekeeper
