@@ -1,6 +1,6 @@
 # GATE LEDGER — living index (ADR-0016)
 
-Generated: 2026-08-18T07:12:14Z by ledger-harvest.sh
+Generated: 2026-08-18T07:32:29Z by ledger-harvest.sh
 SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 
 | Token | When | Evidence |
@@ -51,6 +51,7 @@ SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 | `IRIS_AXIOM_SEMANTIC_DEPTH_WAVE5_AGATE_PASS` | 2026-08-16T02:12Z | `/adapt/novas/active/iris/ops/proofs/IRIS_AXIOM_SEMANTIC_DEPTH_WAVE5_AGATE_PASS.md` |
 | `IRIS_AXIOM_STRUCTURED_DEPTH_WAVE4_AGATE_PASS` | 2026-08-16T02:09Z | `/adapt/novas/active/iris/ops/proofs/IRIS_AXIOM_STRUCTURED_DEPTH_WAVE4_AGATE_PASS.md` |
 | `IRIS_B1_RIVER_MEMFAB_SEAT_PROVE_AGATE_PASS` | 2026-08-14T10:09Z | `/adapt/novas/active/iris/ops/proofs/IRIS_B1_RIVER_MEMFAB_SEAT_PROVE_AGATE_PASS.md` |
+| `IRIS_CHRONOS_L16_COMPLETE_EVIDENCE_PACKET_ACCEPT` | 2026-08-18T07:32Z | `/adapt/novas/active/iris/ops/proofs/IRIS_CHRONOS_L16_COMPLETE_EVIDENCE_PACKET_ACCEPT.md` |
 | `IRIS_CHRONOS_L16_SYSTEMD_WATCHDOG_RETIRED_AGATE_PASS` | 2026-08-16T09:14Z | `/adapt/novas/active/iris/ops/proofs/IRIS_CHRONOS_L16_SYSTEMD_WATCHDOG_RETIRED_AGATE_PASS.md` |
 | `IRIS_COO_BATCH5_REPLENISH_CONFIRMED` | inbound-only | `(no proofs/ file)` |
 | `IRIS_COO_BATCH6_REPLENISH_CONFIRMED` | inbound-only | `(no proofs/ file)` |
