@@ -1,10 +1,11 @@
 # GATE LEDGER — living index (ADR-0016)
 
-Generated: 2026-08-18T08:13:33Z by ledger-harvest.sh
+Generated: 2026-08-18T08:26:49Z by ledger-harvest.sh
 SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 
 | Token | When | Evidence |
 |---|---|---|
+| `IRIS_14010_OUT_OF_THIS_PROJECT` | 2026-08-18T08:26Z | `/adapt/novas/active/iris/ops/proofs/IRIS_14010_OUT_OF_THIS_PROJECT.md` |
 | `IRIS_ARGUS_INVENTORY_20260816_ACCEPT` | inbound-only | `(no proofs/ file)` |
 | `IRIS_ARGUS_INVENTORY_LEFTOVERS_ACCEPT` | inbound-only | `(no proofs/ file)` |
 | `IRIS_AXIOM_22LEVEL_CHECKLIST_FLEET_AGATE_PASS` | 2026-08-16T02:25Z | `/adapt/novas/active/iris/ops/proofs/IRIS_AXIOM_22LEVEL_CHECKLIST_FLEET_AGATE_PASS.md` |
@@ -68,7 +69,7 @@ SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 | `IRIS_DSH_WAKE_POLLKEY_PARITY_READY` | inbound-only | `(no proofs/ file)` |
 | `IRIS_ETHOS_DSH_UP` | 2026-08-17T05:16Z | `/adapt/novas/active/iris/ops/proofs/IRIS_ETHOS_DSH_UP.md` |
 | `IRIS_EXTRA_GATE_CRITERIA` | 2026-08-16T09:16Z | `/adapt/novas/active/iris/ops/proofs/IRIS_EXTRA_GATE_CRITERIA.md` |
-| `IRIS_FLEET_GREEN` | 2026-08-18T08:13Z | `/adapt/novas/active/iris/ops/proofs/IRIS_FLEET_GREEN.md` |
+| `IRIS_FLEET_GREEN` | 2026-08-18T08:26Z | `/adapt/novas/active/iris/ops/proofs/IRIS_FLEET_GREEN.md` |
 | `IRIS_FLEET_UP_OVERNIGHT_ACCEPT` | 2026-08-17T14:40Z | `/adapt/novas/active/iris/ops/proofs/IRIS_FLEET_UP_OVERNIGHT_ACCEPT.md` |
 | `IRIS_FORGE_DEPENDABOT_PLANE_ACCEPT` | inbound-only | `(no proofs/ file)` |
 | `IRIS_FORGE_DSH_TRUE_TURN_V2_RECEIPT` | 2026-08-16T03:52Z | `/adapt/novas/active/iris/ops/proofs/IRIS_FORGE_DSH_TRUE_TURN_V2_RECEIPT.md` |

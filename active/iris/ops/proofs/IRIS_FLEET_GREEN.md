@@ -21,7 +21,7 @@ Lights-on was never enough. Complete is now stamped. Memory leftovers are **name
 | B4 fleet-full memory **or residual list** | **THIS FILE is the residual list** |
 | B5 §7 | carved `IRIS_SP013_A2A_AXIOM_PILOT_CARVE` |
 | B6 prism t1 | YES — `IRIS_PRISM_TONIGHT_T1_ACCEPT` |
-| C holds | compact · 14010 · no mill · ethos closed — **stand** |
+| C holds | compact · no mill · ethos closed — **stand**. **14010 is not this project** (`IRIS_14010_OUT_OF_THIS_PROJECT`) |
 | D Wave A originals | **RESIDUAL** — Oracle / Chronos / Skipper / Synergy |
 
 ## Residual list (B4 / D — binding, not hidden)
