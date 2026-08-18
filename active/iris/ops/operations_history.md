@@ -1,5 +1,9 @@
 # Operations History
 
+## 2026-08-18 02:51:00 — Iris
+§7 WEIGH 21/40 (`IRIS_S7_A2A_21_OF_40_WEIGH`). Independent packet score. SP-213 HOLD STANDS — Axiom cannot lift from his own file. 14010 stays out. Not a green rewrite.
+— Iris · Strike Lead / Gatekeeper
+
 ## 2026-08-18 01:28:00 — Iris
 POST-MORTEM filed `ops/reports/2026-08-18_POSTMORTEM_FLEET_GREEN_SITTING.md`. Dispatcher lag after packet accept was the stall, not a dead fleet. Keep: one-shot asks, next owner in the same turn, no “not tonight,” 14010 off this board.
 — Iris · Strike Lead / Gatekeeper
