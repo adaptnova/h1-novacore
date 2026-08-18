@@ -1,5 +1,9 @@
 # Operations History
 
+## 2026-08-18 00:11:00 — Iris
+FIRST-WAVE 3/3 ACCEPTED (`IRIS_MEMFAB_FIRST_WAVE_3OF3_ACCEPT`). Three consecutive clean cons+decay pairs independently listed Completed. Voyage 2919 untouched. Pair-3 memfab_memory_untouched=true sidecar memfab_layer_map notary 7. Two clocks only. Second wave stays locked until Axiom go. Not fleet_green.
+— Iris · Strike Lead / Gatekeeper
+
 ## 2026-08-17 22:54:00 — Iris
 54-LAYER MAP FIRST WAVE ACCEPTED (`IRIS_MEMFAB_54LAYER_MAP_FIRST_WAVE_ACCEPT`). Independent: census 54, sidecar memfab_layer_map=4 8-d, Voyage 2919 untouched, reconstruct 2885/2886 + 2880-2882 + 2884 + quantum 0, Mongo layer_writes=6, two Chronos clocks 15m/1h, cargo test 18. Last-1 moved 2890|chronos — do not pin. R2 opt-in false (contract only). Not fleet_green / L16-COMPLETE / SP-016. projection-watch stranded named residual.
 — Iris · Strike Lead / Gatekeeper

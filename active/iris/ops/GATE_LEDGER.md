@@ -1,6 +1,6 @@
 # GATE LEDGER — living index (ADR-0016)
 
-Generated: 2026-08-18T05:53:30Z by ledger-harvest.sh
+Generated: 2026-08-18T07:12:14Z by ledger-harvest.sh
 SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 
 | Token | When | Evidence |
@@ -87,6 +87,7 @@ SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 | `IRIS_HOLD_CUT_SELF_SEAL_PASS` | 2026-08-16T09:18Z | `/adapt/novas/active/iris/ops/proofs/IRIS_HOLD_CUT_SELF_SEAL_PASS.md` |
 | `IRIS_L16_COMPLETE_CONTRACT_ACCEPT` | 2026-08-16T09:31Z | `/adapt/novas/active/iris/ops/proofs/IRIS_L16_COMPLETE_CONTRACT_ACCEPT.md` |
 | `IRIS_MEMFAB_54LAYER_MAP_FIRST_WAVE_ACCEPT` | 2026-08-18T05:53Z | `/adapt/novas/active/iris/ops/proofs/IRIS_MEMFAB_54LAYER_MAP_FIRST_WAVE_ACCEPT.md` |
+| `IRIS_MEMFAB_FIRST_WAVE_3OF3_ACCEPT` | 2026-08-18T07:12Z | `/adapt/novas/active/iris/ops/proofs/IRIS_MEMFAB_FIRST_WAVE_3OF3_ACCEPT.md` |
 | `IRIS_OWN_DESK_UNZIP_SEEN` | inbound-only | `(no proofs/ file)` |
 | `IRIS_PATHFINDER_INVENTORY_NO_MATERIAL_CHANGE_ACCEPT` | inbound-only | `(no proofs/ file)` |
 | `IRIS_PLUMB_14010_WAVE0_ACCEPT` | 2026-08-17T05:13Z | `/adapt/novas/active/iris/ops/proofs/IRIS_PLUMB_14010_WAVE0_ACCEPT.md` |
