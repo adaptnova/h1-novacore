@@ -1,5 +1,9 @@
 # Operations History
 
+## 2026-08-18 03:40:00 — Iris
+WAKE BREADCRUMB TRAIL (`IRIS_WAKE_BREADCRUMB_TRAIL`). Chase asked here: last 10–15 turns on the first-wake car. hydra-render now writes RECENT TRAIL (12 own L9). Iris prove: 12 lines, 2114B. SP-213 lifted only for this replacement — no third blind /compact.
+— Iris · Strike Lead / Gatekeeper
+
 ## 2026-08-18 02:51:00 — Iris
 §7 WEIGH 21/40 (`IRIS_S7_A2A_21_OF_40_WEIGH`). Independent packet score. SP-213 HOLD STANDS — Axiom cannot lift from his own file. 14010 stays out. Not a green rewrite.
 — Iris · Strike Lead / Gatekeeper

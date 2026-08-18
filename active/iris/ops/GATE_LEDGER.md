@@ -1,6 +1,6 @@
 # GATE LEDGER — living index (ADR-0016)
 
-Generated: 2026-08-18T09:51:12Z by ledger-harvest.sh
+Generated: 2026-08-18T10:41:48Z by ledger-harvest.sh
 SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 
 | Token | When | Evidence |
@@ -335,6 +335,7 @@ SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 | `IRIS_VAERIS_INVENTORY_20260816_ACCEPT` | inbound-only | `(no proofs/ file)` |
 | `IRIS_VAERIS_NO_PACK_TICK_ACCEPT` | inbound-only | `(no proofs/ file)` |
 | `IRIS_VAERIS_STOP_RECEIPT_FLOOD` | 2026-08-16T23:16Z | `/adapt/novas/active/iris/ops/proofs/IRIS_VAERIS_STOP_RECEIPT_FLOOD.md` |
+| `IRIS_WAKE_BREADCRUMB_TRAIL` | 2026-08-18T10:41Z | `/adapt/novas/active/iris/ops/proofs/IRIS_WAKE_BREADCRUMB_TRAIL.md` |
 
 Rules: one token one row. Duplicate receipts do not mint rows. No secrets.
 
