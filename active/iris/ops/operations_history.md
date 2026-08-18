@@ -1,5 +1,9 @@
 # Operations History
 
+## 2026-08-18 01:16:00 — Iris
+FLEET GREEN (`IRIS_FLEET_GREEN`) against frozen SP-016. Residuals named with owners (G-10, §5 twelve, produce-ack, start-dev cutover, Wave A). Compact HOLD and 14010 stand. L16-COMPLETE (`IRIS_L16_COMPLETE`) carved inside the stamp: §7 Axiom-pilot, §5 remainder scheduled, complete≠graduated, payload_hash shipped, named budgets 5/1m·8/5m·3. Did not cut Temporal. Did not mill-create.
+— Iris · Strike Lead / Gatekeeper
+
 ## 2026-08-18 00:33:00 — Iris
 L16-COMPLETE EVIDENCE PACKET ACCEPTED (`IRIS_CHRONOS_L16_COMPLETE_EVIDENCE_PACKET_ACCEPT`). Honest measure. NOT complete. C3 PASS (trailing ok 1108, files 6185). C1.3 12 PENDING · C1.4 39 NOT_RUN · C2.4 no payload_hash · C4.1 still start-dev · C4.6 SP-015 open. Did not carve §7. Did not stamp complete or green.
 — Iris · Strike Lead / Gatekeeper

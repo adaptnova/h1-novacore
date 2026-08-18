@@ -1,6 +1,6 @@
 # GATE LEDGER — living index (ADR-0016)
 
-Generated: 2026-08-18T07:32:29Z by ledger-harvest.sh
+Generated: 2026-08-18T08:13:33Z by ledger-harvest.sh
 SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 
 | Token | When | Evidence |
@@ -51,6 +51,7 @@ SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 | `IRIS_AXIOM_SEMANTIC_DEPTH_WAVE5_AGATE_PASS` | 2026-08-16T02:12Z | `/adapt/novas/active/iris/ops/proofs/IRIS_AXIOM_SEMANTIC_DEPTH_WAVE5_AGATE_PASS.md` |
 | `IRIS_AXIOM_STRUCTURED_DEPTH_WAVE4_AGATE_PASS` | 2026-08-16T02:09Z | `/adapt/novas/active/iris/ops/proofs/IRIS_AXIOM_STRUCTURED_DEPTH_WAVE4_AGATE_PASS.md` |
 | `IRIS_B1_RIVER_MEMFAB_SEAT_PROVE_AGATE_PASS` | 2026-08-14T10:09Z | `/adapt/novas/active/iris/ops/proofs/IRIS_B1_RIVER_MEMFAB_SEAT_PROVE_AGATE_PASS.md` |
+| `IRIS_C13_SECTION5_REMAINDER_SCHEDULED` | 2026-08-18T08:13Z | `/adapt/novas/active/iris/ops/proofs/IRIS_C13_SECTION5_REMAINDER_SCHEDULED.md` |
 | `IRIS_CHRONOS_L16_COMPLETE_EVIDENCE_PACKET_ACCEPT` | 2026-08-18T07:32Z | `/adapt/novas/active/iris/ops/proofs/IRIS_CHRONOS_L16_COMPLETE_EVIDENCE_PACKET_ACCEPT.md` |
 | `IRIS_CHRONOS_L16_SYSTEMD_WATCHDOG_RETIRED_AGATE_PASS` | 2026-08-16T09:14Z | `/adapt/novas/active/iris/ops/proofs/IRIS_CHRONOS_L16_SYSTEMD_WATCHDOG_RETIRED_AGATE_PASS.md` |
 | `IRIS_COO_BATCH5_REPLENISH_CONFIRMED` | inbound-only | `(no proofs/ file)` |
@@ -67,6 +68,7 @@ SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 | `IRIS_DSH_WAKE_POLLKEY_PARITY_READY` | inbound-only | `(no proofs/ file)` |
 | `IRIS_ETHOS_DSH_UP` | 2026-08-17T05:16Z | `/adapt/novas/active/iris/ops/proofs/IRIS_ETHOS_DSH_UP.md` |
 | `IRIS_EXTRA_GATE_CRITERIA` | 2026-08-16T09:16Z | `/adapt/novas/active/iris/ops/proofs/IRIS_EXTRA_GATE_CRITERIA.md` |
+| `IRIS_FLEET_GREEN` | 2026-08-18T08:13Z | `/adapt/novas/active/iris/ops/proofs/IRIS_FLEET_GREEN.md` |
 | `IRIS_FLEET_UP_OVERNIGHT_ACCEPT` | 2026-08-17T14:40Z | `/adapt/novas/active/iris/ops/proofs/IRIS_FLEET_UP_OVERNIGHT_ACCEPT.md` |
 | `IRIS_FORGE_DEPENDABOT_PLANE_ACCEPT` | inbound-only | `(no proofs/ file)` |
 | `IRIS_FORGE_DSH_TRUE_TURN_V2_RECEIPT` | 2026-08-16T03:52Z | `/adapt/novas/active/iris/ops/proofs/IRIS_FORGE_DSH_TRUE_TURN_V2_RECEIPT.md` |
@@ -86,6 +88,7 @@ SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 | `IRIS_GOAL_PLATFORM_CI_PHASE0_AUTONOMOUS_SEALED` | 2026-08-16T04:18Z | `/adapt/novas/active/iris/ops/proofs/IRIS_GOAL_PLATFORM_CI_PHASE0_AUTONOMOUS_SEALED.md` |
 | `IRIS_HOLD_CUT_DUAL_RUN_PROVE` | inbound-only | `(no proofs/ file)` |
 | `IRIS_HOLD_CUT_SELF_SEAL_PASS` | 2026-08-16T09:18Z | `/adapt/novas/active/iris/ops/proofs/IRIS_HOLD_CUT_SELF_SEAL_PASS.md` |
+| `IRIS_L16_COMPLETE` | 2026-08-18T08:13Z | `/adapt/novas/active/iris/ops/proofs/IRIS_L16_COMPLETE.md` |
 | `IRIS_L16_COMPLETE_CONTRACT_ACCEPT` | 2026-08-16T09:31Z | `/adapt/novas/active/iris/ops/proofs/IRIS_L16_COMPLETE_CONTRACT_ACCEPT.md` |
 | `IRIS_MEMFAB_54LAYER_MAP_FIRST_WAVE_ACCEPT` | 2026-08-18T05:53Z | `/adapt/novas/active/iris/ops/proofs/IRIS_MEMFAB_54LAYER_MAP_FIRST_WAVE_ACCEPT.md` |
 | `IRIS_MEMFAB_FIRST_WAVE_3OF3_ACCEPT` | 2026-08-18T07:12Z | `/adapt/novas/active/iris/ops/proofs/IRIS_MEMFAB_FIRST_WAVE_3OF3_ACCEPT.md` |
@@ -99,6 +102,8 @@ SoT for "what did Iris accept?" — not Vaeris cat, not raw jsonl.
 | `IRIS_SP004C_DORMANT_HYGIENE_ACCEPT` | inbound-only | `(no proofs/ file)` |
 | `IRIS_SP004E_WEAVIATE_EMPTY_KEY_ACCEPT` | inbound-only | `(no proofs/ file)` |
 | `IRIS_SP007_ATLASSIAN_CONTRACT_AGATE_PASS` | inbound-only | `(no proofs/ file)` |
+| `IRIS_SP013_A2A_AXIOM_PILOT_CARVE` | 2026-08-18T08:13Z | `/adapt/novas/active/iris/ops/proofs/IRIS_SP013_A2A_AXIOM_PILOT_CARVE.md` |
+| `IRIS_SP016_FLEET_GREEN_DEFINITION_ACCEPT` | 2026-08-18T08:13Z | `/adapt/novas/active/iris/ops/proofs/IRIS_SP016_FLEET_GREEN_DEFINITION_ACCEPT.md` |
 | `IRIS_SP022_FLEET_TEMPLATES_AGATE_PASS` | inbound-only | `(no proofs/ file)` |
 | `IRIS_SP023_ROLE_LINE_BACKFILL_AGATE_PASS` | inbound-only | `(no proofs/ file)` |
 | `IRIS_SP024_RUNNER_REDUNDANCY_ACCEPT` | inbound-only | `(no proofs/ file)` |
