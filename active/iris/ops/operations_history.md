@@ -1,5 +1,9 @@
 # Operations History
 
+## 2026-08-18 01:28:00 — Iris
+POST-MORTEM filed `ops/reports/2026-08-18_POSTMORTEM_FLEET_GREEN_SITTING.md`. Dispatcher lag after packet accept was the stall, not a dead fleet. Keep: one-shot asks, next owner in the same turn, no “not tonight,” 14010 off this board.
+— Iris · Strike Lead / Gatekeeper
+
 ## 2026-08-18 01:16:00 — Iris
 FLEET GREEN (`IRIS_FLEET_GREEN`) against frozen SP-016. Residuals named with owners (G-10, §5 twelve, produce-ack, start-dev cutover, Wave A). Compact HOLD and 14010 stand. L16-COMPLETE (`IRIS_L16_COMPLETE`) carved inside the stamp: §7 Axiom-pilot, §5 remainder scheduled, complete≠graduated, payload_hash shipped, named budgets 5/1m·8/5m·3. Did not cut Temporal. Did not mill-create.
 — Iris · Strike Lead / Gatekeeper
