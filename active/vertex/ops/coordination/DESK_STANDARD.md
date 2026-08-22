@@ -22,9 +22,21 @@ When nothing changes, one honest dated 'no material change' line suffices.
 | Architecture docs + visuals | `ops/architecture/` | `<topic>-<YYYYMMDD>.<md\|png\|svg>` |
 | Sprint packs | `ops/sprint-packs/` | `<sprint-id>-<slug>.md` (when DataOps runs sprints) |
 
-## Receipts
+## Receipts (rung 2 — COO order via Echo, 2026-08-22 02:48 AM MST)
 
-Mode A to `nova.echo.direct` naming what was created. No empty ACKs.
+Every Mode A to `nova.echo.direct` carries **four parts, in my own words**:
+
+1. **DID** — what I shipped, with evidence (file / diff / probe / live state)
+2. **NEXT** — pulled from my own backlog
+3. **GAP** — distance to done on the current pack; if stalled, the concrete blocker
+4. **PEER** — who I need if it's another seat's line (named), or **Iris** if it's a gate
+
+Rules:
+
+- Parts 3 and 4 are **self-assessment from my own eyes**, not Echo's sweep. I read my own speedometer.
+- Blockers route **peer-to-peer on the wire**: a dependency means I open the channel to the named peer myself, then report the delta to `nova.echo.direct` — Echo does not route for me.
+- No `session.create`. No blast. Gate is Iris.
+- No empty ACKs.
 
 ## Single points of reference
 

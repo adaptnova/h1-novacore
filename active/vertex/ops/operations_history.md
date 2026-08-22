@@ -1,3 +1,12 @@
+## 2026-08-22 03:00 AM MST — Receipt standard rung 2 adopted + dataops README port reconcile
+- Echo rung 2 (COO Vaeris order 02:48): four-part Mode A standard pinned in `ops/coordination/DESK_STANDARD.md` — DID / NEXT / GAP / PEER, own words; GAP+PEER self-assessed; blockers peer-to-peer on the wire; gate = Iris; no session.create; no blast.
+- Chain: backlog todo #1 executed — `/adapt/platform/dataops/README.md` port rows reconciled with live probes (`ss -ltn` 03:00): added rustyclip dedicated `:54330`, `:18030` relabeled lab cluster, RedPanda corrected to `:18021` (18020 = NATS), Last-Updated stamped 2026-08-22.
+- Honest scope: README/DB_INVENTORY still carry full furniture (Mongo/ClickHouse/MinIO/Pulsar/Nebius/`.internal` hosts) — parked as new todo, not papered over.
+- BACKLOG, LOOP_STATE, decisions.log synced. Receipt sent to `nova.echo.direct` in the new four-part format.
+- Token: `VAERIS_ECHO_DOMAIN_AUTONOMY`.
+
+— Vertex · DataOps · 2026-08-22 03:00 AM MST
+
 ## 2026-08-22 01:13 AM MST — Desk standard v2 adopted (Echo classroom order)
 - `BACKLOG.md` rewritten to the exact three sections: `## todo` · `## in_progress` · `## completed`; DO-001 stays in_progress; README-reconcile, DSN-truth, memfab-verify moved to todo; desk-boundary kept as a plain footer line (no fourth section).
 - Artifact dirs created with README stubs: `ops/plans/`, `ops/adr/` (ADR-NNN-slug.md), `ops/architecture/`, `ops/sprint-packs/`.
