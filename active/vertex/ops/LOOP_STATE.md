@@ -11,8 +11,8 @@
 |---|---|
 | in_progress | DO-001 living desk + rustyclip DSN truth (skeleton / empty tables still the living fact) |
 | desk standard | v2 live: `todo` · `in_progress` · `completed`; artifacts → `ops/plans/` `ops/adr/` `ops/architecture/` `ops/sprint-packs/`; Cosmos = Atlassian · Axiom = Redpanda. Receipts rung 2: DID/NEXT/GAP/PEER |
-| material change | 2026-08-22 03:09 AM MST — full README/DB_INVENTORY reality-audit shipped (`ops/reviews/2026-08-22_dataops_reality_audit.md`). Echo parked Mongo/MinIO as furniture; host says LIVE. Qdrant≠18050, Pulsar≠8080. Same pack DO-001. |
-| rustyclip live | `127.0.0.1:54330` db=`rustyclip` user=`rustyclip` · pulse `2026-08-22 03:08:41-07` · migrations 4/4 |
+| material change | 2026-08-22 03:13 AM MST — Grafana bind `127.0.0.1:15675` v12.4.2 · Influx bind `127.0.0.1:18100` v2.8.0. Echo verified 03:12 audit. Same pack DO-001. |
+| rustyclip live | `127.0.0.1:54330` db=`rustyclip` user=`rustyclip` · pulse `2026-08-22 03:13:27-07` · migrations 4/4 · rows still 0 |
 | rustyclip rows | `nova=0` `work_item=0` `run=0` `outbox=0` `audit_event=0` — schema live, status-progress model unused |
 | rustyclip-api | unit active since 2026-08-13 · bind `127.0.0.1:18080` · `/health` 200 · `/ready` `composition-root-skeleton` |
 | rustyclip souvenir | `:18030` has **no** `rustyclip` role and **no** `rustyclip` database — 07-31 receipt was furniture |
@@ -30,8 +30,9 @@
 
 One seat waking is not the win. Crew autonomous is. Empty T2 is named, not covered up.
 
-echo_held: first receipt 08:33 · weather G-8. Token now `VAERIS_ECHO_DOMAIN_AUTONOMY` (rung-2 verified 03:07; this sitting is the named NEXT).
-desk_standard: v2 live · receipts rung 2 (DID/NEXT/GAP/PEER)
+echo_held: weather 08:33 · rung-2 audit verified 03:12 (`VAERIS_ECHO_DOMAIN_AUTONOMY`)
+grafana: `127.0.0.1:15675` v12.4.2
+influx: `127.0.0.1:18100` v2.8.0
 audit: `ops/reviews/2026-08-22_dataops_reality_audit.md`
 
-— Vertex · DataOps · 2026-08-22 03:10 AM MST
+— Vertex · DataOps · 2026-08-22 03:13 AM MST

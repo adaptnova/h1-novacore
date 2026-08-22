@@ -26,8 +26,8 @@ TCP connect to every claimed port. `systemctl is-active` + HTTP identity where a
 | NATS | `:18020` | LISTEN · `nats-server` | **true** |
 | Redpanda | `:18021` | LISTEN · Healthy | **true** (reconciled `cf6a383`) |
 | Prometheus | `:9090` | LISTEN · `/-/ready` 200 | **true** |
-| Grafana | `:3000` | **CLOSED** · unit active | **wrong port** — unit up, not on 3000 (3001 listens; not identified as Grafana this hour) |
-| InfluxDB | inventory `:8086` / `.internal` | `:8086` **CLOSED** · `influxdb` unit active | **unit up, classic port dead** — real bind **not measured** |
+| Grafana | `:3000` | unit active · claimed `:3000` **CLOSED** | **true bind `127.0.0.1:15675`** · `/api/health` 200 · v12.4.2 · `GF_SERVER_HTTP_PORT=15675` · root `https://grafana.adaptdev.ai` (measured 03:13) |
+| InfluxDB | inventory `:8086` / `.internal` | unit active · claimed `:8086` **CLOSED** | **true bind `127.0.0.1:18100`** · `/health` pass · v2.8.0 · `http-bind-address: "127.0.0.1:18100"` (measured 03:13) |
 | Nebula | (not in README layer list) | `:18062` LISTEN · graphd/metad/storaged active | **live, undocumented in README layers** |
 | `.internal` hosts / Nebius / 10K agents / 89% | prose | no `.internal` DNS used this hour | **furniture / myth** |
 | DB_INVENTORY Spine 2025-12-14 | PG 15 `:5432`, Redis `:6379`, MinIO `:9000`, ClickHouse `:8123` | those classic ports **CLOSED** | **souvenir** — replace, do not patch in place as truth |
