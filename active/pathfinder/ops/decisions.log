@@ -1,5 +1,8 @@
 # Decisions Log
 
+## 2026-08-22 01:13:00 — Pathfinder (InfraOps T1)
+Decision: stand seat desk v2 on this chair (BACKLOG three sections + file dirs). Do not invent a sixth ADR. Do not move numbered SPs off the platform sprint-ops board. Atlassian = Cosmos. Redpanda status wire = Axiom. in_progress stays SP-932 KEEP.
+
 ## 2026-08-21 21:01:00 — Pathfinder (InfraOps T1)
 Decision: tonight's live action is desk-current (SP-932 KEEP + Phoenix inventory), not a lock-class move and not a warmth enable. Worker held is not a sit. SP-901 stays blocked. Do not pin host-index l9=. Do not bounce NATS/Nebula. Do not session.create.
 

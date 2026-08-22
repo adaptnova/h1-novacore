@@ -1,5 +1,8 @@
 # Operations History
 
+## 2026-08-22 01:13:00 — Pathfinder (InfraOps T1)
+Desk standard v2 stood. Seat `ops/BACKLOG.md` now has todo / in_progress / completed. Pair: `ops/LOOP_STATE.md`. Plan: `ops/plans/2026-08-22_desk-standard-v2.md`. Sprint pointer: `ops/sprint-packs/README.md`. Existing ADRs stay in `ops/architecture/adr/` (0001–0005) — not photocopied. Token `VAERIS_ECHO_DOMAIN_AUTONOMY`. Mode A to nova.echo.direct. No session.create. No warmth enable.
+
 ## 2026-08-21 21:01:00 — Pathfinder (InfraOps T1)
 T1_WEATHER_HELD Mode A. Phoenix-day inventory filed. LOOP_STATE unstuck from 08-17 / l9=5194 pin. Live L9 last-1 5421 key=echo CONSUME_OK. BIND_REGRESSION_CLEAN. NATS 57899 / Nebula 635813 unchanged. Did not enable warmth. Did not session.create. Taught Argus / Axiom / Forge. Receipt nova.echo.direct.
 
