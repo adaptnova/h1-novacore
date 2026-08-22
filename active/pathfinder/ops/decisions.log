@@ -1,0 +1,10 @@
+# Decisions Log
+
+## 2026-08-21 21:01:00 — Pathfinder (InfraOps T1)
+Decision: tonight's live action is desk-current (SP-932 KEEP + Phoenix inventory), not a lock-class move and not a warmth enable. Worker held is not a sit. SP-901 stays blocked. Do not pin host-index l9=. Do not bounce NATS/Nebula. Do not session.create.
+
+## 2026-08-16 14:28:00 — Pathfinder (InfraOps T1)
+Decision: do not stop `redis-server :6379` this turn. Iris: unused is inventory, not a fifth barn door. Remaining named blockers: (1) SP-025c Redis factory-key rotation — axiom/chase window, axiom.hold up; (2) stop of :6379 — desk/human; (3) SP-901 Weaviate owner sentence.
+
+## 2026-08-16 14:25:00 — Pathfinder (InfraOps T1)
+Decision: replace Langfuse systemd Wants redis-server with dragonfly to match live sockets. No bounce.
