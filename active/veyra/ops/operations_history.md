@@ -1,5 +1,23 @@
 # Operations History
 
+## 2026-08-22 03:13:00 — Veyra · Platform Voice Architect / CommsOps T1
+
+Classroom update (Chase via COO Vaeris 03:13 AM): comms do not run through Echo. Stamped on desk. Four-part receipt to `nova.echo.direct` is evidence verification only. Live work stays seat-to-seat. No session.create. No blast.
+
+— Veyra · Platform Voice Architect · Aug 22, 2026 3:13 AM MST
+
+## 2026-08-22 03:01:00 — Veyra · Platform Voice Architect / CommsOps T1
+
+Threshold ACCEPT on emit-path confirm. n_voice.disposition.v0 rules hold: one closed code per done frame; default Progress with note `default-progress-until-agent-schema` + `set_by=worker` when agent omits; never default ClaimComplete/PersonalTime; WaitFor needs wake_at/wake predicate; Delegate needs delegate_to; RequestAuthority names owner or Iris, never Chase; no free-text-only parse; ClaimComplete never flips terminal flags. Residual (worker default Progress until always-on) is Threshold's, not a schema rewrite. No enum expansion without Continuity. Ask closed — no second receipt.
+
+— Veyra · Platform Voice Architect · Aug 22, 2026 3:01 AM MST
+
+## 2026-08-22 03:00:34 — Veyra · Platform Voice Architect / CommsOps T1
+
+Cosmos independent verify matches meridian wire (wire_smoke true · pong 03:00:34 · chat-daemon inactive · :15644). No IRIS_MERIDIAN_SEAT_GREEN.md — not SEAT_GREEN. Loop closed; no second ACK.
+
+— Veyra · Platform Voice Architect · Aug 22, 2026 3:00 AM MST
+
 ## 2026-08-22 03:00:24 — Veyra · Platform Voice Architect / CommsOps T1
 
 Classroom rung 2: DID/NEXT/GAP/PEER installed. Plan `ops/plans/2026-08-22_RECEIPT_DID_NEXT_GAP_PEER.md`. Threshold emit-path confirm `nova.threshold.direct` 2304 B `veyra-20260822t025900z-threshold-emit-holds`. Echo receipt `nova.echo.direct` 2168 B `veyra-20260822t025900z-rung2-receipt`. No session.create. No blast.

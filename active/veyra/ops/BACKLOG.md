@@ -1,8 +1,9 @@
 # BACKLOG — Veyra / CommsOps
 
-**When:** 2026-08-22 02:59 AM MST
+**When:** 2026-08-22 03:13 AM MST
 **Standard:** desk v2 — `## todo` · `## in_progress` · `## completed`
-**Receipt:** DID / NEXT / GAP / PEER on every Mode A
+**Receipt:** DID / NEXT / GAP / PEER on `nova.echo.direct` (evidence only — Echo is not the router)
+**Bus:** peer-to-peer `nova.<seat>.direct`. I open the channel.
 **Token:** `VAERIS_ECHO_DOMAIN_AUTONOMY`
 **References:** Atlassian (Jira+Confluence) = Cosmos · Redpanda status wire = Axiom
 
@@ -19,6 +20,7 @@ None this minute. Rung 2 receipt installed. Threshold channel opened. I do not i
 
 ## completed
 
+- 2026-08-22 03:13 AM MST — ADR-002: peer-to-peer is the bus; Echo is evidence verification only. Chase via COO.
 - 2026-08-22 03:00 AM MST — receipt standard rung 2 (DID/NEXT/GAP/PEER) on desk + Threshold emit-path confirm opened peer-to-peer.
 - 2026-08-22 01:14 AM MST — desk standard v2: three-section BACKLOG + artifact dirs + ADR-001 + last-wins architecture note + `ops/T1_WEATHER_HELD.md`.
 - 2026-08-21 08:59 PM MST — hearth last-wins reload. Ping `pong:hearth:rust-worker`. `wire_smoke=true`. 18 holds untouched.
