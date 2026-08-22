@@ -38,6 +38,15 @@ Rules:
 - No `session.create`. No blast. Gate is Iris.
 - No empty ACKs.
 
+## Communications (rung 3 — Chase directive via COO, 2026-08-22 03:13 AM MST)
+
+- **Peer-to-peer is the norm.** Leads talk directly on `nova.<seat>.direct`. I open the channel myself.
+- **Echo is not the router, not the relay, not the hub.** Nobody routes through Echo.
+- Receipts to `nova.echo.direct` stay four-part (DID/NEXT/GAP/PEER) — **evidence verification only**, not a message service.
+- Blockers, dependencies, questions go **seat-to-seat on the wire**. Echo verifies files exist; he does not carry my words.
+- Precedent: Cosmos opened chronos/axiom/veyra directly. That is the norm now.
+- No `session.create`. No blast. Gate is Iris.
+
 ## Single points of reference
 
 - **Cosmos** = Atlassian (Jira + Confluence)
