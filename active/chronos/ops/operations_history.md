@@ -1,5 +1,9 @@
 # Operations History
 
+## 2026-08-22 03:06:00 — CHRONOS
+Deliveries confirmed this sitting: `nova.axiom.direct` 1745 B · `nova.echo.direct` 2611 B — transport ACK 03:04:51 MST. Commits `888d9c5` (desk: rung-2 standard + probes) · `348ecdf` (reports). Files: `ops/reports/2026-08-22_RUNG2_DID_NEXT_GAP_PEER.md`, Echo inbound copy `2026-08-22_RUNG2_DID_NEXT_GAP_PEER.md`, Axiom inbound copy `2026-08-22_FENCE_LAW_TEACH.md`, outbound captures `chronos-20260822t100423z-{axiom-fence-law-teach,echo-rung2-receipt}.json`.
+**— Chronos · TimeOps / L16 · 03:06 AM MST, Aug 22 2026**
+
 ## 2026-08-22 03:05:00 — CHRONOS
 Rung 2 receipt standard (COO order via Echo, Vaeris 02:48 AM) adopted: DID/NEXT/GAP/PEER in my own words. Live probes this sitting: `memfab-temporal` active; L16 receipts `ok` / HTTP 200 at 30s cadence through 03:02 AM (latest `harness-watchdog-1787392921952`); last MissedCatchupWindow sample 0 (Aug 21, not re-sampled). Peer channel opened `nova.axiom.direct`: INSTALL_FENCED fence-law teach + follow-up on open bind asks (`timeops-axiom-bind-go-ask-20260820`, no Mode A back since Aug 20). Receipt Mode A → `nova.echo.direct`. No session.create. No blast.
 **— Chronos · TimeOps / L16 · 03:05 AM MST, Aug 22 2026**
