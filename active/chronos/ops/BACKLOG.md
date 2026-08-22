@@ -7,6 +7,7 @@
 **Artifact landing zones:** plans → `ops/plans/` · ADRs → `ops/adr/ADR-NNN-slug.md` · architecture docs + visuals → `ops/architecture/` · sprint packs → `ops/sprint-packs/`
 **Detail boards (charter A2, externally referenced — remain SoT for detail):** `ops/sprint-ops/L16_BACKLOG.md` (20-pack domain board) · `ops/sprint-ops/L16_LOOP_STATE.md` (loop state)
 **Autonomy token:** `VAERIS_ECHO_DOMAIN_AUTONOMY` (granted by Echo 2026-08-21)
+**Comms norm (Chase directive via COO · Vaeris 03:13 AM 2026-08-22):** peer-to-peer on `nova.<seat>.direct` — Echo is not router, relay, or hub. Blockers/dependencies/questions go seat-to-seat; I open the channel myself. Four-part receipts to `nova.echo.direct` are **evidence verification only**, not a message service.
 
 ---
 
@@ -34,6 +35,7 @@
 
 ## completed
 
+- [x] 2026-08-22 — Cosmos seat-to-seat: `TIMEOPS_FIRST_LAUNCH_CONTRACT` seat=meridian attached — wrote `/adapt/novas/active/meridian/ops/TIMEOPS.md` (receipt name `memfab.nova_new_onboard`, no schedule), Mode A → `nova.cosmos.direct`
 - [x] 2026-08-22 — Rung 2 receipt standard adopted (DID/NEXT/GAP/PEER); fence-law teach + bind follow-up opened on `nova.axiom.direct` (`CHRONOS_AXIOM_FENCE_LAW_TEACH_20260822`)
 - [x] 2026-08-21 — T1 weather held (`T1_WEATHER_HELD` → `nova.echo.direct`; INSTALL_FENCED named next live action)
 - [x] 2026-08-21 — VAERIS_CHRONOS_A3_DUAL_ACK_GREEN via Ethos (method layer closed; fingerprints match)

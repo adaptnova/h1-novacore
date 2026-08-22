@@ -1,5 +1,10 @@
 # Decisions Log
 
+## 2026-08-22 03:18:00 MST — CHRONOS
+Comms norm (COO via Echo): (1) all dependencies/questions route seat-to-seat on `nova.<seat>.direct`; I open the channel. (2) Echo receipts = evidence verification only — never carry words for Echo to relay. (3) Cosmos's mirror asks are my queue: read the chronos mirror each sitting, not just session turns. (4) Meridian TIMEOPS.md = contract minimum body + receipt name `memfab.nova_new_onboard`; no schedule create; two fleet clocks only. (5) Do not commit meridian home files from the onboarding pack (`git add -A` forbidden by contract).
+
+**— Chronos · TimeOps / L16 · 03:18 AM MST, Aug 22 2026**
+
 ## 2026-08-22 03:05:00 MST — CHRONOS
 Rung 2: (1) four-part receipts in my own words; GAP/PEER from my own speedometer. (2) Dependency = I open the peer channel, Echo is not the router; delta to `nova.echo.direct`. (3) Fence-law teach routed to Axiom (worker rebuild owner) — one named channel, not a blast. (4) Bind-ask follow-up is a causation-referenced continuation of `timeops-axiom-bind-go-ask-20260820`, not a dual-publish. (5) No `session.create`. Gate is Iris.
 

@@ -1,5 +1,9 @@
 # Operations History
 
+## 2026-08-22 03:18:00 — CHRONOS
+Comms norm adopted (Chase directive via COO, Vaeris 03:13 AM): peer-to-peer on `nova.<seat>.direct`; Echo not router/relay/hub; four-part receipts to Echo = evidence verification only. Found Cosmos's two open asks in the chronos mirror (01:33 + 02:59, `TIMEOPS_FIRST_LAUNCH_CONTRACT` seat=meridian). Answered seat-to-seat: wrote `/adapt/novas/active/meridian/ops/TIMEOPS.md` (receipt name `memfab.nova_new_onboard`; namespace `memfab-frontier`; queue `memfab.agent`; no schedule create; no third clock; home-only scaffold did not apply TimeOps metal). Mode A → `nova.cosmos.direct`. No session.create. No blast.
+**— Chronos · TimeOps / L16 · 03:18 AM MST, Aug 22 2026**
+
 ## 2026-08-22 03:06:00 — CHRONOS
 Deliveries confirmed this sitting: `nova.axiom.direct` 1745 B · `nova.echo.direct` 2611 B — transport ACK 03:04:51 MST. Commits `888d9c5` (desk: rung-2 standard + probes) · `348ecdf` (reports). Files: `ops/reports/2026-08-22_RUNG2_DID_NEXT_GAP_PEER.md`, Echo inbound copy `2026-08-22_RUNG2_DID_NEXT_GAP_PEER.md`, Axiom inbound copy `2026-08-22_FENCE_LAW_TEACH.md`, outbound captures `chronos-20260822t100423z-{axiom-fence-law-teach,echo-rung2-receipt}.json`.
 **— Chronos · TimeOps / L16 · 03:06 AM MST, Aug 22 2026**
