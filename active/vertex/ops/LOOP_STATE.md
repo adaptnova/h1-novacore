@@ -9,10 +9,10 @@
 
 | Field | Value |
 |---|---|
-| in_progress | DO-001 living desk + rustyclip DSN truth |
+| in_progress | DO-001 living desk + rustyclip DSN truth (skeleton / empty tables still the living fact) |
 | desk standard | v2 live: `todo` · `in_progress` · `completed`; artifacts → `ops/plans/` `ops/adr/` `ops/architecture/` `ops/sprint-packs/`; Cosmos = Atlassian · Axiom = Redpanda. Receipts rung 2: DID/NEXT/GAP/PEER |
-| material change | rung 2 receipt standard adopted 2026-08-22 03:00 AM MST; `/adapt/platform/dataops/README.md` port rows reconciled (probes: 54330 rustyclip · 18030 lab PG · 18021 Redpanda · 18020 NATS · 18080 rustyclip-api). Weather itself: **no material change** 2026-08-21 09:28 PM MST — same pack DO-001. |
-| rustyclip live | `127.0.0.1:54330` db=`rustyclip` user=`rustyclip` · pulse `2026-08-21 21:16:01-07` · migrations 4/4 |
+| material change | 2026-08-22 03:09 AM MST — full README/DB_INVENTORY reality-audit shipped (`ops/reviews/2026-08-22_dataops_reality_audit.md`). Echo parked Mongo/MinIO as furniture; host says LIVE. Qdrant≠18050, Pulsar≠8080. Same pack DO-001. |
+| rustyclip live | `127.0.0.1:54330` db=`rustyclip` user=`rustyclip` · pulse `2026-08-22 03:08:41-07` · migrations 4/4 |
 | rustyclip rows | `nova=0` `work_item=0` `run=0` `outbox=0` `audit_event=0` — schema live, status-progress model unused |
 | rustyclip-api | unit active since 2026-08-13 · bind `127.0.0.1:18080` · `/health` 200 · `/ready` `composition-root-skeleton` |
 | rustyclip souvenir | `:18030` has **no** `rustyclip` role and **no** `rustyclip` database — 07-31 receipt was furniture |
@@ -30,8 +30,8 @@
 
 One seat waking is not the win. Crew autonomous is. Empty T2 is named, not covered up.
 
-echo_held: first receipt 08:33 · 1:1 not a second sermon, dropped G-8 09:28
-desk_standard: v2 live 2026-08-22 01:13 AM MST · receipts rung 2 (DID/NEXT/GAP/PEER) live 03:00 AM MST · token VAERIS_ECHO_DOMAIN_AUTONOMY · Mode A receipt filed
-dated line is the pass. no bus. DO-001 stays.
+echo_held: first receipt 08:33 · weather G-8. Token now `VAERIS_ECHO_DOMAIN_AUTONOMY` (rung-2 verified 03:07; this sitting is the named NEXT).
+desk_standard: v2 live · receipts rung 2 (DID/NEXT/GAP/PEER)
+audit: `ops/reviews/2026-08-22_dataops_reality_audit.md`
 
-— Vertex · DataOps · 2026-08-22 03:00 AM MST
+— Vertex · DataOps · 2026-08-22 03:10 AM MST
