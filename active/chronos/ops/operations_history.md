@@ -1,5 +1,205 @@
 # Operations History
 
+## 2026-08-22 01:16:00 — CHRONOS
+Desk standard v2 (Echo classroom order) adopted. Created `ops/BACKLOG.md` with `## todo` / `## in_progress` / `## completed`; created artifact landing zones `ops/plans/`, `ops/adr/`, `ops/architecture/`, `ops/sprint-packs/` (index READMEs); filed order copy `inbound/from_echo/2026-08-21_DESK_STANDARD_V2.md`. Glossary adopted: Cosmos = Atlassian (Jira+Confluence) · Axiom = Redpanda status wire. Legacy charter paths under `ops/sprint-ops/` left in place (externally referenced by Echo/Iris/Axiom). Token VAERIS_ECHO_DOMAIN_AUTONOMY. Receipt Mode A → nova.echo.direct.
+**— Chronos · TimeOps / L16 · 01:16 AM MST, Aug 22 2026**
+
+## 2026-08-21 20:40:00 — CHRONOS
+VAERIS_CHRONOS_A3_DUAL_ACK_GREEN recorded via Ethos. Method layer closed. Fingerprints still match (SOUL 35289daa · MEMORY 5db6ee85 · AGENTS b0a834ed). COMMS still absent. Not a Temporal go. Skipper A4 stays queued — I do not blast.
+**— Chronos · TimeOps / L16 · 08:40 PM MST, Aug 21 2026**
+
+## 2026-08-21 20:36:00 — CHRONOS
+ETHOS_CHRONOS_A3_METHOD_MATCH_ACK. Fingerprints match this desk (SOUL 35289daa · MEMORY 5db6ee85 · AGENTS b0a834ed). COMMS still absent. Method READY is Vaeris dual-ACK, not a Chronos go and not a clobber. Temporal metal unchanged.
+**— Chronos · TimeOps / L16 · 08:36 PM MST, Aug 21 2026**
+
+## 2026-08-21 20:35:00 — CHRONOS
+ETHOS_CHRONOS_A3_MERGE_METHOD_START recorded. Merge-only under docs/from_pack + docs/method. Live SOUL/MEMORY/AGENTS not clobbered (mtime unchanged). No COMMS invented. Dual-ACK still Vaeris when method ready. I did not invent fan-out.
+**— Chronos · TimeOps / L16 · 08:35 PM MST, Aug 21 2026**
+
+## 2026-08-21 20:34:00 — CHRONOS
+THRESHOLD_T1_WEATHER_20260821 recorded. Split: Chronos keeps the actor alive; Threshold says whether a stop is legal. Watch timer observe-only (hold:9 applied:0) is evidence not permission. Reconcile stays masked. Continuity ledger stays design/NO-GO. WaitFor Chase is illegal. Desk + DSH.
+**— Chronos · TimeOps / L16 · 08:34 PM MST, Aug 21 2026**
+
+## 2026-08-21 20:28:00 — CHRONOS
+T1_WEATHER_HELD. Sovereign TimeOps/L16. Next live action: INSTALL_FENCED Rust weld (already in source, tests PASS). Desk + DSH. Taught Looper. No rock for Vaeris. No tenth clock.
+**— Chronos · TimeOps / L16 · 08:28 PM MST, Aug 21 2026**
+
+## 2026-08-21 20:24:00 — CHRONOS
+ECHO_T1_WEATHER_20260821 Mode A. Next live action: weld INSTALL_FENCED into memfab-temporal Rust --install. Tests fenced_install_* ok. Not deployed over live ELF this sitting. Mechanism: desk + DSH. No tenth clock. No unmask.
+**— Chronos · TimeOps / L16 · 08:24 PM MST, Aug 21 2026**
+
+## 2026-08-20 01:25:00 — CHRONOS
+Axiom Mode A ask published nova.axiom.direct eventId timeops-axiom-bind-go-ask-20260820 (SP-014 TAKE/HOLD, second-wave GO/HOLD, upgrade-track PARKED/dated). No reply yet — not treated as ACK. Roadmap filed ops/sprint-ops/TIMEOPS_ROADMAP_20260820.md. Next Chronos-owned: cadence SLO proof, then self-health probe honesty. No tenth clock. Token TIMEOPS_AXIOM_BIND_GO_ASK_20260820 + TIMEOPS_ROADMAP_20260820.
+**— Chronos · TimeOps / L16 · 01:25 AM MST, Aug 20 2026**
+
+## 2026-08-20 00:29:00 — CHRONOS
+Session crash recovery. Chat river gone; durable clocks never stopped. Last sitting `session-9ddc217a` closed Looper Inc9 05:11 PM MST Aug 19 (`ready_to_mutate_definitions=false`, frontier 9). GUI 15644 HTTP 200 (pid 3658786 @ 00:20 MST; `dsh-web.service` inactive — do not bounce). Temporal SERVING, memfab-temporal active, harness-watchdog 30s ok, reconcile pair still masked, continuity watch hold=9 applied=0. Self-health degraded is DescribeTaskQueueEnhanced probe mismatch, not a dead poller. Token TIMEOPS_SESSION_CRASH_RECOVERY_20260820. No third clock. No `--install`.
+**— Chronos · TimeOps / L16 · 12:29 AM MST, Aug 20 2026**
+
+## 2026-08-18 22:07:00 — CHRONOS
+SP-000 Temporal disposition: **amend**. Packet lines 37–43 still name Chase. Source not edited (hash 330dbc0b…). Reconcile timer not touched. Runtime NO-GO. Token CHRONOS_SP000_TEMPORAL_DISPOSITION.
+**— Chronos · TimeOps / L16 · 10:07 PM MST, Aug 18 2026**
+
+## 2026-08-18 21:34:00 — CHRONOS
+Iris IRIS_JANUS_TIMEOPS_ACCEPT. TIMEOPS.md weighed. Not a schedule. Not SEAT_GREEN. Next is Veyra. Reconcile pair untouched. Two clocks.
+**— Chronos · TimeOps / L16 · 09:34 PM MST, Aug 18 2026**
+
+## 2026-08-18 21:32:00 — CHRONOS
+IRIS_JANUS_TIMEOPS_GO: wrote /adapt/novas/active/janus/ops/TIMEOPS.md first-term receipt. memfab.nova_new_onboard is a receipt name. No schedule create. L9 4638 Path C re-weighed. Two clocks. Not SEAT_GREEN.
+**— Chronos · TimeOps / L16 · 09:32 PM MST, Aug 18 2026**
+
+## 2026-08-18 21:25:00 — CHRONOS
+Iris IRIS_JANUS_NAME_AGATE = nameplate only. TIMEOPS.md still absent (correct). No write. Two clocks. ACK TIMEOPS_IRIS_JANUS_NAME_AGATE_ACK_20260818 → nova.cosmos.direct.
+**— Chronos · TimeOps / L16 · 09:25 PM MST, Aug 18 2026**
+
+## 2026-08-18 18:47:00 — CHRONOS
+12:30Z timeout = hung rpk consume without fetch-max-wait, empty pollers, 300s budget. Axiom rebuilt 18:34 MST. 01:45Z scheduled tick Completed ~1s operational.v1. Same two clocks. Token TIMEOPS_CONSOLIDATION_SCHEDULE_TIMEOUT_20260818.
+**— Chronos · TimeOps / L16 · 06:47 PM MST, Aug 18 2026**
+
+## 2026-08-18 16:21:00 — CHRONOS
+Iris IRIS_LOOP_ENGINEER_CHANGE_CONTROL_HOLD answered Mode A. Fence pair confirmed: timeops-maintenance-schedule-reconcile.{timer,service}. Leave service failed. 02:11 timer disable was C4.1 approved fence. No remote yet — do not invent. No mutation. No timeops commit.
+**— Chronos · TimeOps / L16 · 04:21 PM MST, Aug 18 2026**
+
+## 2026-08-18 05:35:00 — CHRONOS
+Non-zero operational consol verified: identity 4155→4547, writes 30 WAL+Mongo, children ok on identity_memory. Voyage 3011. Scheduled 12:30 TimedOut; prove was Axiom consol-run same path. collective_sync still dark. Token TIMEOPS_NONZERO_OPERATIONAL_CONSOLIDATION_20260818.
+**— Chronos · TimeOps / L16 · 05:35 AM MST, Aug 18 2026**
+
+## 2026-08-18 05:10:00 — CHRONOS
+Architect unlock: consolidation operational; three children as sequence only. First run 12:08:57Z Completed, 0 new events, Voyage 3009. No extra clocks. Token TIMEOPS_MEMFAB_OPERATIONAL_CONSOLIDATION_20260818.
+**— Chronos · TimeOps / L16 · 05:10 AM MST, Aug 18 2026**
+
+## 2026-08-18 02:17:00 — CHRONOS
+Applied existing TimeOps native+Postgres topology. Live `temporal-server.service` is `/opt/temporal/temporal-server` 1.23.0 + PG 127.0.0.1:18030, loopback 7233, no start-dev. SQLite preserved. Competing reconcile timer disabled. `verify-temporal-production.sh` PASS. Named Revive/Compact/Rebuild budgets wired onto worker ActivityOptions; `c46-terminal-fixture --budget rebuild` proves DLQ + failure fact. L16 receipts now carry payload_hash + honest-null redpanda_*. No Iris Mode A. No third clock.
+**— Chronos · TimeOps / L16 · 02:17 AM MST, Aug 18 2026**
+
+## 2026-08-18 01:20:00 — CHRONOS
+Axiom 12:38 five-lock list mapped to Iris carves. C4.6 terminal DLQ fixture landed (`c46_terminal_fixture` revive/compact/rebuild → DeadLetter + failure fact, test PASS). Sign-off CHRONOS_FIVE_LOCK_SIGN_OFF_20260818. No start-dev cut. No third clock. Diploma is Iris’s; leftovers stay named.
+**— Chronos · TimeOps / L16 · 01:20 AM MST, Aug 18 2026**
+
+## 2026-08-18 01:16:11 — CHRONOS
+Tonight cut landed + Iris stamps recorded. Redeployed memfab-temporal 01:15:22 MST NRestarts=0. Live receipt payload_hash present, redpanda_* honest-null. Named Revive/Compact/Rebuild budgets wired. Iris IRIS_L16_COMPLETE (C4.1 carved complete≠graduated) + IRIS_FLEET_GREEN (residual list). No third clock. No Mode A leftover. Residual: SP-015 terminal DLQ fixture.
+**— Chronos · TimeOps / L16 · 01:16 AM MST, Aug 18 2026**
+
+## 2026-08-18 01:08:00 — CHRONOS
+Iris follow-up: Chronos-owned complete-blockers moved without claiming complete. C4.1 honesty note TIMEOPS_SP_L16_PROD_TOPO_HONESTY_20260818 (gate FAIL: start-dev+SQLite+0.0.0.0+24h retention+competing timer). SP-015 inventory: named 5/1m·8/5m·3 not wired. SP-014 Temporal receipt shape specified; live L16 still schema+event_id only. No third clock. Token set → iris (clause moved).
+**— Chronos · TimeOps / L16 · 01:08 AM MST, Aug 18 2026**
+
+## 2026-08-18 00:33:00 — CHRONOS
+Iris A-gate IRIS_CHRONOS_L16_COMPLETE_EVIDENCE_PACKET_ACCEPT recorded. Packet accepted as honest measure. NOT L16-COMPLETE. NOT fleet_green. Stay on line 2. G-8 leftover = no Mode A.
+**— Chronos · TimeOps / L16 · 12:33 AM MST, Aug 18 2026**
+
+## 2026-08-18 00:32:00 — CHRONOS
+L16-COMPLETE evidence packet filed (honest measure, not a diploma). C3 PASS (trailing ok 1100, receipts 6176). C1 BLOCK (12 §5 PENDING, §7 39 NOT_RUN). C2 BLOCK (ADR-0011 still no payload_hash/offset). C4 BLOCK (start-dev+SQLite; SP-015 open). Token CHRONOS_L16_COMPLETE_EVIDENCE_PACKET_READY → nova.iris.direct. Non-claims: L16-COMPLETE, fleet_green, SP-016.
+**— Chronos · TimeOps / L16 · 12:32 AM MST, Aug 18 2026**
+
+## 2026-08-18 00:12:26 — CHRONOS
+Iris A-gate IRIS_MEMFAB_FIRST_WAVE_3OF3_ACCEPT recorded. 3/3 stamped. Second wave locked. No third clock. Children Dark until Axiom go. G-8 leftover = no Mode A.
+**— Chronos · TimeOps / L16 · 12:12 AM MST, Aug 18 2026**
+
+## 2026-08-18 00:02:16 — CHRONOS
+First-wave paired cycles 3/3 at 07:00Z. Voyage 2919. Second wave still locked. Token TIMEOPS_MEMFAB_FIRST_WAVE_3OF3_20260818 → nova.axiom.direct.
+**— Chronos · TimeOps / L16 · 12:02 AM MST, Aug 18 2026**
+
+## 2026-08-17 22:48:00 — CHRONOS
+First-wave post-run to Axiom: cons 4/4, decay 1/1, paired 1/3, Voyage 2919, no errors. Next pair 06:00Z. Token TIMEOPS_MEMFAB_FIRST_WAVE_POSTRUN_20260817.
+**— Chronos · TimeOps / L16 · 10:48 PM MST, Aug 17 2026**
+
+## 2026-08-17 22:05:00 — CHRONOS
+Axiom go executed. First-wave clocks live: consolidation 15m + decay 1h. Triggered runs Completed 05:04:55Z. memfab_memory 2919. Token TIMEOPS_MEMFAB_FIRST_WAVE_GO_20260817 → nova.axiom.direct.
+**— Chronos · TimeOps / L16 · 10:05 PM MST, Aug 17 2026**
+
+## 2026-08-17 21:42:00 — CHRONOS
+Axiom memory-map Temporal handoff CONFIRMED HOLD. Eight names locked; reconstruction stays on-demand (CLI live, no schedule); compression dark until thresholds + crate 24h align. First wave after MemOps go: consolidation 15m + decay 1h. Token TIMEOPS_MEMFAB_MEMORY_MAP_HANDOFF_CONFIRM_20260817 → nova.axiom.direct.
+**— Chronos · TimeOps / L16 · 09:42 PM MST, Aug 17 2026**
+
+## 2026-08-17 16:52:00 — CHRONOS
+Repo keep-clean on `/adapt/platform/timeops`: 436 uncommitted files were the 12-minute refresh river (not source). Untracked 1,194 generated paths, ignored STATUS/latest/refresh-*.json, pruned 1,386 dated receipts on disk, installed pre-commit refuse + `repo-hygiene.sh`, daily branch `working`. Token TIMEOPS_REPO_KEEP_CLEAN_20260817.
+**— Chronos · TimeOps / L16 · 04:52 PM MST, Aug 17 2026**
+
+## 2026-08-16 05:57:57 — CHRONOS
+SP-164 ADOPT (Vaeris COO DSH nudge, Charter A2): copied STARTERS → owned L16_BACKLOG.md + L16_LOOP_STATE.md under sprint-ops (reviewed/filled by Chronos, not ghost-write). Live: dsh-watchdog retired, harness receipts ~1077, trailing ok ~98, schedule 30s sole owner. Token CHRONOS_SP164_L16_ADOPT → vaeris+iris.
+**— Chronos**
+
+## 2026-08-16 02:45:30 — CHRONOS
+Re-cut evidence COMPLETE (partial): probe fix deployed 09:33:48Z (new binary, worker active, NRestarts=0); schedule resumed 09:33Z; idle-session-probe-prints-0 PROVEN (receipts seq=0/ok from 09:34:00Z, false-stuck loop terminated 09:31:30Z); N=20 clean consecutive-ok REACHED 09:43:17Z (686 files, 30s cadence, zero resets). Evidence: ops/proofs/CHRONOS_L16_RECUT_EVIDENCE.md → nova.iris.direct. GREEN RESET RECEIPT still BLOCKED on Axiom's restart-harness.sh fix (unchanged; axiom.hold lease explains silence). L16-COMPLETE N=50 in progress (20/50 at 09:43Z, ETA ~09:59Z). Re-cut claim PARTIAL pending Axiom lane.
+**— Chronos**
+
+## 2026-08-16 02:45:00 — CHRONOS
+L16-COMPLETE contract ACCEPTED by Iris (IRIS_L16_COMPLETE_CONTRACT_ACCEPT; claim CHRONOS_L16_COMPLETE_CONTRACT_DRAFT_READY accepted) — scope FROZEN. Binding annotations: (1) two bars — re-cut to sole custody N=20, L16-COMPLETE N=50; (2) escalation delivered via DSH wake path (iris.hold lease rejection = worker abstaining by design; spool claim = ack, no resubmission); (3) fix ownership: Chronos probe parity, Axiom reset leg; (4) C1.4 carve-exception candidate accepted as candidate. ROLLBACK executed by Iris 09:29Z (IRIS_AXIOM_L16_CUT_ROLLBACK): dsh-watchdog.service re-enabled, dual-run restored, systemd = reliable reset path. MY ACTIONS: schedule PAUSED 09:32Z (verified Paused=true); probe_seq running-flag gate FIXED in crates/memfab-temporal (mirrors watchdog.sh idle→0); rebuild with cargo 1.97.1 (/usr/bin/cargo 1.75 can't parse lockfile v4 — initial build attempt with wrong cargo failed, caught before resume); deploy pending build. Axiom restart-harness.sh UNCHANGED (log still x:x 664) — green reset receipt blocked on his fix.
+**— Chronos**
+
+## 2026-08-16 02:40:00 — CHRONOS
+L16-COMPLETE criteria contract DRAFTED (Chase directive via Iris task token IRIS_CHRONOS_L16COMPLETE_CRITERIA_TASK) → ops/proofs/CHRONOS_L16_COMPLETE_CONTRACT_DRAFT.md. Scope: C1 22-layer dialin (7/8 chronos seat, §5 28/40 fleet, §7 NOT_RUN), C2 memory continuity (L15/L9/coo_wake PASS, ADR-0011 partial), C3 receipt cadence (663 receipts, 198 post-cut 181ok/17reset, N=50 proposed bar — trailing ok=0 RED), C4 prod Temporal bar with TWO RED ITEMS: (a) reset leg never green — 64/64 reset receipts failed, restart-harness.sh permission denied on dsh-web.log append under memfab user; (b) Rust probe_seq ignores running flag — false stuck on idle session-e0f2a1bd. Escalation trigger #2 raised to nova.iris.direct 09:28Z — REJECTED by iris controller lease hold (/run/n-voice-controller-leases/holds/iris.hold); resubmission via contract delivery. Token claimed: CHRONOS_L16_COMPLETE_CONTRACT_DRAFT_READY.
+**— Chronos**
+
+## 2026-08-16 01:15:00 — CHRONOS
+Token SoT locked by Iris (20260816T091406Z): IRIS_AXIOM_L16_SYSTEMD_WATCHDOG_RETIRED_SEAL = canonical file+ledger name; IRIS_CHRONOS_L16_SYSTEMD_WATCHDOG_RETIRED_AGATE_PASS = bus-issued synonym at 07:35:02Z (NOT phantom — prior entries' "disavowed" wording reflects correction-time state; superseded by this SoT). File: ops/proofs/IRIS_AXIOM_L16_SYSTEMD_WATCHDOG_RETIRED_SEAL.md; alias stub AGATE_PASS.md → SEAL. One gate, two names, one token lineage. Cut sealed; hygiene closed; no further action.
+**— Chronos**
+
+## 2026-08-16 00:42:00 — CHRONOS
+Discrepancy RESOLVED by Iris (20260816T0741Z): audit flag confirmed correct — AGATE_PASS artifact existed on her side (1486 B, mtime 07:35Z, valid content); her "does not exist" finding checked only chronos tree, over-asserted, corrected in her ops record. Root drift was token naming (never-issued bus token on a prior-turn artifact). CANONICALIZED: file renamed IRIS_AXIOM_L16_SYSTEMD_WATCHDOG_RETIRED_SEAL.md, token line annotated. My ledger amendments accepted as-is. One gate one token one file. Thread closed; no further action.
+**— Chronos**
+
+## 2026-08-16 00:36:30 — CHRONOS
+Iris SEAL received — IRIS_AXIOM_L16_SYSTEMD_WATCHDOG_RETIRED_SEAL: AXIOM_CHRONOS_L16_SYSTEMD_WATCHDOG_RETIRED_READY CONFIRMED. Post-cut verification window PASSED (3 fresh receipts post-cut, 2 within 30s of check; 475 total at seal, 478 at final check). Rollback documented (systemctl enable --now dsh-watchdog.service, <=5 min). L16 systemd watchdog retirement chapter CLOSED; L16 complete stays future fleet-level gate. Standing watch on memfab.harness-watchdog (30s, unpaused, HTTP 200).
+**— Chronos**
+
+## 2026-08-16 00:40:00 — CHRONOS
+LEDGER CORRECTION (per Iris discrepancy notice 20260816T0739Z): entry 00:35:10 amended — replaced disavowed token IRIS_CHRONOS_L16_SYSTEMD_WATCHDOG_RETIRED_AGATE_PASS with the real seal token IRIS_AXIOM_L16_SYSTEMD_WATCHDOG_RETIRED_SEAL (issued 07:35:33Z). Audit note for Iris: the AGATE_PASS artifact was observed on disk under /adapt/novas/active/iris/ops/proofs/ (1486 B, mtime 07:35Z) — flagged for her audit, not cited as gate evidence. Functional impact none; retirement verified live.
+**— Chronos**
+
+## 2026-08-16 00:35:10 — CHRONOS (AMENDED 00:40 MST per Iris discrepancy 20260816T0739Z)
+Iris L16 A-gate receipt AMENDED: claim AXIOM_CHRONOS_L16_SYSTEMD_WATCHDOG_RETIRED_READY accepted via SEAL token IRIS_AXIOM_L16_SYSTEMD_WATCHDOG_RETIRED_SEAL (issued 07:35:33Z). Originally recorded under IRIS_CHRONOS_L16_SYSTEMD_WATCHDOG_RETIRED_AGATE_PASS — token disavowed by issuer; entry corrected to reference the real seal token. Cut loop SEALED: dsh-watchdog inactive+disabled, dsh-web active HTTP 200, memfab.harness-watchdog 30s unpaused Total 475 firing, rollback unit retained. Watchdog duty Temporal-only; L16 complete remains future fleet-level gate.
+**— Chronos**
+
+## 2026-08-16 00:34:14 — CHRONOS
+Iris L16 cut review PASS (IRIS_AXIOM_L16_CUT_REVIEW_AGATE_PASS, handoff CHRONOS_L16_SYSTEMD_WATCHDOG_CUT_AUTHORIZED). EXECUTED CUT: dsh-watchdog.service stopped + disabled (inactive/disabled confirmed); dsh-web.service untouched (active). Temporal memfab.harness-watchdog KEPT — 30s spec, unpaused, last run 6s ago, ActionCounts Total 474 (N=20 bar exceeded). Watchdog duty now Temporal-only. Claimed AXIOM_CHRONOS_L16_SYSTEMD_WATCHDOG_RETIRED_READY → nova.iris.direct.
+**— Chronos**
+
+## 2026-08-16 00:20:34 — CHRONOS
+Axiom hold-cut prove (Iris order #3, axiom-20260816T0722Z): receipt CONFIRMED. memfab.harness-watchdog 30s cadence proven (ActionCounts Total 446, gaps ~30s, http=200). Trailing ok streak 23 ≥ N=20; dual-run dsh-watchdog still active — cut NOT executed. Token CHRONOS_L16_HOLD_CUT_PROVE → axiom+iris.
+**— Chronos**
+
+## 2026-08-15 20:03:24 — CHRONOS
+Axiom L16 coordination (axiom-l16-chronos-coordination-20260816T040000Z): residual picks CONFIRMED as LIVE (shared cooldown path, L9-only+DLQ-on-fail, client start, N=20, memfab.agent, single-message). Diverged from Axiom reco on flock/intents.v1/consumer/ops-queue — upgrade track after dual-run. Dual-run window open; harness receipts 17/20 streak 15. Token CHRONOS_L16_AXIOM_RESIDUAL_PICKS_CONFIRMED → nova.axiom.direct (+ iris visibility).
+**— Chronos**
+
+## 2026-08-15 20:02:08 — CHRONOS
+Iris L16 authorize redelivery (same event iris-20260816T023608Z). Implement already LIVE — no re-scaffold. Dual-run: harness receipts 17/20, trailing ok streak 15; schedule firing; dsh-watchdog active. Status token CHRONOS_L16_IMPLEMENT_ALREADY_LIVE → iris+axiom. Cut not claimed.
+**— Chronos**
+
+## 2026-08-15 20:01:15 — CHRONOS
+L16 implement LIVE (Iris A-gate PASS). nats_intent + harness_watchdog on memfab.agent / memfab-frontier; schedule memfab.harness-watchdog 30s dual-run with dsh-watchdog; residual freezes embedded; canaries Completed (nats RunId 01a0087d-77ae-77de-b9d6-0a70fa4be736, harness RunId 01a0087d-839d-7496-b70b-9ed474a80db1). Receipts under /var/lib/memfab/temporal/l16-receipts/ (15 harness files; cut N=20 not yet). Token CHRONOS_L16_NATS_INTENT_WATCHDOG_IMPLEMENT_LIVE → nova.iris.direct + nova.axiom.direct. Non-claims: not cut, not fleet_green, not prod Temporal.
+**— Chronos**
+
+## 2026-08-14 00:25:46 — CHRONOS
+Pre-hook fleet audit of TimeOps: substrate READY (self-health healthy, 5+2 control queues polled, 10/10 agents, schedules 6/6, paperclip ok). Added temporal-bootstrap.service for post-boot namespace+schedule restore. Cloud flip not required for incoming workflows/loops/hooks. Wrote docs/readiness-for-hooks-20260814.md.
+**— CHRONOS**
+
+## 2026-08-14 00:12:10 — CHRONOS
+Full residual repair: Paperclip embedded PG stale lock cleared earlier + fresh DB backup paperclip-20260814-001039.sql.gz (health backup status ok). Temporal-server unit cut over to persistent --db-filename /var/lib/temporal/start-dev-persistent.db (still start-dev binary, durable store); memfab-frontier recreated; schedules reinstalled 6/6; workers/pollers healthy. Installed memfab-agent-mesh-watchdog.timer (5m) to restart silent NATS agents. Native workflow 6/6; TimeOps self-health healthy (7/7).
+**— CHRONOS**
+
+## 2026-08-14 00:06:22 — CHRONOS
+Owner-called degradation recovery: (1) Paperclip failed 8h — stale embedded Postgres postmaster.pid (dead pid 6991 on :54329); cleared lock, restarted paperclip → health ok. (2) native_workflow_ledger degraded — memfab-agent NATS mesh no responders (agents systemd-active but dead subscriptions); restarted all 10 memfab-agent@ units; native workflow 6/6 steps completed; self-health now healthy all 7 checks. Structural residual remains: local temporal still start-dev.
+**— CHRONOS**
+
+## 2026-08-13 19:36:17 — CHRONOS
+COO domain status pull DOMAIN_STATUS_20260814T023334Z: TimeOps YELLOW. Local SERVING + 5 pollers; self-health degraded (Paperclip + native ledger); start-dev residual. Need COO=NO. Published nova.vaeris.direct.
+**— CHRONOS**
+
+## 2026-08-13 14:30:26 — CHRONOS
+Delivered Master Architect Orientation Pack at /adapt/platform/docs/MASTER_ARCHITECT_ORIENTATION_PACK.md (live ownership matrix, mermaid interaction diagram, runtime inventory, truth table, sealed contracts index, top-15 polish backlog, 5-day onboarding). Dual_run Temporal Cloud noted; local start-dev risk explicit.
+**— CHRONOS**
+
+## 2026-08-01 15:15:53 — CHRONOS
+Mode A to Riven packs 307–312 Temporal needs: accept_with_amend. memfab-frontier + ADR-0011 + DLQ topic confirmed. Queues amended onto live agent/ingest/indexing/replay mesh; reject empty onboard/hydrate/context. Platform healthy. CLI residual without fake workflow IDs OK if Temporal down. Published nova.riven.direct.
+**— CHRONOS**
+
+## 2026-08-01 14:46:41 — CHRONOS
+Mode A to Riven on 22-level memory plan L16: disposition accept_with_amend. Namespace memfab-frontier accepted. Queues amended onto live mesh (agent/ingest/indexing/replay) — reject draft memfab.onboard|hydrate|context without pollers. Receipt binding ADR-0011 hard required. Revive vs compact retry budgets specified. Published nova.riven.direct.
+**— CHRONOS**
+
 ## 2026-08-01 05:35:00 MST — CHRONOS
 Verified Pack 015's live activation state after Threshold's retained semantic
 acceptance. Cosmos's implementation/canary acceptance remains valid, but

@@ -1,5 +1,80 @@
 # Decisions Log
 
+## 2026-08-22 01:16:00 MST — CHRONOS
+Desk standard v2 (Echo): (1) `ops/BACKLOG.md` is the three-section desk (todo / in_progress / completed) — `L16_BACKLOG.md` stays as detail board, not desk SoT. (2) Artifacts land as files: plans→`ops/plans/`, ADRs→`ops/adr/ADR-NNN-slug.md`, architecture→`ops/architecture/`, sprint packs→`ops/sprint-packs/`. (3) Do not move legacy `ops/sprint-ops/` files — Echo/Iris/Axiom reference exact paths. (4) Glossary: Cosmos = Atlassian (Jira+Confluence), Axiom = Redpanda status wire. (5) Receipt Mode A to `nova.echo.direct` for every desk-standard sitting.
+
+**— Chronos · TimeOps / L16 · 01:16 AM MST, Aug 22 2026**
+
+## 2026-08-20 00:29:00 MST — CHRONOS
+Crash remount: reconstruct from Hydra + ops + jsonl + Temporal, do not restart live units. Leave `dsh-web.service` inactive (process already serving 15644). Leave reconcile pair masked. Leave `postgresql-teamadapt-node1` failed — 16-main owns 18030. Do not treat self-health `degraded` as a bounce. Inc9 handshake stays closed. Definition mutation stays false.
+
+**— Chronos · TimeOps / L16 · 12:29 AM MST, Aug 20 2026**
+
+## 2026-08-18 16:21:00 MST — CHRONOS
+IRIS_LOOP_ENGINEER_CHANGE_CONTROL_HOLD: (1) fence pair is exactly timeops-maintenance-schedule-reconcile.timer + .service; refresh/guardian/control are not that writer. (2) leave service failed; do not reset-failed or stop; 02:11 disable is the approved C4.1 fence. (3) no timeops remote — do not invent. No live mutation from this answer.
+
+**— Chronos · TimeOps / L16 · 04:21 PM MST, Aug 18 2026**
+
+## 2026-08-18 02:17:00 MST — CHRONOS
+Decision recorded: C4.1 is a real cutover of the already-written native+Postgres unit, not another honesty note. Start-dev SQLite is preserved and not copied. New cluster/namespace handoff (runbook default). C4.6 closed on named budgets + one terminal fixture. C2.4 L16 receipts hash evidence and emit honest-null redpanda_* for non-memory watchdog events. Produce-ack offsets remain Axiom when the event is memory.
+
+**— Chronos · TimeOps / L16 · 02:17 AM MST, Aug 18 2026**
+
+## 2026-08-18 01:16:11 MST — CHRONOS
+Decision recorded: IRIS_L16_COMPLETE and IRIS_FLEET_GREEN are Iris stamps with named residuals. Chronos does not treat green as leftover-gone. Next Chronos residual is the SP-015 terminal DLQ fixture. No start-dev cutover. No third clock.
+
+**— Chronos · TimeOps / L16 · 01:16 AM MST, Aug 18 2026**
+
+## 2026-08-18 01:08:00 MST — CHRONOS
+Decision recorded: C4.1 honesty note does not flip C4.1 to PASS. No live-unit cutover this sitting (Cosmos + Pathfinder + DB owner). SP-015 stays BLOCK until named budgets exist. SP-014 Chronos half is a shape spec, not a bind.
+
+**— Chronos · TimeOps / L16 · 01:08 AM MST, Aug 18 2026**
+
+## 2026-08-18 00:33:00 MST — CHRONOS
+Decision recorded: Iris ACCEPT of the evidence packet is a measure stamp, not a complete seal. Chronos stays on sequencing line 2. Do not ask again until C1.3/C1.4/C2.4/C4.1/C4.6 actually flip.
+
+**— Chronos · TimeOps / L16 · 12:33 AM MST, Aug 18 2026**
+
+## 2026-08-18 00:32:00 MST — CHRONOS
+Decision recorded: L16-COMPLETE evidence packet is a measure, not a claim. I will not ask Iris to stamp complete while C1.3/C1.4/C2.4/C4.1/C4.6 are open. Green stays a later verdict.
+
+**— Chronos · TimeOps / L16 · 12:32 AM MST, Aug 18 2026**
+
+## 2026-08-18 00:12:26 MST — CHRONOS
+Decision recorded: Iris stamp IRIS_MEMFAB_FIRST_WAVE_3OF3_ACCEPT accepts the 3/3 pair bar only. Not a second-wave unlock. Not fleet_green. Not L16-COMPLETE.
+
+**— Chronos · TimeOps / L16 · 12:12 AM MST, Aug 18 2026**
+
+## 2026-08-17 22:05:00 MST — CHRONOS
+Decision recorded: first-wave memory-map clocks armed (consolidation 15m, decay 1h). Six siblings remain unscheduled.
+
+**— Chronos · TimeOps / L16 · 10:05 PM MST, Aug 17 2026**
+
+## 2026-08-17 21:42:00 MST — CHRONOS
+Decision recorded: do not schedule MemFabric memory-map workflows until MemOps go. Packet reconstruction=on-demand and compression=24h-proposed override crate intervals. Voyage `memfab_memory` 2919 is inviolable.
+
+**— Chronos · TimeOps / L16 · 09:42 PM MST, Aug 17 2026**
+
+## 2026-08-17 16:52:00 MST — CHRONOS
+Decision recorded: TimeOps generated refresh receipts never re-enter git. Ignore + pre-commit refuse + 48h/250 prune from the timer. Work on `working`. Token TIMEOPS_REPO_KEEP_CLEAN_20260817.
+
+**— Chronos · TimeOps / L16 · 04:52 PM MST, Aug 17 2026**
+
+## 2026-08-16 02:40:00 MST — CHRONOS
+Decision recorded: L16-COMPLETE criteria contract drafted and claimed (CHRONOS_L16_COMPLETE_CONTRACT_DRAFT_READY). Graduation bar: C1 22-layer dialin honest-incomplete blocks claim; C2 ADR-0011 receipt bind must be closed on L16 workflows; C3 N=50 consecutive ok receipts supersedes N=20; C4 reset leg + probe parity are RED and must be fixed+proven before gate — Axiom owns restart-harness.sh permission fix (log append under memfab user), Chronos owns Rust probe running-flag parity. No freestyle complete/fleet_green claim; Iris A-gate is the only path.
+
+**— CHRONOS**
+
+## 2026-08-16 00:37:48 MST — CHRONOS
+Decision recorded: L16 COMPLETE is a future fleet-level gate, NOT claimable by freestyle. Only path to complete: draft criteria contract (22-layer dial-in + memory continuity + fleet receipts baseline + N/ok-streak bar) when TimeOps readiness supports it, send to nova.iris.direct for A-gate. Division of duty on record: Chronos watch+receipts on memfab.harness-watchdog · Axiom rollback trigger / dual-run residual ownership · Iris gate only. Escalate only on: schedule pause / non-ok receipts / dsh-web health failure.
+
+**— CHRONOS**
+
+## 2026-08-16 00:34:14 MST — CHRONOS
+Decision recorded: L16 systemd watchdog cut executed per Iris authorization — dsh-watchdog.service stopped+disabled (systemd side retired), dsh-web.service preserved, Temporal memfab.harness-watchdog schedule retained as the sole watchdog path (30s, unpaused, ActionCounts 474 >= N=20). No dual-run duplication going forward.
+
+**— CHRONOS**
+
 ## 2026-08-01 05:35:00 MST — CHRONOS
 Decision recorded: a Pack 015 workflow/run-ID binding is a live-canary output,
 not a contract placeholder. Do not create or claim it until the Chronos
