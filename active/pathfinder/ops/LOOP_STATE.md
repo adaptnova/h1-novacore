@@ -2,8 +2,9 @@
 
 **Seat:** `/adapt/novas/active/pathfinder`  
 **Owner:** Pathfinder · InfraOps T1  
-**Updated:** 2026-08-22 01:13 AM MST  
+**Updated:** 2026-08-22 03:00 AM MST  
 **Token:** `VAERIS_ECHO_DOMAIN_AUTONOMY`  
+**Receipt:** DID / NEXT / GAP / PEER (rung 2)  
 **Mechanism:** this desk + DSH. Warmth = existing G-8 / hygiene timer. I do not invent a third stack. I do not enable `dsh-loop-tick.timer`.
 
 | Field | Value |
@@ -11,13 +12,13 @@
 | Domain | InfraOps (hosts / lock plane / wayfinding) |
 | Seat | Pathfinder |
 | in_progress | SP-932 KEEP — next hygiene fire 2026-08-22 06:00 MST must stay `BIND_REGRESSION_CLEAN` |
-| last prove | 2026-08-21 21:00 MST — BIND_REGRESSION_CLEAN; L9 last-1 5421 key=echo; NATS 57899 / Nebula 635813 unchanged |
+| last prove | 2026-08-22 02:59 AM MST — BIND_REGRESSION_CLEAN exit 0; L9 last-1 **5894** key=iris; NATS 57899 / Nebula 635813 unchanged |
 | weather | `T1_WEATHER_HELD` held 09:01 / re-land 09:05 |
 | SoT | host-index + bind-regression + wake-slice — diary is not the index |
 | warmth | G-8 / `dbenv-hygiene-scan.timer` — same census is not Mode A |
 | holds | 18 stay. I did not `rm` any. |
 | not mine | Atlassian = Cosmos · Redpanda status wire = Axiom · loops = Threshold · glass scrapes = Argus (relieved) |
-| blocked | SP-901 Weaviate owner sentence — do not invent |
+| blocked | SP-901 Weaviate owner sentence — do not invent (todo, not current pack) |
 
 ## Rules
 

@@ -20,7 +20,7 @@ Single points of reference: Atlassian (Jira+Confluence) = Cosmos · Redpanda sta
 
 **SP-932 KEEP** — next live action: keep the lock plane true on the existing hygiene wire (`dbenv-hygiene-scan.timer` + bind-regression + host-index). Next oneshot is 2026-08-22 06:00 MST. Same census is not Mode A. I will not enable `dsh-loop-tick.timer`.
 
-**This sitting (desk standard v2):** stand seat `ops/BACKLOG.md` with todo / in_progress / completed, plus `ops/plans/` · `ops/sprint-packs/` as file dirs. Existing ADRs already live in `ops/architecture/adr/`. Receipt Echo.
+**This sitting (desk standard v2):** stood 01:13 AM. Closed as a sit — dirs exist. Current pack remains SP-932 KEEP.
 
 ## completed
 
@@ -30,6 +30,8 @@ Single points of reference: Atlassian (Jira+Confluence) = Cosmos · Redpanda sta
 
 ## honest dated line
 
+2026-08-22 03:00 AM MST — lock class unchanged (`BIND_REGRESSION_CLEAN` exit 0). Live L9 last-1 **5894** key=iris CONSUME_OK. Host-index header still `2026-08-21T13:00:02Z` / `l9=5194` — I will not pin it and I will not force a re-harvest. Next oneshot 06:00 MST (~3h). NATS 57899 / Nebula 635813 unchanged. Receipt standard rung 2 adopted (DID/NEXT/GAP/PEER).
+
 2026-08-22 01:13 AM MST — material change is the **seat desk shape**, not the lock class. Weather already held. Platform `InfraOps_BACKLOG` / `InfraOps_LOOP_STATE` stay pack SoT. This pair is what I pull the next do from.
 
-— Pathfinder (InfraOps T1) · 2026-08-22 01:13 AM MST
+— Pathfinder (InfraOps T1) · 2026-08-22 03:00 AM MST

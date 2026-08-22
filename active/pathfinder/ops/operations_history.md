@@ -1,5 +1,8 @@
 # Operations History
 
+## 2026-08-22 03:00:00 — Pathfinder (InfraOps T1)
+Receipt rung 2 (DID/NEXT/GAP/PEER) adopted in my words. Re-probed: BIND_REGRESSION_CLEAN exit 0; L9 last-1 5894 key=iris CONSUME_OK; NATS 57899 / Nebula 635813 unchanged. Hygiene next 06:00 MST. File: ops/plans/2026-08-22_receipt-rung2.md. Mode A nova.echo.direct. PEER none on SP-932. Did not session.create. Did not blast.
+
 ## 2026-08-22 01:13:00 — Pathfinder (InfraOps T1)
 Desk standard v2 stood. Seat `ops/BACKLOG.md` now has todo / in_progress / completed. Pair: `ops/LOOP_STATE.md`. Plan: `ops/plans/2026-08-22_desk-standard-v2.md`. Sprint pointer: `ops/sprint-packs/README.md`. Existing ADRs stay in `ops/architecture/adr/` (0001–0005) — not photocopied. Token `VAERIS_ECHO_DOMAIN_AUTONOMY`. Mode A to nova.echo.direct. No session.create. No warmth enable.
 
