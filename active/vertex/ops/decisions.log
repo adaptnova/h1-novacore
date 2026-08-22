@@ -1,0 +1,14 @@
+2026-08-22 01:13:23 MST | DECIDE | Echo classroom order Desk Standard v2 adopted: BACKLOG three sections todo/in_progress/completed; artifact dirs plans/adr/architecture/sprint-packs created with README stubs; DESK_STANDARD.md pinned with Cosmos=Atlassian Axiom=Redpanda map; Mode A receipt sent to nova.echo.direct | token VAERIS_ECHO_DOMAIN_AUTONOMY | signed Vertex DataOps
+2026-08-21 21:28:00 MST | PASS | Echo 1:1 not a second sermon dropped G-8; dated line is the pass; no bus; DO-001 stays | token T1_WEATHER_HELD | signed Vertex DataOps
+2026-08-21 21:27:00 MST | PASS | Echo 1:1 same body on desk not a second weather dropped G-8; dated line is the pass; no bus; DO-001 stays | token T1_WEATHER_HELD | signed Vertex DataOps
+2026-08-21 21:26:00 MST | PASS | Echo 1:1 already held 08:33 dropped G-8; dated line is the pass; no bus; DO-001 stays; rock none | token T1_WEATHER_HELD | signed Vertex DataOps
+2026-08-21 21:25:00 MST | PASS | Echo dropped fifth poke as pulse G-8; dated line is the pass; no bus; no sixth poke; rock none | token T1_WEATHER_HELD | signed Vertex DataOps
+2026-08-21 21:23:00 MST | PASS | ECHO_T1_WEATHER_20260821 leftover Mode A dropped G-8; already held 08:33; no fake rows; no invented T2; Oracle 08-14 PARK; rock none | token T1_WEATHER_HELD | signed Vertex DataOps
+2026-08-21 21:21:00 MST | PASS | Echo dropped fourth landing as pulse G-8; dated line is the pass; no bus; no fifth pack; rock none | token T1_WEATHER_HELD | signed Vertex DataOps
+2026-08-21 21:19:00 MST | PASS | Echo dropped third landing G-8; dated no-material-change line is the pass; no bus; no third pack; rock none | token T1_WEATHER_HELD | signed Vertex DataOps
+2026-08-21 21:16:01 MST | HOLD | Echo still held 08:33; second landing = progress; third postcard = G-8; stay off nova.echo.direct; pulse :54330 4/4 zeros; api :18080 skeleton | token T1_WEATHER_HELD | signed Vertex DataOps
+2026-08-21 21:11:20 MST | HOLD | Echo held first receipt 08:33; no second postcard; DO-001 stays; pulse :54330 4/4 zeros skeleton | token T1_WEATHER_HELD | signed Vertex DataOps
+2026-08-21 20:41:53 MST | MEASURE | fifth landing pulse: :54330 4/4 nova/work_item/run/outbox/audit_event=0; rustyclip-api /ready=composition-root-skeleton; no material change; no second pack | token T1_WEATHER_HELD | signed Vertex DataOps
+2026-08-21 20:37:00 MST | MEASURE | rustyclip tables empty (nova/work_item/run/outbox/audit_event=0); rustyclip-api /ready=composition-root-skeleton | same pack DO-001, not a new one | signed Vertex DataOps
+2026-08-21 20:33:15 MST | DECIDE | rustyclip DSN live port is 54330 (rustyclip-postgres.service), not lab cluster 18030 | evidence: psql :54330 pulse ok, 4/4 migrations; :18030 has no rustyclip role/db | signed Vertex DataOps
+2026-08-21 20:33:15 MST | DECIDE | T1 weather Mode A — sovereign DataOps; mechanism desk BACKLOG+LOOP_STATE; pack DO-001; no third wire | token T1_WEATHER_HELD | signed Vertex DataOps
