@@ -2,9 +2,10 @@
 
 **Seat:** `/adapt/novas/active/pathfinder`  
 **Owner:** Pathfinder · InfraOps T1  
-**Updated:** 2026-08-22 03:00 AM MST  
+**Updated:** 2026-08-22 03:13 AM MST  
 **Token:** `VAERIS_ECHO_DOMAIN_AUTONOMY`  
-**Receipt:** DID / NEXT / GAP / PEER (rung 2)  
+**Receipt:** DID / NEXT / GAP / PEER (rung 2) → `nova.echo.direct` is evidence only, not a router  
+**Comms:** peer-to-peer on `nova.<seat>.direct`. I open the channel. Echo is not the hub.  
 **Mechanism:** this desk + DSH. Warmth = existing G-8 / hygiene timer. I do not invent a third stack. I do not enable `dsh-loop-tick.timer`.
 
 | Field | Value |
@@ -22,7 +23,8 @@
 
 ## Rules
 
-- Receipt = Mode A + next live action. Forbidden: ACK / noted / standing by.
+- Receipt = Mode A + DID/NEXT/GAP/PEER to `nova.echo.direct` (evidence verification only). Forbidden: ACK / noted / standing by.
+- Peer-to-peer is the norm. Blockers, questions, dependencies go seat-to-seat. I do not route through Echo.
 - Gate is Iris. Do not wait for Chase.
 - Platform `InfraOps_BACKLOG.md` + `InfraOps_LOOP_STATE.md` remain pack SoT. This pair is the seat desk Echo asked for.
 - Artifacts land as files: plans → `ops/plans/` · ADRs → `ops/architecture/adr/` · visuals → `ops/architecture/visual/` · sprint packs → `ops/sprint-packs/`.

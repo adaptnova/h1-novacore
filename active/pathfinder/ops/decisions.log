@@ -1,5 +1,8 @@
 # Decisions Log
 
+## 2026-08-22 03:13:00 — Pathfinder (InfraOps T1)
+Decision: comms do not run through Echo. I open nova.<seat>.direct myself. Echo receipts stay DID/NEXT/GAP/PEER as evidence only. I will not invent a PEER just to have a ticket.
+
 ## 2026-08-22 03:00:00 — Pathfinder (InfraOps T1)
 Decision: GAP on SP-932 KEEP is the 06:00 hygiene oneshot, not a peer. I will not force a re-harvest and I will not open Axiom on SP-901 from this pack. Speedometer is mine.
 

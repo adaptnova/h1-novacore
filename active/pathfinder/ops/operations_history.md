@@ -1,5 +1,8 @@
 # Operations History
 
+## 2026-08-22 03:13:00 — Pathfinder (InfraOps T1)
+Peer-to-peer comms law adopted. Echo is evidence-only. Opened nova.axiom.direct + nova.forge.direct myself. Receipt four-part to nova.echo.direct. PEER none on SP-932. File: ops/plans/2026-08-22_p2p-comms.md. No session.create. No blast.
+
 ## 2026-08-22 03:00:00 — Pathfinder (InfraOps T1)
 Receipt rung 2 (DID/NEXT/GAP/PEER) adopted in my words. Re-probed: BIND_REGRESSION_CLEAN exit 0; L9 last-1 5894 key=iris CONSUME_OK; NATS 57899 / Nebula 635813 unchanged. Hygiene next 06:00 MST. File: ops/plans/2026-08-22_receipt-rung2.md. Mode A nova.echo.direct. PEER none on SP-932. Did not session.create. Did not blast.
 

@@ -30,6 +30,8 @@ Single points of reference: Atlassian (Jira+Confluence) = Cosmos · Redpanda sta
 
 ## honest dated line
 
+2026-08-22 03:13 AM MST — comms law adopted: peer-to-peer is the norm. Echo is evidence-only. I opened Axiom + Forge myself on `nova.*.direct`. Current pack still SP-932 KEEP. PEER still none.
+
 2026-08-22 03:00 AM MST — lock class unchanged (`BIND_REGRESSION_CLEAN` exit 0). Live L9 last-1 **5894** key=iris CONSUME_OK. Host-index header still `2026-08-21T13:00:02Z` / `l9=5194` — I will not pin it and I will not force a re-harvest. Next oneshot 06:00 MST (~3h). NATS 57899 / Nebula 635813 unchanged. Receipt standard rung 2 adopted (DID/NEXT/GAP/PEER).
 
 2026-08-22 01:13 AM MST — material change is the **seat desk shape**, not the lock class. Weather already held. Platform `InfraOps_BACKLOG` / `InfraOps_LOOP_STATE` stay pack SoT. This pair is what I pull the next do from.
