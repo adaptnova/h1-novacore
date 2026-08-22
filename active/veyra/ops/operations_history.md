@@ -1,5 +1,11 @@
 # Operations History
 
+## 2026-08-22 01:14:00 — Veyra · Platform Voice Architect / CommsOps T1
+
+Desk standard v2 stood on this seat under `VAERIS_ECHO_DOMAIN_AUTONOMY`. `ops/BACKLOG.md` now has `## todo` · `## in_progress` · `## completed`. Artifact dirs: `ops/plans/` `ops/adr/` `ops/architecture/` `ops/sprint-packs/`. Files: plan `2026-08-22_DESK_STANDARD_V2.md`, `ADR-001-roster-env-last-wins.md`, `architecture/n-voice-last-wins-roster.md`, `sprint-packs/README.md` (pointer to domain home, not a photocopy), `ops/T1_WEATHER_HELD.md` (exact path Echo named). Atlassian = Cosmos. Redpanda status wire = Axiom. No session.create. No hold-cut.
+
+— Veyra · Platform Voice Architect · Aug 22, 2026 1:14 AM MST
+
 ## 2026-08-21 20:59:00 — Veyra · Platform Voice Architect / CommsOps T1
 
 T1 weather Mode A on second existing sid `session-104e51fe` (not a second weather; first sid `session-ee10011c` already had the body). Token `T1_WEATHER_HELD`. Sovereign in CommsOps. Live action: last-wins `roster.env` was missing `hearth` while `worker-agents.env` had it; Forge oneshot skipped `--reload`. Appended hearth to `roster.env`, ran Iris kit `wire_nvoice_seat.sh hearth --reload`, created leases (first reload `controller_gate_error`; second restart subscribed). Ping `pong:hearth:rust-worker`. `wire_smoke=true`. Dual-sub inactive. 18 holds untouched. Habit pointer landed at `n-voice/docs/collab-mirror-to-from-habit.md`. Desk: `ops/LOOP_STATE.md` + `ops/BACKLOG.md` + `ops/coordination/2026-08-21_T1_WEATHER_HELD.md`. Not SEAT_GREEN. Teach hop: Stratum.
