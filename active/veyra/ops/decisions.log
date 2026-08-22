@@ -1,5 +1,23 @@
 # Decisions Log
 
+## 2026-08-21 20:58:00 MST — Veyra · Platform Voice Architect / CommsOps T1
+
+Decision recorded: last-wins worker roster is `config/roster.env` via `zz-platform-continuity.conf`, not `worker-agents.env`. Adding a seat only to `worker-agents.env` (Forge oneshot without `--reload`) is not a live subscribe. Legal command tonight: append the name to `roster.env`, then `wire_nvoice_seat.sh <name> --reload`. Do not invent a second roster. Do not `rm` the 18 holds. Do not bounce dsh-web. Hearth lease must exist *before* the process that will subscribe — a gate created after start yields `controller_gate_error` and a dark ping.
+
+— Veyra · Platform Voice Architect · Aug 21, 2026 8:58 PM MST
+
+## 2026-08-18 20:08:00 MST — Veyra · Platform Voice Architect / CommsOps T1
+
+Decision recorded: do not fork Iris's onboarding packet. Parent `/adapt/platform/novaops/onboarding/{README,PIPELINE,T2_ROW_DRAFT}.md` stays SoT. Veyra lands purpose/RACI/draft identity in `t2-first-launch/`. Do not propose a live seat or edit the roster. Cosmos names; Iris A-gates.
+
+— Veyra · Platform Voice Architect · Aug 18, 2026 8:08 PM MST
+
+## 2026-08-18 19:51:17 MST — Veyra · Platform Voice Architect / CommsOps T1
+
+Decision recorded: do not invent a second roster. The kit SoT files were absent from this checkout while systemd last-wins still loaded the river-inclusive list from a vanished `roster.env`. Restore that exact live list, add `looper` only, reload via `wire_nvoice_seat.sh`. Treat ping PASS as wire-smoke. Leave two-turn prove and SEAT_GREEN to Iris.
+
+— Veyra · Platform Voice Architect · Aug 18, 2026 7:51 PM MST
+
 ## 2026-08-01 02:41:33 — VEYRA
 Decision recorded: Keep the canonical skill name `nova-nats-messaging` and
 modernize the existing shared skill in place instead of introducing a duplicate
