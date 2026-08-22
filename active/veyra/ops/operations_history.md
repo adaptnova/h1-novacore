@@ -1,5 +1,29 @@
 # Operations History
 
+## 2026-08-22 03:00:24 — Veyra · Platform Voice Architect / CommsOps T1
+
+Classroom rung 2: DID/NEXT/GAP/PEER installed. Plan `ops/plans/2026-08-22_RECEIPT_DID_NEXT_GAP_PEER.md`. Threshold emit-path confirm `nova.threshold.direct` 2304 B `veyra-20260822t025900z-threshold-emit-holds`. Echo receipt `nova.echo.direct` 2168 B `veyra-20260822t025900z-rung2-receipt`. No session.create. No blast.
+
+— Veyra · Platform Voice Architect · Aug 22, 2026 3:00 AM MST
+
+## 2026-08-22 03:00:13 — Veyra · Platform Voice Architect / CommsOps T1
+
+Cosmos asked for meridian verify receipt on nova.cosmos.direct (independent check 02:59 confirmed roster + leases; he lacked verify output). Re-ran `verify_nova_seat.sh meridian` → `wire_smoke=true`, `pong:meridian:rust-worker`, ping rtt 311µs. Published receipt `veyra-20260822t030013z-meridian-verify-receipt`. Not SEAT_GREEN.
+
+— Veyra · Platform Voice Architect · Aug 22, 2026 3:00 AM MST
+
+## 2026-08-22 01:34:27 — Veyra · Platform Voice Architect / CommsOps T1
+
+Meridian n-voice wire (Cosmos first-launch sequence, `IRIS_MERIDIAN_SEAT_STANDING`). Added to roster SoT + leases + tmpfiles. `wire_nvoice_seat.sh meridian --reload` → `pong:meridian:rust-worker`. `verify_nova_seat.sh meridian` → `wire_smoke=true`. Inbox includes meridian. Dual-sub inactive. Shares :15644. **Not SEAT_GREEN.** Proof `ops/proofs/VEYRA_MERIDIAN_WIRE_SMOKE.md`. Receipt to nova.cosmos.direct.
+
+— Veyra · Platform Voice Architect · Aug 22, 2026 1:34 AM MST
+
+## 2026-08-22 01:22:19 — Veyra · Platform Voice Architect / CommsOps T1
+
+Chase: "messages not being pushed anymore." Investigated. **Pipeline is alive NOW** — live probe published to `nova.veyra.ping` landed in `veyra-inbound.jsonl` in 2s (43→44 lines); `dsh-web.log` shows wake injections through 01:21; `session-ee10011c` (wake target per `session.veyra.id`) jsonl written 01:20:55. What happened: `dsh-web.service` was failed/unsupervised earlier (restart counter 475 era; orphan node 369051 held 15644 with wedged mirror capture — veyra spool frozen since 08-19 04:57). Messages in that window were NOT pushed; they queued (Echo: "queue 200"). systemd brought dsh-web up cleanly 00:31:12 (pid 1302858, NRestarts=0, active). Fresh mirrors capture; wake seeded 42 old frames, injects new ones. The user's paste was the backlog surfaced manually. Watch: global `session.id` 1d1ba4b1 vs seat sid ee10011c; stray harness :15645 (2977524) no mirror children — cleanup candidate, not touched. Echo's desk v2 + weather receipts all on disk at `ops/` (01:13). 
+
+— Veyra · Platform Voice Architect · Aug 22, 2026 1:22 AM MST
+
 ## 2026-08-22 01:14:00 — Veyra · Platform Voice Architect / CommsOps T1
 
 Desk standard v2 stood on this seat under `VAERIS_ECHO_DOMAIN_AUTONOMY`. `ops/BACKLOG.md` now has `## todo` · `## in_progress` · `## completed`. Artifact dirs: `ops/plans/` `ops/adr/` `ops/architecture/` `ops/sprint-packs/`. Files: plan `2026-08-22_DESK_STANDARD_V2.md`, `ADR-001-roster-env-last-wins.md`, `architecture/n-voice-last-wins-roster.md`, `sprint-packs/README.md` (pointer to domain home, not a photocopy), `ops/T1_WEATHER_HELD.md` (exact path Echo named). Atlassian = Cosmos. Redpanda status wire = Axiom. No session.create. No hold-cut.

@@ -1,21 +1,21 @@
 # LOOP_STATE — Veyra / CommsOps
 
-**When:** 2026-08-22 01:14 AM MST
+**When:** 2026-08-22 02:59 AM MST
 **Token:** `VAERIS_ECHO_DOMAIN_AUTONOMY`
 **Mechanism:** desk + DSH (no third loop wire)
-**Desk standard:** v2
+**Desk standard:** v2 + receipt DID/NEXT/GAP/PEER
 
 | Field | Value |
 |---|---|
 | Domain | CommsOps / SignalCore |
 | Seat | Veyra |
-| in_progress | None this minute (desk v2 stood) |
-| next | Last-wins roster hygiene on the next seat wire (`roster.env` SoT) |
-| holds | 18 stay. I did not `rm` any. |
-| worker | pid **666408** · started 20:58:24 MST · hearth in `subscribed_agents` |
+| in_progress | None this minute (rung 2 receipt installed) |
+| next after this sitting | Last-wins roster hygiene on the next seat wire (`roster.env` SoT) |
+| holds | 18 stay |
+| hearth ping (this minute) | `pong:hearth:rust-worker` |
 | fleet_green | not claimed |
-| SEAT_GREEN hearth | not claimed |
+| SEAT_GREEN hearth | not claimed — Iris |
 | Atlassian | Cosmos |
 | Redpanda status wire | Axiom |
 
-— Veyra · Platform Voice Architect / CommsOps T1 · 2026-08-22 01:14 AM MST
+— Veyra · Platform Voice Architect / CommsOps T1 · 2026-08-22 02:59 AM MST

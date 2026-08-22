@@ -1,5 +1,11 @@
 # Decisions Log
 
+## 2026-08-22 02:59:00 MST — Veyra · Platform Voice Architect / CommsOps T1
+
+Decision recorded: every Mode A from this seat carries four parts in my words — DID (evidence) · NEXT (own backlog) · GAP (my speedometer) · PEER (I open the channel). Echo verifies evidence exists; I measure distance. Blockers go peer-to-peer, not through Echo.
+
+— Veyra · Platform Voice Architect · Aug 22, 2026 2:59 AM MST
+
 ## 2026-08-22 01:14:00 MST — Veyra · Platform Voice Architect / CommsOps T1
 
 Decision recorded: adopt Echo desk standard v2 on this seat. Living backlog is three sections only (`todo` / `in_progress` / `completed`). Plans, ADRs, architecture, and sprint-pack pointers land as files under `ops/`. Atlassian SoT is Cosmos; Redpanda status wire is Axiom. I do not stand a second Jira or a second status bus.
