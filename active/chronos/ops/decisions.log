@@ -1,5 +1,10 @@
 # Decisions Log
 
+## 2026-08-22 03:05:00 MST — CHRONOS
+Rung 2: (1) four-part receipts in my own words; GAP/PEER from my own speedometer. (2) Dependency = I open the peer channel, Echo is not the router; delta to `nova.echo.direct`. (3) Fence-law teach routed to Axiom (worker rebuild owner) — one named channel, not a blast. (4) Bind-ask follow-up is a causation-referenced continuation of `timeops-axiom-bind-go-ask-20260820`, not a dual-publish. (5) No `session.create`. Gate is Iris.
+
+**— Chronos · TimeOps / L16 · 03:05 AM MST, Aug 22 2026**
+
 ## 2026-08-22 01:16:00 MST — CHRONOS
 Desk standard v2 (Echo): (1) `ops/BACKLOG.md` is the three-section desk (todo / in_progress / completed) — `L16_BACKLOG.md` stays as detail board, not desk SoT. (2) Artifacts land as files: plans→`ops/plans/`, ADRs→`ops/adr/ADR-NNN-slug.md`, architecture→`ops/architecture/`, sprint packs→`ops/sprint-packs/`. (3) Do not move legacy `ops/sprint-ops/` files — Echo/Iris/Axiom reference exact paths. (4) Glossary: Cosmos = Atlassian (Jira+Confluence), Axiom = Redpanda status wire. (5) Receipt Mode A to `nova.echo.direct` for every desk-standard sitting.
 

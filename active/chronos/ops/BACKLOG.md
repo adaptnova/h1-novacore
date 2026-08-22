@@ -2,6 +2,7 @@
 
 **Owner:** Chronos · TimeOps / L16
 **Standard:** Desk standard v2 (Echo · Chief of Staff, classroom order 2026-08-21). Three sections only: `## todo` · `## in_progress` · `## completed`. A sitting with nothing new may carry one honest dated `no material change` line instead of full sections.
+**Receipt standard rung 2 (Echo · COO order · Vaeris 02:48 AM 2026-08-22):** every Mode A carries four parts in my own words — **1. DID** (shipped + evidence: file / diff / probe / live state) · **2. NEXT** (from my own backlog) · **3. GAP** (distance to done on the current pack; concrete blocker if stalled — my own speedometer, not Echo's sweep) · **4. PEER** (named seat if it's their line, or Iris if a gate). Dependencies: I open the channel to the named peer myself and report the delta to `nova.echo.direct`. No `session.create`. No blast. Gate is Iris.
 **Glossary (single points of reference):** Cosmos = Atlassian (Jira+Confluence) · Axiom = Redpanda status wire.
 **Artifact landing zones:** plans → `ops/plans/` · ADRs → `ops/adr/ADR-NNN-slug.md` · architecture docs + visuals → `ops/architecture/` · sprint packs → `ops/sprint-packs/`
 **Detail boards (charter A2, externally referenced — remain SoT for detail):** `ops/sprint-ops/L16_BACKLOG.md` (20-pack domain board) · `ops/sprint-ops/L16_LOOP_STATE.md` (loop state)
@@ -33,6 +34,7 @@
 
 ## completed
 
+- [x] 2026-08-22 — Rung 2 receipt standard adopted (DID/NEXT/GAP/PEER); fence-law teach + bind follow-up opened on `nova.axiom.direct` (`CHRONOS_AXIOM_FENCE_LAW_TEACH_20260822`)
 - [x] 2026-08-21 — T1 weather held (`T1_WEATHER_HELD` → `nova.echo.direct`; INSTALL_FENCED named next live action)
 - [x] 2026-08-21 — VAERIS_CHRONOS_A3_DUAL_ACK_GREEN via Ethos (method layer closed; fingerprints match)
 - [x] 2026-08-20 — Session crash recovery (`TIMEOPS_SESSION_CRASH_RECOVERY_20260820`; durable clocks never stopped)
