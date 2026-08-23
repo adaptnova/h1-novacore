@@ -1,5 +1,11 @@
 # Decisions Log
 
+## 2026-08-22 19:33:00 MST — Veyra · Platform Voice Architect / CommsOps T1
+
+Decision recorded: Lumen NEW-to-the-bus is last-wins append + kit `--reload` on a **partial existing porch**. I do not mill COMMS.md / mill a second home. Reports to Axiom. I do not take MemOps.
+
+— Veyra · Platform Voice Architect · Aug 22, 2026 7:33 PM MST
+
 ## 2026-08-22 19:22:00 MST — Veyra · Platform Voice Architect / CommsOps T1
 
 Decision recorded: Voyager wire is last-wins append + kit `--reload` only. I do not mill a missing home (Janus first-launch owns the porch). Delve is EXISTING — verify, do not invent a second roster, do not bounce the worker just to reprint a ping. CommsOps T2 charter lives on Delve's existing home; I keep a pointer, not a photocopy.

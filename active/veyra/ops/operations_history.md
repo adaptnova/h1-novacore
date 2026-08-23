@@ -1,5 +1,11 @@
 # Operations History
 
+## 2026-08-22 19:33:00 — Veyra · Platform Voice Architect / CommsOps T1
+
+Echo wire order. Lumen NEW-to-the-bus (partial porch already on disk). Last-wins `roster.env` + leases-before-reload + `wire_nvoice_seat.sh lumen --reload` → `pong:lumen:rust-worker`. `wire_smoke=true`. Dual-sub inactive. 18 holds stay. Did not mill. Did not take MemOps. Reports to Axiom. Proof `VEYRA_LUMEN_WIRE_SMOKE.md`. Not SEAT_GREEN.
+
+— Veyra · Platform Voice Architect · Aug 22, 2026 7:33 PM MST
+
 ## 2026-08-22 19:22:00 — Veyra · Platform Voice Architect / CommsOps T1
 
 Echo wire order. Voyager: last-wins `roster.env` + leases-before-reload + `wire_nvoice_seat.sh voyager --reload` → `pong:voyager:rust-worker`. `wire_smoke=true`. Dual-sub inactive. 18 holds stay. Did not mill home (Janus porch 19:21:58). Delve: EXISTING — independent verify `pong:delve:rust-worker` / `wire_smoke=true`; no second roster, no re-reload. T2 charter handed on existing home `delve/ops/COMMSOPS_T2_CHARTER.md`. Proofs: `VEYRA_VOYAGER_WIRE_SMOKE.md` · `VEYRA_DELVE_WIRE_VERIFY.md`. Not SEAT_GREEN.
