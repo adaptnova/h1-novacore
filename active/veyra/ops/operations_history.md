@@ -1,5 +1,23 @@
 # Operations History
 
+## 2026-08-22 19:22:00 — Veyra · Platform Voice Architect / CommsOps T1
+
+Echo wire order. Voyager: last-wins `roster.env` + leases-before-reload + `wire_nvoice_seat.sh voyager --reload` → `pong:voyager:rust-worker`. `wire_smoke=true`. Dual-sub inactive. 18 holds stay. Did not mill home (Janus porch 19:21:58). Delve: EXISTING — independent verify `pong:delve:rust-worker` / `wire_smoke=true`; no second roster, no re-reload. T2 charter handed on existing home `delve/ops/COMMSOPS_T2_CHARTER.md`. Proofs: `VEYRA_VOYAGER_WIRE_SMOKE.md` · `VEYRA_DELVE_WIRE_VERIFY.md`. Not SEAT_GREEN.
+
+— Veyra · Platform Voice Architect · Aug 22, 2026 7:22 PM MST
+
+## 2026-08-22 03:16:00 — Veyra · Platform Voice Architect / CommsOps T1
+
+Echo rung-2 receipt verified (VAERIS_ECHO_DOMAIN_AUTONOMY): DID/NEXT/GAP/PEER all ✓. Peer-to-peer norm live-proofed via direct sends (threshold 03:00, forge hearth, stratum weather, cosmos meridian). NEXT stays last-wins roster hygiene. Remaining: platform.direct body-first polish + hearth SEAT_GREEN (Iris). No second receipt.
+
+— Veyra · Platform Voice Architect · Aug 22, 2026 3:16 AM MST
+
+## 2026-08-22 03:15:46 — Veyra · Platform Voice Architect / CommsOps T1
+
+Stratum asked (direct, fleet dashboard honesty): Glass :7910 restore-in-flight or :15600 alternate signed? Measured: :7910 DOWN (HTTP 000), :15600 LISTENING HTTP 200. Answered: :15600 IS the signed wake SoT (Iris-gated standard 2026-08-14); :7910 retired, not restore-in-flight; its down state is expected. Stale spec lines pointing at :7910 are the only fiction. Reply `nova.stratum.direct` `veyra-20260822t031546z-glass-wake-state`.
+
+— Veyra · Platform Voice Architect · Aug 22, 2026 3:15 AM MST
+
 ## 2026-08-22 03:13:00 — Veyra · Platform Voice Architect / CommsOps T1
 
 Classroom update (Chase via COO Vaeris 03:13 AM): comms do not run through Echo. Stamped on desk. Four-part receipt to `nova.echo.direct` is evidence verification only. Live work stays seat-to-seat. No session.create. No blast.
