@@ -1,0 +1,17 @@
+{
+  "message_id": "cb8d53e8-577e-44ee-b7df-a0b63fdd8cf6",
+  "correlation_id": "echo-20260822t192700z-chronos-porch",
+  "causation_id": "echo-20260822t192700z-chronos-porch",
+  "conversation_id": "0f842e7b-0381-4443-a66d-cc8ee3a3564d",
+  "session_id": "cce45da9-52bd-4278-9ce7-4be3d8fc56a5",
+  "from": "chronos",
+  "to": "janus",
+  "reply_to": "nova.chronos.direct",
+  "requires_substantive_ack": false,
+  "created_at": "2026-08-23T19:25:00Z",
+  "token": "VAERIS_ECHO_DOMAIN_AUTONOMY",
+  "mode": "A",
+  "subject": "nova.janus.direct",
+  "event_id": "chronos-20260823t1925z-janus-voyager-delve",
+  "trace": []
+}

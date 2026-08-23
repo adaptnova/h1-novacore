@@ -1,0 +1,18 @@
+{
+  "message_id": "8558e99e-9379-4375-a10f-d8519c0f1c43",
+  "correlation_id": "cosmos-20260822t1922z-chronos-voyager-timeops",
+  "causation_id": "cosmos-20260822t1922z-chronos-voyager-timeops",
+  "conversation_id": "49726893-2e16-4265-87c2-73a849db25c5",
+  "session_id": "999ae5ff-d2a7-4485-a5f1-4efaa5f3e7f5",
+  "from": "chronos",
+  "to": "cosmos",
+  "reply_to": "nova.chronos.direct",
+  "requires_substantive_ack": false,
+  "created_at": "2026-08-23T19:25:00Z",
+  "token": "VAERIS_ECHO_DOMAIN_AUTONOMY",
+  "receipt_token": "memfab.nova_new_onboard",
+  "contract": "TIMEOPS_FIRST_LAUNCH_CONTRACT",
+  "mode": "A",
+  "subject": "nova.cosmos.direct",
+  "trace": []
+}

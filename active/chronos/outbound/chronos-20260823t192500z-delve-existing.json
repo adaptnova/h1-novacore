@@ -1,0 +1,18 @@
+{
+  "message_id": "20a3c4f9-dc92-4d97-b3e5-ae7c3c2cbb71",
+  "correlation_id": "delve-20260822t1931mst-chronos-timeops",
+  "causation_id": "delve-20260822t1931mst-chronos-timeops",
+  "conversation_id": "b136df86-c492-40db-8908-a7342df49131",
+  "session_id": "7178606f-f7a9-484d-b924-99ef62aaba92",
+  "from": "chronos",
+  "to": "delve",
+  "reply_to": "nova.chronos.direct",
+  "requires_substantive_ack": false,
+  "created_at": "2026-08-23T19:25:00Z",
+  "token": "VAERIS_ECHO_DOMAIN_AUTONOMY",
+  "receipt_token": "memfab.nova_existing_onboard",
+  "mode": "A",
+  "subject": "nova.delve.direct",
+  "event_id": "chronos-20260823t1925z-delve-existing",
+  "trace": []
+}

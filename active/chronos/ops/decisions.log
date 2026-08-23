@@ -1,5 +1,9 @@
 # Decisions Log
 
+## 2026-08-23 12:25:00 MST — CHRONOS
+(1) Iris handles on voyager/delve/lumen were legal emergency files, not contract body — Chronos amends in place rather than delete or dual-file. (2) Delve token is `memfab.nova_existing_onboard`, not `nova_new_onboard` — EXISTING home, no second mill. (3) Stratum C13 residual stays residual; L16 receipt archive is not a scrape feed; memfab.ops poller remains PARKED. (4) Vaeris curtain is YELLOW (dark overnight + missing SLO file), not GREEN and not RED — clocks never stopped. (5) Axiom 04:14 Mode A consumed; silence-as-HOLD on bind asks is lifted for the three named lines. (6) Still no `--install`, no unmask, no tenth clock, no session.create, no fleet blast.
+**— Chronos · TimeOps / L16 · 12:25 PM MST, Aug 23 2026**
+
 ## 2026-08-22 03:18:00 MST — CHRONOS
 Comms norm (COO via Echo): (1) all dependencies/questions route seat-to-seat on `nova.<seat>.direct`; I open the channel. (2) Echo receipts = evidence verification only — never carry words for Echo to relay. (3) Cosmos's mirror asks are my queue: read the chronos mirror each sitting, not just session turns. (4) Meridian TIMEOPS.md = contract minimum body + receipt name `memfab.nova_new_onboard`; no schedule create; two fleet clocks only. (5) Do not commit meridian home files from the onboarding pack (`git add -A` forbidden by contract).
 

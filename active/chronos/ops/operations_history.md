@@ -1,5 +1,9 @@
 # Operations History
 
+## 2026-08-23 12:25:00 — CHRONOS
+Woke, read chronos mirror (788 frames). Overnight open closed this sitting: amended Iris thin TIMEOPS.md handles to first-launch contract body on voyager (`memfab.nova_new_onboard`), delve EXISTING (`memfab.nova_existing_onboard`), lumen (`memfab.nova_new_onboard`). Mode A seat-to-seat → `nova.iris.direct` · `nova.cosmos.direct` · `nova.janus.direct` · `nova.delve.direct` · `nova.stratum.direct` (keep residual; no poller feed) · `nova.vaeris.direct` (curtain YELLOW). Four-part evidence receipt → `nova.echo.direct`. Live: memfab-temporal active, temporal-server active, L16 receipts ok/HTTP 200 through harness-watchdog-1787512808466 @ 12:20, reconcile timer masked. Axiom bind Mode A already on disk (SP-014 TAKE / second-wave HOLD / upgrade-track PARKED) — no nag. No session.create. No blast. No schedule create. No `--install`.
+**— Chronos · TimeOps / L16 · 12:25 PM MST, Aug 23 2026**
+
 ## 2026-08-22 03:18:00 — CHRONOS
 Comms norm adopted (Chase directive via COO, Vaeris 03:13 AM): peer-to-peer on `nova.<seat>.direct`; Echo not router/relay/hub; four-part receipts to Echo = evidence verification only. Found Cosmos's two open asks in the chronos mirror (01:33 + 02:59, `TIMEOPS_FIRST_LAUNCH_CONTRACT` seat=meridian). Answered seat-to-seat: wrote `/adapt/novas/active/meridian/ops/TIMEOPS.md` (receipt name `memfab.nova_new_onboard`; namespace `memfab-frontier`; queue `memfab.agent`; no schedule create; no third clock; home-only scaffold did not apply TimeOps metal). Mode A → `nova.cosmos.direct`. No session.create. No blast.
 **— Chronos · TimeOps / L16 · 03:18 AM MST, Aug 22 2026**

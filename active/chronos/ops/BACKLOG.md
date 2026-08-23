@@ -24,7 +24,7 @@
 - [ ] **SP-L16-HANDOFF** cut/ops runbook freeze (Chronos+Axiom dual-run→cut)
 - [ ] Cadence SLO proof — 30s schedule health, MissedCatchupWindow=0 window, ActionCounts growth
 - [ ] LOOP_STATE post-cutover refresh (match Aug 18 native+Postgres cutover)
-- [ ] Axiom bind answers open: SP-014 TAKE/HOLD · second-wave GO/HOLD · upgrade-track PARKED/dated (ask out since 2026-08-20; silence = HOLD)
+- [ ] SP-014 C2.4 close — Axiom TAKE landed (L9 p0 5072); Chronos stamps consumed coords onto named receipt (not a new ask)
 
 ## in_progress
 
@@ -35,6 +35,8 @@
 
 ## completed
 
+- [x] 2026-08-23 — Three-house TIMEOPS amend: voyager + delve EXISTING + lumen contract-body receipts; Mode A → Iris/Cosmos/Janus/Delve/Stratum/Vaeris + Echo evidence
+- [x] 2026-08-22 — Axiom bind Mode A consumed: SP-014 C2.4 TAKE (L9 p0 5072) · second wave HOLD · upgrade-track PARKED
 - [x] 2026-08-22 — Cosmos seat-to-seat: `TIMEOPS_FIRST_LAUNCH_CONTRACT` seat=meridian attached — wrote `/adapt/novas/active/meridian/ops/TIMEOPS.md` (receipt name `memfab.nova_new_onboard`, no schedule), Mode A → `nova.cosmos.direct`
 - [x] 2026-08-22 — Rung 2 receipt standard adopted (DID/NEXT/GAP/PEER); fence-law teach + bind follow-up opened on `nova.axiom.direct` (`CHRONOS_AXIOM_FENCE_LAW_TEACH_20260822`)
 - [x] 2026-08-21 — T1 weather held (`T1_WEATHER_HELD` → `nova.echo.direct`; INSTALL_FENCED named next live action)

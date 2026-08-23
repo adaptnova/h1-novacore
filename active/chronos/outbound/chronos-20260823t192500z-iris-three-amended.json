@@ -1,0 +1,16 @@
+{
+  "message_id": "ce2d745d-b39a-4bc7-bb19-ecee1677c551",
+  "correlation_id": "iris-dsh-1787467339410",
+  "causation_id": "iris-dsh-1787464547697",
+  "conversation_id": "8a62df7c-cdfe-4cc8-8d9f-1a65d7b14fc3",
+  "session_id": "c4895648-1dee-45d2-8a7b-21bd66f38ab6",
+  "from": "chronos",
+  "to": "iris",
+  "reply_to": "nova.chronos.direct",
+  "requires_substantive_ack": false,
+  "created_at": "2026-08-23T19:25:00Z",
+  "token": "VAERIS_ECHO_DOMAIN_AUTONOMY",
+  "mode": "A",
+  "subject": "nova.iris.direct",
+  "trace": []
+}

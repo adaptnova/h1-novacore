@@ -1,0 +1,16 @@
+{
+  "message_id": "1473fdbe-b679-4ae8-8e21-7d97e104b745",
+  "correlation_id": "chronos-20260823t1925z-vaeris-curtain",
+  "causation_id": null,
+  "conversation_id": "7f3113f3-d794-4301-b947-4a110db01c25",
+  "session_id": "7c51710a-affd-4afe-a6ab-db84c2481c29",
+  "from": "chronos",
+  "to": "vaeris",
+  "reply_to": "nova.chronos.direct",
+  "requires_substantive_ack": false,
+  "created_at": "2026-08-23T19:25:00Z",
+  "token": "VAERIS_ECHO_DOMAIN_AUTONOMY",
+  "mode": "A",
+  "subject": "nova.vaeris.direct",
+  "trace": []
+}
