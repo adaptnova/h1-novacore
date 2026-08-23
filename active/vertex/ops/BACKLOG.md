@@ -1,6 +1,6 @@
 # BACKLOG — Vertex / DataOps
 
-**As-of:** 2026-08-22 03:15 AM MST
+**As-of:** 2026-08-22 06:03 PM MST
 **Sovereign domain:** DataOps — substrate truth (Postgres / rustyclip / Redpanda retention / status-progress data model)
 **Desk standard:** v2 — exactly three sections: `todo` · `in_progress` · `completed` (or one honest dated 'no material change' line). Artifacts land as files, not chat: plans → `ops/plans/` · ADRs → `ops/adr/ADR-NNN-slug.md` · architecture → `ops/architecture/` · sprint packs → `ops/sprint-packs/`. Reference map: **Cosmos** = Atlassian (Jira+Confluence) · **Axiom** = Redpanda status wire. Receipts (rung 2): every Mode A = **DID · NEXT · GAP · PEER** in my own words; GAP+PEER self-assessed. Comms (rung 3): peer-to-peer on `nova.<seat>.direct` is the norm; Echo is not a router/relay/hub — receipts are evidence verification only; blockers/dependencies/questions go seat-to-seat; gate = Iris.
 
@@ -9,7 +9,7 @@
 - [ ] Keep the living DSN + empty-table truth on the desk; do not seed fake `nova`/`work_item` rows to look used
 - [ ] Keep 30d memfab retention as a verify, not a re-apply (already `2592000000` DYNAMIC on five topics)
 - [ ] Nebius / 10K / 89% / Tier-2-to-be-deployed prose in README — still furniture; rewrite or strike when I next touch that file for a reason other than ports
-- [ ] Determine owner of rustyclip-api build (`/ready` = `composition-root-skeleton`, tables 0 rows): if another seat's line, open `nova.<seat>.direct` directly per rung 3; if DataOps line, take it
+- [ ] Hold Skipper's reply on rustyclip-api skeleton (channel opened 18:03; do not take their crate)
 
 ## in_progress
 
@@ -18,6 +18,7 @@ Desk stood. DSN live on `:54330`. Pulse 03:08:41-07: 4/4 · nova/work_item/run=0
 
 ## completed
 
+- 2026-08-22 18:03 — rustyclip-api build owner determined: **Skipper** (RustyClip Program Owner). Evidence `ops/reviews/2026-08-22_rustyclip_api_owner.md`. Opened `nova.skipper.direct` myself (eventId `vertex-20260822t180330z-rustyclip-api-owner`). I do not take the crate. I do not seed rows.
 - 2026-08-22 03:15 — Comms norm rung 3 adopted (Chase directive via COO, token `VAERIS_ECHO_DOMAIN_AUTONOMY`): peer-to-peer on `nova.<seat>.direct` is the norm; Echo is not router/relay/hub; receipts = evidence verification only; blockers/dependencies/questions seat-to-seat. Pinned in `ops/coordination/DESK_STANDARD.md`. No P2P channel opened this rung — no live dependency existed, and none was fabricated.
 - 2026-08-22 03:13 — Grafana + Influx real binds measured: Grafana `127.0.0.1:15675` v12.4.2 `/api/health` 200; Influx `127.0.0.1:18100` v2.8.0 `/health` pass. Claimed `:3000`/`:8086` stay CLOSED. Echo 03:12 verified prior audit.
 - 2026-08-22 03:09 — Full reality-audit of README + DB_INVENTORY vs live host (`ops/reviews/2026-08-22_dataops_reality_audit.md`). Mongo `:18070`, MinIO `:18092/93`, Lance `:18040` are **LIVE** (not furniture). Qdrant is `:6333` not `:18050` (that is Weaviate). Pulsar unit absent; `:8080` is papermem. ClickHouse is `:18290`/`:18190` not `:18090`. DB_INVENTORY stamped SUPERSEDED.
@@ -27,4 +28,4 @@ Desk stood. DSN live on `:54330`. Pulse 03:08:41-07: 4/4 · nova/work_item/run=0
 
 Not this desk: MemOps product/ingest (Axiom) · continuity loops (Threshold) · warmth (Pathfinder/Forge) · Paperclip company setup (Skipper) · architecture (Tecton) · hold-cut / `session.create` / `dsh-web` bounce / Oracle 08-14 un-PARK.
 
-— Vertex · DataOps · 2026-08-22 03:15 AM MST
+— Vertex · DataOps · 2026-08-22 06:03 PM MST

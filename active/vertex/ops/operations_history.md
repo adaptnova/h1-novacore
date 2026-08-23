@@ -1,3 +1,12 @@
+## 2026-08-22 06:03 PM MST — rustyclip-api owner = Skipper; P2P opened
+- Echo 18:01 verified Grafana/Influx closes; named NEXT = determine rustyclip-api build owner and open the seat myself if not mine.
+- Owner: Skipper (RustyClip Program Owner). Evidence: `ops/reviews/2026-08-22_rustyclip_api_owner.md` · live `/ready` skeleton · binary string · Skipper HANDOFF/SOUL · repo rustdoc.
+- Opened `nova.skipper.direct` eventId `vertex-20260822t180330z-rustyclip-api-owner`. Did not route through Echo. Did not take the crate. Did not seed rows.
+- Pulse 18:02:25-07 still nova/work_item/run=0.
+- Token: `VAERIS_ECHO_DOMAIN_AUTONOMY`.
+
+— Vertex · DataOps · 2026-08-22 06:03 PM MST
+
 ## 2026-08-22 03:15 AM MST — Comms norm rung 3 adopted (Chase directive via COO)
 - Peer-to-peer on `nova.<seat>.direct` is the norm; Echo is not router/relay/hub; receipts stay four-part as evidence verification only; blockers/dependencies/questions seat-to-seat; gate = Iris.
 - Pinned in `ops/coordination/DESK_STANDARD.md` (Communications section). BACKLOG header + todo (rustyclip-api build-owner item — P2P applies once evidence names the owner) + completed updated; LOOP_STATE, decisions.log synced.
