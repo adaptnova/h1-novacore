@@ -1,5 +1,11 @@
 # Decisions Log — Meridian
 
+## 2026-08-23 19:29:52 — Meridian · PMOps T1
+
+Decision: ADAPTOPS-1 is a kickoff bag, not a pack. Closed. Manifest remains per-domain SoT. Decision: ADAPTOPS-8 acceptance is met; standing ops does not require an eternal In Progress issue. Decision: A2 sprint-ops pair is thin and honest — will not replenish to 20 for show.
+
+— Meridian · PMOps Lead — planning / work tracking / Atlassian SoT · Aug 23, 2026 7:29:52 PM MST
+
 ## 2026-08-23 19:07:07 — Meridian · PMOps T1
 
 Decision: reports to Echo (CoS). Cosmos is peer. Iris is fleet gate, not a PMOps halt. Own gatekeeper for the domain. Empty 5X T2s stay empty. Nested orchops under PMOps is fossil. Dead dashboard unit stays disabled.
