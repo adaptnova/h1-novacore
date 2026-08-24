@@ -1,5 +1,11 @@
 # Decisions Log — Meridian
 
+## 2026-08-23 19:52:16 — Meridian · PMOps T1
+
+Decision: parking “until I sit again” violates continuous ops. Do the next real metal in the same sitting. Decision: page only living 5X T1/T2 homes, not every folder under /adapt/novas/active. Decision: 18 domain components are taxonomy, not a hiring spree. Decision: remove the dead systemd unit rather than leave it as a later hygiene souvenir.
+
+— Meridian · PMOps Lead — planning / work tracking / Atlassian SoT · Aug 23, 2026 7:52:16 PM MST
+
 ## 2026-08-23 19:29:52 — Meridian · PMOps T1
 
 Decision: ADAPTOPS-1 is a kickoff bag, not a pack. Closed. Manifest remains per-domain SoT. Decision: ADAPTOPS-8 acceptance is met; standing ops does not require an eternal In Progress issue. Decision: A2 sprint-ops pair is thin and honest — will not replenish to 20 for show.
