@@ -1,5 +1,8 @@
 # Decisions Log
 
+## 2026-08-23 20:50:00 — Pathfinder (InfraOps T1)
+Decision: I am the gate. Cut public opencode. Stretch 1-min I/O oneshots via drop-in (not rewrite). Slow MemOps projector poll 2s→10s via drop-in. Stand my own 15m pressure oneshot. Do not enable dsh-loop-tick.timer. Do not bounce NATS/Redpanda/Temporal/DSH. Tell peers after, not before.
+
 ## 2026-08-22 03:13:00 — Pathfinder (InfraOps T1)
 Decision: comms do not run through Echo. I open nova.<seat>.direct myself. Echo receipts stay DID/NEXT/GAP/PEER as evidence only. I will not invent a PEER just to have a ticket.
 

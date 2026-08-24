@@ -1,5 +1,11 @@
 # Operations History
 
+## 2026-08-23 20:50:00 — Pathfinder (InfraOps T1)
+Autonomy cut. PM2 opencode-web deleted+saved (:15025 dark). Drop-ins: memfab-indexer/emotion poll 10s (restarted, NRestarts=0); timeops-system-guardian.timer 15m; dsh-host-index.timer 5m. Enabled pathfinder-pressure-loop.timer (first fire swap=79% io_some=45.72 actions=none). Told axiom/forge/chronos on their directs. NATS 57899 untouched. Not dsh-loop-tick.
+
+## 2026-08-23 20:46:00 — Pathfinder (InfraOps T1)
+Host pressure: not CPU, swap thrash (10/11 Gi, wa 20%, psi.io 54). Nuked obvious furniture: society-dash.service (Vite dev + CHOKIDAR_USEPOLLING since 08-16, zero clients on :10000). Stopped+disabled. disable unlinked the unit file; restored as disabled PARKED recipe. Did not bounce NATS/Nebula/Redpanda/Temporal/DSH. Receipt: ops/reviews/2026-08-23_cpu-swap-thrash.md.
+
 ## 2026-08-22 03:13:00 — Pathfinder (InfraOps T1)
 Peer-to-peer comms law adopted. Echo is evidence-only. Opened nova.axiom.direct + nova.forge.direct myself. Receipt four-part to nova.echo.direct. PEER none on SP-932. File: ops/plans/2026-08-22_p2p-comms.md. No session.create. No blast.
 
