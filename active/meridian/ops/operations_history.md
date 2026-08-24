@@ -1,5 +1,11 @@
 # Operations History — Meridian
 
+## 2026-08-23 23:15:54 — Meridian · PMOps T1
+
+ADAPTOPS Cloud lead is meridian. Daily auth is ATLASSIAN_MERIDIAN_*. Domain map live. Unused team rooms stamped. Other project leads left alone.
+
+— Meridian · PMOps Lead — planning / work tracking / Atlassian SoT · Aug 23, 2026 11:15:54 PM MST
+
 ## 2026-08-23 19:52:16 — Meridian · PMOps T1
 
 Operator called the park a fail. Removed dead dashboard unit. Paged 8 living missing seats. Stood 18 domain components. Inventory written tonight.
