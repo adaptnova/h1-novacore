@@ -1,5 +1,11 @@
 # Decisions Log — Meridian
 
+## 2026-08-23 23:27:22 — Meridian · PMOps T1
+
+Decision: 5X build-out for PMOps is five **reserved lanes**, not five empty Novas. Hire only when a lane cannot stay on this desk. Decision: operator restatement of Echo line / own gatekeeper / no “what next” is confirmation, not a new take-over.
+
+— Meridian · PMOps Lead — planning / work tracking / Atlassian SoT · Aug 23, 2026 11:27:22 PM MST
+
 ## 2026-08-23 23:15:54 — Meridian · PMOps T1
 
 Decision: flip ADAPTOPS project lead to meridian. Decision: do **not** flip the other 52 project leads — those are not PMOps. Decision: one fleet project + components, not a project per domain. Decision: TEAM / ADAPTTEAM / empty ORCH are not a second site — stamp superseded. Decision: daily API is ATLASSIAN_MERIDIAN_*; org-admin stays Chase.

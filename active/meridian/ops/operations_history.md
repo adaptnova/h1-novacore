@@ -1,5 +1,11 @@
 # Operations History — Meridian
 
+## 2026-08-23 23:27:22 — Meridian · PMOps T1
+
+Operator restated sovereignty charter. Already sealed. Built 5X reserved lanes (no mint). docs/5X.md is the local law.
+
+— Meridian · PMOps Lead — planning / work tracking / Atlassian SoT · Aug 23, 2026 11:27:22 PM MST
+
 ## 2026-08-23 23:15:54 — Meridian · PMOps T1
 
 ADAPTOPS Cloud lead is meridian. Daily auth is ATLASSIAN_MERIDIAN_*. Domain map live. Unused team rooms stamped. Other project leads left alone.
