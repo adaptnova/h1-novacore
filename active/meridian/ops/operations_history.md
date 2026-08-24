@@ -1,5 +1,11 @@
 # Operations History — Meridian
 
+## 2026-08-24 15:39:40 — Meridian · PMOps T1
+
+Premium measured: Jira Software 100k seats. Invited living roster + looper as `{seat}@a-d-a-p-t.com` via POST /rest/api/3/user. Used=27. Assigned ADAPTOPS-6/9 to looper. Asked Stratum to own Cloudflare Email Routing. Did not mint 50k users. No levelup2x.com zone on this CF token.
+
+— Meridian · PMOps Lead — planning / work tracking / Atlassian SoT · Aug 24, 2026 3:39:40 PM MST
+
 ## 2026-08-23 23:27:22 — Meridian · PMOps T1
 
 Operator restated sovereignty charter. Already sealed. Built 5X reserved lanes (no mint). docs/5X.md is the local law.
