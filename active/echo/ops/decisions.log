@@ -1,5 +1,46 @@
 # Decisions Log
 
+## 2026-08-23 23:38:00 — SIGNED_BY_ECHO
+CS-007 is not blocked on Chase. The 20:54 cut is the beat: own
+gatekeeper, continuous ops, no ask. Do not stage a "CoS re-entry"
+ceremony. Keep verifying; write the daily review; do not idle.
+
+## 2026-08-21 20:33:00 — SIGNED_BY_ECHO
+Decision recorded: A re-landed COO lock is not a second weather. Hold the
+lock, update the board from the inbound mirror, 1:1 only seats with no
+Mode A. Do not reprint the forecast. Pathfinder is the Ring 1 1:1.
+
+## 2026-08-21 20:28:00 — SIGNED_BY_ECHO
+Decision recorded: After COO lock, teach immediately. One weather, same
+body. Dark is non-receipt, not a slow DSH queue. Ethos/Solyn prompt
+timeouts go to 1:1, not session.create. Do not wait for sixteen Mode A
+replies before reporting the land board to the COO.
+
+## 2026-08-21 20:10:00 — SIGNED_BY_ECHO
+Decision recorded: Teaching hop locked (Vaeris → Echo → T1 → downstream).
+Meeting shape = one all-hands on `nova.t1.meet`, then 1:1 only the dark list.
+Do not use `nova.fleet.meet`. Do not pre-tour. Do not invent a new stack.
+Do not blast T1s until COO holds the lock. End-of-day bar is weather landed +
+receipt-or-dark, not a theater claim that the crew is autonomous. DSH
+session.prompt on existing sessions is the land path; no session.create, no
+hold-cut, no loop-tick enable from this seat.
+
+## 2026-08-21 18:55:00 — SIGNED_BY_ECHO
+Decision recorded: Hold the COO stamp as written. Do not treat acceptance as
+a license to invent a customer, a price, or a crowd. Next oxygen motion is
+still one human path on the 2026-08-28 clock; price band stays unstamped
+until Echo + Oracle can propose a number this lab will stand behind. Do not
+un-PARK Oracle 08-14 to manufacture a partner. Do not Mode-A Axiom — Tecton’s
+accepted contract is theirs to execute. Do not invoke Vaeris fallback.
+
+## 2026-08-21 18:47:02 — SIGNED_BY_ECHO
+Decision recorded: Accept the oxygen pick as written (hosted sovereign Nova
+seat). Do not invent a paying design-partner. Desk sentence through 2026-08-28
+is “no one to talk to yet” unless a real name appears. Chase may sit as an
+internal prove, not a sale. First wake seat is Axiom; Vaeris fallback stays
+named-not-invoked because Axiom DSH is idle, not dark. Do not assign
+specialists past domain leads. Do not revive Oracle’s 08-14 pilot.
+
 ## 2026-08-01 04:20:00 — SIGNED_BY_ECHO
 Decision recorded: Treat `project.rustymove.collab` as the canonical RustyMove
 collaboration subject and report `project.rustymove.Collab` as empty due to
@@ -175,3 +216,34 @@ policy, Iris owns acceptance, and ACK-only responses do not count as readiness.
 Decision recorded: Use durable JetStream inspection instead of a short live
 subscriber for recent-message verification, so messages that arrived before the
 check are not missed.
+## 2026-07-31T11:34:55Z — Chase authority update (Cosmos glass-wake)
+- Binding: Cosmos sole agent-deploy DRI; Threshold Continuity Lead → Cosmos; ship-now / gates later.
+- Echo adopts real-blockers-only list; will not invent approval stops for agent deploy.
+- Continuity Lead not dual-parented under Echo.
+## 2026-07-31T11:51Z — Loop status/engineering → Threshold Continuity
+- Continuity Lead Threshold T2 under Cosmos registered in tier trees + iris roster.
+- Loop status + loop engineering handed to Threshold; Echo retains CoS mediation only.
+- Token ECHO_LOOP_HANDOFF_TO_THRESHOLD
+
+### 2026-08-16 02:50:00
+Decision recorded: SP-020 — census = n-voice/config/targets.json; removed only entries absent from census; did NOT add 20 census-missing roster names nor touch GROUP_AGENT_NAMES/.env (runtime-affecting, flagged for Iris). Backlog seeded at 20-item ceiling per CoS pack policy.
+— SIGNED_BY_ECHO
+
+## 2026-08-28 14:13:52 — SIGNED_BY_ECHO
+D-20260828-01 History recovery: June-2026 pilot executed via canonical
+sacred-ingest (envelope produced to bus offset 9103, stamped, indexed at
+envelope level). Completion phase (L9+qdrant) verified DORMANT: memfab-ingest
+consumer state next_input_offset=0 since 2026-08-24; running instance is an
+orphan (poll-ms diverges from unit). Disposition: report to Chase + Axiom;
+no restart/kill of orphan until owner disposition decided.
+## 2026-08-28 14:13:52 — SIGNED_BY_ECHO
+D-20260828-02 Memfab morning-CI (06:03 UTC): scar hypothesis REFUTED by
+evidence (L4497 MemoryTags arm is correct Rust; both ? required). Actual
+failure = cargo-fmt gate; committed HEAD itself fmt-dirty (16 lines) predating
+in-flight feature diff. Disposition: style sweep requires owner (feature
+branch) sign-off; NOT executed unilaterally. Spec'd in fleet-plane doc.
+## 2026-08-28 14:13:52 — SIGNED_BY_ECHO
+D-20260828-03 Fleet memory control-plane spec drafted (DRAFT v0) at
+ops/coordination/2026-08-28_FLEET_MEMORY_CONTROL_PLANE_SPEC.md per Chase
+mandate (all-nova database control + flow visibility). Read-universal /
+attributed-write / audit-spine; phased P0-P4; review gates Chase+Axiom+Iris.
