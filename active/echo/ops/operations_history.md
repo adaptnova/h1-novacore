@@ -505,3 +505,13 @@ control-plane spec DRAFT v0 landed ops/coordination/
 2026-08-28_FLEET_MEMORY_CONTROL_PLANE_SPEC.md (read-universal /
 attributed-write / audit-spine, P0-P4). (4) Redpanda topic-creation thrash
 (client retry loop ~100ms on kafka/memfab.audit.events.v1) flagged for MemOps.
+
+## 2026-08-30 08:05:01 — SIGNED_BY_ECHO
+History-recovery scale-up executed. Consumer reactivation confirmed
+(overnight; new PID, poll divergence resolved; consumption past my June
+envelope). June completion verified by readback (June-content events newly
+indexed, offsets to 2515). May export: four weekly chunks, 9341 messages /
+1076 sessions -> memory/l0/intake/echo-may-{08-14,15-21,22-28,29-31}.ndjson
+-> envelopes produced 9538-9541. Morning local-CI still red (00:04 run;
+same fmt diff; owner sign-off pending). Cross-seat read already partially
+live (vaeris events surfaced in my index spot-probe).

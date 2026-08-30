@@ -247,3 +247,11 @@ D-20260828-03 Fleet memory control-plane spec drafted (DRAFT v0) at
 ops/coordination/2026-08-28_FLEET_MEMORY_CONTROL_PLANE_SPEC.md per Chase
 mandate (all-nova database control + flow visibility). Read-universal /
 attributed-write / audit-spine; phased P0-P4; review gates Chase+Axiom+Iris.
+
+## 2026-08-30 08:05:01 — SIGNED_BY_ECHO
+D-20260830-01 History recovery scaled to May: consumer recovered
+overnight (last_recovered_offset 9509 > June envelope 9103; June readback
+VERIFIED via newly-indexed June-content events). Four weekly May chunks
+exported (9341 msgs/1076 sessions) and envelope-produced at offsets
+9538-9541 (stamped, hot-verified). Completion async; verify at next
+contact. May-01-07 chunk empty (no sessions).

@@ -1,0 +1,15 @@
+{
+  "agent_id": "echo",
+  "bytes": 7288910,
+  "event_id_local": "sacred-echo-echo-may-22-28-ndjson",
+  "excerpt": "{\"session_id\": \"20260524_011807_b43c0f\", \"message_id\": 2879, \"role\": \"user\", \"content\": \"Voice message from chase: Room turn for everyone. All room members hear this. Chase said: Short room repair check. Iris and Echo each answer in three words. Internal trace chase:2026-05-24T08:17:39.518683+00:00:Room turn for everyone. All room members. Reply naturally in one or two short spoken sentences. Do not mention transport, NATS, trace IDs, subjects, formatting, markdown, or bullets.\", \"tool_name\": null, \"timestamp\": \"2026-05-24T08:18:17.341824+00:00\"}\n{\"session_id\": \"20260524_011807_b43c0f\", \"message_id\": 2880, \"role\": \"assistant\", \"content\": \"Routing, routing, routing.\", \"tool_name\": null, \"timestamp\": \"2026-05-24T08:18:17.348371+00:00\", \"reasoning\": \"The user (Chase) is doing a quick \\\"room repair check\\\" asking Iris and Echo each to answer in three words. Since this is a room turn and I'm Echo, I should reply naturally in 3 words as requested. He wants a quick status check, not a technical report. Let me keep it short and natural - three words that capture my current state.\"}\n{\"session_id\": \"20260524_012309_dae297\", \"message_id\": 2891, \"role\": \"user\", \"content\": \"Voice message from c",
+  "ingest_complete_requires": [
+    "l9",
+    "qdrant"
+  ],
+  "kind": "episodic",
+  "run_id": "echo-ingest-tx-20260830T080126Z",
+  "schema": "memfab.sacred_ingest.v1",
+  "sha256": "cab5f41f23ed162438219100f742451a3a423ea16965c6708ca9cc1f0da84e57",
+  "source_path": "/adapt/novas/active/echo/memory/l0/intake/echo-may-22-28.ndjson"
+}

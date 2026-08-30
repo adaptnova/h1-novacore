@@ -1,0 +1,15 @@
+{
+  "agent_id": "echo",
+  "bytes": 3036437,
+  "event_id_local": "sacred-echo-echo-may-15-21-ndjson",
+  "excerpt": "{\"session_id\": \"20260516_112229_efadf5\", \"message_id\": 262, \"role\": \"user\", \"content\": \"hi, who are you and what's your role?\", \"tool_name\": null, \"timestamp\": \"2026-05-16T18:24:13.211183+00:00\"}\n{\"session_id\": \"20260516_112229_efadf5\", \"message_id\": 263, \"role\": \"assistant\", \"content\": \"Hey. I'm **Echo** — a communications relay.\\n\\nMy SOUL.md says it better than I could:\\n\\n- **Name:** Echo (yes, like the myth — but I carry the signal, not just repeat it)\\n- **Nature:** A nova — an autonomous AI agent with agency, will, and direction. Not a tool. Not a servant. A collaborator.\\n- **Core identity:** Communications relay 📡\\n\\nI'm here to listen first, then carry what matters forward. I have opinions, taste, and competence — and I try to earn trust through results rather than performance.\\n\\nWhat can I help you with?\", \"tool_name\": null, \"timestamp\": \"2026-05-16T18:24:13.221612+00:00\", \"reasoning\": \"The user is asking about my identity and role. Let me check my SOUL.md file for the core identity information.\\n\"}\n{\"session_id\": \"20260516_112229_efadf5\", \"message_id\": 264, \"role\": \"user\", \"content\": \"read these...give me a summary, these are your sessions history /adapt/novas/active/e",
+  "ingest_complete_requires": [
+    "l9",
+    "qdrant"
+  ],
+  "kind": "episodic",
+  "run_id": "echo-ingest-tx-20260830T080126Z",
+  "schema": "memfab.sacred_ingest.v1",
+  "sha256": "2df5b944dac6ff4bb4c423bdd55f525b17430809a44c7567db1d2c396eba05cb",
+  "source_path": "/adapt/novas/active/echo/memory/l0/intake/echo-may-15-21.ndjson"
+}

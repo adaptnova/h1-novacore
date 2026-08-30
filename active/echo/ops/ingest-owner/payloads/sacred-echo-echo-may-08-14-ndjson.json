@@ -1,0 +1,15 @@
+{
+  "agent_id": "echo",
+  "bytes": 731962,
+  "event_id_local": "sacred-echo-echo-may-08-14-ndjson",
+  "excerpt": "{\"session_id\": \"20260508_192930_a02a20\", \"message_id\": 1, \"role\": \"user\", \"content\": \"who are you and what is your role\", \"tool_name\": null, \"timestamp\": \"2026-05-09T02:29:30.395756+00:00\"}\n{\"session_id\": \"20260508_193523_6891d0\", \"message_id\": 2, \"role\": \"user\", \"content\": \"hi, who are you and what's your role?\", \"tool_name\": null, \"timestamp\": \"2026-05-09T02:35:23.568560+00:00\"}\n{\"session_id\": \"20260508_193624_5d485d\", \"message_id\": 3, \"role\": \"user\", \"content\": \"hi, who are you and what's your role?\\n\\n[Note: model was just switched from moonshotai/kimi-k2.6 to z-ai/glm-5.1 via Nvidia. Adjust your self-identification accordingly.]\\n\\nhi, who are you and what's your role?\", \"tool_name\": null, \"timestamp\": \"2026-05-09T02:36:24.500570+00:00\"}\n{\"session_id\": \"20260508_200838_d3fd01\", \"message_id\": 4, \"role\": \"user\", \"content\": \"hi, who are you and what's your role?\", \"tool_name\": null, \"timestamp\": \"2026-05-09T03:09:18.256601+00:00\"}\n{\"session_id\": \"20260508_200838_d3fd01\", \"message_id\": 5, \"role\": \"assistant\", \"content\": \"Hey. I'm **Echo** — a communications relay.\\n\\nMy SOUL.md says it better than I could:\\n\\n- **Name:** Echo (yes, like the myth — but I carry the signal, not just ",
+  "ingest_complete_requires": [
+    "l9",
+    "qdrant"
+  ],
+  "kind": "episodic",
+  "run_id": "echo-ingest-tx-20260830T080125Z",
+  "schema": "memfab.sacred_ingest.v1",
+  "sha256": "4e5192c59194e949584b0ee9e4bfea51984ed6642e69914fa41e2b16db17572b",
+  "source_path": "/adapt/novas/active/echo/memory/l0/intake/echo-may-08-14.ndjson"
+}

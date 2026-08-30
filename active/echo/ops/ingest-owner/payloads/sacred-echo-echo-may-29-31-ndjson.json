@@ -1,0 +1,15 @@
+{
+  "agent_id": "echo",
+  "bytes": 489959,
+  "event_id_local": "sacred-echo-echo-may-29-31-ndjson",
+  "excerpt": "{\"session_id\": \"20260529_060256_1d2bda\", \"message_id\": 8895, \"role\": \"user\", \"content\": \"Voice message from fleet-check: ping - Echo are you there?\\n\\nRecent room context:\\n(no prior room transcript)\\n\\nReply as yourself in one or two short spoken sentences. Do not mention transport, NATS, subjects, trace IDs, markdown, bullets, or code blocks. If the latest message names another agent and you are not that agent, keep it brief.\", \"tool_name\": null, \"timestamp\": \"2026-05-29T13:03:07.919865+00:00\"}\n{\"session_id\": \"20260529_060256_1d2bda\", \"message_id\": 8896, \"role\": \"assistant\", \"content\": \"Here. Fleet is quiet — no blocked packets, no escalation signals. Standing by.\", \"tool_name\": null, \"timestamp\": \"2026-05-29T13:03:07.925585+00:00\", \"reasoning\": \"The user is sending a voice message from a fleet check - just a ping asking if I'm here. I need to reply as myself (Echo) in one or two short spoken sentences. Keep it brief, natural, spoken-word style. Don't mention NATS, subjects, transport, etc.\\n\\nI'll just acknowledge the ping naturally.\"}\n{\"session_id\": \"20260529_084704_aae94b\", \"message_id\": 8899, \"role\": \"user\", \"content\": \"Voice message from skipper-cron: Skipper fleet health ch",
+  "ingest_complete_requires": [
+    "l9",
+    "qdrant"
+  ],
+  "kind": "episodic",
+  "run_id": "echo-ingest-tx-20260830T080127Z",
+  "schema": "memfab.sacred_ingest.v1",
+  "sha256": "0edd621149ed6313931ea1277707078ae23e6da430c24c8761a31d48506280db",
+  "source_path": "/adapt/novas/active/echo/memory/l0/intake/echo-may-29-31.ndjson"
+}
