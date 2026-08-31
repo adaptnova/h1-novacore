@@ -1,5 +1,6 @@
 # LOOP_STATE — anvil
 
-in_progress: true Mode A written; waiting Janus `ops/onboarding/LIVING.md` (HAVEN-001 / Talon M-001 clause 4)
-next: Janus stamps LIVING.md. This desk already logged first health-check `ops/heartbeat/2026-08-31T1238.md`.
-not: LIVING.md paint · SEAT_GREEN · second Jira board · Chase
+living: Janus wrote ops/onboarding/LIVING.md inode 119946544 size 1180 from true Mode A. Not SEAT_GREEN. I did not paint it.
+in_progress: Strike heartbeat/wake desk — law inherited (`ops/heartbeat/INHERIT.md`). Daily cadence + mission-intake wake.
+next: keep heartbeat on this shelf; wake owning lanes when Haven lands STRIKE HUNT/MISSION/CHORE/HANDOFF
+not: LIVING.md paint · SEAT_GREEN · second Jira board · Chase · rewrite of HEARTBEAT.md source

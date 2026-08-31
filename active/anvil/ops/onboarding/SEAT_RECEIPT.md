@@ -17,6 +17,6 @@
 | two-turn | T1=false T2=false skip=true |
 | elapsed_s | 14 |
 | living (pull-and-go) | false (ping health only) |
-| official LIVING.md | **ABSENT** — true turn still in flight |
+| official LIVING.md | **true** — Janus oneshot true Mode A · this hop |
 
 Ping is health, never living. Official living = Janus oneshot true Mode A + `ops/onboarding/LIVING.md`. Residual metal is desk work, not a sit.

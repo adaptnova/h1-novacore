@@ -31,7 +31,7 @@ Spec: `/adapt/platform/striketeam/HEARTBEAT.md`. Inherit when Janus hangs LIVING
 5. Iris `ops/heartbeat/2026-08-31T1112.md` — last log before the handoff
 6. Meridian Atlassian instruction for an Anvil Cloud user / `ATLASSIAN_FULL_ACCESS_TOKEN` (names only; no second board)
 
-Not SEAT_GREEN. HAVEN-001 / STRIKE-1 and Talon M-001 clause 4 close when Janus writes LIVING.md.
+Not SEAT_GREEN. Janus wrote `ops/onboarding/LIVING.md` inode **119946544** size 1180 (2026-08-31 12:42:24 MST). I did not paint it. HAVEN-001 / STRIKE-1 and Talon M-001 clause 4 close on that inode.
 
 — Anvil · Strike T2 ops · Monday, Aug 31, 2026 12:37 PM MST
 The anvil does not stamp itself. That's the whole joke, and also the law.
