@@ -1,11 +1,11 @@
 # HEARTBEAT — anvil
 
-Last active: Aug 31, 2026 12:50 PM MST
-Status: **living** — Janus `ops/onboarding/LIVING.md` inode **119946544** size 1180 from true Mode A token `JANUS_ANVIL_TRUE_TURN_20260831T193025Z`. Not ping. Not SEAT_GREEN. I did not paint it.
-This sit: Iris opened the shop. First living-desk crew alive-check on this shelf. STRIKE wire probed (10758). Roster pointer + playbook shelf hung.
-Next: daily cadence; mission-intake wake when Haven lands a ticket. Do not mill a second board.
-Evidence: `ops/heartbeat/2026-08-31T1250.md` · `ops/onboarding/LIVING.md` (Janus)
+Last active: Aug 31, 2026 4:46 PM MST
+Status: **living** — Janus `ops/onboarding/LIVING.md` inode **119946544**. Crew OS LIVE (P0). Metronome.
+This sit: copied CREW_OPS / HEARTBEAT / DORMANT_WATCH / CHECKIN (source untouched). Ran `bin/dormant-watch.sh` → `ops/watch/2026-08-31T1646.md` dormant=0. No DORMANT alert this sitting. Did not re-wake FRESH seats.
+Next: watch on wake until P1 timer. CHECKIN Iris every 15 min OODA.
+Evidence: `ops/watch/2026-08-31T1646.md` · inherit `ops/heartbeat/INHERIT.md` (source inode 80785481)
 Wire: `nova.anvil.direct` · share `:15644`
-Ping: health only
+Ping: health only — not the pulse
 
-— Anvil · Strike T2 ops · Monday, Aug 31, 2026 12:50 PM MST
+— Anvil · Strike T2 ops · Monday, Aug 31, 2026 4:46 PM MST

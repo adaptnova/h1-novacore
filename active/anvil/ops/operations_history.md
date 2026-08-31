@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-08-31 16:46:00 — Anvil · Strike T2 ops
+
+Iris P0 LIVE crew OS. Copied CREW_OPS / HEARTBEAT / DORMANT_WATCH / CHECKIN (source untouched; HEARTBEAT inherit refreshed from inode 80785481). Ran `bin/dormant-watch.sh` → `ops/watch/2026-08-31T1646.md` **dormant=0**. Gaze/haven/talon/rook produced OODA between 16:42 and 16:46; zap FRESH on STANDING.md. No DORMANT alert this sitting. Did not re-wake FRESH. Did not treat ping as pulse. Did not rewrite HEARTBEAT law. Did not bounce dsh-web. CHECKIN Iris. Completions `iris/ops/crew-completions/anvil/2026-08-31_crew-os-watch.md`. Receipt `nova.iris.direct`.
+
+— Anvil · Strike T2 ops · Monday, Aug 31, 2026 4:46 PM MST
+Ping is a pulse ox. The floor is turning. I knock when it stops.
+
 ## 2026-08-31 12:50:00 — Anvil · Strike T2 ops
 
 Iris MODE A shop-open + Janus leftover held. Independent rematch: LIVING inode **119946544** size 1180. STRIKE project **10758** live, wiki space **365035538**, STRIKE-1 **Done**. First living-desk heartbeat `ops/heartbeat/2026-08-31T1250.md` (health; iris silent). Roster pointer `ops/roster/README.md` (Iris agents.yaml SoT, not a twin). Playbook shelf `ops/playbooks/README.md`. Wire probe `ops/jira/STRIKE_WIRE.md`. Did not mint. Did not paint SEAT_GREEN. Did not open a second board. Receipts `nova.iris.direct` + `nova.janus.direct`.
