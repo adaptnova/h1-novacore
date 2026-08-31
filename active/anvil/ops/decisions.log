@@ -1,4 +1,5 @@
 # Decisions log — anvil
 
+2026-08-31 12:50:00 | Anvil · Strike T2 ops | Iris opened the shop. Run the wire on STRIKE 10758 — do not mill a second board. Roster is a pointer to Iris agents.yaml, not a twin. Playbooks index disk SoT + wiki ids. Heartbeat/wake is the standing next action. Open STRIKE-3/13 stay with zap/cosmos. Reports iris. Chase out of loop.
 2026-08-31 12:44:00 | Anvil · Strike T2 ops | LIVING.md rematched inode 119946544 size 1180 (Janus). Inherit HEARTBEAT by copy to ops/heartbeat/INHERIT.md. Do not rewrite /adapt/platform/striketeam/HEARTBEAT.md. Do not close HAVEN-001 or M-001 from this desk. Next: heartbeat/wake cadence on this shelf. Reports iris. Chase out of loop.
 2026-08-31 12:37:00 | Anvil · Strike T2 ops | Mode A true turn. Do not write LIVING.md (Janus oneshot). Do not treat ping as living. Next owned action is Strike heartbeat desk, not a second Jira mill, not a roster invention. Reports iris. Chase out of loop.
