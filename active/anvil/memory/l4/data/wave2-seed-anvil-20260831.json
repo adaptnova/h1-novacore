@@ -1,0 +1,22 @@
+{
+  "agent_id": "anvil",
+  "event_id": "wave2-seed-anvil-20260831",
+  "kind": "episodic",
+  "memory_level": "l4",
+  "payload": {
+    "claim": "wave2 lane-depth seed",
+    "kind": "episodic",
+    "lane": "memops-wave2",
+    "ts": "2026-08-31T15:50:04Z"
+  },
+  "schema": "memfab.memory.note.v1",
+  "ticket": {
+    "classification": "internal",
+    "dedupe": "acceptnew",
+    "epistemic_state": "observed",
+    "payload_hash": "93c7ea6aaae2356ab643625645f63ae4c2754a6017f3a205fde4efc6614441ea",
+    "redaction_policy": "redacted"
+  },
+  "written_at_utc": "2026-08-31T15:50:04Z",
+  "written_by": "axiom (MemOps T1 Lead) wave2 rust"
+}
