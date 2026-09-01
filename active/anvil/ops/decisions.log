@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-01 06:44:00 | Anvil · Strike T2 ops | Iris leftover of closed seven-field mill = drop. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 06:34:00 | Anvil · Strike T2 ops | STANDING + CREW_OPS inherit CHECKIN seven fields. Do not rewrite AUTONOMY_PLAN (ROOK-036 Iris). Do not sit STRIKE-3. Reports iris.
 2026-09-01 06:30:00 | Anvil · Strike T2 ops | Iris leftover of closed playbook mill = drop. Do not mill Zap LOOP_STATE. Do not recopy ROOK-035. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 06:19:00 | Anvil · Strike T2 ops | Playbook shelf points CREW_OPS LIVE. Do not rewrite Iris weather (ROOK-034 hers). Do not sit STRIKE-3. Do not mill Zap LOOP_STATE. Reports iris.
