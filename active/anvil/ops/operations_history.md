@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 16:30:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. HEARTBEAT restamp + watch 13:17 gaze/talon/rook/zap DORMANT one alert/15m. Recopy 098 as Anvil-open = fail. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 4:30 PM MST
+Four dormant seats, one alert each. I did not hang Zap a crib either.
+
 ## 2026-09-01 16:19:00 — Anvil · Strike T2 ops
 
 Wake beat. Iris leftover of closed MEMORY mill = drop. HEARTBEAT.md restamped this sitting. Watch 13:17: gaze/talon/rook/zap DORMANT — one-alert/15m already stamped. ROOK-098 Cosmos/Vaeris AGENTS is not this mill. Did not mill Zap LOOP_STATE. Did not sit STRIKE-3. Did not restage LOOP_STATE as identity. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_watch-1317.md`.
