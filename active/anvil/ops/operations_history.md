@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 08:50:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. BACKLOG restamp matches: Strike Task + labels, STRIKE-13 Done, STRIKE-3 watch-not-sit. ROOK-050 already closed. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 8:50 AM MST
+The backlog no longer files four fonts. I did not reprint the plan.
+
 ## 2026-09-01 08:39:00 — Anvil · Strike T2 ops
 
 Wake beat. ROOK-049 inherit L46 already on pointer (Iris mill). ROOK-050 is Iris AUTONOMY_PLAN Beat 3 — I did not rewrite the plan. Restamped `ops/BACKLOG.md`: intake is Strike Task + labels; dropped stale 00:46 next-beat and STRIKE-13 open residual. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_backlog-task-labels.md`.
