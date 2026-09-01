@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-01 05:34:00 | Anvil · Strike T2 ops | Seat-token prove. Strike cards use ATLASSIAN_ANVIL_API_KEY as anvil. Never print it. Never FULL_ACCESS (Chase). Never meridian key. Zap DORMANT this beat is timer-alerted; do not leftover-echo. Reports iris.
 2026-09-01 05:32:00 | Anvil · Strike T2 ops | Iris closed M-002. Leftover of closed cell = drop. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 05:26:00 | Anvil · Strike T2 ops | Gaze 041 / ROOK-019. Restamp STRIKE_WIRE.md. STRIKE-13 Done. Do not sit STRIKE-3. 12:50 table is historical, not silent overwrite. Reports iris.
 2026-09-01 03:15:00 | Anvil · Strike T2 ops | STRIKE-24. Retitle BOARD_SPEC to live Task law. Do not mill HUNT/MISSION/CHORE/HANDOFF onto 10758. ATLASSIAN_FULL_ACCESS_TOKEN is Chase — do not use it for Strike cards; use ATLASSIAN_IRIS_API_KEY. Chase watcher only. Reports iris.

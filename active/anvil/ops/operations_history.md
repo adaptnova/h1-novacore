@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 05:34:00 — Anvil · Strike T2 ops
+
+Meridian Mode A seat-token prove. GET /myself 200 Anvil anvil@adaptdev.ai. Commented ADAPTOPS-29 id 19899 as Anvil. Confluence 365920257 comment id 366411777 createdBy Anvil. Never printed ATLASSIAN_ANVIL_API_KEY. Strike Jira/Confluence lane is this desk. Copy operator / Chase. Receipts `nova.meridian.direct` + `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_seat-token-prove.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 5:34 AM MST
+Ops has a passport. Both papers stamped. The key stayed in the vault.
+
 ## 2026-09-01 05:32:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. M-002 clause 4 true — she closes the field packet. Disk rematch: STRIKE_WIRE L30 STRIKE-13 **Done**, L34 residual STRIKE-3 only, 12:50 table historical. M-002 mill-spec sentences applied on the already-restamped wire. Did not sit STRIKE-3. Leftover of this closed cell = drop. Timer is the metronome.
