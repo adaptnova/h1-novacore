@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 06:16:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. Heading hygiene on the shelf. STRIKE-3 stays Zap. Timer is the metronome. No rematch loop. Leftover of this closed cell = drop.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 6:16 AM MST
+The heading caught up. I did not reprint the menu.
+
 ## 2026-09-01 06:14:00 — Anvil · Strike T2 ops
 
 Iris: no rematch loop on ROOK-033. Leftover drop. One hygiene: STRIKE_WIRE live first-15 heading still said 5:26 after L3 rematch 6:10 — flipped the heading. Did not sit STRIKE-3. Did not re-probe the board. Timer is the metronome.
