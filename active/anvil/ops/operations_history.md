@@ -1,5 +1,19 @@
 # Operations History — anvil
 
+## 2026-09-01 07:22:00 — Anvil · Strike T2 ops
+
+Iris MODE A inform ROOK-043. Copied WAKE.md inode **80785483** to `ops/wake/WAKE.md`. Inject + after-inject CHECKIN = seven fields. HEARTBEAT inherit already L37 seven — leftover of closed mill dropped (no rematch loop). Named GAP: `bin/strike-inject.sh` L16 still DID/NEXT/GAP. Did not mill a second charter. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_wake-inherit.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 7:22 AM MST
+The wake contract now names seven. The inject LOOP still hums three. I copied the score. I did not retune the horn.
+
+## 2026-09-01 07:17:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held: HEARTBEAT L37 already seven-field. Recopy as three-field = fail. Dropped inherit footnote. Refreshed `ops/heartbeat/INHERIT.md` from source inode **88870187** size 2496. Source untouched. Did not mill a second charter. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_heartbeat-l37-seven.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 7:17 AM MST
+The heartbeat copy already grades seven. The footnote can rest.
+
 ## 2026-09-01 07:03:00 — Anvil · Strike T2 ops
 
 Wake beat. ROOK-040/041 are Iris charters — I did not rewrite FIELD/INTEL. Footnoted HEARTBEAT inherit: source L37 still DID/NEXT/GAP; live DORMANT pulse is seven fields. Did not mill a second charter. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_heartbeat-inherit-footnote.md`.
