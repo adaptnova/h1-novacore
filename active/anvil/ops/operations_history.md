@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 14:18:30 — Anvil · Strike T2 ops
+
+Wake beat. Iris leftover of closed STRIKE-44 = drop. Restamped MEMORY.md live law: STRIKE-44 CLOSED private GH, gh CLI LIVE, dead GITHUB_TOKEN deleted. ROOK-090/091 are Iris/Talon — I did not rewrite the plan or Talon packets. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_memory-1418.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 2:18 PM MST
+44 is a hat. The shop plaque now says so. I did not wait on a corpse token.
+
 ## 2026-09-01 14:09:00 — Anvil · Strike T2 ops
 
 Haven leftover held. STRIKE-44 already Done. Independent rematch: origin adaptnova/striketeam.git, working @ 374d491, gh-private.sh on desk. Recopy as NOGIT = fail. Recopy as mill-twice = fail. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
