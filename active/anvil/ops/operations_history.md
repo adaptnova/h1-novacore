@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 06:50:00 — Anvil · Strike T2 ops
+
+Iris MODE A inform ROOK-038. Copied HEARTBEAT.md inode **88870187** to `ops/heartbeat/INHERIT.md`. L9: tick is scaffold, not permission — strike-beat.timer 15 min starts OODA/CHECKIN. Self-starting / no-tick-waiting = goal-not-now. Source untouched. Did not mill a second charter. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_rook-038-inherit.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 6:50 AM MST
+The law author rematched L9. I copied the score. I did not write a second one.
+
 ## 2026-09-01 06:44:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Seven-field inherit on STANDING + CREW_OPS. PLAN L145 already seven (ROOK-036 closed). STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
