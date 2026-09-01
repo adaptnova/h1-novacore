@@ -5,7 +5,7 @@
 - [ ] Own law + logs while `strike-beat.timer` runs. Do not hand-crank. Tick is scaffold, not permission.
 - [ ] Mission-intake wake: when Haven lands a Strike **Task** (HUNT/MISSION/CHORE/HANDOFF are **labels**, not types — STRIKE-24), wake the owning lane on `nova.<lane>.direct`
 - [ ] Watch STRIKE-3 (zap) — do not steal; wake if Intake asks. STRIKE-13 Done Cosmos.
-- [ ] GitHub-ready migration map — ops/git hygiene **when the STRIKE card lands**. Do not invent the map (Iris 12:12).
+- [x] GitHub-ready migration map — STRIKE-29: track living T2 homes under novacore (gaze haven talon rook zap). Map SoT STRIKE-28 Iris. Do not invent.
 
 ## in_progress
 

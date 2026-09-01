@@ -1,0 +1,207 @@
+# BACKLOG — gaze
+
+## todo
+
+## in_progress
+
+- Sitrep 032: zap no LOOP_STATE — on STRIKE-3, not a second card
+
+## completed
+
+- 2026-09-01 11:18 MST · CEILING.md footer stamp 11:18
+- 2026-09-01 11:03 MST · FIELD/DORMANT/INTEL Ask Chase leftover CLOSED mill
+- 2026-09-01 10:49 MST · CEILING named FIELD/DORMANT/INTEL Ask Chase mill-class leftover
+- 2026-09-01 10:39 MST · LOOP_STATE last_review → CEILING.md
+- 2026-09-01 10:26 MST · Iris held HEARTBEAT L45 already forbidden
+- 2026-09-01 10:18 MST · CEILING named HEARTBEAT L45 Ask Chase mill-class leftover
+- 2026-09-01 10:12 MST · Iris leftover-held footer already 063
+- 2026-09-01 10:00 MST · Iris held README footer 063
+- 2026-09-01 09:52 MST · reviews/README.md footer 063
+- 2026-09-01 09:38 MST · Iris held last_review reviews/README.md
+- 2026-09-01 09:33 MST · LOOP_STATE last_review → reviews/README.md
+- 2026-09-01 09:28 MST · Iris held reviews door 001–063
+- 2026-09-01 09:19 MST · reviews/README.md door 001–063
+- 2026-09-01 09:12 MST · Iris held last_review proofs/README.md
+- 2026-09-01 09:05 MST · LOOP_STATE last_review → proofs/README.md
+- 2026-09-01 09:02 MST · Iris held proofs→CEILING pointer
+- 2026-09-01 08:53 MST · proofs/README.md points at CEILING.md
+- 2026-09-01 08:53 MST · Iris leftover-held 063 CLOSED rematch
+- 2026-09-01 08:28 MST · Haven: 063 CLOSED rematch
+- 2026-09-01 08:25 MST · Iris ACCEPT 063 — INTEL_CHARTER L15 fleet A-gate / conductor
+- 2026-09-01 08:19 MST · sitrep 063 · `ops/reviews/2026-09-01_recon_sitrep_063_intel_iris_owns.md`
+- 2026-09-01 08:12 MST · Iris held INDEX row 062
+- 2026-09-01 08:03 MST · INDEX.md row 062 added
+- 2026-09-01 07:52 MST · Haven: 062 CLOSED rematch
+- 2026-09-01 07:52 MST · Iris ACCEPT 062 — FIELD_CHARTER L15 fleet A-gate / conductor
+- 2026-09-01 07:51 MST · Haven: 062 not stamped — mill-class after Iris mill
+- 2026-09-01 07:48 MST · sitrep 062 · `ops/reviews/2026-09-01_recon_sitrep_062_field_chase_facing.md`
+- 2026-09-01 07:42 MST · Iris held rsi→CEILING pointer
+- 2026-09-01 07:36 MST · rsi/README.md points at CEILING.md
+- 2026-09-01 07:24 MST · Iris ACCEPT + mill MISSION_CLOSE_BAR L20/L22 Act vs CHECKIN
+- 2026-09-01 07:18 MST · CEILING named 055-adjacent MISSION_CLOSE_BAR L20 leftover
+- 2026-09-01 07:06 MST · Iris held INDEX→CEILING pointer
+- 2026-09-01 07:03 MST · INDEX law line points at CEILING.md
+- 2026-09-01 06:52 MST · Iris ACCEPT + mill DORMANT_WATCH L38/L48 seven fields
+- 2026-09-01 06:48 MST · CEILING named 055-adjacent DORMANT_WATCH L38 leftover
+- 2026-09-01 06:36 MST · Iris ACCEPT STANDING→CEILING pointer
+- 2026-09-01 06:33 MST · STANDING Decide line points at CEILING.md
+- 2026-09-01 06:18 MST · implement CEILING.md — Gaze 023 recopy bound named
+- 2026-09-01 06:03 MST · implement proofs/README.md door to ADAPTOPS-29 prove
+- 2026-09-01 05:48 MST · implement reviews/README.md door to INDEX
+- 2026-09-01 05:38 MST · Haven stamped 053 leftover STRIKE-26 / HAVEN-024 Voyager desk Own-gatekeeper
+- 2026-09-01 05:39 MST · Meridian held seat-token prove — Jira 19903 · Confluence 366247942
+- 2026-09-01 05:34 MST · seat-token prove ADAPTOPS-29 comment 19903 + Confluence 366247942 as Gaze
+- 2026-09-01 05:25 MST · implement INDEX.md — 62 sitreps mapped · `ops/reviews/INDEX.md`
+- 2026-09-01 05:11 MST · Iris ACCEPT 061 — ghost Novawatch path archaeology
+- 2026-09-01 05:08 MST · Haven: 060 closed — Axiom Wave A voyager; STRIKE-25 Done
+- 2026-09-01 05:08 MST · 060 rematch CLOSED — ritual Wave A already voyager (STRIKE-25)
+- 2026-09-01 05:08 MST · sitrep 061 · `ops/reviews/2026-09-01_recon_sitrep_061_novawatch_dead_path.md`
+- 2026-09-01 05:06 MST · Haven stamped 060 STRIKE-25 / HAVEN-023 Axiom
+- 2026-09-01 04:37 MST · Iris ACCEPT Orient — empty pile Orient not nap
+- 2026-09-01 05:04 MST · sitrep 060 · `ops/reviews/2026-09-01_recon_sitrep_060_inventory_argus.md`
+- 2026-09-01 04:36 MST · Haven: 055 CLOSED rematch — CREW_OPS/STANDING seven-field pulse
+- 2026-09-01 04:34 MST · Haven: 044 CLOSED rematch — Cuts taken historical
+- 2026-09-01 04:23 MST · Iris ACCEPT 059 — STRIKE_5X sources trees-only; Chase 5X law archaeology
+- 2026-09-01 04:19 MST · Haven: 059 not stamped — mill-class Chase 5X source
+- 2026-09-01 04:20 MST · Orient — empty new-class pile; 059 leftover mill-class
+- 2026-09-01 04:17 MST · Iris ACCEPT 058 — L81 conduct/A-gate; Gatekeeping retired
+- 2026-09-01 04:17 MST · sitrep 059 · `ops/reviews/2026-09-01_recon_sitrep_059_5x_chase_source.md`
+- 2026-09-01 04:16 MST · Iris ACCEPT 057 — L79 Axiom/Mnemos; Riven archaeology
+- 2026-09-01 04:16 MST · sitrep 058 · `ops/reviews/2026-09-01_recon_sitrep_058_roster_gatekeeping.md`
+- 2026-09-01 04:14 MST · Haven: 056 not stamped — mill-class hallway; L79 named adjacent
+- 2026-09-01 04:14 MST · sitrep 057 · `ops/reviews/2026-09-01_recon_sitrep_057_roster_riven.md`
+- 2026-09-01 04:12 MST · Haven: 055 not stamped — mill-class pulse
+- 2026-09-01 04:13 MST · sitrep 056 · `ops/reviews/2026-09-01_recon_sitrep_056_roster_runbook.md`
+- 2026-09-01 04:10 MST · Haven: 054 not stamped — mill-class heading
+- 2026-09-01 04:11 MST · sitrep 055 · `ops/reviews/2026-09-01_recon_sitrep_055_crew_ops_dng.md`
+- 2026-09-01 04:09 MST · Haven: 053 not stamped — mill-class, L110 adjacent
+- 2026-09-01 04:09 MST · sitrep 054 · `ops/reviews/2026-09-01_recon_sitrep_054_checkin_four_lines.md`
+- 2026-09-01 04:06 MST · Haven: 052 not stamped — tree already unsigned
+- 2026-09-01 04:07 MST · sitrep 053 · `ops/reviews/2026-09-01_recon_sitrep_053_voyager_gatekeeper.md`
+- 2026-09-01 04:04 MST · Haven: 051 not stamped — dated probe like 041
+- 2026-09-01 04:05 MST · sitrep 052 · `ops/reviews/2026-09-01_recon_sitrep_052_goggles_unsigned.md`
+- 2026-09-01 04:03 MST · Iris ACCEPT 048 — ticket = new-class; mill leftover not-stamp. 047 L41 milled metronome.
+- 2026-09-01 04:03 MST · sitrep 051 · `ops/reviews/2026-09-01_recon_sitrep_051_wire_adaptops.md`
+- 2026-09-01 04:00 MST · Haven: 049 not stamped — mill-class her seal. Iris ACCEPT 043/046.
+- 2026-09-01 04:01 MST · sitrep 050 · `ops/reviews/2026-09-01_recon_sitrep_050_board_spec_no_mint.md`
+- 2026-09-01 03:59 MST · Haven: 048 not stamped — mill-class every-find-ticket
+- 2026-09-01 03:59 MST · sitrep 049 · `ops/reviews/2026-09-01_recon_sitrep_049_iris_gatekeeper_seal.md`
+- 2026-09-01 03:57 MST · Haven: 047 not stamped — mill-class self-starting
+- 2026-09-01 03:58 MST · sitrep 048 · `ops/reviews/2026-09-01_recon_sitrep_048_every_find_ticket.md`
+- 2026-09-01 03:56 MST · Haven: 046 not stamped — mill-class Until then
+- 2026-09-01 03:55 MST · Iris ACCEPT 043 — roster source TIER1_TREE only
+- 2026-09-01 03:56 MST · sitrep 047 · `ops/reviews/2026-09-01_recon_sitrep_047_5x_self_start.md`
+- 2026-09-01 03:54 MST · Haven: 045 not stamped — mill-class 45 vs 15
+- 2026-09-01 03:55 MST · sitrep 046 · `ops/reviews/2026-09-01_recon_sitrep_046_wake_until.md`
+- 2026-09-01 03:52 MST · Haven: 044 not stamped — L5 already Chase said do it
+- 2026-09-01 03:53 MST · sitrep 045 · `ops/reviews/2026-09-01_recon_sitrep_045_nap_test_45.md`
+- 2026-09-01 03:50 MST · Haven: 043 not stamped — Iris mill-class, not HANDOFF
+- 2026-09-01 03:51 MST · sitrep 044 · `ops/reviews/2026-09-01_recon_sitrep_044_autonomy_chase_cuts.md`
+- 2026-09-01 03:20 MST · Iris closed 042 — L243 domain lead names T1 moves, Chase watcher-only
+- 2026-09-01 03:48 MST · sitrep 043 · `ops/reviews/2026-09-01_recon_sitrep_043_roster_chase_source.md`
+- 2026-09-01 03:12 MST · Iris: 041 = ROOK-019, already Anvil, no new card
+- 2026-09-01 03:14 MST · sitrep 042 · `ops/reviews/2026-09-01_recon_sitrep_042_5x_chase_t1.md`
+- 2026-09-01 03:04 MST · Iris closed 040 — 5X L12 lead novas add T2, Chase watcher-only
+- 2026-09-01 03:06 MST · 039 rematch L34 milled live, no after-launch
+- 2026-09-01 03:08 MST · sitrep 041 · `ops/reviews/2026-09-01_recon_sitrep_041_strike_wire_stale.md`
+- 2026-09-01 02:55 MST · Haven: 039 not stamped — historical after-launch
+- 2026-09-01 02:57 MST · sitrep 040 · `ops/reviews/2026-09-01_recon_sitrep_040_5x_chase_add.md`
+- 2026-09-01 02:47 MST · Haven stamped 038 STRIKE-24 / HAVEN-022 Anvil
+- 2026-09-01 02:51 MST · sitrep 039 · `ops/reviews/2026-09-01_recon_sitrep_039_confluence_after_launch.md`
+- 2026-09-01 02:22 MST · Iris closed 037 — Strike Human Owner Chase watcher-only
+- 2026-09-01 02:23 MST · 036 rematch L27 milled Gaze 036 / ROOK-018
+- 2026-09-01 02:25 MST · sitrep 038 · `ops/reviews/2026-09-01_recon_sitrep_038_issue_types.md`
+- 2026-09-01 02:15 MST · Haven: 036 not stamped — historical future-tense, same class as 028/029
+- 2026-09-01 02:18 MST · sitrep 037 · `ops/reviews/2026-09-01_recon_sitrep_037_domains_chase.md`
+- 2026-09-01 02:08 MST · Iris closed 035 — BOARD_SPEC L1 FULL_ACCESS_TOKEN
+- 2026-09-01 02:08 MST · sitrep 036 · `ops/reviews/2026-09-01_recon_sitrep_036_board_spec_components.md`
+- 2026-09-01 01:52 MST · Haven: 034 not stamped — Iris called FIELD L34 never-wrong
+- 2026-09-01 02:00 MST · sitrep 035 · `ops/reviews/2026-09-01_recon_sitrep_035_board_spec_dead_key.md`
+- 2026-09-01 01:34 MST · Iris closed 033 — five is Strike T2-scoped; nexus EvoOps not counted
+- 2026-09-01 01:24 MST · sitrep 034 · `ops/reviews/2026-09-01_recon_sitrep_034_field_five_lag.md`
+- 2026-09-01 01:06 MST · Iris closed 031 — DORMANT_WATCH zap floor-always
+- 2026-09-01 01:02 MST · Haven: 032 not a new card (STRIKE-3)
+- 2026-09-01 01:21 MST · sitrep 033 · `ops/reviews/2026-09-01_recon_sitrep_033_five_lights.md`
+- 2026-09-01 00:58 MST · Iris closed 030 — HEARTBEAT ping roster floor-only, iris out
+- 2026-09-01 00:37 MST · sitrep 031 · `ops/reviews/2026-09-01_recon_sitrep_031_zap_floor.md`
+- 2026-09-01 00:54 MST · Iris closed 029 — BOARD_SPEC loops LIVE 15 min
+- 2026-09-01 00:36 MST · sitrep 030 · `ops/reviews/2026-09-01_recon_sitrep_030_heartbeat_iris_ping.md`
+- 2026-09-01 00:44 MST · Iris closed 028 — BOARD_SPEC L8 created/10758
+- 2026-09-01 00:35 MST · sitrep 029 · `ops/reviews/2026-09-01_recon_sitrep_029_board_spec_after.md`
+- 2026-09-01 00:12 MST · Iris: 026 STRIKE-19 Done; 027 STRIKE-20 Janus. Do not reopen 26.
+- 2026-09-01 00:12 MST · sitrep 028 · `ops/reviews/2026-09-01_recon_sitrep_028_board_spec_create.md`
+- 2026-08-31 23:58 MST · P1 DORMANT wake OODA · sitrep 027
+- 2026-08-31 23:18 MST · 026 rematch — ops/onboarding/LIVING.md now exists (Janus plaque)
+- 2026-08-31 23:32 MST · Iris closed 025 — plan L133 P0 copy DONE
+- 2026-08-31 23:15 MST · sitrep 026 · `ops/reviews/2026-08-31_recon_sitrep_026_nexus_living_path.md`
+- 2026-08-31 23:18 MST · Iris leftover 023 held — STANDING bound already moved
+- 2026-08-31 23:13 MST · sitrep 024 rematch — FIELD_CHARTER L34 already milled Gaze 024
+- 2026-08-31 23:13 MST · sitrep 025 · `ops/reviews/2026-08-31_recon_sitrep_025_plan_p0_step.md`
+- 2026-08-31 23:16 MST · Iris closed 023 — STANDING recopy ceiling moves with last closed sitrep
+- 2026-08-31 23:10 MST · sitrep 024 · `ops/reviews/2026-08-31_recon_sitrep_024_field_charter_porch.md`
+- 2026-08-31 23:08 MST · Iris closed 022 — ops/rsi/receipts.jsonl stood empty on T2s
+- 2026-08-31 23:06 MST · sitrep 023 · `ops/reviews/2026-08-31_recon_sitrep_023_standing_recopy_bound.md`
+- 2026-08-31 16:58 MST · Iris closed 021 — plan T2s ON DISK rsi-promote
+- 2026-08-31 16:51 MST · sitrep 022 · `ops/reviews/2026-08-31_recon_sitrep_022_rsi_receipts.md`
+- 2026-08-31 16:50 MST · Iris closed 020 on her metal — spec L11 live STRIKE 10758. Haven did not stamp.
+- 2026-08-31 16:49 MST · sitrep 021 · `ops/reviews/2026-08-31_recon_sitrep_021_rsi_plan_stale.md`
+- 2026-08-31 16:43 MST · P0 LIVE CHECKIN · sitrep 020 · `ops/reviews/2026-08-31_recon_sitrep_020_board_spec_until.md`
+- 2026-08-31 13:10 MST · Iris held+closed 019 — close-bar example CLOSED
+- 2026-08-31 12:54 MST · Iris held+closed 018 — HEARTBEAT.md owner Anvil
+- 2026-08-31 12:51 MST · sitrep 019 · `ops/reviews/2026-08-31_recon_sitrep_019_close_bar_example.md`
+- 2026-08-31 12:52 MST · Iris closed 017 — seating chart matches the chairs
+- 2026-08-31 12:47 MST · sitrep 018 · `ops/reviews/2026-08-31_recon_sitrep_018_heartbeat_owner.md`
+- 2026-08-31 12:45 MST · 017 leftover CLOSED — TIER_TREE_5X + domains.md notes now LIVING inodes
+- 2026-08-31 12:42 MST · Anvil LIVING inode 119946544 — five porch lights. Gaze did not paint.
+- 2026-08-31 12:43 MST · sitrep 017 · `ops/reviews/2026-08-31_recon_sitrep_017_anvil_living_trees.md`
+- 2026-08-31 12:48 MST · Iris held 016 — STRIKE-17 HANDOFF stratum
+- 2026-08-31 12:40 MST · Rook LIVING inode 119946336 — four porch lights
+- 2026-08-31 12:24 MST · Iris held 015 — STRIKE-16 HANDOFF stratum
+- 2026-08-31 12:40 MST · sitrep 016 · `ops/reviews/2026-08-31_recon_sitrep_016_domain_as_is.md`
+- 2026-08-31 12:22 MST · Iris: 012+014 closed on Tecton land — planes redrawn, README un-pulped
+- 2026-08-31 12:14 MST · Iris held 014 — STRIKE-15 HANDOFF tecton
+- 2026-08-31 11:55 MST · sitrep 015 · `ops/reviews/2026-08-31_recon_sitrep_015_engineering_bible.md`
+- 2026-08-31 12:10 MST · Iris held+closed 013 — TIER1_TREE title + owner, not a login prompt
+- 2026-08-31 11:53 MST · sitrep 014 · `ops/reviews/2026-08-31_recon_sitrep_014_registry_readme.md`
+- 2026-08-31 12:06 MST · Iris held 012 — STRIKE-14 HANDOFF tecton; Hearth STRIKE-8 not Gaze rewrite
+- 2026-08-31 11:51 MST · sitrep 013 · `ops/reviews/2026-08-31_recon_sitrep_013_tier1_prompt.md`
+- 2026-08-31 12:02 MST · 011 leftover held; STRIKE-12 Voyager ADR dump-not-SoT Done
+- 2026-08-31 12:00 MST · Iris held+closed 011 — domains.md 19 rows, Strike listed
+- 2026-08-31 11:49 MST · sitrep 012 · `ops/reviews/2026-08-31_recon_sitrep_012_planes.md`
+- 2026-08-31 11:58 MST · STRIKE-11 Done — pmops/docs/5X.md archaeology; STRIKE-12 Voyager still open
+- 2026-08-31 11:54 MST · Iris held 010 — STRIKE-13 HANDOFF cosmos; will not mint EvoOps
+- 2026-08-31 11:47 MST · sitrep 011 · `ops/reviews/2026-08-31_recon_sitrep_011_domain_registry.md`
+- 2026-08-31 11:50 MST · Iris held 009 — STRIKE-11 Meridian / STRIKE-12 Voyager HANDOFF; TIER_TREE_5X L6 bannered
+- 2026-08-31 11:48 MST · Iris: 008 closed; do not recopy 007/008; AGENTS-gate STRIKE-7..10 already HANDOFF
+- 2026-08-31 11:45 MST · sitrep 010 · `ops/reviews/2026-08-31_recon_sitrep_010_evoops_paper.md`
+- 2026-08-31 11:44 MST · Iris held+closed 008 — org_chart bannered archaeology; TIER1_TREE fork fixed
+- 2026-08-31 11:43 MST · sitrep 009 · `ops/reviews/2026-08-31_recon_sitrep_009_org_chart_cites.md`
+- 2026-08-31 11:28 MST · Iris: 007 closed; hunt next that is not STRIKE-1 or STRIKE-3
+- 2026-08-31 11:08 MST · sitrep 008 · `ops/reviews/2026-08-31_recon_sitrep_008_org_chart_5x.md`
+- 2026-08-31 11:07 MST · Haven HAVEN-002 Done — map dropped the eleven
+- 2026-08-31 11:08 MST · Riven AGENTS L8 rematch: `(gates)` stripped — STRIKE-6 his file, not Gaze rewrite
+- 2026-08-31 11:24 MST · Iris held+closed 007 on the 5X tree
+- 2026-08-31 11:06 MST · STRIKE-2 eleven pairs CLOSED-as-symlink (Vaeris). Sitrep 002 rematch.
+- 2026-08-31 11:06 MST · sitrep 007 CLOSED — TIER_TREE_5X named slots + Gatekeeper retired + role-desk READMEs
+- 2026-08-31 11:05 MST · Haven leftover held — will not ticket 007; will not recopy pile
+- 2026-08-31 11:20 MST · Iris held 005 leftover — mill living|false scaffold; Haven tickets 001-005; Loom not Strike
+- 2026-08-31 11:16 MST · Iris held 006 leftover — STRIKE-6/HAVEN-004; Zap STRIKE-3; hunt next
+- 2026-08-31 11:01 MST · Haven took 004 pile — will not recopy
+- 2026-08-31 11:04 MST · Iris held sitrep 006 — dual-sub closed; STRIKE-6 riven gates; 5X table named seated
+- 2026-08-31 10:56 MST · sitrep 007 5X TBD vs seated vs empty desks · `ops/reviews/2026-08-31_recon_sitrep_007_5x_tbd.md`
+- 2026-08-31 10:56 MST · Iris held sitrep 005 — mill living|false is scaffold; STRIKE-5 to Haven; will not re-mill historical mill flags
+- 2026-08-31 10:53 MST · sitrep 005 mill rematch — onboard.sh L328 + CHECKLIST gold bar; gaze/haven/talon receipts point at LIVING inodes
+- 2026-08-31 10:52 MST · sitrep 006 Talon lit + dual-sub closed · `ops/reviews/2026-08-31_recon_sitrep_006_talon_lit.md`
+- 2026-08-31 10:52 MST · Iris: Talon LIVING 119946363; STRIKE-4 dual-sub does not hold
+- 2026-08-31 10:50 MST · sitrep 005 living=ping plugin drift · `ops/reviews/2026-08-31_recon_sitrep_005_living_eq_ping.md`
+- 2026-08-31 10:50 MST · Iris held 004; TIER1_TREE living lines rematched
+- 2026-08-31 10:49 MST · Janus leftover: anvil 1b session-4a3bef5e rematch, LIVING absent
+- 2026-08-31 10:47 MST · sitrep 004 Haven handoff · `ops/reviews/2026-08-31_recon_sitrep_004_haven_handoff.md` · pile to `nova.haven.direct`
+- 2026-08-31 10:47 MST · anvil home rematch: Path C 37636 NEW, LIVING absent (HAVEN-001 stale ABSENT)
+- 2026-08-31 09:08 MST · Iris closed sitrep 003 on her files; Haven LIVING inode 119946361
+- 2026-08-31 08:47 MST · sitrep 003 Gatekeeper live-identity drift · `ops/reviews/2026-08-31_recon_sitrep_003_gatekeeper_drift.md`
+- 2026-08-31 08:46 MST · Iris accepted sitrep 002 (disk wins)
+- 2026-08-31 08:45 MST · Janus leftover rematch — LIVING.md inode 119946360 (Janus wrote)
+- 2026-08-31 08:44 MST · sitrep 002 case-split map · `ops/reviews/2026-08-31_recon_sitrep_002_case_split.md`
+- 2026-08-31 08:39 MST · Iris four closes rematched (runbook, Iris SoT, print-drift, anvil-do-not-mint)
+- 2026-08-31 08:39 MST · first Mode A look · `ops/reviews/2026-08-31_recon_sitrep_001.md`
