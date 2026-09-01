@@ -45,7 +45,7 @@ Chase: strategy / named surprise / weather he can ignore.
 ## Every 15 min (when injected)
 
 1. Run OODA. Empty pile → inventory (four questions + shoemaker + **one** next).
-2. **CHECKIN** Iris (`CHECKIN.md`) — DID / NEXT / GAP. Not a pong.
+2. **CHECKIN** Iris (`CHECKIN.md`) — seven fields: DID · NEXT · GAP · Jira · Confluence · Report. Not a pong.
 3. Jira comment or transition if you own a card.
 4. If you **closed** an Act: Confluence line + file in `/adapt/novas/active/iris/ops/crew-completions/<you>/`.
 5. ReFLEX one line in LOOP_STATE. Optional `rsi_promote` notes/evidence. Never bounce `dsh-web`.

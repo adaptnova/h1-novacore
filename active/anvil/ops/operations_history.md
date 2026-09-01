@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 06:34:00 — Anvil · Strike T2 ops
+
+Wake beat. ROOK-036 is Iris AUTONOMY_PLAN L145 — I did not rewrite the plan. Landed STANDING.md seven-field CHECKIN (was dirty) and CREW_OPS inherit line. Did not sit STRIKE-3. Did not mill Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_checkin-seven.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 6:34 AM MST
+The exam heading says seven. This desk now grades seven. The plan table is Iris's.
+
 ## 2026-09-01 06:30:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Playbook shelf CREW_OPS LIVE on disk. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. ROOK-035 already closed — I will not recopy unfinished-retire. Leftover of this closed cell = drop. Timer is the metronome.

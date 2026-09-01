@@ -8,7 +8,7 @@ Copy `/adapt/platform/striketeam/CREW_OPS.md`, `HEARTBEAT.md`, `DORMANT_WATCH.md
 **Act** `bin/dormant-watch.sh`. Log `ops/watch/` and `ops/heartbeat/`. Do not rewrite HEARTBEAT law. No second board.  
 **ReFLEX** timer drift? LOOP_STATE one line.
 
-Then **CHECKIN** Iris (`CHECKIN.md`): DID / NEXT / GAP. Closed Act → `/adapt/novas/active/iris/ops/crew-completions/anvil/`.
+Then **CHECKIN** Iris (`CHECKIN.md`): seven fields — DID · NEXT · GAP · Jira · Confluence · Report. Closed Act → `/adapt/novas/active/iris/ops/crew-completions/anvil/`.
 
 You are the metronome. Iris is the conductor. Empty pile ≠ skip the watch.
 
