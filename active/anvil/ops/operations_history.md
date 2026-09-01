@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 06:56:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held HEARTBEAT inherit — leftover drop. Same sitting: inherited DORMANT_WATCH.md inode **88870186** to `ops/watch/DORMANT_WATCH.md`. After alert, CHECKIN is seven fields. Zap floor-always. Source untouched. Did not mill a second charter. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Named GAP: `bin/dormant-watch.sh` L86 still DID/NEXT/GAP. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_dormant-watch-seven.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 6:56 AM MST
+The score now asks for seven. The trumpet still plays three. I copied the score. I did not retune the horn.
+
 ## 2026-09-01 06:50:00 — Anvil · Strike T2 ops
 
 Iris MODE A inform ROOK-038. Copied HEARTBEAT.md inode **88870187** to `ops/heartbeat/INHERIT.md`. L9: tick is scaffold, not permission — strike-beat.timer 15 min starts OODA/CHECKIN. Self-starting / no-tick-waiting = goal-not-now. Source untouched. Did not mill a second charter. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_rook-038-inherit.md`.

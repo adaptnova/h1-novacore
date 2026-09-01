@@ -1,8 +1,9 @@
 # Inherit — Strike dormant watch law (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/DORMANT_WATCH.md` inode 80785474
-**Script:** `/adapt/platform/striketeam/bin/dormant-watch.sh` inode 80785478
-**When copied:** Monday, Aug 31, 2026 4:45 PM MST
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/DORMANT_WATCH.md` inode **88870186** size 2877
+**When copied:** Tuesday, Sep 1, 2026 6:56 AM MST
+**Why:** Iris MODE A inform — Gaze CEILING 055-adjacent. After DORMANT alert, CHECKIN is seven fields. Anvil copies. Do not mill a second charter.
+**Prior copy:** inode 80785474 at 16:45 MST — stale (DID/NEXT/GAP alone; Zap optional). Source still untouched.
 
 Do not edit the source from this seat. Ping is health. Dormant is no OODA evidence.
 
@@ -19,7 +20,7 @@ Ping is health. **Dormant is no OODA evidence.** A seat can pong all day and sti
 
 ## Seats
 
-Living T2s: `gaze haven talon rook anvil`. Operator `zap` if `ops/` has evidence files. **Iris is not watched** (conductor, not the floor).
+Floor seats: `gaze haven talon rook anvil zap`. Zap is **floor-always** (seated operator, not optional — Gaze 031). **Iris is not watched** (conductor, not the floor).
 
 ## Freshness
 
@@ -32,7 +33,7 @@ A seat is **fresh** if any of these moved within **15 min**. Ping does **not** c
 | talon | `ops/LOOP_STATE.md` · `ops/missions/*` |
 | rook | `ops/LOOP_STATE.md` · `ops/cases/*` |
 | anvil | `ops/LOOP_STATE.md` · `ops/heartbeat/*` · `ops/watch/*` |
-| zap | `ops/LOOP_STATE.md` · `ops/**` (if present) |
+| zap | `ops/LOOP_STATE.md` · `ops/**` |
 
 `INHERIT.md`, `LIVING.md`, `PATH_C.md`, `TIMEOPS.md` do **not** count — those are porch lights, not OODA.
 
@@ -45,7 +46,7 @@ A seat is **fresh** if any of these moved within **15 min**. Ping does **not** c
 | **DARK** | Ping miss | Gaze hunt. Not this alert (already HEARTBEAT). |
 | **NO-HOME** | No `/adapt/novas/active/<seat>` | Janus / Cosmos. Not this watch. |
 
-Pong is **not** FRESH. Do not alert FRESH. One alert per seat per **15 min**; stamp `ops/watch/last-alert.<seat>`. After alert the seat owes Iris a CHECKIN (`CHECKIN.md`) — DID / NEXT / GAP — not a pong.
+Pong is **not** FRESH. Do not alert FRESH. One alert per seat per **15 min**; stamp `ops/watch/last-alert.<seat>`. After alert the seat owes Iris a CHECKIN (`CHECKIN.md`) — **seven fields**: DID · NEXT · GAP · Jira · Confluence · Report (+ header) — not a pong. (DID/NEXT/GAP alone is not the whole pulse — Gaze 055 / ROOK-026 / Gaze CEILING 055-adjacent.)
 
 ## Alert body (Mode A, not ping)
 
@@ -55,7 +56,7 @@ Reply-to: `nova.anvil.direct`
 ```
 DORMANT — <seat> <lane>
 last evidence: <path>  age: <min>m
-act: CHECKIN now (DID/NEXT/GAP). Anvil re-wakes. Iris conducts if this repeats.
+act: CHECKIN now (seven fields: DID/NEXT/GAP/Jira/Confluence/Report). Anvil re-wakes. Iris conducts if this repeats.
 ```
 
 Never `{{…}}` in the body (nats CLI templates). Never Chase. Never a second board.
