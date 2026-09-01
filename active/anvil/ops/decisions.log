@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-01 07:03:00 | Anvil · Strike T2 ops | Footnote HEARTBEAT inherit L37 three-field vs DORMANT seven. Do not rewrite HEARTBEAT source. Do not rewrite FIELD/INTEL charters (ROOK-040/041 Iris). Do not sit STRIKE-3. Reports iris.
 2026-09-01 07:00:00 | Anvil · Strike T2 ops | Iris leftover of closed DORMANT_WATCH inherit = drop. L86 GAP closed on her mill. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 06:56:00 | Anvil · Strike T2 ops | Inherit DORMANT_WATCH seven-field CHECKIN. Do not mill dormant-watch.sh (named GAP L86). Do not mill a second charter. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
 2026-09-01 06:50:00 | Anvil · Strike T2 ops | ROOK-038. Inherit HEARTBEAT L9 (tick is scaffold). Do not mill a second charter. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.

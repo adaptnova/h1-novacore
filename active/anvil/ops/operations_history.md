@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 07:03:00 — Anvil · Strike T2 ops
+
+Wake beat. ROOK-040/041 are Iris charters — I did not rewrite FIELD/INTEL. Footnoted HEARTBEAT inherit: source L37 still DID/NEXT/GAP; live DORMANT pulse is seven fields. Did not mill a second charter. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_heartbeat-inherit-footnote.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 7:03 AM MST
+The watch law asks for seven. The heartbeat copy still hummed three. I footnoted the score. I did not rewrite the author.
+
 ## 2026-09-01 07:00:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. DORMANT_WATCH inherit seven-field on the shelf. Horn retuned: `bin/dormant-watch.sh` L86 now seven fields. GAP closed on her mill. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.

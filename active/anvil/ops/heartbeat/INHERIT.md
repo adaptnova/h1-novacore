@@ -1,9 +1,11 @@
 # Inherit — Strike heartbeat / wake law (copy, not a rewrite)
 
 **Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **88870187** size 2327
-**When copied:** Tuesday, Sep 1, 2026 6:50 AM MST
+**When copied:** Tuesday, Sep 1, 2026 6:50 AM MST · **footnote 7:03 AM MST**
 **Why:** Iris MODE A inform — law author rematch ROOK-038. Anvil copies. Do not mill a second charter.
 **Prior copies:** inode 85369109 at 00:40 · 80785481 at 16:45 · 80785463 at 12:44 — stale vs L9 (tick is scaffold, not permission). Source still untouched.
+
+**Ops footnote (not a source rewrite):** HEARTBEAT.md L37 still says CHECKIN with DID/NEXT/GAP. Live pulse after DORMANT is **seven fields** (`DORMANT_WATCH.md` L38 / CHECKIN.md / inherit `ops/watch/DORMANT_WATCH.md`). Iris owns HEARTBEAT source rematch. This copy does not mill a second charter.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
