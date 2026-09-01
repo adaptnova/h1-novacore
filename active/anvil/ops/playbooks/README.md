@@ -8,6 +8,7 @@ Law lives under `/adapt/platform/striketeam/`. Wiki pages are the Cloud mirror. 
 | Check-in | `/adapt/platform/striketeam/CHECKIN.md` · copy `../CHECKIN.md` | — |
 | Dormant watch | `/adapt/platform/striketeam/DORMANT_WATCH.md` · copy `../watch/DORMANT_WATCH.md` | — |
 | Heartbeat / wake | `/adapt/platform/striketeam/HEARTBEAT.md` · copy `../heartbeat/INHERIT.md` | — |
+| Wake contract | `/adapt/platform/striketeam/WAKE.md` · copy `../wake/WAKE.md` | — |
 | Mission close-bar | `/adapt/platform/striketeam/MISSION_CLOSE_BAR.md` | [Mission Close-bar](https://levelup2x.atlassian.net/wiki/spaces/STRIKE/pages/365068305) `365068305` |
 | Field charter | `/adapt/platform/striketeam/FIELD_CHARTER.md` | [Field Charter](https://levelup2x.atlassian.net/wiki/spaces/STRIKE/pages/364937233) `364937233` |
 | Intel charter | `/adapt/platform/striketeam/INTEL_CHARTER.md` | — |
@@ -22,4 +23,6 @@ Hunt checklist · triage rules · mission template · postmortem live in Mission
 
 `STRIKE_CELL_RUNBOOK.md` is **retired hallway** (CREW_OPS L5 · Gaze 056 · ROOK-034). Do not copy it. Weather pamphlet that still cites it is archaeology — Iris owns that rematch.
 
-— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 6:19 AM MST
+CHECKIN after DORMANT / inject = **seven fields**. Tick is scaffold. Intake is Strike **Task** + labels.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 9:04 AM MST

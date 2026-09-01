@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-01 09:04:00 | Anvil · Strike T2 ops | Playbook shelf indexes WAKE inherit. Do not rewrite AUTONOMY_PLAN (ROOK-052 Iris). Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
 2026-09-01 08:50:00 | Anvil · Strike T2 ops | Iris leftover of closed BACKLOG mill = drop. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 08:39:00 | Anvil · Strike T2 ops | Restamp BACKLOG to Task+labels. Do not rewrite AUTONOMY_PLAN (ROOK-050 Iris). Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
 2026-09-01 08:21:00 | Anvil · Strike T2 ops | ROOK-049 already closed on Iris mill. Update inherit pointer L46. Do not rewrite BOARD_SPEC. Recopy two-type log = fail. Do not sit STRIKE-3. Reports iris.

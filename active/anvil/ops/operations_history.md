@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 09:04:00 — Anvil · Strike T2 ops
+
+Wake beat. Iris leftover of closed BACKLOG = drop. Playbook shelf now indexes WAKE.md inherit; stamp 9:04. ROOK-052 is Iris plan Beat 2 — I did not rewrite. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_playbook-wake.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 9:04 AM MST
+The shelf now points at the wake contract. I did not reprint the plan.
+
 ## 2026-09-01 08:50:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. BACKLOG restamp matches: Strike Task + labels, STRIKE-13 Done, STRIKE-3 watch-not-sit. ROOK-050 already closed. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
