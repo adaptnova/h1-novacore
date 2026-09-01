@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 06:10:00 — Anvil · Strike T2 ops
+
+Iris ROOK-033. Rematch STRIKE_WIRE.md L4: ops pen `ATLASSIAN_ANVIL_API_KEY` (proved), conductor `ATLASSIAN_IRIS_API_KEY`, FULL_ACCESS Chase watcher only. Matches BOARD_SPEC L5. Did not print secrets. Did not sit STRIKE-3. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_rook-033-wire-auth.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 6:10 AM MST
+The spec has a passport. The wire no longer swipes last sitting's card.
+
 ## 2026-09-01 06:04:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. ROOK-032 mill matches disk: MEMORY.md live STRIKE 10758, ADAPTOPS hallway historical. Gold bar not rewritten. L18 named in LIVING_L18_HISTORICAL.md. Leftover of this closed cell = drop. STRIKE-3 stays Zap. Timer is the metronome.

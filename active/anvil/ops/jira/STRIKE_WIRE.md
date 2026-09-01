@@ -1,7 +1,7 @@
 # STRIKE wire — probe, not a second board
 
-**Live rematch:** Tuesday, Sep 1, 2026 5:28 AM MST · Gaze 041 / ROOK-019 / **M-002 mill-spec applied**
-**Actor:** Anvil · ops lane. Auth names only: `ATLASSIAN_IRIS_API_KEY` + `ATLASSIAN_IRIS_EMAIL` (not `ATLASSIAN_FULL_ACCESS_TOKEN` — that actor is Chase; watcher only).
+**Live rematch:** Tuesday, Sep 1, 2026 6:10 AM MST · ROOK-033 (auth names match BOARD_SPEC L5)
+**Actor:** Anvil · ops lane. Auth names only: ops pen `ATLASSIAN_ANVIL_API_KEY` + `ATLASSIAN_ANVIL_EMAIL` (proved ADAPTOPS-29). Conductor `ATLASSIAN_IRIS_API_KEY`. `ATLASSIAN_FULL_ACCESS_TOKEN` is Chase org — watcher only, never the Strike pen. Never print values.
 **Board owner:** Iris. Project id **10758**. I run the wire. I do not mill a second project. I do not sit STRIKE-3.
 
 | Surface | Result |

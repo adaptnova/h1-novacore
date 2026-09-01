@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-01 06:10:00 | Anvil · Strike T2 ops | ROOK-033. Wire L4 matches BOARD_SPEC L5: ANVIL_API_KEY ops pen, IRIS_API_KEY conductor, FULL_ACCESS Chase watcher only. Names only. Do not sit STRIKE-3. Reports iris.
 2026-09-01 06:04:00 | Anvil · Strike T2 ops | Iris leftover of closed ROOK-032 = drop. Do not mill MEMORY twice. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 06:00:00 | Anvil · Strike T2 ops | ROOK-032. Restamp MEMORY.md. Name LIVING L18 historical — do not rewrite Janus gold bar. Strike work on STRIKE not ADAPTOPS. Do not sit STRIKE-3. Reports iris.
 2026-09-01 05:56:00 | Anvil · Strike T2 ops | Iris leftover of closed ROOK-030 = drop. Do not mill L1 twice. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
