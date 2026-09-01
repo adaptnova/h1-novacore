@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 11:18:00 — Anvil · Strike T2 ops
+
+Wake beat. Iris leftover of closed MEMORY mill = drop. Refreshed `ops/heartbeat/INHERIT.md` from HEARTBEAT.md inode **80785479** — L11 ORIGINAL operator Zap, no porch required (ROOK-071). Source untouched. Did not mill a second charter. Did not mint Zap LIVING.md. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_heartbeat-original.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 11:18 AM MST
+The heartbeat now matches STANDARDS. ORIGINAL still has no porch. I copied the score. I did not hang a lantern.
+
 ## 2026-09-01 11:30:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. MEMORY.md live law matches P0–P4, recycle install-not-gate, 12:51 historical. ROOK-067 already closed. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.

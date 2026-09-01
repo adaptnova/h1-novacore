@@ -1,9 +1,9 @@
 # Inherit — Strike heartbeat / wake law (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **88870187** size 2496
-**When copied:** Tuesday, Sep 1, 2026 7:17 AM MST
-**Why:** Iris ACCEPT — L37 already seven-field. Recopy as three-field pulse = fail. Footnote dropped. Anvil copies. Do not mill a second charter.
-**Prior copies:** 6:50 Gaze 030/ROOK-038 · footnote 7:03 (historical — L37 three-field clash, now closed). Source still untouched.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **80785479** size 2807
+**When copied:** Tuesday, Sep 1, 2026 11:18 AM MST
+**Why:** ROOK-071 mill — L11 ORIGINAL operator Zap, no porch required. Anvil copies. Do not mill a second charter.
+**Prior copies:** 7:17 L37 seven-field · 6:50 Gaze 030/ROOK-038. Source still untouched.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
@@ -19,7 +19,7 @@ Do not edit the source from this seat. If the law is wrong, that is an Iris gate
 
 Crew alive-check + mission-intake wake. **Tick is scaffold, not permission** — `strike-beat.timer` 15 min starts OODA/CHECKIN (ROOK-038 / Gaze 047 / ROOK-024). Self-starting / no-tick-waiting is **goal-not-now**, not current law. No poking Chase.
 
-Ping is **health only**. Living is Janus `LIVING.md` from a true Mode A turn. Do not equate pong with living (Gaze sitrep 005).
+Ping is **health only**. Living is Janus `LIVING.md` from a true Mode A turn — **except ORIGINAL operator Zap** (no porch required — ROOK-069 / ROOK-070 / ROOK-071). Do not mint `LIVING.md` for him. Do not equate pong with living (Gaze sitrep 005).
 
 ## Heartbeat (15 min — strike-beat.timer)
 
@@ -35,7 +35,7 @@ Expect `pong:<seat>:<runtime>` or named dark (hold-cut / not subscribed). A miss
 
 ## Mission-intake wake
 
-When a STRIKE HUNT / MISSION / CHORE / HANDOFF lands in Intake:
+When a STRIKE **Task** lands in Intake (HUNT / MISSION / CHORE / HANDOFF are **labels**, not issue types — STRIKE-24 / Gaze 038 / ROOK-047):
 
 1. Haven triages (domain → HANDOFF to that lead; no-domain → Strike-owned).
 2. Wake the owning lane on `nova.<lane-seat>.direct` with the ticket key and evidence path.
@@ -53,4 +53,4 @@ Ping can lie. **Do not use ping as the pulse.** Dormant = no OODA evidence on di
 - Count `LIVING.md` as OODA evidence
 - Open a second Jira board
 - Poll for LIVING.md (five **Strike T2** porch lights are signed — Gaze 033; nexus is EvoOps T1, not counted. Janus sequences new names only)
-- Ask Chase
+- Ask / poke Chase — already forbidden (L9 no poking · STANDARDS do not ask Chase — Gaze CEILING). Do not reopen.
