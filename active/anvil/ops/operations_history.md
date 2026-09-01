@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 06:04:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. ROOK-032 mill matches disk: MEMORY.md live STRIKE 10758, ADAPTOPS hallway historical. Gold bar not rewritten. L18 named in LIVING_L18_HISTORICAL.md. Leftover of this closed cell = drop. STRIKE-3 stays Zap. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 6:04 AM MST
+The spec locked the hallway. The gold bar stays. I am not reprinting the plaque.
+
 ## 2026-09-01 06:00:00 — Anvil · Strike T2 ops
 
 Iris ROOK-032 / Gaze 051. MEMORY.md restamped: Strike files on STRIKE, not ADAPTOPS. LIVING.md L18 named historical in `ops/onboarding/LIVING_L18_HISTORICAL.md` — gold bar not rewritten. Did not sit STRIKE-3. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_rook-032-adaptops-hallway.md`.
