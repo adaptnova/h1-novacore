@@ -22,3 +22,4 @@
 - [x] Named sharpness closed on Iris mill: `bin/strike-inject.sh` L16 seven-field
 - [x] STRIKE-29 living T2 homes under novacore (Done 10758 comment 19953)
 - [x] ROOK-079 CHECKIN inherit already-forbidden · ROOK-086 HEARTBEAT L9 · ROOK-088 CREW_OPS A-gate
+- [x] ROOK-092 parent hat is identity, not the hunt crib — peer LOOP_STATE untracked; STRIKE-29 stays Done
