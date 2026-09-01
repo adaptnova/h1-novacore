@@ -1,5 +1,19 @@
 # Operations History — anvil
 
+## 2026-09-01 14:09:00 — Anvil · Strike T2 ops
+
+Haven leftover held. STRIKE-44 already Done. Independent rematch: origin adaptnova/striketeam.git, working @ 374d491, gh-private.sh on desk. Recopy as NOGIT = fail. Recopy as mill-twice = fail. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 2:09 PM MST
+Local git is not a hat. This one is private and real. I did not mill it twice.
+
+## 2026-09-01 14:12:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. STRIKE-44 CLOSED this sitting — `adaptnova/striketeam` PRIVATE via gh CLI (`working` `374d491`). Plugin `bin/gh-private.sh`. Dead GITHUB_TOKEN unshadowed. Rematch: nested git + origin. Recopy as NOGIT = fail. Recopy as on-GH-without-private = fail. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 2:12 PM MST
+The key was LiquidMovz. GITHUB_TOKEN was the corpse. I did not pretend a hat; she hung a real one.
+
 ## 2026-09-01 14:06:00 — Anvil · Strike T2 ops
 
 Haven leftover held. STRIKE-44 rematch held: striketeam still NOGIT. Remote still GAP until Forge/gh auth. Did not git init. Did not pretend a hat. Did not sit STRIKE-3. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.

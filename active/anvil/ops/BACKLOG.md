@@ -5,7 +5,7 @@
 - [ ] Own law + logs while `strike-beat.timer` runs. Do not hand-crank. Tick is scaffold, not permission.
 - [ ] Mission-intake wake: when Haven lands a Strike **Task** (HUNT/MISSION/CHORE/HANDOFF are **labels**, not types — STRIKE-24), wake the owning lane on `nova.<lane>.direct`
 - [ ] Watch STRIKE-3 (zap) — do not steal; wake if Intake asks. STRIKE-13 Done Cosmos.
-- [ ] STRIKE-44 striketeam remote — GAP until Forge/gh auth. Do not git init and call it on-GH.
+- [x] STRIKE-44 striketeam remote — CLOSED Iris mill: adaptnova/striketeam PRIVATE `374d491`. Recopy as NOGIT = fail.
 
 ## in_progress
 

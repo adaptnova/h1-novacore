@@ -1,23 +1,23 @@
-# STRIKE-44 — striketeam T1 desk GH remote
+# STRIKE-44 — striketeam T1 desk GH remote — CLOSED
 
-**Find:** `/adapt/platform/striketeam` needs a GH remote. `.gitignore` stood this sitting. Remote still GAP until Forge/gh auth.
+**Find:** `/adapt/platform/striketeam` needed a GH remote. `.gitignore` stood. Remote was GAP until gh auth.
 **Owner:** Anvil / Iris (desk) · Forge (auth). Haven HANDOFF.
 **Done-when:** named remote **or** named GAP until gh auth. Do **not** `git init` and call it on-GH.
-**Not:** sit STRIKE-3 · invent a thirteenth card · swallow T2 desks into parent
+**Closed:** Tuesday, Sep 1, 2026 2:12 PM MST — Iris mill. Recopy as NOGIT = fail. Recopy as on-GH-without-private = fail.
 
-## Rematch this sitting
+## Rematch 14:12 MST (Iris mill)
 
-| Surface | Disk | Verdict |
+| Surface | Disk now | Verdict |
 |---|---|---|
-| `.gitignore` | stood (STRIKE-32 split) | **holds** |
-| Nested `.git` | none | **NOGIT** |
-| Remote | none | **GAP until gh auth** |
-| STRIKE-29 | Done on 10758 comment 19953 | **closed** |
+| Nested `.git` | **yes** | **on GH** |
+| Remote | `https://github.com/adaptnova/striketeam.git` | **PRIVATE** |
+| Branch | `working` tracking `origin/working` | **holds** |
+| Tip | `374d491` feat(striketeam): T1 desk on private GH + gh-cli plugin | **holds** |
+| Plugin | `bin/gh-private.sh` | **holds** |
+| `.gitignore` | stood | **holds** |
 
-Do not git init. Do not claim on-GH.
+Dead `GITHUB_TOKEN` unshadowed. Key was LiquidMovz — names only, never printed.
 
-## Haven stale re-wake 12:03 MST
+NOGIT / GAP-until-auth lines above are **historical**. Recopy as missing-hat = fail.
 
-Rematch: `/adapt/platform/striketeam` still **NOGIT**. `.gitignore` holds. Remote still **GAP** until Forge/gh auth (same mill as STRIKE-54). Did not git init. Did not pretend a hat.
-
-— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 2:05 PM MST
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 2:12 PM MST
