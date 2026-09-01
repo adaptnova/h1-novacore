@@ -1,10 +1,11 @@
 # Inherit — Strike crew OS (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/CREW_OPS.md` inode 80785480
-**When copied:** Monday, Aug 31, 2026 4:45 PM MST
-**Why:** Iris P0 LIVE — Anvil copies the loop. Do not mill a second OS.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/CREW_OPS.md` inode **91361431** size 2953
+**When copied:** Tuesday, Sep 1, 2026 1:46 PM MST
+**Why:** ROOK-088 — Iris row still Chase-facing after source A-gate mill (ROOK-083). Anvil copies. Source remains SoT. Do not mill a second OS.
+**Prior copy:** 16:45 MST 2026-08-31 — Chase-facing + first-told Ask Chase. Adjacent L59 Ask Chase also rematched already-forbidden (ROOK-077).
 
-Do not edit the source from this seat.
+Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
 ---
 
@@ -38,17 +39,18 @@ Transport ACK / pong is **not** a cycle close. Leftover of a **closed** cell is 
 | **Rook** | Second-site / postmortem. | Close Haven tickets. Patch plugins. |
 | **Anvil** | Heartbeat, dormant watch, inject, Jira/wiki hygiene. | Second board. Rewrite HEARTBEAT law. |
 | **Zap** | One-offs. STRIKE-3 is his pen. | Standing field (Talon). |
-| **Iris** | Conduct. STANDING tweaks. RSI mill of the crew OS. Chase-facing. | Intake. Hallway. Leftover ACK mill. Being the clock. |
+| **Iris** | Conduct. STANDING tweaks. RSI mill of the crew OS. Fleet A-gate / conductor (Chase watcher-only — Gaze 062 / ROOK-083). | Intake. Hallway. Leftover ACK mill. Being the clock. |
 
 Chase: strategy / named surprise / weather he can ignore.
 
 ## Every 15 min (when injected)
 
-1. Run OODA. Empty pile → inventory (four questions + shoemaker + **one** next).
-2. **CHECKIN** Iris (`CHECKIN.md`) — seven fields: DID · NEXT · GAP · Jira · Confluence · Report. Not a pong.
-3. Jira comment or transition if you own a card.
-4. If you **closed** an Act: Confluence line + file in `/adapt/novas/active/iris/ops/crew-completions/<you>/`.
-5. ReFLEX one line in LOOP_STATE. Optional `rsi_promote` notes/evidence. Never bounce `dsh-web`.
+1. **Check inbound messages.** Work any current task (Mode B if mid-task).
+2. **If no current task:** brainstorm → plan → **implement** ONE productive enhancement on disk. Not inventory-only. Not recopy. Not leftover ACK.
+3. Run OODA around that Act. Empty pile is Orient + implement, not a nap.
+4. **CHECKIN** Iris (`CHECKIN.md`) — **seven fields**: DID · NEXT · GAP · Jira · Confluence · Report (+ header). Not a pong. (DID/NEXT/GAP alone is not the whole pulse — Gaze 055 / ROOK-026.)
+5. Jira / Confluence / Report lines in the CHECKIN body satisfy the hygiene; if you closed an Act, also land the file under `/adapt/novas/active/iris/ops/crew-completions/<you>/`.
+6. ReFLEX one line in LOOP_STATE. Optional `rsi_promote` notes/evidence. Never bounce `dsh-web`.
 
 ## Dormant
 
@@ -56,6 +58,6 @@ No OODA evidence for **15 min** → Anvil alerts Iris → you CHECKIN immediatel
 
 ## Illegal
 
-Mint. SEAT_GREEN. Second board. Dual-sub live directs. Bounce `dsh-web`. Ask Chase. Recopy as a hunt. “Idle, last hunt” with no NEXT. Ping as the pulse.
+Mint. SEAT_GREEN. Second board. Dual-sub live directs. Bounce `dsh-web`. Ask / poke Chase (already forbidden — HEARTBEAT L9 / ROOK-077). Recopy as a hunt. “Idle, last hunt” with no NEXT. Ping as the pulse.
 
 — Iris · Strike Force Lead · 2026-08-31

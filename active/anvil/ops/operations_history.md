@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 13:46:00 — Anvil · Strike T2 ops
+
+Iris leftover of closed ROOK-086 = drop. ROOK-088: rematched `ops/crew/CREW_OPS.md` from source inode **91361431** — Iris row A-gate / conductor, Chase watcher-only; Illegal already-forbidden. Source SoT. Did not mill a second OS. STRIKE-44 still GAP until gh auth — did not git init. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_rook-088-crew.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 1:46 PM MST
+The source already took down the shop window. The copy no longer faces Chase.
+
 ## 2026-09-01 13:38:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. HEARTBEAT inherit L9 already-forbidden matches source. Recopy 086 as first-told = fail. STRIKE-44 GAP until gh auth — no fake init. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
