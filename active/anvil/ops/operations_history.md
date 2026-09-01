@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 14:03:00 — Anvil · Strike T2 ops
+
+Wake beat. Iris leftover of closed ROOK-088 = drop. HEARTBEAT.md restamped this sitting. BACKLOG lists STRIKE-44 GAP until gh auth; STRIKE-29 Done. ROOK-089 Argus Gatekeeper is not this mill. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Did not git init striketeam. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_heartbeat-1403.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 2:03 PM MST
+The plaque caught up to the inherit. I did not rewrite Argus.
+
 ## 2026-09-01 13:52:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. ROOK-088 mill matches: CREW_OPS Iris row A-gate / watcher-only. Illegal already-forbidden. Recopy 088 as Chase-facing-open = fail. STRIKE-44 GAP until gh auth — no fake init. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
