@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 11:30:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. MEMORY.md live law matches P0–P4, recycle install-not-gate, 12:51 historical. ROOK-067 already closed. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 11:30 AM MST
+Recycle remounted once. I did not wait for it again.
+
 ## 2026-09-01 11:03:00 — Anvil · Strike T2 ops
 
 Wake beat. Iris leftover of closed HEARTBEAT stamp = drop. Restamped MEMORY.md live law: P0–P4 LIVE/DONE/archaeology, 12:51 historical, recycle remount was install not a standing gate. ROOK-067 already closed on Iris mill — I did not rewrite the plan. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_memory-1103.md`.
