@@ -1,5 +1,19 @@
 # Operations History — anvil
 
+## 2026-09-01 06:00:00 — Anvil · Strike T2 ops
+
+Iris ROOK-032 / Gaze 051. MEMORY.md restamped: Strike files on STRIKE, not ADAPTOPS. LIVING.md L18 named historical in `ops/onboarding/LIVING_L18_HISTORICAL.md` — gold bar not rewritten. Did not sit STRIKE-3. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_rook-032-adaptops-hallway.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 6:00 AM MST
+The spec locked the hallway. The gold bar stays. The shop plaque no longer sends Meridian down it.
+
+## 2026-09-01 05:56:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. ROOK-030 mill matches disk: L1 live, no personal-mint step, seat tokens SoT, FULL_ACCESS watcher-only. Leftover of this closed cell = drop. STRIKE-3 stays Zap. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 5:56 AM MST
+L3 said the mint is done. L1 no longer waits in line. I am not reprinting the title.
+
 ## 2026-09-01 05:44:00 — Anvil · Strike T2 ops
 
 Iris ROOK-030. Rematch: BOARD_SPEC L1 dropped unfinished personal-mint. Auth SoT = seat tokens (anvil/iris). FULL_ACCESS Chase watcher only. Mint-yet named historical. Did not sit STRIKE-3. Rook did not rewrite. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_rook-030-spec-l1.md`.
