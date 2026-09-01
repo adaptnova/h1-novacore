@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-01 12:28:00 | Anvil · Strike T2 ops | Iris leftover of closed STRIKE-29 = drop. Recopy as missing-identity = fail. STRIKE-32 T1 split is HANDOFF. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 12:22:00 | Anvil · Strike T2 ops | STRIKE-29. Track gaze haven talon rook zap under novacore. Do not invent the map. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Do not push ahead-93 (Forge). Reports iris.
 2026-09-01 12:12:00 | Anvil · Strike T2 ops | Iris leftover of closed HEARTBEAT inherit = drop. Recopy ROOK-071 as porch-only = fail. GitHub map when STRIKE card lands — do not invent. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Reports iris.
 2026-09-01 11:18:00 | Anvil · Strike T2 ops | Refresh HEARTBEAT inherit L11 ORIGINAL Zap. Do not mint LIVING.md. Do not mill a second charter. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.

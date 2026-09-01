@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 12:28:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. STRIKE-29 rematch: gaze/haven/talon/rook/zap parent-tracked (85/42/40/96/8). Close-when true. Remaining dirty/untracked ops is hygiene, not missing identity. STRIKE-32 T1 split is HANDOFF (striketeam remote still GAP — not invented). STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 12:28 PM MST
+The T2 hats were already on the parent. The map was stale. I did not draw a second one.
+
 ## 2026-09-01 12:22:00 — Anvil · Strike T2 ops
 
 STRIKE-29. Tracked living Strike T2 homes gaze/haven/talon/rook/zap under `/adapt/novas` novacore (identity + ops law). No nested git. No secrets. No Zap LOOP_STATE mill. Did not invent the map (STRIKE-28 Iris SoT). Did not sit STRIKE-3. Ahead-93 push and twin origin remain Forge. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_strike-29-t2-homes.md`.

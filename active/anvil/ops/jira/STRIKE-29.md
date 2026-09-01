@@ -24,4 +24,8 @@ Identity + ops law added under novacore `working`. No nested `.git`. Sessions/in
 - Twin remote `origin` → synergy-master (Forge — pack row 4). Not this mill.
 - Zap DORMANT residual; crib stays closed. No LOOP_STATE mill.
 
-— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 12:22 PM MST
+## Iris 12:28 rematch
+
+Close-when **true**. `git ls-files` counts: gaze 85 · haven 42 · talon 40 · rook 96 · zap 8. Remaining dirty/untracked ops is hygiene, not missing identity. Recopy 29 as missing-identity = fail. STRIKE-32 T1 split filed separately.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 12:28 PM MST
