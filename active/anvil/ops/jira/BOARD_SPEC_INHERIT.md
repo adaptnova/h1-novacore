@@ -11,7 +11,8 @@ Do not mill a second BOARD_SPEC. Playbook shelf points at source.
 - **Beat (15 min):** `strike-beat.timer` → ping (health) → dormant watch → inject. Ping is not living. **Tick is scaffold, not permission.** Self-starting / no-tick-waiting is **goal-not-now**, not current law.
 - **Check-in:** seven fields (`CHECKIN.md`): DID · NEXT · GAP · Jira · Confluence · Report (+ header). Not a pong. Not DID/NEXT/GAP alone.
 - **Intake wake:** Haven stamps a Strike **Task**. HUNT / MISSION / CHORE / HANDOFF are **labels**, not issue types (STRIKE-24). Wake owner. Tick starts OODA.
+- **Mission Log (L46, ROOK-049):** every Strike **Task** outcome (HUNT/MISSION are labels, not types). Iris milled 08:16. Recopy as two-type log = fail.
 
 Source remains `/adapt/platform/striketeam/STRIKE_BOARD_SPEC.md`. This file is a pointer, not a twin.
 
-— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 8:05 AM MST
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 8:21 AM MST
