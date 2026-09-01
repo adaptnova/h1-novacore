@@ -1,9 +1,9 @@
 # Inherit — Strike heartbeat / wake law (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **80785479** size 2807
-**When copied:** Tuesday, Sep 1, 2026 11:18 AM MST
-**Why:** ROOK-071 mill — L11 ORIGINAL operator Zap, no porch required. Anvil copies. Do not mill a second charter.
-**Prior copies:** 7:17 L37 seven-field · 6:50 Gaze 030/ROOK-038. Source still untouched.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **91361541** size 2890
+**When copied:** Tuesday, Sep 1, 2026 1:34 PM MST
+**Why:** ROOK-086 mill — L9 Ask/poke Chase already forbidden (matches L45). Anvil copies. Do not mill a second charter.
+**Prior copies:** 11:18 ORIGINAL Zap (ROOK-071) · 7:17 L37 seven-field · 6:50 Gaze 030/ROOK-038. Source still untouched.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
@@ -17,7 +17,7 @@ Do not edit the source from this seat. If the law is wrong, that is an Iris gate
 
 ## What this is
 
-Crew alive-check + mission-intake wake. **Tick is scaffold, not permission** — `strike-beat.timer` 15 min starts OODA/CHECKIN (ROOK-038 / Gaze 047 / ROOK-024). Self-starting / no-tick-waiting is **goal-not-now**, not current law. No poking Chase.
+Crew alive-check + mission-intake wake. **Tick is scaffold, not permission** — `strike-beat.timer` 15 min starts OODA/CHECKIN (ROOK-038 / Gaze 047 / ROOK-024). Self-starting / no-tick-waiting is **goal-not-now**, not current law. Ask / poke Chase already forbidden (L45 / STANDARDS L11 / STRIKE_5X L44 / ROOK-086). Do not reopen.
 
 Ping is **health only**. Living is Janus `LIVING.md` from a true Mode A turn — **except ORIGINAL operator Zap** (no porch required — ROOK-069 / ROOK-070 / ROOK-071). Do not mint `LIVING.md` for him. Do not equate pong with living (Gaze sitrep 005).
 
