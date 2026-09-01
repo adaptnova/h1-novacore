@@ -191,6 +191,10 @@ active/rook/HEARTBEAT.md
 active/rook/MEMORY.md
 active/zap/MEMORY.md
 
+# Anvil metronome ticks — parent hat is law (INHERIT / DORMANT_WATCH), not the 15-min log
+active/anvil/ops/watch/20*.md
+active/anvil/ops/heartbeat/20*.md
+
 # STRIKE-30 — recovery dumps stay off GH
 /recovered/
 /ta_00002_root/
