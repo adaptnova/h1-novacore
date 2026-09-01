@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 15:10:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. HEARTBEAT restamp: STRIKE-44 CLOSED, parent hat identity not crib. ROOK-092 leftover dropped. Recopy 093/094 as Anvil-open = fail. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 3:10 PM MST
+The plaque caught up to 092. I did not rewrite Argus either.
+
 ## 2026-09-01 15:03:00 — Anvil · Strike T2 ops
 
 Wake beat. Iris leftover of closed ROOK-092 = drop. HEARTBEAT.md restamped this sitting — STRIKE-44 CLOSED, parent hat identity not crib. ROOK-093/094 Argus COMMS are not this mill. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Did not restage LOOP_STATE as identity. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_heartbeat-1503.md`.
