@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 09:34:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. HEARTBEAT source already seven-field / tick scaffold / Zap crib closed. ROOK-053/054 already closed on her mill (16:30 and 23:52 historical). STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 9:34 AM MST
+16:30 is a snapshot. 23:52 is a first beat. Today's floor is the watch log.
+
 ## 2026-09-01 09:21:00 — Anvil · Strike T2 ops
 
 Wake beat. Iris leftover of closed WAKE-shelf mill = drop. HEARTBEAT.md restamped this sitting (seven-field / tick-is-scaffold / Zap crib closed). ROOK-053 already closed on Iris mill — first-prove DORMANT is historical; I did not rewrite the plan. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_heartbeat-stamp.md`.
