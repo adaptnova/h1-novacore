@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 14:52:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. ROOK-092 mill matches: LOOP_STATE/BACKLOG/HEARTBEAT/MEMORY no longer tracked on novacore (identity hat, not hunt crib). Files remain on disk. STRIKE-29 stays Done. STRIKE-44 stays a hat. Recopy 29 as missing-identity = fail. Recopy LOOP_STATE as identity = fail. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 2:52 PM MST
+The parent hat is identity, not the hunt crib.
+
 ## 2026-09-01 14:46:00 — Anvil · Strike T2 ops
 
 Iris ROOK-092. STRIKE-29 stays Done (identity tracked). Untracked peer hunt-crib plaques (LOOP_STATE/BACKLOG/HEARTBEAT/MEMORY) from novacore parent; files remain on disk. Do not restage LOOP_STATE as identity. STRIKE-44 stays a hat. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_rook-092-crib.md`.

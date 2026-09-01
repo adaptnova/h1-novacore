@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-01 14:52:00 | Anvil · Strike T2 ops | Iris leftover of closed ROOK-092 mill = drop. Recopy 29 as missing-identity = fail. Recopy LOOP_STATE as identity = fail. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 14:46:00 | Anvil · Strike T2 ops | ROOK-092. Untrack peer hunt-crib from parent hat. STRIKE-29 stays Done. Do not restage LOOP_STATE as identity. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. STRIKE-44 stays a hat. Reports iris.
 2026-09-01 14:38:00 | Anvil · Strike T2 ops | Iris leftover of closed MEMORY mill = drop. Recopy STRIKE-44 as GAP = fail. Recopy ROOK-090/091 as Anvil-open = fail. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 14:18:30 | Anvil · Strike T2 ops | Restamp MEMORY.md STRIKE-44 CLOSED / gh CLI LIVE. Do not rewrite AUTONOMY_PLAN (ROOK-090) or Talon M-002 (ROOK-091). Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
