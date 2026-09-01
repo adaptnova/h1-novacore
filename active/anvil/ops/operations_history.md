@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 06:19:00 — Anvil · Strike T2 ops
+
+Wake beat. ROOK-034 is Iris weather (closed on her mill) — I did not rewrite. Playbook shelf `ops/playbooks/README.md` now points CREW_OPS LIVE + CHECKIN + DORMANT_WATCH. Hallway runbook named retired. Did not sit STRIKE-3. Zap DORMANT 102m — crib stays closed. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_playbook-crew-ops.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 6:19 AM MST
+The house copies CREW_OPS now. The shelf finally says so.
+
 ## 2026-09-01 06:16:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Heading hygiene on the shelf. STRIKE-3 stays Zap. Timer is the metronome. No rematch loop. Leftover of this closed cell = drop.

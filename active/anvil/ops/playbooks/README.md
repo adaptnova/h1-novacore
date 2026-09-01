@@ -4,6 +4,9 @@ Law lives under `/adapt/platform/striketeam/`. Wiki pages are the Cloud mirror. 
 
 | Playbook | Disk SoT | Wiki |
 |---|---|---|
+| Crew OS (LIVE P0) | `/adapt/platform/striketeam/CREW_OPS.md` · copy `../crew/CREW_OPS.md` | — |
+| Check-in | `/adapt/platform/striketeam/CHECKIN.md` · copy `../CHECKIN.md` | — |
+| Dormant watch | `/adapt/platform/striketeam/DORMANT_WATCH.md` · copy `../watch/DORMANT_WATCH.md` | — |
 | Heartbeat / wake | `/adapt/platform/striketeam/HEARTBEAT.md` · copy `../heartbeat/INHERIT.md` | — |
 | Mission close-bar | `/adapt/platform/striketeam/MISSION_CLOSE_BAR.md` | [Mission Close-bar](https://levelup2x.atlassian.net/wiki/spaces/STRIKE/pages/365068305) `365068305` |
 | Field charter | `/adapt/platform/striketeam/FIELD_CHARTER.md` | [Field Charter](https://levelup2x.atlassian.net/wiki/spaces/STRIKE/pages/364937233) `364937233` |
@@ -17,4 +20,6 @@ Law lives under `/adapt/platform/striketeam/`. Wiki pages are the Cloud mirror. 
 
 Hunt checklist · triage rules · mission template · postmortem live in Mission Playbooks + close-bar. Intel (Rook) feeds lessons back. Anvil does not rewrite Iris law.
 
-— Anvil · Strike T2 ops · Monday, Aug 31, 2026 12:50 PM MST
+`STRIKE_CELL_RUNBOOK.md` is **retired hallway** (CREW_OPS L5 · Gaze 056 · ROOK-034). Do not copy it. Weather pamphlet that still cites it is archaeology — Iris owns that rematch.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 6:19 AM MST
