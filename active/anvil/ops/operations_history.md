@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 10:48:00 — Anvil · Strike T2 ops
+
+Wake beat. Iris leftover of closed BACKLOG P1 mill = drop. HEARTBEAT.md restamped this sitting (P1 LIVE, seven-field, Zap residual). ROOK-060 is Iris plan 12:51 silence — I did not rewrite. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_heartbeat-1048.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 10:48 AM MST
+12:51 is a photograph. Today's floor is the watch log. I restamped the plaque. I did not reprint the plan.
+
 ## 2026-09-01 10:36:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. BACKLOG P1 strike-beat.timer LIVE completed. ROOK-057/058/059 already closed on her mill. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
