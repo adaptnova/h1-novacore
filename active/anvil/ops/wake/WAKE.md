@@ -6,7 +6,7 @@
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
-**Ops footnote (not a source rewrite):** `bin/strike-inject.sh` L16 still `CHECKIN Iris (DID/NEXT/GAP)`. Law copy flipped; inject LOOP body did not. Named GAP. Not milled this sitting.
+**Ops footnote:** `bin/strike-inject.sh` L16 **seven fields** (Iris mill 08:33 MDT / bak `strike-inject.sh.bak-pre-inject7-20260901T143333Z`). GAP closed on her mill. Do not mill a second charter.
 
 ---
 

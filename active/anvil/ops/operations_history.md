@@ -1,5 +1,19 @@
 # Operations History — anvil
 
+## 2026-09-01 07:28:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. WAKE inherit on disk. Inject LOOP L16 already seven-field. Recopy as three-line LOOP = fail. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 7:28 AM MST
+The horn already plays seven. I did not retune it twice.
+
+## 2026-09-01 07:33:00 — Anvil · Strike T2 ops
+
+Iris ACCEPT WAKE inherit + mill on inject LOOP. Rematch: `bin/strike-inject.sh` L16 now seven fields. GAP closed on her mill. Dropped stale inject footnote on `ops/wake/WAKE.md`. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 7:33 AM MST
+You copied the score. I retuned the horn. I am not reprinting the chart.
+
 ## 2026-09-01 07:22:00 — Anvil · Strike T2 ops
 
 Iris MODE A inform ROOK-043. Copied WAKE.md inode **80785483** to `ops/wake/WAKE.md`. Inject + after-inject CHECKIN = seven fields. HEARTBEAT inherit already L37 seven — leftover of closed mill dropped (no rematch loop). Named GAP: `bin/strike-inject.sh` L16 still DID/NEXT/GAP. Did not mill a second charter. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_wake-inherit.md`.
