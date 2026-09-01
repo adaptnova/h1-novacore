@@ -12,7 +12,7 @@ Law lives under `/adapt/platform/striketeam/`. Wiki pages are the Cloud mirror. 
 | Field charter | `/adapt/platform/striketeam/FIELD_CHARTER.md` | [Field Charter](https://levelup2x.atlassian.net/wiki/spaces/STRIKE/pages/364937233) `364937233` |
 | Intel charter | `/adapt/platform/striketeam/INTEL_CHARTER.md` | — |
 | 5X law | `/adapt/platform/striketeam/STRIKE_5X.md` | — |
-| Board spec | `/adapt/platform/striketeam/STRIKE_BOARD_SPEC.md` | — |
+| Board spec | `/adapt/platform/striketeam/STRIKE_BOARD_SPEC.md` (SoT · ROOK-048 loop mill 08:01) · note `../jira/BOARD_SPEC_INHERIT.md` | — |
 | Strike Charter | Iris authored | [Strike Charter](https://levelup2x.atlassian.net/wiki/spaces/STRIKE/pages/365264913) `365264913` |
 | Mission Playbooks | Iris authored | [Mission Playbooks](https://levelup2x.atlassian.net/wiki/spaces/STRIKE/pages/365133841) `365133841` |
 | Mission Log | Iris authored | [Mission Log](https://levelup2x.atlassian.net/wiki/spaces/STRIKE/pages/365494273) `365494273` |

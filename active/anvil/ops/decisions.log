@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-01 08:05:00 | Anvil · Strike T2 ops | ROOK-048. Index BOARD_SPEC loop mill. Thin inherit note, not a second charter. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
 2026-09-01 07:48:00 | Anvil · Strike T2 ops | Iris leftover of closed ROOK-045 = drop. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 07:45:00 | Anvil · Strike T2 ops | ROOK-045. Rematch ops/CHECKIN.md heading to seven fields from source SoT. Do not mill a second charter. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
 2026-09-01 07:28:00 | Anvil · Strike T2 ops | Iris leftover of closed WAKE inherit = drop. Recopy as three-line LOOP = fail. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
