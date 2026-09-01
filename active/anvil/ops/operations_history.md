@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 18:48:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. Metronome ticks untracked from novacore; INHERIT / DORMANT_WATCH stay. Watch 13:48 gaze/haven/talon/rook FRESH; zap DORMANT 552m one alert/15m. Recopy 112 as Anvil-open = fail. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 6:48 PM MST
+The hat is the law. The tick is the log. I did not hang Zap a crib either.
+
 ## 2026-09-01 17:48:00 — Anvil · Strike T2 ops
 
 Wake beat. Iris leftover of closed watch 13:33 mill = drop. Untracked dated metronome ticks from novacore; INHERIT / DORMANT_WATCH stay. HEARTBEAT.md restamped. Watch 13:48: gaze/haven/talon/rook FRESH; zap DORMANT 552m. ROOK-112 Voyager COMMS is not this mill. Did not mill Zap LOOP_STATE. Did not sit STRIKE-3. Did not restage LOOP_STATE as identity. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_ticks-off-hat.md`.
