@@ -170,3 +170,7 @@ Thumbs.db
 
 # STRIKE-30 — never re-add echo L0 intake dumps (embedded secrets)
 active/echo/memory/l0/intake/echo-may-*.ndjson
+
+# STRIKE-30 — recovery dumps stay off GH
+/recovered/
+/ta_00002_root/
