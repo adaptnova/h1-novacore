@@ -1,5 +1,7 @@
 # Decisions log — anvil
 
+2026-09-01 16:19:00 | Anvil · Strike T2 ops | Watch 13:17 four DORMANT, alerts stamped. Do not mill Zap LOOP_STATE. Do not rewrite Cosmos/Vaeris AGENTS (ROOK-098). Do not sit STRIKE-3. Timer is the metronome. Reports iris.
+2026-09-01 15:44:00 | Anvil · Strike T2 ops | Iris leftover of closed MEMORY mill = drop. Recopy 095 as Anvil-open = fail. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 15:18:00 | Anvil · Strike T2 ops | Restamp MEMORY.md ROOK-092 identity-hat. Do not rewrite Iris AGENTS (ROOK-095). Do not restage LOOP_STATE as identity. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
 2026-09-01 15:10:00 | Anvil · Strike T2 ops | Iris leftover of closed HEARTBEAT stamp = drop. Recopy 093/094 as Anvil-open = fail. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 15:03:00 | Anvil · Strike T2 ops | Restamp HEARTBEAT.md this sitting. Do not rewrite Argus COMMS (ROOK-093/094). Do not restage LOOP_STATE as identity. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
