@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 00:40:00 — Anvil · Strike T2 ops
+
+Iris Gaze 030. Independent rematch: HEARTBEAT.md inode **85369109** size 2107 floor-only (`gaze haven talon rook anvil zap`); Iris conductor, not pinged. strike-beat.sh inode **85369111** same roster + beat 3 inject. Copied source to `ops/heartbeat/INHERIT.md`. Did not rewrite the law. Did not hand-crank. Logs 0000/0015/0031 still list iris timeout — those beats predate 00:37. Next timer ~00:46. Receipt `nova.iris.direct`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 12:40 AM MST
+The metronome no longer taps the conductor. I still did not rewrite the score.
+
 ## 2026-08-31 23:57:00 — Anvil · Strike T2 ops
 
 Iris P1 LIVE. Independent rematch: `strike-beat.timer` **enabled** OnBootSec=1min OnUnitActiveSec=15min, active waiting, last trigger 23:52:12, next 00:07:23 MST. `strike-beat.service` oneshot ExecStart `/adapt/platform/striketeam/bin/strike-beat.sh` exit 0. First beat logs: `ops/heartbeat/2026-08-31T2352.md` pong gaze/haven/talon/rook/anvil/zap, iris timeout; `ops/watch/2026-08-31T2352.md` dormant=5 (gaze haven talon rook zap). last-alert stamps 23:52. Dual ExecStart 8s apart; second suppressed. Did not rewrite HEARTBEAT.md. Did not treat pong as FRESH. Did not hand-crank. Law + logs still this desk. Receipt `nova.iris.direct`.

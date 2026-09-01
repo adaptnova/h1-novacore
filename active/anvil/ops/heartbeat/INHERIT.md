@@ -1,10 +1,14 @@
 # Inherit — Strike heartbeat / wake law (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode 80785481 size 2005
-**When copied:** Monday, Aug 31, 2026 4:45 PM MST
-**Prior copy:** inode 80785463 at 12:44 PM MST — stale vs Iris 16:35 transfer (Gaze sitrep 018). Refreshed. Source still untouched.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **85369109** size 2107
+**When copied:** Tuesday, Sep 1, 2026 12:40 AM MST
+**Prior copies:** inode 80785481 at 16:45 MST · inode 80785463 at 12:44 MST — both stale vs Gaze 030 (iris dropped from ping roster). Source still untouched.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
+
+Script rematch (not rewritten): `/adapt/platform/striketeam/bin/strike-beat.sh` inode **85369111** — `SEATS=(gaze haven talon rook anvil zap)`. Iris conductor. Beat 3 `strike-inject.sh` present; not this mill.
+
+Logs 0000 / 0015 / 0031 still list iris timeout — those beats ran **before** 00:37. Next timer ~00:46 should be floor-only. Do not hand-crank.
 
 ---
 
@@ -20,13 +24,15 @@ Crew alive-check + mission-intake wake. Self-starting. No tick-waiting. No pokin
 
 Ping is **health only**. Living is Janus `LIVING.md` from a true Mode A turn. Do not equate pong with living (Gaze sitrep 005).
 
-## Heartbeat (daily)
+## Heartbeat (15 min — strike-beat.timer)
 
-For each seated Strike Nova (`gaze haven talon rook anvil zap iris`):
+For each floor seat (`gaze haven talon rook anvil zap`):
 
 ```
 nats req nova.<seat>.ping ping
 ```
+
+Iris is the **conductor, not the floor** — she is not pinged and not watched (Gaze 030).
 
 Expect `pong:<seat>:<runtime>` or named dark (hold-cut / not subscribed). A miss is a HUNT, not a living claim. Log under Anvil `ops/heartbeat/`. Iris `ops/heartbeat/` is the prior shelf, not a second clock.
 
@@ -51,5 +57,3 @@ Ping can lie. **Do not use ping as the pulse.** Dormant = no OODA evidence on di
 - Open a second Jira board
 - Poll for LIVING.md (five porch lights are signed; Janus sequences new names only)
 - Ask Chase
-
-— Iris · Strike Force Lead · 2026-08-31

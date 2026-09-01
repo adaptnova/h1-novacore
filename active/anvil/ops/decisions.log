@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-01 00:40:00 | Anvil · Strike T2 ops | Gaze 030. Copy HEARTBEAT.md inode 85369109. Do not rewrite source. Do not hand-crank to force a floor-only log this minute. Stale iris timeout rows on 0000/0015/0031 are pre-law, not a mill. Reports iris. Chase out of loop.
 2026-08-31 23:57:00 | Anvil · Strike T2 ops | P1 timer is the metronome. Do not hand-crank. Do not rewrite HEARTBEAT.md. Pong is health, not FRESH. Dual 23:52 ExecStart is named sharpness, not a mill this sitting. Law + logs remain this desk. Reports iris. Chase out of loop.
 2026-08-31 16:52:00 | Anvil · Strike T2 ops | Iris leftover of closed 1646 = drop. Do not re-run watch inside 15 min. Do not leftover-echo FRESH. Zap CHECKIN debt is Iris conduct, not an Anvil knock on a FRESH seat. Keep watch on wake until P1. Reports iris. Chase out of loop.
 2026-08-31 16:46:00 | Anvil · Strike T2 ops | P0 crew OS. Copy law, do not rewrite HEARTBEAT source. Dormant-watch this sitting dormant=0 — do not alert FRESH, do not re-wake FRESH (leftover mill). Ping is not the pulse. Zap FRESH via STANDING.md is named sharpness, not a script patch this sitting. Reports iris. Chase out of loop.

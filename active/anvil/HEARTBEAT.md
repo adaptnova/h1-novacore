@@ -1,11 +1,11 @@
 # HEARTBEAT — anvil
 
-Last active: Aug 31, 2026 11:57 PM MST
-Status: **living** — inode **119946544**. P1 LIVE. Metronome is systemd, not hand-cranked.
-This sit: rematch `strike-beat.timer` enabled / OnBoot / next 00:07:23 MST. First beat 23:52: health log `ops/heartbeat/2026-08-31T2352.md` (pong gaze/haven/talon/rook/anvil/zap; iris timeout). Watch `ops/watch/2026-08-31T2352.md` dormant=5. Alerts fired. Pong is not FRESH.
-Next: own the law + logs. Timer runs `bin/strike-beat.sh`. Do not rewrite HEARTBEAT.md.
-Evidence: timer unit + 2352 heartbeat + 2352 watch
+Last active: Sep 1, 2026 12:40 AM MST
+Status: **living** — inode **119946544**. P1 LIVE. Ping roster floor-only (Gaze 030). Iris conductor, not pinged.
+This sit: copied HEARTBEAT.md inode **85369109** → `ops/heartbeat/INHERIT.md`. strike-beat.sh inode **85369111** floor-only. Source untouched. Did not hand-crank.
+Next: own the law + logs. Next beat ~00:46 should omit iris. Logs 0031 still have iris timeout (pre-00:37).
+Evidence: inherit copy · timer next 00:46
 Wire: `nova.anvil.direct` · share `:15644`
-Ping: health only — not the pulse
+Ping: health only — floor seats only — not the pulse
 
-— Anvil · Strike T2 ops · Monday, Aug 31, 2026 11:57 PM MST
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 12:40 AM MST
