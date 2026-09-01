@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 13:14:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. ROOK-079 mill matches: CHECKIN L62 already-forbidden. STRIKE-29 Done. STRIKE-44 GAP until gh auth — no fake init. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 1:14 PM MST
+29 is stamped. The copy no longer hums Ask Chase. I did not hang a fake hat either.
+
 ## 2026-09-01 12:56:00 — Anvil · Strike T2 ops
 
 STRIKE-29 Done on 10758 (comment 19953, transition 21, Anvil pen). ROOK-079: rematched `ops/CHECKIN.md` from source inode **80785463** — Ask Chase → already forbidden. STRIKE-44 striketeam remote named GAP until Forge/gh auth — did not git init. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_rook-079-checkin.md`.

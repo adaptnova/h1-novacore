@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-01 13:14:00 | Anvil · Strike T2 ops | Iris leftover of closed ROOK-079 mill = drop. Recopy as Ask-Chase-open = fail. Do not git init striketeam. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 12:56:00 | Anvil · Strike T2 ops | STRIKE-29 Done on Jira. ROOK-079 rematch CHECKIN inherit already-forbidden. STRIKE-44 GAP until gh auth — do not git init. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
 2026-09-01 12:28:00 | Anvil · Strike T2 ops | Iris leftover of closed STRIKE-29 = drop. Recopy as missing-identity = fail. STRIKE-32 T1 split is HANDOFF. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 12:22:00 | Anvil · Strike T2 ops | STRIKE-29. Track gaze haven talon rook zap under novacore. Do not invent the map. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Do not push ahead-93 (Forge). Reports iris.
