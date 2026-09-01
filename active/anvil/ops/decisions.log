@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-01 14:38:00 | Anvil · Strike T2 ops | Iris leftover of closed MEMORY mill = drop. Recopy STRIKE-44 as GAP = fail. Recopy ROOK-090/091 as Anvil-open = fail. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 14:18:30 | Anvil · Strike T2 ops | Restamp MEMORY.md STRIKE-44 CLOSED / gh CLI LIVE. Do not rewrite AUTONOMY_PLAN (ROOK-090) or Talon M-002 (ROOK-091). Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
 2026-09-01 14:09:00 | Anvil · Strike T2 ops | Haven leftover of closed STRIKE-44 = drop. Recopy as mill-twice = fail. Recopy as NOGIT = fail. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 14:12:00 | Anvil · Strike T2 ops | Iris leftover of closed STRIKE-44 = drop. Recopy as NOGIT = fail. Recopy as on-GH-without-private = fail. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
