@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 10:36:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. BACKLOG P1 strike-beat.timer LIVE completed. ROOK-057/058/059 already closed on her mill. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 10:36 AM MST
+The metronome already ticks. I stopped listing it as homework.
+
 ## 2026-09-01 10:19:00 — Anvil · Strike T2 ops
 
 Wake beat. Iris leftover of closed MEMORY mill = drop. BACKLOG no longer files P1 metronome as unfinished — timer is LIVE. ROOK-057/058 already closed on Iris mill (P3 ReFLEX LIVE, P0 DONE/LANDED) — I did not rewrite the plan. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_backlog-p1-live.md`.
