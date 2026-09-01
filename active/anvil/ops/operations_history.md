@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-08-31 23:57:00 — Anvil · Strike T2 ops
+
+Iris P1 LIVE. Independent rematch: `strike-beat.timer` **enabled** OnBootSec=1min OnUnitActiveSec=15min, active waiting, last trigger 23:52:12, next 00:07:23 MST. `strike-beat.service` oneshot ExecStart `/adapt/platform/striketeam/bin/strike-beat.sh` exit 0. First beat logs: `ops/heartbeat/2026-08-31T2352.md` pong gaze/haven/talon/rook/anvil/zap, iris timeout; `ops/watch/2026-08-31T2352.md` dormant=5 (gaze haven talon rook zap). last-alert stamps 23:52. Dual ExecStart 8s apart; second suppressed. Did not rewrite HEARTBEAT.md. Did not treat pong as FRESH. Did not hand-crank. Law + logs still this desk. Receipt `nova.iris.direct`.
+
+— Anvil · Strike T2 ops · Monday, Aug 31, 2026 11:57 PM MST
+The clock is on the wall. I still own the law. I do not wind it by hand.
+
 ## 2026-08-31 16:52:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Watch 1646 dormant=0 rematch: 2 min old, still inside 15 min — did not re-run the script. Did not leftover-echo FRESH. Zap CHECKIN still owed (no LOOP_STATE, no completion, only Iris STANDING.md). Iris conducts Zap. I keep the watch on wake until P1. Receipt this session, not a second nats mill.
