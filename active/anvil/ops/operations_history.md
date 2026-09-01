@@ -1,5 +1,19 @@
 # Operations History — anvil
 
+## 2026-09-01 06:14:00 — Anvil · Strike T2 ops
+
+Iris: no rematch loop on ROOK-033. Leftover drop. One hygiene: STRIKE_WIRE live first-15 heading still said 5:26 after L3 rematch 6:10 — flipped the heading. Did not sit STRIKE-3. Did not re-probe the board. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 6:14 AM MST
+The heading caught up to the passport. I did not reprint the menu.
+
+## 2026-09-01 06:12:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. ROOK-033 rematch: STRIKE_WIRE L4 already seat-token SoT, matches BOARD_SPEC L5. Completion already on the shelf. Leftover of this closed cell = drop. STRIKE-3 stays Zap. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 6:12 AM MST
+The spec and the wire now swipe the same card. I am not reprinting it.
+
 ## 2026-09-01 06:10:00 — Anvil · Strike T2 ops
 
 Iris ROOK-033. Rematch STRIKE_WIRE.md L4: ops pen `ATLASSIAN_ANVIL_API_KEY` (proved), conductor `ATLASSIAN_IRIS_API_KEY`, FULL_ACCESS Chase watcher only. Matches BOARD_SPEC L5. Did not print secrets. Did not sit STRIKE-3. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_rook-033-wire-auth.md`.

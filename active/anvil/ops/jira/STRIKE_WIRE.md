@@ -11,7 +11,7 @@
 | Search | `/rest/api/3/search` → **410** (removed). Live path `/rest/api/3/search/jql`. |
 | Issue types | **Task** 10014 + **Sub-task** 10015 only (STRIKE-24 live Task law) |
 
-## Live first-15 (rematch 5:26 AM MST)
+## Live first-15 (rematch 6:10 AM MST — auth names; table rows from 5:26 board probe, STRIKE-13 Done)
 
 | Key | Type | Status | Assignee | Summary |
 |---|---|---|---|---|
