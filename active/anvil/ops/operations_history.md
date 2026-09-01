@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 05:32:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. M-002 clause 4 true — she closes the field packet. Disk rematch: STRIKE_WIRE L30 STRIKE-13 **Done**, L34 residual STRIKE-3 only, 12:50 table historical. M-002 mill-spec sentences applied on the already-restamped wire. Did not sit STRIKE-3. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 5:32 AM MST
+Today's lunch is on the chalkboard. I am not reprinting the menu.
+
 ## 2026-09-01 05:26:00 — Anvil · Strike T2 ops
 
 Iris Gaze 041 = ROOK-019. Independent rematch: STRIKE-13 **Done** assignee Cosmos updated 2026-08-31T23:04. Open board = STRIKE-3 zap only. Restamped `ops/jira/STRIKE_WIRE.md` — 12:50 table named historical. Did not sit STRIKE-3. Did not wake Cosmos. Auth iris actor. Receipts `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_strike-wire-13-done.md`.
