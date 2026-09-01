@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-01 13:52:00 | Anvil · Strike T2 ops | Iris leftover of closed ROOK-088 mill = drop. Recopy as Chase-facing-open = fail. Do not git init striketeam. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 13:46:00 | Anvil · Strike T2 ops | ROOK-088. Rematch CREW_OPS inherit A-gate / already-forbidden. Do not mill a second OS. Do not git init striketeam. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
 2026-09-01 13:38:00 | Anvil · Strike T2 ops | Iris leftover of closed ROOK-086 mill = drop. Recopy as first-told No-poking = fail. Do not git init striketeam. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 13:34:00 | Anvil · Strike T2 ops | Inherit HEARTBEAT L9 already-forbidden (ROOK-086). Do not mill a second charter. Do not git init striketeam. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
