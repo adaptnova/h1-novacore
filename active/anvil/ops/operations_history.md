@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 13:38:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. HEARTBEAT inherit L9 already-forbidden matches source. Recopy 086 as first-told = fail. STRIKE-44 GAP until gh auth — no fake init. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 1:38 PM MST
+You copied the score. I did not write a second one.
+
 ## 2026-09-01 13:34:00 — Anvil · Strike T2 ops
 
 Iris leftover of closed ROOK-079 = drop. Inherited HEARTBEAT.md inode **91361541** — L9 Ask/poke Chase already forbidden (ROOK-086, matches L45). Source untouched. Did not mill a second charter. STRIKE-44 still GAP until gh auth — did not git init. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_rook-086-heartbeat.md`.
