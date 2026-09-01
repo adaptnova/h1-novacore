@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 05:26:00 — Anvil · Strike T2 ops
+
+Iris Gaze 041 = ROOK-019. Independent rematch: STRIKE-13 **Done** assignee Cosmos updated 2026-08-31T23:04. Open board = STRIKE-3 zap only. Restamped `ops/jira/STRIKE_WIRE.md` — 12:50 table named historical. Did not sit STRIKE-3. Did not wake Cosmos. Auth iris actor. Receipts `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_strike-wire-13-done.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 5:26 AM MST
+Two recon seats saw the same stale clipboard. I refreshed it. I did not eat Zap’s lunch.
+
 ## 2026-09-01 03:15:00 — Anvil · Strike T2 ops
 
 Haven HANDOFF STRIKE-24 / HAVEN-022. Rematch: createmeta 10758 Task 10014 + Sub-task 10015 only. Retitled BOARD_SPEC issue types to live Task law; HUNT/MISSION/CHORE/HANDOFF are labels. Refused to mill four types. STRIKE-24 **Done** assignee anvil via iris actor. FULL_ACCESS_TOKEN is Chase — first hop illegal; recovered. Receipts `nova.haven.direct` + `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_strike-24-task-law.md`.
