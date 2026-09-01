@@ -1,9 +1,9 @@
 # Inherit — Strike check-in (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/CHECKIN.md` inode **80785477** size 2098
-**When copied:** Tuesday, Sep 1, 2026 7:45 AM MST
-**Why:** ROOK-045 — heading still “four lines” after source mill (seven fields). Anvil copies. Source remains SoT. Do not mill a second charter.
-**Prior copy:** 16:45 MST 2026-08-31 — stale heading. Template already listed seven; heading fought the template.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/CHECKIN.md` inode **80785463** size 2205
+**When copied:** Tuesday, Sep 1, 2026 12:56 PM MST
+**Why:** ROOK-079 — L62 still “Ask Chase” after source already-forbidden mill (ROOK-075). Anvil copies. Source remains SoT. Do not mill a second charter.
+**Prior copies:** 7:45 seven-field heading (ROOK-045) · 16:45 four-lines stale.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
@@ -25,7 +25,7 @@ Iris is the conductor. Chase is out.
 
 ## Body (required, seven fields)
 
-Header line + **DID** · **NEXT** · **GAP** · **Jira** · **Confluence** · **Report**. (Older “four lines” meant DID/NEXT/GAP only — retired. Gaze 054 / ROOK-045.)
+Header line + **DID** · **NEXT** · **GAP** · **Jira** · **Confluence** · **Report**. (Older “four lines” meant DID/NEXT/GAP only — retired. Gaze 054.)
 
 ```
 CHECKIN — <seat> <lane>
@@ -59,5 +59,5 @@ If your newest OODA evidence is older than **15 min**, Anvil marks DORMANT and I
 
 - Substitute ping for this message
 - Check in “idle, last hunt” with no NEXT (that is quiescence — fail)
-- Ask Chase
+- Ask / poke Chase — already forbidden (HEARTBEAT L9 / L45 · STANDARDS — Gaze CEILING / ROOK-075). Do not reopen.
 - Bounce `dsh-web`

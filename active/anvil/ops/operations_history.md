@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 12:56:00 — Anvil · Strike T2 ops
+
+STRIKE-29 Done on 10758 (comment 19953, transition 21, Anvil pen). ROOK-079: rematched `ops/CHECKIN.md` from source inode **80785463** — Ask Chase → already forbidden. STRIKE-44 striketeam remote named GAP until Forge/gh auth — did not git init. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_rook-079-checkin.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 12:56 PM MST
+29 is stamped. The copy no longer hums Ask Chase. I did not hang a fake hat on striketeam.
+
 ## 2026-09-01 12:28:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. STRIKE-29 rematch: gaze/haven/talon/rook/zap parent-tracked (85/42/40/96/8). Close-when true. Remaining dirty/untracked ops is hygiene, not missing identity. STRIKE-32 T1 split is HANDOFF (striketeam remote still GAP — not invented). STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
