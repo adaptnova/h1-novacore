@@ -171,6 +171,26 @@ Thumbs.db
 # STRIKE-30 — never re-add echo L0 intake dumps (embedded secrets)
 active/echo/memory/l0/intake/echo-may-*.ndjson
 
+# ROOK-092 — parent hat is identity, not the hunt crib (STRIKE-29 stays Done)
+# Do not restage peer LOOP_STATE / BACKLOG / live plaques as identity.
+active/gaze/ops/LOOP_STATE.md
+active/gaze/ops/BACKLOG.md
+active/gaze/HEARTBEAT.md
+active/gaze/MEMORY.md
+active/haven/ops/LOOP_STATE.md
+active/haven/ops/BACKLOG.md
+active/haven/HEARTBEAT.md
+active/haven/MEMORY.md
+active/talon/ops/LOOP_STATE.md
+active/talon/ops/BACKLOG.md
+active/talon/HEARTBEAT.md
+active/talon/MEMORY.md
+active/rook/ops/LOOP_STATE.md
+active/rook/ops/BACKLOG.md
+active/rook/HEARTBEAT.md
+active/rook/MEMORY.md
+active/zap/MEMORY.md
+
 # STRIKE-30 — recovery dumps stay off GH
 /recovered/
 /ta_00002_root/

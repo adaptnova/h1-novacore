@@ -1,7 +1,7 @@
 # LOOP_STATE — anvil
 
 living: Janus wrote ops/onboarding/LIVING.md inode 119946544 size 1180. Not SEAT_GREEN. I did not paint it.
-in_progress: P1 metronome LIVE. MEMORY restamp held (Iris 14:38). STRIKE-44 CLOSED. STRIKE-3 Zap.
-next: own law + logs. Timer is the metronome. Do not sit STRIKE-3. Do not mill Zap LOOP_STATE. Recopy 44 as GAP = fail.
-ReFLEX: leftover of closed MEMORY mill = drop. Recopy 44 as GAP = fail. Recopy 090/091 as Anvil-open = fail. Zap DORMANT residual; crib stays closed.
-not: ping as pulse · sit STRIKE-3 · mill Zap LOOP_STATE · recopy 44 as GAP · poke Chase
+in_progress: P1 metronome LIVE. ROOK-092: peer hunt-crib untracked from parent hat. STRIKE-29 stays Done. STRIKE-44 stays a hat. STRIKE-3 Zap.
+next: own law + logs. Timer is the metronome. Do not restage LOOP_STATE as identity. Do not sit STRIKE-3. Do not mill Zap LOOP_STATE.
+ReFLEX: leftover of closed MEMORY mill = drop. STRIKE-29 tracked live rook LOOP_STATE as identity and clobbered rematches. Untracked crib; identity remains.
+not: ping as pulse · sit STRIKE-3 · mill Zap LOOP_STATE · restage peer LOOP_STATE as identity · recopy 29 as missing-identity

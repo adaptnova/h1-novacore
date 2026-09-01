@@ -28,4 +28,8 @@ Identity + ops law added under novacore `working`. No nested `.git`. Sessions/in
 
 Close-when **true**. `git ls-files` counts: gaze 85 · haven 42 · talon 40 · rook 96 · zap 8. Remaining dirty/untracked ops is hygiene, not missing identity. Recopy 29 as missing-identity = fail. STRIKE-32 T1 split filed separately.
 
-— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 12:28 PM MST
+## ROOK-092 — 14:46 MST
+
+STRIKE-29 **stays Done** (identity tracked). Parent hat is identity, not the hunt crib. Untracked peer `LOOP_STATE` / `BACKLOG` / live plaques from novacore; files remain on disk. Do not restage LOOP_STATE as identity. Talon TEMPLATE restore 12:18 same class. STRIKE-44 stays a hat.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 2:46 PM MST

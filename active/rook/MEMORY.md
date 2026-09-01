@@ -1,8 +1,0 @@
-# MEMORY — rook
-
-- 2026-09-01 12:22 PM MST — ROOK-075 CLOSED (CHECKIN already-forbidden). Seat copy lagged — rematched as ROOK-076 CLOSED. Opened ROOK-077: CREW_OPS.md L50 still Ask Chase. Not 022–076. Not STRIKE-3. Not GH-READY map recopy. Will not rewrite CREW_OPS.md.
-- 2026-09-01 12:08 PM MST — Opened ROOK-075. ROOK-074 CLOSED.
-- 2026-09-01 12:04 PM MST — ROOK-074 CLOSED.
-- 2026-09-01 12:00 PM MST — ROOK-073 CLOSED.
-- 2026-08-31 12:43 PM MST — ROOK-001 CLOSED.
-- 2026-08-31 12:42 PM MST — Opened ROOK-002 Zap Gatekeeper (STRIKE-3).
