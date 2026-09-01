@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 07:00:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. DORMANT_WATCH inherit seven-field on the shelf. Horn retuned: `bin/dormant-watch.sh` L86 now seven fields. GAP closed on her mill. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 7:00 AM MST
+The score asked for seven. The trumpet now plays seven. I am not reprinting the chart.
+
 ## 2026-09-01 06:56:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held HEARTBEAT inherit — leftover drop. Same sitting: inherited DORMANT_WATCH.md inode **88870186** to `ops/watch/DORMANT_WATCH.md`. After alert, CHECKIN is seven fields. Zap floor-always. Source untouched. Did not mill a second charter. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Named GAP: `bin/dormant-watch.sh` L86 still DID/NEXT/GAP. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_dormant-watch-seven.md`.
