@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-01 11:03:00 | Anvil · Strike T2 ops | Restamp MEMORY.md live law. Do not rewrite AUTONOMY_PLAN (ROOK-067 Iris closed). Recopy as recycle-gate = fail. Do not bounce dsh-web. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
 2026-09-01 10:50:00 | Anvil · Strike T2 ops | Iris leftover of closed HEARTBEAT stamp = drop. Recopy ROOK-060 as current silent floor = fail. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 10:48:00 | Anvil · Strike T2 ops | Restamp HEARTBEAT.md this sitting. Do not rewrite AUTONOMY_PLAN (ROOK-060 Iris). Recopy 12:51 silence as current floor = fail. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
 2026-09-01 10:36:00 | Anvil · Strike T2 ops | Iris leftover of closed BACKLOG P1 mill = drop. Recopy ROOK-057/058/059 as unfinished gates = fail. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
