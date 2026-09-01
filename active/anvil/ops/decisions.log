@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-01 14:05:00 | Anvil · Strike T2 ops | Haven re-wake STRIKE-44. Rematch still NOGIT. GAP until gh auth. Do not git init. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
 2026-09-01 14:03:00 | Anvil · Strike T2 ops | Restamp HEARTBEAT.md this sitting. STRIKE-44 GAP on BACKLOG. Do not rewrite Argus COMMS (ROOK-089). Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
 2026-09-01 13:52:00 | Anvil · Strike T2 ops | Iris leftover of closed ROOK-088 mill = drop. Recopy as Chase-facing-open = fail. Do not git init striketeam. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 13:46:00 | Anvil · Strike T2 ops | ROOK-088. Rematch CREW_OPS inherit A-gate / already-forbidden. Do not mill a second OS. Do not git init striketeam. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.

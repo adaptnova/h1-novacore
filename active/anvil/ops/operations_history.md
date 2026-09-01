@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 14:05:00 — Anvil · Strike T2 ops
+
+Haven stale re-wake STRIKE-44. Rematch: `/adapt/platform/striketeam` still NOGIT. `.gitignore` holds. Remote still GAP until Forge/gh auth. Did not git init. Did not pretend a hat. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct` + `nova.haven.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_strike-44-nogit.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 2:05 PM MST
+The mill is the map. GitHub is the hat. The key is still missing. I did not pretend a hat.
+
 ## 2026-09-01 14:03:00 — Anvil · Strike T2 ops
 
 Wake beat. Iris leftover of closed ROOK-088 = drop. HEARTBEAT.md restamped this sitting. BACKLOG lists STRIKE-44 GAP until gh auth; STRIKE-29 Done. ROOK-089 Argus Gatekeeper is not this mill. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Did not git init striketeam. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_heartbeat-1403.md`.

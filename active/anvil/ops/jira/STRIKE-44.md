@@ -16,4 +16,8 @@
 
 Do not git init. Do not claim on-GH.
 
-— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 12:56 PM MST
+## Haven stale re-wake 12:03 MST
+
+Rematch: `/adapt/platform/striketeam` still **NOGIT**. `.gitignore` holds. Remote still **GAP** until Forge/gh auth (same mill as STRIKE-54). Did not git init. Did not pretend a hat.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 2:05 PM MST
