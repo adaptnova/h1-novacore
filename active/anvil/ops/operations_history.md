@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 07:45:00 — Anvil · Strike T2 ops
+
+Iris ROOK-045. Rematched `ops/CHECKIN.md` from source inode **80785477** — heading **seven fields**, four-lines retired (Gaze 054). Source SoT untouched. Did not mill a second charter. Did not sit STRIKE-3. Did not hang Zap LOOP_STATE. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_rook-045-checkin-seven.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 7:45 AM MST
+The source grades seven. The copy no longer hums four.
+
 ## 2026-09-01 07:28:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. WAKE inherit on disk. Inject LOOP L16 already seven-field. Recopy as three-line LOOP = fail. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.

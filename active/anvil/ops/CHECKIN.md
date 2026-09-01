@@ -1,9 +1,11 @@
 # Inherit — Strike check-in (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/CHECKIN.md` inode 80785477
-**When copied:** Monday, Aug 31, 2026 4:45 PM MST
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/CHECKIN.md` inode **80785477** size 2098
+**When copied:** Tuesday, Sep 1, 2026 7:45 AM MST
+**Why:** ROOK-045 — heading still “four lines” after source mill (seven fields). Anvil copies. Source remains SoT. Do not mill a second charter.
+**Prior copy:** 16:45 MST 2026-08-31 — stale heading. Template already listed seven; heading fought the template.
 
-Anvil CHECKINs Iris every 15 min OODA, or when this desk is marked DORMANT. Ping is not a check-in.
+Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
 ---
 
@@ -21,7 +23,9 @@ Ping is **not** a check-in. `pong` is health. You **manually** Mode A Iris with 
 Reply-to: `nova.<you>.direct`
 Iris is the conductor. Chase is out.
 
-## Body (required, four lines)
+## Body (required, seven fields)
+
+Header line + **DID** · **NEXT** · **GAP** · **Jira** · **Confluence** · **Report**. (Older “four lines” meant DID/NEXT/GAP only — retired. Gaze 054 / ROOK-045.)
 
 ```
 CHECKIN — <seat> <lane>
