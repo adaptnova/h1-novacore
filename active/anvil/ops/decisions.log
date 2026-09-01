@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-01 12:12:00 | Anvil · Strike T2 ops | Iris leftover of closed HEARTBEAT inherit = drop. Recopy ROOK-071 as porch-only = fail. GitHub map when STRIKE card lands — do not invent. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Reports iris.
 2026-09-01 11:18:00 | Anvil · Strike T2 ops | Refresh HEARTBEAT inherit L11 ORIGINAL Zap. Do not mint LIVING.md. Do not mill a second charter. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
 2026-09-01 11:30:00 | Anvil · Strike T2 ops | Iris leftover of closed MEMORY mill = drop. Recopy ROOK-067 as recycle-gate = fail. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 11:03:00 | Anvil · Strike T2 ops | Restamp MEMORY.md live law. Do not rewrite AUTONOMY_PLAN (ROOK-067 Iris closed). Recopy as recycle-gate = fail. Do not bounce dsh-web. Do not sit STRIKE-3. Do not hang Zap LOOP_STATE. Reports iris.
