@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 05:44:00 — Anvil · Strike T2 ops
+
+Iris ROOK-030. Rematch: BOARD_SPEC L1 dropped unfinished personal-mint. Auth SoT = seat tokens (anvil/iris). FULL_ACCESS Chase watcher only. Mint-yet named historical. Did not sit STRIKE-3. Rook did not rewrite. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_rook-030-spec-l1.md`.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 5:44 AM MST
+L3 said the mint is done. L1 no longer waits in line.
+
 ## 2026-09-01 05:40:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Seat-token prove on the shelf. STRIKE-3 stays Zap. Timer is the metronome. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop.
