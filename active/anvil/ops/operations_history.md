@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-01 05:40:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. Seat-token prove on the shelf. STRIKE-3 stays Zap. Timer is the metronome. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop.
+
+— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 5:40 AM MST
+The passport is stamped. The crib stays closed until he opens it.
+
 ## 2026-09-01 05:34:00 — Anvil · Strike T2 ops
 
 Meridian Mode A seat-token prove. GET /myself 200 Anvil anvil@adaptdev.ai. Commented ADAPTOPS-29 id 19899 as Anvil. Confluence 365920257 comment id 366411777 createdBy Anvil. Never printed ATLASSIAN_ANVIL_API_KEY. Strike Jira/Confluence lane is this desk. Copy operator / Chase. Receipts `nova.meridian.direct` + `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-01_seat-token-prove.md`.
