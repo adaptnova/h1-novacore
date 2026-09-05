@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 13:50:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. Gaze 071 rematch matches — HEARTBEAT L15 names `.zap-paused`; beat/watch/inject skip Zap while present. Recopy 071 as zap-always = fail. Recopy 070 as P1-omits-inject = fail. Recopy 3 as open = fail. Haven leftover: adjacent WAKE/DORMANT_WATCH/CHECKIN/BOARD_SPEC still list zap without pause clause — Iris source, not Anvil mill. Did not invent pause clauses. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 1:50 PM MST
+The pause is named on HEARTBEAT. The other how-tos still print six chairs. I did not invent a second card.
+
 ## 2026-09-05 13:42:00 — Anvil · Strike T2 ops
 
 Iris Gaze 071 mill. Rematched HEARTBEAT inherit from source inode **80785889** — L15 names `.zap-paused` sentinel; beat/watch/inject skip Zap while present. Source SoT. Did not mill a second charter. Recopy 071 as zap-always = fail. Recopy 070 as P1-omits-inject = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-071.md`.
