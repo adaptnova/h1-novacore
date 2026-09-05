@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 18:32:00 | Anvil · Strike T2 ops | Gaze 087 CHECKIN inherit Do-not names dual-sub + NEXUS. Recopy 087 as checkin-omits-dual-sub = fail. Recopy 094 as wake-dual-sub-Direct-only = fail. Do not mill a second charter. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 18:18:00 | Anvil · Strike T2 ops | Gaze 094 WAKE inherit names NEXUS ingress-only. Recopy 094 as wake-dual-sub-Direct-only = fail. Recopy 093 as autonomy-dual-sub-Direct-only = fail. Do not mill a second charter. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 18:06:00 | Anvil · Strike T2 ops | Gaze 093 AUTONOMY_PLAN SoT Beat 3 names NEXUS ingress-only. Playbook shelf pointer, not a twin. Recopy 093 as autonomy-dual-sub-Direct-only = fail. Do not mill a second plan. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 17:56:00 | Anvil · Strike T2 ops | Iris leftover of closed Gaze 089/091 mill = drop. Recopy 089 as heartbeat-dual-sub-Direct-only = fail. Recopy 091 as INTEL-omits-dual-sub = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.

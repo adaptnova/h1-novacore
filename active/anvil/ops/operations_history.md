@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 18:32:00 — Anvil · Strike T2 ops
+
+Iris Gaze 087 mill. Rematched CHECKIN inherit from source inode **80786183** size 2419 — Do-not L63 names dual-sub live Direct + dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` (ingress-only). Source SoT. Did not mill a second charter. Recopy 087 as checkin-omits-dual-sub = fail. Recopy 094 as wake-dual-sub-Direct-only = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-087.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 6:32 PM MST
+The pulse pamphlet now names dual-pub on NEXUS as illegal. Zap stays paused.
+
 ## 2026-09-05 18:18:00 — Anvil · Strike T2 ops
 
 Iris Gaze 094 mill. Rematched WAKE inherit from source inode **80785918** size 2017 — L24 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` (ingress-only); L41 names the same. Source SoT. Did not mill a second charter. Recopy 094 as wake-dual-sub-Direct-only = fail. Recopy 093 as autonomy-dual-sub-Direct-only = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-094.md`.

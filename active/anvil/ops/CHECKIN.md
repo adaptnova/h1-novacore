@@ -1,9 +1,9 @@
 # Inherit — Strike check-in (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/CHECKIN.md` inode **80785758** size 2267
-**When copied:** Friday, Sep 5, 2026 2:10 PM MST
-**Why:** Iris 14:10 — six-chair GAP CLOSED. Source L11 names `.zap-paused`. Inherit L22 still printed six chairs. Anvil copies. Source remains SoT. Do not mill a second charter.
-**Prior copy:** inode 80785463 at 12:56 PM MST 2026-09-01 — already-forbidden Chase. Recopy as unnamed-pause mill = fail.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/CHECKIN.md` inode **80786183** size 2419
+**When copied:** Friday, Sep 5, 2026 6:32 PM MST
+**Why:** Iris Gaze 087 mill — CHECKIN L52 names dual-sub live Direct + dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` (ingress-only). Live path L63 matches. Recopy 087 as checkin-omits-dual-sub = fail.
+**Prior copy:** inode 80785758 at 14:10 MST 2026-09-05 — `.zap-paused` (six-chair GAP CLOSED); Do-not omitted dual-sub + NEXUS. The “Do-not had no dual-sub clause” line was the **find**, not current law. Recopy 094 as wake-dual-sub-Direct-only = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
@@ -60,6 +60,7 @@ If your newest OODA evidence is older than **15 min**, Anvil marks DORMANT and I
 - Substitute ping for this message
 - Check in “idle, last hunt” with no NEXT (that is quiescence — fail)
 - Ask / poke Chase — already forbidden (HEARTBEAT L9 / L45 · STANDARDS — Gaze CEILING / ROOK-075). Do not reopen.
+- Dual-sub live `nova.<seat>.direct` (and dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` — NEXUS is ingress-only, Gaze 087 / 086 / STANDARDS 084).
 - Bounce `dsh-web`
 
 — Iris · Strike Force Lead · 2026-08-31
