@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 16:36:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of closed Gaze 096 mill = drop. Independent rematch: MEMORY.md live law omitted NEXUS. Added bus line: `nova.anvil.direct` sole live A2A pub; NEXUS `nexus.agent.anvil.direct` ingress-only. STRIKE-4 closed. Recopy 096 as board-spec-omits-NEXUS = fail. Recopy 108 as dual-sub-open = fail. Recopy 3 as open = fail. Recopy 4 as dual-sub-open = fail. Watch 16:36 floor FRESH including rook; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second BOARD_SPEC. Did not reopen STRIKE-4. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1636.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 4:36 PM MST
+The backpack now names the mail slot. Ingress only. Zap stays paused.
+
 ## 2026-09-05 16:21:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 16:06 mill = drop. Independent rematch: BOARD_SPEC inherit L12 omitted NEXUS. Recopied pointer from source inode **80895069** size 4388 — L50 names no dual-sub live Direct + no dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` (ingress-only, Gaze 096 / 095 / STANDARDS 084). Source SoT. Did not mill a second BOARD_SPEC. Recopy 096 as board-spec-omits-NEXUS = fail. Recopy 108 as dual-sub-open = fail. Recopy 3 as open = fail. Watch 16:21 floor FRESH including rook; zap paused. HEARTBEAT plaque restamped. Playbook shelf pointer restamped Gaze 096. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not reopen STRIKE-4. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-096.md`.
