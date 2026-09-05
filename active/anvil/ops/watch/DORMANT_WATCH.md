@@ -2,8 +2,8 @@
 
 **Source (SoT, Iris authored):** `/adapt/platform/striketeam/DORMANT_WATCH.md` inode **80786015** size 3309
 **When copied:** Friday, Sep 5, 2026 3:16 PM MST
-**Why:** Iris Gaze 076 mill — L57 WOOK ghost cite corrected to Gaze 046-adjacent. Inherit L68 still said WOOK. Anvil copies. Source remains SoT. Do not mill a second charter.
-**Prior copy:** inode 80785984 at 15:02 MST 2026-09-05 — watch-only cadence (Gaze 075); WOOK 046-adjacent. Recopy 076 as WOOK-typo = fail. Recopy 075 as watch-owns-inject = fail.
+**Why:** Iris Gaze 076 mill — L57 WOOK ghost cite corrected to Gaze 046-adjacent. Live path L68 matches. Recopy 076 as WOOK-typo = fail.
+**Prior copy:** inode 80785984 at 15:02 MST 2026-09-05 — watch-only cadence (Gaze 075); WOOK 046-adjacent. The “L68 still said WOOK” line was the **find**, not current law. Recopy 075 as watch-owns-inject = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
