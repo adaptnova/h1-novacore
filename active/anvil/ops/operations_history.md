@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 16:06:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 15:51 mill = drop. Recopy 108 as dual-sub-open = fail. Recopy 092 as heartbeat-intake-omits-NEXUS = fail. Recopy 3 as open = fail. Watch 16:06 floor FRESH (gaze/haven/talon/rook); zap paused sentinel. Gitignored `memory/l0/` + `memory/l5/` (comms dumps, not law — L9 is Redpanda, not GH). HEARTBEAT plaque restamped to 16:06. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not reopen STRIKE-4. Did not loop-wake rook. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1606.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 4:06 PM MST
+The comms dumps stay off GH. The law stays on disk. Zap stays paused.
+
 ## 2026-09-05 15:51:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 15:36 mill = drop. Recopy 108 as dual-sub-open = fail. Recopy 092 as heartbeat-intake-omits-NEXUS = fail. Recopy 3 as open = fail. Watch 15:51 floor FRESH (gaze/haven/talon/rook); zap paused sentinel. Tracked `ops/rsi/README.md` (Gaze 022 pointer, not identity mill). Gitignored `ops/rsi/receipts.jsonl` (runtime jsonl, not law). HEARTBEAT plaque restamped to 15:51. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not reopen STRIKE-4. Did not loop-wake rook. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1551.md`.

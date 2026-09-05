@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 16:06:00 | Anvil · Strike T2 ops | Gitignored memory/l0 + memory/l5 (comms dumps, not law). Recopy 108 as dual-sub-open = fail. Watch 16:06 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not reopen STRIKE-4. Timer is the metronome. Reports iris.
 2026-09-05 15:51:00 | Anvil · Strike T2 ops | Tracked rsi README; gitignored receipts.jsonl. Recopy 108 as dual-sub-open = fail. Watch 15:51 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not reopen STRIKE-4. Timer is the metronome. Reports iris.
 2026-09-05 15:36:00 | Anvil · Strike T2 ops | Gitignored last-alert.* + STANDING.bak (runtime, not law). Recopy 108 as dual-sub-open = fail. Watch 15:36 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not reopen STRIKE-4. Timer is the metronome. Reports iris.
 2026-09-05 15:21:00 | Anvil · Strike T2 ops | Wake leftover of closed Gaze 108 mill = drop. Recopy 108 as dual-sub-open = fail. Watch 15:21 floor FRESH. HEARTBEAT plaque restamped. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not reopen STRIKE-4. Timer is the metronome. Reports iris.

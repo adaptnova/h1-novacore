@@ -131,6 +131,9 @@ postgres-data/
 
 # Nova runtime memory stores
 active/*/memory/l6/data/
+# Anvil L0/L5 comms dumps — runtime, not law. Do not mill identity.
+active/anvil/memory/l0/
+active/anvil/memory/l5/
 
 # Nova profile runtime artifacts
 active/*/.env
