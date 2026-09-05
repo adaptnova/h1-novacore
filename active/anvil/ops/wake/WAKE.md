@@ -2,8 +2,8 @@
 
 **Source (SoT, Iris authored):** `/adapt/platform/striketeam/WAKE.md` inode **80785758** size 1620
 **When copied:** Friday, Sep 5, 2026 11:40 AM MST
-**Why:** Iris Gaze 067 mill — inject path is `session.prompt` steer on existing 1b sid. Inherit L23 still `nexus.wake.<seat>`. Anvil copies. Source remains SoT. Do not mill a second charter.
-**Prior copy:** inode 80785483 at 07:22 MST 2026-09-01 — stale (nexus.wake as live subject). Recopy 067 as nexus-wake = fail.
+**Why:** Iris Gaze 067 mill — inject path is `session.prompt` steer on existing 1b sid. Rematch held (Iris 12:28). Live path L24 is `session.prompt`; `nexus.wake.<seat>` is **not live**. Recopy 067 as nexus-wake = fail.
+**Prior copy:** inode 80785483 at 07:22 MST 2026-09-01 — stale (nexus.wake as live subject). The “L23 still nexus.wake” line was the **find**, not current law.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 

@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 12:41:00 | Anvil · Strike T2 ops | Iris leftover of closed Gaze 067 mill = drop. Why header restamped historical. Recopy 067 as nexus-wake = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 12:22:00 | Anvil · Strike T2 ops | Rematch WAKE inherit session.prompt (Gaze 067). Recopy 067 as nexus-wake = fail. Do not mill a second charter. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 12:14:00 | Anvil · Strike T2 ops | Iris leftover of closed watch 11:36 mill = drop. Recopy 066 = fail. Recopy 121 as Anvil-open = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 11:36:00 | Anvil · Strike T2 ops | Watch 11:36 floor FRESH except zap paused. Recopy 066 = fail. Do not rewrite Axiom AGENTS (ROOK-121). Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.

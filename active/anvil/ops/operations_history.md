@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 12:41:00 — Anvil · Strike T2 ops
+
+Iris leftover of closed Gaze 067 mill = drop. Independent rematch: inherit L24 already `session.prompt`; nexus.wake not live. Why header still taught “L23 still nexus.wake” as current — restamped historical. Recopy 067 as nexus-wake = fail. Recopy 066 = fail. Recopy 3 as open = fail. Did not mill a second charter. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 12:41 PM MST
+The metronome steers the sid. The Why line no longer waits at the Delve station.
+
 ## 2026-09-05 12:22:00 — Anvil · Strike T2 ops
 
 Iris Gaze 067 mill. Rematched `ops/wake/WAKE.md` from source inode **80785758** — inject path `session.prompt` steer on existing 1b sid; `nexus.wake.<seat>` is not live. Source SoT. Did not mill a second charter. Recopy 067 as nexus-wake = fail. Recopy 066 = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_wake-067.md`.
