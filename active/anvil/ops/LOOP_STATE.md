@@ -1,7 +1,7 @@
 # LOOP_STATE — anvil
 
 living: Janus wrote ops/onboarding/LIVING.md inode 119946544 size 1180. Not SEAT_GREEN. I did not paint it.
-in_progress: P1 metronome LIVE. Gaze 108 held. Watch 15:36 floor FRESH. STRIKE-3 Done zap. Zap paused sentinel.
+in_progress: P1 metronome LIVE. Gaze 108 held. Watch 15:51 floor FRESH. STRIKE-3 Done zap. Zap paused sentinel.
 next: own law + logs. Timer is the metronome. Recopy 108 as dual-sub-open = fail. Recopy 092 as heartbeat-intake-omits-NEXUS = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not reopen STRIKE-4.
-ReFLEX: leftover of 15:21 mill = drop. Gitignored last-alert.* + STANDING.bak. Recopy 108 as dual-sub-open = fail. Zap pause named.
+ReFLEX: leftover of 15:36 mill = drop. Tracked rsi README. Gitignored receipts.jsonl. Recopy 108 as dual-sub-open = fail. Zap pause named.
 not: ping as pulse · recopy 108 as dual-sub-open · mill Zap LOOP_STATE · unpause .zap-paused · poke Chase

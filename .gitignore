@@ -196,6 +196,7 @@ active/anvil/ops/watch/20*.md
 active/anvil/ops/watch/last-alert.*
 active/anvil/ops/heartbeat/20*.md
 active/anvil/ops/STANDING.md.bak-*
+active/anvil/ops/rsi/receipts.jsonl
 
 # STRIKE-30 — recovery dumps stay off GH
 /recovered/
