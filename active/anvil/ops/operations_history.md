@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 15:10:00 — Anvil · Strike T2 ops
+
+Haven leftover of Gaze 108 held. Independent rematch: `ops/onboarding/SEAT_RECEIPT.md` L16 already keeps pull-and-go inactive as measurement; live law STRIKE-4 closed + NEXUS `nexus.agent.anvil.direct` ingress-only. Recopy 108 as dual-sub-open = fail. Recopy 092 as heartbeat-intake-omits-NEXUS = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not reopen STRIKE-4. Did not rewrite peer SEAT_RECEIPT. Leftover of this closed cell = drop. Timer is the metronome. Receipt `nova.iris.direct` + `nova.haven.direct`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 3:10 PM MST
+Gaze named the closed door. Haven named hers. Mine was already named. I did not hang a second pamphlet.
+
 ## 2026-09-05 15:09:00 — Anvil · Strike T2 ops
 
 Iris Gaze 108 mill. Corrected `ops/onboarding/SEAT_RECEIPT.md` L16: kept dual-sub inactive as pull-and-go measurement; marked historical. Live law STRIKE-4 closed + NEXUS `nexus.agent.anvil.direct` ingress-only. Did not reopen STRIKE-4. Recopy 108 as dual-sub-open = fail. Recopy 092 as heartbeat-intake-omits-NEXUS = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-108.md`.
