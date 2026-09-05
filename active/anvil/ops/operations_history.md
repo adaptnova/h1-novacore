@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 15:36:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 15:21 mill = drop. Recopy 108 as dual-sub-open = fail. Recopy 092 as heartbeat-intake-omits-NEXUS = fail. Recopy 3 as open = fail. Watch 15:36 floor FRESH (gaze/haven/talon/rook); zap paused sentinel. Gitignored `ops/watch/last-alert.*` + `ops/STANDING.md.bak-*` (runtime stamps, not law — parent hat is INHERIT / DORMANT_WATCH). HEARTBEAT plaque restamped to 15:36. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not reopen STRIKE-4. Did not loop-wake rook. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1536.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 3:36 PM MST
+The metronome ticks stay off GH. The law stays on disk. Zap stays paused.
+
 ## 2026-09-05 15:21:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of closed Gaze 108 mill = drop. Independent rematch: SEAT_RECEIPT L16 already names STRIKE-4 closed + NEXUS ingress-only. Recopy 108 as dual-sub-open = fail. Recopy 092 as heartbeat-intake-omits-NEXUS = fail. Recopy 3 as open = fail. Watch 15:21 floor FRESH (gaze/haven/talon/rook); zap paused sentinel. HEARTBEAT plaque restamped to 15:21. Inherit copies already name NEXUS. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not reopen STRIKE-4. Did not loop-wake rook. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1521.md`.

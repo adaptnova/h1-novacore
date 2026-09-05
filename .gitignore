@@ -193,7 +193,9 @@ active/zap/MEMORY.md
 
 # Anvil metronome ticks — parent hat is law (INHERIT / DORMANT_WATCH), not the 15-min log
 active/anvil/ops/watch/20*.md
+active/anvil/ops/watch/last-alert.*
 active/anvil/ops/heartbeat/20*.md
+active/anvil/ops/STANDING.md.bak-*
 
 # STRIKE-30 — recovery dumps stay off GH
 /recovered/
