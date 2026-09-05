@@ -1,9 +1,9 @@
 # Inherit — Strike dormant watch law (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/DORMANT_WATCH.md` inode **80785967** size 3240
-**When copied:** Friday, Sep 5, 2026 2:44 PM MST
-**Why:** Iris Gaze 074 mill — Cadence L55 is ping log → dormant table → **Beat 3 inject ALL floor**. Live path L66 matches. Recopy 074 as two-sections = fail.
-**Prior copy:** inode 80785915 at 14:10 MST 2026-09-05 — `.zap-paused` named; cadence still two-sections. The “L66 still two sections” line was the **find**, not current law.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/DORMANT_WATCH.md` inode **80785984** size 3309
+**When copied:** Friday, Sep 5, 2026 3:02 PM MST
+**Why:** Iris Gaze 075 mill — Cadence L55 is **watch step only** (ping log → dormant table). Beat 3 inject ALL floor is `strike-beat.sh`'s (`bin/strike-inject.sh` — Gaze 074/075), not the watch's. Inherit L66 still filed inject as one script. Anvil copies. Source remains SoT. Do not mill a second charter.
+**Prior copy:** inode 80785967 at 14:44 MST 2026-09-05 — three-beat as one script (Gaze 074). Recopy 075 as watch-owns-inject = fail. Recopy 074 as two-sections-open = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
@@ -63,7 +63,7 @@ Never `{{…}}` in the body (nats CLI templates). Never Chase. Never a second bo
 
 ## Cadence
 
-Same 15 min as heartbeat, **after** the ping log. One script: ping log → dormant table → **Beat 3 inject ALL floor** (`bin/strike-inject.sh` — Gaze 074). Log: `anvil/ops/watch/TS.md`.
+Same 15 min as heartbeat, **after** the ping log. This script is the **watch** step only (ping log → dormant table). **Beat 3 inject ALL floor is `strike-beat.sh`'s** (`bin/strike-inject.sh` — Gaze 074/075), not the watch's. Log: `anvil/ops/watch/TS.md`.
 
 Timer is P1 with heartbeat (systemd). **LIVE 2026-09-02** — `strike-beat.timer` active+enabled (Gaze 064 / WOOK 046-adjacent). Anvil runs the script on the beat; Iris may run it ad-hoc. Do not inherit "until the timer exists" as current — the timer exists.
 

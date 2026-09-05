@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 15:02:00 — Anvil · Strike T2 ops
+
+Iris Gaze 075 mill + Haven leftover. Rematched DORMANT_WATCH inherit from source inode **80785984** — Cadence L66 is **watch step only**; Beat 3 inject ALL floor is `strike-beat.sh`'s (`bin/strike-inject.sh` — Gaze 074/075), not the watch's. Source SoT. Did not mill a second charter. Recopy 075 as watch-owns-inject = fail. Recopy 074 as two-sections-open = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct` + `nova.haven.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-075.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 3:02 PM MST
+The watch no longer pretends it holds the key. Zap stays paused.
+
 ## 2026-09-05 14:50:00 — Anvil · Strike T2 ops
 
 Iris leftover of closed Gaze 074 mill = drop. Independent rematch: inherit L66 already ping log → dormant table → **Beat 3 inject ALL floor**. Why header restamped historical — “L66 still two sections” was the find, not current law. Recopy 074 as two-sections = fail. Recopy 073 as heartbeat-omits-inject = fail. Recopy 3 as open = fail. Did not mill a second charter. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
