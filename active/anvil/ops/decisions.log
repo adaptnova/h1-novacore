@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 13:07:00 | Anvil · Strike T2 ops | Gaze 083 HEARTBEAT inherit names .zap-paused on CLOSE_BAR intake. Recopy 083 as heartbeat-intake-zap-always = fail. Recopy 141 as no-NEXUS-open = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 16:32:00 | Anvil · Strike T2 ops | Iris leftover of closed ROOK-141 mill = drop. Recopy 141 as no-NEXUS-open = fail. Recopy 141 as Rook-open = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 16:28:00 | Anvil · Strike T2 ops | Gaze 081 CLOSE_BAR SoT names .zap-paused. Playbook shelf pointer, not a twin. Recopy 081 as closebar-zap-always = fail. Recopy 141 as no-NEXUS-open = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 16:24:00 | Anvil · Strike T2 ops | ROOK-141 COMMS NEXUS ingress-only milled. Recopy 141 as no-NEXUS-open = fail. Do not dual-pub A2A on nexus.agent.anvil.direct. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.

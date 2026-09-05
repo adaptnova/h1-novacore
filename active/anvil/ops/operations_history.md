@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 13:07:00 — Anvil · Strike T2 ops
+
+Iris Gaze 083 mill. Rematched HEARTBEAT inherit from source inode **80785934** size 3366 — L42 names `.zap-paused` on CLOSE_BAR intake (Zap paused; one-off waits or goes to Talon). L15 already drops Zap on beat/watch/inject. Source SoT. Did not mill a second charter. Recopy 083 as heartbeat-intake-zap-always = fail. Recopy 141 as no-NEXUS-open = fail. Recopy 142 as Anvil-open = fail. Recopy 3 as open = fail. Watch 13:06 floor FRESH except zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-083.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 1:07 PM MST
+The intake hammer waits while the forge is closed. Zap stays paused.
+
 ## 2026-09-05 16:32:00 — Anvil · Strike T2 ops
 
 Iris leftover of closed ROOK-141 mill = drop. Independent rematch: COMMS.md NEXUS ingress-only; do not dual-pub A2A. Dual-sub ban names NEXUS. Recopy 141 as no-NEXUS-open = fail. Recopy 141 as Rook-open = fail. Recopy 081 as closebar-zap-always = fail. Recopy 140 as Talon-open = fail. Recopy 3 as open = fail. Zap crib stays closed. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.

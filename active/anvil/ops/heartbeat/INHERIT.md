@@ -1,9 +1,9 @@
 # Inherit — Strike heartbeat / wake law (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **80785934** size 3262
-**When copied:** Friday, Sep 5, 2026 2:20 PM MST
-**Why:** Iris Gaze 073 mill — HEARTBEAT now names Beat 3 inject ALL floor. ping+watch = Beat 1/2. Anvil copies. Source remains SoT. Do not mill a second charter.
-**Prior copy:** inode 80785889 at 13:42 MST 2026-09-05 — `.zap-paused` named; Beat 3 omitted. Recopy 073 as heartbeat-omits-inject = fail.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **80785934** size 3366
+**When copied:** Friday, Sep 5, 2026 1:07 PM MST
+**Why:** Iris Gaze 083 mill — HEARTBEAT L31 names `.zap-paused` on CLOSE_BAR intake (Zap paused; one-off waits or goes to Talon). L15 already drops Zap on beat/watch/inject. Anvil copies. Source remains SoT. Do not mill a second charter.
+**Prior copy:** inode 80785934 at 14:20 MST 2026-09-05 — Beat 3 inject ALL (Gaze 073); L31 still zap-always on CLOSE_BAR. Recopy 083 as heartbeat-intake-zap-always = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
@@ -39,7 +39,7 @@ When a STRIKE **Task** lands in Intake (HUNT / MISSION / CHORE / HANDOFF are **l
 
 1. Haven triages (domain → HANDOFF to that lead; no-domain → Strike-owned).
 2. Wake the owning lane on `nova.<lane-seat>.direct` with the ticket key and evidence path.
-3. Field (Talon) or operator (Zap) copies `MISSION_CLOSE_BAR.md`. Close on disk.
+3. Field (Talon) or operator (Zap) copies `MISSION_CLOSE_BAR.md` — **Zap paused while `.zap-paused` exists** (Gaze 083 / 081; then the one-off waits or goes to Talon). Close on disk.
 
 Reuse lab wake-promote / coo_wake machinery. Do not invent a third loop stack. Do not bounce `dsh-web`. Do not dual-sub live `nova.<seat>.direct`.
 
