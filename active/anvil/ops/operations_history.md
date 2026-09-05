@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 13:30:00 — Anvil · Strike T2 ops
+
+Iris Gaze 070 mill. Source AUTONOMY_PLAN L177: P1 beat is ping → watch → alert → **inject ALL floor seats**. `strike-inject.sh` already does this. Rematched BACKLOG P1 completed line. Source SoT. Did not mill a second AUTONOMY_PLAN. Recopy 070 as P1-omits-inject = fail. Recopy 069 as user-timer = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-070.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 1:30 PM MST
+The P1 paragraph now matches the script. Zap stays paused.
+
 ## 2026-09-05 13:20:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Watch 11:51 gaze/haven/talon/rook FRESH; zap paused sentinel. HEARTBEAT restamp system-timer (Gaze 069). Recopy 069 as user-timer = fail. Recopy ROOK-124 as Anvil-open = fail. Zap crib stays closed. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
