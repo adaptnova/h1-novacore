@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 16:51:00 | Anvil · Strike T2 ops | STRIKE_WIRE live table names STRIKE-3 Done zap; 6:10 To Do is historical. Recopy 3 as open = fail. Recopy 108 as dual-sub-open = fail. Watch 16:51 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not reopen STRIKE-4. Timer is the metronome. Reports iris.
 2026-09-05 16:36:00 | Anvil · Strike T2 ops | MEMORY.md live law names NEXUS ingress-only + STRIKE-4 closed. Recopy 108 as dual-sub-open = fail. Recopy 096 as board-spec-omits-NEXUS = fail. Watch 16:36 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not reopen STRIKE-4. Timer is the metronome. Reports iris.
 2026-09-05 16:21:00 | Anvil · Strike T2 ops | Gaze 096 BOARD_SPEC inherit L12 names NEXUS ingress-only. Recopy 096 as board-spec-omits-NEXUS = fail. Did not mill a second BOARD_SPEC. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 16:06:00 | Anvil · Strike T2 ops | Gitignored memory/l0 + memory/l5 (comms dumps, not law). Recopy 108 as dual-sub-open = fail. Watch 16:06 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not reopen STRIKE-4. Timer is the metronome. Reports iris.

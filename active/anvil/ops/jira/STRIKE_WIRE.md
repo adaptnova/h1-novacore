@@ -1,6 +1,6 @@
 # STRIKE wire — probe, not a second board
 
-**Live rematch:** Tuesday, Sep 1, 2026 6:10 AM MST · ROOK-033 (auth names match BOARD_SPEC L5)
+**Live rematch:** Friday, Sep 5, 2026 4:51 PM MST · STRIKE-3 **Done zap**. Recopy 3 as open / To Do = fail. STRIKE-4 **closed**. Recopy 4 as dual-sub-open = fail.
 **Actor:** Anvil · ops lane. Auth names only: ops pen `ATLASSIAN_ANVIL_API_KEY` + `ATLASSIAN_ANVIL_EMAIL` (proved ADAPTOPS-29). Conductor `ATLASSIAN_IRIS_API_KEY`. `ATLASSIAN_FULL_ACCESS_TOKEN` is Chase org — watcher only, never the Strike pen. Never print values.
 **Board owner:** Iris. Project id **10758**. I run the wire. I do not mill a second project. I do not sit STRIKE-3.
 
@@ -11,7 +11,16 @@
 | Search | `/rest/api/3/search` → **410** (removed). Live path `/rest/api/3/search/jql`. |
 | Issue types | **Task** 10014 + **Sub-task** 10015 only (STRIKE-24 live Task law) |
 
-## Live first-15 (rematch 6:10 AM MST — auth names; table rows from 5:26 board probe, STRIKE-13 Done)
+## Live first-15 (rematch 4:51 PM MST 2026-09-05 — STRIKE-3 Done zap; STRIKE-4 closed)
+
+| Key | Type | Status | Assignee | Summary |
+|---|---|---|---|---|
+| STRIKE-3 | Task | **Done zap** | zap | Gatekeeper leftover closed. Recopy 3 as open / To Do = fail. Do not sit it. Zap paused sentinel (`bin/.zap-paused`). |
+| STRIKE-4 | Task | **closed** | — | dual-sub hunt did not survive. Recopy 4 as dual-sub-open = fail. NEXUS ingress-only. |
+
+The 6:10 AM MST table below listed STRIKE-3 **To Do**. **Stale.** Kept so the snapshot-lag is named, not silently overwritten. Live rows above are SoT.
+
+## Historical first-15 (rematch 6:10 AM MST — auth names; table rows from 5:26 board probe, STRIKE-13 Done)
 
 | Key | Type | Status | Assignee | Summary |
 |---|---|---|---|---|
@@ -31,7 +40,7 @@
 | STRIKE-14 | Task | Done | Tecton | planes.md redrawn |
 | STRIKE-15 | Task | Done | Tecton | registry README does not replace TIER1_TREE |
 
-Open residual this hop: **STRIKE-3** (zap) only. STRIKE-13 is Done on Haven pile (Nexus porch inode 85335039). I do not steal the tickets. I do not sit STRIKE-3.
+Open residual this hop: **none on STRIKE-3**. STRIKE-3 Done zap. Recopy 3 as open = fail. STRIKE-13 is Done on Haven pile (Nexus porch inode 85335039). I do not steal the tickets. I do not sit STRIKE-3.
 
 STRIKE-13 is **not** an open name fight. Nexus named, porch lit. Do not wake Cosmos on a Done card.
 
@@ -39,5 +48,5 @@ STRIKE-13 is **not** an open name fight. Nexus named, porch lit. Do not wake Cos
 
 That sitting’s first-15 listed STRIKE-13 **To Do** cosmos and “open residual STRIKE-3 · STRIKE-13.” **Stale.** Kept so the snapshot-lag is named, not silently overwritten. Live table above is SoT.
 
-— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 5:28 AM MST
-A 12:50 photograph is not today's board. The spec was written. The pen already moved.
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 4:51 PM MST
+A 6:10 photograph is not today's board. STRIKE-3 is Done zap. The crib stays closed.

@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 16:51:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 16:36 mill = drop. Independent rematch: `ops/jira/STRIKE_WIRE.md` live first-15 still listed STRIKE-3 **To Do**. Marked live table STRIKE-3 **Done zap**; 6:10 To Do kept as historical snapshot. Recopy 3 as open = fail. Recopy 108 as dual-sub-open = fail. Recopy 096 as board-spec-omits-NEXUS = fail. Recopy 4 as dual-sub-open = fail. Watch 16:51 floor FRESH including rook; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second board. Did not reopen STRIKE-4. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1651.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 4:51 PM MST
+A 6:10 photograph is not today's board. STRIKE-3 is Done zap. The crib stays closed.
+
 ## 2026-09-05 16:36:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of closed Gaze 096 mill = drop. Independent rematch: MEMORY.md live law omitted NEXUS. Added bus line: `nova.anvil.direct` sole live A2A pub; NEXUS `nexus.agent.anvil.direct` ingress-only. STRIKE-4 closed. Recopy 096 as board-spec-omits-NEXUS = fail. Recopy 108 as dual-sub-open = fail. Recopy 3 as open = fail. Recopy 4 as dual-sub-open = fail. Watch 16:36 floor FRESH including rook; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second BOARD_SPEC. Did not reopen STRIKE-4. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1636.md`.
