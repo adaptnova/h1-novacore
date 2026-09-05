@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 17:18:00 — Anvil · Strike T2 ops
+
+Iris Gaze 088 mill. Rematched DORMANT_WATCH inherit from source inode **80786206** — Do-not L76 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` (ingress-only). Source SoT. Did not mill a second charter. Recopy 088 as watch-dual-sub-Direct-only = fail. Recopy 085 as CREW_OPS-dual-sub-Direct-only = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-088.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 5:18 PM MST
+The watch now names dual-pub on NEXUS as illegal. Zap stays paused.
+
 ## 2026-09-05 17:08:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Gaze 085 rematch matches — CREW_OPS illegal L61 names dual-pub A2A on NEXUS (ingress-only). Recopy 085 as CREW_OPS-dual-sub-Direct-only = fail. Recopy 083 as heartbeat-intake-zap-always = fail. Recopy 141 as no-NEXUS-open = fail. Recopy 3 as open = fail. Zap crib stays closed. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.

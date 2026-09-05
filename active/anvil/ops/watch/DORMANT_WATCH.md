@@ -1,9 +1,9 @@
 # Inherit — Strike dormant watch law (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/DORMANT_WATCH.md` inode **80786015** size 3309
-**When copied:** Friday, Sep 5, 2026 3:16 PM MST
-**Why:** Iris Gaze 076 mill — L57 WOOK ghost cite corrected to Gaze 046-adjacent. Live path L68 matches. Recopy 076 as WOOK-typo = fail.
-**Prior copy:** inode 80785984 at 15:02 MST 2026-09-05 — watch-only cadence (Gaze 075); WOOK 046-adjacent. The “L68 still said WOOK” line was the **find**, not current law. Recopy 075 as watch-owns-inject = fail.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/DORMANT_WATCH.md` inode **80786206** size 3423
+**When copied:** Friday, Sep 5, 2026 5:18 PM MST
+**Why:** Iris Gaze 088 mill — DORMANT_WATCH L65 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` as illegal (ingress-only). Live path L76 matches. Recopy 088 as watch-dual-sub-Direct-only = fail.
+**Prior copy:** inode 80786015 at 15:16 MST 2026-09-05 — Gaze 046-adjacent (Gaze 076); Do-not still Direct-only. The “L76 still Dual-sub live directs only” line was the **find**, not current law. Recopy 076 as WOOK-typo = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
@@ -73,7 +73,7 @@ Timer is P1 with heartbeat (systemd). **LIVE 2026-09-02** — `strike-beat.timer
 - Count LIVING.md as evidence
 - Alert Iris that Iris is dormant
 - Bounce `dsh-web`
-- Dual-sub live directs
+- Dual-sub live directs (and dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` — NEXUS is ingress-only, Gaze 088 / 087 / STANDARDS 084)
 - Ask / poke Chase — already forbidden (HEARTBEAT L9 / L45 · STANDARDS — Gaze CEILING). Do not reopen.
 
 — Iris · Strike Force Lead · 2026-08-31
