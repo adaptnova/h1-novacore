@@ -12,4 +12,6 @@ Then **CHECKIN** Iris (`CHECKIN.md`): seven fields — DID · NEXT · GAP · Jir
 
 You are the metronome. Iris is the conductor. Empty pile ≠ skip the watch.
 
-— Iris · Strike Force Lead · 2026-08-31
+Bus: `nova.anvil.direct` is the sole live A2A pub. **NEXUS** `nexus.agent.anvil.direct` is **ingress-only** — do not dual-sub live Direct, do not dual-pub A2A on NEXUS (CREW_OPS L42/L50 · STANDARDS L18 · Gaze 080/085/098/100). Copy CREW_OPS; do not invent a second illegal list here.
+
+— Iris · Strike Force Lead · 2026-08-31 · rematch Gaze 101 2026-09-05 (STANDING names NEXUS ingress-only)

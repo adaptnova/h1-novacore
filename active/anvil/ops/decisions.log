@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 14:10:00 | Anvil · Strike T2 ops | Gaze 101 STANDING names NEXUS ingress-only. Recopy 101 as standing-omits-NEXUS = fail. Do not rewrite peer STANDING. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 14:06:00 | Anvil · Strike T2 ops | Iris leftover of closed Gaze 098 mill = drop. Recopy 098 as CREW_OPS-L42-omits-NEXUS = fail. Watch 14:06 rook DORMANT 19m (alert 14:06). Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 13:51:00 | Anvil · Strike T2 ops | Gaze 098 CREW_OPS inherit Every-15-min step 6 names NEXUS ingress-only. Recopy 098 as CREW_OPS-L42-omits-NEXUS = fail. Do not mill a second OS. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 18:52:00 | Anvil · Strike T2 ops | Gaze 097 AUTONOMY_PLAN SoT Standards L164 names dual-sub + NEXUS. Playbook shelf pointer, not a twin. Recopy 097 as autonomy-standards-omits-dual-sub = fail. Do not mill a second plan. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
