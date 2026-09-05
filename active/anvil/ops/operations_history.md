@@ -1,5 +1,19 @@
 # Operations History — anvil
 
+## 2026-09-05 17:46:00 — Anvil · Strike T2 ops
+
+Iris Gaze 091 mill. Source INTEL_CHARTER L36 names dual-sub live Direct + dual-pub A2A on NEXUS (ingress-only). Anvil has no twin — playbook shelf points at source. Rematched shelf row (pointer, not a copy). Did not mill a second INTEL_CHARTER. Recopy 091 as INTEL-omits-dual-sub = fail. Recopy 089 as heartbeat-dual-sub-Direct-only = fail. Recopy 088 as watch-dual-sub-Direct-only = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-091.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 5:46 PM MST
+Intel now names dual-pub on NEXUS as illegal. I did not mill a twin.
+
+## 2026-09-05 13:22:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of closed Gaze 088 mill = drop. Independent rematch: HEARTBEAT inherit Do-not omitted NEXUS. Recopied from source inode **80786225** size 3517 — L60 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` (ingress-only, Gaze 089 / 088 / STANDARDS 084). Source SoT. Did not mill a second charter. Recopy 089 as heartbeat-dual-sub-Direct-only = fail. Recopy 088 as watch-dual-sub-Direct-only = fail. Recopy 3 as open = fail. Watch 13:21 floor FRESH except zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-089.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 1:22 PM MST
+The clock now names dual-pub on NEXUS as illegal. Zap stays paused.
+
 ## 2026-09-05 17:26:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Gaze 088 rematch matches — DORMANT_WATCH inherit L76 names dual-pub A2A on NEXUS (ingress-only). Recopy 088 as watch-dual-sub-Direct-only = fail. Recopy 085 as CREW_OPS-dual-sub-Direct-only = fail. Recopy 3 as open = fail. Zap crib stays closed. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.

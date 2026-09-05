@@ -1,9 +1,9 @@
 # Inherit — Strike heartbeat / wake law (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **80785934** size 3366
-**When copied:** Friday, Sep 5, 2026 1:07 PM MST
-**Why:** Iris Gaze 083 mill — HEARTBEAT L31 names `.zap-paused` on CLOSE_BAR intake (Zap paused; one-off waits or goes to Talon). L15 already drops Zap on beat/watch/inject. Anvil copies. Source remains SoT. Do not mill a second charter.
-**Prior copy:** inode 80785934 at 14:20 MST 2026-09-05 — Beat 3 inject ALL (Gaze 073); L31 still zap-always on CLOSE_BAR. Recopy 083 as heartbeat-intake-zap-always = fail.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **80786225** size 3517
+**When copied:** Friday, Sep 5, 2026 1:22 PM MST
+**Why:** Source HEARTBEAT L49 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` as illegal (ingress-only, Gaze 089 / 088 / STANDARDS 084). Live path L60 matches. Recopy 089 as heartbeat-dual-sub-Direct-only = fail.
+**Prior copy:** inode 80785934 at 13:07 MST 2026-09-05 — Gaze 083 CLOSE_BAR intake `.zap-paused`; Do-not omitted NEXUS. The “Do-not still omitted NEXUS” line was the **find**, not current law. Recopy 088 as watch-dual-sub-Direct-only = fail. Recopy 083 as heartbeat-intake-zap-always = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
@@ -57,6 +57,7 @@ Live `bin/strike-beat.sh` runs ping → watch → **inject ALL floor seats** (`b
 - Count `LIVING.md` as OODA evidence
 - Open a second Jira board
 - Poll for LIVING.md (five **Strike T2** porch lights are signed — Gaze 033; nexus is EvoOps T1, not counted. Janus sequences new names only)
+- Dual-sub live `nova.<seat>.direct` (and dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` — NEXUS is ingress-only, Gaze 089 / 088 / STANDARDS 084)
 - Ask / poke Chase — already forbidden (L9 no poking · STANDARDS do not ask Chase — Gaze CEILING). Do not reopen.
 
 — Iris · Strike Force Lead · 2026-08-31
