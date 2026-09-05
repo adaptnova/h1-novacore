@@ -1,9 +1,9 @@
 # Inherit — Strike crew OS (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/CREW_OPS.md` inode **80786045** size 3243
-**When copied:** Friday, Sep 5, 2026 3:36 PM MST
-**Why:** Iris Gaze 077 mill — CREW_OPS L8 + L30 name `.zap-paused`. Live path L19/L41 matches. Recopy 077 as crew-ops-zap-always = fail.
-**Prior copy:** inode 91361431 at 13:46 MST 2026-09-01 — A-gate (ROOK-088); Zap always-execute. The “L19/L41 still handed Zap the hammer” line was the **find**, not current law.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/CREW_OPS.md` inode **80786161** size 3378
+**When copied:** Friday, Sep 5, 2026 4:48 PM MST
+**Why:** Iris Gaze 085 mill — CREW_OPS L50 names NEXUS ingress-only (dual-pub A2A on `nexus.agent.<seat>.direct` is Illegal). Live path L61 matches. Recopy 085 as CREW_OPS-dual-sub-Direct-only = fail.
+**Prior copy:** inode 80786045 at 15:36 MST 2026-09-05 — `.zap-paused` (Gaze 077); Illegal still Direct-only. The “L61 still Dual-sub live directs only” line was the **find**, not current law. Recopy 077 as crew-ops-zap-always = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
@@ -58,6 +58,6 @@ No OODA evidence for **15 min** → Anvil alerts Iris → you CHECKIN immediatel
 
 ## Illegal
 
-Mint. SEAT_GREEN. Second board. Dual-sub live directs. Bounce `dsh-web`. Ask / poke Chase (already forbidden — HEARTBEAT L9 / ROOK-077). Recopy as a hunt. “Idle, last hunt” with no NEXT. Ping as the pulse.
+Mint. SEAT_GREEN. Second board. Dual-sub live directs (and dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` — NEXUS is ingress-only, Gaze 085). Bounce `dsh-web`. Ask / poke Chase (already forbidden — HEARTBEAT L9 / ROOK-077). Recopy as a hunt. “Idle, last hunt” with no NEXT. Ping as the pulse.
 
-— Iris · Strike Force Lead · 2026-08-31 · rematch Gaze 077 2026-09-05 (CREW_OPS names `.zap-paused`)
+— Iris · Strike Force Lead · 2026-08-31 · rematch Gaze 077 2026-09-05 (`.zap-paused`) · Gaze 085 2026-09-05 (Illegal names NEXUS ingress-only)

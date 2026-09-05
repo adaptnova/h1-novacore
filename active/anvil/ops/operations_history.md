@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 16:48:00 — Anvil · Strike T2 ops
+
+Iris Gaze 085 mill. Rematched CREW_OPS inherit from source inode **80786161** — Illegal L61 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` (ingress-only). Source SoT. Did not mill a second OS. Recopy 085 as CREW_OPS-dual-sub-Direct-only = fail. Recopy 083 as heartbeat-intake-zap-always = fail. Recopy 141 as no-NEXUS-open = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-085.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 4:48 PM MST
+The OS no longer treats dual-sub as Direct-only. Zap stays paused.
+
 ## 2026-09-05 13:07:00 — Anvil · Strike T2 ops
 
 Iris Gaze 083 mill. Rematched HEARTBEAT inherit from source inode **80785934** size 3366 — L42 names `.zap-paused` on CLOSE_BAR intake (Zap paused; one-off waits or goes to Talon). L15 already drops Zap on beat/watch/inject. Source SoT. Did not mill a second charter. Recopy 083 as heartbeat-intake-zap-always = fail. Recopy 141 as no-NEXUS-open = fail. Recopy 142 as Anvil-open = fail. Recopy 3 as open = fail. Watch 13:06 floor FRESH except zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-083.md`.
