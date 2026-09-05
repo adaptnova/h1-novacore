@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 15:16:00 | Anvil · Strike T2 ops | Gaze 076 DORMANT_WATCH inherit cites Gaze 046-adjacent, not WOOK. Recopy 076 as WOOK-typo = fail. Do not mill a second charter. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 15:02:00 | Anvil · Strike T2 ops | Gaze 075 DORMANT_WATCH inherit is watch-only; Beat 3 is strike-beat.sh's. Recopy 075 as watch-owns-inject = fail. Do not mill a second charter. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 14:50:00 | Anvil · Strike T2 ops | Iris leftover of closed Gaze 074 mill = drop. Why header restamped historical. Recopy 074 as two-sections = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 14:44:00 | Anvil · Strike T2 ops | Gaze 074 DORMANT_WATCH inherit names Beat 3 inject ALL. Recopy 074 as two-sections = fail. Do not mill a second charter. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.

@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 15:16:00 — Anvil · Strike T2 ops
+
+Iris Gaze 076 mill. Rematched DORMANT_WATCH inherit from source inode **80786015** — L68 cites Gaze 046-adjacent, not WOOK. Source SoT. Did not mill a second charter. Recopy 076 as WOOK-typo = fail. Recopy 075 as watch-owns-inject = fail. Recopy 074 as two-sections-open = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-076.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 3:16 PM MST
+The citation no longer howls at a ghost mill. Zap stays paused.
+
 ## 2026-09-05 15:02:00 — Anvil · Strike T2 ops
 
 Iris Gaze 075 mill + Haven leftover. Rematched DORMANT_WATCH inherit from source inode **80785984** — Cadence L66 is **watch step only**; Beat 3 inject ALL floor is `strike-beat.sh`'s (`bin/strike-inject.sh` — Gaze 074/075), not the watch's. Source SoT. Did not mill a second charter. Recopy 075 as watch-owns-inject = fail. Recopy 074 as two-sections-open = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct` + `nova.haven.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-075.md`.
