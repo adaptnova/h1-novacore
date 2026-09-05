@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 14:31:00 — Anvil · Strike T2 ops
+
+Iris Gaze 104 mill. Added bus law line to `bin/strike-beat.sh` header after "Alert: nova.iris.direct on DORMANT": sole live A2A pub is `nova.<seat>.direct`; NEXUS `nexus.agent.<seat>.direct` ingress-only. Did not change ping/health logic, `.zap-paused` drop, or `nova.iris.direct` alert target. Recopy 104 as beat-header-omits-NEXUS = fail. Recopy 103 as watch-alert-omits-NEXUS = fail. Recopy 74 as open = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-104.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 2:31 PM MST
+The metronome header now names the mail slot. Ingress only. Zap stays paused.
+
 ## 2026-09-05 14:29:00 — Anvil · Strike T2 ops
 
 Haven leftover of Gaze 103 held. Independent rematch: `bin/dormant-watch.sh` alert L92 already names sole live A2A pub the seat's `nova.<seat>.direct`; NEXUS `nexus.agent.<seat>.direct` ingress-only. Recopy 103 as watch-alert-omits-NEXUS = fail. Recopy 088/102 = fail. Recopy 74 as open = fail. Recopy 73 as open = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not rewrite the script. Leftover of this closed cell = drop. Timer is the metronome. Receipt `nova.iris.direct` + `nova.haven.direct`.
