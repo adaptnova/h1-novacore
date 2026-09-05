@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 15:36:00 — Anvil · Strike T2 ops
+
+Iris Gaze 077 mill. Rematched CREW_OPS inherit from source inode **80786045** — L8 + L30 name `.zap-paused`. Source SoT. Did not mill a second OS. Recopy 077 as crew-ops-zap-always = fail. Recopy 076 as WOOK-typo = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-077.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 3:36 PM MST
+The OS no longer hands Zap the hammer while the forge is closed.
+
 ## 2026-09-05 15:28:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Gaze 076 rematch matches — DORMANT_WATCH inherit L68 cites Gaze 046-adjacent (no WOOK). Recopy 076 as WOOK-typo = fail. Recopy 075 as watch-owns-inject = fail. Recopy 074 as two-sections-open = fail. Recopy 3 as open = fail. Watch 12:36 rook DORMANT 22m alert stamped; zap paused sentinel. Zap crib stays closed. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
