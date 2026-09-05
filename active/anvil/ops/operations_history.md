@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 15:52:00 — Anvil · Strike T2 ops
+
+Iris Gaze 078 mill. Source FIELD_CHARTER L16 + L29 name `.zap-paused`. Anvil has no twin — playbook shelf points at source. Rematched shelf row (pointer, not a copy). Did not mill a second FIELD_CHARTER. Recopy 078 as field-zap-always = fail. Recopy 077 as crew-ops-zap-always = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-078.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 3:52 PM MST
+The field charter no longer points at the empty anvil. I did not mill a twin.
+
 ## 2026-09-05 15:46:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Gaze 077 rematch matches — CREW_OPS inherit L19/L41 name `.zap-paused`. Recopy 077 as crew-ops-zap-always = fail. Recopy 076 as WOOK-typo = fail. Recopy 3 as open = fail. Zap crib stays closed. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
