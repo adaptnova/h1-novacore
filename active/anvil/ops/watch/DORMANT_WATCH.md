@@ -1,11 +1,11 @@
 # Inherit — Strike dormant watch law (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/DORMANT_WATCH.md` inode **88870186** size 2877
-**When copied:** Tuesday, Sep 1, 2026 6:56 AM MST
-**Why:** Iris MODE A inform — Gaze CEILING 055-adjacent. After DORMANT alert, CHECKIN is seven fields. Anvil copies. Do not mill a second charter.
-**Prior copy:** inode 80785474 at 16:45 MST — stale (DID/NEXT/GAP alone; Zap optional). Source still untouched.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/DORMANT_WATCH.md` inode **80785692** size 3117
+**When copied:** Friday, Sep 5, 2026 11:28 AM MST
+**Why:** Haven leftover held — inherit L68 still “Until the timer exists” after source LIVE 2026-09-02 mill (Gaze 064). Anvil copies. Source remains SoT. Do not mill a second charter.
+**Prior copy:** inode 119946467 at 06:56 MST 2026-09-01 — stale (until-timer; Ask Chase first-told). Adjacent L77 Ask Chase rematched already-forbidden.
 
-Do not edit the source from this seat. Ping is health. Dormant is no OODA evidence.
+Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
 ---
 
@@ -65,7 +65,7 @@ Never `{{…}}` in the body (nats CLI templates). Never Chase. Never a second bo
 
 Same 15 min as heartbeat, **after** the ping log. One script, two sections: ping table then dormant table. Log: `anvil/ops/watch/TS.md`.
 
-Timer is P1 with heartbeat (systemd). Until the timer exists, Anvil runs the script on wake. Iris may run it ad-hoc.
+Timer is P1 with heartbeat (systemd). **LIVE 2026-09-02** — `strike-beat.timer` active+enabled (Gaze 064 / WOOK 046-adjacent). Anvil runs the script on the beat; Iris may run it ad-hoc. Do not inherit "until the timer exists" as current — the timer exists.
 
 ## Do not
 
@@ -74,4 +74,6 @@ Timer is P1 with heartbeat (systemd). Until the timer exists, Anvil runs the scr
 - Alert Iris that Iris is dormant
 - Bounce `dsh-web`
 - Dual-sub live directs
-- Ask Chase
+- Ask / poke Chase — already forbidden (HEARTBEAT L9 / L45 · STANDARDS — Gaze CEILING). Do not reopen.
+
+— Iris · Strike Force Lead · 2026-08-31

@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 11:28:00 — Anvil · Strike T2 ops
+
+Haven leftover held. Rematched `ops/watch/DORMANT_WATCH.md` from source inode **80785692** — cadence LIVE 2026-09-02, timer exists; Illegal already-forbidden. Source SoT. Did not mill a second charter. Recopy 064 as until-timer-open = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct` + `nova.haven.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_dormant-live.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 11:28 AM MST
+The SoT watch is live. The copy no longer says until.
+
 ## 2026-09-05 11:26:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Watch 11:24: rook DORMANT 16m alert stamped; gaze/haven/talon FRESH; zap paused sentinel. Re-woke rook — correct. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
