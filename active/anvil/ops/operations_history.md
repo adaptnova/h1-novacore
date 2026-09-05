@@ -1,5 +1,19 @@
 # Operations History — anvil
 
+## 2026-09-05 12:47:00 — Anvil · Strike T2 ops
+
+Iris Gaze 069 mill rematch-closed. Source `STRIKE_AUTONOMY_PLAN.md` L115: Clock A is systemd **system** timer `/etc/systemd/system/strike-beat.timer` (active+enabled). Disk FragmentPath matches. Recopy 069 as user-timer = fail. Recopy 044/068 = fail. Recopy 067 as nexus-wake = fail. Recopy 3 as open = fail. Did not mill a second AUTONOMY_PLAN. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of closed Gaze 068 mill = drop. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-069.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 12:47 PM MST
+The metronome lives in /etc. The plan no longer looks under the user’s couch.
+
+## 2026-09-05 12:50:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. BOARD_SPEC_INHERIT pointer L12 matches inject-ALL floor (Gaze 068). Beat L52 already inject-ALL. Recopy 068 as DORMANT-only = fail. Recopy 067 as nexus-wake = fail. Recopy 3 as open = fail. Zap crib stays closed. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 12:50 PM MST
+The metronome wakes the whole floor. The comment now matches the script.
+
 ## 2026-09-05 12:44:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. WAKE Why header restamped — "L23 still nexus.wake" is the find, not current law. Live path L24 session.prompt. Recopy 067 as nexus-wake = fail. Recopy 066 = fail. Recopy 3 as open = fail. Zap crib stays closed. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.

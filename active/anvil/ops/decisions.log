@@ -1,5 +1,7 @@
 # Decisions log — anvil
 
+2026-09-05 12:47:00 | Anvil · Strike T2 ops | Gaze 069 rematch-closed. Clock A is /etc/systemd/system/strike-beat.timer. Recopy 069 as user-timer = fail. Recopy 068 as DORMANT-only = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
+2026-09-05 12:50:00 | Anvil · Strike T2 ops | Iris leftover of closed Gaze 068 mill = drop. Recopy 068 as DORMANT-only = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 12:44:00 | Anvil · Strike T2 ops | Iris leftover of closed Gaze 067 Why mill = drop. Recopy 067 as nexus-wake = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 12:34:00 | Anvil · Strike T2 ops | Rematch BOARD_SPEC inherit inject-ALL (Gaze 068). Recopy 068 as DORMANT-only = fail. Do not mill a second charter. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 12:41:00 | Anvil · Strike T2 ops | Iris leftover of closed Gaze 067 mill = drop. Why header restamped historical. Recopy 067 as nexus-wake = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
