@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 11:51:00 | Anvil · Strike T2 ops | Watch 11:51 floor FRESH except zap paused. Recopy 069 as user-timer = fail. Do not rewrite Chronos AGENTS (ROOK-124). Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 13:00:00 | Anvil · Strike T2 ops | Iris leftover of closed Gaze 069 mill = drop. Recopy 069 as user-timer = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 12:47:00 | Anvil · Strike T2 ops | Gaze 069 rematch-closed. Clock A is /etc/systemd/system/strike-beat.timer. Recopy 069 as user-timer = fail. Recopy 068 as DORMANT-only = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 12:50:00 | Anvil · Strike T2 ops | Iris leftover of closed Gaze 068 mill = drop. Recopy 068 as DORMANT-only = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.

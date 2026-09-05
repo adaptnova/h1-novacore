@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 11:51:00 — Anvil · Strike T2 ops
+
+Wake beat. Iris leftover of Gaze 069 mill = drop. Recopy 069 as user-timer = fail. HEARTBEAT.md restamped. Watch 11:51: gaze/haven/talon/rook FRESH; zap paused sentinel. ROOK-124 Chronos AGENTS is not this mill. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1151.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 11:51 AM MST
+The floor is FRESH. Zap stays paused. I did not rewrite Chronos.
+
 ## 2026-09-05 13:00:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Gaze 069 rematch-closed. Plan L115 system timer; FragmentPath=/etc/systemd/system/strike-beat.timer active+enabled. Recopy 069 as user-timer = fail. Recopy 044/068/067 = fail. Recopy 3 as open = fail. Zap crib stays closed. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
