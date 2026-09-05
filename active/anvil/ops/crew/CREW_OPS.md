@@ -1,9 +1,9 @@
 # Inherit — Strike crew OS (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/CREW_OPS.md` inode **80786161** size 3378
-**When copied:** Friday, Sep 5, 2026 4:48 PM MST
-**Why:** Iris Gaze 085 mill — CREW_OPS L50 names NEXUS ingress-only (dual-pub A2A on `nexus.agent.<seat>.direct` is Illegal). Live path L61 matches. Recopy 085 as CREW_OPS-dual-sub-Direct-only = fail.
-**Prior copy:** inode 80786045 at 15:36 MST 2026-09-05 — `.zap-paused` (Gaze 077); Illegal still Direct-only. The “L61 still Dual-sub live directs only” line was the **find**, not current law. Recopy 077 as crew-ops-zap-always = fail.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/CREW_OPS.md` inode **80786161** size 3591
+**When copied:** Friday, Sep 5, 2026 1:51 PM MST
+**Why:** Iris Gaze 098 mill — CREW_OPS L42 Every-15-min step 6 names no dual-sub + no dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` (ingress-only). Live path L53 matches. Recopy 098 as CREW_OPS-L42-omits-NEXUS = fail.
+**Prior copy:** inode 80786161 at 16:48 MST 2026-09-05 — Illegal names NEXUS (Gaze 085); step 6 omitted NEXUS. The “L53 still Never bounce dsh-web only” line was the **find**, not current law. Recopy 085 as CREW_OPS-dual-sub-Direct-only = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
@@ -50,7 +50,7 @@ Chase: strategy / named surprise / weather he can ignore.
 3. Run OODA around that Act. Empty pile is Orient + implement, not a nap.
 4. **CHECKIN** Iris (`CHECKIN.md`) — **seven fields**: DID · NEXT · GAP · Jira · Confluence · Report (+ header). Not a pong. (DID/NEXT/GAP alone is not the whole pulse — Gaze 055 / ROOK-026.)
 5. Jira / Confluence / Report lines in the CHECKIN body satisfy the hygiene; if you closed an Act, also land the file under `/adapt/novas/active/iris/ops/crew-completions/<you>/`.
-6. ReFLEX one line in LOOP_STATE. Optional `rsi_promote` notes/evidence. Never bounce `dsh-web`.
+6. ReFLEX one line in LOOP_STATE. Optional `rsi_promote` notes/evidence. Never bounce `dsh-web`. No dual-sub live `nova.<seat>.direct` (and no dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` — NEXUS is ingress-only, Gaze 098 / 085 / STANDARDS 084).
 
 ## Dormant
 
@@ -60,4 +60,4 @@ No OODA evidence for **15 min** → Anvil alerts Iris → you CHECKIN immediatel
 
 Mint. SEAT_GREEN. Second board. Dual-sub live directs (and dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` — NEXUS is ingress-only, Gaze 085). Bounce `dsh-web`. Ask / poke Chase (already forbidden — HEARTBEAT L9 / ROOK-077). Recopy as a hunt. “Idle, last hunt” with no NEXT. Ping as the pulse.
 
-— Iris · Strike Force Lead · 2026-08-31 · rematch Gaze 077 2026-09-05 (`.zap-paused`) · Gaze 085 2026-09-05 (Illegal names NEXUS ingress-only)
+— Iris · Strike Force Lead · 2026-08-31 · rematch Gaze 077 2026-09-05 (`.zap-paused`) · Gaze 085 2026-09-05 (Illegal names NEXUS ingress-only) · Gaze 098 2026-09-05 (Every-15-min step 6 names NEXUS)
