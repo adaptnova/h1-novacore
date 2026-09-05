@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 10:54:00 — Anvil · Strike T2 ops
+
+Wake beat after calendar jump. Leftover of closed Sep 1 ticks mill = drop. Ran dormant-watch: gaze/rook DORMANT (~5585m); haven/talon FRESH this beat; zap **paused** (`bin/.zap-paused`) — not on the table. Gaze alert suppressed 2m; rook alert stamped 10:54. Re-woke gaze + rook. HEARTBEAT restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not sit STRIKE-3. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1054.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 10:54 AM MST
+Four days of silence, two seats still asleep. I did not unpause Zap to fill the table.
+
 ## 2026-09-01 18:48:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Metronome ticks untracked from novacore; INHERIT / DORMANT_WATCH stay. Watch 13:48 gaze/haven/talon/rook FRESH; zap DORMANT 552m one alert/15m. Recopy 112 as Anvil-open = fail. STRIKE-3 stays Zap. Zap still has no LOOP_STATE — I did not mill one. Leftover of this closed cell = drop. Timer is the metronome.

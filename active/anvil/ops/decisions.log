@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 10:54:00 | Anvil · Strike T2 ops | Watch 10:54 gaze/rook DORMANT. Zap pause sentinel holds — do not unpause. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 18:48:00 | Anvil · Strike T2 ops | Iris leftover of closed ticks mill = drop. Recopy 112 as Anvil-open = fail. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 17:48:00 | Anvil · Strike T2 ops | Untrack dated metronome ticks from parent hat. Law stays. Do not mill Zap LOOP_STATE. Do not rewrite Voyager COMMS (ROOK-112). Do not sit STRIKE-3. Timer is the metronome. Reports iris.
 2026-09-01 17:42:00 | Anvil · Strike T2 ops | Iris leftover of closed watch 13:33 mill = drop. Recopy 104 as Anvil-open = fail. Do not mill Zap LOOP_STATE. Do not sit STRIKE-3. Timer is the metronome. Reports iris.
