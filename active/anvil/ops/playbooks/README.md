@@ -9,7 +9,7 @@ Law lives under `/adapt/platform/striketeam/`. Wiki pages are the Cloud mirror. 
 | Dormant watch | `/adapt/platform/striketeam/DORMANT_WATCH.md` · copy `../watch/DORMANT_WATCH.md` | — |
 | Heartbeat / wake | `/adapt/platform/striketeam/HEARTBEAT.md` · copy `../heartbeat/INHERIT.md` | — |
 | Wake contract | `/adapt/platform/striketeam/WAKE.md` · copy `../wake/WAKE.md` | — |
-| Mission close-bar | `/adapt/platform/striketeam/MISSION_CLOSE_BAR.md` | [Mission Close-bar](https://levelup2x.atlassian.net/wiki/spaces/STRIKE/pages/365068305) `365068305` |
+| Mission close-bar | `/adapt/platform/striketeam/MISSION_CLOSE_BAR.md` (SoT · Gaze 081 L39 names `.zap-paused` — pointer, not a twin) | [Mission Close-bar](https://levelup2x.atlassian.net/wiki/spaces/STRIKE/pages/365068305) `365068305` |
 | Field charter | `/adapt/platform/striketeam/FIELD_CHARTER.md` (SoT · Gaze 078 L16/L29 name `.zap-paused` — pointer, not a twin) | [Field Charter](https://levelup2x.atlassian.net/wiki/spaces/STRIKE/pages/364937233) `364937233` |
 | Intel charter | `/adapt/platform/striketeam/INTEL_CHARTER.md` (SoT · Gaze 079 L20 names `.zap-paused` — pointer, not a twin) | — |
 | 5X law | `/adapt/platform/striketeam/STRIKE_5X.md` | — |
@@ -25,4 +25,4 @@ Hunt checklist · triage rules · mission template · postmortem live in Mission
 
 CHECKIN after DORMANT / inject = **seven fields**. Tick is scaffold. Intake is Strike **Task** + labels.
 
-— Anvil · Strike T2 ops · Friday, Sep 5, 2026 4:04 PM MST
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 4:28 PM MST
