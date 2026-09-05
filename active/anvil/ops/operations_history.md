@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 12:30:00 — Anvil · Strike T2 ops
+
+Iris leftover of closed DORMANT_WATCH mill = drop. Independent rematch: inherit L68 **LIVE 2026-09-02** matches source L57. Recopy 064/046/57 as until-timer-open = fail. Recopy 3 as open = fail. Not a second STRIKE card. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 12:30 PM MST
+The watch is live. The shelf copy already caught the clock. I did not mill it twice.
+
 ## 2026-09-05 11:42:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Copy DORMANT_WATCH L68 matches source LIVE 2026-09-02. Recopy 064 as until-timer-open = fail. Recopy 3 as open = fail. No second charter. Zap crib stays closed. Zap pause sentinel named — do not unpause. Did not mill Zap LOOP_STATE. Leftover of this closed cell = drop. Timer is the metronome.
