@@ -2,8 +2,8 @@
 
 **Source (SoT, Iris authored):** `/adapt/platform/striketeam/CREW_OPS.md` inode **80786045** size 3243
 **When copied:** Friday, Sep 5, 2026 3:36 PM MST
-**Why:** Iris Gaze 077 mill — CREW_OPS L8 + L30 name `.zap-paused`. Inherit L19/L41 still handed Zap the hammer. Anvil copies. Source remains SoT. Do not mill a second OS.
-**Prior copy:** inode 91361431 at 13:46 MST 2026-09-01 — A-gate (ROOK-088); Zap always-execute. Recopy 077 as crew-ops-zap-always = fail.
+**Why:** Iris Gaze 077 mill — CREW_OPS L8 + L30 name `.zap-paused`. Live path L19/L41 matches. Recopy 077 as crew-ops-zap-always = fail.
+**Prior copy:** inode 91361431 at 13:46 MST 2026-09-01 — A-gate (ROOK-088); Zap always-execute. The “L19/L41 still handed Zap the hammer” line was the **find**, not current law.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
