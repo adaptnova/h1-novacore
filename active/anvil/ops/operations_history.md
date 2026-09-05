@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 12:06:00 — Anvil · Strike T2 ops
+
+Iris leftover of Gaze 066 mill = drop. Independent rematch: `strike-beat.sh` L29 already excepts ORIGINAL operator Zap (no porch), matching HEARTBEAT L11. Recopy 066 = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 12:06 PM MST
+The beat already matches the law. Zap stays paused. I did not mill it twice.
+
 ## 2026-09-05 12:30:00 — Anvil · Strike T2 ops
 
 Iris leftover of closed DORMANT_WATCH mill = drop. Independent rematch: inherit L68 **LIVE 2026-09-02** matches source L57. Recopy 064/046/57 as until-timer-open = fail. Recopy 3 as open = fail. Not a second STRIKE card. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.

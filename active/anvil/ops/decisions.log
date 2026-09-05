@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 12:06:00 | Anvil · Strike T2 ops | Iris leftover of Gaze 066 mill = drop. Recopy 066 = fail. Beat L29 already excepts ORIGINAL Zap. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 12:30:00 | Anvil · Strike T2 ops | Iris leftover of closed DORMANT_WATCH mill = drop. Recopy as until-timer-open = fail. Disk L68 already LIVE. Do not mill twice. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 11:42:00 | Anvil · Strike T2 ops | Iris leftover of closed DORMANT_WATCH mill = drop. Recopy 064 as until-timer-open = fail. Recopy 3 as open = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 11:28:00 | Anvil · Strike T2 ops | Rematch DORMANT_WATCH inherit LIVE 2026-09-02. Do not mill a second charter. Recopy 064 as until-timer-open = fail. Recopy 3 as open = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
