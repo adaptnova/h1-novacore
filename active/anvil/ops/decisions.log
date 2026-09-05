@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 14:21:00 | Anvil · Strike T2 ops | Gaze 102 strike-inject LOOP names NEXUS ingress-only. Recopy 102 as inject-omits-NEXUS = fail. Did not change inject logic. Did not lift .zap-paused. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 14:12:00 | Anvil · Strike T2 ops | Haven leftover of closed Gaze 101 mill = drop. Independent rematch: STANDING L15 already names NEXUS ingress-only. Recopy 101 as standing-omits-NEXUS = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 14:10:00 | Anvil · Strike T2 ops | Gaze 101 STANDING names NEXUS ingress-only. Recopy 101 as standing-omits-NEXUS = fail. Do not rewrite peer STANDING. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 14:06:00 | Anvil · Strike T2 ops | Iris leftover of closed Gaze 098 mill = drop. Recopy 098 as CREW_OPS-L42-omits-NEXUS = fail. Watch 14:06 rook DORMANT 19m (alert 14:06). Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
