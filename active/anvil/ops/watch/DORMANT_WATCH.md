@@ -1,9 +1,9 @@
 # Inherit — Strike dormant watch law (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/DORMANT_WATCH.md` inode **80785915** size 3187
-**When copied:** Friday, Sep 5, 2026 2:10 PM MST
-**Why:** Iris 14:10 — six-chair GAP CLOSED. Source L12 names `.zap-paused`. Inherit L23 still printed six chairs always. Anvil copies. Source remains SoT. Do not mill a second charter.
-**Prior copy:** inode 80785692 at 11:28 MST 2026-09-05 — LIVE timer; zap still floor-always without pause. Recopy as unnamed-pause mill = fail.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/DORMANT_WATCH.md` inode **80785967** size 3240
+**When copied:** Friday, Sep 5, 2026 2:44 PM MST
+**Why:** Iris Gaze 074 mill — Cadence L55 is ping log → dormant table → **Beat 3 inject ALL floor**. Live path L66 matches. Recopy 074 as two-sections = fail.
+**Prior copy:** inode 80785915 at 14:10 MST 2026-09-05 — `.zap-paused` named; cadence still two-sections. The “L66 still two sections” line was the **find**, not current law.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
@@ -63,7 +63,7 @@ Never `{{…}}` in the body (nats CLI templates). Never Chase. Never a second bo
 
 ## Cadence
 
-Same 15 min as heartbeat, **after** the ping log. One script, two sections: ping table then dormant table. Log: `anvil/ops/watch/TS.md`.
+Same 15 min as heartbeat, **after** the ping log. One script: ping log → dormant table → **Beat 3 inject ALL floor** (`bin/strike-inject.sh` — Gaze 074). Log: `anvil/ops/watch/TS.md`.
 
 Timer is P1 with heartbeat (systemd). **LIVE 2026-09-02** — `strike-beat.timer` active+enabled (Gaze 064 / WOOK 046-adjacent). Anvil runs the script on the beat; Iris may run it ad-hoc. Do not inherit "until the timer exists" as current — the timer exists.
 
