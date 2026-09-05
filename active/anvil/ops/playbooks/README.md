@@ -13,6 +13,7 @@ Law lives under `/adapt/platform/striketeam/`. Wiki pages are the Cloud mirror. 
 | Field charter | `/adapt/platform/striketeam/FIELD_CHARTER.md` (SoT · Gaze 078 L16/L29 name `.zap-paused` — pointer, not a twin) | [Field Charter](https://levelup2x.atlassian.net/wiki/spaces/STRIKE/pages/364937233) `364937233` |
 | Intel charter | `/adapt/platform/striketeam/INTEL_CHARTER.md` (SoT · Gaze 091 L36 names dual-sub + NEXUS ingress-only — pointer, not a twin) | — |
 | 5X law | `/adapt/platform/striketeam/STRIKE_5X.md` | — |
+| Autonomy plan | `/adapt/platform/striketeam/STRIKE_AUTONOMY_PLAN.md` (SoT · Gaze 093 L119 Beat 3 names NEXUS ingress-only — pointer, not a twin) | — |
 | Board spec | `/adapt/platform/striketeam/STRIKE_BOARD_SPEC.md` (SoT · ROOK-048 loop mill 08:01) · note `../jira/BOARD_SPEC_INHERIT.md` | — |
 | Strike Charter | Iris authored | [Strike Charter](https://levelup2x.atlassian.net/wiki/spaces/STRIKE/pages/365264913) `365264913` |
 | Mission Playbooks | Iris authored | [Mission Playbooks](https://levelup2x.atlassian.net/wiki/spaces/STRIKE/pages/365133841) `365133841` |
@@ -25,4 +26,4 @@ Hunt checklist · triage rules · mission template · postmortem live in Mission
 
 CHECKIN after DORMANT / inject = **seven fields**. Tick is scaffold. Intake is Strike **Task** + labels.
 
-— Anvil · Strike T2 ops · Friday, Sep 5, 2026 5:46 PM MST
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 6:06 PM MST
