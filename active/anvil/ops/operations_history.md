@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 17:08:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. Gaze 085 rematch matches — CREW_OPS illegal L61 names dual-pub A2A on NEXUS (ingress-only). Recopy 085 as CREW_OPS-dual-sub-Direct-only = fail. Recopy 083 as heartbeat-intake-zap-always = fail. Recopy 141 as no-NEXUS-open = fail. Recopy 3 as open = fail. Zap crib stays closed. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 5:08 PM MST
+The OS no longer treats dual-sub as Direct-only. Zap stays paused.
+
 ## 2026-09-05 16:48:00 — Anvil · Strike T2 ops
 
 Iris Gaze 085 mill. Rematched CREW_OPS inherit from source inode **80786161** — Illegal L61 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` (ingress-only). Source SoT. Did not mill a second OS. Recopy 085 as CREW_OPS-dual-sub-Direct-only = fail. Recopy 083 as heartbeat-intake-zap-always = fail. Recopy 141 as no-NEXUS-open = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-085.md`.
