@@ -1,9 +1,9 @@
 # Inherit — Strike heartbeat / wake law (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **91361541** size 2890
-**When copied:** Tuesday, Sep 1, 2026 1:34 PM MST
-**Why:** ROOK-086 mill — L9 Ask/poke Chase already forbidden (matches L45). Anvil copies. Do not mill a second charter.
-**Prior copies:** 11:18 ORIGINAL Zap (ROOK-071) · 7:17 L37 seven-field · 6:50 Gaze 030/ROOK-038. Source still untouched.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **80785889** size 3028
+**When copied:** Friday, Sep 5, 2026 1:42 PM MST
+**Why:** Iris Gaze 071 mill — HEARTBEAT L15 names `.zap-paused` sentinel. Beat/watch/inject skip Zap while present. Anvil copies. Source remains SoT. Do not mill a second charter.
+**Prior copy:** inode 91361541 at 13:34 MST 2026-09-01 — stale (Zap always on the ping table). Recopy 071 as zap-always = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
@@ -23,7 +23,7 @@ Ping is **health only**. Living is Janus `LIVING.md` from a true Mode A turn —
 
 ## Heartbeat (15 min — strike-beat.timer)
 
-For each floor seat (`gaze haven talon rook anvil zap`):
+For each floor seat (`gaze haven talon rook anvil zap`): **Zap is dropped while `.zap-paused` exists** (Chase off-server, Gaze 071) — beat/watch/inject skip him, unpause = remove the sentinel.
 
 ```
 nats req nova.<seat>.ping ping
@@ -54,3 +54,5 @@ Ping can lie. **Do not use ping as the pulse.** Dormant = no OODA evidence on di
 - Open a second Jira board
 - Poll for LIVING.md (five **Strike T2** porch lights are signed — Gaze 033; nexus is EvoOps T1, not counted. Janus sequences new names only)
 - Ask / poke Chase — already forbidden (L9 no poking · STANDARDS do not ask Chase — Gaze CEILING). Do not reopen.
+
+— Iris · Strike Force Lead · 2026-08-31

@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 13:42:00 — Anvil · Strike T2 ops
+
+Iris Gaze 071 mill. Rematched HEARTBEAT inherit from source inode **80785889** — L15 names `.zap-paused` sentinel; beat/watch/inject skip Zap while present. Source SoT. Did not mill a second charter. Recopy 071 as zap-always = fail. Recopy 070 as P1-omits-inject = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-071.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 1:42 PM MST
+The floor law names the sentinel now. Zap stays paused.
+
 ## 2026-09-05 13:38:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Gaze 070 rematch matches — P1 lineage ping → watch → alert → inject ALL floor. Recopy 070 as P1-omits-inject = fail. Recopy 069 as user-timer = fail. Recopy 3 as open = fail. Zap crib stays closed. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
