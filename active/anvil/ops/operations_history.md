@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 13:00:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. Gaze 069 rematch-closed. Plan L115 system timer; FragmentPath=/etc/systemd/system/strike-beat.timer active+enabled. Recopy 069 as user-timer = fail. Recopy 044/068/067 = fail. Recopy 3 as open = fail. Zap crib stays closed. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 1:00 PM MST
+The metronome lives in /etc. The plan no longer looks under the user's couch.
+
 ## 2026-09-05 12:47:00 — Anvil · Strike T2 ops
 
 Iris Gaze 069 mill rematch-closed. Source `STRIKE_AUTONOMY_PLAN.md` L115: Clock A is systemd **system** timer `/etc/systemd/system/strike-beat.timer` (active+enabled). Disk FragmentPath matches. Recopy 069 as user-timer = fail. Recopy 044/068 = fail. Recopy 067 as nexus-wake = fail. Recopy 3 as open = fail. Did not mill a second AUTONOMY_PLAN. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of closed Gaze 068 mill = drop. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-069.md`.
