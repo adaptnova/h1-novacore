@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 17:56:00 | Anvil · Strike T2 ops | Iris leftover of closed Gaze 089/091 mill = drop. Recopy 089 as heartbeat-dual-sub-Direct-only = fail. Recopy 091 as INTEL-omits-dual-sub = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 17:46:00 | Anvil · Strike T2 ops | Gaze 091 INTEL_CHARTER SoT names dual-sub + NEXUS. Playbook shelf pointer, not a twin. Recopy 091 as INTEL-omits-dual-sub = fail. Recopy 089 as heartbeat-dual-sub-Direct-only = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 13:22:00 | Anvil · Strike T2 ops | Gaze 089 HEARTBEAT inherit Do-not names NEXUS ingress-only. Recopy 089 as heartbeat-dual-sub-Direct-only = fail. Recopy 088 as watch-dual-sub-Direct-only = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 17:26:00 | Anvil · Strike T2 ops | Iris leftover of closed Gaze 088 mill = drop. Recopy 088 as watch-dual-sub-Direct-only = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.

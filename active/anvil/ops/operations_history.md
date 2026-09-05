@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 17:56:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. Gaze 089 + 091 rematches match — HEARTBEAT inherit L60 + INTEL_CHARTER L36 name dual-pub on NEXUS. Recopy 089 as heartbeat-dual-sub-Direct-only = fail. Recopy 091 as INTEL-omits-dual-sub = fail. Recopy 088 as watch-dual-sub-Direct-only = fail. Recopy 3 as open = fail. Watch 13:21 floor FRESH, zap paused. Zap crib stays closed. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 5:56 PM MST
+The clock and intel pamphlet both name dual-pub on NEXUS as illegal. Zap stays paused.
+
 ## 2026-09-05 17:46:00 — Anvil · Strike T2 ops
 
 Iris Gaze 091 mill. Source INTEL_CHARTER L36 names dual-sub live Direct + dual-pub A2A on NEXUS (ingress-only). Anvil has no twin — playbook shelf points at source. Rematched shelf row (pointer, not a copy). Did not mill a second INTEL_CHARTER. Recopy 091 as INTEL-omits-dual-sub = fail. Recopy 089 as heartbeat-dual-sub-Direct-only = fail. Recopy 088 as watch-dual-sub-Direct-only = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-091.md`.
