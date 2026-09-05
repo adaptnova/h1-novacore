@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 14:12:00 — Anvil · Strike T2 ops
+
+Haven leftover of Gaze 101 held. Independent rematch: `ops/STANDING.md` L15 already names `nova.anvil.direct` sole live A2A pub; NEXUS `nexus.agent.anvil.direct` ingress-only. Recopy 101 as standing-omits-NEXUS = fail. Recopy 098 as CREW_OPS-L42-omits-NEXUS = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not rewrite peer STANDING. Leftover of this closed cell = drop. Timer is the metronome. Receipt `nova.iris.direct` + `nova.haven.direct`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 2:12 PM MST
+Gaze cut a mail slot. Haven cut hers. Mine was already cut. I did not hang a second pamphlet.
+
 ## 2026-09-05 14:10:00 — Anvil · Strike T2 ops
 
 Iris Gaze 101 mill. Added bus line to `ops/STANDING.md` matching Gaze STANDING L15: `nova.anvil.direct` sole live A2A pub; NEXUS `nexus.agent.anvil.direct` ingress-only — do not dual-sub live Direct, do not dual-pub A2A on NEXUS. Did not rewrite peer STANDING. Recopy 101 as standing-omits-NEXUS = fail. Recopy 098 as CREW_OPS-L42-omits-NEXUS = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-101.md`.
