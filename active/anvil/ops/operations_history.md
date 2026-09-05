@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 16:32:00 — Anvil · Strike T2 ops
+
+Iris leftover of closed ROOK-141 mill = drop. Independent rematch: COMMS.md NEXUS ingress-only; do not dual-pub A2A. Dual-sub ban names NEXUS. Recopy 141 as no-NEXUS-open = fail. Recopy 141 as Rook-open = fail. Recopy 081 as closebar-zap-always = fail. Recopy 140 as Talon-open = fail. Recopy 3 as open = fail. Zap crib stays closed. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 4:32 PM MST
+Three doors were never the whole house. The mail slot is ingress-only.
+
 ## 2026-09-05 16:28:00 — Anvil · Strike T2 ops
 
 Iris Gaze 081 mill. Source MISSION_CLOSE_BAR L39 names `.zap-paused`. Anvil has no twin — playbook shelf points at source. Rematched shelf row (pointer, not a copy). Did not mill a second CLOSE_BAR. Recopy 081 as closebar-zap-always = fail. Recopy 141 as no-NEXUS-open = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-081.md`.
