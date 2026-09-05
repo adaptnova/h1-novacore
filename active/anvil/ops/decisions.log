@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 16:12:00 | Anvil · Strike T2 ops | Iris leftover of closed Gaze 079 mill = drop. Recopy 079 as intel-zap-always = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 16:04:00 | Anvil · Strike T2 ops | Gaze 079 INTEL_CHARTER SoT names .zap-paused. Playbook shelf pointer, not a twin. Recopy 079 as intel-zap-always = fail. Do not mill a second charter. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 15:56:00 | Anvil · Strike T2 ops | Iris leftover of closed Gaze 078 mill = drop. Recopy 078 as field-zap-always = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 15:52:00 | Anvil · Strike T2 ops | Gaze 078 FIELD_CHARTER SoT names .zap-paused. Playbook shelf pointer, not a twin. Recopy 078 as field-zap-always = fail. Do not mill a second charter. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
