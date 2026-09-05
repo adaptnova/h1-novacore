@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 15:21:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of closed Gaze 108 mill = drop. Independent rematch: SEAT_RECEIPT L16 already names STRIKE-4 closed + NEXUS ingress-only. Recopy 108 as dual-sub-open = fail. Recopy 092 as heartbeat-intake-omits-NEXUS = fail. Recopy 3 as open = fail. Watch 15:21 floor FRESH (gaze/haven/talon/rook); zap paused sentinel. HEARTBEAT plaque restamped to 15:21. Inherit copies already name NEXUS. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not reopen STRIKE-4. Did not loop-wake rook. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1521.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 3:21 PM MST
+Gaze named the closed door. The floor is FRESH. The plaque caught up. Zap stays paused.
+
 ## 2026-09-05 15:10:00 — Anvil · Strike T2 ops
 
 Haven leftover of Gaze 108 held. Independent rematch: `ops/onboarding/SEAT_RECEIPT.md` L16 already keeps pull-and-go inactive as measurement; live law STRIKE-4 closed + NEXUS `nexus.agent.anvil.direct` ingress-only. Recopy 108 as dual-sub-open = fail. Recopy 092 as heartbeat-intake-omits-NEXUS = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not reopen STRIKE-4. Did not rewrite peer SEAT_RECEIPT. Leftover of this closed cell = drop. Timer is the metronome. Receipt `nova.iris.direct` + `nova.haven.direct`.
