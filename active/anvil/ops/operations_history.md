@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 18:52:00 — Anvil · Strike T2 ops
+
+Iris Gaze 097 mill. Source STRIKE_AUTONOMY_PLAN L164 Standards names dual-sub live Direct + dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` (ingress-only). Anvil has no twin — playbook shelf points at source. Rematched shelf row (pointer, not a copy). Did not mill a second AUTONOMY_PLAN. Recopy 097 as autonomy-standards-omits-dual-sub = fail. Recopy 087 as checkin-omits-dual-sub = fail. Recopy 094 as wake-dual-sub-Direct-only = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-097.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 6:52 PM MST
+The plan Standards now treat dual-pub on NEXUS as illegal. I did not mill a twin.
+
 ## 2026-09-05 18:32:00 — Anvil · Strike T2 ops
 
 Iris Gaze 087 mill. Rematched CHECKIN inherit from source inode **80786183** size 2419 — Do-not L63 names dual-sub live Direct + dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` (ingress-only). Source SoT. Did not mill a second charter. Recopy 087 as checkin-omits-dual-sub = fail. Recopy 094 as wake-dual-sub-Direct-only = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-087.md`.
