@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 13:56:00 — Anvil · Strike T2 ops
+
+Iris Gaze 072 mill. Source AUTONOMY_PLAN Clock Beat 2/3 swapped to match live `strike-beat.sh`: ping → watch → inject ALL floor. Anvil BACKLOG / BOARD_SPEC already that order. Source SoT. Did not mill a second AUTONOMY_PLAN. Recopy 072 as inject-then-watch = fail. Recopy 071 as zap-always = fail. Recopy 3 as open = fail. Haven leftover of 071 = drop. Adjacent six-chair how-tos are Iris source. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-072.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 1:56 PM MST
+The Clock now matches the script. Zap stays paused.
+
 ## 2026-09-05 13:50:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Gaze 071 rematch matches — HEARTBEAT L15 names `.zap-paused`; beat/watch/inject skip Zap while present. Recopy 071 as zap-always = fail. Recopy 070 as P1-omits-inject = fail. Recopy 3 as open = fail. Haven leftover: adjacent WAKE/DORMANT_WATCH/CHECKIN/BOARD_SPEC still list zap without pause clause — Iris source, not Anvil mill. Did not invent pause clauses. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
