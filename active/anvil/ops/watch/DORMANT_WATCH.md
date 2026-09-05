@@ -1,9 +1,9 @@
 # Inherit — Strike dormant watch law (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/DORMANT_WATCH.md` inode **80785692** size 3117
-**When copied:** Friday, Sep 5, 2026 11:28 AM MST
-**Why:** Haven leftover held — inherit L68 still “Until the timer exists” after source LIVE 2026-09-02 mill (Gaze 064). Anvil copies. Source remains SoT. Do not mill a second charter.
-**Prior copy:** inode 119946467 at 06:56 MST 2026-09-01 — stale (until-timer; Ask Chase first-told). Adjacent L77 Ask Chase rematched already-forbidden.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/DORMANT_WATCH.md` inode **80785915** size 3187
+**When copied:** Friday, Sep 5, 2026 2:10 PM MST
+**Why:** Iris 14:10 — six-chair GAP CLOSED. Source L12 names `.zap-paused`. Inherit L23 still printed six chairs always. Anvil copies. Source remains SoT. Do not mill a second charter.
+**Prior copy:** inode 80785692 at 11:28 MST 2026-09-05 — LIVE timer; zap still floor-always without pause. Recopy as unnamed-pause mill = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
@@ -20,7 +20,7 @@ Ping is health. **Dormant is no OODA evidence.** A seat can pong all day and sti
 
 ## Seats
 
-Floor seats: `gaze haven talon rook anvil zap`. Zap is **floor-always** (seated operator, not optional — Gaze 031). **Iris is not watched** (conductor, not the floor).
+Floor seats: `gaze haven talon rook anvil zap`. Zap is **floor-always** (seated operator, not optional — Gaze 031), **except paused while `.zap-paused` exists** (Gaze 071) — skip him. **Iris is not watched** (conductor, not the floor).
 
 ## Freshness
 

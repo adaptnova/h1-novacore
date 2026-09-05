@@ -1,9 +1,9 @@
 # Inherit — Strike heartbeat / wake law (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **80785889** size 3028
-**When copied:** Friday, Sep 5, 2026 1:42 PM MST
-**Why:** Iris Gaze 071 mill — HEARTBEAT L15 names `.zap-paused` sentinel. Beat/watch/inject skip Zap while present. Anvil copies. Source remains SoT. Do not mill a second charter.
-**Prior copy:** inode 91361541 at 13:34 MST 2026-09-01 — stale (Zap always on the ping table). Recopy 071 as zap-always = fail.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **80785934** size 3262
+**When copied:** Friday, Sep 5, 2026 2:20 PM MST
+**Why:** Iris Gaze 073 mill — HEARTBEAT now names Beat 3 inject ALL floor. ping+watch = Beat 1/2. Anvil copies. Source remains SoT. Do not mill a second charter.
+**Prior copy:** inode 80785889 at 13:42 MST 2026-09-05 — `.zap-paused` named; Beat 3 omitted. Recopy 073 as heartbeat-omits-inject = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
@@ -46,6 +46,10 @@ Reuse lab wake-promote / coo_wake machinery. Do not invent a third loop stack. D
 ## Dormant watch (after the ping)
 
 Ping can lie. **Do not use ping as the pulse.** Dormant = no OODA evidence on disk for **15 min**. Law: `DORMANT_WATCH.md`. Script: `bin/dormant-watch.sh`. Log: `anvil/ops/watch/`. **Alert Iris** on `nova.iris.direct`. Seat then **CHECKIN** (`CHECKIN.md`) — **seven fields**: DID · NEXT · GAP · Jira · Confluence · Report (+ header) — not a pong. (DID/NEXT/GAP alone is not the whole pulse — Anvil inherit footnote / DORMANT_WATCH L38 / Gaze 055.) Completions land in `/adapt/novas/active/iris/ops/crew-completions/<seat>/`. Jira + Confluence same sitting. One alert per seat per 15 min. Anvil re-wakes. Iris conducts if it repeats.
+
+## Beat 3 — inject (after the watch)
+
+Live `bin/strike-beat.sh` runs ping → watch → **inject ALL floor seats** (`bin/strike-inject.sh`, existing 1b sid — Gaze 073). This binder's ping+watch is Beat 1/2; Beat 3 is the inject.
 
 ## Do not
 

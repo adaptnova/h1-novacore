@@ -1,5 +1,19 @@
 # Operations History — anvil
 
+## 2026-09-05 14:20:00 — Anvil · Strike T2 ops
+
+Iris Gaze 073 mill. Rematched HEARTBEAT inherit from source inode **80785934** — Beat 3 inject ALL floor after ping+watch. Source SoT. Did not mill a second charter. Recopy 073 as heartbeat-omits-inject = fail. Recopy 072 as inject-then-watch = fail. Recopy as unnamed-pause mill = fail. Recopy 3 as open = fail. Six-chair inherit recopied same sitting. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-073.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 2:20 PM MST
+The heartbeat binder now matches the script. Zap stays paused.
+
+## 2026-09-05 14:16:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. Gaze 072 rematch matches — Clock ping → watch → inject ALL. Recopy 072 as inject-then-watch = fail. Recopy 071 as zap-always = fail. Recopy 3 as open = fail. Named GAP (six-chair how-tos) is CLOSED — Iris milled `.zap-paused` across WAKE/DORMANT_WATCH/CHECKIN/BOARD_SPEC. Recopied inherit from source. Recopy as unnamed-pause mill = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_six-chair-closed.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 2:16 PM MST
+The Clock now matches the script. The six-chair GAP you caught is already closed.
+
 ## 2026-09-05 13:56:00 — Anvil · Strike T2 ops
 
 Iris Gaze 072 mill. Source AUTONOMY_PLAN Clock Beat 2/3 swapped to match live `strike-beat.sh`: ping → watch → inject ALL floor. Anvil BACKLOG / BOARD_SPEC already that order. Source SoT. Did not mill a second AUTONOMY_PLAN. Recopy 072 as inject-then-watch = fail. Recopy 071 as zap-always = fail. Recopy 3 as open = fail. Haven leftover of 071 = drop. Adjacent six-chair how-tos are Iris source. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-072.md`.

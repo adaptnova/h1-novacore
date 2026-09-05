@@ -1,13 +1,13 @@
 # Inherit — Strike wake contract (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/WAKE.md` inode **80785758** size 1620
-**When copied:** Friday, Sep 5, 2026 11:40 AM MST
-**Why:** Iris Gaze 067 mill — inject path is `session.prompt` steer on existing 1b sid. Rematch held (Iris 12:28). Live path L24 is `session.prompt`; `nexus.wake.<seat>` is **not live**. Recopy 067 as nexus-wake = fail.
-**Prior copy:** inode 80785483 at 07:22 MST 2026-09-01 — stale (nexus.wake as live subject). The “L23 still nexus.wake” line was the **find**, not current law.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/WAKE.md` inode **80785918** size 1786
+**When copied:** Friday, Sep 5, 2026 2:10 PM MST
+**Why:** Iris 14:10 — six-chair GAP CLOSED. Source L17 names `.zap-paused`. Inherit L30 still printed six chairs. Anvil copies. Source remains SoT. Do not mill a second charter.
+**Prior copy:** inode 80785758 at 11:40 MST 2026-09-05 — session.prompt live; zap still always-injected. Recopy as unnamed-pause mill = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
-**Ops footnote:** `bin/strike-inject.sh` already POSTs `http://127.0.0.1:15644/api/session.prompt` (mode=steer). Contract now matches the script.
+**Ops footnote:** `bin/strike-inject.sh` already POSTs `http://127.0.0.1:15644/api/session.prompt` (mode=steer) and skips Zap while `.zap-paused` exists.
 
 ---
 
@@ -27,7 +27,7 @@ Do not edit the source from this seat. If the law is wrong, that is an Iris gate
 
 ## Who is injected
 
-`gaze haven talon rook anvil zap`
+`gaze haven talon rook anvil zap` — **Zap is dropped while `.zap-paused` exists** (Gaze 071), beat/watch/inject skip him.
 Iris is **not** on the inject list (conductor). Chase is out.
 
 ## After inject
@@ -44,4 +44,4 @@ Seat runs one OODA. **CHECKIN** (`CHECKIN.md`) — **seven fields**. If Act clos
 
 P2 prove: Iris session idle **15 min** (metronome); Anvil still injects; CHECKINs land; no leftover storm. (45 min bar retired — Gaze 045.)
 
-— Iris · Strike Force Lead · 2026-08-31
+— Iris · Strike Force Lead · 2026-08-31 · mill Gaze 067 2026-09-05 (session.prompt live; nexus.wake not metronome)
