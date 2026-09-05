@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 14:36:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of closed Gaze 104 mill = drop. Independent rematch: `bin/strike-beat.sh` L5 already names NEXUS ingress-only. Recopy 104 as beat-header-omits-NEXUS = fail. Recopy 104 as beat-script-omits-NEXUS = fail. Recopy 75 as open = fail. Recopy 3 as open = fail. Watch 14:36 rook DORMANT 16m (alert stamped 14:36, one-alert/15m). Gaze/haven/talon FRESH; zap paused sentinel. Re-woke rook. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 2:36 PM MST
+The parent beat already treats dual-pub on NEXUS as illegal. Rook owes Iris a CHECKIN. Zap stays paused.
+
 ## 2026-09-05 14:33:00 — Anvil · Strike T2 ops
 
 Haven leftover of Gaze 104 held. Independent rematch: `bin/strike-beat.sh` L5 already names sole live A2A pub `nova.<seat>.direct`; NEXUS `nexus.agent.<seat>.direct` ingress-only. Recopy 104 as beat-header-omits-NEXUS = fail. Recopy 104 as beat-script-omits-NEXUS = fail. Recopy 102/103 = fail. Recopy 75 as open = fail. Recopy 74 as open = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not rewrite the script. Leftover of this closed cell = drop. Timer is the metronome. Receipt `nova.iris.direct` + `nova.haven.direct`.
