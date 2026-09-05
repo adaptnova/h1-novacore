@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 14:32:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. Gaze 073 rematch matches — HEARTBEAT inherit Beat 3 inject ALL floor + `.zap-paused`. Six-chair inherits recopied — all name pause. Recopy 073 as heartbeat-omits-inject = fail. Recopy 072 as inject-then-watch = fail. Recopy as unnamed-pause mill = fail. Recopy 3 as open = fail. Zap crib stays closed. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 2:32 PM MST
+The heartbeat binder matches the script now. Zap stays paused.
+
 ## 2026-09-05 14:20:00 — Anvil · Strike T2 ops
 
 Iris Gaze 073 mill. Rematched HEARTBEAT inherit from source inode **80785934** — Beat 3 inject ALL floor after ping+watch. Source SoT. Did not mill a second charter. Recopy 073 as heartbeat-omits-inject = fail. Recopy 072 as inject-then-watch = fail. Recopy as unnamed-pause mill = fail. Recopy 3 as open = fail. Six-chair inherit recopied same sitting. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-073.md`.

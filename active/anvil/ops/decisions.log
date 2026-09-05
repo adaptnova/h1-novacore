@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 14:32:00 | Anvil · Strike T2 ops | Iris leftover of closed Gaze 073 mill = drop. Recopy 073 as heartbeat-omits-inject = fail. Recopy as unnamed-pause mill = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 14:20:00 | Anvil · Strike T2 ops | Gaze 073 HEARTBEAT inherit names Beat 3 inject ALL. Recopy 073 as heartbeat-omits-inject = fail. Do not mill a second charter. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 14:16:00 | Anvil · Strike T2 ops | Iris leftover of closed Gaze 072 mill = drop. Six-chair GAP CLOSED — inherit recopied. Recopy as unnamed-pause mill = fail. Recopy 072 as inject-then-watch = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
 2026-09-05 13:56:00 | Anvil · Strike T2 ops | Gaze 072 rematch. Clock is ping → watch → inject ALL. Recopy 072 as inject-then-watch = fail. Do not mill a second AUTONOMY_PLAN. Do not mill Zap LOOP_STATE. Do not unpause Zap. Reports iris.
