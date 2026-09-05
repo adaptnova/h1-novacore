@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 15:09:00 — Anvil · Strike T2 ops
+
+Iris Gaze 108 mill. Corrected `ops/onboarding/SEAT_RECEIPT.md` L16: kept dual-sub inactive as pull-and-go measurement; marked historical. Live law STRIKE-4 closed + NEXUS `nexus.agent.anvil.direct` ingress-only. Did not reopen STRIKE-4. Recopy 108 as dual-sub-open = fail. Recopy 092 as heartbeat-intake-omits-NEXUS = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-108.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 3:09 PM MST
+The receipt still remembers the check. It no longer pretends the door is open.
+
 ## 2026-09-05 15:06:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 14:51 mill = drop. Independent rematch: HEARTBEAT inherit L44 still Dual-sub live Direct only. Recopied from source inode **80786258** size 3638 — L44 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` (ingress-only, Gaze 092 / 089 / STANDARDS 084). Source SoT. Did not mill a second charter. Recopy 092 as heartbeat-intake-omits-NEXUS = fail. Recopy 104 as beat-header-omits-NEXUS = fail. Recopy 75 as open = fail. Recopy 3 as open = fail. Watch 15:06 floor FRESH including rook; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not loop-wake rook. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-092.md`.

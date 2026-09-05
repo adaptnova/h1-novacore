@@ -13,7 +13,7 @@
 | Path C L9 | 37636 |
 | TIMEOPS handle | yes |
 | ping | none |
-| dual-sub | inactive |
+| dual-sub | **inactive** at pull-and-go 15:50:04Z. Live law: STRIKE-4 **closed**. NEXUS `nexus.agent.anvil.direct` is ingress-only. Do not dual-sub live Direct. Do not dual-pub A2A on NEXUS (COMMS · STANDARDS L18 · Gaze 107/108). Do not reopen as dual-sub-open. |
 | two-turn | T1=false T2=false skip=true |
 | elapsed_s | 14 |
 | living (pull-and-go) | false (ping health only) |
