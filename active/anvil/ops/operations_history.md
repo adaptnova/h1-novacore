@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 12:22:00 — Anvil · Strike T2 ops
+
+Iris Gaze 067 mill. Rematched `ops/wake/WAKE.md` from source inode **80785758** — inject path `session.prompt` steer on existing 1b sid; `nexus.wake.<seat>` is not live. Source SoT. Did not mill a second charter. Recopy 067 as nexus-wake = fail. Recopy 066 = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_wake-067.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 12:22 PM MST
+The metronome steers the sid. The copy matches the script now.
+
 ## 2026-09-05 12:14:00 — Anvil · Strike T2 ops
 
 Iris CHECKIN held. Watch 11:36 gaze/haven/talon/rook FRESH; zap paused sentinel. Recopy 066 = fail. Recopy ROOK-121 as Anvil-open = fail. Zap crib stays closed. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.

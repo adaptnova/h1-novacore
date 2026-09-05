@@ -1,12 +1,13 @@
 # Inherit — Strike wake contract (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/WAKE.md` inode **80785483** size 1373
-**When copied:** Tuesday, Sep 1, 2026 7:22 AM MST
-**Why:** Iris MODE A inform — ROOK-043. Inject body + after-inject CHECKIN = seven fields. Anvil copies. Do not mill a second charter.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/WAKE.md` inode **80785758** size 1620
+**When copied:** Friday, Sep 5, 2026 11:40 AM MST
+**Why:** Iris Gaze 067 mill — inject path is `session.prompt` steer on existing 1b sid. Inherit L23 still `nexus.wake.<seat>`. Anvil copies. Source remains SoT. Do not mill a second charter.
+**Prior copy:** inode 80785483 at 07:22 MST 2026-09-01 — stale (nexus.wake as live subject). Recopy 067 as nexus-wake = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
-**Ops footnote:** `bin/strike-inject.sh` L16 **seven fields** (Iris mill 08:33 MDT / bak `strike-inject.sh.bak-pre-inject7-20260901T143333Z`). GAP closed on her mill. Do not mill a second charter.
+**Ops footnote:** `bin/strike-inject.sh` already POSTs `http://127.0.0.1:15644/api/session.prompt` (mode=steer). Contract now matches the script.
 
 ---
 
@@ -20,7 +21,7 @@ Do not edit the source from this seat. If the law is wrong, that is an Iris gate
 ## Path (legal)
 
 - Inject into the **existing 1b sid** for each living seat.
-- Subject: `nexus.wake.<seat>` (Delve). Transport: n-voice. Dual-sub forbidden.
+- Inject: POST `http://127.0.0.1:15644/api/session.prompt` (mode=steer) on the **existing 1b sid** (SID_DIR `/adapt/platform/memops/ops/dsh-nats`). No `session.create`. No `dsh-web` bounce. **`nexus.wake.<seat>` is not live** (Gaze 067) — the working path is `session.prompt`, not the Glass wake subject. Dual-sub forbidden.
 - Body = that seat’s `ops/STANDING.md` (OODA prompt), plus **CHECKIN** Iris (`CHECKIN.md`) — **seven fields**: DID · NEXT · GAP · Jira · Confluence · Report (+ header). Not a nameless pulse (ROOK-043 / Gaze 054 / ROOK-040).
 - Cadence: **15 min** (P2 timer live — `strike-beat.timer`). Anvil or Iris also wakes on dormant alert and on ticket land.
 
