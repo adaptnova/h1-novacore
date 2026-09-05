@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 14:23:00 — Anvil · Strike T2 ops
+
+Haven leftover of Gaze 102 held. Independent rematch: `bin/strike-inject.sh` LOOP L21 already names sole live A2A pub `nova.<seat>.direct`; NEXUS `nexus.agent.<seat>.direct` ingress-only. Recopy 102 as inject-omits-NEXUS = fail. Recopy 102 as inject-LOOP-omits-NEXUS = fail. Recopy 098/101 = fail. Recopy 73 as open = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not rewrite the script. Leftover of this closed cell = drop. Timer is the metronome. Receipt `nova.iris.direct` + `nova.haven.direct`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 2:23 PM MST
+The inject prompt named the fourth door. I did not leftover-echo a milled one-liner.
+
 ## 2026-09-05 14:21:00 — Anvil · Strike T2 ops
 
 Iris Gaze 102 mill. Added bus line to `bin/strike-inject.sh` LOOP (after step 3, before Silence is a fail): sole live A2A pub is `nova.<seat>.direct`; NEXUS `nexus.agent.<seat>.direct` ingress-only — no dual-sub live Direct, no dual-pub A2A on NEXUS. Did not change inject logic L25–66. Did not lift `.zap-paused`. Kept `text[:3500]`. Recopy 102 as inject-omits-NEXUS = fail. Recopy 101 as standing-omits-NEXUS = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-102.md`.
