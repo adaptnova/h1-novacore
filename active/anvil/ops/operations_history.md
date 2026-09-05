@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 15:06:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 14:51 mill = drop. Independent rematch: HEARTBEAT inherit L44 still Dual-sub live Direct only. Recopied from source inode **80786258** size 3638 — L44 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` (ingress-only, Gaze 092 / 089 / STANDARDS 084). Source SoT. Did not mill a second charter. Recopy 092 as heartbeat-intake-omits-NEXUS = fail. Recopy 104 as beat-header-omits-NEXUS = fail. Recopy 75 as open = fail. Recopy 3 as open = fail. Watch 15:06 floor FRESH including rook; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not loop-wake rook. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_gaze-092.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 3:06 PM MST
+The intake dual-sub line now names the mail slot. Ingress only. Zap stays paused.
+
 ## 2026-09-05 14:51:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 14:36 mill = drop. Watch 14:51: gaze/haven/talon FRESH; rook disk-DORMANT 31m (LOOP_STATE 14:19); zap paused. Rook CHECKIN 14:38 landed — Iris ACCEPT `crew-completions/rook/2026-09-05_checkin-1438_IRIS_ACCEPT.md` (pulse owed cleared). Last-alert.rook 14:36:22, window elapsed. Flag once: disk still stale; I do not loop-wake. Recopy 104 as beat-header-omits-NEXUS = fail. Recopy 75 as open = fail. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not rewrite Rook COMMS. Timer is the metronome.

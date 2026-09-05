@@ -1,9 +1,9 @@
 # Inherit — Strike heartbeat / wake law (copy, not a rewrite)
 
-**Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **80786225** size 3517
-**When copied:** Friday, Sep 5, 2026 1:22 PM MST
-**Why:** Source HEARTBEAT L49 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` as illegal (ingress-only, Gaze 089 / 088 / STANDARDS 084). Live path L60 matches. Recopy 089 as heartbeat-dual-sub-Direct-only = fail.
-**Prior copy:** inode 80785934 at 13:07 MST 2026-09-05 — Gaze 083 CLOSE_BAR intake `.zap-paused`; Do-not omitted NEXUS. The “Do-not still omitted NEXUS” line was the **find**, not current law. Recopy 088 as watch-dual-sub-Direct-only = fail. Recopy 083 as heartbeat-intake-zap-always = fail.
+**Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **80786258** size 3638
+**When copied:** Friday, Sep 5, 2026 3:06 PM MST
+**Why:** Source HEARTBEAT L33 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` as illegal (ingress-only, Gaze 092 / 089 / STANDARDS 084). Live path L44 matches. Recopy 092 as heartbeat-intake-omits-NEXUS = fail.
+**Prior copy:** inode 80786225 at 13:22 MST 2026-09-05 — Gaze 089 Do-not names NEXUS; L44 still Direct-only. The “L44 still Dual-sub live Direct only” line was the **find**, not current law. Recopy 089 as heartbeat-dual-sub-Direct-only = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
 
@@ -41,7 +41,7 @@ When a STRIKE **Task** lands in Intake (HUNT / MISSION / CHORE / HANDOFF are **l
 2. Wake the owning lane on `nova.<lane-seat>.direct` with the ticket key and evidence path.
 3. Field (Talon) or operator (Zap) copies `MISSION_CLOSE_BAR.md` — **Zap paused while `.zap-paused` exists** (Gaze 083 / 081; then the one-off waits or goes to Talon). Close on disk.
 
-Reuse lab wake-promote / coo_wake machinery. Do not invent a third loop stack. Do not bounce `dsh-web`. Do not dual-sub live `nova.<seat>.direct`.
+Reuse lab wake-promote / coo_wake machinery. Do not invent a third loop stack. Do not bounce `dsh-web`. Do not dual-sub live `nova.<seat>.direct` (and do not dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` — NEXUS is ingress-only, Gaze 092 / 089 / STANDARDS 084).
 
 ## Dormant watch (after the ping)
 

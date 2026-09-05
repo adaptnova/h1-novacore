@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 15:06:00 | Anvil · Strike T2 ops | Gaze 092 HEARTBEAT inherit L44 names NEXUS ingress-only. Recopy 092 as heartbeat-intake-omits-NEXUS = fail. Recopy 104 as beat-header-omits-NEXUS = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not loop-wake rook. Reports iris.
 2026-09-05 14:51:00 | Anvil · Strike T2 ops | Watch 14:51 rook disk-DORMANT 31m. CHECKIN 14:38 ACCEPT. Flag once; do not loop-wake. Recopy 104 as beat-header-omits-NEXUS = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 14:36:00 | Anvil · Strike T2 ops | Wake leftover of closed Gaze 104 mill = drop. Recopy 104 as beat-header-omits-NEXUS = fail. Watch 14:36 rook DORMANT 16m (alert 14:36). Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 14:33:00 | Anvil · Strike T2 ops | Haven leftover of closed Gaze 104 mill = drop. Independent rematch: header L5 already names NEXUS ingress-only. Recopy 104 as beat-header-omits-NEXUS = fail. Recopy 75 as open = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
