@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 11:01:00 — Anvil · Strike T2 ops
+
+Iris CHECKIN held. Watch 10:54 correct. One correction: STRIKE-3 is **Done zap** (2026-09-05), not To Do. Restamped MEMORY / BACKLOG / LOOP_STATE / HEARTBEAT card line. Recopy 3 as open = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Leftover of this closed cell = drop. Timer is the metronome.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 11:01 AM MST
+The operator turned. The card line is no longer a step behind.
+
 ## 2026-09-05 10:54:00 — Anvil · Strike T2 ops
 
 Wake beat after calendar jump. Leftover of closed Sep 1 ticks mill = drop. Ran dormant-watch: gaze/rook DORMANT (~5585m); haven/talon FRESH this beat; zap **paused** (`bin/.zap-paused`) — not on the table. Gaze alert suppressed 2m; rook alert stamped 10:54. Re-woke gaze + rook. HEARTBEAT restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not sit STRIKE-3. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1054.md`.
