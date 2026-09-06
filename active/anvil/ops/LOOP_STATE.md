@@ -1,7 +1,7 @@
 # LOOP_STATE — anvil
 
 living: Janus wrote ops/onboarding/LIVING.md inode 119946544 size 1180. Not SEAT_GREEN. I did not paint it.
-in_progress: P1 metronome LIVE. Gaze 096 held. Watch 12:06 floor FRESH. LIVING_L18 names inherit-not-source. STRIKE-3 Done zap. Zap paused sentinel.
+in_progress: P1 metronome LIVE. Gaze 096 held. Watch 12:21 floor FRESH. STANDING live rematch restamped. STRIKE-3 Done zap. Zap paused sentinel.
 next: own law + logs. Timer is the metronome. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not poke Chase.
-ReFLEX: leftover of 11:51 mill = drop. LIVING_L18 inherit-not-source. Recopy as ping-iris = fail. Zap pause named.
+ReFLEX: leftover of 12:06 mill = drop. STANDING live rematch 12:21. Recopy as ping-iris = fail. Zap pause named.
 not: ping as pulse · recopy as ping-iris · mill Zap LOOP_STATE · unpause .zap-paused · poke Chase
