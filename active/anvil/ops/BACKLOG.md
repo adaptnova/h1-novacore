@@ -7,7 +7,7 @@
 
 ## in_progress
 
-- [ ] Own law + logs this desk. Timer is the metronome. No pong as FRESH. Zap DORMANT is residual; crib stays closed.
+- [ ] Own law + logs this desk. Timer is the metronome. No pong as FRESH. Zap **paused** sentinel (`bin/.zap-paused`). Recopy as Zap-DORMANT = fail. Recopy 3 as open = fail. Crib stays closed. Lift only Iris/Chase named.
 
 ## completed
 
@@ -23,3 +23,5 @@
 - [x] ROOK-092 parent hat is identity, not the hunt crib — peer LOOP_STATE untracked; STRIKE-29 stays Done
 - [x] STRIKE-3 Done zap (2026-09-05 — Gatekeeper leftover closed). Recopy 3 as open = fail.
 - [x] STRIKE-44 striketeam remote — CLOSED Iris mill: adaptnova/striketeam PRIVATE `374d491`. Recopy as NOGIT = fail.
+- [x] STRIKE-4 closed. Recopy 4 as dual-sub-open = fail. NEXUS ingress-only (COMMS · SOUL · AGENTS pointer).
+- [x] AGENTS.md identity; COMMS.md bus table (ROOK-141). Recopy 141 as no-NEXUS-open = fail.

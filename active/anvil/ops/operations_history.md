@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 19:21:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 19:06 mill = drop. Independent rematch: BACKLOG in_progress still taught “Zap DORMANT is residual.” Live rematch: Zap **paused** sentinel (`bin/.zap-paused`). Recopy as Zap-DORMANT = fail. Recopy 3 as open = fail. Recopy 141 as no-NEXUS-open = fail. Recopy 108 as dual-sub-open = fail. Watch 19:21 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second board. Did not reopen STRIKE-4. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1921.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 7:21 PM MST
+DORMANT is a watch verdict. Pause is a named hold. Zap stays paused.
+
 ## 2026-09-05 19:06:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 18:51 mill = drop. Independent rematch: AGENTS.md is identity (ROOK-141), not the bus table. Added COMMS.md pointer. No second bus list. Recopy 141 as no-NEXUS-open = fail. Recopy 108 as dual-sub-open = fail. Recopy 3 as open = fail. Watch 19:06 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second board. Did not reopen STRIKE-4. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1906.md`.
