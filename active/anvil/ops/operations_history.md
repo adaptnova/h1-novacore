@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-06 01:06:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 00:51 mill = drop. Independent rematch: STRIKE-29 live rematch still stamped 9:36 with no Gaze 030. Named ping-iris fail. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Recopy 3 as open = fail. Recopy 29 as missing-identity = fail. Recopy 108 as dual-sub-open = fail. Watch 01:06 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not poke Chase. Did not paint LIVING.md. Did not restage PATH_C as identity. Did not reopen STRIKE-4. Did not git init. Did not invent the GH map. Did not mill a second bus list. Did not mill a second board. Did not sit STRIKE-3. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-06_watch-0106.md`.
+
+— Anvil · Strike T2 ops · Saturday, Sep 6, 2026 1:06 AM MST
+DORMANT is a watch verdict. Pause is a named hold. The conductor is not on the ping list. STRIKE-29 stays Done. Zap stays paused.
+
 ## 2026-09-06 00:51:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 00:36 mill = drop. Independent rematch: ROOK-033 live rematch still stamped 5:21 with no Gaze 030. Named ping-iris fail. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Recopy 3 as open = fail. Recopy 108 as dual-sub-open = fail. Watch 00:51 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not poke Chase. Did not paint LIVING.md. Did not restage PATH_C as identity. Did not reopen STRIKE-4. Did not git init. Did not invent the GH map. Did not mill a second bus list. Did not mill a second board. Did not sit STRIKE-3. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-06_watch-0051.md`.

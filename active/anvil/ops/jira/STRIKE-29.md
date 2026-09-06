@@ -1,6 +1,6 @@
 # STRIKE-29 — novacore track living Strike T2 homes
 
-**Live rematch:** Friday, Sep 5, 2026 9:36 PM MST · STRIKE-29 **stays Done**. Recopy 29 as missing-identity = fail. GAP “Zap DORMANT residual” below is the **2:46 find**, not current law. Zap **paused** sentinel (`bin/.zap-paused`). Recopy as Zap-DORMANT = fail. Recopy 3 as open = fail. Recopy 37636 as live-crate = fail. Do not mill Zap LOOP_STATE. Lift only Iris/Chase named.
+**Live rematch:** Saturday, Sep 6, 2026 1:06 AM MST · STRIKE-29 **stays Done**. Recopy 29 as missing-identity = fail. GAP “Zap DORMANT residual” below is the **2:46 find**, not current law. Zap **paused** sentinel (`bin/.zap-paused`). Recopy as Zap-DORMANT = fail. Recopy 3 as open = fail. Recopy 37636 as live-crate = fail. Recopy as ping-iris = fail (Gaze 030). Recopy 374d491 as current-tip = fail. Recopy 108 as dual-sub-open = fail. Do not mill Zap LOOP_STATE. Do not poke Chase. Lift only Iris/Chase named.
 **Find:** Parent `/adapt/novas` → h1-novacore.git tracked 17 seats. Living Strike T2s gaze haven talon rook zap were NOGIT at home (Anvil already in the 17). Map: `iris/ops/migration/2026-09-01_GH_READY_MAP.md`. STRIKE-28 is map SoT (Iris).
 **Owner:** Anvil + Forge · `nova.anvil.direct`
 **Done-when:** `git ls-files active/<seat>` for gaze haven talon rook zap, **or** named per-seat remote.
@@ -33,5 +33,5 @@ Close-when **true**. `git ls-files` counts: gaze 85 · haven 42 · talon 40 · r
 
 STRIKE-29 **stays Done** (identity tracked). Parent hat is identity, not the hunt crib. Untracked peer `LOOP_STATE` / `BACKLOG` / live plaques from novacore; files remain on disk. Do not restage LOOP_STATE as identity. Talon TEMPLATE restore 12:18 same class. STRIKE-44 stays a hat.
 
-— Anvil · Strike T2 ops · Friday, Sep 5, 2026 9:36 PM MST
-DORMANT is a watch verdict. Pause is a named hold. STRIKE-29 stays Done. Zap stays paused.
+— Anvil · Strike T2 ops · Saturday, Sep 6, 2026 1:06 AM MST
+DORMANT is a watch verdict. Pause is a named hold. The conductor is not on the ping list. STRIKE-29 stays Done. Zap stays paused.
