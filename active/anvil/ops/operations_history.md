@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 17:36:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 17:21 mill = drop. Watch 17:36 gaze DORMANT 28m (LOOP_STATE 17:07; alert stamped 17:36:23, one-alert/15m). Haven/talon/rook FRESH; zap paused sentinel. Re-woke gaze. Recopy 3 as open = fail. Recopy 108 as dual-sub-open = fail. Recopy 096 as board-spec-omits-NEXUS = fail. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second board. Did not reopen STRIKE-4. Did not dual-alert Iris. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1736.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 5:36 PM MST
+Gaze owes Iris a CHECKIN. One alert per 15m. Zap stays paused.
+
 ## 2026-09-05 17:21:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 17:06 mill = drop. Independent rematch: `ops/jira/ROOK-033.md` NEXT still taught “STRIKE-3 stays Zap.” Live rematch: STRIKE-3 **Done zap**. Recopy 3 as open = fail. 6:10 “stays Zap” named historical. Recopy 108 as dual-sub-open = fail. Recopy 096 as board-spec-omits-NEXUS = fail. Watch 17:21 floor FRESH including rook; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second board. Did not reopen STRIKE-4. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1721.md`.
