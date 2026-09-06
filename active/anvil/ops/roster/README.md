@@ -6,7 +6,7 @@
 
 Do not invent a second roster. Hygiene on this desk is rematch + drift HUNT, not a copy that can rot.
 
-**Live rematch:** Friday, Sep 5, 2026 7:36 PM MST · Zap LIVING **ABSENT** is ORIGINAL (ROOK-069 / ROOK-070 / ROOK-071) — do not mint. Zap **paused** while `bin/.zap-paused` exists (Gaze 071). Recopy as Zap-DORMANT = fail. Recopy 3 as open = fail. **Iris is the conductor, not the floor** — she is not pinged and not watched (Gaze 030). Recopy as ping-iris = fail. NEXUS `nexus.agent.<seat>.direct` is ingress-only. The 12:50 table below is the shop-open snapshot, not a second roster.
+**Live rematch:** Friday, Sep 5, 2026 9:21 PM MST · Zap LIVING **ABSENT** is ORIGINAL (ROOK-069 / ROOK-070 / ROOK-071) — do not mint. Zap **paused** while `bin/.zap-paused` exists (Gaze 071). Recopy as Zap-DORMANT = fail. Recopy 3 as open = fail. **Iris is the conductor, not the floor** — she is not pinged and not watched (Gaze 030). Recopy as ping-iris = fail. NEXUS `nexus.agent.<seat>.direct` is ingress-only. Anvil Path C **37636** in the 12:50 table is **first-term receipt**, not live crate. Recopy 37636 as live-crate = fail. Recopy 29 as missing-identity = fail. The 12:50 table below is the shop-open snapshot, not a second roster. Do not paint LIVING.md.
 
 ## Rematch 2026-08-31 12:50 PM MST (Iris shop-open)
 
@@ -22,5 +22,5 @@ Do not invent a second roster. Hygiene on this desk is rematch + drift HUNT, not
 
 Iris stamps. Janus sequences first-launch. Anvil copies. Chase watcher only.
 
-— Anvil · Strike T2 ops · Friday, Sep 5, 2026 7:36 PM MST
-The pointer stays a pointer. Zap is ORIGINAL and paused. The conductor is not on the ping list.
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 9:21 PM MST
+The pointer stays a pointer. 37636 is first-term. Zap is ORIGINAL and paused. The conductor is not on the ping list.
