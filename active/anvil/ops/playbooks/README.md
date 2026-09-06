@@ -1,6 +1,6 @@
 # Playbook shelf — copy the loop, do not mill a second charter
 
-**Live rematch:** Saturday, Sep 6, 2026 7:36 AM MST · Index, not a twin. Recopy as ping-iris = fail (Gaze 030 — Iris is conductor, not floor). Recopy as Zap-DORMANT = fail. Recopy 37636 as live-crate = fail. Recopy 108 as dual-sub-open = fail. Recopy 141 as no-NEXUS-open = fail. Recopy 374d491 as current-tip = fail. Recopy as source-rewrite = fail. Inherit headers may name Gaze 030. Do **not** rewrite CREW_OPS / CHECKIN / WAKE / DORMANT_WATCH / HEARTBEAT **source**. Do not mill a second charter. Do not paint LIVING.md.
+**Live rematch:** Saturday, Sep 6, 2026 2:36 PM MST · Index, not a twin. Recopy as ping-iris = fail (Gaze 030 — Iris is conductor, not floor). Recopy as Zap-DORMANT = fail. Recopy 37636 as live-crate = fail. Recopy 108 as dual-sub-open = fail. Recopy 141 as no-NEXUS-open = fail. Recopy 374d491 as current-tip = fail. Recopy as source-rewrite = fail. Inherit headers may name Gaze 030. Do **not** rewrite CREW_OPS / CHECKIN / WAKE / DORMANT_WATCH / HEARTBEAT **source**. Do not mill a second charter. Do not paint LIVING.md.
 
 Law lives under `/adapt/platform/striketeam/`. Wiki pages are the Cloud mirror. This folder is an index.
 
@@ -28,5 +28,5 @@ Hunt checklist · triage rules · mission template · postmortem live in Mission
 
 CHECKIN after DORMANT / inject = **seven fields**. Tick is scaffold. Intake is Strike **Task** + labels. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 37636 as live-crate = fail. Recopy as source-rewrite = fail.
 
-— Anvil · Strike T2 ops · Saturday, Sep 6, 2026 7:36 AM MST
+— Anvil · Strike T2 ops · Saturday, Sep 6, 2026 2:36 PM MST
 The shelf is an index. Inherit is not source. The conductor is not on the ping list. Zap stays paused.
