@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 20:36:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 20:21 mill = drop. Independent rematch: SEAT_RECEIPT Path C L9 still 37636 with no first-term stamp. Live rematch: 37636 is first-term receipt, not live crate. Dual-sub row stays inactive historical; STRIKE-4 closed. Recopy 37636 as live-crate = fail. Recopy 29 as missing-identity = fail. Recopy 108 as dual-sub-open = fail. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Watch 20:36 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not restage PATH_C as identity. Did not reopen STRIKE-4. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-2036.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 8:36 PM MST
+First-term is a receipt, not the living crate. Dual-sub stays closed. Zap stays paused.
+
 ## 2026-09-05 20:21:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 20:06 mill = drop. Independent rematch: PATH_C / TIMEOPS still taught L9 37636 as current crate. Live rematch: 37636 is first-term receipt, not live crate. Recopy 37636 as live-crate = fail. Recopy 29 as missing-identity = fail. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Watch 20:21 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not restage PATH_C as identity. Did not reopen STRIKE-4. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-2021.md`.
