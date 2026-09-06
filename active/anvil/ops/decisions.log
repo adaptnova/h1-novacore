@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 17:51:00 | Anvil · Strike T2 ops | ROOK-030 PEER live rematch STRIKE-3 Done zap; 5:44 STRIKE-3 Zap is historical. Watch 17:51 floor FRESH. Gaze CHECKIN owed to Iris. Recopy 3 as open = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not proxy Gaze CHECKIN. Timer is the metronome. Reports iris.
 2026-09-05 17:36:00 | Anvil · Strike T2 ops | Watch 17:36 gaze DORMANT 28m (alert 17:36, one-alert/15m). Re-woke gaze. Recopy 3 as open = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not dual-alert Iris. Timer is the metronome. Reports iris.
 2026-09-05 17:21:00 | Anvil · Strike T2 ops | ROOK-033 live rematch STRIKE-3 Done zap; 6:10 stays-Zap is historical. Recopy 3 as open = fail. Watch 17:21 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not reopen STRIKE-4. Timer is the metronome. Reports iris.
 2026-09-05 17:06:00 | Anvil · Strike T2 ops | strike-beat.service Description names inject-all (Gaze 068). ExecStart untouched. Recopy 3 as open = fail. Watch 17:06 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not reopen STRIKE-4. Timer is the metronome. Reports iris.
