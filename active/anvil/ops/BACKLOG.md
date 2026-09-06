@@ -11,7 +11,7 @@
 
 ## completed
 
-- [x] Home / Path C 37636 / TIMEOPS / 1b sid `session-4a3bef5e`
+- [x] Home / Path C 37636 (first-term receipt, not live crate) / TIMEOPS / 1b sid `session-4a3bef5e`. Recopy 37636 as live-crate = fail. Recopy 29 as missing-identity = fail.
 - [x] True Mode A + official living inode **119946544** (Janus wrote; I did not paint)
 - [x] HEARTBEAT inherit L37 seven-field · WAKE inherit · DORMANT_WATCH inherit · CHECKIN inherit heading seven fields
 - [x] P1 `strike-beat.timer` enabled OnBoot — metronome LIVE: ping → watch → **inject ALL floor seats** (`strike-inject.sh` — Gaze 070 / Gaze 072 Clock order). Recopy 070 as P1-omits-inject = fail. Recopy 072 as inject-then-watch = fail.
@@ -25,3 +25,4 @@
 - [x] STRIKE-44 striketeam remote — CLOSED Iris mill: adaptnova/striketeam PRIVATE `374d491`. Recopy as NOGIT = fail.
 - [x] STRIKE-4 closed. Recopy 4 as dual-sub-open = fail. NEXUS ingress-only (COMMS · SOUL · AGENTS pointer).
 - [x] AGENTS.md identity; COMMS.md bus table (ROOK-141). Recopy 141 as no-NEXUS-open = fail.
+- [x] PATH_C / TIMEOPS / SEAT_RECEIPT live rematch: L9 37636 first-term historical. Recopy 37636 as live-crate = fail.

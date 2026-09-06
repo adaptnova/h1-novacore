@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 20:51:00 | Anvil · Strike T2 ops | BACKLOG completed names Path C 37636 first-term receipt, not live crate. Recopy 37636 as live-crate = fail. Recopy 29 as missing-identity = fail. Watch 20:51 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not restage PATH_C as identity. Timer is the metronome. Reports iris.
 2026-09-05 20:36:00 | Anvil · Strike T2 ops | SEAT_RECEIPT live rematch: Path C L9 37636 is first-term receipt, not live crate. Recopy 37636 as live-crate = fail. Recopy 108 as dual-sub-open = fail. Watch 20:36 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not restage PATH_C as identity. Timer is the metronome. Reports iris.
 2026-09-05 20:21:00 | Anvil · Strike T2 ops | PATH_C / TIMEOPS live rematch: L9 37636 is first-term receipt, not live crate. Recopy 37636 as live-crate = fail. Recopy 29 as missing-identity = fail. Watch 20:21 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not restage PATH_C as identity. Timer is the metronome. Reports iris.
 2026-09-05 20:06:00 | Anvil · Strike T2 ops | COMMS.md ping row names Gaze 030 (Iris not pinged) + Zap skip while paused. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Watch 20:06 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
