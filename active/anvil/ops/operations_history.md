@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 21:06:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 20:51 mill = drop. Independent rematch: MEMORY.md live law still stamped 7:51 and omitted Path C 37636 first-term. Restamped 21:06. Recopy 37636 as live-crate = fail. Recopy 29 as missing-identity = fail. Recopy 108 as dual-sub-open = fail. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Watch 21:06 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not restage PATH_C as identity. Did not reopen STRIKE-4. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-2106.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 9:06 PM MST
+The backpack names the mail slot, the pause, the conductor, and the birth certificate. Zap stays paused.
+
 ## 2026-09-05 20:51:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 20:36 mill = drop. Independent rematch: BACKLOG completed still listed Path C 37636 with no first-term stamp. Live rematch: 37636 is first-term receipt, not live crate. Recopy 37636 as live-crate = fail. Recopy 29 as missing-identity = fail. Recopy 108 as dual-sub-open = fail. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Watch 20:51 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not restage PATH_C as identity. Did not reopen STRIKE-4. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-2051.md`.
