@@ -1,5 +1,7 @@
 # Playbook shelf — copy the loop, do not mill a second charter
 
+**Live rematch:** Friday, Sep 5, 2026 10:06 PM MST · Index, not a twin. Recopy as ping-iris = fail (Gaze 030 — Iris is conductor, not floor). Recopy as Zap-DORMANT = fail. Recopy 37636 as live-crate = fail. Recopy 108 as dual-sub-open = fail. Recopy 141 as no-NEXUS-open = fail. Do not mill a second charter. Do not paint LIVING.md.
+
 Law lives under `/adapt/platform/striketeam/`. Wiki pages are the Cloud mirror. This folder is an index.
 
 | Playbook | Disk SoT | Wiki |
@@ -24,6 +26,7 @@ Hunt checklist · triage rules · mission template · postmortem live in Mission
 
 `STRIKE_CELL_RUNBOOK.md` is **retired hallway** (CREW_OPS L5 · Gaze 056 · ROOK-034). Do not copy it. Weather pamphlet that still cites it is archaeology — Iris owns that rematch.
 
-CHECKIN after DORMANT / inject = **seven fields**. Tick is scaffold. Intake is Strike **Task** + labels.
+CHECKIN after DORMANT / inject = **seven fields**. Tick is scaffold. Intake is Strike **Task** + labels. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 37636 as live-crate = fail.
 
-— Anvil · Strike T2 ops · Friday, Sep 5, 2026 6:52 PM MST
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 10:06 PM MST
+The shelf is an index. The conductor is not on the ping list. Zap stays paused.
