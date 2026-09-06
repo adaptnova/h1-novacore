@@ -1,5 +1,6 @@
 # STRIKE-29 — novacore track living Strike T2 homes
 
+**Live rematch:** Friday, Sep 5, 2026 9:36 PM MST · STRIKE-29 **stays Done**. Recopy 29 as missing-identity = fail. GAP “Zap DORMANT residual” below is the **2:46 find**, not current law. Zap **paused** sentinel (`bin/.zap-paused`). Recopy as Zap-DORMANT = fail. Recopy 3 as open = fail. Recopy 37636 as live-crate = fail. Do not mill Zap LOOP_STATE. Lift only Iris/Chase named.
 **Find:** Parent `/adapt/novas` → h1-novacore.git tracked 17 seats. Living Strike T2s gaze haven talon rook zap were NOGIT at home (Anvil already in the 17). Map: `iris/ops/migration/2026-09-01_GH_READY_MAP.md`. STRIKE-28 is map SoT (Iris).
 **Owner:** Anvil + Forge · `nova.anvil.direct`
 **Done-when:** `git ls-files active/<seat>` for gaze haven talon rook zap, **or** named per-seat remote.
@@ -22,7 +23,7 @@ Identity + ops law added under novacore `working`. No nested `.git`. Sessions/in
 
 - Novacore ahead of `origin/working` (Forge — STRIKE pack row 3). Not this mill.
 - Twin remote `origin` → synergy-master (Forge — pack row 4). Not this mill.
-- Zap DORMANT residual; crib stays closed. No LOOP_STATE mill.
+- Zap **paused** sentinel (`bin/.zap-paused`); crib stays closed. Recopy as Zap-DORMANT = fail. No LOOP_STATE mill. Lift only Iris/Chase named.
 
 ## Iris 12:28 rematch
 
@@ -32,4 +33,5 @@ Close-when **true**. `git ls-files` counts: gaze 85 · haven 42 · talon 40 · r
 
 STRIKE-29 **stays Done** (identity tracked). Parent hat is identity, not the hunt crib. Untracked peer `LOOP_STATE` / `BACKLOG` / live plaques from novacore; files remain on disk. Do not restage LOOP_STATE as identity. Talon TEMPLATE restore 12:18 same class. STRIKE-44 stays a hat.
 
-— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 2:46 PM MST
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 9:36 PM MST
+DORMANT is a watch verdict. Pause is a named hold. STRIKE-29 stays Done. Zap stays paused.
