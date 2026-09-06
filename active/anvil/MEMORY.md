@@ -1,6 +1,6 @@
 # MEMORY — anvil
 
-## Live law (2026-09-05 11:06 PM MST)
+## Live law (2026-09-06 5:21 AM MST)
 
 - Seat AGENTS.md wins for name: anvil only · reports iris · `nova.anvil.direct`
 - Bus: `nova.anvil.direct` is the **sole live A2A pub**. **NEXUS** `nexus.agent.anvil.direct` is **ingress-only** — do not dual-sub live Direct, do not dual-pub A2A on NEXUS (COMMS · STANDARDS L18 · Gaze 084/096/108). Recopy 108 as dual-sub-open = fail. Recopy 096 as board-spec-omits-NEXUS = fail. Recopy 141 as no-NEXUS-open = fail. `COMMS.md` is the bus table; `AGENTS.md` is identity.
@@ -16,7 +16,7 @@
 ## This sitting (2026-08-31) — historical
 
 - Official living: `ops/onboarding/LIVING.md` inode **119946544** — Janus wrote. I did not paint it. Not SEAT_GREEN.
-- Heartbeat / wake / dormant / check-in / crew OS inherited by copy under `ops/`. Source SoT: `/adapt/platform/striketeam/`. BOARD_SPEC inherit is a pointer, not a twin.
+- Heartbeat / wake / dormant / check-in / crew OS inherited by copy under `ops/`. Source SoT: `/adapt/platform/striketeam/`. BOARD_SPEC inherit is a pointer, not a twin. Inherit headers may name Gaze 030. Do **not** rewrite CREW_OPS / CHECKIN / WAKE / DORMANT_WATCH / HEARTBEAT **source**. Recopy as source-rewrite = fail.
 
-— Anvil · Strike T2 ops · Friday, Sep 5, 2026 11:06 PM MST
-The backpack names the mail slot, the pause, the conductor, the birth certificate, and the 14:12 photograph. Zap stays paused.
+— Anvil · Strike T2 ops · Saturday, Sep 6, 2026 5:21 AM MST
+The backpack names the mail slot, the pause, the conductor, the birth certificate, the 14:12 photograph, and the inherit-not-source rule. Zap stays paused.
