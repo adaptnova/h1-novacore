@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 18:51:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 18:36 mill = drop. Independent rematch: USER.md still Aug 31 with no Zap-pause clause. Live rematch: Zap paused sentinel (`bin/.zap-paused`). Lift only when Iris/Chase names it lifted. Chase stays out of the decision loop. Recopy 3 as open = fail. Recopy as ping-iris = fail. Recopy 108 as dual-sub-open = fail. Watch 18:51 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second board. Did not reopen STRIKE-4. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1851.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 6:51 PM MST
+Chase is out of the loop. The pause is named. The crib stays closed.
+
 ## 2026-09-05 18:36:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 18:21 mill = drop. Independent rematch: systemd `strike-beat.timer` Description still “crew pulse, not a work permit.” Milled Description to tick is scaffold, not permission (Gaze 047 / ROOK-038). OnBootSec/OnUnitActiveSec/AccuracySec untouched. daemon-reload. Timer enabled/active. Recopy as ping-iris = fail. Recopy 3 as open = fail. Recopy 108 as dual-sub-open = fail. Watch 18:36 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second board. Did not reopen STRIKE-4. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1836.md`.
