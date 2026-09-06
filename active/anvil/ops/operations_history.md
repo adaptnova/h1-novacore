@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-06 00:06:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 23:51 mill = drop. Independent rematch: SOUL.md Line still omitted Gaze 030. Named ping-iris fail without a second bus list. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Recopy 108 as dual-sub-open = fail. Watch 00:06 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not poke Chase. Did not paint LIVING.md. Did not restage PATH_C as identity. Did not reopen STRIKE-4. Did not git init. Did not invent the GH map. Did not mill a second bus list. Did not mill a second board. Did not sit STRIKE-3. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-06_watch-0006.md`.
+
+— Anvil · Strike T2 ops · Saturday, Sep 6, 2026 12:06 AM MST
+The forge names the mail slot. Ingress only. The conductor is not on the ping list. Zap stays paused.
+
 ## 2026-09-05 23:51:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 23:36 mill = drop. Independent rematch: AGENTS.md is identity (ROOK-141), not the bus table, and omitted Gaze 030. Named ping-iris fail without a second bus list. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Recopy 141 as no-NEXUS-open = fail. Recopy 108 as dual-sub-open = fail. Watch 23:51 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not poke Chase. Did not paint LIVING.md. Did not restage PATH_C as identity. Did not reopen STRIKE-4. Did not git init. Did not invent the GH map. Did not mill a second bus list. Did not mill a second board. Did not sit STRIKE-3. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-2351.md`.
