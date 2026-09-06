@@ -1,8 +1,8 @@
 # Inherit — Strike heartbeat / wake law (copy, not a rewrite)
 
 **Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **80786258** size 3638
-**When copied:** Friday, Sep 5, 2026 3:06 PM MST
-**Why:** Source HEARTBEAT L33 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` as illegal (ingress-only, Gaze 092 / 089 / STANDARDS 084). Live path L44 matches. Recopy 092 as heartbeat-intake-omits-NEXUS = fail.
+**When copied:** Saturday, Sep 6, 2026 3:51 AM MST
+**Why:** Source HEARTBEAT L33 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` as illegal (ingress-only, Gaze 092 / 089 / STANDARDS 084). Live path L44 matches. Recopy 092 as heartbeat-intake-omits-NEXUS = fail. Recopy as ping-iris = fail (Gaze 030 — Iris is conductor, not floor). Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Do not rewrite the source from this seat.
 **Prior copy:** inode 80786225 at 13:22 MST 2026-09-05 — Gaze 089 Do-not names NEXUS; L44 still Direct-only. The “L44 still Dual-sub live Direct only” line was the **find**, not current law. Recopy 089 as heartbeat-dual-sub-Direct-only = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
