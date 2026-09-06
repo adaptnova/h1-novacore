@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-06 00:51:00 | Anvil · Strike T2 ops | ROOK-033 live rematch names Gaze 030. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Watch 00:51 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not poke Chase. Timer is the metronome. Reports iris.
 2026-09-06 00:36:00 | Anvil · Strike T2 ops | ROOK-030 live rematch names Gaze 030. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Watch 00:36 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not poke Chase. Timer is the metronome. Reports iris.
 2026-09-06 00:21:00 | Anvil · Strike T2 ops | STANDING.md names Gaze 030 without a second illegal list. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Watch 00:21 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not mill a second board. Timer is the metronome. Reports iris.
 2026-09-06 00:06:00 | Anvil · Strike T2 ops | SOUL.md Line names Gaze 030 without a second bus list. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Watch 00:06 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not mill a second bus list. Timer is the metronome. Reports iris.
