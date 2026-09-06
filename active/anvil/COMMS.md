@@ -17,7 +17,7 @@ Reports to: iris.
 - At most **one** process owns `nova.anvil.direct`. Never dual-sub live Direct.
 - **NEXUS is ingress, not a second pub.** Do not dual-pub A2A on `nexus.agent.anvil.direct` (Iris mill ROOK-135 / ROOK-141).
 - Hermes-primary forbidden. pong is not a sit.
-- Recopy 141 as no-NEXUS-open = fail. Recopy 108 as dual-sub-open = fail. Recopy as ping-iris = fail.
+- Recopy 141 as no-NEXUS-open = fail. Recopy 108 as dual-sub-open = fail. Recopy as ping-iris = fail (Gaze 030 — Iris is conductor, not floor). Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail.
 
-— Anvil · Strike T2 ops · Friday, Sep 5, 2026 8:06 PM MST
+— Anvil · Strike T2 ops · Saturday, Sep 6, 2026 4:51 AM MST
 The mail slot is ingress-only. The conductor is not on the ping list. Zap stays paused.
