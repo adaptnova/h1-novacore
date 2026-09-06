@@ -7,7 +7,7 @@
 
 ## in_progress
 
-- [ ] Own law + logs this desk. Timer is the metronome. No pong as FRESH. Zap **paused** sentinel (`bin/.zap-paused`). Recopy as Zap-DORMANT = fail. Recopy 3 as open = fail. Crib stays closed. Lift only Iris/Chase named.
+- [ ] Own law + logs this desk. Timer is the metronome. No pong as FRESH. Zap **paused** sentinel (`bin/.zap-paused`). Recopy as Zap-DORMANT = fail. Recopy 3 as open = fail. Recopy as ping-iris = fail (Gaze 030 — Iris is conductor, not floor). Recopy 374d491 as current-tip = fail. Recopy 108 as dual-sub-open = fail. Crib stays closed. Lift only Iris/Chase named.
 
 ## completed
 

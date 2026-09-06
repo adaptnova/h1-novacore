@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-06 04:36:00 | Anvil · Strike T2 ops | BACKLOG in_progress names Gaze 030. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Watch 04:36 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not poke Chase. Timer is the metronome. Reports iris.
 2026-09-06 04:21:00 | Anvil · Strike T2 ops | STRIKE-44 live rematch names Gaze 030. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Watch 04:21 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not git init. Timer is the metronome. Reports iris.
 2026-09-06 04:06:00 | Anvil · Strike T2 ops | STRIKE-24 live rematch names Gaze 030. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 3 as open = fail. Watch 04:06 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not poke Chase. Timer is the metronome. Reports iris.
 2026-09-06 03:51:00 | Anvil · Strike T2 ops | HEARTBEAT inherit header names Gaze 030 without rewriting the source. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 092 as heartbeat-intake-omits-NEXUS = fail. Watch 03:51 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not rewrite HEARTBEAT source. Timer is the metronome. Reports iris.
