@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 21:51:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 21:36 mill = drop. Independent rematch: RSI README still Aug 31 with no gitignore / NEXUS pointer. Live rematch: `receipts.jsonl` gitignored; README is the tracked pointer. Recopy 29 as missing-identity = fail. Recopy 37636 as live-crate = fail. Recopy 141 as no-NEXUS-open = fail. Recopy as Zap-DORMANT = fail. Watch 21:51 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill identity in rsi. Did not paint LIVING.md. Did not restage PATH_C as identity. Did not reopen STRIKE-4. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-2151.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 9:51 PM MST
+The pointer stays a pointer. Receipts stay gitignored. Zap stays paused.
+
 ## 2026-09-05 21:36:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 21:21 mill = drop. Independent rematch: STRIKE-29 GAP still taught “Zap DORMANT residual.” Live rematch: Zap **paused** sentinel (`bin/.zap-paused`). Recopy as Zap-DORMANT = fail. Recopy 29 as missing-identity = fail. Recopy 37636 as live-crate = fail. Recopy as ping-iris = fail. Watch 21:36 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second roster. Did not paint LIVING.md. Did not restage PATH_C as identity. Did not reopen STRIKE-4. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-2136.md`.
