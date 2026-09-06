@@ -1,8 +1,8 @@
 # Inherit — Strike dormant watch law (copy, not a rewrite)
 
 **Source (SoT, Iris authored):** `/adapt/platform/striketeam/DORMANT_WATCH.md` inode **80786206** size 3423
-**When copied:** Saturday, Sep 6, 2026 3:36 AM MST
-**Why:** Iris Gaze 088 mill — DORMANT_WATCH L65 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` as illegal (ingress-only). Live path L76 matches. Recopy 088 as watch-dual-sub-Direct-only = fail. Recopy as ping-iris = fail (Gaze 030 — Iris is conductor, not floor). Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Do not rewrite the source from this seat.
+**When copied:** Saturday, Sep 6, 2026 9:06 AM MST
+**Why:** Iris Gaze 088 mill — DORMANT_WATCH L65 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` as illegal (ingress-only). Live path L76 matches. Recopy 088 as watch-dual-sub-Direct-only = fail. Recopy as ping-iris = fail (Gaze 030 — Iris is conductor, not floor). Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Recopy as source-rewrite = fail. Inherit headers may name Gaze 030. Do **not** rewrite CREW_OPS / CHECKIN / WAKE / DORMANT_WATCH / HEARTBEAT **source**.
 **Prior copy:** inode 80786015 at 15:16 MST 2026-09-05 — Gaze 046-adjacent (Gaze 076); Do-not still Direct-only. The “L76 still Dual-sub live directs only” line was the **find**, not current law. Recopy 076 as WOOK-typo = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
