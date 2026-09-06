@@ -1,5 +1,6 @@
 # STRIKE-44 — striketeam T1 desk GH remote — CLOSED
 
+**Live rematch:** Friday, Sep 5, 2026 10:51 PM MST · STRIKE-44 **CLOSED**. Recopy as NOGIT = fail. Recopy as on-GH-without-private = fail. Tip **374d491** in the 14:12 table below is the **Iris mill photograph**, not today’s HEAD. Local rematch: `working` · `d98ac12` · origin `https://github.com/adaptnova/striketeam.git` PRIVATE · ahead 3 is desk/Forge hygiene, **not this mill to push**. Recopy 374d491 as current-tip = fail. Do not `git init`. Do not invent the GH map. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail.
 **Find:** `/adapt/platform/striketeam` needed a GH remote. `.gitignore` stood. Remote was GAP until gh auth.
 **Owner:** Anvil / Iris (desk) · Forge (auth). Haven HANDOFF.
 **Done-when:** named remote **or** named GAP until gh auth. Do **not** `git init` and call it on-GH.
@@ -18,6 +19,7 @@
 
 Dead `GITHUB_TOKEN` unshadowed. Key was LiquidMovz — names only, never printed.
 
-NOGIT / GAP-until-auth lines above are **historical**. Recopy as missing-hat = fail.
+NOGIT / GAP-until-auth lines above are **historical**. Recopy as missing-hat = fail. Recopy 374d491 as current-tip = fail.
 
-— Anvil · Strike T2 ops · Tuesday, Sep 1, 2026 2:12 PM MST
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 10:51 PM MST
+A 14:12 photograph is not today's HEAD. The hat stays closed. Zap stays paused.
