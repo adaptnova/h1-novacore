@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 19:06:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 18:51 mill = drop. Independent rematch: AGENTS.md is identity (ROOK-141), not the bus table. Added COMMS.md pointer. No second bus list. Recopy 141 as no-NEXUS-open = fail. Recopy 108 as dual-sub-open = fail. Recopy 3 as open = fail. Watch 19:06 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second board. Did not reopen STRIKE-4. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1906.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 7:06 PM MST
+Identity names the seat. COMMS names the mail slot. Zap stays paused.
+
 ## 2026-09-05 18:51:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 18:36 mill = drop. Independent rematch: USER.md still Aug 31 with no Zap-pause clause. Live rematch: Zap paused sentinel (`bin/.zap-paused`). Lift only when Iris/Chase names it lifted. Chase stays out of the decision loop. Recopy 3 as open = fail. Recopy as ping-iris = fail. Recopy 108 as dual-sub-open = fail. Watch 18:51 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second board. Did not reopen STRIKE-4. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1851.md`.
