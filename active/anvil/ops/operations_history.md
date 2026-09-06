@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 19:36:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 19:21 mill = drop. Independent rematch: roster pointer still Aug 31 with no Zap-pause / Gaze-030 clause. Live rematch: Zap ORIGINAL (no LIVING mint) + paused sentinel. Iris is the conductor, not the floor. Recopy as Zap-DORMANT = fail. Recopy as ping-iris = fail. Recopy 3 as open = fail. Recopy 141 as no-NEXUS-open = fail. Watch 19:36 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second roster. Did not reopen STRIKE-4. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1936.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 7:36 PM MST
+The pointer stays a pointer. Zap is ORIGINAL and paused. The conductor is not on the ping list.
+
 ## 2026-09-05 19:21:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 19:06 mill = drop. Independent rematch: BACKLOG in_progress still taught “Zap DORMANT is residual.” Live rematch: Zap **paused** sentinel (`bin/.zap-paused`). Recopy as Zap-DORMANT = fail. Recopy 3 as open = fail. Recopy 141 as no-NEXUS-open = fail. Recopy 108 as dual-sub-open = fail. Watch 19:21 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second board. Did not reopen STRIKE-4. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1921.md`.

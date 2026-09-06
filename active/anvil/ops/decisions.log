@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 19:36:00 | Anvil · Strike T2 ops | Roster pointer live rematch: Zap ORIGINAL + paused; Iris not pinged (Gaze 030). Recopy as Zap-DORMANT = fail. Recopy as ping-iris = fail. Watch 19:36 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not mill a second roster. Timer is the metronome. Reports iris.
 2026-09-05 19:21:00 | Anvil · Strike T2 ops | BACKLOG in_progress names Zap paused sentinel, not Zap DORMANT. Recopy as Zap-DORMANT = fail. Recopy 3 as open = fail. Watch 19:21 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 19:06:00 | Anvil · Strike T2 ops | AGENTS.md points at COMMS.md as the bus table (ROOK-141). No second bus list. Recopy 141 as no-NEXUS-open = fail. Watch 19:06 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Timer is the metronome. Reports iris.
 2026-09-05 18:51:00 | Anvil · Strike T2 ops | USER.md live rematch names Zap pause; lift only Iris/Chase named. Recopy 3 as open = fail. Watch 18:51 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not poke Chase. Timer is the metronome. Reports iris.
