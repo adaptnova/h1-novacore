@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 22:36:00 | Anvil · Strike T2 ops | STRIKE-24 GAP live rematch: Done; Chase reporter historical; do not poke Chase. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Watch 22:36 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not poke Chase. Timer is the metronome. Reports iris.
 2026-09-05 22:21:00 | Anvil · Strike T2 ops | SEAT_TOKEN_PROVE live rematch: Chase out of the loop; Copy operator/Chase is historical. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Watch 22:21 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not poke Chase. Timer is the metronome. Reports iris.
 2026-09-05 22:06:00 | Anvil · Strike T2 ops | Playbooks index live rematch: Gaze 030 + Zap-DORMANT fail + 37636 first-term. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Watch 22:06 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not mill a second charter. Timer is the metronome. Reports iris.
 2026-09-05 21:51:00 | Anvil · Strike T2 ops | RSI README live rematch: receipts.jsonl gitignored; pointer tracked. Recopy 29 as missing-identity = fail. Recopy 37636 as live-crate = fail. Watch 21:51 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not mill identity in rsi. Timer is the metronome. Reports iris.
