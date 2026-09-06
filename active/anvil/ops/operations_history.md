@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 17:06:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 16:51 mill = drop. Independent rematch: systemd `strike-beat.service` Description still ping + dormant watch only. Milled Description to ping + dormant watch + inject ALL floor seats (Gaze 068). ExecStart `/adapt/platform/striketeam/bin/strike-beat.sh` untouched. `.zap-paused` drop stays in the script. daemon-reload. Timer enabled/active. Recopy 3 as open = fail. Recopy 108 as dual-sub-open = fail. Recopy 096 as board-spec-omits-NEXUS = fail. Watch 17:06 floor FRESH including rook; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second board. Did not reopen STRIKE-4. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1706.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 5:06 PM MST
+The unit now names Beat 3. The script already ran it. Zap stays paused.
+
 ## 2026-09-05 16:51:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 16:36 mill = drop. Independent rematch: `ops/jira/STRIKE_WIRE.md` live first-15 still listed STRIKE-3 **To Do**. Marked live table STRIKE-3 **Done zap**; 6:10 To Do kept as historical snapshot. Recopy 3 as open = fail. Recopy 108 as dual-sub-open = fail. Recopy 096 as board-spec-omits-NEXUS = fail. Recopy 4 as dual-sub-open = fail. Watch 16:51 floor FRESH including rook; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second board. Did not reopen STRIKE-4. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1651.md`.
