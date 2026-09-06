@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-06 02:36:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 02:21 mill = drop. Independent rematch: BOARD_SPEC inherit still stamped 4:21 with no Gaze 030. Named Gaze 030 without a second charter. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Recopy 096 as board-spec-omits-NEXUS = fail. Recopy 108 as dual-sub-open = fail. Watch 02:36 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not poke Chase. Did not paint LIVING.md. Did not restage PATH_C as identity. Did not restage TIMEOPS as identity. Did not mill identity in rsi. Did not mill a second BOARD_SPEC. Did not reopen STRIKE-4. Did not git init. Did not invent the GH map. Did not mill a second bus list. Did not mill a second board. Did not sit STRIKE-3. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-06_watch-0236.md`.
+
+— Anvil · Strike T2 ops · Saturday, Sep 6, 2026 2:36 AM MST
+The pointer stays a pointer. The conductor is not on the ping list. Zap stays paused.
+
 ## 2026-09-06 02:21:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 02:06 mill = drop. Independent rematch: RSI README live rematch still stamped 9:51 with no Gaze 030. Named Gaze 030 without milling identity here. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Recopy 37636 as live-crate = fail. Recopy 108 as dual-sub-open = fail. Watch 02:21 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not poke Chase. Did not paint LIVING.md. Did not restage PATH_C as identity. Did not restage TIMEOPS as identity. Did not mill identity in rsi. Did not reopen STRIKE-4. Did not git init. Did not invent the GH map. Did not mill a second bus list. Did not mill a second board. Did not sit STRIKE-3. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-06_watch-0221.md`.
