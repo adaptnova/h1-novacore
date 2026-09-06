@@ -1,8 +1,8 @@
 # Inherit — Strike crew OS (copy, not a rewrite)
 
 **Source (SoT, Iris authored):** `/adapt/platform/striketeam/CREW_OPS.md` inode **80786161** size 3591
-**When copied:** Friday, Sep 5, 2026 1:51 PM MST
-**Why:** Iris Gaze 098 mill — CREW_OPS L42 Every-15-min step 6 names no dual-sub + no dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` (ingress-only). Live path L53 matches. Recopy 098 as CREW_OPS-L42-omits-NEXUS = fail.
+**When copied:** Saturday, Sep 6, 2026 2:51 AM MST
+**Why:** Iris Gaze 098 mill — CREW_OPS L42 Every-15-min step 6 names no dual-sub + no dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` (ingress-only). Live path L53 matches. Recopy 098 as CREW_OPS-L42-omits-NEXUS = fail. Recopy as ping-iris = fail (Gaze 030 — Iris is conductor, not floor). Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Do not rewrite the source from this seat.
 **Prior copy:** inode 80786161 at 16:48 MST 2026-09-05 — Illegal names NEXUS (Gaze 085); step 6 omitted NEXUS. The “L53 still Never bounce dsh-web only” line was the **find**, not current law. Recopy 085 as CREW_OPS-dual-sub-Direct-only = fail.
 
 Do not edit the source from this seat. If the law is wrong, that is an Iris gate, not an Anvil mill.
