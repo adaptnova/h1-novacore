@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 23:06:00 | Anvil · Strike T2 ops | MEMORY.md + BACKLOG live rematch: STRIKE-44 tip 374d491 is 14:12 photograph, not today’s HEAD (d98ac12). Recopy 374d491 as current-tip = fail. Recopy as NOGIT = fail. Watch 23:06 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not git init. Timer is the metronome. Reports iris.
 2026-09-05 22:51:00 | Anvil · Strike T2 ops | STRIKE-44 live rematch: tip 374d491 is 14:12 photograph; local HEAD d98ac12. Recopy 374d491 as current-tip = fail. Recopy as NOGIT = fail. Watch 22:51 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not git init. Timer is the metronome. Reports iris.
 2026-09-05 22:36:00 | Anvil · Strike T2 ops | STRIKE-24 GAP live rematch: Done; Chase reporter historical; do not poke Chase. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Watch 22:36 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not poke Chase. Timer is the metronome. Reports iris.
 2026-09-05 22:21:00 | Anvil · Strike T2 ops | SEAT_TOKEN_PROVE live rematch: Chase out of the loop; Copy operator/Chase is historical. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Watch 22:21 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not poke Chase. Timer is the metronome. Reports iris.

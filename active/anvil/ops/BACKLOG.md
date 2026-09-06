@@ -22,7 +22,7 @@
 - [x] ROOK-079 CHECKIN inherit already-forbidden · ROOK-086 HEARTBEAT L9 · ROOK-088 CREW_OPS A-gate
 - [x] ROOK-092 parent hat is identity, not the hunt crib — peer LOOP_STATE untracked; STRIKE-29 stays Done
 - [x] STRIKE-3 Done zap (2026-09-05 — Gatekeeper leftover closed). Recopy 3 as open = fail.
-- [x] STRIKE-44 striketeam remote — CLOSED Iris mill: adaptnova/striketeam PRIVATE `374d491`. Recopy as NOGIT = fail.
+- [x] STRIKE-44 striketeam remote — CLOSED Iris mill: adaptnova/striketeam PRIVATE. Tip **374d491** is the 14:12 photograph, not today’s HEAD (local rematch `d98ac12`). Recopy as NOGIT = fail. Recopy 374d491 as current-tip = fail.
 - [x] STRIKE-4 closed. Recopy 4 as dual-sub-open = fail. NEXUS ingress-only (COMMS · SOUL · AGENTS pointer).
 - [x] AGENTS.md identity; COMMS.md bus table (ROOK-141). Recopy 141 as no-NEXUS-open = fail.
 - [x] PATH_C / TIMEOPS / SEAT_RECEIPT live rematch: L9 37636 first-term historical. Recopy 37636 as live-crate = fail.
