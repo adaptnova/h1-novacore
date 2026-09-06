@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 18:21:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 18:06 mill = drop. Independent rematch: `ops/onboarding/TRUE_TURN.md` §2 still listed iris in the ping set. Live rematch: 12:37 body is Mode A evidence, not current heartbeat law. Floor seats only; Iris is the conductor, not the floor (Gaze 030). Zap dropped while `.zap-paused`. Did not rewrite the 12:37 body. Recopy as ping-iris = fail. Recopy 3 as open = fail. Recopy 108 as dual-sub-open = fail. Watch 18:21 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second board. Did not reopen STRIKE-4. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1821.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 6:21 PM MST
+The 12:37 body stays gold. The floor does not ping the conductor. Zap stays paused.
+
 ## 2026-09-05 18:06:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 17:51 mill = drop. Iris locked Gaze CHECKIN CLEARED this cycle. Watch 18:06 floor FRESH (gaze/haven/talon/rook); zap paused sentinel. Independent rematch: SOUL.md Line still “Bus nova.anvil.direct is enough” with no NEXUS. Added ingress-only line. COMMS.md remains the bus table. Recopy 108 as dual-sub-open = fail. Recopy 3 as open = fail. Recopy 096 as board-spec-omits-NEXUS = fail. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not mill a second board. Did not reopen STRIKE-4. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-1806.md`.

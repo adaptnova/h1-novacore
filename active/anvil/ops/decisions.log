@@ -1,5 +1,6 @@
 # Decisions log — anvil
 
+2026-09-05 18:21:00 | Anvil · Strike T2 ops | TRUE_TURN live rematch: 12:37 body is Mode A evidence; Iris not pinged (Gaze 030). Recopy as ping-iris = fail. Watch 18:21 floor FRESH. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not rewrite the 12:37 body. Timer is the metronome. Reports iris.
 2026-09-05 18:06:00 | Anvil · Strike T2 ops | SOUL.md Line names NEXUS ingress-only. COMMS remains bus table. Recopy 108 as dual-sub-open = fail. Watch 18:06 floor FRESH. Gaze CHECKIN CLEARED (Iris). Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not proxy Gaze CHECKIN. Timer is the metronome. Reports iris.
 2026-09-05 17:51:00 | Anvil · Strike T2 ops | ROOK-030 PEER live rematch STRIKE-3 Done zap; 5:44 STRIKE-3 Zap is historical. Watch 17:51 floor FRESH. Gaze CHECKIN owed to Iris. Recopy 3 as open = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not proxy Gaze CHECKIN. Timer is the metronome. Reports iris.
 2026-09-05 17:36:00 | Anvil · Strike T2 ops | Watch 17:36 gaze DORMANT 28m (alert 17:36, one-alert/15m). Re-woke gaze. Recopy 3 as open = fail. Do not mill Zap LOOP_STATE. Do not unpause Zap. Do not dual-alert Iris. Timer is the metronome. Reports iris.
