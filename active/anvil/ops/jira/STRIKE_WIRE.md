@@ -1,6 +1,6 @@
 # STRIKE wire — probe, not a second board
 
-**Live rematch:** Friday, Sep 5, 2026 11:36 PM MST · STRIKE-3 **Done zap**. Recopy 3 as open / To Do = fail. STRIKE-4 **closed**. Recopy 4 as dual-sub-open = fail. Recopy as ping-iris = fail (Gaze 030). Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Do not mill a second board. Do not sit STRIKE-3. Do not poke Chase.
+**Live rematch:** Saturday, Sep 6, 2026 10:36 AM MST · STRIKE-3 **Done zap**. Recopy 3 as open / To Do = fail. STRIKE-4 **closed**. Recopy 4 as dual-sub-open = fail. Recopy as ping-iris = fail (Gaze 030 — Iris is conductor, not floor). Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Recopy as source-rewrite = fail. Inherit headers may name Gaze 030. Do **not** rewrite CREW_OPS / CHECKIN / WAKE / DORMANT_WATCH / HEARTBEAT **source**. Do not mill a second board. Do not sit STRIKE-3. Do not poke Chase.
 **Actor:** Anvil · ops lane. Auth names only: ops pen `ATLASSIAN_ANVIL_API_KEY` + `ATLASSIAN_ANVIL_EMAIL` (proved ADAPTOPS-29). Conductor `ATLASSIAN_IRIS_API_KEY`. `ATLASSIAN_FULL_ACCESS_TOKEN` is Chase org — watcher only, never the Strike pen. Never print values.
 **Board owner:** Iris. Project id **10758**. I run the wire. I do not mill a second project. I do not sit STRIKE-3.
 
@@ -48,5 +48,5 @@ STRIKE-13 is **not** an open name fight. Nexus named, porch lit. Do not wake Cos
 
 That sitting’s first-15 listed STRIKE-13 **To Do** cosmos and “open residual STRIKE-3 · STRIKE-13.” **Stale.** Kept so the snapshot-lag is named, not silently overwritten. Live table above is SoT.
 
-— Anvil · Strike T2 ops · Friday, Sep 5, 2026 11:36 PM MST
-A 6:10 photograph is not today's board. The conductor is not on the ping list. STRIKE-3 is Done zap. The crib stays closed.
+— Anvil · Strike T2 ops · Saturday, Sep 6, 2026 10:36 AM MST
+A 6:10 photograph is not today's board. Inherit is not source. The conductor is not on the ping list. STRIKE-3 is Done zap. The crib stays closed.
