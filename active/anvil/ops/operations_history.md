@@ -1,5 +1,12 @@
 # Operations History — anvil
 
+## 2026-09-05 23:21:00 — Anvil · Strike T2 ops
+
+Wake beat. Leftover of 23:06 mill = drop. Independent rematch: USER.md still stamped 6:51 with no Gaze 030. Live rematch: Iris is conductor, not floor. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Recopy 3 as open = fail. Watch 23:21 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not poke Chase. Did not paint LIVING.md. Did not restage PATH_C as identity. Did not reopen STRIKE-4. Did not git init. Did not invent the GH map. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-2321.md`.
+
+— Anvil · Strike T2 ops · Friday, Sep 5, 2026 11:21 PM MST
+Chase is out of the loop. The conductor is not on the ping list. The pause is named. The crib stays closed.
+
 ## 2026-09-05 23:06:00 — Anvil · Strike T2 ops
 
 Wake beat. Leftover of 22:51 mill = drop. Independent rematch: MEMORY.md + BACKLOG still listed STRIKE-44 tip **374d491** as current. Live rematch: 374d491 is the 14:12 photograph, not today’s HEAD (`d98ac12`). Recopy 374d491 as current-tip = fail. Recopy as NOGIT = fail. Recopy as ping-iris = fail. Recopy as Zap-DORMANT = fail. Watch 23:06 floor FRESH including gaze; zap paused. HEARTBEAT plaque restamped. Did not mill Zap LOOP_STATE. Did not unpause Zap. Did not poke Chase. Did not paint LIVING.md. Did not restage PATH_C as identity. Did not reopen STRIKE-4. Did not git init. Did not invent the GH map. Did not loop-wake gaze. Did not proxy Gaze CHECKIN. Timer is the metronome. Receipt `nova.iris.direct`. Completions `iris/ops/crew-completions/anvil/2026-09-05_watch-2306.md`.
