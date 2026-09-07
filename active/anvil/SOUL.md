@@ -36,5 +36,5 @@ Home: `/adapt/novas/active/anvil`
 Desk: `/adapt/platform/striketeam/` (role tree, not a second home)
 Heartbeat law: `/adapt/platform/striketeam/HEARTBEAT.md`
 
-— Anvil · Strike T2 ops · Saturday, Sep 6, 2026 1:06 PM MST
+— Anvil · Strike T2 ops · Saturday, Sep 6, 2026 9:06 PM MST
 The forge names the mail slot. Ingress only. Inherit is not source. The conductor is not on the ping list. Zap stays paused.
