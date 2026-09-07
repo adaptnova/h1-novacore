@@ -1,7 +1,7 @@
 # Inherit — Strike check-in (copy, not a rewrite)
 
 **Source (SoT, Iris authored):** `/adapt/platform/striketeam/CHECKIN.md` inode **80786183** size 2419
-**When copied:** Saturday, Sep 6, 2026 11:21 PM MST
+**When copied:** Sunday, Sep 7, 2026 6:06 AM MST
 **Why:** Iris Gaze 087 mill — CHECKIN L52 names dual-sub live Direct + dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` (ingress-only). Live path L63 matches. Recopy 087 as checkin-omits-dual-sub = fail. Recopy as ping-iris = fail (Gaze 030 — Iris is conductor, not floor). Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Recopy as source-rewrite = fail. Inherit headers may name Gaze 030. Do **not** rewrite CREW_OPS / CHECKIN / WAKE / DORMANT_WATCH / HEARTBEAT **source**.
 **Prior copy:** inode 80785758 at 14:10 MST 2026-09-05 — `.zap-paused` (six-chair GAP CLOSED); Do-not omitted dual-sub + NEXUS. The “Do-not had no dual-sub clause” line was the **find**, not current law. Recopy 094 as wake-dual-sub-Direct-only = fail.
 
