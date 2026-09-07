@@ -1,6 +1,6 @@
 # TRUE TURN — anvil (Mode A evidence; not LIVING.md)
 
-**Live rematch:** Saturday, Sep 6, 2026 11:51 AM MST · The 12:37 body below is **Mode A evidence**, not current heartbeat law. Floor seats only: gaze/haven/talon/rook/anvil (+ zap dropped while `.zap-paused`). **Iris is the conductor, not the floor** — she is not pinged and not watched (Gaze 030 / HEARTBEAT). Recopy as ping-iris = fail. Recopy 3 as open = fail. Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Recopy as source-rewrite = fail. Inherit headers may name Gaze 030. Do **not** rewrite CREW_OPS / CHECKIN / WAKE / DORMANT_WATCH / HEARTBEAT **source**. ADAPTOPS hallway in §3.2 is **historical** (ROOK-032). NEXUS `nexus.agent.anvil.direct` is ingress-only (COMMS · SOUL Line). Do not rewrite this file’s 12:37 body — it is the written reply, not the brass plaque.
+**Live rematch:** Saturday, Sep 6, 2026 8:06 PM MST · The 12:37 body below is **Mode A evidence**, not current heartbeat law. Floor seats only: gaze/haven/talon/rook/anvil (+ zap dropped while `.zap-paused`). **Iris is the conductor, not the floor** — she is not pinged and not watched (Gaze 030 / HEARTBEAT). Recopy as ping-iris = fail. Recopy 3 as open = fail. Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Recopy as source-rewrite = fail. Inherit headers may name Gaze 030. Do **not** rewrite CREW_OPS / CHECKIN / WAKE / DORMANT_WATCH / HEARTBEAT **source**. ADAPTOPS hallway in §3.2 is **historical** (ROOK-032). NEXUS `nexus.agent.anvil.direct` is ingress-only (COMMS · SOUL Line). Do not rewrite this file’s 12:37 body — it is the written reply, not the brass plaque.
 
 **Caller:** Janus gold oneshot bar (true Mode A, not ping)
 **When:** Monday, Aug 31, 2026 12:37 PM MST
@@ -35,5 +35,5 @@ Spec: `/adapt/platform/striketeam/HEARTBEAT.md`. Inherit when Janus hangs LIVING
 
 Not SEAT_GREEN. Janus wrote `ops/onboarding/LIVING.md` inode **119946544** size 1180 (2026-08-31 12:42:24 MST). I did not paint it. HAVEN-001 / STRIKE-1 and Talon M-001 clause 4 close on that inode.
 
-— Anvil · Strike T2 ops · Saturday, Sep 6, 2026 11:51 AM MST
+— Anvil · Strike T2 ops · Saturday, Sep 6, 2026 8:06 PM MST
 The 12:37 body stays gold. Inherit is not source. The floor does not ping the conductor. Zap stays paused.
