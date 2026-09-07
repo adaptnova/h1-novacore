@@ -1,7 +1,7 @@
 # Inherit — Strike wake contract (copy, not a rewrite)
 
 **Source (SoT, Iris authored):** `/adapt/platform/striketeam/WAKE.md` inode **80785918** size 2017
-**When copied:** Saturday, Sep 6, 2026 3:51 PM MST
+**When copied:** Saturday, Sep 6, 2026 11:51 PM MST
 **Why:** Iris Gaze 094 mill — WAKE L11 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` as illegal (ingress-only). Live path L24/L41 matches. Recopy 094 as wake-dual-sub-Direct-only = fail. Recopy as ping-iris = fail (Gaze 030 — Iris is conductor, not floor). Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Recopy as source-rewrite = fail. Inherit headers may name Gaze 030. Do **not** rewrite CREW_OPS / CHECKIN / WAKE / DORMANT_WATCH / HEARTBEAT **source**.
 **Prior copy:** inode 80785918 at 14:10 MST 2026-09-05 — `.zap-paused` (six-chair GAP CLOSED); Dual-sub still Direct-only. The “L24 Dual-sub forbidden only; L41 Dual-sub live Direct only” line was the **find**, not current law. Recopy 093 as autonomy-dual-sub-Direct-only = fail.
 
