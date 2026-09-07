@@ -1,7 +1,7 @@
 # Inherit — Strike heartbeat / wake law (copy, not a rewrite)
 
 **Source (SoT, Iris authored):** `/adapt/platform/striketeam/HEARTBEAT.md` inode **80786258** size 3638
-**When copied:** Saturday, Sep 6, 2026 4:21 PM MST
+**When copied:** Sunday, Sep 7, 2026 12:21 AM MST
 **Why:** Source HEARTBEAT L33 names dual-pub A2A on NEXUS `nexus.agent.<seat>.direct` as illegal (ingress-only, Gaze 092 / 089 / STANDARDS 084). Live path L44 matches. Recopy 092 as heartbeat-intake-omits-NEXUS = fail. Recopy as ping-iris = fail (Gaze 030 — Iris is conductor, not floor). Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Recopy as source-rewrite = fail. Inherit headers may name Gaze 030. Do **not** rewrite CREW_OPS / CHECKIN / WAKE / DORMANT_WATCH / HEARTBEAT **source**.
 **Prior copy:** inode 80786225 at 13:22 MST 2026-09-05 — Gaze 089 Do-not names NEXUS; L44 still Direct-only. The “L44 still Dual-sub live Direct only” line was the **find**, not current law. Recopy 089 as heartbeat-dual-sub-Direct-only = fail.
 
