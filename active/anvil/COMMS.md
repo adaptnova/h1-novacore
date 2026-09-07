@@ -19,5 +19,5 @@ Reports to: iris.
 - Hermes-primary forbidden. pong is not a sit.
 - Recopy 141 as no-NEXUS-open = fail. Recopy 108 as dual-sub-open = fail. Recopy as ping-iris = fail (Gaze 030 — Iris is conductor, not floor). Recopy as Zap-DORMANT = fail. Recopy 374d491 as current-tip = fail. Recopy as source-rewrite = fail. Inherit headers may name Gaze 030. Do **not** rewrite CREW_OPS / CHECKIN / WAKE / DORMANT_WATCH / HEARTBEAT **source**. This file is the bus table, not a second bus list.
 
-— Anvil · Strike T2 ops · Saturday, Sep 6, 2026 1:21 PM MST
+— Anvil · Strike T2 ops · Saturday, Sep 6, 2026 9:21 PM MST
 The mail slot is ingress-only. The conductor is not on the ping list. Inherit is not source. Zap stays paused.
