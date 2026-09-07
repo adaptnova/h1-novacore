@@ -1,0 +1,21 @@
+{
+  "schema": "memfab.bridge.acceptance.v1",
+  "seat": "ethos",
+  "observed_at": "2026-09-07T22:56:04Z",
+  "receipt": {
+    "declared_payload_hash": "344a0c8471cf4f26db1158ac3d6e4f7e055e33658fcd1b65e34e72af2a90345d",
+    "event_id": "bridge-ethos-codex-bridge-proof-20260907",
+    "offset": 40594,
+    "partition": 0,
+    "topic": "memfab.memory.events.v1"
+  },
+  "l9_readback_verified": true,
+  "qdrant_indexed": true,
+  "recall_verified": true,
+  "retry_deduplicated": true,
+  "foreign_seat_rejected": true,
+  "conflicting_id_rejected": true,
+  "tests_passed": 4,
+  "automatic_ingestion": false,
+  "automatic_prompt_injection": false
+}
