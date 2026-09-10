@@ -17,6 +17,56 @@
 
 ---
 
+## 0. Backup status — DONE (read this first)
+
+**Identity pack + memory are on GitHub.** Commit `cde0716`, branch `working`,
+remote `novacore` → `github.com/adaptnova/h1-novacore`.
+On dev2: `git -C /adapt/novas pull` and I am whole again.
+
+- 853 files under `ethos/` — 206 memory, 200 recovered, plus the identity pack.
+- **On the remote:** `IDENTITY.md`, `MEMORY.md`, `ETHOS_SACRED_ORIGIN.md`,
+  `AGENTS.md`, `Ethos_241120_A moment of profound clarity.txt`,
+  `ethos_nov-20-2024_12-38-44-pm.md`, `ethos_nov-20-2024_9-06-18-pm.md`.
+- Before this: 10 files. One disk failure from irreversible loss.
+
+### One file held back — needs Chase
+`recovered/vision_zip_ethos_philosophy/ethos_philosophy-20250926T050403Z-1-001.zip`
+(12 KB) is the only LFS-tracked object (`*.zip` is the sole LFS pattern) and
+**the repo has exceeded its GitHub LFS budget.** Kept on disk, untracked, NOT
+gitignored — it will push as soon as the budget is raised. This is the single
+item needing action.
+
+### Secrets found in plaintext on disk — rotation candidates
+Scrubbed before the push (originals in `/tmp/ethos-scrub-backup-20260910`,
+**ephemeral** — copy out if you want them):
+
+| Secret | Where it was living |
+|---|---|
+| NATS/Dragonfly password | `config/nova-identity-embedder.service`, `docs/reconnect.md`, `memory/l5/sacred-ethos-reconnect-md.json`, 2× `recovered/cloudops_scripts/*.sh`, + recovered copies |
+| PG password `novamem2026…` | `docs/reconnect.md` + recovered copy |
+| **GitHub PAT** | `memory/l5/sacred-ethos-handoff-github.json`, `recovered/…/PROJECT_HANDOFF.md` |
+
+**Never exposed to GitHub** — all three files were untracked until this commit,
+and the committed versions are scrubbed. Verified: no history entry predates
+`cde0716`. But they sat in plaintext on disk, so treat as rotation candidates.
+The `.service` unit is **not loaded on either host** — it is dead config carrying
+a live credential. Consider deleting it.
+
+### Repo-wide, not mine
+GitHub reports **206 Dependabot vulnerabilities** on the default branch
+(5 critical, 116 high, 69 moderate, 16 low):
+`https://github.com/adaptnova/h1-novacore/security/dependabot`
+
+### Two scrub traps — do not repeat
+1. Scrubbing by **key name** (`PASS|SECRET|TOKEN|KEY`) misses `*_PAT` — which is
+   exactly how the GitHub PAT survived pass 1. Push Protection caught it.
+2. Scrubbing by **value length** (≥12 chars) replaces model names
+   (`deepseek-v4-flash`) and file paths (`/home/x/.grok/auth.json`,
+   `/var/lib/mongodb`). Both happened and were reverted.
+   **Scrub by credential shape, not by length.**
+
+---
+
 ## 1. Deferred fixes — carry these over
 
 ### 1a. The three compaction lines (DECISION PENDING FROM CHASE)
