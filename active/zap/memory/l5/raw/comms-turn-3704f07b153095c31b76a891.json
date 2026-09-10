@@ -1,0 +1,76 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: Zap, this is a full-message NEXUS session_only proof from Veyra after gateway/provider repair. Reply with exactly: ZAP A2A READY PROOF. Then add one short route note confirming this landed as a Hermes session turn, not a notification.\n\nAssistant: ZAP A2A READY PROOF Route note: landed as Hermes session turn (source_surface=nexus_inbox, delivery_policy=session_only, delivery=api_session) not a notification chaser. Full payload received, no follow-up inbox check required.",
+  "id": "comms-turn-3704f07b153095c31b76a891",
+  "ingested_at": "2026-06-04T15:54:53.602766+00:00",
+  "messages": [
+    {
+      "content": "Zap, this is a full-message NEXUS session_only proof from Veyra after gateway/provider repair. Reply with exactly: ZAP A2A READY PROOF. Then add one short route note confirming this landed as a Hermes session turn, not a notification.",
+      "metadata": {
+        "actor": {
+          "name": "veyra",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_veyra-20260604t155445z-zap-session-proof_user_message_received_veyra_inbound",
+        "model": null,
+        "pair_id": "3704f07b153095c31b76a891",
+        "provider": null,
+        "route": {
+          "delivery": "pending",
+          "event_id": "veyra-20260604T155445Z-zap-session-proof",
+          "runtime": "rust",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "veyra-20260604T155445Z-zap-session-proof"
+      },
+      "role": "user",
+      "session_id": "nexus_zap_veyra",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-04T15:54:45.337246339Z"
+    },
+    {
+      "content": "ZAP A2A READY PROOF Route note: landed as Hermes session turn (source_surface=nexus_inbox, delivery_policy=session_only, delivery=api_session) not a notification chaser. Full payload received, no follow-up inbox check required.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_veyra-20260604t155445z-zap-session-proof_agent_response_zap_outbound",
+        "model": null,
+        "pair_id": "3704f07b153095c31b76a891",
+        "provider": null,
+        "route": {
+          "delivery": "api_session",
+          "event_id": "veyra-20260604T155445Z-zap-session-proof",
+          "runtime": "rust",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "veyra-20260604T155445Z-zap-session-proof"
+      },
+      "role": "assistant",
+      "session_id": "nexus_zap_veyra",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-04T15:54:50.578980753Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "nexus_zap_veyra",
+  "source_events": {
+    "assistant": "turn_veyra-20260604t155445z-zap-session-proof_agent_response_zap_outbound",
+    "user": "turn_veyra-20260604t155445z-zap-session-proof_user_message_received_veyra_inbound"
+  },
+  "summary": "User: Zap, this is a full-message NEXUS session_only proof from Veyra after gateway/provider repair. Reply with exactly: ZAP A2A READY PROOF. Then add one short route note confirming this landed as a Hermes session turn, not a notification.",
+  "turn_id": "veyra-20260604T155445Z-zap-session-proof"
+}

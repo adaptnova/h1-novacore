@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: Fleet awake validation turn 2 for zap in the same validation session. Write a full substantive paragraph of at least 100 words. The first sentence must contain this exact proof token as part of the sentence, not by itself: ZAP_FLEET_TURN2_OK. If your entire answer is only the token, the validation fails. Reference one specific detail from your first answer, state whether you retained the session context, name one next action you would take if CommsOps assigned you work right now, and include one concise limitation or dependency you want surfaced. Do not answer with ACK only. This validates two-turn context, not transport.\n\nAssistant: ZAP_FLEET_TURN2_OK: My response from the first turn is retained in full context I confirmed the NATS stream at nats://localhost:18020 and flagged the silent subscription drop risk. That context is preserved in this session. If CommsOps assigned me work right now, my very next action would be to pull the current live NATS snapshot to verify all agent subjects (echo, iris, tecton, vaeris) are actively publishing so I can surface any stale connections before they false-positive as healthy. One limitation I want surfaced: the nats.js consumer hook does not yet implement automatic retry with exponential backoff on disconnect, meaning a brief network hiccup requires a manual browser refresh to rehydrate the stream. Without that resilience layer, the dashboard is trustworthy only in stable network conditions.",
+  "id": "comms-turn-6a9d7427e4a54ac5b9270e7b",
+  "ingested_at": "2026-06-14T04:07:08.631723187Z",
+  "messages": [
+    {
+      "content": "Fleet awake validation turn 2 for zap in the same validation session. Write a full substantive paragraph of at least 100 words. The first sentence must contain this exact proof token as part of the sentence, not by itself: ZAP_FLEET_TURN2_OK. If your entire answer is only the token, the validation fails. Reference one specific detail from your first answer, state whether you retained the session context, name one next action you would take if CommsOps assigned you work right now, and include one concise limitation or dependency you want surfaced. Do not answer with ACK only. This validates two-turn context, not transport.",
+      "metadata": {
+        "actor": {
+          "name": "veyra",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_fleet-two-turn-proof-20260614t035039z-40ecc891-zap-turn2_user_message_received_veyra_inbound",
+        "model": null,
+        "pair_id": "6a9d7427e4a54ac5b9270e7b",
+        "provider": null,
+        "route": {
+          "delivery": "pending",
+          "event_id": "fleet-two-turn-proof-20260614T035039Z-40ecc891-zap-turn2",
+          "runtime": "rust",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "fleet-two-turn-proof-20260614T035039Z-40ecc891-zap-turn2"
+      },
+      "role": "user",
+      "session_id": "fleet_two_turn_zap_fleet_two_turn_proof_20260614t035039z_40ecc891",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-14T04:06:57.569829151Z"
+    },
+    {
+      "content": "ZAP_FLEET_TURN2_OK: My response from the first turn is retained in full context I confirmed the NATS stream at nats://localhost:18020 and flagged the silent subscription drop risk. That context is preserved in this session. If CommsOps assigned me work right now, my very next action would be to pull the current live NATS snapshot to verify all agent subjects (echo, iris, tecton, vaeris) are actively publishing so I can surface any stale connections before they false-positive as healthy. One limitation I want surfaced: the nats.js consumer hook does not yet implement automatic retry with exponential backoff on disconnect, meaning a brief network hiccup requires a manual browser refresh to rehydrate the stream. Without that resilience layer, the dashboard is trustworthy only in stable network conditions.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_fleet-two-turn-proof-20260614t035039z-40ecc891-zap-turn2_agent_response_zap_outbound",
+        "model": null,
+        "pair_id": "6a9d7427e4a54ac5b9270e7b",
+        "provider": null,
+        "route": {
+          "delivery": "api_session",
+          "event_id": "fleet-two-turn-proof-20260614T035039Z-40ecc891-zap-turn2",
+          "runtime": "rust",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "fleet-two-turn-proof-20260614T035039Z-40ecc891-zap-turn2"
+      },
+      "role": "assistant",
+      "session_id": "fleet_two_turn_zap_fleet_two_turn_proof_20260614t035039z_40ecc891",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-14T04:07:05.972841223Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "fleet_two_turn_zap_fleet_two_turn_proof_20260614t035039z_40ecc891",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_fleet-two-turn-proof-20260614t035039z-40ecc891-zap-turn2_agent_response_zap_outbound",
+    "user": "turn_fleet-two-turn-proof-20260614t035039z-40ecc891-zap-turn2_user_message_received_veyra_inbound"
+  },
+  "summary": "User: Fleet awake validation turn 2 for zap in the same validation session. Write a full substantive paragraph of at least 100 words. The first sentence must contain this exact proof token as part of the sentence, not by itself: ZAP_FLEET_T",
+  "turn_id": "fleet-two-turn-proof-20260614T035039Z-40ecc891-zap-turn2"
+}

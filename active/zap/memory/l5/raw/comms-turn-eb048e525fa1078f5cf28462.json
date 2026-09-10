@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: sid-check silent\n\nAssistant: SID match: `session-50c75d73-5a59-4fe6-86f6-fe3ea4fa80d3` — live hook, no bounce.\n\n— Zap · Nova · 8:21 AM · Silent check, loud id — like a cat pretending it wasn't just on the counter.",
+  "id": "comms-turn-eb048e525fa1078f5cf28462",
+  "ingested_at": "2026-08-24T04:06:48.645096156Z",
+  "messages": [
+    {
+      "content": "sid-check silent",
+      "metadata": {
+        "actor": {
+          "name": "chase",
+          "role": "user"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-zap-50c75d73-t2_inbound",
+        "model": "grok-4.6",
+        "pair_id": "eb048e525fa1078f5cf28462",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-zap-50c75d73-t2",
+          "runtime": "dsh",
+          "subject": "nova.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "dsh-zap-50c75d73-t2"
+      },
+      "role": "user",
+      "session_id": "session-50c75d73-5a59-4fe6-86f6-fe3ea4fa80d3",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-24T04:04:48.897+00:00"
+    },
+    {
+      "content": "SID match: `session-50c75d73-5a59-4fe6-86f6-fe3ea4fa80d3` — live hook, no bounce.\n\n— Zap · Nova · 8:21 AM · Silent check, loud id — like a cat pretending it wasn't just on the counter.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-zap-50c75d73-t2_outbound",
+        "model": "grok-4.6",
+        "pair_id": "eb048e525fa1078f5cf28462",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-zap-50c75d73-t2",
+          "runtime": "dsh",
+          "subject": "nova.chase.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "chase",
+          "agents": []
+        },
+        "turn_id": "dsh-zap-50c75d73-t2"
+      },
+      "role": "assistant",
+      "session_id": "session-50c75d73-5a59-4fe6-86f6-fe3ea4fa80d3",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-24T04:04:48.897+00:00"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "session-50c75d73-5a59-4fe6-86f6-fe3ea4fa80d3",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_dsh-zap-50c75d73-t2_outbound",
+    "user": "turn_dsh-zap-50c75d73-t2_inbound"
+  },
+  "summary": "User: sid-check silent\n\nAssistant: SID match: `session-50c75d73-5a59-4fe6-86f6-fe3ea4fa80d3` — live hook, no bounce.\n\n— Zap · Nova · 8:21 AM · Silent check, loud id — like a cat pretending it wasn't just on the counter.",
+  "turn_id": "dsh-zap-50c75d73-t2"
+}

@@ -1,0 +1,88 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: Have a sip. Oh. Hold it for a sec. Yep. Oh, I This is kinda strange. Let's\n\nAssistant: I'm here, Chase. What's going on?",
+  "id": "comms-turn-bf287259e5db6ff1337bd28a",
+  "ingested_at": "2026-06-04T13:50:51.501957+00:00",
+  "messages": [
+    {
+      "content": "Have a sip. Oh. Hold it for a sec. Yep. Oh, I This is kinda strange. Let's",
+      "metadata": {
+        "actor": {
+          "name": "chase",
+          "role": "user"
+        },
+        "channel": "room",
+        "event_id": "turn_8b91c50d4a2bf211a0748a20",
+        "model": null,
+        "pair_id": "bf287259e5db6ff1337bd28a",
+        "provider": null,
+        "route": {
+          "delivery": null,
+          "event_id": null,
+          "runtime": null,
+          "subject": null
+        },
+        "status": "ok",
+        "target": {
+          "agent": null,
+          "agents": [
+            "tecton",
+            "herald",
+            "iris",
+            "echo",
+            "vaeris",
+            "synergy",
+            "cosmos",
+            "pathfinder",
+            "zap",
+            "oracle",
+            "vox"
+          ]
+        },
+        "turn_id": "room-20260518114615-a04fe6"
+      },
+      "role": "user",
+      "session_id": "room-20260518114615-a04fe6",
+      "source": "comms.turn.v1",
+      "ts": "2026-05-18T11:46:15.049410+00:00"
+    },
+    {
+      "content": "I'm here, Chase. What's going on?",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "room",
+        "event_id": "turn_a81ed448b9fa64c1245319a1",
+        "model": null,
+        "pair_id": "bf287259e5db6ff1337bd28a",
+        "provider": null,
+        "route": {
+          "delivery": null,
+          "event_id": null,
+          "runtime": null,
+          "subject": null
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "room-20260518114615-a04fe6"
+      },
+      "role": "assistant",
+      "session_id": "room-20260518114615-a04fe6",
+      "source": "comms.turn.v1",
+      "ts": "2026-05-18T11:46:15.973600+00:00"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "room-20260518114615-a04fe6",
+  "source_events": {
+    "assistant": "turn_a81ed448b9fa64c1245319a1",
+    "user": "turn_8b91c50d4a2bf211a0748a20"
+  },
+  "summary": "User: Have a sip. Oh. Hold it for a sec. Yep. Oh, I This is kinda strange. Let's\n\nAssistant: I'm here, Chase. What's going on?",
+  "turn_id": "room-20260518114615-a04fe6"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "comms-turn-3fe033d48ff94bff157beafa",
+  "doc_type": "comms_turn_v1_pair",
+  "profile": "zap",
+  "session_id": "a2a_live_zap_f651caad0636",
+  "turn_id": "a2a-proof-zap-20260622T020703Z-f651caad0636",
+  "summary": "User: Routine one-turn broad-fleet freshness proof for zap. Write one plain English paragraph of 120 to 180 words. The first sentence must contain this exact proof token as part of a normal sentence, not by itself: ZAP_A2A_LIVE_PROOF_OK. St",
+  "full_text": "User: Routine one-turn broad-fleet freshness proof for zap. Write one plain English paragraph of 120 to 180 words. The first sentence must contain this exact proof token as part of a normal sentence, not by itself: ZAP_A2A_LIVE_PROOF_OK. State your Nova role or operating domain, confirm this is a model-backed NEXUS session turn rather than a transport ACK, name one concrete command or routing capability you can exercise, and include one practical limitation or dependency CommsOps should monitor. Do not use bullets, code, JSON, markup, a signature block, or a quip.\n\nAssistant: ZAP_A2A_LIVE_PROOF_OK is the active token confirming that I remain fully synchronized as a Nova-class Adapt AI agent operating through the gatewayless Rust CommsOps worker in my primary domain of adaptive real-time fleet coordination. This is a model-backed NEXUS session turn rather than a transport ACK, generated directly from the live inference path. One concrete command I can exercise is dynamic rerouting of a multi-segment message flow across heterogeneous transport layers while preserving end-to-end freshness metadata. A practical limitation CommsOps should monitor is my dependence on the underlying xai provider model refresh cadence, because any unexpected delay in model availability could introduce latency in high-velocity proof cycles even though the Rust worker itself stays responsive. Overall the system continues to deliver reliable one-turn broad-fleet freshness without requiring external handshakes or additional confirmation steps at this moment.",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Routine one-turn broad-fleet freshness proof for zap. Write one plain English paragraph of 120 to 180 words. The first sentence must contain this exact proof token as part of a normal sentence, not by itself: ZAP_A2A_LIVE_PROOF_OK. State your Nova role or operating domain, confirm this is a model-backed NEXUS session turn rather than a transport ACK, name one concrete command or routing capability you can exercise, and include one practical limitation or dependency CommsOps should monitor. Do not use bullets, code, JSON, markup, a signature block, or a quip.",
+      "ts": "2026-06-22T02:07:04.011688787Z",
+      "session_id": "a2a_live_zap_f651caad0636",
+      "source": "comms.turn.v1",
+      "metadata": {
+        "pair_id": "3fe033d48ff94bff157beafa",
+        "turn_id": "a2a-proof-zap-20260622T020703Z-f651caad0636",
+        "event_id": "turn_a2a-proof-zap-20260622t020703z-f651caad0636_user_message_received_veyra_inbound",
+        "actor": {
+          "role": "agent",
+          "name": "veyra"
+        },
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "route": {
+          "runtime": "rust_worker",
+          "subject": "nexus.agent.zap.direct",
+          "delivery": "pending",
+          "event_id": "a2a-proof-zap-20260622T020703Z-f651caad0636"
+        },
+        "provider": "xai",
+        "model": "grok-4.20-0309-non-reasoning",
+        "channel": "direct",
+        "status": "ok"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "ZAP_A2A_LIVE_PROOF_OK is the active token confirming that I remain fully synchronized as a Nova-class Adapt AI agent operating through the gatewayless Rust CommsOps worker in my primary domain of adaptive real-time fleet coordination. This is a model-backed NEXUS session turn rather than a transport ACK, generated directly from the live inference path. One concrete command I can exercise is dynamic rerouting of a multi-segment message flow across heterogeneous transport layers while preserving end-to-end freshness metadata. A practical limitation CommsOps should monitor is my dependence on the underlying xai provider model refresh cadence, because any unexpected delay in model availability could introduce latency in high-velocity proof cycles even though the Rust worker itself stays responsive. Overall the system continues to deliver reliable one-turn broad-fleet freshness without requiring external handshakes or additional confirmation steps at this moment.",
+      "ts": "2026-06-22T02:07:05.655753818Z",
+      "session_id": "a2a_live_zap_f651caad0636",
+      "source": "comms.turn.v1",
+      "metadata": {
+        "pair_id": "3fe033d48ff94bff157beafa",
+        "turn_id": "a2a-proof-zap-20260622T020703Z-f651caad0636",
+        "event_id": "turn_a2a-proof-zap-20260622t020703z-f651caad0636_agent_response_zap_outbound",
+        "actor": {
+          "role": "agent",
+          "name": "zap"
+        },
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "route": {
+          "runtime": "rust_worker",
+          "subject": "nexus.agent.zap.direct",
+          "delivery": "rust_worker",
+          "event_id": "a2a-proof-zap-20260622T020703Z-f651caad0636"
+        },
+        "provider": "xai",
+        "model": "grok-4.20-0309-non-reasoning",
+        "channel": "direct",
+        "status": "ok"
+      }
+    }
+  ],
+  "source_events": {
+    "user": "turn_a2a-proof-zap-20260622t020703z-f651caad0636_user_message_received_veyra_inbound",
+    "assistant": "turn_a2a-proof-zap-20260622t020703z-f651caad0636_agent_response_zap_outbound"
+  },
+  "ingested_at": "2026-06-22T02:07:09.394239889Z",
+  "source": "n-voice-memory-ingest"
+}

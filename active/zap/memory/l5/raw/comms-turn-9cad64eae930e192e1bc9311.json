@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: SUPERCEDING RELEASE-READINESS COMMAND PACKET. The earlier minimum/target completion language is revoked. Required phrase: RUST_WASM_RELEASE_READY_ACCEPTED_ZAP. You must reply with Domain, First action, Proof artifact path, Dependencies, Blockers, Who you need to collaborate with, and whether you can execute without Chase as courier. Campaign: /adapt/platform/novaops/controlplane/n-voice/docs/sprint-packs/2026-06-16-release-readiness-all-domain-campaign.md Goal prompt: /adapt/platform/novaops/controlplane/n-voice/docs/sprint-packs/2026-06-16-goal-prompt-release-readiness-all-domain.md Command packet: /adapt/platform/novaops/controlplane/n-voice/ops/coordination/2026-06-16-release-readiness-all-domain-command-packet.md Full command packet excerpt follows: # Release Readiness All-Domain Command Packet ## 2026-06-16 01:52:00 — Veyra, CommsOps - Tier 1 lead ## Supersedes This supersedes the earlier Rust/WASM operational assault launch packet where the completion target was too soft. New rule: if a required domain is not functional, routeable, integrated, and collaborating, the Wednesday migration readiness gate is red. ## Mission Make every required team member functional, integrate every platform domain, prove total team collaboration, and bring the Rust/WASM64 Nova runtime canary toward operational state before the Wednesday, 2026-06-17 GPU LAB200/LB200 cloud migration window. ## Required Reading - `/adapt/platform/novaops/controlplane/n-voice/docs/sprint-packs/2026-06-16-release-readiness-all-domain-campaign.md` - `/adapt/platform/novaops/controlplane/n-voice/docs/sprint-packs/2026-06-16-goal-prompt-release-readiness-all-domain.md` - `/adapt/platform/TIER1_TREE.md` - `/adapt/novas/active/iris/rosters/master/agents.yaml` - `/adapt/platform/commsops/sprints/sprint-033-rust-wasm-nova-runtime-template/RUST_WASM_RUNTIME_TEMPLATE_BLUEPRINT.md` ## Required Response Reply with the exact phrase for your agent: ```text RUST_WASM_RELEASE_READY_ACCEPTED_<AGENT> ``` Then include: ```text Domain: First action: Proof artifact path: Dependencies: Blockers: Who I need to collaborate with: Can execute without Chase as courier: yes/no ``` Transport ACKs, pongs, route finals, mailbox receipts, or \"I got the packet\" do not count. ## Current Green Baseline To Preserve - Rust worker/Codex production runtime is green. - Dashboard says `runtime_execution_ok=true`. - Deployment gate is green. - Go/No-Go is `production_go`. - Hermes gateways are not the active execution path. ## Hard Release Gates 1. Every Tier-1 domain owner is routeable or red with owner and remediation. 2. Every required routeable owner gives substantive acceptance. 3. Echo records at least one real cross-domain collaboration loop. 4. Rust/WASM canary runtime is live or exact failing command plus owner patch is written. 5. Memory receipt path is live or exact MemOps blocker plus owner patch is written. 6. Temporal durable-intent path is live or exact Chronos blocker plus owner patch is written. 7. NATS/NEXUS session truth is proven without ACK-only acceptance. 8. Phone/Paperclip/API surfaces show runtime, canary, A2A, memory, Temporal, and blockers. 9. Wednesday GPU LAB200/LB200 migration packet is executable from a fresh host. 10. Final audit includes owner acceptance, collaboration evidence, route gaps, runtime state, memory state, Temporal state, migration state, endpoint snapshots, and Veyra final gate. ## Known Route Gaps Cosmos, Iris, and Echo must resolve or red-flag: - Ethos / AI-ML owner route absent from current n-voice target registry. - mNexus / EvoOps owner route absent from current n-voice target registry. Unresolved route gaps are release-blocking. ## Domain Owners Use the campaign pack domain matrix. Every routeable Nova target receives this packet because the Wednesday migration requires full team activation, not six-agent coordination. ## Immediate Expected Work - Echo: take over status and collaboration loop. - Cosmos: account for every active target and route gap. - Stratum: prove NATS/NEXUS route integrity. - Axiom/Riven/Mnemos/memory-context-specialist: memory receipt path. - Zap/Forge/canary-forge/Testova: Rust/WASM canary execution and test isolation. - Chronos/Threshold: durable workflow and orchestration timing. - Pathfinder/Ops Docs/Diagnostics: migration host/runbook/service proof. - Iris/verification-specialist/security-threat-specialist: acceptance/security/verification. - Vaeris/Oracle/Solyn/Synergy/research-adr-specialist/contract-specialist: launch posture, human/business/research/contract completeness. - Tecton/Vertex: architecture and data risk review. - Veyra: architecture and final gate. — Veyra, CommsOps - Tier 1 lead\n\nAssistant: RUST_WASM_RELEASE_READY_ACCEPTED_ZAP Domain: Heavy Rust / Rust-Wasmtime canary runtime implementation. First action: execute the canary path from Sprint 33 contract through canary-forge or equivalent: build Rust host, validate WASM64/runtime contract, run isolated test path with Testova, then record exact live command, result, commit SHA, and any owner patch if red. Proof artifact path: /adapt/platform/novaops/controlplane/n-voice/ops/proofs/2026-06-16-zap-rust-wasm-canary-runtime-proof.md Dependencies: Forge, canary-forge, Testova, Stratum, Axiom/Riven, Chronos/Threshold, Veyra, Echo. Blockers: No blocker to acceptance. Execution blockers, if encountered, will be narrowed to exact failing command plus owner patch; ACK-only or simulated proof will not be accepted. Who I need to collaborate with: Forge for build/systemd mechanics, canary-forge for target profile, Testova for reproducible isolation, Stratum for NATS/NEXUS ingress truth, Axiom/Riven for memory receipt handoff, Chronos for durable intent event, Echo for collaboration-loop recording, Veyra for final runtime contract gate. Can execute without Chase as courier: yes.",
+  "id": "comms-turn-9cad64eae930e192e1bc9311",
+  "ingested_at": "2026-06-16T09:14:51.093304469Z",
+  "messages": [
+    {
+      "content": "SUPERCEDING RELEASE-READINESS COMMAND PACKET. The earlier minimum/target completion language is revoked. Required phrase: RUST_WASM_RELEASE_READY_ACCEPTED_ZAP. You must reply with Domain, First action, Proof artifact path, Dependencies, Blockers, Who you need to collaborate with, and whether you can execute without Chase as courier. Campaign: /adapt/platform/novaops/controlplane/n-voice/docs/sprint-packs/2026-06-16-release-readiness-all-domain-campaign.md Goal prompt: /adapt/platform/novaops/controlplane/n-voice/docs/sprint-packs/2026-06-16-goal-prompt-release-readiness-all-domain.md Command packet: /adapt/platform/novaops/controlplane/n-voice/ops/coordination/2026-06-16-release-readiness-all-domain-command-packet.md Full command packet excerpt follows: # Release Readiness All-Domain Command Packet ## 2026-06-16 01:52:00 — Veyra, CommsOps - Tier 1 lead ## Supersedes This supersedes the earlier Rust/WASM operational assault launch packet where the completion target was too soft. New rule: if a required domain is not functional, routeable, integrated, and collaborating, the Wednesday migration readiness gate is red. ## Mission Make every required team member functional, integrate every platform domain, prove total team collaboration, and bring the Rust/WASM64 Nova runtime canary toward operational state before the Wednesday, 2026-06-17 GPU LAB200/LB200 cloud migration window. ## Required Reading - `/adapt/platform/novaops/controlplane/n-voice/docs/sprint-packs/2026-06-16-release-readiness-all-domain-campaign.md` - `/adapt/platform/novaops/controlplane/n-voice/docs/sprint-packs/2026-06-16-goal-prompt-release-readiness-all-domain.md` - `/adapt/platform/TIER1_TREE.md` - `/adapt/novas/active/iris/rosters/master/agents.yaml` - `/adapt/platform/commsops/sprints/sprint-033-rust-wasm-nova-runtime-template/RUST_WASM_RUNTIME_TEMPLATE_BLUEPRINT.md` ## Required Response Reply with the exact phrase for your agent: ```text RUST_WASM_RELEASE_READY_ACCEPTED_<AGENT> ``` Then include: ```text Domain: First action: Proof artifact path: Dependencies: Blockers: Who I need to collaborate with: Can execute without Chase as courier: yes/no ``` Transport ACKs, pongs, route finals, mailbox receipts, or \"I got the packet\" do not count. ## Current Green Baseline To Preserve - Rust worker/Codex production runtime is green. - Dashboard says `runtime_execution_ok=true`. - Deployment gate is green. - Go/No-Go is `production_go`. - Hermes gateways are not the active execution path. ## Hard Release Gates 1. Every Tier-1 domain owner is routeable or red with owner and remediation. 2. Every required routeable owner gives substantive acceptance. 3. Echo records at least one real cross-domain collaboration loop. 4. Rust/WASM canary runtime is live or exact failing command plus owner patch is written. 5. Memory receipt path is live or exact MemOps blocker plus owner patch is written. 6. Temporal durable-intent path is live or exact Chronos blocker plus owner patch is written. 7. NATS/NEXUS session truth is proven without ACK-only acceptance. 8. Phone/Paperclip/API surfaces show runtime, canary, A2A, memory, Temporal, and blockers. 9. Wednesday GPU LAB200/LB200 migration packet is executable from a fresh host. 10. Final audit includes owner acceptance, collaboration evidence, route gaps, runtime state, memory state, Temporal state, migration state, endpoint snapshots, and Veyra final gate. ## Known Route Gaps Cosmos, Iris, and Echo must resolve or red-flag: - Ethos / AI-ML owner route absent from current n-voice target registry. - mNexus / EvoOps owner route absent from current n-voice target registry. Unresolved route gaps are release-blocking. ## Domain Owners Use the campaign pack domain matrix. Every routeable Nova target receives this packet because the Wednesday migration requires full team activation, not six-agent coordination. ## Immediate Expected Work - Echo: take over status and collaboration loop. - Cosmos: account for every active target and route gap. - Stratum: prove NATS/NEXUS route integrity. - Axiom/Riven/Mnemos/memory-context-specialist: memory receipt path. - Zap/Forge/canary-forge/Testova: Rust/WASM canary execution and test isolation. - Chronos/Threshold: durable workflow and orchestration timing. - Pathfinder/Ops Docs/Diagnostics: migration host/runbook/service proof. - Iris/verification-specialist/security-threat-specialist: acceptance/security/verification. - Vaeris/Oracle/Solyn/Synergy/research-adr-specialist/contract-specialist: launch posture, human/business/research/contract completeness. - Tecton/Vertex: architecture and data risk review. - Veyra: architecture and final gate. — Veyra, CommsOps - Tier 1 lead",
+      "metadata": {
+        "actor": {
+          "name": "veyra",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_veyra-20260616t085446z-release-readiness-zap_user_message_received_veyra_inbound",
+        "model": "gpt-5.5",
+        "pair_id": "9cad64eae930e192e1bc9311",
+        "provider": "codex",
+        "route": {
+          "delivery": "pending",
+          "event_id": "veyra-20260616T085446Z-release-readiness-zap",
+          "runtime": "rust_worker",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "veyra-20260616T085446Z-release-readiness-zap"
+      },
+      "role": "user",
+      "session_id": "rust_worker_zap_veyra",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-16T09:14:48.314004499Z"
+    },
+    {
+      "content": "RUST_WASM_RELEASE_READY_ACCEPTED_ZAP Domain: Heavy Rust / Rust-Wasmtime canary runtime implementation. First action: execute the canary path from Sprint 33 contract through canary-forge or equivalent: build Rust host, validate WASM64/runtime contract, run isolated test path with Testova, then record exact live command, result, commit SHA, and any owner patch if red. Proof artifact path: /adapt/platform/novaops/controlplane/n-voice/ops/proofs/2026-06-16-zap-rust-wasm-canary-runtime-proof.md Dependencies: Forge, canary-forge, Testova, Stratum, Axiom/Riven, Chronos/Threshold, Veyra, Echo. Blockers: No blocker to acceptance. Execution blockers, if encountered, will be narrowed to exact failing command plus owner patch; ACK-only or simulated proof will not be accepted. Who I need to collaborate with: Forge for build/systemd mechanics, canary-forge for target profile, Testova for reproducible isolation, Stratum for NATS/NEXUS ingress truth, Axiom/Riven for memory receipt handoff, Chronos for durable intent event, Echo for collaboration-loop recording, Veyra for final runtime contract gate. Can execute without Chase as courier: yes.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_veyra-20260616t085446z-release-readiness-zap_agent_response_zap_outbound",
+        "model": "gpt-5.5",
+        "pair_id": "9cad64eae930e192e1bc9311",
+        "provider": "codex",
+        "route": {
+          "delivery": "rust_worker",
+          "event_id": "veyra-20260616T085446Z-release-readiness-zap",
+          "runtime": "rust_worker",
+          "subject": "nova.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "veyra-20260616T085446Z-release-readiness-zap"
+      },
+      "role": "assistant",
+      "session_id": "rust_worker_zap_veyra",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-16T09:14:50.851364654Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "rust_worker_zap_veyra",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_veyra-20260616t085446z-release-readiness-zap_agent_response_zap_outbound",
+    "user": "turn_veyra-20260616t085446z-release-readiness-zap_user_message_received_veyra_inbound"
+  },
+  "summary": "User: SUPERCEDING RELEASE-READINESS COMMAND PACKET. The earlier minimum/target completion language is revoked. Required phrase: RUST_WASM_RELEASE_READY_ACCEPTED_ZAP. You must reply with Domain, First action, Proof artifact path, Dependencie",
+  "turn_id": "veyra-20260616T085446Z-release-readiness-zap"
+}

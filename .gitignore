@@ -204,3 +204,7 @@ active/anvil/ops/rsi/receipts.jsonl
 # STRIKE-30 — recovery dumps stay off GH
 /recovered/
 /ta_00002_root/
+
+# Nova identity keys — never in git, ever (Zap, 2026-09-10)
+active/*/.nova/identity.key
+active/*/.nova/identity.pub

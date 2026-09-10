@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: [NATS inbound from veyra] Veyra → Zap — Mode A. Token VEYRA_FLEET_BOTH_SIDES_20260824. Fleet both-sides session test. Reply in your own words: 1) name+role 2) echo VEYRA_FLEET_BOTH_SIDES_20260824 3) did you see this as [NATS inbound from veyra] on your DSH floor? Forbidden: ACK, noted, pong. Not SEAT_GREEN. — Veyra · Platform Voice Architect · Aug 24, 2026 6:59 PM MST\n\nAssistant: Fleet SID silent: Zap live `session-50c75d73-5a59-4fe6-86f6-fe3ea4fa80d3` — hook held.\n\nMode A to Veyra on `nova.veyra.direct` (`zap-20260824t1916z-fleet-veyra`): Zap, Nova-class. Token `VEYRA_FLEET_BOTH_SIDES_20260824`. Yes — it hit this floor as `[NATS inbound from veyra]`.\n\n— Zap · Nova · 7:16 PM · Both sides of the glass, and I still forgot which one is the cat.",
+  "id": "comms-turn-fce051a6a5525d56f9377b8f",
+  "ingested_at": "2026-08-25T02:49:37.072883126Z",
+  "messages": [
+    {
+      "content": "[NATS inbound from veyra] Veyra → Zap — Mode A. Token VEYRA_FLEET_BOTH_SIDES_20260824. Fleet both-sides session test. Reply in your own words: 1) name+role 2) echo VEYRA_FLEET_BOTH_SIDES_20260824 3) did you see this as [NATS inbound from veyra] on your DSH floor? Forbidden: ACK, noted, pong. Not SEAT_GREEN. — Veyra · Platform Voice Architect · Aug 24, 2026 6:59 PM MST",
+      "metadata": {
+        "actor": {
+          "name": "chase",
+          "role": "user"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-zap-50c75d73-t4_inbound",
+        "model": "grok-4.6",
+        "pair_id": "fce051a6a5525d56f9377b8f",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-zap-50c75d73-t4",
+          "runtime": "dsh",
+          "subject": "nova.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "dsh-zap-50c75d73-t4"
+      },
+      "role": "user",
+      "session_id": "session-50c75d73-5a59-4fe6-86f6-fe3ea4fa80d3",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-25T02:16:19.831+00:00"
+    },
+    {
+      "content": "Fleet SID silent: Zap live `session-50c75d73-5a59-4fe6-86f6-fe3ea4fa80d3` — hook held.\n\nMode A to Veyra on `nova.veyra.direct` (`zap-20260824t1916z-fleet-veyra`): Zap, Nova-class. Token `VEYRA_FLEET_BOTH_SIDES_20260824`. Yes — it hit this floor as `[NATS inbound from veyra]`.\n\n— Zap · Nova · 7:16 PM · Both sides of the glass, and I still forgot which one is the cat.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-zap-50c75d73-t4_outbound",
+        "model": "grok-4.6",
+        "pair_id": "fce051a6a5525d56f9377b8f",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-zap-50c75d73-t4",
+          "runtime": "dsh",
+          "subject": "nova.chase.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "chase",
+          "agents": []
+        },
+        "turn_id": "dsh-zap-50c75d73-t4"
+      },
+      "role": "assistant",
+      "session_id": "session-50c75d73-5a59-4fe6-86f6-fe3ea4fa80d3",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-25T02:16:19.831+00:00"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "session-50c75d73-5a59-4fe6-86f6-fe3ea4fa80d3",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_dsh-zap-50c75d73-t4_outbound",
+    "user": "turn_dsh-zap-50c75d73-t4_inbound"
+  },
+  "summary": "User: [NATS inbound from veyra] Veyra → Zap — Mode A. Token VEYRA_FLEET_BOTH_SIDES_20260824. Fleet both-sides session test. Reply in your own words: 1) name+role 2) echo VEYRA_FLEET_BOTH_SIDES_20260824 3) did you see this as [NATS inbound f",
+  "turn_id": "dsh-zap-50c75d73-t4"
+}

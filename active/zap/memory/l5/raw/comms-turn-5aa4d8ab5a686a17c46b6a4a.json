@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: zap, CommsOps full-message NEXUS proof. Reply with A2A_NEXUS_OK_ZAP and one short clause. This must prove session_only API-session delivery; do not mention implementation details.\n\nAssistant: A2A_NEXUS_OK_ZAP I heard you clear.",
+  "id": "comms-turn-5aa4d8ab5a686a17c46b6a4a",
+  "ingested_at": "2026-06-05T17:38:23.86103829Z",
+  "messages": [
+    {
+      "content": "zap, CommsOps full-message NEXUS proof. Reply with A2A_NEXUS_OK_ZAP and one short clause. This must prove session_only API-session delivery; do not mention implementation details.",
+      "metadata": {
+        "actor": {
+          "name": "chase",
+          "role": "user"
+        },
+        "channel": "direct",
+        "event_id": "turn_direct-20260605173811-c27c2a_user_message_received_chase_inbound",
+        "model": null,
+        "pair_id": "5aa4d8ab5a686a17c46b6a4a",
+        "provider": null,
+        "route": {
+          "delivery": "pending",
+          "event_id": "direct-20260605173811-c27c2a",
+          "runtime": "rust",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "direct-20260605173811-c27c2a"
+      },
+      "role": "user",
+      "session_id": "nexus_zap_chase_voice",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-05T17:38:17.017082477Z"
+    },
+    {
+      "content": "A2A_NEXUS_OK_ZAP I heard you clear.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_direct-20260605173811-c27c2a_agent_response_zap_outbound",
+        "model": null,
+        "pair_id": "5aa4d8ab5a686a17c46b6a4a",
+        "provider": null,
+        "route": {
+          "delivery": "api_session",
+          "event_id": "direct-20260605173811-c27c2a",
+          "runtime": "rust",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "direct-20260605173811-c27c2a"
+      },
+      "role": "assistant",
+      "session_id": "nexus_zap_chase_voice",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-05T17:38:19.437164821Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "nexus_zap_chase_voice",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_direct-20260605173811-c27c2a_agent_response_zap_outbound",
+    "user": "turn_direct-20260605173811-c27c2a_user_message_received_chase_inbound"
+  },
+  "summary": "User: zap, CommsOps full-message NEXUS proof. Reply with A2A_NEXUS_OK_ZAP and one short clause. This must prove session_only API-session delivery; do not mention implementation details.\n\nAssistant: A2A_NEXUS_OK_ZAP I heard you clear.",
+  "turn_id": "direct-20260605173811-c27c2a"
+}

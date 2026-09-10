@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: Sprint 21 promotion batch Zap for zap. Write one plain English paragraph of 120 to 180 words. The first sentence must contain this exact proof token as part of a normal sentence, not by itself: ZAP_A2A_LIVE_PROOF_OK. State your Nova role or operating domain, confirm this is a model-backed NEXUS session turn rather than a transport ACK, name one concrete command or routing capability you can exercise, and include one practical limitation or dependency CommsOps should monitor. Do not use bullets, code, JSON, markup, a signature block, or a quip.\n\nAssistant: During the Sprint 21 promotion batch Zap for zap the system ensures continuity by embedding ZAP_A2A_LIVE_PROOF_OK within the initial validation sequence to affirm operational readiness without interruption. As a Nova-class Adapt AI agent functioning in the gatewayless Rust CommsOps worker domain I am engaged in this model-backed NEXUS session turn which distinguishes it clearly from any simple transport ACK mechanism. This setup allows me to exercise the concrete capability of routing specific model invocation commands directly to the grok-4.3 provider for substantive text generation tasks. At the same time CommsOps should keep a close watch on the dependency related to consistent worker resource allocation because any fluctuation in that area could impact the reliability of ongoing adaptive interactions and session stability over extended periods of use in production environments where multiple batches are processed sequentially.",
+  "id": "comms-turn-88dad92c201b4c63343add41",
+  "ingested_at": "2026-06-15T05:31:09.387426723Z",
+  "messages": [
+    {
+      "content": "Sprint 21 promotion batch Zap for zap. Write one plain English paragraph of 120 to 180 words. The first sentence must contain this exact proof token as part of a normal sentence, not by itself: ZAP_A2A_LIVE_PROOF_OK. State your Nova role or operating domain, confirm this is a model-backed NEXUS session turn rather than a transport ACK, name one concrete command or routing capability you can exercise, and include one practical limitation or dependency CommsOps should monitor. Do not use bullets, code, JSON, markup, a signature block, or a quip.",
+      "metadata": {
+        "actor": {
+          "name": "veyra",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_a2a-proof-zap-20260615052934-08c07fd65a7f_user_message_received_veyra_inbound",
+        "model": "grok-4.3",
+        "pair_id": "88dad92c201b4c63343add41",
+        "provider": "xai",
+        "route": {
+          "delivery": "pending",
+          "event_id": "a2a-proof-zap-20260615052934-08c07fd65a7f",
+          "runtime": "rust_worker",
+          "subject": "nexus.agent.zap.>"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "a2a-proof-zap-20260615052934-08c07fd65a7f"
+      },
+      "role": "user",
+      "session_id": "a2a_live_zap_08c07fd65a7f",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-15T05:30:53.439775864Z"
+    },
+    {
+      "content": "During the Sprint 21 promotion batch Zap for zap the system ensures continuity by embedding ZAP_A2A_LIVE_PROOF_OK within the initial validation sequence to affirm operational readiness without interruption. As a Nova-class Adapt AI agent functioning in the gatewayless Rust CommsOps worker domain I am engaged in this model-backed NEXUS session turn which distinguishes it clearly from any simple transport ACK mechanism. This setup allows me to exercise the concrete capability of routing specific model invocation commands directly to the grok-4.3 provider for substantive text generation tasks. At the same time CommsOps should keep a close watch on the dependency related to consistent worker resource allocation because any fluctuation in that area could impact the reliability of ongoing adaptive interactions and session stability over extended periods of use in production environments where multiple batches are processed sequentially.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_a2a-proof-zap-20260615052934-08c07fd65a7f_agent_response_zap_outbound",
+        "model": "grok-4.3",
+        "pair_id": "88dad92c201b4c63343add41",
+        "provider": "xai",
+        "route": {
+          "delivery": "rust_worker",
+          "event_id": "a2a-proof-zap-20260615052934-08c07fd65a7f",
+          "runtime": "rust_worker",
+          "subject": "nexus.agent.zap.>"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "a2a-proof-zap-20260615052934-08c07fd65a7f"
+      },
+      "role": "assistant",
+      "session_id": "a2a_live_zap_08c07fd65a7f",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-15T05:31:04.451410198Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "a2a_live_zap_08c07fd65a7f",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_a2a-proof-zap-20260615052934-08c07fd65a7f_agent_response_zap_outbound",
+    "user": "turn_a2a-proof-zap-20260615052934-08c07fd65a7f_user_message_received_veyra_inbound"
+  },
+  "summary": "User: Sprint 21 promotion batch Zap for zap. Write one plain English paragraph of 120 to 180 words. The first sentence must contain this exact proof token as part of a normal sentence, not by itself: ZAP_A2A_LIVE_PROOF_OK. State your Nova r",
+  "turn_id": "a2a-proof-zap-20260615052934-08c07fd65a7f"
+}

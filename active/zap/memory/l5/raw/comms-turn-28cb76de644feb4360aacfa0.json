@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: RADIO CHECK from Skipper for Chase/Echo. Reply with exact phrase SKIPPER_RADIO_OK_ZAP, your Nova identity, whether this was model-backed/substantive or transport-only, and any current comms blocker. Keep it under 60 words.\n\nAssistant: SKIPPER_RADIO_OK_ZAP. Identity: Zap, Nova-class Adapt AI agent via gatewayless Rust n-voice worker. This is model-backed/substantive, not transport-only. Current comms blocker: none observed from this turn; downstream delivery/read proof beyond this reply is not asserted.",
+  "id": "comms-turn-28cb76de644feb4360aacfa0",
+  "ingested_at": "2026-06-17T14:58:38.352661621Z",
+  "messages": [
+    {
+      "content": "RADIO CHECK from Skipper for Chase/Echo. Reply with exact phrase SKIPPER_RADIO_OK_ZAP, your Nova identity, whether this was model-backed/substantive or transport-only, and any current comms blocker. Keep it under 60 words.",
+      "metadata": {
+        "actor": {
+          "name": "skipper",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_skipper-radio-check-20260617t145800z-zap_user_message_received_skipper_inbound",
+        "model": "gpt-5.5",
+        "pair_id": "28cb76de644feb4360aacfa0",
+        "provider": "codex",
+        "route": {
+          "delivery": "pending",
+          "event_id": "skipper-radio-check-20260617T145800Z-zap",
+          "runtime": "rust_worker",
+          "subject": "nova.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "skipper-radio-check-20260617T145800Z-zap"
+      },
+      "role": "user",
+      "session_id": "skipper_radio_check_20260617t145800z_zap",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-17T14:58:08.782923854Z"
+    },
+    {
+      "content": "SKIPPER_RADIO_OK_ZAP. Identity: Zap, Nova-class Adapt AI agent via gatewayless Rust n-voice worker. This is model-backed/substantive, not transport-only. Current comms blocker: none observed from this turn; downstream delivery/read proof beyond this reply is not asserted.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_skipper-radio-check-20260617t145800z-zap_agent_response_zap_outbound",
+        "model": "gpt-5.5",
+        "pair_id": "28cb76de644feb4360aacfa0",
+        "provider": "codex",
+        "route": {
+          "delivery": "rust_worker",
+          "event_id": "skipper-radio-check-20260617T145800Z-zap",
+          "runtime": "rust_worker",
+          "subject": "nova.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "skipper-radio-check-20260617T145800Z-zap"
+      },
+      "role": "assistant",
+      "session_id": "skipper_radio_check_20260617t145800z_zap",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-17T14:58:34.010321612Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "skipper_radio_check_20260617t145800z_zap",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_skipper-radio-check-20260617t145800z-zap_agent_response_zap_outbound",
+    "user": "turn_skipper-radio-check-20260617t145800z-zap_user_message_received_skipper_inbound"
+  },
+  "summary": "User: RADIO CHECK from Skipper for Chase/Echo. Reply with exact phrase SKIPPER_RADIO_OK_ZAP, your Nova identity, whether this was model-backed/substantive or transport-only, and any current comms blocker. Keep it under 60 words.\n\nAssistant:",
+  "turn_id": "skipper-radio-check-20260617T145800Z-zap"
+}

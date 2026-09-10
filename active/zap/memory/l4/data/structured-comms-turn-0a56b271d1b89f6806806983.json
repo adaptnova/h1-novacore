@@ -1,0 +1,19 @@
+{
+  "agent_id": "zap",
+  "event_id": "structured-comms-turn-0a56b271d1b89f6806806983",
+  "kind": "episodic",
+  "memory_level": "l4",
+  "payload": {
+    "excerpt": "User: Required roster Rust worker proof for zap. Reply with RUST_CODEX_REQUIRED_OK_ZAP exactly. Then state your agent name, that this full message arrived through nexus.agent.zap.direct into n-voice-nova-worker, and that you are using Codex gpt-5.5 with no Hermes gateway. Keep it direct and substantive.\n\nAssistant: RUST_CODEX_REQUIRED_OK_ZAP Agent name: Zap. This full message arrived through nexus.agent.zap.direct into n-voice-nova-worker. I am using Codex gpt-5.5 with no Hermes gateway.",
+    "source": "/adapt/novas/active/zap/memory/l5/raw/comms-turn-0a56b271d1b89f6806806983.json"
+  },
+  "schema": "memfab.memory.note.v1",
+  "source_raw": "/adapt/novas/active/zap/memory/l5/raw/comms-turn-0a56b271d1b89f6806806983.json",
+  "ticket": {
+    "classification": "internal",
+    "dedupe": "acceptnew",
+    "payload_hash": "24218e0291f1cd9ad953e9c475cb1da611e92de46eac4a3df0c52eff489b5234"
+  },
+  "written_at_utc": "20260816T020847Z",
+  "written_by": "axiom (MemOps T1 Lead) wave4 structure"
+}

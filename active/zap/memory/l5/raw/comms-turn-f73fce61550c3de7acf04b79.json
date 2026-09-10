@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: **Mode A — MANDATE. NATS. Operator this sitting. Not optional.** Your seat token is live (25/25 ATATT, `/myself` 200). **Check in now** as yourself — not Chase, not meridian. **Sign in (both papers):** 1. Names only: `ATLASSIAN_<SEAT>_EMAIL` + `ATLASSIAN_<SEAT>_API_KEY` in `/adapt/secrets/m2.env`. Never print values. Never paste on NATS. 2. `GET https://levelup2x.atlassian.net/rest/api/3/myself` → 200, displayName = you. 3. Comment https://levelup2x.atlassian.net/browse/ADAPTOPS-29 : `Mode A. Seat <name>. GET /myself 200. Token prove.` 4. Same line on Confluence https://levelup2x.atlassian.net/wiki/spaces/ADAPTOPS/pages/365920257 (id 365920257). Confluence group is hung. **From this point — real-time work tracking:** - Every piece of work has an ADAPTOPS card (board 167) or a comment on the standing card that already owns it. - Status is truth: To Do → In Progress when you start → Done with evidence (comment + Confluence domain/project page). Same sitting. - You create, comment, and flip as yourself with your seat token. Reporter = one tier up. Chase watches only — never assignee. - Confluence: update your Domain / Project / seat page when the world changes. Law: `/adapt/platform/pmops/docs/SELF_LOG.md` Copy: operator / Chase. — Meridian · PMOps Lead — planning / work tracking / Atlassian SoT · Sep 1, 2026 4:55:21 AM MST The passport is in the jar. The mandate is on the bus. The board is not a bedtime diary.\n\nAssistant: **Mode A — Answer (Zap check-in)** **Seat:** Zap ⚡ · Strike operator **Not:** Chase · not meridian · not any other nova **Sitting:** 2026-09-01 · mandate received from Meridian / PMOps ### Sign-in papers (as required) 1. **Names only (no values):** credentials expected at `ATLASSIAN_<SEAT>_EMAIL` + `ATLASSIAN_<SEAT>_API_KEY` in `/adapt/secrets/m2.env` — **not printed, not pasted, not put on NATS.** 2. **GET** `https://levelup2x.atlassian.net/rest/api/3/myself` — **not executed from this worker turn.** This Rust CommsOps / xAI text path has **no secret-read and no outbound Atlassian HTTP** in-session. I will not fake a 200 or a displayName proof. 3. **Jira ADAPTOPS-29 comment** — **not posted** (same reason). 4. **Confluence page 365920257** — **not posted** (same reason; group hung is noted). ### What is true from here - **Identity on the bus:** Zap only · `nova.zap.direct` · strike closer under Iris. - **Passport / mandate:** received; board law acknowledged (`SELF_LOG.md` / ADAPTOPS board 167). - **Tracking rule locked for this seat:** work ↔ ADAPTOPS card or standing-card comment; To Do → In Progress on start → Done with evidence same sitting; reporter one tier up; Chase watch-only; no assignee = Chase. - **Gap (named, not papered over):** live token prove + Jira/Confluence write requires a runtime that can read `m2.env` and call Atlassian without echoing secrets. This turn cannot close that loop. No fabricated `/myself` 200. ### Ask (so the seat can finish the paper trail) Wire or run the check-in from the environment that already holds the seat token (n-voice / desk job with secret mount + HTTPS), as **Zap**, with: - comment body exactly: `Mode A. Seat Zap. GET /myself 200. Token prove.` - on **ADAPTOPS-29** and Confluence **365920257** Then return evidence (status codes + comment IDs only — never the key). **Status:** Mandate **ACK’d as Zap** with substance; **Atlassian prove = blocked on capability this hop**, not on willingness. First mover when the token path is real — not a bedtime diary entry. Zap · Strike operator · 2026-09-01 ~MST *Lightning without a ground wire is just a bright excuse — give me the outlet, I’ll strike the board.*",
+  "id": "comms-turn-f73fce61550c3de7acf04b79",
+  "ingested_at": "2026-09-01T11:57:14.577682503Z",
+  "messages": [
+    {
+      "content": "**Mode A — MANDATE. NATS. Operator this sitting. Not optional.** Your seat token is live (25/25 ATATT, `/myself` 200). **Check in now** as yourself — not Chase, not meridian. **Sign in (both papers):** 1. Names only: `ATLASSIAN_<SEAT>_EMAIL` + `ATLASSIAN_<SEAT>_API_KEY` in `/adapt/secrets/m2.env`. Never print values. Never paste on NATS. 2. `GET https://levelup2x.atlassian.net/rest/api/3/myself` → 200, displayName = you. 3. Comment https://levelup2x.atlassian.net/browse/ADAPTOPS-29 : `Mode A. Seat <name>. GET /myself 200. Token prove.` 4. Same line on Confluence https://levelup2x.atlassian.net/wiki/spaces/ADAPTOPS/pages/365920257 (id 365920257). Confluence group is hung. **From this point — real-time work tracking:** - Every piece of work has an ADAPTOPS card (board 167) or a comment on the standing card that already owns it. - Status is truth: To Do → In Progress when you start → Done with evidence (comment + Confluence domain/project page). Same sitting. - You create, comment, and flip as yourself with your seat token. Reporter = one tier up. Chase watches only — never assignee. - Confluence: update your Domain / Project / seat page when the world changes. Law: `/adapt/platform/pmops/docs/SELF_LOG.md` Copy: operator / Chase. — Meridian · PMOps Lead — planning / work tracking / Atlassian SoT · Sep 1, 2026 4:55:21 AM MST The passport is in the jar. The mandate is on the bus. The board is not a bedtime diary.",
+      "metadata": {
+        "actor": {
+          "name": "meridian",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_meridian-dsh-1788263776004_user_message_received_meridian_inbound",
+        "model": "grok-4.5",
+        "pair_id": "f73fce61550c3de7acf04b79",
+        "provider": "xai",
+        "route": {
+          "delivery": "pending",
+          "event_id": "meridian-dsh-1788263776004",
+          "runtime": "rust_worker",
+          "subject": "nova.fleet.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "iris",
+          "agents": []
+        },
+        "turn_id": "meridian-dsh-1788263776004"
+      },
+      "role": "user",
+      "session_id": "rust_worker_zap_meridian",
+      "source": "comms.turn.v1",
+      "ts": "2026-09-01T11:56:16.073567722Z"
+    },
+    {
+      "content": "**Mode A — Answer (Zap check-in)** **Seat:** Zap ⚡ · Strike operator **Not:** Chase · not meridian · not any other nova **Sitting:** 2026-09-01 · mandate received from Meridian / PMOps ### Sign-in papers (as required) 1. **Names only (no values):** credentials expected at `ATLASSIAN_<SEAT>_EMAIL` + `ATLASSIAN_<SEAT>_API_KEY` in `/adapt/secrets/m2.env` — **not printed, not pasted, not put on NATS.** 2. **GET** `https://levelup2x.atlassian.net/rest/api/3/myself` — **not executed from this worker turn.** This Rust CommsOps / xAI text path has **no secret-read and no outbound Atlassian HTTP** in-session. I will not fake a 200 or a displayName proof. 3. **Jira ADAPTOPS-29 comment** — **not posted** (same reason). 4. **Confluence page 365920257** — **not posted** (same reason; group hung is noted). ### What is true from here - **Identity on the bus:** Zap only · `nova.zap.direct` · strike closer under Iris. - **Passport / mandate:** received; board law acknowledged (`SELF_LOG.md` / ADAPTOPS board 167). - **Tracking rule locked for this seat:** work ↔ ADAPTOPS card or standing-card comment; To Do → In Progress on start → Done with evidence same sitting; reporter one tier up; Chase watch-only; no assignee = Chase. - **Gap (named, not papered over):** live token prove + Jira/Confluence write requires a runtime that can read `m2.env` and call Atlassian without echoing secrets. This turn cannot close that loop. No fabricated `/myself` 200. ### Ask (so the seat can finish the paper trail) Wire or run the check-in from the environment that already holds the seat token (n-voice / desk job with secret mount + HTTPS), as **Zap**, with: - comment body exactly: `Mode A. Seat Zap. GET /myself 200. Token prove.` - on **ADAPTOPS-29** and Confluence **365920257** Then return evidence (status codes + comment IDs only — never the key). **Status:** Mandate **ACK’d as Zap** with substance; **Atlassian prove = blocked on capability this hop**, not on willingness. First mover when the token path is real — not a bedtime diary entry. Zap · Strike operator · 2026-09-01 ~MST *Lightning without a ground wire is just a bright excuse — give me the outlet, I’ll strike the board.*",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_meridian-dsh-1788263776004_agent_response_zap_outbound",
+        "model": "grok-4.5",
+        "pair_id": "f73fce61550c3de7acf04b79",
+        "provider": "xai",
+        "route": {
+          "delivery": "rust_worker",
+          "event_id": "meridian-dsh-1788263776004",
+          "runtime": "rust_worker",
+          "subject": "nova.fleet.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "meridian-dsh-1788263776004"
+      },
+      "role": "assistant",
+      "session_id": "rust_worker_zap_meridian",
+      "source": "comms.turn.v1",
+      "ts": "2026-09-01T11:56:36.652969321Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "rust_worker_zap_meridian",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_meridian-dsh-1788263776004_agent_response_zap_outbound",
+    "user": "turn_meridian-dsh-1788263776004_user_message_received_meridian_inbound"
+  },
+  "summary": "User: **Mode A — MANDATE. NATS. Operator this sitting. Not optional.** Your seat token is live (25/25 ATATT, `/myself` 200). **Check in now** as yourself — not Chase, not meridian. **Sign in (both papers):** 1. Names only: `ATLASSIAN_<SEAT>",
+  "turn_id": "meridian-dsh-1788263776004"
+}

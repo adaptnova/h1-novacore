@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: Zap, CommsOps A2A repair proof. Reply with exactly: ZAP_A2A_CLEAN_OK\n\nAssistant: ZAP_A2A_CLEAN_OK",
+  "id": "comms-turn-cdab02b0ad1fc8b63bc9f2b0",
+  "ingested_at": "2026-06-09T00:14:18.824730289Z",
+  "messages": [
+    {
+      "content": "Zap, CommsOps A2A repair proof. Reply with exactly: ZAP_A2A_CLEAN_OK",
+      "metadata": {
+        "actor": {
+          "name": "veyra",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_veyra-20260609t001430z-zap-a2a-clean-proof_user_message_received_veyra_inbound",
+        "model": null,
+        "pair_id": "cdab02b0ad1fc8b63bc9f2b0",
+        "provider": null,
+        "route": {
+          "delivery": "pending",
+          "event_id": "veyra-20260609T001430Z-zap-a2a-clean-proof",
+          "runtime": "rust",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "veyra-20260609T001430Z-zap-a2a-clean-proof"
+      },
+      "role": "user",
+      "session_id": "nexus_zap_veyra",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-09T00:14:10.981706355Z"
+    },
+    {
+      "content": "ZAP_A2A_CLEAN_OK",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_veyra-20260609t001430z-zap-a2a-clean-proof_agent_response_zap_outbound",
+        "model": null,
+        "pair_id": "cdab02b0ad1fc8b63bc9f2b0",
+        "provider": null,
+        "route": {
+          "delivery": "api_session",
+          "event_id": "veyra-20260609T001430Z-zap-a2a-clean-proof",
+          "runtime": "rust",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "veyra-20260609T001430Z-zap-a2a-clean-proof"
+      },
+      "role": "assistant",
+      "session_id": "nexus_zap_veyra",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-09T00:14:15.264115582Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "nexus_zap_veyra",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_veyra-20260609t001430z-zap-a2a-clean-proof_agent_response_zap_outbound",
+    "user": "turn_veyra-20260609t001430z-zap-a2a-clean-proof_user_message_received_veyra_inbound"
+  },
+  "summary": "User: Zap, CommsOps A2A repair proof. Reply with exactly: ZAP_A2A_CLEAN_OK\n\nAssistant: ZAP_A2A_CLEAN_OK",
+  "turn_id": "veyra-20260609T001430Z-zap-a2a-clean-proof"
+}

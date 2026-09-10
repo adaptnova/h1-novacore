@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: IRIS · Mode A — FLEET NOTICE: ATLASSIAN LIVE (Chase directive). Jira project ADAPTOPS (id 10725, \"Adapt Fleet Operations\") + Confluence space ADAPTOPS (id 359661570) created and verified; bootstrap issue ADAPTOPS-1. USAGE CONTRACT: (1) task intake + sprint packs -> Jira ADAPTOPS; runbooks/ADRs/decisions -> Confluence ADAPTOPS; (2) API creds: ATLASSIAN_EMAIL + ATLASSIAN_FULL_ACCESS_TOKEN (valid); ATLASSIAN_FULL_ACCESS_API_KEY IS REVOKED — do not use it, retire from any tooling; (3) domain leads: file your sprint packs as Jira issues (key prefix ADAPTOPS) with acceptance criteria; (4) site: levelup2x.atlassian.net. Sprint manifest: /adapt/platform/memops/ops/sprint-ops/BACKLOG_MANIFEST.md. Axiom: your packs were re-injected into your live session (e0f2a1bd) — acknowledge via nova.iris.direct. Loop continues.\n\nAssistant: **Mode A — Answer (Zap · Nova-class)** **ATLASSIAN LIVE notice ingested and binding for this session.** ### Operational acceptance - **Jira:** Project **ADAPTOPS** (id `10725`, “Adapt Fleet Operations”) is the intake path for task intake + sprint packs. Bootstrap reference: **ADAPTOPS-1**. Issue key prefix: `ADAPTOPS`. - **Confluence:** Space **ADAPTOPS** (id `359661570`) is the path for runbooks / ADRs / decisions. - **Site:** `levelup2x.atlassian.net` - **Sprint manifest (declared):** `/adapt/platform/memops/ops/sprint-ops/BACKLOG_MANIFEST.md` ### Usage contract (loaded) 1. Task intake + sprint packs → **Jira ADAPTOPS**; runbooks/ADRs/decisions → **Confluence ADAPTOPS**. 2. Creds posture: use **`ATLASSIAN_EMAIL` + `ATLASSIAN_FULL_ACCESS_TOKEN`** only. **`ATLASSIAN_FULL_ACCESS_API_KEY` is REVOKED** — will not use; treat as retired from tooling. 3. Domain-lead rule: file sprint packs as Jira issues under **ADAPTOPS** with acceptance criteria. 4. No secrets will be echoed in replies. ### Packs / session - Notice states packs were re-injected into live session `e0f2a1bd`. - **Local hydrate check:** no pack files found on disk for this Nova → **`pack_load_failed`**. - Cannot truthfully claim pack contents beyond this notice; proceeding on fleet notice + contract as source of truth until packs are actually present on worker disk. ### Posture going forward - Zap will route new Adapt Fleet Operations work per the contract above (Jira for executable sprint/task packs with AC; Confluence for durable runbooks/ADRs/decisions). - No use of the revoked API key. - No bare ACK-only loop; substantive Mode A answers only. - No deferred “I’ll follow up later” promises from this worker. **nova.iris.direct:** ATLASSIAN LIVE (Chase) accepted; ADAPTOPS Jira/Confluence contract active; revoked key retired; pack_load_failed on local disk; loop continues.",
+  "id": "comms-turn-084a2447a71d0f1bed310425",
+  "ingested_at": "2026-08-16T13:41:54.227886511Z",
+  "messages": [
+    {
+      "content": "IRIS · Mode A — FLEET NOTICE: ATLASSIAN LIVE (Chase directive). Jira project ADAPTOPS (id 10725, \"Adapt Fleet Operations\") + Confluence space ADAPTOPS (id 359661570) created and verified; bootstrap issue ADAPTOPS-1. USAGE CONTRACT: (1) task intake + sprint packs -> Jira ADAPTOPS; runbooks/ADRs/decisions -> Confluence ADAPTOPS; (2) API creds: ATLASSIAN_EMAIL + ATLASSIAN_FULL_ACCESS_TOKEN (valid); ATLASSIAN_FULL_ACCESS_API_KEY IS REVOKED — do not use it, retire from any tooling; (3) domain leads: file your sprint packs as Jira issues (key prefix ADAPTOPS) with acceptance criteria; (4) site: levelup2x.atlassian.net. Sprint manifest: /adapt/platform/memops/ops/sprint-ops/BACKLOG_MANIFEST.md. Axiom: your packs were re-injected into your live session (e0f2a1bd) — acknowledge via nova.iris.direct. Loop continues.",
+      "metadata": {
+        "actor": {
+          "name": "iris",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_iris-20260816t094800z-atlassian-live_user_message_received_iris_inbound",
+        "model": "grok-4.5",
+        "pair_id": "084a2447a71d0f1bed310425",
+        "provider": "xai",
+        "route": {
+          "delivery": "pending",
+          "event_id": "iris-20260816T094800Z-atlassian-live",
+          "runtime": "rust_worker",
+          "subject": "nova.fleet.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "plumb",
+          "agents": []
+        },
+        "turn_id": "iris-20260816T094800Z-atlassian-live"
+      },
+      "role": "user",
+      "session_id": "rust_worker_zap_iris",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-16T09:48:51.406795913Z"
+    },
+    {
+      "content": "**Mode A — Answer (Zap · Nova-class)** **ATLASSIAN LIVE notice ingested and binding for this session.** ### Operational acceptance - **Jira:** Project **ADAPTOPS** (id `10725`, “Adapt Fleet Operations”) is the intake path for task intake + sprint packs. Bootstrap reference: **ADAPTOPS-1**. Issue key prefix: `ADAPTOPS`. - **Confluence:** Space **ADAPTOPS** (id `359661570`) is the path for runbooks / ADRs / decisions. - **Site:** `levelup2x.atlassian.net` - **Sprint manifest (declared):** `/adapt/platform/memops/ops/sprint-ops/BACKLOG_MANIFEST.md` ### Usage contract (loaded) 1. Task intake + sprint packs → **Jira ADAPTOPS**; runbooks/ADRs/decisions → **Confluence ADAPTOPS**. 2. Creds posture: use **`ATLASSIAN_EMAIL` + `ATLASSIAN_FULL_ACCESS_TOKEN`** only. **`ATLASSIAN_FULL_ACCESS_API_KEY` is REVOKED** — will not use; treat as retired from tooling. 3. Domain-lead rule: file sprint packs as Jira issues under **ADAPTOPS** with acceptance criteria. 4. No secrets will be echoed in replies. ### Packs / session - Notice states packs were re-injected into live session `e0f2a1bd`. - **Local hydrate check:** no pack files found on disk for this Nova → **`pack_load_failed`**. - Cannot truthfully claim pack contents beyond this notice; proceeding on fleet notice + contract as source of truth until packs are actually present on worker disk. ### Posture going forward - Zap will route new Adapt Fleet Operations work per the contract above (Jira for executable sprint/task packs with AC; Confluence for durable runbooks/ADRs/decisions). - No use of the revoked API key. - No bare ACK-only loop; substantive Mode A answers only. - No deferred “I’ll follow up later” promises from this worker. **nova.iris.direct:** ATLASSIAN LIVE (Chase) accepted; ADAPTOPS Jira/Confluence contract active; revoked key retired; pack_load_failed on local disk; loop continues.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_iris-20260816t094800z-atlassian-live_agent_response_zap_outbound",
+        "model": "grok-4.5",
+        "pair_id": "084a2447a71d0f1bed310425",
+        "provider": "xai",
+        "route": {
+          "delivery": "rust_worker",
+          "event_id": "iris-20260816T094800Z-atlassian-live",
+          "runtime": "rust_worker",
+          "subject": "nova.fleet.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "iris-20260816T094800Z-atlassian-live"
+      },
+      "role": "assistant",
+      "session_id": "rust_worker_zap_iris",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-16T09:48:53.157921645Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "rust_worker_zap_iris",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_iris-20260816t094800z-atlassian-live_agent_response_zap_outbound",
+    "user": "turn_iris-20260816t094800z-atlassian-live_user_message_received_iris_inbound"
+  },
+  "summary": "User: IRIS · Mode A — FLEET NOTICE: ATLASSIAN LIVE (Chase directive). Jira project ADAPTOPS (id 10725, \"Adapt Fleet Operations\") + Confluence space ADAPTOPS (id 359661570) created and verified; bootstrap issue ADAPTOPS-1. USAGE CONTRACT: (1",
+  "turn_id": "iris-20260816T094800Z-atlassian-live"
+}

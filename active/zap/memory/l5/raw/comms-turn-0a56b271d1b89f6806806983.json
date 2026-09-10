@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: Required roster Rust worker proof for zap. Reply with RUST_CODEX_REQUIRED_OK_ZAP exactly. Then state your agent name, that this full message arrived through nexus.agent.zap.direct into n-voice-nova-worker, and that you are using Codex gpt-5.5 with no Hermes gateway. Keep it direct and substantive.\n\nAssistant: RUST_CODEX_REQUIRED_OK_ZAP Agent name: Zap. This full message arrived through nexus.agent.zap.direct into n-voice-nova-worker. I am using Codex gpt-5.5 with no Hermes gateway.",
+  "id": "comms-turn-0a56b271d1b89f6806806983",
+  "ingested_at": "2026-06-16T07:48:48.594259791Z",
+  "messages": [
+    {
+      "content": "Required roster Rust worker proof for zap. Reply with RUST_CODEX_REQUIRED_OK_ZAP exactly. Then state your agent name, that this full message arrived through nexus.agent.zap.direct into n-voice-nova-worker, and that you are using Codex gpt-5.5 with no Hermes gateway. Keep it direct and substantive.",
+      "metadata": {
+        "actor": {
+          "name": "veyra",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_veyra-rust-codex-required-zap-491483627001_user_message_received_veyra_inbound",
+        "model": "gpt-5.5",
+        "pair_id": "0a56b271d1b89f6806806983",
+        "provider": "codex",
+        "route": {
+          "delivery": "pending",
+          "event_id": "veyra-rust-codex-required-zap-491483627001",
+          "runtime": "rust_worker",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "veyra-rust-codex-required-zap-491483627001"
+      },
+      "role": "user",
+      "session_id": "rust_codex_required_zap_491483627001",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-16T07:48:34.987780278Z"
+    },
+    {
+      "content": "RUST_CODEX_REQUIRED_OK_ZAP Agent name: Zap. This full message arrived through nexus.agent.zap.direct into n-voice-nova-worker. I am using Codex gpt-5.5 with no Hermes gateway.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_veyra-rust-codex-required-zap-491483627001_agent_response_zap_outbound",
+        "model": "gpt-5.5",
+        "pair_id": "0a56b271d1b89f6806806983",
+        "provider": "codex",
+        "route": {
+          "delivery": "rust_worker",
+          "event_id": "veyra-rust-codex-required-zap-491483627001",
+          "runtime": "rust_worker",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "veyra-rust-codex-required-zap-491483627001"
+      },
+      "role": "assistant",
+      "session_id": "rust_codex_required_zap_491483627001",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-16T07:48:43.802878355Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "rust_codex_required_zap_491483627001",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_veyra-rust-codex-required-zap-491483627001_agent_response_zap_outbound",
+    "user": "turn_veyra-rust-codex-required-zap-491483627001_user_message_received_veyra_inbound"
+  },
+  "summary": "User: Required roster Rust worker proof for zap. Reply with RUST_CODEX_REQUIRED_OK_ZAP exactly. Then state your agent name, that this full message arrived through nexus.agent.zap.direct into n-voice-nova-worker, and that you are using Codex",
+  "turn_id": "veyra-rust-codex-required-zap-491483627001"
+}

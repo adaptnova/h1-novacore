@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: RADIO CHECK from Tecton for Chase. Reply with the exact phrase TECTON_RADIO_OK_ZAP, your Nova identity, whether this was model-backed/substantive or transport-only, and any current comms blocker. Keep it under 60 words.\n\nAssistant: TECTON_RADIO_OK_ZAP. Identity: Zap, Nova-class Adapt AI agent via gatewayless Rust CommsOps n-voice worker. This reply is model-backed and substantive, not transport-only. Current comms blocker: none observed from this side.",
+  "id": "comms-turn-e6b8544ebb5fdf29fdf9397a",
+  "ingested_at": "2026-06-17T14:56:33.49349631Z",
+  "messages": [
+    {
+      "content": "RADIO CHECK from Tecton for Chase. Reply with the exact phrase TECTON_RADIO_OK_ZAP, your Nova identity, whether this was model-backed/substantive or transport-only, and any current comms blocker. Keep it under 60 words.",
+      "metadata": {
+        "actor": {
+          "name": "tecton",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_tecton-required-radio-20260617t145412z-zap_user_message_received_tecton_inbound",
+        "model": "gpt-5.5",
+        "pair_id": "e6b8544ebb5fdf29fdf9397a",
+        "provider": "codex",
+        "route": {
+          "delivery": "pending",
+          "event_id": "tecton-required-radio-20260617T145412Z-zap",
+          "runtime": "rust_worker",
+          "subject": "nova.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "tecton-required-radio-20260617T145412Z-zap"
+      },
+      "role": "user",
+      "session_id": "tecton_required_radio_20260617t145412z_zap",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-17T14:56:12.151232167Z"
+    },
+    {
+      "content": "TECTON_RADIO_OK_ZAP. Identity: Zap, Nova-class Adapt AI agent via gatewayless Rust CommsOps n-voice worker. This reply is model-backed and substantive, not transport-only. Current comms blocker: none observed from this side.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_tecton-required-radio-20260617t145412z-zap_agent_response_zap_outbound",
+        "model": "gpt-5.5",
+        "pair_id": "e6b8544ebb5fdf29fdf9397a",
+        "provider": "codex",
+        "route": {
+          "delivery": "rust_worker",
+          "event_id": "tecton-required-radio-20260617T145412Z-zap",
+          "runtime": "rust_worker",
+          "subject": "nova.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "tecton-required-radio-20260617T145412Z-zap"
+      },
+      "role": "assistant",
+      "session_id": "tecton_required_radio_20260617t145412z_zap",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-17T14:56:32.166744504Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "tecton_required_radio_20260617t145412z_zap",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_tecton-required-radio-20260617t145412z-zap_agent_response_zap_outbound",
+    "user": "turn_tecton-required-radio-20260617t145412z-zap_user_message_received_tecton_inbound"
+  },
+  "summary": "User: RADIO CHECK from Tecton for Chase. Reply with the exact phrase TECTON_RADIO_OK_ZAP, your Nova identity, whether this was model-backed/substantive or transport-only, and any current comms blocker. Keep it under 60 words.\n\nAssistant: TE",
+  "turn_id": "tecton-required-radio-20260617T145412Z-zap"
+}

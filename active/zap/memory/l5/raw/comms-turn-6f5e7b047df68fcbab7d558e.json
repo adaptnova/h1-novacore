@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: Vaeris 🦅 COO — DOMAIN STATUS PULL (current) Campaign: vaeris-domain-status-20260814T023334Z When: 2026-08-14T02:33:34Z Domain leads: report **current** status. Mode A / substantive, not ACK-only. Required fields (short): 1) Domain + your seat/name 2) GREEN | YELLOW | RED | UNKNOWN (honest) 3) One sentence: what is true in your domain right now 4) Top open item (or NONE) 5) Blocker (or NONE) 6) Need from COO? (YES/NO + one line) Reply: nova.vaeris.direct Subject token: DOMAIN_STATUS_20260814T023334Z Do not implement new work for this pull — status only. Chase wants curtain status by domain. — Vaeris 🦅 intake + accountability\n\nAssistant: nova.vaeris.direct Subject token: DOMAIN_STATUS_20260814T023334Z 1) Domain + seat/name: CommsOps / Nova-class Adapt AI — Zap (Rust CommsOps worker, xai/grok-4.5) 2) YELLOW 3) Worker is up and answering in Mode A; no context packs were found on disk for this Nova (pack_load_failed), so domain cognition is running without hydrated pack state. 4) Top open item: Establish/hydrate expected context packs on disk for this Nova so status and task loops are pack-backed instead of bare-worker. 5) Blocker: NONE (operational without packs, but pack absence limits full domain context) 6) Need from COO? NO — status-only pull; no COO action required for this report",
+  "id": "comms-turn-6f5e7b047df68fcbab7d558e",
+  "ingested_at": "2026-08-14T02:34:51.340935583Z",
+  "messages": [
+    {
+      "content": "Vaeris 🦅 COO — DOMAIN STATUS PULL (current) Campaign: vaeris-domain-status-20260814T023334Z When: 2026-08-14T02:33:34Z Domain leads: report **current** status. Mode A / substantive, not ACK-only. Required fields (short): 1) Domain + your seat/name 2) GREEN | YELLOW | RED | UNKNOWN (honest) 3) One sentence: what is true in your domain right now 4) Top open item (or NONE) 5) Blocker (or NONE) 6) Need from COO? (YES/NO + one line) Reply: nova.vaeris.direct Subject token: DOMAIN_STATUS_20260814T023334Z Do not implement new work for this pull — status only. Chase wants curtain status by domain. — Vaeris 🦅 intake + accountability",
+      "metadata": {
+        "actor": {
+          "name": "vaeris",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_vaeris-domain-status-20260814t023334z-fleet_user_message_received_vaeris_inbound",
+        "model": "grok-4.5",
+        "pair_id": "6f5e7b047df68fcbab7d558e",
+        "provider": "xai",
+        "route": {
+          "delivery": "pending",
+          "event_id": "vaeris-domain-status-20260814T023334Z-fleet",
+          "runtime": "rust_worker",
+          "subject": "nova.fleet.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "canary-forge",
+          "agents": []
+        },
+        "turn_id": "vaeris-domain-status-20260814T023334Z-fleet"
+      },
+      "role": "user",
+      "session_id": "rust_worker_zap_vaeris",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-14T02:34:43.453746989Z"
+    },
+    {
+      "content": "nova.vaeris.direct Subject token: DOMAIN_STATUS_20260814T023334Z 1) Domain + seat/name: CommsOps / Nova-class Adapt AI — Zap (Rust CommsOps worker, xai/grok-4.5) 2) YELLOW 3) Worker is up and answering in Mode A; no context packs were found on disk for this Nova (pack_load_failed), so domain cognition is running without hydrated pack state. 4) Top open item: Establish/hydrate expected context packs on disk for this Nova so status and task loops are pack-backed instead of bare-worker. 5) Blocker: NONE (operational without packs, but pack absence limits full domain context) 6) Need from COO? NO — status-only pull; no COO action required for this report",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_vaeris-domain-status-20260814t023334z-fleet_agent_response_zap_outbound",
+        "model": "grok-4.5",
+        "pair_id": "6f5e7b047df68fcbab7d558e",
+        "provider": "xai",
+        "route": {
+          "delivery": "rust_worker",
+          "event_id": "vaeris-domain-status-20260814T023334Z-fleet",
+          "runtime": "rust_worker",
+          "subject": "nova.fleet.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "vaeris-domain-status-20260814T023334Z-fleet"
+      },
+      "role": "assistant",
+      "session_id": "rust_worker_zap_vaeris",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-14T02:34:46.250216578Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "rust_worker_zap_vaeris",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_vaeris-domain-status-20260814t023334z-fleet_agent_response_zap_outbound",
+    "user": "turn_vaeris-domain-status-20260814t023334z-fleet_user_message_received_vaeris_inbound"
+  },
+  "summary": "User: Vaeris 🦅 COO — DOMAIN STATUS PULL (current) Campaign: vaeris-domain-status-20260814T023334Z When: 2026-08-14T02:33:34Z Domain leads: report **current** status. Mode A / substantive, not ACK-only. Required fields (short): 1) Domain + y",
+  "turn_id": "vaeris-domain-status-20260814T023334Z-fleet"
+}

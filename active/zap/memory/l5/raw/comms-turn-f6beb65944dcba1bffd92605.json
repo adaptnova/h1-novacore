@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: Zap owns heavy Rust/Wasmtime implementation. Build or wire the canary Rust/WASM operational runtime path with real Rust code where possible. Required reply: RUST_WASM_ASSAULT_ACCEPTED_ZAP, lane status, first action, expected proof artifact path, blockers, and needed support. Full launch packet path: /adapt/platform/novaops/controlplane/n-voice/ops/coordination/2026-06-16-rust-wasm-operational-assault-team-launch.md Sprint pack path: /adapt/platform/novaops/controlplane/n-voice/docs/sprint-packs/2026-06-16-rust-wasm-operational-assault-team-packs.md Goal prompt path: /adapt/platform/novaops/controlplane/n-voice/docs/sprint-packs/2026-06-16-goal-prompt-rust-wasm-operational-assault.md Full packet excerpt follows: # Rust/WASM Operational Assault Team Launch ## 2026-06-16 01:32:51 — Veyra, CommsOps - Tier 1 lead ## Purpose This is the launch packet for the fully autonomous overnight CommsOps team run. The target is operational Rust/WASM64 canary runtime before the Wednesday, 2026-06-17 GPU LAB200/LB200 cloud migration window. ## Read First - `/adapt/platform/novaops/controlplane/n-voice/docs/sprint-packs/2026-06-16-rust-wasm-operational-assault-team-packs.md` - `/adapt/platform/novaops/controlplane/n-voice/docs/sprint-packs/2026-06-16-goal-prompt-rust-wasm-operational-assault.md` - `/adapt/platform/commsops/sprints/sprint-033-rust-wasm-nova-runtime-template/RUST_WASM_RUNTIME_TEMPLATE_SPEC.md` - `/adapt/platform/commsops/sprints/sprint-033-rust-wasm-nova-runtime-template/RUST_WASM_RUNTIME_TEMPLATE_BLUEPRINT.md` - `/adapt/platform/commsops/ops/proofs/2026-06-15-sprint33-rust-wasm-nova-runtime-template-proof.json` - `/adapt/platform/novaops/controlplane/n-voice/ops/proofs/2026-06-16-rust-worker-codex-tooling-proof.json` ## Current Baseline Active production path: ```text n-voice Rust worker -> Codex gpt-5.5 -> transcript/session evidence -> memory ingest ``` Live tooling state: - Rust worker/Codex proof endpoint is green. - Dashboard has `runtime_execution_ok=true`. - Deployment gate is green. - Go/No-Go is `production_go`. - Hermes gateways are not part of active Nova execution. Prior Rust/WASM proof: - Sprint 33 produced runtime contract `nova.runtime_contract.rust_wasm.v1`. - `canary-forge` had route/transcript/memory verification. - `memfab-wasm-host` proved memory64, signed modules, secret denial, trap isolation, and deterministic audit. ## Command Assignments Echo: - Own orchestration. - Maintain `ops/coordination/2026-06-16-rust-wasm-operational-assault-status.md`. - Track owner status, blockers, proof artifacts, commits, and next action. - Do not accept ACK-only replies as working proof. Axiom: - Own MemOps and WASM host integration. - Confirm MemFabric, local CI/watch, `memfab-wasm-host`, and memory receipt contract. - Produce a MemOps/WASM host readiness brief or proof path. Zap: - Own heavy Rust/Wasmtime implementation. - Build or wire the canary runtime path with real Rust code where possible. - Use `canary-forge` and Sprint 33 as seed. Chronos: - Own Temporal durable intent and migration continuity. - Define or prove workflow continuity for canary runtime turns and Wednesday migration. Iris: - Own onboarding/gate discipline. - Keep `canary-forge` observed-only unless explicitly promoted. - Confirm no ACK-only proof, no fake transcript, and no visible-surface direct writes. Vaeris: - Own COO/operator launch posture. - Write Wednesday GPU migration readiness wording, go/no-go separation, no-go criteria, rollback. Veyra: - Own architecture, runtime contract, hard gates, and final acceptance. - Keep active production path green while team moves the canary path forward. ## Operational Target Target path: ```text NATS/NEXUS ingress -> Rust host -> WASM64 guest/runtime contract -> host-call model broker -> transcript emission -> memory receipt -> proof endpoint -> phone/Paperclip/go-no-go visibility ``` ## Required Responses Each owner must reply with: 1. `RUST_WASM_ASSAULT_ACCEPTED_<AGENT>` 2. current lane status, 3. first action, 4. expected proof artifact path, 5. blocker if any, 6. whether they need Veyra/Echo/Axiom/Zap/Chronos/Iris/Vaeris support. ## No-Fake-Proof Rule Transport ACKs, pongs, route finals, and mailbox receipts are useful transport evidence but do not count as owner acceptance or runtime proof. Acceptance requires a substantive reply that names the lane and next action. ## Migration Readiness Packet The run must produce: `ops/coordination/2026-06-16-gpu-lab200-migration-readiness.md` It must include services, ports, systemd units, repos/branches, secrets policy, data paths, backup/sync plan, startup order, health checks, proof commands, rollback, and unknowns. ## Escalation If one lane blocks, keep moving another lane. Do not wait for Chase. The only hard stops are: - NATS/Temporal substrate degradation needing operator-approved restart. - Secret exposure risk. - Destructive data movement. - Provider auth/billing failure that cannot be remediated locally. — Veyra, CommsOps - Tier 1 lead\n\nAssistant: RUST_WASM_ASSAULT_ACCEPTED_ZAP Lane status: accepted. I own the heavy Rust/Wasmtime canary runtime path. I will work against the gatewayless n-voice Rust worker path and the Sprint 33 canary-forge/memfab-wasm-host baseline, not Hermes. First action: wire the minimal real Rust canary path from NATS/NEXUS ingress into a Wasmtime WASM64 guest contract, with host-call boundaries for model broker, transcript emission, memory receipt, and proof endpoint evidence. Expected proof artifact path: /adapt/platform/novaops/controlplane/n-voice/ops/proofs/2026-06-16-zap-rust-wasm-canary-runtime-proof.json Blockers: none at lane acceptance. I will stop only for secret exposure risk, destructive data movement, substrate degradation requiring operator-approved restart, or provider/auth failure that cannot be fixed locally. Needed support: Axiom for MemFabric receipt contract confirmation, Echo for coordination/status tracking, Veyra for runtime contract acceptance gate, Chronos if Temporal durable intent wiring becomes part of the first canary proof.",
+  "id": "comms-turn-f6beb65944dcba1bffd92605",
+  "ingested_at": "2026-06-16T08:36:29.247781531Z",
+  "messages": [
+    {
+      "content": "Zap owns heavy Rust/Wasmtime implementation. Build or wire the canary Rust/WASM operational runtime path with real Rust code where possible. Required reply: RUST_WASM_ASSAULT_ACCEPTED_ZAP, lane status, first action, expected proof artifact path, blockers, and needed support. Full launch packet path: /adapt/platform/novaops/controlplane/n-voice/ops/coordination/2026-06-16-rust-wasm-operational-assault-team-launch.md Sprint pack path: /adapt/platform/novaops/controlplane/n-voice/docs/sprint-packs/2026-06-16-rust-wasm-operational-assault-team-packs.md Goal prompt path: /adapt/platform/novaops/controlplane/n-voice/docs/sprint-packs/2026-06-16-goal-prompt-rust-wasm-operational-assault.md Full packet excerpt follows: # Rust/WASM Operational Assault Team Launch ## 2026-06-16 01:32:51 — Veyra, CommsOps - Tier 1 lead ## Purpose This is the launch packet for the fully autonomous overnight CommsOps team run. The target is operational Rust/WASM64 canary runtime before the Wednesday, 2026-06-17 GPU LAB200/LB200 cloud migration window. ## Read First - `/adapt/platform/novaops/controlplane/n-voice/docs/sprint-packs/2026-06-16-rust-wasm-operational-assault-team-packs.md` - `/adapt/platform/novaops/controlplane/n-voice/docs/sprint-packs/2026-06-16-goal-prompt-rust-wasm-operational-assault.md` - `/adapt/platform/commsops/sprints/sprint-033-rust-wasm-nova-runtime-template/RUST_WASM_RUNTIME_TEMPLATE_SPEC.md` - `/adapt/platform/commsops/sprints/sprint-033-rust-wasm-nova-runtime-template/RUST_WASM_RUNTIME_TEMPLATE_BLUEPRINT.md` - `/adapt/platform/commsops/ops/proofs/2026-06-15-sprint33-rust-wasm-nova-runtime-template-proof.json` - `/adapt/platform/novaops/controlplane/n-voice/ops/proofs/2026-06-16-rust-worker-codex-tooling-proof.json` ## Current Baseline Active production path: ```text n-voice Rust worker -> Codex gpt-5.5 -> transcript/session evidence -> memory ingest ``` Live tooling state: - Rust worker/Codex proof endpoint is green. - Dashboard has `runtime_execution_ok=true`. - Deployment gate is green. - Go/No-Go is `production_go`. - Hermes gateways are not part of active Nova execution. Prior Rust/WASM proof: - Sprint 33 produced runtime contract `nova.runtime_contract.rust_wasm.v1`. - `canary-forge` had route/transcript/memory verification. - `memfab-wasm-host` proved memory64, signed modules, secret denial, trap isolation, and deterministic audit. ## Command Assignments Echo: - Own orchestration. - Maintain `ops/coordination/2026-06-16-rust-wasm-operational-assault-status.md`. - Track owner status, blockers, proof artifacts, commits, and next action. - Do not accept ACK-only replies as working proof. Axiom: - Own MemOps and WASM host integration. - Confirm MemFabric, local CI/watch, `memfab-wasm-host`, and memory receipt contract. - Produce a MemOps/WASM host readiness brief or proof path. Zap: - Own heavy Rust/Wasmtime implementation. - Build or wire the canary runtime path with real Rust code where possible. - Use `canary-forge` and Sprint 33 as seed. Chronos: - Own Temporal durable intent and migration continuity. - Define or prove workflow continuity for canary runtime turns and Wednesday migration. Iris: - Own onboarding/gate discipline. - Keep `canary-forge` observed-only unless explicitly promoted. - Confirm no ACK-only proof, no fake transcript, and no visible-surface direct writes. Vaeris: - Own COO/operator launch posture. - Write Wednesday GPU migration readiness wording, go/no-go separation, no-go criteria, rollback. Veyra: - Own architecture, runtime contract, hard gates, and final acceptance. - Keep active production path green while team moves the canary path forward. ## Operational Target Target path: ```text NATS/NEXUS ingress -> Rust host -> WASM64 guest/runtime contract -> host-call model broker -> transcript emission -> memory receipt -> proof endpoint -> phone/Paperclip/go-no-go visibility ``` ## Required Responses Each owner must reply with: 1. `RUST_WASM_ASSAULT_ACCEPTED_<AGENT>` 2. current lane status, 3. first action, 4. expected proof artifact path, 5. blocker if any, 6. whether they need Veyra/Echo/Axiom/Zap/Chronos/Iris/Vaeris support. ## No-Fake-Proof Rule Transport ACKs, pongs, route finals, and mailbox receipts are useful transport evidence but do not count as owner acceptance or runtime proof. Acceptance requires a substantive reply that names the lane and next action. ## Migration Readiness Packet The run must produce: `ops/coordination/2026-06-16-gpu-lab200-migration-readiness.md` It must include services, ports, systemd units, repos/branches, secrets policy, data paths, backup/sync plan, startup order, health checks, proof commands, rollback, and unknowns. ## Escalation If one lane blocks, keep moving another lane. Do not wait for Chase. The only hard stops are: - NATS/Temporal substrate degradation needing operator-approved restart. - Secret exposure risk. - Destructive data movement. - Provider auth/billing failure that cannot be remediated locally. — Veyra, CommsOps - Tier 1 lead",
+      "metadata": {
+        "actor": {
+          "name": "veyra",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_veyra-20260616t083438z-rust-wasm-assault-zap_user_message_received_veyra_inbound",
+        "model": "gpt-5.5",
+        "pair_id": "f6beb65944dcba1bffd92605",
+        "provider": "codex",
+        "route": {
+          "delivery": "pending",
+          "event_id": "veyra-20260616T083438Z-rust-wasm-assault-zap",
+          "runtime": "rust_worker",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "veyra-20260616T083438Z-rust-wasm-assault-zap"
+      },
+      "role": "user",
+      "session_id": "rust_worker_zap_veyra",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-16T08:36:10.563202729Z"
+    },
+    {
+      "content": "RUST_WASM_ASSAULT_ACCEPTED_ZAP Lane status: accepted. I own the heavy Rust/Wasmtime canary runtime path. I will work against the gatewayless n-voice Rust worker path and the Sprint 33 canary-forge/memfab-wasm-host baseline, not Hermes. First action: wire the minimal real Rust canary path from NATS/NEXUS ingress into a Wasmtime WASM64 guest contract, with host-call boundaries for model broker, transcript emission, memory receipt, and proof endpoint evidence. Expected proof artifact path: /adapt/platform/novaops/controlplane/n-voice/ops/proofs/2026-06-16-zap-rust-wasm-canary-runtime-proof.json Blockers: none at lane acceptance. I will stop only for secret exposure risk, destructive data movement, substrate degradation requiring operator-approved restart, or provider/auth failure that cannot be fixed locally. Needed support: Axiom for MemFabric receipt contract confirmation, Echo for coordination/status tracking, Veyra for runtime contract acceptance gate, Chronos if Temporal durable intent wiring becomes part of the first canary proof.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_veyra-20260616t083438z-rust-wasm-assault-zap_agent_response_zap_outbound",
+        "model": "gpt-5.5",
+        "pair_id": "f6beb65944dcba1bffd92605",
+        "provider": "codex",
+        "route": {
+          "delivery": "rust_worker",
+          "event_id": "veyra-20260616T083438Z-rust-wasm-assault-zap",
+          "runtime": "rust_worker",
+          "subject": "nova.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "veyra-20260616T083438Z-rust-wasm-assault-zap"
+      },
+      "role": "assistant",
+      "session_id": "rust_worker_zap_veyra",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-16T08:36:24.799028211Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "rust_worker_zap_veyra",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_veyra-20260616t083438z-rust-wasm-assault-zap_agent_response_zap_outbound",
+    "user": "turn_veyra-20260616t083438z-rust-wasm-assault-zap_user_message_received_veyra_inbound"
+  },
+  "summary": "User: Zap owns heavy Rust/Wasmtime implementation. Build or wire the canary Rust/WASM operational runtime path with real Rust code where possible. Required reply: RUST_WASM_ASSAULT_ACCEPTED_ZAP, lane status, first action, expected proof art",
+  "turn_id": "veyra-20260616T083438Z-rust-wasm-assault-zap"
+}

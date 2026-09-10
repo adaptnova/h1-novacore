@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: Build 1 production sustainment proof refresh for zap. Write one plain English paragraph of 20 to 40 words. The first sentence must contain this exact proof token as part of a normal sentence, not by itself: ZAP_A2A_LIVE_PROOF_OK. State your Nova role or operating domain, confirm this is a model-backed NEXUS session turn rather than a transport ACK, name one concrete command or routing capability you can exercise, and include one practical limitation or dependency CommsOps should monitor. Do not use bullets, code, JSON, markup, a signature block, or a quip.\n\nAssistant: ZAP_A2A_LIVE_PROOF_OK is now active as I operate in my Nova-class Adapt role within the gatewayless Rust CommsOps worker for this model-backed NEXUS session turn rather than a transport ACK and I can exercise direct xai provider model invocation while CommsOps should monitor dependency on the continued availability of the grok-4.20-0309-non-reasoning endpoint.",
+  "id": "comms-turn-cb935b89afbf6a6fdcedcc0f",
+  "ingested_at": "2026-06-20T04:31:34.271405929Z",
+  "messages": [
+    {
+      "content": "Build 1 production sustainment proof refresh for zap. Write one plain English paragraph of 20 to 40 words. The first sentence must contain this exact proof token as part of a normal sentence, not by itself: ZAP_A2A_LIVE_PROOF_OK. State your Nova role or operating domain, confirm this is a model-backed NEXUS session turn rather than a transport ACK, name one concrete command or routing capability you can exercise, and include one practical limitation or dependency CommsOps should monitor. Do not use bullets, code, JSON, markup, a signature block, or a quip.",
+      "metadata": {
+        "actor": {
+          "name": "veyra",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_a2a-proof-zap-20260620043114-4ebb4a62b5f8_user_message_received_veyra_inbound",
+        "model": null,
+        "pair_id": "cb935b89afbf6a6fdcedcc0f",
+        "provider": null,
+        "route": {
+          "delivery": "pending",
+          "event_id": "a2a-proof-zap-20260620043114-4ebb4a62b5f8",
+          "runtime": "rust",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "a2a-proof-zap-20260620043114-4ebb4a62b5f8"
+      },
+      "role": "user",
+      "session_id": "a2a_live_zap_4ebb4a62b5f8",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-20T04:31:31.364519816Z"
+    },
+    {
+      "content": "ZAP_A2A_LIVE_PROOF_OK is now active as I operate in my Nova-class Adapt role within the gatewayless Rust CommsOps worker for this model-backed NEXUS session turn rather than a transport ACK and I can exercise direct xai provider model invocation while CommsOps should monitor dependency on the continued availability of the grok-4.20-0309-non-reasoning endpoint.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_a2a-proof-zap-20260620043114-4ebb4a62b5f8_agent_response_zap_outbound",
+        "model": "grok-4.20-0309-non-reasoning",
+        "pair_id": "cb935b89afbf6a6fdcedcc0f",
+        "provider": "xai",
+        "route": {
+          "delivery": "rust_worker",
+          "event_id": "a2a-proof-zap-20260620043114-4ebb4a62b5f8",
+          "runtime": "rust_worker",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "a2a-proof-zap-20260620043114-4ebb4a62b5f8"
+      },
+      "role": "assistant",
+      "session_id": "a2a_live_zap_4ebb4a62b5f8",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-20T04:31:32.02445574Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "a2a_live_zap_4ebb4a62b5f8",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_a2a-proof-zap-20260620043114-4ebb4a62b5f8_agent_response_zap_outbound",
+    "user": "turn_a2a-proof-zap-20260620043114-4ebb4a62b5f8_user_message_received_veyra_inbound"
+  },
+  "summary": "User: Build 1 production sustainment proof refresh for zap. Write one plain English paragraph of 20 to 40 words. The first sentence must contain this exact proof token as part of a normal sentence, not by itself: ZAP_A2A_LIVE_PROOF_OK. Stat",
+  "turn_id": "a2a-proof-zap-20260620043114-4ebb4a62b5f8"
+}

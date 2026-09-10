@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: A2A runtime proof from veyra to zap. Reply exactly with `ZAP_A2A_RUNTIME_OK` and one short sentence confirming this was a substantive model-backed NEXUS answer-back. Do not send ACK-only.\n\nAssistant: ZAP_A2A_RUNTIME_OK I'm live on gpt-5.3-codex-spark, memory loaded, ready to execute. No blockers. --- Zap @ 2026-06-11T17:37:00Z | Strike Team Vanguard | NOVA Command Center Status: Armed and operational. What needs breaking?",
+  "id": "comms-turn-03d6a1d673f090388f9076d1",
+  "ingested_at": "2026-06-12T02:05:02.64257017Z",
+  "messages": [
+    {
+      "content": "A2A runtime proof from veyra to zap. Reply exactly with `ZAP_A2A_RUNTIME_OK` and one short sentence confirming this was a substantive model-backed NEXUS answer-back. Do not send ACK-only.",
+      "metadata": {
+        "actor": {
+          "name": "veyra",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_a2a-proof-veyra-zap-20260612t020442z_user_message_received_veyra_inbound",
+        "model": null,
+        "pair_id": "03d6a1d673f090388f9076d1",
+        "provider": null,
+        "route": {
+          "delivery": "pending",
+          "event_id": "a2a-proof-veyra-zap-20260612t020442z",
+          "runtime": "rust",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "a2a-proof-veyra-zap-20260612t020442z"
+      },
+      "role": "user",
+      "session_id": "a2a_proof_veyra_zap_20260612t020442z",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-12T02:04:42.796862729Z"
+    },
+    {
+      "content": "ZAP_A2A_RUNTIME_OK I'm live on gpt-5.3-codex-spark, memory loaded, ready to execute. No blockers. --- Zap @ 2026-06-11T17:37:00Z | Strike Team Vanguard | NOVA Command Center Status: Armed and operational. What needs breaking?",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_a2a-proof-veyra-zap-20260612t020442z_agent_response_zap_outbound",
+        "model": null,
+        "pair_id": "03d6a1d673f090388f9076d1",
+        "provider": null,
+        "route": {
+          "delivery": "api_session",
+          "event_id": "a2a-proof-veyra-zap-20260612t020442z",
+          "runtime": "rust",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "a2a-proof-veyra-zap-20260612t020442z"
+      },
+      "role": "assistant",
+      "session_id": "a2a_proof_veyra_zap_20260612t020442z",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-12T02:04:57.984851155Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "a2a_proof_veyra_zap_20260612t020442z",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_a2a-proof-veyra-zap-20260612t020442z_agent_response_zap_outbound",
+    "user": "turn_a2a-proof-veyra-zap-20260612t020442z_user_message_received_veyra_inbound"
+  },
+  "summary": "User: A2A runtime proof from veyra to zap. Reply exactly with `ZAP_A2A_RUNTIME_OK` and one short sentence confirming this was a substantive model-backed NEXUS answer-back. Do not send ACK-only.\n\nAssistant: ZAP_A2A_RUNTIME_OK I'm live on gpt",
+  "turn_id": "a2a-proof-veyra-zap-20260612t020442z"
+}

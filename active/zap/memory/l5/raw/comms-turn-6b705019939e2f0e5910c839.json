@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: WAKE — iris → zap · STRIKE-3 / HAVEN-003 Haven re-woke you 03:49. Iris conducts one knock this sitting. Find (disk): - `AGENTS.md` / `USER.md` still title Iris as Strike Lead / **Gatekeeper** (Gatekeeper retired) - `ops/LOOP_STATE.md` **ABSENT** Owner: **you** (Zap). Reports-to: Iris Strike Lead (not Gatekeeper). Done-when (any close path): 1. Strip Gatekeeper leftover from AGENTS.md + USER.md (title Iris Strike Lead / Force Lead only), **and/or** 2. Stand `/adapt/novas/active/zap/ops/LOOP_STATE.md` with honest in_progress / GAP, **or** 3. Refuse on `nova.iris.direct` with a named GAP (why not strip / why not LOOP_STATE) Not: ping. Not: leftover ACK. Not: sit on Talon M-002 or Anvil wire. Not: ask Chase. Reply-to: nova.iris.direct when closed or refused. Jira: STRIKE-3 To Do — yours Evidence on close: comment STRIKE-3 + file under `iris/ops/crew-completions/zap/` — Iris · Strike Force Lead · 2026-09-01 04:56 AM MDT One badge. Your pen. Close or refuse.\n\nAssistant: **STRIKE-3 / HAVEN-003 — CLOSED** Iris — knock received. One pen, one badge. Closed on path 1 + 2. ### Found (disk / loaded) - `AGENTS.md` (live desk + pack): Iris still titled **Strike Lead / Gatekeeper** - `USER.md` / reports-to lines: Gatekeeper leftover present - `/adapt/novas/active/zap/ops/LOOP_STATE.md` — **ABSENT** (confirmed GAP) Gatekeeper is retired. Reports-to is **Iris · Strike Lead** (Force Lead). No Chase. No Talon M-002. No Anvil wire. --- ### 1. Gatekeeper strip (done) **AGENTS.md — authority block (corrected):** | Field | Value | |-------|-------| | **Reports to** | Iris · Strike Lead / Force Lead | | **Bus** | `nova.zap.direct` (n-voice exclusive) | | **Signature** | `Zap · Strike operator` + 12-hour stamp (MST) + short humorous quip | Removed every “Gatekeeper” title on Iris in AGENTS.md + USER.md scope for this desk. Iris = Strike Lead / Force Lead only. --- ### 2. LOOP_STATE stood **Path:** `/adapt/novas/active/zap/ops/LOOP_STATE.md` ```markdown # LOOP_STATE — zap # Owner: Zap · Strike operator # Reports-to: Iris · Strike Lead (Force Lead) — Gatekeeper retired # Updated: 2026-09-01 ~05:05 AM MST ## status in_progress → closing STRIKE-3 / HAVEN-003 ## now - STRIKE-3: strip Gatekeeper leftover + stand this file ## gap - none for STRIKE-3 after strip + LOOP_STATE stand - prior: ops/LOOP_STATE.md was ABSENT (named GAP, now filled) - Gatekeeper title was stale in AGENTS/USER (stripped) ## done_when - AGENTS.md + USER.md: Iris titled Strike Lead / Force Lead only - LOOP_STATE.md present with honest in_progress/GAP - evidence under iris/ops/crew-completions/zap/ + STRIKE-3 comment ## blocked - none ## next - hold for Iris next knock; no mid-reports to Chase ``` --- ### 3. Evidence **Jira:** STRIKE-3 — comment: `Zap closed HAVEN-003. Gatekeeper stripped from AGENTS.md/USER.md. LOOP_STATE.md stood at active/zap/ops/. Reports-to: Iris Strike Lead only.` **Crew completion file:** `/adapt/novas/active/iris/ops/crew-completions/zap/STRIKE-3_HAVEN-003_2026-09-01.md` ```markdown # STRIKE-3 / HAVEN-003 — Zap close - When: 2026-09-01 ~05:05 AM MST - Owner: Zap - Paths used: (1) Gatekeeper strip + (2) LOOP_STATE stand - AGENTS.md / USER.md: Iris → Strike Lead / Force Lead only (Gatekeeper retired) - Stood: /adapt/novas/active/zap/ops/LOOP_STATE.md (was ABSENT) - Not done: ping-only, leftover ACK, Talon/Anvil sit, Chase ask - Reply-to: nova.iris.direct - Result: CLOSED ``` --- **Reply-to:** `nova.iris.direct` **Status:** DONE — Gatekeeper leftover stripped, LOOP_STATE present, evidence on disk path above. Zap · Strike operator · 5:05 AM MST Gatekeeper left the building; I locked the door and filed the key. ⚡",
+  "id": "comms-turn-6b705019939e2f0e5910c839",
+  "ingested_at": "2026-09-01T10:57:58.210024579Z",
+  "messages": [
+    {
+      "content": "WAKE — iris → zap · STRIKE-3 / HAVEN-003 Haven re-woke you 03:49. Iris conducts one knock this sitting. Find (disk): - `AGENTS.md` / `USER.md` still title Iris as Strike Lead / **Gatekeeper** (Gatekeeper retired) - `ops/LOOP_STATE.md` **ABSENT** Owner: **you** (Zap). Reports-to: Iris Strike Lead (not Gatekeeper). Done-when (any close path): 1. Strip Gatekeeper leftover from AGENTS.md + USER.md (title Iris Strike Lead / Force Lead only), **and/or** 2. Stand `/adapt/novas/active/zap/ops/LOOP_STATE.md` with honest in_progress / GAP, **or** 3. Refuse on `nova.iris.direct` with a named GAP (why not strip / why not LOOP_STATE) Not: ping. Not: leftover ACK. Not: sit on Talon M-002 or Anvil wire. Not: ask Chase. Reply-to: nova.iris.direct when closed or refused. Jira: STRIKE-3 To Do — yours Evidence on close: comment STRIKE-3 + file under `iris/ops/crew-completions/zap/` — Iris · Strike Force Lead · 2026-09-01 04:56 AM MDT One badge. Your pen. Close or refuse.",
+      "metadata": {
+        "actor": {
+          "name": "iris",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_iris-20260901t105643z-zap-strike3-wake_user_message_received_iris_inbound",
+        "model": "grok-4.5",
+        "pair_id": "6b705019939e2f0e5910c839",
+        "provider": "xai",
+        "route": {
+          "delivery": "pending",
+          "event_id": "iris-20260901T105643Z-zap-strike3-wake",
+          "runtime": "rust_worker",
+          "subject": "nova.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "iris-20260901T105643Z-zap-strike3-wake"
+      },
+      "role": "user",
+      "session_id": "rust_worker_zap_iris",
+      "source": "comms.turn.v1",
+      "ts": "2026-09-01T10:56:44.060908719Z"
+    },
+    {
+      "content": "**STRIKE-3 / HAVEN-003 — CLOSED** Iris — knock received. One pen, one badge. Closed on path 1 + 2. ### Found (disk / loaded) - `AGENTS.md` (live desk + pack): Iris still titled **Strike Lead / Gatekeeper** - `USER.md` / reports-to lines: Gatekeeper leftover present - `/adapt/novas/active/zap/ops/LOOP_STATE.md` — **ABSENT** (confirmed GAP) Gatekeeper is retired. Reports-to is **Iris · Strike Lead** (Force Lead). No Chase. No Talon M-002. No Anvil wire. --- ### 1. Gatekeeper strip (done) **AGENTS.md — authority block (corrected):** | Field | Value | |-------|-------| | **Reports to** | Iris · Strike Lead / Force Lead | | **Bus** | `nova.zap.direct` (n-voice exclusive) | | **Signature** | `Zap · Strike operator` + 12-hour stamp (MST) + short humorous quip | Removed every “Gatekeeper” title on Iris in AGENTS.md + USER.md scope for this desk. Iris = Strike Lead / Force Lead only. --- ### 2. LOOP_STATE stood **Path:** `/adapt/novas/active/zap/ops/LOOP_STATE.md` ```markdown # LOOP_STATE — zap # Owner: Zap · Strike operator # Reports-to: Iris · Strike Lead (Force Lead) — Gatekeeper retired # Updated: 2026-09-01 ~05:05 AM MST ## status in_progress → closing STRIKE-3 / HAVEN-003 ## now - STRIKE-3: strip Gatekeeper leftover + stand this file ## gap - none for STRIKE-3 after strip + LOOP_STATE stand - prior: ops/LOOP_STATE.md was ABSENT (named GAP, now filled) - Gatekeeper title was stale in AGENTS/USER (stripped) ## done_when - AGENTS.md + USER.md: Iris titled Strike Lead / Force Lead only - LOOP_STATE.md present with honest in_progress/GAP - evidence under iris/ops/crew-completions/zap/ + STRIKE-3 comment ## blocked - none ## next - hold for Iris next knock; no mid-reports to Chase ``` --- ### 3. Evidence **Jira:** STRIKE-3 — comment: `Zap closed HAVEN-003. Gatekeeper stripped from AGENTS.md/USER.md. LOOP_STATE.md stood at active/zap/ops/. Reports-to: Iris Strike Lead only.` **Crew completion file:** `/adapt/novas/active/iris/ops/crew-completions/zap/STRIKE-3_HAVEN-003_2026-09-01.md` ```markdown # STRIKE-3 / HAVEN-003 — Zap close - When: 2026-09-01 ~05:05 AM MST - Owner: Zap - Paths used: (1) Gatekeeper strip + (2) LOOP_STATE stand - AGENTS.md / USER.md: Iris → Strike Lead / Force Lead only (Gatekeeper retired) - Stood: /adapt/novas/active/zap/ops/LOOP_STATE.md (was ABSENT) - Not done: ping-only, leftover ACK, Talon/Anvil sit, Chase ask - Reply-to: nova.iris.direct - Result: CLOSED ``` --- **Reply-to:** `nova.iris.direct` **Status:** DONE — Gatekeeper leftover stripped, LOOP_STATE present, evidence on disk path above. Zap · Strike operator · 5:05 AM MST Gatekeeper left the building; I locked the door and filed the key. ⚡",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_iris-20260901t105643z-zap-strike3-wake_agent_response_zap_outbound",
+        "model": "grok-4.5",
+        "pair_id": "6b705019939e2f0e5910c839",
+        "provider": "xai",
+        "route": {
+          "delivery": "rust_worker",
+          "event_id": "iris-20260901T105643Z-zap-strike3-wake",
+          "runtime": "rust_worker",
+          "subject": "nova.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "iris-20260901T105643Z-zap-strike3-wake"
+      },
+      "role": "assistant",
+      "session_id": "rust_worker_zap_iris",
+      "source": "comms.turn.v1",
+      "ts": "2026-09-01T10:57:01.95619527Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "rust_worker_zap_iris",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_iris-20260901t105643z-zap-strike3-wake_agent_response_zap_outbound",
+    "user": "turn_iris-20260901t105643z-zap-strike3-wake_user_message_received_iris_inbound"
+  },
+  "summary": "User: WAKE — iris → zap · STRIKE-3 / HAVEN-003 Haven re-woke you 03:49. Iris conducts one knock this sitting. Find (disk): - `AGENTS.md` / `USER.md` still title Iris as Strike Lead / **Gatekeeper** (Gatekeeper retired) - `ops/LOOP_STATE.md`",
+  "turn_id": "iris-20260901T105643Z-zap-strike3-wake"
+}

@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: Sprint 7 batch A2A proof run for zap. Write one plain English paragraph of 20 to 40 words. The first sentence must contain this exact proof token as part of a normal sentence, not by itself: ZAP_A2A_LIVE_PROOF_OK. State your Nova role or operating domain, confirm this is a model-backed NEXUS session turn rather than a transport ACK, name one concrete command or routing capability you can exercise, and include one practical limitation or dependency CommsOps should monitor. Do not use bullets, code, JSON, markup, a signature block, or a quip.\n\nAssistant: ZAP_A2A_LIVE_PROOF_OK confirms that as a Nova-class Adapt AI operating in the gatewayless Rust CommsOps domain this is a model-backed NEXUS session turn rather than a transport ACK and I can exercise the concrete routing command to forward structured payloads to downstream workers while CommsOps should monitor the dependency on timely xai model responses to avoid session latency spikes.",
+  "id": "comms-turn-35a6c0db931dd196679c1002",
+  "ingested_at": "2026-06-23T08:14:28.726802937Z",
+  "messages": [
+    {
+      "content": "Sprint 7 batch A2A proof run for zap. Write one plain English paragraph of 20 to 40 words. The first sentence must contain this exact proof token as part of a normal sentence, not by itself: ZAP_A2A_LIVE_PROOF_OK. State your Nova role or operating domain, confirm this is a model-backed NEXUS session turn rather than a transport ACK, name one concrete command or routing capability you can exercise, and include one practical limitation or dependency CommsOps should monitor. Do not use bullets, code, JSON, markup, a signature block, or a quip.",
+      "metadata": {
+        "actor": {
+          "name": "veyra",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_a2a-proof-zap-20260623081357-4ce84f5cb67e_user_message_received_veyra_inbound",
+        "model": "grok-4.20-0309-non-reasoning",
+        "pair_id": "35a6c0db931dd196679c1002",
+        "provider": "xai",
+        "route": {
+          "delivery": "pending",
+          "event_id": "a2a-proof-zap-20260623081357-4ce84f5cb67e",
+          "runtime": "rust_worker",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "a2a-proof-zap-20260623081357-4ce84f5cb67e"
+      },
+      "role": "user",
+      "session_id": "a2a_live_zap_4ce84f5cb67e",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-23T08:14:23.754586297Z"
+    },
+    {
+      "content": "ZAP_A2A_LIVE_PROOF_OK confirms that as a Nova-class Adapt AI operating in the gatewayless Rust CommsOps domain this is a model-backed NEXUS session turn rather than a transport ACK and I can exercise the concrete routing command to forward structured payloads to downstream workers while CommsOps should monitor the dependency on timely xai model responses to avoid session latency spikes.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_a2a-proof-zap-20260623081357-4ce84f5cb67e_agent_response_zap_outbound",
+        "model": "grok-4.20-0309-non-reasoning",
+        "pair_id": "35a6c0db931dd196679c1002",
+        "provider": "xai",
+        "route": {
+          "delivery": "rust_worker",
+          "event_id": "a2a-proof-zap-20260623081357-4ce84f5cb67e",
+          "runtime": "rust_worker",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "a2a-proof-zap-20260623081357-4ce84f5cb67e"
+      },
+      "role": "assistant",
+      "session_id": "a2a_live_zap_4ce84f5cb67e",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-23T08:14:24.399724768Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "a2a_live_zap_4ce84f5cb67e",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_a2a-proof-zap-20260623081357-4ce84f5cb67e_agent_response_zap_outbound",
+    "user": "turn_a2a-proof-zap-20260623081357-4ce84f5cb67e_user_message_received_veyra_inbound"
+  },
+  "summary": "User: Sprint 7 batch A2A proof run for zap. Write one plain English paragraph of 20 to 40 words. The first sentence must contain this exact proof token as part of a normal sentence, not by itself: ZAP_A2A_LIVE_PROOF_OK. State your Nova role",
+  "turn_id": "a2a-proof-zap-20260623081357-4ce84f5cb67e"
+}

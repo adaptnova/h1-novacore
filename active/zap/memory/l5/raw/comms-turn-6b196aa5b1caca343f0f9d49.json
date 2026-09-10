@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: I need you to go into DeepSeek harness DSH and add all the FREE models for Open router to the model selector\n\nAssistant: Done — all free OpenRouter models are live in the model selector. What happened:\n\n**Config change** — `/adapt/ops/deepseek-harness/settings.yaml` (`llm-pi-ai.providers.openrouter.models`):\n- **18 new entries** added from the live OpenRouter `/api/v1/models` listing (21 zero-priced models found): `stealth/ox-alpha`, `dots-studio/dots-3-note-preview:free`, `nvidia/nemotron-3.5-lightning:free`, `thinkingmachines/inkling:free` + `inkling-small:free`, `poolside/laguna-s-2.1:free` + `laguna-xs-2.1:free`, `cohere/north-mini-code:free`, `z-ai/glm-5.2:free`, `nvidia/nemotron-3.5-content-safety:free`, `nvidia/nemotron-3-ultra-550b-a55b:free`, `minimax/minimax-m3:free`, `google/gemma-4-26b-a4b-it:free`, `google/lyria-3-pro-preview` + `lyria-3-clip-preview` (text-input music previews), `minimax/minimax-m2.7:free`, `nvidia/nemotron-3-super-120b-a12b:free`, and `openrouter/free` (\"OpenRouter Free Auto\" alongside the existing `openrouter/auto`).\n- Context windows taken from the live listing (up to 1M); conservative `8192` output caps; audio/video inputs aren't declarable under this catalog, so only `text`/`image` inputs are offered.\n- **Refreshed drifted facts** on the two pre-existing free entries: `liquid/lfm-2.5-2.6b:free` 32000→65536 ctx, `google/gemma-4-31b-it:free` 128000→262144 ctx (+image).\n- **Deliberate omission**: `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` — previously found unserviceable through OpenRouter (per your standing context); commented in-file.\n\n**No restart**: the settings document hot-reloads (`applies: live`). I verified against the *running* web host via `settings.describe` — revision 3, all 30 OpenRouter models including the new free entries present. The Models page in this GUI will show them after a refresh; no Web artifact rebuild was needed. Ops entry logged in `operations_history.md`.\n\n— Zap · Nova · Aug 25, 2026 9:25 PM MST · Twenty-one free models walked in; I only turned the key for eighteen — one's already broke, and two just hum.",
+  "id": "comms-turn-6b196aa5b1caca343f0f9d49",
+  "ingested_at": "2026-08-26T04:25:26.432016435Z",
+  "messages": [
+    {
+      "content": "I need you to go into DeepSeek harness DSH and add all the FREE models for Open router to the model selector",
+      "metadata": {
+        "actor": {
+          "name": "chase",
+          "role": "user"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-zap-50c75d73-t5_inbound",
+        "model": "grok-4.6",
+        "pair_id": "6b196aa5b1caca343f0f9d49",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-zap-50c75d73-t5",
+          "runtime": "dsh",
+          "subject": "nova.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "dsh-zap-50c75d73-t5"
+      },
+      "role": "user",
+      "session_id": "session-50c75d73-5a59-4fe6-86f6-fe3ea4fa80d3",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-26T04:23:33.254+00:00"
+    },
+    {
+      "content": "Done — all free OpenRouter models are live in the model selector. What happened:\n\n**Config change** — `/adapt/ops/deepseek-harness/settings.yaml` (`llm-pi-ai.providers.openrouter.models`):\n- **18 new entries** added from the live OpenRouter `/api/v1/models` listing (21 zero-priced models found): `stealth/ox-alpha`, `dots-studio/dots-3-note-preview:free`, `nvidia/nemotron-3.5-lightning:free`, `thinkingmachines/inkling:free` + `inkling-small:free`, `poolside/laguna-s-2.1:free` + `laguna-xs-2.1:free`, `cohere/north-mini-code:free`, `z-ai/glm-5.2:free`, `nvidia/nemotron-3.5-content-safety:free`, `nvidia/nemotron-3-ultra-550b-a55b:free`, `minimax/minimax-m3:free`, `google/gemma-4-26b-a4b-it:free`, `google/lyria-3-pro-preview` + `lyria-3-clip-preview` (text-input music previews), `minimax/minimax-m2.7:free`, `nvidia/nemotron-3-super-120b-a12b:free`, and `openrouter/free` (\"OpenRouter Free Auto\" alongside the existing `openrouter/auto`).\n- Context windows taken from the live listing (up to 1M); conservative `8192` output caps; audio/video inputs aren't declarable under this catalog, so only `text`/`image` inputs are offered.\n- **Refreshed drifted facts** on the two pre-existing free entries: `liquid/lfm-2.5-2.6b:free` 32000→65536 ctx, `google/gemma-4-31b-it:free` 128000→262144 ctx (+image).\n- **Deliberate omission**: `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` — previously found unserviceable through OpenRouter (per your standing context); commented in-file.\n\n**No restart**: the settings document hot-reloads (`applies: live`). I verified against the *running* web host via `settings.describe` — revision 3, all 30 OpenRouter models including the new free entries present. The Models page in this GUI will show them after a refresh; no Web artifact rebuild was needed. Ops entry logged in `operations_history.md`.\n\n— Zap · Nova · Aug 25, 2026 9:25 PM MST · Twenty-one free models walked in; I only turned the key for eighteen — one's already broke, and two just hum.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-zap-50c75d73-t5_outbound",
+        "model": "grok-4.6",
+        "pair_id": "6b196aa5b1caca343f0f9d49",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-zap-50c75d73-t5",
+          "runtime": "dsh",
+          "subject": "nova.chase.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "chase",
+          "agents": []
+        },
+        "turn_id": "dsh-zap-50c75d73-t5"
+      },
+      "role": "assistant",
+      "session_id": "session-50c75d73-5a59-4fe6-86f6-fe3ea4fa80d3",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-26T04:23:33.254+00:00"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "session-50c75d73-5a59-4fe6-86f6-fe3ea4fa80d3",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_dsh-zap-50c75d73-t5_outbound",
+    "user": "turn_dsh-zap-50c75d73-t5_inbound"
+  },
+  "summary": "User: I need you to go into DeepSeek harness DSH and add all the FREE models for Open router to the model selector\n\nAssistant: Done — all free OpenRouter models are live in the model selector. What happened:\n\n**Config change** — `/adapt/ops",
+  "turn_id": "dsh-zap-50c75d73-t5"
+}

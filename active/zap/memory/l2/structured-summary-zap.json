@@ -1,0 +1,19 @@
+{
+  "agent_id": "zap",
+  "event_id": "structured-summary-zap-20260816T020847Z",
+  "kind": "structured_note",
+  "memory_level": "l2",
+  "payload": {
+    "raw_ids": [
+      "comms-turn-02655f60e2d1c127fb8f8fbc",
+      "comms-turn-03d6a1d673f090388f9076d1",
+      "comms-turn-0a56b271d1b89f6806806983",
+      "comms-turn-0d36f671c7a2c704e7ae5d0d",
+      "comms-turn-100d0c91888c539ddd18db37"
+    ],
+    "summary": "structured 5 raw captures into L4 episodic notes"
+  },
+  "schema": "memfab.memory.note.v1",
+  "written_at_utc": "20260816T020847Z",
+  "written_by": "axiom (MemOps T1 Lead) wave4 structure"
+}

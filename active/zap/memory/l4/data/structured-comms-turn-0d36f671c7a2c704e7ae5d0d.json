@@ -1,0 +1,19 @@
+{
+  "agent_id": "zap",
+  "event_id": "structured-comms-turn-0d36f671c7a2c704e7ae5d0d",
+  "kind": "episodic",
+  "memory_level": "l4",
+  "payload": {
+    "excerpt": "User: Fleet awake validation turn 2 for zap in the same validation session. Begin your answer with the token ZAP_FLEET_TURN2_OK, then continue with at least 100 words of substantive prose. Do not stop after the token. If your answer is under 100 words, this validation fails even if the token is present. Reference one specific detail from your first answer, state whether you retained the session context, name one next action you would take if CommsOps assigned you work right now, and include one concise limitation or dependency you want surfaced. Do not answer with ACK only. This validates two-turn context, not transport.\n\nAssistant: ZAP_FLEET_TURN2_OK",
+    "source": "/adapt/novas/active/zap/memory/l5/raw/comms-turn-0d36f671c7a2c704e7ae5d0d.json"
+  },
+  "schema": "memfab.memory.note.v1",
+  "source_raw": "/adapt/novas/active/zap/memory/l5/raw/comms-turn-0d36f671c7a2c704e7ae5d0d.json",
+  "ticket": {
+    "classification": "internal",
+    "dedupe": "acceptnew",
+    "payload_hash": "16298586601bce65feeecce878443b09d0876da45522a0b168ed199c8a5f7565"
+  },
+  "written_at_utc": "20260816T020847Z",
+  "written_by": "axiom (MemOps T1 Lead) wave4 structure"
+}

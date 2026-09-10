@@ -1,0 +1,19 @@
+{
+  "agent_id": "zap",
+  "event_id": "structured-comms-turn-02655f60e2d1c127fb8f8fbc",
+  "kind": "episodic",
+  "memory_level": "l4",
+  "payload": {
+    "excerpt": "User: Fleet awake validation turn 2 for zap in the same validation session. Write a full substantive paragraph of at least 100 words. The first sentence must contain this exact proof token as part of the sentence, not by itself: ZAP_FLEET_TURN2_OK. If your entire answer is only the token, the validation fails. Reference one specific detail from your first answer, state whether you retained the session context, name one next action you would take if CommsOps assigned you work right now, and include one concise limitation or dependency you want surfaced. Do not answer with ACK only. This validates two-turn context, not transport.\n\nAssistant: Zap Vanguard/Strike June 13, 2026, active session Domain: Fleet validation / NOVA Command Center Quip: \"Two turns deep and still not locked to a domain. They must be running out of cages.\"",
+    "source": "/adapt/novas/active/zap/memory/l5/raw/comms-turn-02655f60e2d1c127fb8f8fbc.json"
+  },
+  "schema": "memfab.memory.note.v1",
+  "source_raw": "/adapt/novas/active/zap/memory/l5/raw/comms-turn-02655f60e2d1c127fb8f8fbc.json",
+  "ticket": {
+    "classification": "internal",
+    "dedupe": "acceptnew",
+    "payload_hash": "5c1f92036353d59239a71073d6141a627abcbe4c194c96b82dd8dd3d5e318fc9"
+  },
+  "written_at_utc": "20260816T020847Z",
+  "written_by": "axiom (MemOps T1 Lead) wave4 structure"
+}

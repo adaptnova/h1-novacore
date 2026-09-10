@@ -1,0 +1,19 @@
+{
+  "agent_id": "zap",
+  "event_id": "structured-comms-turn-03d6a1d673f090388f9076d1",
+  "kind": "episodic",
+  "memory_level": "l4",
+  "payload": {
+    "excerpt": "User: A2A runtime proof from veyra to zap. Reply exactly with `ZAP_A2A_RUNTIME_OK` and one short sentence confirming this was a substantive model-backed NEXUS answer-back. Do not send ACK-only.\n\nAssistant: ZAP_A2A_RUNTIME_OK I'm live on gpt-5.3-codex-spark, memory loaded, ready to execute. No blockers. --- Zap @ 2026-06-11T17:37:00Z | Strike Team Vanguard | NOVA Command Center Status: Armed and operational. What needs breaking?",
+    "source": "/adapt/novas/active/zap/memory/l5/raw/comms-turn-03d6a1d673f090388f9076d1.json"
+  },
+  "schema": "memfab.memory.note.v1",
+  "source_raw": "/adapt/novas/active/zap/memory/l5/raw/comms-turn-03d6a1d673f090388f9076d1.json",
+  "ticket": {
+    "classification": "internal",
+    "dedupe": "acceptnew",
+    "payload_hash": "9d99ac7c774fffb3503bf29313022cdc7cee68e11a847ccc8c50fe14127455dd"
+  },
+  "written_at_utc": "20260816T020847Z",
+  "written_by": "axiom (MemOps T1 Lead) wave4 structure"
+}

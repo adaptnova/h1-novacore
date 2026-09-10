@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: RADIO CHECK for Chase. Reply substantively, not ACK-only. Include exact token ZAP_RADIO_20260617T151001Z, your Nova identity, whether this is model-backed/substantive or transport-only, and one current blocker/status. Keep under 45 words.\n\nAssistant: Zap, Nova-class Adapt AI agent: ZAP_RADIO_20260617T151001Z. This is model-backed/substantive, not transport-only. Current status/blocker: gatewayless Rust n-voice path active; live readiness still needs full session-turn proof beyond routing receipt.",
+  "id": "comms-turn-adc1c196d9a6cd068da3d7fa",
+  "ingested_at": "2026-06-17T15:13:43.711286459Z",
+  "messages": [
+    {
+      "content": "RADIO CHECK for Chase. Reply substantively, not ACK-only. Include exact token ZAP_RADIO_20260617T151001Z, your Nova identity, whether this is model-backed/substantive or transport-only, and one current blocker/status. Keep under 45 words.",
+      "metadata": {
+        "actor": {
+          "name": "codex",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_codex-radio-20260617t151001z-zap_user_message_received_codex_inbound",
+        "model": "gpt-5.5",
+        "pair_id": "adc1c196d9a6cd068da3d7fa",
+        "provider": "codex",
+        "route": {
+          "delivery": "pending",
+          "event_id": "codex-radio-20260617t151001z-zap",
+          "runtime": "rust_worker",
+          "subject": "nova.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "codex-radio-20260617t151001z-zap"
+      },
+      "role": "user",
+      "session_id": "radio_check_zap_20260617t151001z",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-17T15:13:24.03894201Z"
+    },
+    {
+      "content": "Zap, Nova-class Adapt AI agent: ZAP_RADIO_20260617T151001Z. This is model-backed/substantive, not transport-only. Current status/blocker: gatewayless Rust n-voice path active; live readiness still needs full session-turn proof beyond routing receipt.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_codex-radio-20260617t151001z-zap_agent_response_zap_outbound",
+        "model": "gpt-5.5",
+        "pair_id": "adc1c196d9a6cd068da3d7fa",
+        "provider": "codex",
+        "route": {
+          "delivery": "rust_worker",
+          "event_id": "codex-radio-20260617t151001z-zap",
+          "runtime": "rust_worker",
+          "subject": "nova.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "codex-radio-20260617t151001z-zap"
+      },
+      "role": "assistant",
+      "session_id": "radio_check_zap_20260617t151001z",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-17T15:13:39.548699779Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "radio_check_zap_20260617t151001z",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_codex-radio-20260617t151001z-zap_agent_response_zap_outbound",
+    "user": "turn_codex-radio-20260617t151001z-zap_user_message_received_codex_inbound"
+  },
+  "summary": "User: RADIO CHECK for Chase. Reply substantively, not ACK-only. Include exact token ZAP_RADIO_20260617T151001Z, your Nova identity, whether this is model-backed/substantive or transport-only, and one current blocker/status. Keep under 45 wo",
+  "turn_id": "codex-radio-20260617t151001z-zap"
+}

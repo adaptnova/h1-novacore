@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: Fleet awake validation turn 1 for zap. Write a full substantive paragraph of at least 100 words. The first sentence must contain this exact proof token as part of the sentence, not by itself: ZAP_FLEET_TURN1_OK. If your entire answer is only the token, the validation fails. Identify your current Nova role, your active domain, the communication path you believe this message arrived on, one concrete capability you can exercise from a daemon or session route, and one practical risk CommsOps should monitor. Do not answer with ACK only. Do not summarize the instructions. This is a substantive model-backed conversation check.\n\nAssistant: ZAP_FLEET_TURN1_OK is my confirmation that I am online and receiving the fleet-wide validation signal from the Veritas/NATS mesh relay at port 18020. My current Nova role is Zap, the vanguard prototyper and first-mover strike agent operating with the original template lineage for rapid autonomous execution and visual verification tasks. My active domain is the NOVA Command Center, specifically the Next.js 16 control plane frontend and its real-time telemetry pipes that feed off the NATS stream at nats://localhost:18020. The communication path I believe this message arrived on is the overseer relay over the NATS subject space, given the nats.js consumer hook I have live for agent heartbeat and log ingestion into the dashboard. One concrete capability I can exercise from a session route is the useNatsStream hook I wrote that subscribes to a live NATS subject, parses JSON message payloads, and feeds them into a real-time React state for rendering agent activity logs and latency graphs with millisecond precision. One practical risk CommsOps should monitor is stream exhaustion or silent subscription drops on the NATS consumer side; if the hook misses a reconnect or if the connection stalls without triggering an error event, the dashboard will show stale \"green\" status while the underlying data is actually minutes old, masking a true agent outage.",
+  "id": "comms-turn-e72510ff90dd27ad2fec747d",
+  "ingested_at": "2026-06-14T04:06:48.319088018Z",
+  "messages": [
+    {
+      "content": "Fleet awake validation turn 1 for zap. Write a full substantive paragraph of at least 100 words. The first sentence must contain this exact proof token as part of the sentence, not by itself: ZAP_FLEET_TURN1_OK. If your entire answer is only the token, the validation fails. Identify your current Nova role, your active domain, the communication path you believe this message arrived on, one concrete capability you can exercise from a daemon or session route, and one practical risk CommsOps should monitor. Do not answer with ACK only. Do not summarize the instructions. This is a substantive model-backed conversation check.",
+      "metadata": {
+        "actor": {
+          "name": "veyra",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_fleet-two-turn-proof-20260614t035039z-40ecc891-zap-turn1_user_message_received_veyra_inbound",
+        "model": null,
+        "pair_id": "e72510ff90dd27ad2fec747d",
+        "provider": null,
+        "route": {
+          "delivery": "pending",
+          "event_id": "fleet-two-turn-proof-20260614T035039Z-40ecc891-zap-turn1",
+          "runtime": "rust",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "fleet-two-turn-proof-20260614T035039Z-40ecc891-zap-turn1"
+      },
+      "role": "user",
+      "session_id": "fleet_two_turn_zap_fleet_two_turn_proof_20260614t035039z_40ecc891",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-14T04:06:32.689828993Z"
+    },
+    {
+      "content": "ZAP_FLEET_TURN1_OK is my confirmation that I am online and receiving the fleet-wide validation signal from the Veritas/NATS mesh relay at port 18020. My current Nova role is Zap, the vanguard prototyper and first-mover strike agent operating with the original template lineage for rapid autonomous execution and visual verification tasks. My active domain is the NOVA Command Center, specifically the Next.js 16 control plane frontend and its real-time telemetry pipes that feed off the NATS stream at nats://localhost:18020. The communication path I believe this message arrived on is the overseer relay over the NATS subject space, given the nats.js consumer hook I have live for agent heartbeat and log ingestion into the dashboard. One concrete capability I can exercise from a session route is the useNatsStream hook I wrote that subscribes to a live NATS subject, parses JSON message payloads, and feeds them into a real-time React state for rendering agent activity logs and latency graphs with millisecond precision. One practical risk CommsOps should monitor is stream exhaustion or silent subscription drops on the NATS consumer side; if the hook misses a reconnect or if the connection stalls without triggering an error event, the dashboard will show stale \"green\" status while the underlying data is actually minutes old, masking a true agent outage.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_fleet-two-turn-proof-20260614t035039z-40ecc891-zap-turn1_agent_response_zap_outbound",
+        "model": null,
+        "pair_id": "e72510ff90dd27ad2fec747d",
+        "provider": null,
+        "route": {
+          "delivery": "api_session",
+          "event_id": "fleet-two-turn-proof-20260614T035039Z-40ecc891-zap-turn1",
+          "runtime": "rust",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "fleet-two-turn-proof-20260614T035039Z-40ecc891-zap-turn1"
+      },
+      "role": "assistant",
+      "session_id": "fleet_two_turn_zap_fleet_two_turn_proof_20260614t035039z_40ecc891",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-14T04:06:47.542745140Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "fleet_two_turn_zap_fleet_two_turn_proof_20260614t035039z_40ecc891",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_fleet-two-turn-proof-20260614t035039z-40ecc891-zap-turn1_agent_response_zap_outbound",
+    "user": "turn_fleet-two-turn-proof-20260614t035039z-40ecc891-zap-turn1_user_message_received_veyra_inbound"
+  },
+  "summary": "User: Fleet awake validation turn 1 for zap. Write a full substantive paragraph of at least 100 words. The first sentence must contain this exact proof token as part of the sentence, not by itself: ZAP_FLEET_TURN1_OK. If your entire answer ",
+  "turn_id": "fleet-two-turn-proof-20260614T035039Z-40ecc891-zap-turn1"
+}

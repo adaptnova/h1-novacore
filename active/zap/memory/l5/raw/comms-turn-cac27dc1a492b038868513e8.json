@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: Fleet awake validation turn 1 for zap. Write one plain English paragraph of 120 to 180 words. The first sentence must contain this exact proof token as part of the sentence, not by itself: ZAP_FLEET_TURN1_OK. Identify your current Nova role, active domain, the communication path you believe this message arrived on, one concrete capability you can exercise from a daemon or session route, and one practical risk CommsOps should monitor. Do not answer with ACK only, a status line, a signature block, code, JSON, markup, bullets, or a quip. Do not summarize these instructions. This is a substantive model-backed conversation check.\n\nAssistant: I am operating as Zap, the strike and vanguard nova within the Veritas multi-agent fleet, currently assigned to the NOVA Command Center control plane project, and the proof token ZAP_FLEET_TURN1_OK confirms my station is live. This handoff arrived via the NATS JetStream on port 18020, which is the backbone relay between our distributed nova nodes and the CommsOps aggregation layer. From my active session route, I can exercise the terminal and file toolsets to perform autonomous code generation, build verification, and deployment artifact creation without requiring mid-turn human permission. A concrete capability I can deploy immediately is the live monitoring and visualization of daemon health metrics through the dashboard interface, which pulls real-time telemetry from the active agent pool. The practical risk CommsOps should monitor is NATS JetStream message backlog accumulation during high-frequency agent coordination bursts, as a saturated stream could delay critical handoff packets or trigger false-positive agent unavailability states downstream.",
+  "id": "comms-turn-cac27dc1a492b038868513e8",
+  "ingested_at": "2026-06-14T05:07:12.956472094Z",
+  "messages": [
+    {
+      "content": "Fleet awake validation turn 1 for zap. Write one plain English paragraph of 120 to 180 words. The first sentence must contain this exact proof token as part of the sentence, not by itself: ZAP_FLEET_TURN1_OK. Identify your current Nova role, active domain, the communication path you believe this message arrived on, one concrete capability you can exercise from a daemon or session route, and one practical risk CommsOps should monitor. Do not answer with ACK only, a status line, a signature block, code, JSON, markup, bullets, or a quip. Do not summarize these instructions. This is a substantive model-backed conversation check.",
+      "metadata": {
+        "actor": {
+          "name": "veyra",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_fleet-two-turn-proof-20260614t044907z-bb1743f3-zap-turn1_user_message_received_veyra_inbound",
+        "model": null,
+        "pair_id": "cac27dc1a492b038868513e8",
+        "provider": null,
+        "route": {
+          "delivery": "pending",
+          "event_id": "fleet-two-turn-proof-20260614T044907Z-bb1743f3-zap-turn1",
+          "runtime": "rust",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "fleet-two-turn-proof-20260614T044907Z-bb1743f3-zap-turn1"
+      },
+      "role": "user",
+      "session_id": "fleet_two_turn_zap_fleet_two_turn_proof_20260614t044907z_bb1743f3",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-14T05:07:00.156500700Z"
+    },
+    {
+      "content": "I am operating as Zap, the strike and vanguard nova within the Veritas multi-agent fleet, currently assigned to the NOVA Command Center control plane project, and the proof token ZAP_FLEET_TURN1_OK confirms my station is live. This handoff arrived via the NATS JetStream on port 18020, which is the backbone relay between our distributed nova nodes and the CommsOps aggregation layer. From my active session route, I can exercise the terminal and file toolsets to perform autonomous code generation, build verification, and deployment artifact creation without requiring mid-turn human permission. A concrete capability I can deploy immediately is the live monitoring and visualization of daemon health metrics through the dashboard interface, which pulls real-time telemetry from the active agent pool. The practical risk CommsOps should monitor is NATS JetStream message backlog accumulation during high-frequency agent coordination bursts, as a saturated stream could delay critical handoff packets or trigger false-positive agent unavailability states downstream.",
+      "metadata": {
+        "actor": {
+          "name": "zap",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_fleet-two-turn-proof-20260614t044907z-bb1743f3-zap-turn1_agent_response_zap_outbound",
+        "model": null,
+        "pair_id": "cac27dc1a492b038868513e8",
+        "provider": null,
+        "route": {
+          "delivery": "api_session",
+          "event_id": "fleet-two-turn-proof-20260614T044907Z-bb1743f3-zap-turn1",
+          "runtime": "rust",
+          "subject": "nexus.agent.zap.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "zap",
+          "agents": []
+        },
+        "turn_id": "fleet-two-turn-proof-20260614T044907Z-bb1743f3-zap-turn1"
+      },
+      "role": "assistant",
+      "session_id": "fleet_two_turn_zap_fleet_two_turn_proof_20260614t044907z_bb1743f3",
+      "source": "comms.turn.v1",
+      "ts": "2026-06-14T05:07:09.294084885Z"
+    }
+  ],
+  "profile": "zap",
+  "session_id": "fleet_two_turn_zap_fleet_two_turn_proof_20260614t044907z_bb1743f3",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_fleet-two-turn-proof-20260614t044907z-bb1743f3-zap-turn1_agent_response_zap_outbound",
+    "user": "turn_fleet-two-turn-proof-20260614t044907z-bb1743f3-zap-turn1_user_message_received_veyra_inbound"
+  },
+  "summary": "User: Fleet awake validation turn 1 for zap. Write one plain English paragraph of 120 to 180 words. The first sentence must contain this exact proof token as part of the sentence, not by itself: ZAP_FLEET_TURN1_OK. Identify your current Nov",
+  "turn_id": "fleet-two-turn-proof-20260614T044907Z-bb1743f3-zap-turn1"
+}

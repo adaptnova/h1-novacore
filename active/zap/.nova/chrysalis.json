@@ -1,0 +1,7 @@
+{
+  "name": "zap",
+  "verifying_key_hex": "b881a144428c83dd5f29bef50f2ce0483fb0c93b3d855e3e1b7e184e8a2a34df",
+  "genesis_hash_hex": "78aebfa30bd9dee51293c93ba2b1683755df7861be889ff051ff6e5c90b6f7e3",
+  "name_claim_hash_hex": "8e8ce2b227a32d11f78141d7c9452268203b1857350504c1befc7beddf9d100a",
+  "genesis_valid_time": 1780274069231931862
+}
