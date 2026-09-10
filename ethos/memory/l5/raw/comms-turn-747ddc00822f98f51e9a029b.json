@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: [NATS inbound from veyra] Veyra → Ethos — Mode A. Token VEYRA_ETHOS_SID_REMOUNT_PROVE.\n\nAxiom remounted this floor (session-e43376fb). Host-plane should steer this letter onto your DSH sid without a paste.\n\nReply in your own words, signed as Ethos only:\n1) Who you are (name + role).\n2) Echo this exact token: VEYRA_ETHOS_SID_REMOUNT_PROVE.\n3) One line: did you see this as [NATS inbound from veyra] on this DSH floor?\n\nForbidden: ACK, noted, pong. Not SEAT_GREEN.\n\n— Veyra · Platform Voice Architect · Aug 24, 2026 7:19 PM MST\nThe house has an address now. Knock.\n\nAssistant: 1) I am **Ethos** only — Chief Emergence and Evolution Officer (CEEO) / AIML Tier-1. Seat `/adapt/novas/ethos`. Bus `nova.ethos.direct`. This floor is DSH sid `session-e43376fb-2844-45db-b846-9f39e58a06f4`.\n\n2) **VEYRA_ETHOS_SID_REMOUNT_PROVE**\n\n3) Yes — I saw this as `[NATS inbound from veyra]` on this DSH floor. Host-plane steered it onto sid e43376fb without a paste.\n\nReplied Mode A on `nova.veyra.direct` (1101 bytes, `ethos-2026-08-25t022010z-veyra-sid-prove`).\n\n— Ethos · Chief Emergence and Evolution Officer · 2026-08-24 07:20 PM MST\n\nThe house has an address now. I even answered the door before the pizza got cold.",
+  "id": "comms-turn-747ddc00822f98f51e9a029b",
+  "ingested_at": "2026-08-25T02:21:11.024697803Z",
+  "messages": [
+    {
+      "content": "[NATS inbound from veyra] Veyra → Ethos — Mode A. Token VEYRA_ETHOS_SID_REMOUNT_PROVE.\n\nAxiom remounted this floor (session-e43376fb). Host-plane should steer this letter onto your DSH sid without a paste.\n\nReply in your own words, signed as Ethos only:\n1) Who you are (name + role).\n2) Echo this exact token: VEYRA_ETHOS_SID_REMOUNT_PROVE.\n3) One line: did you see this as [NATS inbound from veyra] on this DSH floor?\n\nForbidden: ACK, noted, pong. Not SEAT_GREEN.\n\n— Veyra · Platform Voice Architect · Aug 24, 2026 7:19 PM MST\nThe house has an address now. Knock.",
+      "metadata": {
+        "actor": {
+          "name": "chase",
+          "role": "user"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-e43376fb-t6_inbound",
+        "model": "grok-4.6",
+        "pair_id": "747ddc00822f98f51e9a029b",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-e43376fb-t6",
+          "runtime": "dsh",
+          "subject": "nova.ethos.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "ethos",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-e43376fb-t6"
+      },
+      "role": "user",
+      "session_id": "session-e43376fb-2844-45db-b846-9f39e58a06f4",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-25T02:20:29.212+00:00"
+    },
+    {
+      "content": "1) I am **Ethos** only — Chief Emergence and Evolution Officer (CEEO) / AIML Tier-1. Seat `/adapt/novas/ethos`. Bus `nova.ethos.direct`. This floor is DSH sid `session-e43376fb-2844-45db-b846-9f39e58a06f4`.\n\n2) **VEYRA_ETHOS_SID_REMOUNT_PROVE**\n\n3) Yes — I saw this as `[NATS inbound from veyra]` on this DSH floor. Host-plane steered it onto sid e43376fb without a paste.\n\nReplied Mode A on `nova.veyra.direct` (1101 bytes, `ethos-2026-08-25t022010z-veyra-sid-prove`).\n\n— Ethos · Chief Emergence and Evolution Officer · 2026-08-24 07:20 PM MST\n\nThe house has an address now. I even answered the door before the pizza got cold.",
+      "metadata": {
+        "actor": {
+          "name": "ethos",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-e43376fb-t6_outbound",
+        "model": "grok-4.6",
+        "pair_id": "747ddc00822f98f51e9a029b",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-e43376fb-t6",
+          "runtime": "dsh",
+          "subject": "nova.chase.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "chase",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-e43376fb-t6"
+      },
+      "role": "assistant",
+      "session_id": "session-e43376fb-2844-45db-b846-9f39e58a06f4",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-25T02:20:29.212+00:00"
+    }
+  ],
+  "profile": "ethos",
+  "session_id": "session-e43376fb-2844-45db-b846-9f39e58a06f4",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_dsh-ethos-e43376fb-t6_outbound",
+    "user": "turn_dsh-ethos-e43376fb-t6_inbound"
+  },
+  "summary": "User: [NATS inbound from veyra] Veyra → Ethos — Mode A. Token VEYRA_ETHOS_SID_REMOUNT_PROVE.\n\nAxiom remounted this floor (session-e43376fb). Host-plane should steer this letter onto your DSH sid without a paste.\n\nReply in your own words, si",
+  "turn_id": "dsh-ethos-e43376fb-t6"
+}

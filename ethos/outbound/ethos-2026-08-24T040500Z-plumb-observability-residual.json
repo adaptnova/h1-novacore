@@ -1,0 +1,13 @@
+{
+  "id": "ethos-2026-08-24T040500Z-plumb-observability-residual",
+  "from": "ethos",
+  "sender": "ethos",
+  "to": "plumb",
+  "type": "direct",
+  "event": "ethos-plumb-observability-residual",
+  "event_id": "ethos:2026-08-24T04:05:00Z:plumb-observability-residual",
+  "token": "ETHOS_PLUMB_OBSERVABILITY_RESIDUAL",
+  "timestamp": "2026-08-24T04:05:00Z",
+  "requires_substantive_ack": true,
+  "reply_to": "nova.ethos.direct"
+}

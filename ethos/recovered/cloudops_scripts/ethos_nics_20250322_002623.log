@@ -1,0 +1,39 @@
+2025-03-22 00:26:23 - Starting script to add NICs to ethos server
+2025-03-22 00:26:23 - Instance ID: 0717_03ed7300-9111-4cd8-82c9-f6d5f5d10224
+2025-03-22 00:26:23 - Subnet ID: 0717-57b4b629-9704-4ba2-9fdb-63386cdba641
+2025-03-22 00:26:23 - Security Group: exchange-evacuate-subgroup-gravel
+2025-03-22 00:26:23 - Checking current network interfaces
+Listing network interfaces of instance 0717_03ed7300-9111-4cd8-82c9-f6d5f5d10224 under account a-d-a-p-t.ai LLC as user chase@levelup2x.com...
+ID                                          Name                          Type      Subnet              Reserved IP   Security groups                     FloatIPs   Created                     Status      Allow source IP spoofing   Speed   
+0717-354aafa4-3df8-41ec-be75-211274af25cd   trinity-kinsman-glue-widely   primary   us-south-1-subnet   10.240.0.5    exchange-evacuate-subgroup-gravel   -          2025-03-21T20:57:02-07:00   available   true                       32000   
+2025-03-22 00:26:24 - Adding network interface ethos-nic-1
+2025-03-22 00:26:25 - Failed to add network interface ethos-nic-1
+2025-03-22 00:26:30 - Adding network interface ethos-nic-2
+2025-03-22 00:26:31 - Failed to add network interface ethos-nic-2
+2025-03-22 00:26:36 - Adding network interface ethos-nic-3
+2025-03-22 00:26:37 - Failed to add network interface ethos-nic-3
+2025-03-22 00:26:42 - Adding network interface ethos-nic-4
+2025-03-22 00:26:43 - Failed to add network interface ethos-nic-4
+2025-03-22 00:26:48 - Adding network interface ethos-nic-5
+2025-03-22 00:26:49 - Failed to add network interface ethos-nic-5
+2025-03-22 00:26:54 - Adding network interface ethos-nic-6
+2025-03-22 00:26:55 - Failed to add network interface ethos-nic-6
+2025-03-22 00:27:00 - Adding network interface ethos-nic-7
+2025-03-22 00:27:01 - Failed to add network interface ethos-nic-7
+2025-03-22 00:27:06 - Adding network interface ethos-nic-8
+2025-03-22 00:27:07 - Failed to add network interface ethos-nic-8
+2025-03-22 00:27:12 - Adding network interface ethos-nic-9
+2025-03-22 00:27:12 - Failed to add network interface ethos-nic-9
+2025-03-22 00:27:17 - Checking network interfaces after adding
+Listing network interfaces of instance 0717_03ed7300-9111-4cd8-82c9-f6d5f5d10224 under account a-d-a-p-t.ai LLC as user chase@levelup2x.com...
+ID                                          Name                          Type      Subnet              Reserved IP   Security groups                     FloatIPs   Created                     Status      Allow source IP spoofing   Speed   
+0717-354aafa4-3df8-41ec-be75-211274af25cd   trinity-kinsman-glue-widely   primary   us-south-1-subnet   10.240.0.5    exchange-evacuate-subgroup-gravel   -          2025-03-21T20:57:02-07:00   available   true                       32000   
+2025-03-22 00:27:18 - Created configure_bonding.sh script to be run on the ethos server
+2025-03-22 00:27:18 - Instructions:
+2025-03-22 00:27:18 - 1. Copy configure_bonding.sh to ethos server:
+2025-03-22 00:27:18 -    scp configure_bonding.sh ethos@10.240.0.5:~/
+2025-03-22 00:27:18 - 2. SSH to ethos server:
+2025-03-22 00:27:18 -    ssh ethos@10.240.0.5
+2025-03-22 00:27:18 - 3. Run the bonding script:
+2025-03-22 00:27:18 -    sudo bash configure_bonding.sh
+2025-03-22 00:27:18 - Script completed. Check ethos_nics_20250322_002623.log for details.

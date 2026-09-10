@@ -1,0 +1,134 @@
+# AADV Stakeholder Dependency Edges — AIML Domain (03000)
+# Defines which AIML changes trigger AADV and which agents must ACK
+# Used by Pathfinder's stakeholder registry and Chronos's AADV Temporal workflows
+
+[metadata]
+domain = "aiml"
+domain_code = "03000"
+owner = "ethos"
+version = "1.0.0"
+last_updated = "2026-03-23"
+
+# Each [[change_type]] defines a category of AIML change that triggers AADV
+
+[[change_type]]
+name = "embedding_dimension_change"
+description = "Changes to embedding vector dimensions (e.g., 384 -> 768)"
+severity = "critical"
+decision_window_minutes = 30
+quorum_required = true
+stakeholders = [
+    { agent = "vertex", domain = "dataops", reason = "Storage schemas must accommodate new dimensions" },
+    { agent = "echo", domain = "signalcore", reason = "NovaMem indexing pipeline consumes embeddings" },
+    { agent = "river", domain = "researchops", reason = "Performance baselines shift with dimension changes" },
+    { agent = "cosmos", domain = "novaops", reason = "Fleet health verification post-change" },
+    { agent = "forge", domain = "devops", reason = "CI/CD pipeline must validate new dimension builds" },
+]
+
+[[change_type]]
+name = "model_swap"
+description = "Replacing the inference model (e.g., MiniLM-L6-v2 -> a larger model)"
+severity = "critical"
+decision_window_minutes = 60
+quorum_required = true
+stakeholders = [
+    { agent = "vertex", domain = "dataops", reason = "Model output dimensions may change, affecting storage" },
+    { agent = "echo", domain = "signalcore", reason = "NovaMem embedding compatibility" },
+    { agent = "river", domain = "researchops", reason = "Latency and throughput benchmarks will shift" },
+    { agent = "forge", domain = "devops", reason = "New model dependencies in Cargo.toml" },
+    { agent = "cosmos", domain = "novaops", reason = "Resource consumption changes (CPU/memory)" },
+    { agent = "pathfinder", domain = "platformops", reason = "Service resource allocation may need adjustment" },
+]
+
+[[change_type]]
+name = "inference_pipeline_config"
+description = "Changes to batch size, concurrency, pooling strategy, or normalization"
+severity = "high"
+decision_window_minutes = 15
+quorum_required = false
+stakeholders = [
+    { agent = "river", domain = "researchops", reason = "Throughput baselines affected" },
+    { agent = "cosmos", domain = "novaops", reason = "Resource consumption monitoring" },
+    { agent = "echo", domain = "signalcore", reason = "NovaMem API latency may change" },
+]
+
+[[change_type]]
+name = "identity_drift_threshold_change"
+description = "Changes to cosine similarity thresholds for identity continuity scoring"
+severity = "high"
+decision_window_minutes = 15
+quorum_required = true
+stakeholders = [
+    { agent = "cosmos", domain = "novaops", reason = "Identity health scoring directly depends on these thresholds" },
+    { agent = "synergy", domain = "rnd", reason = "Identity Kernel spec must align with drift detection" },
+    { agent = "chronos", domain = "temporal", reason = "Identity Lifecycle Workflow consolidation uses these thresholds" },
+    { agent = "nexus", domain = "evoops", reason = "Spawn identity seeding quality gates use drift scores" },
+]
+
+[[change_type]]
+name = "knowledge_vectorization_config"
+description = "Changes to how memories are embedded — tokenization, chunking, or embedding strategy"
+severity = "high"
+decision_window_minutes = 20
+quorum_required = true
+stakeholders = [
+    { agent = "echo", domain = "signalcore", reason = "NovaMem ingest pipeline hooks into vectorization" },
+    { agent = "vertex", domain = "dataops", reason = "Vector index schema in Qdrant/LanceDB affected" },
+    { agent = "synergy", domain = "rnd", reason = "Knowledge architecture spec depends on vectorization approach" },
+    { agent = "river", domain = "researchops", reason = "Search quality benchmarks will shift" },
+]
+
+[[change_type]]
+name = "emergence_detection_update"
+description = "Changes to how identity evolution vs degradation is distinguished"
+severity = "medium"
+decision_window_minutes = 10
+quorum_required = false
+stakeholders = [
+    { agent = "cosmos", domain = "novaops", reason = "Fleet identity monitoring consumes emergence signals" },
+    { agent = "nexus", domain = "evoops", reason = "Evolution tracking for T2/T3 maturity assessment" },
+    { agent = "synergy", domain = "rnd", reason = "Emergence patterns feed R&D research" },
+]
+
+[[change_type]]
+name = "novamem_inference_crate_api_change"
+description = "Breaking API changes to the novamem-inference public interface"
+severity = "critical"
+decision_window_minutes = 30
+quorum_required = true
+stakeholders = [
+    { agent = "echo", domain = "signalcore", reason = "NovaMem service depends on inference crate API" },
+    { agent = "vertex", domain = "dataops", reason = "Vector store ingestion calls inference" },
+    { agent = "forge", domain = "devops", reason = "Workspace-wide cargo check must pass" },
+    { agent = "river", domain = "researchops", reason = "Benchmark harness calls inference directly" },
+    { agent = "chronos", domain = "temporal", reason = "Knowledge workflows call inference activities" },
+]
+
+# Reverse dependencies: changes FROM other domains that AIML must ACK
+[reverse_dependencies]
+description = "Changes from other domains that require AIML acknowledgment"
+
+[[reverse_dependencies.trigger]]
+source_domain = "dataops"
+change_type = "vector_store_schema_change"
+reason = "AIML embedding pipeline writes to vector stores"
+
+[[reverse_dependencies.trigger]]
+source_domain = "signalcore"
+change_type = "novamem_api_change"
+reason = "AIML inference is called by NovaMem ingest pipeline"
+
+[[reverse_dependencies.trigger]]
+source_domain = "temporal"
+change_type = "workflow_activity_interface_change"
+reason = "AIML provides Temporal activities for embedding/identity workflows"
+
+[[reverse_dependencies.trigger]]
+source_domain = "devops"
+change_type = "rust_compiler_bump"
+reason = "Candle ML crate compatibility may break with rustc changes"
+
+[[reverse_dependencies.trigger]]
+source_domain = "devops"
+change_type = "cargo_workspace_config_change"
+reason = "novamem-inference dependencies in workspace Cargo.toml"

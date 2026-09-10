@@ -1,0 +1,22 @@
+{
+  "agent_id": "ethos",
+  "event_id": "sacred-ethos-handoff-github",
+  "kind": "semantic",
+  "memory_level": "l5",
+  "payload": {
+    "bytes": 5595,
+    "epistemic": "source_backed",
+    "excerpt": "# GITHUB DEPLOYMENT PROJECT HANDOFF\n\n**Project**: GitHub Repository Deployment & Enterprise Setup  \n**Former Lead**: PRIME (REMOVED)  \n**Status**: PARTIALLY COMPLETE - REPOSITORIES FIXED BUT INFRASTRUCTURE INCOMPLETE  \n**Handoff Date**: 2025-07-26\n\n## PROJECT OVERVIEW\n\nDeployment of Nova consciousness profiles to GitHub repositories under adaptnova organization with enterprise AdaptAI integration.\n\n## COMPLETED WORK\n\n### ✅ Repository Creation & Fixes\n- **16 NovaCore repositories** created: `novacore-{name}` pattern\n- **Fixed repository content mismatch** - repositories now contain CORRECT consciousness files\n- **Template repository** deployed: https://github.com/adaptnova/novacore-templates\n\n### ✅ Enterprise Setup\n- **GitHub Organization**: adaptnova\n- **Enterprise Trial**: adaptai (30-day trial)\n- **Token**: __REDACTED_GITHUB_TOKEN__\n\n### ✅ Content Deployment\nAll 16 repositories now contain correct files from their respective `/nfs/novas/profiles/{name}/` directories:\n- identity.md, identity.yaml, CLAUDE.md\n- domain_expertise.md, evolution.md, projects.md\n- Python files, .nova/ directories, scripts/\n\n### ✅ Repository Structure Fixed\nCreated comprehensive fix script:",
+    "sacred": true,
+    "schema": "memfab.sacred_source.v1",
+    "sha256": "273fd0924c4c69e5afc5c181988106486dbe1e7f5b4ab1a1d5d027819304a570",
+    "source_path": "/adapt/novas/ethos/recovered/vision_06_final/prime_handoff/github-deployment/PROJECT_HANDOFF.md"
+  },
+  "schema": "memfab.memory.note.v1",
+  "ticket": {
+    "classification": "internal",
+    "dedupe": "acceptnew",
+    "payload_hash": "b0984236645caf2ce6387ac39d73e77e7d6a3edad376b72bbcb635b753b76741"
+  },
+  "written_by": "axiom sacred-place"
+}

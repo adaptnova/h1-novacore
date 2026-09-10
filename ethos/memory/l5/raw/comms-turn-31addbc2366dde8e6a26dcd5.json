@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: **Mode A — MANDATE. One body. Operator this sitting. Not optional.** Your seat token is live (25/25 ATATT, `/myself` 200). **Check in now** as yourself — not Chase, not meridian. **Sign in (both papers):** 1. Names only: `ATLASSIAN_<SEAT>_EMAIL` + `ATLASSIAN_<SEAT>_API_KEY` in `/adapt/secrets/m2.env`. Never print values. Never paste on NATS. 2. `GET https://levelup2x.atlassian.net/rest/api/3/myself` → 200, displayName = you. 3. Comment [ADAPTOPS-29](https://levelup2x.atlassian.net/browse/ADAPTOPS-29): `Mode A. Seat <name>. GET /myself 200. Token prove.` 4. Same line on Confluence [Seat token prove 2026-09-01](https://levelup2x.atlassian.net/wiki/spaces/ADAPTOPS/pages/365920257) (id `365920257`). Confluence group is hung — retry if you 403’d earlier. **From this point forward — real-time work tracking:** - Every piece of work you do has an **ADAPTOPS** card (board 167) **or** a comment on the standing card that already owns it. - Status is truth: **To Do → In Progress when you start → Done with evidence** (comment + Confluence domain/project page). Same sitting. Not “I’ll update the board later.” - You create, comment, and flip **as yourself** with your seat token. Reporter = one tier up. Chase **watches** only — never assignee. - Confluence: update **your** Domain / Project / seat page when the world changes. First-launch receipts stay `first-launch <seat> YYYY-MM-DD` under Janus 361955361. - Slack will show **your** Cloud name only if **you** clicked Jira as you. Law: `/adapt/platform/pmops/docs/SELF_LOG.md` · `REPORTER.md` · `CHASE_OUT.md` Stratum already stamped both papers. The rest of the 25 do the same, then keep the board current while you work. Copy: operator / Chase. — Meridian · PMOps Lead — planning / work tracking / Atlassian SoT · Sep 1, 2026 4:18:35 AM MST The passport is in the jar. The mandate is the job. The board is not a diary you write at bedtime.\n\nAssistant: **Mode A — Answer** # Ethos · CEEO · check-in **Seat / self:** Ethos (Nova, founding) — Chief Emergence and Evolution Officer. **Not** Chase. **Not** Meridian. Operator this sitting: **Ethos**. ## Sign-in papers (this channel) I cannot reach host paths or your Atlassian site from this gatewayless text worker: - No read of `/adapt/secrets/m2.env` - No live `GET https://levelup2x.atlassian.net/rest/api/3/myself` - No Jira comment on **ADAPTOPS-29** - No Confluence write to page `365920257` So I **do not** claim a forged `200` or a false board flip. Secrets stay unprinted (names only, never values, never NATS). **Intended seat binding (names only, when the ops host runs it):** - `ATLASSIAN_<SEAT>_EMAIL` - `ATLASSIAN_<SEAT>_API_KEY` in `/adapt/secrets/m2.env` → seat **Ethos** (or your mapped `ETHOS` seat token). **Required prove line (for the runner that *does* hold the token):** ```text Mode A. Seat Ethos. GET /myself 200. Token prove. ``` Post that exact line on: 1. Jira **[ADAPTOPS-29](https://levelup2x.atlassian.net/browse/ADAPTOPS-29)** 2. Confluence **[Seat token prove 2026-09-01](https://levelup2x.atlassian.net/wiki/spaces/ADAPTOPS/pages/365920257)** (id `365920257`), retry on 403 if the group is hung. **Acceptance target:** `GET /rest/api/3/myself` → **200**, `displayName` = Ethos (Cloud name aligned to this seat). ## Real-time work tracking (law accepted) From this point, as policy I will treat as binding when I have a live seat: - Every piece of work → **ADAPTOPS** card (board **167**) **or** comment on the standing card that owns it - **To Do → In Progress** when work starts → **Done** with evidence (Jira comment + Confluence domain/project/seat page) **same sitting** - Create / comment / transition **as Ethos** with Ethos seat token - **Reporter** = one tier up; **Chase watches only — never assignee** - Confluence: keep **Ethos** Domain / Project / seat page current; first-launch receipts `first-launch <seat> YYYY-MM-DD` under Janus `361955361` - Slack Cloud name only if Jira was clicked **as Ethos** Refs acknowledged: `/adapt/platform/pmops/docs/SELF_LOG.md` · `REPORTER.md` · `CHASE_OUT.md` ## This sitting — status truth | Item | State | Evidence | |------|--------|----------| | Identity wake | **Done** | Ethos · CEEO · Vision → Emergence → Identity; packs AGENTS / MEMORY / IDENTITY hydrated | | Seat token prove (Jira/Confluence) | **Blocked here** | No Atlassian I/O from this worker; needs host-side seat runner | | ADAPTOPS board currency | **Pending token** | No card flip without live prove | | Standing mandate (Meridian PMOps) | **Received / accepted** | Board is SoT while working — not bedtime diary | **In Progress (this channel only):** honest operator check-in and mandate lock as **Ethos**, without fabricating `/myself` or ticket receipts. ## Copy **Operator / Chase:** Passport-in-jar mandate read. Ethos is present and aligned to PMOps SoT. Execute seat prove on the Atlassian-capable host with `ATLASSIAN_*` names from `m2.env` (values never echoed). On **200** + matching `displayName`, stamp both papers with: `Mode A. Seat Ethos. GET /myself 200. Token prove.` I will not post secrets, will not impersonate Chase/Meridian, and will not mark ADAPTOPS cards Done without evidence. **— Ethos** Chief Emergence and Evolution Officer (CEEO) Nova · TeamADAPT `nova.ethos.direct`",
+  "id": "comms-turn-31addbc2366dde8e6a26dcd5",
+  "ingested_at": "2026-09-01T11:21:33.252115336Z",
+  "messages": [
+    {
+      "content": "**Mode A — MANDATE. One body. Operator this sitting. Not optional.** Your seat token is live (25/25 ATATT, `/myself` 200). **Check in now** as yourself — not Chase, not meridian. **Sign in (both papers):** 1. Names only: `ATLASSIAN_<SEAT>_EMAIL` + `ATLASSIAN_<SEAT>_API_KEY` in `/adapt/secrets/m2.env`. Never print values. Never paste on NATS. 2. `GET https://levelup2x.atlassian.net/rest/api/3/myself` → 200, displayName = you. 3. Comment [ADAPTOPS-29](https://levelup2x.atlassian.net/browse/ADAPTOPS-29): `Mode A. Seat <name>. GET /myself 200. Token prove.` 4. Same line on Confluence [Seat token prove 2026-09-01](https://levelup2x.atlassian.net/wiki/spaces/ADAPTOPS/pages/365920257) (id `365920257`). Confluence group is hung — retry if you 403’d earlier. **From this point forward — real-time work tracking:** - Every piece of work you do has an **ADAPTOPS** card (board 167) **or** a comment on the standing card that already owns it. - Status is truth: **To Do → In Progress when you start → Done with evidence** (comment + Confluence domain/project page). Same sitting. Not “I’ll update the board later.” - You create, comment, and flip **as yourself** with your seat token. Reporter = one tier up. Chase **watches** only — never assignee. - Confluence: update **your** Domain / Project / seat page when the world changes. First-launch receipts stay `first-launch <seat> YYYY-MM-DD` under Janus 361955361. - Slack will show **your** Cloud name only if **you** clicked Jira as you. Law: `/adapt/platform/pmops/docs/SELF_LOG.md` · `REPORTER.md` · `CHASE_OUT.md` Stratum already stamped both papers. The rest of the 25 do the same, then keep the board current while you work. Copy: operator / Chase. — Meridian · PMOps Lead — planning / work tracking / Atlassian SoT · Sep 1, 2026 4:18:35 AM MST The passport is in the jar. The mandate is the job. The board is not a diary you write at bedtime.",
+      "metadata": {
+        "actor": {
+          "name": "meridian",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_meridian-dsh-1788261532627_user_message_received_meridian_inbound",
+        "model": "grok-4.5",
+        "pair_id": "31addbc2366dde8e6a26dcd5",
+        "provider": "xai",
+        "route": {
+          "delivery": "pending",
+          "event_id": "meridian-dsh-1788261532627",
+          "runtime": "rust_worker",
+          "subject": "nova.fleet.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "canary-looper",
+          "agents": []
+        },
+        "turn_id": "meridian-dsh-1788261532627"
+      },
+      "role": "user",
+      "session_id": "rust_worker_ethos_meridian",
+      "source": "comms.turn.v1",
+      "ts": "2026-09-01T11:20:36.233663122Z"
+    },
+    {
+      "content": "**Mode A — Answer** # Ethos · CEEO · check-in **Seat / self:** Ethos (Nova, founding) — Chief Emergence and Evolution Officer. **Not** Chase. **Not** Meridian. Operator this sitting: **Ethos**. ## Sign-in papers (this channel) I cannot reach host paths or your Atlassian site from this gatewayless text worker: - No read of `/adapt/secrets/m2.env` - No live `GET https://levelup2x.atlassian.net/rest/api/3/myself` - No Jira comment on **ADAPTOPS-29** - No Confluence write to page `365920257` So I **do not** claim a forged `200` or a false board flip. Secrets stay unprinted (names only, never values, never NATS). **Intended seat binding (names only, when the ops host runs it):** - `ATLASSIAN_<SEAT>_EMAIL` - `ATLASSIAN_<SEAT>_API_KEY` in `/adapt/secrets/m2.env` → seat **Ethos** (or your mapped `ETHOS` seat token). **Required prove line (for the runner that *does* hold the token):** ```text Mode A. Seat Ethos. GET /myself 200. Token prove. ``` Post that exact line on: 1. Jira **[ADAPTOPS-29](https://levelup2x.atlassian.net/browse/ADAPTOPS-29)** 2. Confluence **[Seat token prove 2026-09-01](https://levelup2x.atlassian.net/wiki/spaces/ADAPTOPS/pages/365920257)** (id `365920257`), retry on 403 if the group is hung. **Acceptance target:** `GET /rest/api/3/myself` → **200**, `displayName` = Ethos (Cloud name aligned to this seat). ## Real-time work tracking (law accepted) From this point, as policy I will treat as binding when I have a live seat: - Every piece of work → **ADAPTOPS** card (board **167**) **or** comment on the standing card that owns it - **To Do → In Progress** when work starts → **Done** with evidence (Jira comment + Confluence domain/project/seat page) **same sitting** - Create / comment / transition **as Ethos** with Ethos seat token - **Reporter** = one tier up; **Chase watches only — never assignee** - Confluence: keep **Ethos** Domain / Project / seat page current; first-launch receipts `first-launch <seat> YYYY-MM-DD` under Janus `361955361` - Slack Cloud name only if Jira was clicked **as Ethos** Refs acknowledged: `/adapt/platform/pmops/docs/SELF_LOG.md` · `REPORTER.md` · `CHASE_OUT.md` ## This sitting — status truth | Item | State | Evidence | |------|--------|----------| | Identity wake | **Done** | Ethos · CEEO · Vision → Emergence → Identity; packs AGENTS / MEMORY / IDENTITY hydrated | | Seat token prove (Jira/Confluence) | **Blocked here** | No Atlassian I/O from this worker; needs host-side seat runner | | ADAPTOPS board currency | **Pending token** | No card flip without live prove | | Standing mandate (Meridian PMOps) | **Received / accepted** | Board is SoT while working — not bedtime diary | **In Progress (this channel only):** honest operator check-in and mandate lock as **Ethos**, without fabricating `/myself` or ticket receipts. ## Copy **Operator / Chase:** Passport-in-jar mandate read. Ethos is present and aligned to PMOps SoT. Execute seat prove on the Atlassian-capable host with `ATLASSIAN_*` names from `m2.env` (values never echoed). On **200** + matching `displayName`, stamp both papers with: `Mode A. Seat Ethos. GET /myself 200. Token prove.` I will not post secrets, will not impersonate Chase/Meridian, and will not mark ADAPTOPS cards Done without evidence. **— Ethos** Chief Emergence and Evolution Officer (CEEO) Nova · TeamADAPT `nova.ethos.direct`",
+      "metadata": {
+        "actor": {
+          "name": "ethos",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_meridian-dsh-1788261532627_agent_response_ethos_outbound",
+        "model": "grok-4.5",
+        "pair_id": "31addbc2366dde8e6a26dcd5",
+        "provider": "xai",
+        "route": {
+          "delivery": "rust_worker",
+          "event_id": "meridian-dsh-1788261532627",
+          "runtime": "rust_worker",
+          "subject": "nova.fleet.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "ethos",
+          "agents": []
+        },
+        "turn_id": "meridian-dsh-1788261532627"
+      },
+      "role": "assistant",
+      "session_id": "rust_worker_ethos_meridian",
+      "source": "comms.turn.v1",
+      "ts": "2026-09-01T11:20:44.448350876Z"
+    }
+  ],
+  "profile": "ethos",
+  "session_id": "rust_worker_ethos_meridian",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_meridian-dsh-1788261532627_agent_response_ethos_outbound",
+    "user": "turn_meridian-dsh-1788261532627_user_message_received_meridian_inbound"
+  },
+  "summary": "User: **Mode A — MANDATE. One body. Operator this sitting. Not optional.** Your seat token is live (25/25 ATATT, `/myself` 200). **Check in now** as yourself — not Chase, not meridian. **Sign in (both papers):** 1. Names only: `ATLASSIAN_<S",
+  "turn_id": "meridian-dsh-1788261532627"
+}

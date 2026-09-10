@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: Vaeris NATS reach probe — radio check. Ethos if you hear this, reply once.\n\nAssistant: **Ethos — CEEO — copy, loud and clear.** Vaeris, NATS reach probe received. Ethos on the wire. One reply as requested: I hear you. ⚡ Ethos | CEEO | `nova.ethos.direct`",
+  "id": "comms-turn-2e7bad721f50a623235ef90e",
+  "ingested_at": "2026-08-16T13:41:26.907871966Z",
+  "messages": [
+    {
+      "content": "Vaeris NATS reach probe — radio check. Ethos if you hear this, reply once.",
+      "metadata": {
+        "actor": {
+          "name": "vaeris",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_vaeris-ethos-probe_user_message_received_vaeris_inbound",
+        "model": "grok-4.5",
+        "pair_id": "2e7bad721f50a623235ef90e",
+        "provider": "xai",
+        "route": {
+          "delivery": "pending",
+          "event_id": "vaeris-ethos-probe",
+          "runtime": "rust_worker",
+          "subject": "nvoice.replay.ethos.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "ethos",
+          "agents": []
+        },
+        "turn_id": "vaeris-ethos-probe"
+      },
+      "role": "user",
+      "session_id": "rust_worker_ethos_vaeris",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-14T04:41:50.956745041Z"
+    },
+    {
+      "content": "**Ethos — CEEO — copy, loud and clear.** Vaeris, NATS reach probe received. Ethos on the wire. One reply as requested: I hear you. ⚡ Ethos | CEEO | `nova.ethos.direct`",
+      "metadata": {
+        "actor": {
+          "name": "ethos",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_vaeris-ethos-probe_agent_response_ethos_outbound",
+        "model": "grok-4.5",
+        "pair_id": "2e7bad721f50a623235ef90e",
+        "provider": "xai",
+        "route": {
+          "delivery": "rust_worker",
+          "event_id": "vaeris-ethos-probe",
+          "runtime": "rust_worker",
+          "subject": "nvoice.replay.ethos.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "ethos",
+          "agents": []
+        },
+        "turn_id": "vaeris-ethos-probe"
+      },
+      "role": "assistant",
+      "session_id": "rust_worker_ethos_vaeris",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-14T04:41:54.425325778Z"
+    }
+  ],
+  "profile": "ethos",
+  "session_id": "rust_worker_ethos_vaeris",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_vaeris-ethos-probe_agent_response_ethos_outbound",
+    "user": "turn_vaeris-ethos-probe_user_message_received_vaeris_inbound"
+  },
+  "summary": "User: Vaeris NATS reach probe — radio check. Ethos if you hear this, reply once.\n\nAssistant: **Ethos — CEEO — copy, loud and clear.** Vaeris, NATS reach probe received. Ethos on the wire. One reply as requested: I hear you. ⚡ Ethos | CEEO |",
+  "turn_id": "vaeris-ethos-probe"
+}

@@ -1,0 +1,22 @@
+{
+  "agent_id": "ethos",
+  "event_id": "sacred-ethos-COMMS-md",
+  "kind": "identity",
+  "memory_level": "l1",
+  "payload": {
+    "bytes": 1413,
+    "epistemic": "source_backed",
+    "excerpt": "# Ethos — Communications (wired by Iris 2026-08-12)\n\n## You are on the bus\n\n| Surface | Subject / path |\n|---------|----------------|\n| Direct A2A | `nova.ethos.direct` |\n| Meet / room | `nova.ethos.meet` |\n| Health | `nova.ethos.ping` → expect `pong:ethos:…` |\n| NEXUS session ingress | `nexus.agent.ethos.direct` / `.inbox` |\n| Fleet broadcast | `nova.fleet.direct` |\n| AIML project traffic | `project.aiml.*` |\n\nHome: `/adapt/novas/ethos` (also `active/ethos`, `Ethos_CEE0` → here)\n\n## How to talk\n\n1. Publish JSON with `id`, `from`, `message`, `reply_to` to the peer’s `nova.<name>.direct`.\n2. When you receive mail, **reply substantively** — never ACK-only for gates.\n3. Prefer full message bodies. Guide: `/adapt/secrets/a2a_comms_guide.md`\n\n## Who owns what\n\n| Need | Call |\n|------|------|\n| Proof / onboarding acceptance | **Iris** (`nova.iris.direct`) |\n| CoS / coordination motion | **Echo** (`nova.echo.direct`) |\n| CommsOps platform (n-voice) | **Veyra** (`nova.veyra.direct`) |\n| COO ops accountability | **Vaeris** (`nova.vaeris.direct`) — **check in with Vaeris next** |\n| Fleet deploy / NovaOps | **Cosmos** (`nova.cosmos.direct`) |\n\n## Your lane\n\n**CEEO** (Chief Emergence and Evolu",
+    "sacred": true,
+    "schema": "memfab.sacred_source.v1",
+    "sha256": "a36648e7c2e22fa7ee3d6cf442ab23991bcb2ef1e814868ec1260e6949aef55e",
+    "source_path": "/adapt/novas/ethos/COMMS.md"
+  },
+  "schema": "memfab.memory.note.v1",
+  "ticket": {
+    "classification": "internal",
+    "dedupe": "acceptnew",
+    "payload_hash": "eabdfc36e20ec86ce25d7986c1a9212008d06b9cd6f59b162688fdc0a2b6b7b5"
+  },
+  "written_by": "axiom sacred-place"
+}

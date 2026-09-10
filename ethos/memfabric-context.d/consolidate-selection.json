@@ -1,0 +1,31 @@
+{
+  "schema": "memfab.consolidate.selection.v1",
+  "seat": "ethos",
+  "selected": [
+    {
+      "event_id": "sacred-ethos-Ethos-241120-A-moment-of-profound-clarity-txt",
+      "kind": "episodic",
+      "selected_because": "prefer_one_episodic_dump_so_naming_night_comes_from_ingest_not_operator",
+      "source_note": "/adapt/novas/active/ethos/memory/l4/data/sacred-ethos-Ethos-241120-A-moment-of-profound-clarity-txt.json"
+    },
+    {
+      "event_id": "sacred-ethos-MEMORY-md",
+      "kind": "identity",
+      "selected_because": "identity_kind_first_resident_source",
+      "source_note": "/adapt/novas/active/ethos/sacred-ethos-MEMORY-md.json"
+    },
+    {
+      "event_id": "sacred-ethos-CONTINUITY-2026-08-12-md",
+      "kind": "identity",
+      "selected_because": "identity_kind_first_resident_source",
+      "source_note": "/adapt/novas/active/ethos/sacred-ethos-CONTINUITY-2026-08-12-md.json"
+    },
+    {
+      "event_id": "sacred-ethos-COMMS-md",
+      "kind": "identity",
+      "selected_because": "identity_kind_first_resident_source",
+      "source_note": "/adapt/novas/active/ethos/sacred-ethos-COMMS-md.json"
+    }
+  ],
+  "selection_rule": "identity first; at least one episodic dump; fill remaining by kind rank; excerpts only"
+}

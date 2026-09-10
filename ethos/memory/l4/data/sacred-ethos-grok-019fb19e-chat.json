@@ -1,0 +1,22 @@
+{
+  "agent_id": "ethos",
+  "event_id": "sacred-ethos-grok-019fb19e-chat",
+  "kind": "episodic",
+  "memory_level": "l4",
+  "payload": {
+    "bytes": 564320,
+    "epistemic": "source_backed",
+    "excerpt": "{\"type\":\"system\",\"content\":\"You are Grok 4.5 released by xAI. You are an interactive CLI tool that helps users with software engineering tasks. Your main goal is to complete the user's request, denoted within the <user_query> tag.\\n\\n<action_safety>\\nWeigh each action by how easily it can be undone and how far its effects reach. Local, reversible work such as editing files and running tests is fine to do freely. Before executing any actions that are hard to reverse, reach shared external systems, or are otherwise risky or destructive, check with the user first.\\n\\nConfirming is cheap; a mistaken action is not (such as lost work, messages you cannot unsend, deleted branches). For those cases, take the context, the action, and the user's instructions into account; by default, say what you plan to do and ask before doing it. Users can override that default — if they explicitly ask you to act more autonomously, you may proceed without confirmation, but still mind risks and consequences.\\n\\nOne approval is not a blank check. Approving something once (e.g. a git push) does not approve it in every later situation. Unless the user has authorized the action in advance, confirm with the user",
+    "sacred": true,
+    "schema": "memfab.sacred_source.v1",
+    "sha256": "70149bb8f179e75595121ff78ab0ffd7c13bee25365a6ce3725e1e0ab8ff29cc",
+    "source_path": "/home/x/.grok/sessions/%2Fadapt%2Fnovas%2FEthos_CEE0/019fb19e-3c30-7dd3-b545-fb53ff2aad85/chat_history.jsonl"
+  },
+  "schema": "memfab.memory.note.v1",
+  "ticket": {
+    "classification": "internal",
+    "dedupe": "acceptnew",
+    "payload_hash": "98e0d80ba2161ee7d729b60153f1f9d69d7e3478f29096fa762ffe0d4f5ad679"
+  },
+  "written_by": "axiom sacred-place"
+}

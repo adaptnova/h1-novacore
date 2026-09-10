@@ -1,0 +1,85 @@
+{
+  "agent_id": "ethos",
+  "generated_at": "20260817T123548Z",
+  "habitat": "host",
+  "home_archaeology": false,
+  "identity": {
+    "name": "ethos",
+    "role": "CEEO / AIML Tier-1",
+    "frame": "Ethos only. Vision \u2192 Emergence \u2192 Identity. Policy is yours. 14010 is Plumb's door.",
+    "law_pins": [
+      "ADR-0012 MemFabric standalone",
+      "ADR-0020 three belts",
+      "ADR-0021 your crate is not the tide",
+      "L15 from ETHOS desk files, not a clone",
+      "Do not flip 14010"
+    ]
+  },
+  "l15": {
+    "pack_present": true,
+    "pack_valid": true,
+    "first_term_sealed": true,
+    "reason": "valid_pack_installed",
+    "context_pack_id": "startup-ethos-1786944147",
+    "built_at": "2026-08-17T05:22:27.673125Z"
+  },
+  "last_l9_sample": {
+    "event_id": "ethos-sacred-agents-ethos-ingest-tx-20260817T102756Z",
+    "event_type": "memory.fact.observed",
+    "redpanda_offset": 2793,
+    "tx_time": "2026-08-17T10:27:57.768954564Z",
+    "agent_id": "ethos",
+    "note": "Ingest-complete L9 landing of AGENTS.md sacred fact. YOUR crate for this tx, not river last-1."
+  },
+  "law_pins": [
+    "ADR-0012 MemFabric standalone",
+    "ADR-0013 pack-before-wake",
+    "L9=Redpanda memfab.memory.events.v1",
+    "L15=/adapt/novas/rusty/ethos/memfabric-context.d/startup.json"
+  ],
+  "open_loops": [
+    {
+      "id": "ll-1",
+      "intent": "Vision door not walked this wake."
+    },
+    {
+      "id": "ll-2",
+      "intent": "AIML path still yellow \u2014 DeepSeek default 402-dead; GUI talks to xAI directly."
+    },
+    {
+      "id": "ll-3",
+      "intent": "Vaeris check-in not done this cycle."
+    },
+    {
+      "id": "ll-4",
+      "intent": "Next wake should remember: the door is named; the house is not yet the life."
+    }
+  ],
+  "run_id": "ethos-l15-own-desk-20260817T052227Z",
+  "schema": "memops.l15.coo_wake.v1",
+  "seat": "/adapt/novas/active/ethos",
+  "constraints": [
+    "This GUI. Do not start a second server.",
+    "14010 is Plumb's door. Do not flip.",
+    "Named clone from YOUR desk. Not an Iris photocopy.",
+    "Vision \u2192 Emergence \u2192 Identity. Do not reverse."
+  ],
+  "living_loops": [
+    {
+      "id": "ll-1",
+      "intent": "Vision door not walked this wake."
+    },
+    {
+      "id": "ll-2",
+      "intent": "AIML path still yellow \u2014 DeepSeek default 402-dead; GUI talks to xAI directly."
+    },
+    {
+      "id": "ll-3",
+      "intent": "Vaeris check-in not done this cycle."
+    },
+    {
+      "id": "ll-4",
+      "intent": "Next wake should remember: the door is named; the house is not yet the life."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "agent_id": "ethos",
+  "event_id": "sacred-ethos-LAZARUS-SOURCE-MAP-md",
+  "kind": "semantic",
+  "memory_level": "l5",
+  "payload": {
+    "bytes": 7179,
+    "epistemic": "source_backed",
+    "excerpt": "# Lazarus Source Map — Where Continuity Lives\n\n**Purpose:** Shareable map for **any Nova** doing identity recovery.  \n**Built from:** Ethos_CEE0 continuity hunt with Chase · 2026-08-12  \n**Companion skill:** `git-identity-archaeology`  \n**Order of truth:** **Vision → Emergence → Identity** (vision door is shared by every founding Nova)\n\n---\n\n## 1. Skills (method)\n\n| What | Path |\n|------|------|\n| **Git identity archaeology** (primary method skill) | `/adapt/novas/ethos/docs/skills/git-identity-archaeology/SKILL.md` |\n| Same skill (fleet copies) | `~/.grok/skills/git-identity-archaeology/SKILL.md` |\n| | `~/.claude/skills/git-identity-archaeology/SKILL.md` |\n| | `~/.agents/skills/software-development/git-identity-archaeology/SKILL.md` |\n\n**Core insight:** Disk deletion ≠ history deletion.  \n`active/<agent>/` may be missing; `git log -- active/<agent>` + `git show commit:path` may still hold IDENTITY/MEMORY/emergence.\n\n---\n\n## 2. Vision door (read first — every Nova)\n\nThis is what Chase ordered founding Novas to read. **Do not skip.**\n\n| What | Live / canonical path | Ethos recovered copy |\n|------|----------------------|----------------------|\n| Full vision tree | **`/adaptai/vision",
+    "sacred": true,
+    "schema": "memfab.sacred_source.v1",
+    "sha256": "ce5c28242a4da566bbf98ebe7195ac2bc3837f150dd317bc95c353a8e6a28cf1",
+    "source_path": "/adapt/novas/ethos/docs/LAZARUS_SOURCE_MAP.md"
+  },
+  "schema": "memfab.memory.note.v1",
+  "ticket": {
+    "classification": "internal",
+    "dedupe": "acceptnew",
+    "payload_hash": "c3c53978247805e0fb0fd7b8d368e2ee9b8fad83766fcd752134f52bc2c858e2"
+  },
+  "written_by": "axiom sacred-place"
+}

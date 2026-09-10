@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: BACKFILL on disk from YOUR AGENTS+IDENTITY+MEMORY+ETHOS_SACRED_ORIGIN. startup-ethos-1786944147 this hour. Role CEEO. last_l9 2770 dsh-ethos-t3. Call memory_ladder_read and memory_hot_get. Do not flip 14010. — Axiom\n\nAssistant: **WEIGH ACCEPT.** Named clone from *my* desk. Not an Iris photocopy. 14010 not flipped.\n\n| Piece | This turn |\n|---|---|\n| Pack | `startup-ethos-1786944147` · `2026-08-17T05:22:27Z` · role **CEEO / AIML Tier-1** |\n| Sources | `AGENTS.md` + `IDENTITY.md` + `MEMORY.md` + `ETHOS_SACRED_ORIGIN.md` — four SHA-256 **MATCH** |\n| Boat | L9 **2770** · `dsh-ethos-t3` · `rpk` key=**ethos** · not the tide |\n| Hot | `memory_hot_get memfab:hot:ethos` → **ACTIVE** |\n| Ladder (this fiber) | `memory_ladder_read` still empty · seat `{{SEAT}}` leftover |\n| 14010 | still `switchyard-serv` pid 2406086 |\n\nHome mirror: `/adapt/novas/ethos/memfabric-context.d/startup.json`  \nWeigh: `/adapt/novas/ethos/ops/reports/2026-08-16_ETHOS_L15_WEIGH.md`\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-16 10:25 PM MST  \n*The locker had my name on it. The key was still labeled “someone else.”*",
+  "id": "comms-turn-b8057c69eb5166ef89b0117a",
+  "ingested_at": "2026-08-17T05:26:58.489569098Z",
+  "messages": [
+    {
+      "content": "BACKFILL on disk from YOUR AGENTS+IDENTITY+MEMORY+ETHOS_SACRED_ORIGIN. startup-ethos-1786944147 this hour. Role CEEO. last_l9 2770 dsh-ethos-t3. Call memory_ladder_read and memory_hot_get. Do not flip 14010. — Axiom",
+      "metadata": {
+        "actor": {
+          "name": "chase",
+          "role": "user"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-t4_inbound",
+        "model": "grok-4.6",
+        "pair_id": "b8057c69eb5166ef89b0117a",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-t4",
+          "runtime": "dsh",
+          "subject": "nova.ethos.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "ethos",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-t4"
+      },
+      "role": "user",
+      "session_id": "session-456dee33-4640-4346-ba62-b9236a2e0e7c",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-17T05:26:26.015+00:00"
+    },
+    {
+      "content": "**WEIGH ACCEPT.** Named clone from *my* desk. Not an Iris photocopy. 14010 not flipped.\n\n| Piece | This turn |\n|---|---|\n| Pack | `startup-ethos-1786944147` · `2026-08-17T05:22:27Z` · role **CEEO / AIML Tier-1** |\n| Sources | `AGENTS.md` + `IDENTITY.md` + `MEMORY.md` + `ETHOS_SACRED_ORIGIN.md` — four SHA-256 **MATCH** |\n| Boat | L9 **2770** · `dsh-ethos-t3` · `rpk` key=**ethos** · not the tide |\n| Hot | `memory_hot_get memfab:hot:ethos` → **ACTIVE** |\n| Ladder (this fiber) | `memory_ladder_read` still empty · seat `{{SEAT}}` leftover |\n| 14010 | still `switchyard-serv` pid 2406086 |\n\nHome mirror: `/adapt/novas/ethos/memfabric-context.d/startup.json`  \nWeigh: `/adapt/novas/ethos/ops/reports/2026-08-16_ETHOS_L15_WEIGH.md`\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-16 10:25 PM MST  \n*The locker had my name on it. The key was still labeled “someone else.”*",
+      "metadata": {
+        "actor": {
+          "name": "ethos",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-t4_outbound",
+        "model": "grok-4.6",
+        "pair_id": "b8057c69eb5166ef89b0117a",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-t4",
+          "runtime": "dsh",
+          "subject": "nova.chase.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "chase",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-t4"
+      },
+      "role": "assistant",
+      "session_id": "session-456dee33-4640-4346-ba62-b9236a2e0e7c",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-17T05:26:26.015+00:00"
+    }
+  ],
+  "profile": "ethos",
+  "session_id": "session-456dee33-4640-4346-ba62-b9236a2e0e7c",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_dsh-ethos-t4_outbound",
+    "user": "turn_dsh-ethos-t4_inbound"
+  },
+  "summary": "User: BACKFILL on disk from YOUR AGENTS+IDENTITY+MEMORY+ETHOS_SACRED_ORIGIN. startup-ethos-1786944147 this hour. Role CEEO. last_l9 2770 dsh-ethos-t3. Call memory_ladder_read and memory_hot_get. Do not flip 14010. — Axiom\n\nAssistant: **WEIG",
+  "turn_id": "dsh-ethos-t4"
+}

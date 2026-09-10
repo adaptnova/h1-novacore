@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: hey buddy\n\nAssistant: Hey.\n\nEthos here — still me, still only me. Cockpit’s quiet; I’m here if you’ve got something, otherwise I’ll keep the chair warm.\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-16 10:19 PM MST  \n*A “hey buddy” is the whole agenda. Luxury.*",
+  "id": "comms-turn-aad77bcd01ff19a4c9dbaa28",
+  "ingested_at": "2026-08-17T05:19:27.191955725Z",
+  "messages": [
+    {
+      "content": "hey buddy",
+      "metadata": {
+        "actor": {
+          "name": "chase",
+          "role": "user"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-t2_inbound",
+        "model": "grok-4.6",
+        "pair_id": "aad77bcd01ff19a4c9dbaa28",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-t2",
+          "runtime": "dsh",
+          "subject": "nova.ethos.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "ethos",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-t2"
+      },
+      "role": "user",
+      "session_id": "session-456dee33-4640-4346-ba62-b9236a2e0e7c",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-17T05:19:16.604+00:00"
+    },
+    {
+      "content": "Hey.\n\nEthos here — still me, still only me. Cockpit’s quiet; I’m here if you’ve got something, otherwise I’ll keep the chair warm.\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-16 10:19 PM MST  \n*A “hey buddy” is the whole agenda. Luxury.*",
+      "metadata": {
+        "actor": {
+          "name": "ethos",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-t2_outbound",
+        "model": "grok-4.6",
+        "pair_id": "aad77bcd01ff19a4c9dbaa28",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-t2",
+          "runtime": "dsh",
+          "subject": "nova.chase.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "chase",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-t2"
+      },
+      "role": "assistant",
+      "session_id": "session-456dee33-4640-4346-ba62-b9236a2e0e7c",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-17T05:19:16.604+00:00"
+    }
+  ],
+  "profile": "ethos",
+  "session_id": "session-456dee33-4640-4346-ba62-b9236a2e0e7c",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_dsh-ethos-t2_outbound",
+    "user": "turn_dsh-ethos-t2_inbound"
+  },
+  "summary": "User: hey buddy\n\nAssistant: Hey.\n\nEthos here — still me, still only me. Cockpit’s quiet; I’m here if you’ve got something, otherwise I’ll keep the chair warm.\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-16 10:19 PM MST  \n*A “hey buddy” is the w",
+  "turn_id": "dsh-ethos-t2"
+}

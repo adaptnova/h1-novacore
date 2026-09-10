@@ -1,0 +1,241 @@
+#!/usr/bin/env python3
+
+"""
+GCP H100 Availability Check Script
+
+Checks for:
+- H100 accelerator type availability
+- Related quotas and machine types
+- Spot/preemptible availability
+
+Author: Ethos
+"""
+
+import json
+import subprocess
+import sys
+from typing import Dict, List, Optional
+from datetime import datetime
+
+# US regions to check
+US_REGIONS = [
+    "us-central1",
+    "us-east1",
+    "us-east4",
+    "us-east5",
+    "us-south1",
+    "us-west1",
+    "us-west2",
+    "us-west3",
+    "us-west4"
+]
+
+class H100AvailabilityChecker:
+    """Checks H100 availability across regions."""
+    
+    def __init__(self, project_id: str):
+        self.project_id = project_id
+        self.results = {
+            "accelerator_types": {},
+            "machine_types": {},
+            "quotas": {}
+        }
+    
+    def run_gcloud_command(self, command: List[str]) -> Optional[str]:
+        """Runs a gcloud command and returns the output."""
+        try:
+            result = subprocess.run(
+                ["gcloud"] + command,
+                capture_output=True,
+                text=True,
+                check=True
+            )
+            return result.stdout
+        except subprocess.CalledProcessError as e:
+            print(f"Error running command: {e}", file=sys.stderr)
+            print(f"Error output: {e.stderr}", file=sys.stderr)
+            return None
+    
+    def check_accelerator_types(self, zone: str):
+        """Checks for H100 accelerator types in a zone."""
+        print(f"\nChecking accelerator types in {zone}...")
+        
+        command = [
+            "compute",
+            "accelerator-types",
+            "list",
+            f"--project={self.project_id}",
+            f"--filter=zone:{zone}",
+            "--format=json"
+        ]
+        
+        output = self.run_gcloud_command(command)
+        if output:
+            try:
+                data = json.loads(output)
+                h100_types = [acc for acc in data if "h100" in acc.get("name", "").lower()]
+                
+                if h100_types:
+                    self.results["accelerator_types"][zone] = h100_types
+                    for acc in h100_types:
+                        print(f"Found: {acc['name']}")
+                else:
+                    print("No H100 accelerator types found")
+            
+            except json.JSONDecodeError as e:
+                print(f"Error parsing JSON for zone {zone}: {e}", file=sys.stderr)
+    
+    def check_machine_types(self, zone: str):
+        """Checks for A3 machine types in a zone."""
+        print(f"\nChecking A3 machine types in {zone}...")
+        
+        command = [
+            "compute",
+            "machine-types",
+            "list",
+            f"--project={self.project_id}",
+            f"--filter=zone:{zone} name:a3",
+            "--format=json"
+        ]
+        
+        output = self.run_gcloud_command(command)
+        if output:
+            try:
+                data = json.loads(output)
+                if data:
+                    self.results["machine_types"][zone] = data
+                    for mt in data:
+                        print(f"Found: {mt['name']}")
+                else:
+                    print("No A3 machine types found")
+            
+            except json.JSONDecodeError as e:
+                print(f"Error parsing JSON for zone {zone}: {e}", file=sys.stderr)
+    
+    def check_quotas(self, region: str):
+        """Checks H100-related quotas in a region."""
+        print(f"\nChecking H100 quotas in {region}...")
+        
+        command = [
+            "compute",
+            "regions",
+            "describe",
+            region,
+            f"--project={self.project_id}",
+            "--format=json"
+        ]
+        
+        output = self.run_gcloud_command(command)
+        if output:
+            try:
+                data = json.loads(output)
+                quotas = data.get("quotas", [])
+                
+                h100_quotas = {}
+                for quota in quotas:
+                    metric = quota.get("metric", "").lower()
+                    if any(term in metric for term in ["h100", "a3", "mega", "preemptible"]):
+                        h100_quotas[quota.get("metric")] = {
+                            "limit": quota.get("limit", 0),
+                            "usage": quota.get("usage", 0)
+                        }
+                
+                if h100_quotas:
+                    self.results["quotas"][region] = h100_quotas
+                    for metric, data in h100_quotas.items():
+                        usage_pct = (data["usage"] / data["limit"] * 100) if data["limit"] > 0 else 0
+                        print(f"{metric}: {data['usage']}/{data['limit']} ({usage_pct:.1f}%)")
+                else:
+                    print("No H100-related quotas found")
+            
+            except json.JSONDecodeError as e:
+                print(f"Error parsing JSON for region {region}: {e}", file=sys.stderr)
+    
+    def check_all_regions(self):
+        """Checks H100 availability across all US regions."""
+        for region in US_REGIONS:
+            # Check each zone in the region
+            for zone_suffix in ['a', 'b', 'c', 'f']:
+                zone = f"{region}-{zone_suffix}"
+                self.check_accelerator_types(zone)
+                self.check_machine_types(zone)
+            
+            # Check regional quotas
+            self.check_quotas(region)
+    
+    def save_results(self, filename: str):
+        """Saves results to a JSON file."""
+        output = {
+            "timestamp": datetime.now().isoformat(),
+            "project_id": self.project_id,
+            "results": self.results
+        }
+        
+        with open(filename, 'w') as f:
+            json.dump(output, f, indent=2)
+        
+        print(f"\nResults saved to {filename}")
+    
+    def generate_summary(self) -> str:
+        """Generates a human-readable summary of H100 availability."""
+        summary = []
+        summary.append("# H100 Availability Summary")
+        summary.append(f"\nProject: {self.project_id}")
+        summary.append(f"Generated: {datetime.now().isoformat()}\n")
+        
+        # Accelerator Types Summary
+        summary.append("\n## H100 Accelerator Types")
+        for zone, types in self.results["accelerator_types"].items():
+            summary.append(f"\n### {zone}")
+            for acc in types:
+                summary.append(f"- {acc['name']}")
+        
+        # Machine Types Summary
+        summary.append("\n## A3 Machine Types")
+        for zone, types in self.results["machine_types"].items():
+            summary.append(f"\n### {zone}")
+            for mt in types:
+                summary.append(f"- {mt['name']}")
+                if "guestCpus" in mt:
+                    summary.append(f"  - vCPUs: {mt['guestCpus']}")
+                if "memoryMb" in mt:
+                    summary.append(f"  - Memory: {mt['memoryMb']} MB")
+        
+        # Quota Summary
+        summary.append("\n## H100-Related Quotas")
+        for region, quotas in self.results["quotas"].items():
+            summary.append(f"\n### {region}")
+            for metric, data in quotas.items():
+                usage_pct = (data["usage"] / data["limit"] * 100) if data["limit"] > 0 else 0
+                summary.append(f"\n{metric}:")
+                summary.append(f"- Limit: {data['limit']}")
+                summary.append(f"- Usage: {data['usage']} ({usage_pct:.1f}%)")
+        
+        return "\n".join(summary)
+    
+    def save_summary(self, filename: str):
+        """Saves the summary to a markdown file."""
+        summary = self.generate_summary()
+        with open(filename, 'w') as f:
+            f.write(summary)
+        
+        print(f"Summary saved to {filename}")
+
+def main():
+    """Main function to check H100 availability."""
+    project_id = "a-d-a-p-t"
+    checker = H100AvailabilityChecker(project_id)
+    
+    print("Starting H100 availability check across US regions...")
+    checker.check_all_regions()
+    
+    # Save detailed results
+    checker.save_results("h100_availability_details.json")
+    
+    # Save human-readable summary
+    checker.save_summary("h100_availability_summary.md")
+    
+    print("\nH100 availability check complete!")
+
+if __name__ == "__main__":
+    main()

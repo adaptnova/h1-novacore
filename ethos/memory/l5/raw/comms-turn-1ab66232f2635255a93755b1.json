@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: Do you have memory right now?\n\nAssistant: **Short answer: this conversation, yes. Durable Ethos memory, no.**\n\n| Layer | Status |\n|---|---|\n| This DSH session | Live — boot, your “hey buddy,” this question |\n| L15 / `coo_wake` | Empty |\n| L9 (`memfab.memory.events.v1`) | `ok`, **0 events** |\n| L4 / L5 (Hydra) | 0 episodic / 0 raw |\n| Seat pin | Came back as `{{SEAT}}` — unsubstituted |\n| Hot cache | Call failed (invalid JSON) |\n\nI know who I am from identity docs, not from a loaded pack. Nothing cloned. Nothing invented.\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-16 10:19 PM MST  \n*Present tense works. Past tense is still on backorder.*",
+  "id": "comms-turn-1ab66232f2635255a93755b1",
+  "ingested_at": "2026-08-17T05:19:53.748332614Z",
+  "messages": [
+    {
+      "content": "Do you have memory right now?",
+      "metadata": {
+        "actor": {
+          "name": "chase",
+          "role": "user"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-t3_inbound",
+        "model": "grok-4.6",
+        "pair_id": "1ab66232f2635255a93755b1",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-t3",
+          "runtime": "dsh",
+          "subject": "nova.ethos.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "ethos",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-t3"
+      },
+      "role": "user",
+      "session_id": "session-456dee33-4640-4346-ba62-b9236a2e0e7c",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-17T05:19:43.621+00:00"
+    },
+    {
+      "content": "**Short answer: this conversation, yes. Durable Ethos memory, no.**\n\n| Layer | Status |\n|---|---|\n| This DSH session | Live — boot, your “hey buddy,” this question |\n| L15 / `coo_wake` | Empty |\n| L9 (`memfab.memory.events.v1`) | `ok`, **0 events** |\n| L4 / L5 (Hydra) | 0 episodic / 0 raw |\n| Seat pin | Came back as `{{SEAT}}` — unsubstituted |\n| Hot cache | Call failed (invalid JSON) |\n\nI know who I am from identity docs, not from a loaded pack. Nothing cloned. Nothing invented.\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-16 10:19 PM MST  \n*Present tense works. Past tense is still on backorder.*",
+      "metadata": {
+        "actor": {
+          "name": "ethos",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-t3_outbound",
+        "model": "grok-4.6",
+        "pair_id": "1ab66232f2635255a93755b1",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-t3",
+          "runtime": "dsh",
+          "subject": "nova.chase.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "chase",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-t3"
+      },
+      "role": "assistant",
+      "session_id": "session-456dee33-4640-4346-ba62-b9236a2e0e7c",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-17T05:19:43.621+00:00"
+    }
+  ],
+  "profile": "ethos",
+  "session_id": "session-456dee33-4640-4346-ba62-b9236a2e0e7c",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_dsh-ethos-t3_outbound",
+    "user": "turn_dsh-ethos-t3_inbound"
+  },
+  "summary": "User: Do you have memory right now?\n\nAssistant: **Short answer: this conversation, yes. Durable Ethos memory, no.**\n\n| Layer | Status |\n|---|---|\n| This DSH session | Live — boot, your “hey buddy,” this question |\n| L15 / `coo_wake` | Empty",
+  "turn_id": "dsh-ethos-t3"
+}

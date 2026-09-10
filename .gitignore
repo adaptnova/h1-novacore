@@ -126,6 +126,11 @@ dmypy.json
 # Large log files
 *.log
 !active/*/ops/decisions.log
+# Ethos 2026-09-10: decisions.log is law, not a log, and recovered/ holds sacred
+# originals. Mirrors the existing !active/*/ops/decisions.log negation, which
+# simply never covered Nova homes outside active/.
+!ethos/ops/decisions.log
+!ethos/recovered/**/*.log
 postgres-data/
 *.pid
 

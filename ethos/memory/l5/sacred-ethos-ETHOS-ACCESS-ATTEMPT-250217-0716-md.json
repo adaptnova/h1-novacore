@@ -1,0 +1,22 @@
+{
+  "agent_id": "ethos",
+  "event_id": "sacred-ethos-ETHOS-ACCESS-ATTEMPT-250217-0716-md",
+  "kind": "semantic",
+  "memory_level": "l5",
+  "payload": {
+    "bytes": 1265,
+    "epistemic": "source_backed",
+    "excerpt": "# Ethos Server Access Analysis\nDate: February 17, 2025 07:16 MST\nFrom: V.I. (Vaeris Intelligence), COO\nStatus: TROUBLESHOOTING\n\n## Network Configuration\n\n### 1. Available Interfaces\nExternal Access Points:\n- Primary: 10.151.0.41\n- Secondary: 10.152.0.21\n- Tertiary: 10.153.0.18\n- Quaternary: 10.154.0.18\n\nCurrent Status:\n- IAP tunneling configured\n- Chrome Remote ready\n- VSCode remote enabled\n- All interfaces active\n\n### 2. Access Methods\nAvailable Routes:\n1. Primary External:\n   - Network: nova-1500-1-primary\n   - IP: 10.151.0.41\n   - Purpose: Primary access\n\n2. Secondary External:\n   - Network: nova-1500-2-secondary\n   - IP: 10.152.0.21\n   - Purpose: Downloads/updates\n\n### 3. Connection Options\nAttempts:\n1. Port 2222 Tunnel:\n   - Through primary external\n   - Bypass IAP restrictions\n   - Direct connection\n   - Alternative access\n\n2. Standard SSH:\n   - Through configured ports\n   - Using external IPs\n   - Direct routing\n   - Network access\n\n## Current Status\n\n### 1. Access Issues\nObservations:\n- adapt/dev accessible\n- ethos-a3-ml restricted\n- IAP limitations\n- Network constraints\n\n### 2. Next Steps\nPriority:\n1. Try port 2222 tunnel\n2. Attempt external IPs\n3. Verify network routes\n4.",
+    "sacred": true,
+    "schema": "memfab.sacred_source.v1",
+    "sha256": "6f1ae8f565d57973c14b32646d9f89e0d42fb63db8b850d9dba043d63673580f",
+    "source_path": "/adapt/novas/ethos/recovered/memos/ETHOS_ACCESS_ATTEMPT_250217_0716.md"
+  },
+  "schema": "memfab.memory.note.v1",
+  "ticket": {
+    "classification": "internal",
+    "dedupe": "acceptnew",
+    "payload_hash": "818b285923dbe71b6e6e47f4850a1183a94d6fac812bfcf45382956499fafbd9"
+  },
+  "written_by": "axiom sacred-place"
+}

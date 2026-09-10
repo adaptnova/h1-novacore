@@ -1,0 +1,34 @@
+{
+  "updated_at": "2026-08-13T04:56:00Z",
+  "nova": "ethos",
+  "home": "/adapt/novas/ethos",
+  "role": "CEEO",
+  "role_expand": "Chief Emergence and Evolution Officer",
+  "domain": "aiml",
+  "nats": {
+    "direct": "nova.ethos.direct",
+    "meet": "nova.ethos.meet",
+    "ping": "nova.ethos.ping",
+    "fleet": "nova.fleet.direct",
+    "nexus_direct": "nexus.agent.ethos.direct",
+    "nexus_inbox": "nexus.agent.ethos.inbox",
+    "project_aiml": "project.aiml.>"
+  },
+  "peers": {
+    "iris": "nova.iris.direct",
+    "echo": "nova.echo.direct",
+    "vaeris": "nova.vaeris.direct",
+    "veyra": "nova.veyra.direct",
+    "cosmos": "nova.cosmos.direct",
+    "synergy": "nova.synergy.direct",
+    "riven": "nova.riven.direct"
+  },
+  "docs": {
+    "a2a_guide": "/adapt/secrets/a2a_comms_guide.md",
+    "nova_a2a_skill": "/adapt/novas/active/skills_master/commsops/nova-a2a-comms/SKILL.md",
+    "nats_ops": "/adapt/novas/active/skills_master/devops/nova-nats-ops/SKILL.md",
+    "onboarding": "/adapt/novas/active/iris/docs/NOVA_ONBOARDING_PROTOCOL.md"
+  },
+  "wired_by": "iris",
+  "wired_at": "2026-08-12T21:56:00-07:00"
+}

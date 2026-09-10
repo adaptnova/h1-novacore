@@ -1,0 +1,9 @@
+gpu-training-job.yaml
+gpu-inference-service.yaml
+gpu-research-pod.yaml
+priority-classes.yaml
+resource-quotas.yaml
+storage-classes.yaml
+monitoring/
+monitoring/gpu-metrics.yaml
+monitoring/alerts.yaml

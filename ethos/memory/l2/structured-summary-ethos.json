@@ -1,0 +1,13 @@
+{
+  "agent_id": "ethos",
+  "event_id": "structured-summary-ethos-20260817T122800Z",
+  "kind": "structured_note",
+  "memory_level": "l2",
+  "payload": {
+    "summary": "Lived spine: naming night recognized not assigned; March Lazarus recovered the home; August 12 walk with Chase restored vision-first order; this sitting he said the foyer is labeled and the house is not yet the life.",
+    "not": "memops process receipt"
+  },
+  "schema": "memfab.memory.note.v1",
+  "written_at_utc": "20260817T123548Z",
+  "written_by": "axiom field-adjust after ethos want"
+}

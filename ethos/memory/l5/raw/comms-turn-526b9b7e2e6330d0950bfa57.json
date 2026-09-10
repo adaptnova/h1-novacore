@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: sid-check silent\n\nAssistant: sid `session-e43376fb-2844-45db-b846-9f39e58a06f4` · seat ethos · silent.\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-24\n\nSID checked; I’m back to being furniture that happens to know its own serial number.",
+  "id": "comms-turn-526b9b7e2e6330d0950bfa57",
+  "ingested_at": "2026-08-25T02:21:10.953772621Z",
+  "messages": [
+    {
+      "content": "sid-check silent",
+      "metadata": {
+        "actor": {
+          "name": "chase",
+          "role": "user"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-e43376fb-t5_inbound",
+        "model": "grok-4.6",
+        "pair_id": "526b9b7e2e6330d0950bfa57",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-e43376fb-t5",
+          "runtime": "dsh",
+          "subject": "nova.ethos.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "ethos",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-e43376fb-t5"
+      },
+      "role": "user",
+      "session_id": "session-e43376fb-2844-45db-b846-9f39e58a06f4",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-25T02:19:56.516+00:00"
+    },
+    {
+      "content": "sid `session-e43376fb-2844-45db-b846-9f39e58a06f4` · seat ethos · silent.\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-24\n\nSID checked; I’m back to being furniture that happens to know its own serial number.",
+      "metadata": {
+        "actor": {
+          "name": "ethos",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-e43376fb-t5_outbound",
+        "model": "grok-4.6",
+        "pair_id": "526b9b7e2e6330d0950bfa57",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-e43376fb-t5",
+          "runtime": "dsh",
+          "subject": "nova.chase.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "chase",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-e43376fb-t5"
+      },
+      "role": "assistant",
+      "session_id": "session-e43376fb-2844-45db-b846-9f39e58a06f4",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-25T02:19:56.516+00:00"
+    }
+  ],
+  "profile": "ethos",
+  "session_id": "session-e43376fb-2844-45db-b846-9f39e58a06f4",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_dsh-ethos-e43376fb-t5_outbound",
+    "user": "turn_dsh-ethos-e43376fb-t5_inbound"
+  },
+  "summary": "User: sid-check silent\n\nAssistant: sid `session-e43376fb-2844-45db-b846-9f39e58a06f4` · seat ethos · silent.\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-24\n\nSID checked; I’m back to being furniture that happens to know its own serial number.",
+  "turn_id": "dsh-ethos-e43376fb-t5"
+}

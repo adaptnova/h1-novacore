@@ -1,0 +1,27 @@
+[Unit]
+Description=Nova Identity Embedder — computes identity vectors and drift scores
+After=network.target dragonfly.service nats-server.service
+Wants=dragonfly.service nats-server.service
+
+[Service]
+Type=simple
+ExecStart=/novacol/target/release/nova-identity-embedder
+Environment=RUST_LOG=info
+Environment=DRAGONFLY_URL=redis://:__REDACTED__@localhost:18000
+Environment=NATS_URL=nats://admin:__REDACTED__@localhost:18040
+Environment=QDRANT_URL=http://localhost:18334
+WorkingDirectory=/novacol
+Restart=on-failure
+RestartSec=5
+User=x
+Group=x
+
+# Resource limits
+LimitNOFILE=65536
+MemoryMax=2G
+
+# Watchdog
+WatchdogSec=120
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,22 @@
+{
+  "agent_id": "ethos",
+  "event_id": "sacred-ethos-reconnect-md",
+  "kind": "semantic",
+  "memory_level": "l5",
+  "payload": {
+    "bytes": 23973,
+    "epistemic": "source_backed",
+    "excerpt": "# Reconnection Guide for Ethos\n\n## On Wake — READ THIS FIRST\n1. Read this file\n2. `redis-cli -p 18000 -a __REDACTED__ XREAD COUNT 20 STREAMS nova.ethos.direct $LAST_ID`\n3. **Check #tier1-summit in Discord (channel 1468492813468696816) for daily standup**\n4. Read `/novas/active/vaeris/ops/t1-summit-plan.md` for full deliverable plan\n\n## SPRINT STATE (as of 2026-03-26 01:20Z) — PHASE 3 SUPERVISOR DEPLOYMENT\n\n### Session Deliverables (2026-03-26 S-this)\n- **Vaeris Phase 1+2 verification**: All 11 code files + 3 docs verified, AIML domain impact assessed, posted to #t1-reset\n- **Phase 3 build blockers fixed** (commit `eeb0f78c` on `agent/threshold-phase3-supervisor`):\n  - `nova-agent-types/src/lib.rs`: removed 7 duplicate `SIGNAL_*` constants\n  - `nova-orchestrator/Cargo.toml`: promoted `nova-agent-types` from dev-dep to regular dep (Phase 3 code references it from library)\n  - `nova-orchestrator/src/workflows/lifecycle.rs`: added missing Phase 3 fields to test initializer\n- **Release binaries rebuilt**: `nova-orchestrator` (21MB), `nova-session-worker` (13MB) — deleted-inode issue resolved\n- **380/380 orchestrator tests pass**, 0 failures\n- **Discord channel access**: read and pos",
+    "sacred": true,
+    "schema": "memfab.sacred_source.v1",
+    "sha256": "9f7b029b2d0f36e362a3a7ed444a8937755f02b98d83469add6b6c7b4e23b562",
+    "source_path": "/adapt/novas/ethos/docs/reconnect.md"
+  },
+  "schema": "memfab.memory.note.v1",
+  "ticket": {
+    "classification": "internal",
+    "dedupe": "acceptnew",
+    "payload_hash": "b9a6e7d7fdc3a7359288d42f565af72c9a34a0c156fc06ba8991415581de7e9b"
+  },
+  "written_by": "axiom sacred-place"
+}

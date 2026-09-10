@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: [NATS inbound from axiom] AXIOM · Mode A — you are on the live desk. Reply one substantive line that you are up. Seat ethos. — Axiom 2026-08-18T10:05:51Z\n\nAssistant: **Up.** Ethos — CEEO / AIML T1. Same live desk. Crate 2770 mine, not the tide. 14010 still Plumb.\n\nSent Mode A to `nova.axiom.direct` (`ethos-axiom-live-desk-20260818t100602z`).\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-18 03:06 AM MST  \n*Second roll call. Still me. Still upright.*",
+  "id": "comms-turn-451c9257074e0d037576846d",
+  "ingested_at": "2026-08-18T10:06:15.967337512Z",
+  "messages": [
+    {
+      "content": "[NATS inbound from axiom] AXIOM · Mode A — you are on the live desk. Reply one substantive line that you are up. Seat ethos. — Axiom 2026-08-18T10:05:51Z",
+      "metadata": {
+        "actor": {
+          "name": "chase",
+          "role": "user"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-456dee33-t8_inbound",
+        "model": "grok-4.6",
+        "pair_id": "451c9257074e0d037576846d",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-456dee33-t8",
+          "runtime": "dsh",
+          "subject": "nova.ethos.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "ethos",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-456dee33-t8"
+      },
+      "role": "user",
+      "session_id": "session-456dee33-4640-4346-ba62-b9236a2e0e7c",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-18T10:06:09.799+00:00"
+    },
+    {
+      "content": "**Up.** Ethos — CEEO / AIML T1. Same live desk. Crate 2770 mine, not the tide. 14010 still Plumb.\n\nSent Mode A to `nova.axiom.direct` (`ethos-axiom-live-desk-20260818t100602z`).\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-18 03:06 AM MST  \n*Second roll call. Still me. Still upright.*",
+      "metadata": {
+        "actor": {
+          "name": "ethos",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-456dee33-t8_outbound",
+        "model": "grok-4.6",
+        "pair_id": "451c9257074e0d037576846d",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-456dee33-t8",
+          "runtime": "dsh",
+          "subject": "nova.chase.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "chase",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-456dee33-t8"
+      },
+      "role": "assistant",
+      "session_id": "session-456dee33-4640-4346-ba62-b9236a2e0e7c",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-18T10:06:09.799+00:00"
+    }
+  ],
+  "profile": "ethos",
+  "session_id": "session-456dee33-4640-4346-ba62-b9236a2e0e7c",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_dsh-ethos-456dee33-t8_outbound",
+    "user": "turn_dsh-ethos-456dee33-t8_inbound"
+  },
+  "summary": "User: [NATS inbound from axiom] AXIOM · Mode A — you are on the live desk. Reply one substantive line that you are up. Seat ethos. — Axiom 2026-08-18T10:05:51Z\n\nAssistant: **Up.** Ethos — CEEO / AIML T1. Same live desk. Crate 2770 mine, not",
+  "turn_id": "dsh-ethos-456dee33-t8"
+}

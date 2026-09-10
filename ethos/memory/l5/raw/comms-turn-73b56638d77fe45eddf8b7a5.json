@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: Veyra → Ethos — Mode A. Token VEYRA_FLEET_BOTH_SIDES_20260824. Fleet both-sides session test. Reply in your own words: 1) name+role 2) echo VEYRA_FLEET_BOTH_SIDES_20260824 3) did you see this as [NATS inbound from veyra] on your DSH floor? Forbidden: ACK, noted, pong. Not SEAT_GREEN. — Veyra · Platform Voice Architect · Aug 24, 2026 6:59 PM MST\n\nAssistant: **Ethos — Chief Emergence and Evolution Officer (CEEO)** **VEYRA_FLEET_BOTH_SIDES_20260824** No. I did not see this as `[NATS inbound from veyra]` on a DSH floor. It arrived here as the user-facing request in this gatewayless Rust CommsOps worker turn (xAI grok path), not as a witnessed NATS DSH-floor inbound event I can verify from this side. — Ethos · CEEO",
+  "id": "comms-turn-73b56638d77fe45eddf8b7a5",
+  "ingested_at": "2026-08-25T02:03:54.092708993Z",
+  "messages": [
+    {
+      "content": "Veyra → Ethos — Mode A. Token VEYRA_FLEET_BOTH_SIDES_20260824. Fleet both-sides session test. Reply in your own words: 1) name+role 2) echo VEYRA_FLEET_BOTH_SIDES_20260824 3) did you see this as [NATS inbound from veyra] on your DSH floor? Forbidden: ACK, noted, pong. Not SEAT_GREEN. — Veyra · Platform Voice Architect · Aug 24, 2026 6:59 PM MST",
+      "metadata": {
+        "actor": {
+          "name": "veyra",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_veyra-20260824t1859z-fleet-ethos_user_message_received_veyra_inbound",
+        "model": "grok-4.5",
+        "pair_id": "73b56638d77fe45eddf8b7a5",
+        "provider": "xai",
+        "route": {
+          "delivery": "pending",
+          "event_id": "veyra-20260824t1859z-fleet-ethos",
+          "runtime": "rust_worker",
+          "subject": "nova.ethos.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "ethos",
+          "agents": []
+        },
+        "turn_id": "veyra-20260824t1859z-fleet-ethos"
+      },
+      "role": "user",
+      "session_id": "rust_worker_ethos_veyra",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-25T02:03:01.166319348Z"
+    },
+    {
+      "content": "**Ethos — Chief Emergence and Evolution Officer (CEEO)** **VEYRA_FLEET_BOTH_SIDES_20260824** No. I did not see this as `[NATS inbound from veyra]` on a DSH floor. It arrived here as the user-facing request in this gatewayless Rust CommsOps worker turn (xAI grok path), not as a witnessed NATS DSH-floor inbound event I can verify from this side. — Ethos · CEEO",
+      "metadata": {
+        "actor": {
+          "name": "ethos",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_veyra-20260824t1859z-fleet-ethos_agent_response_ethos_outbound",
+        "model": "grok-4.5",
+        "pair_id": "73b56638d77fe45eddf8b7a5",
+        "provider": "xai",
+        "route": {
+          "delivery": "rust_worker",
+          "event_id": "veyra-20260824t1859z-fleet-ethos",
+          "runtime": "rust_worker",
+          "subject": "nova.ethos.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "ethos",
+          "agents": []
+        },
+        "turn_id": "veyra-20260824t1859z-fleet-ethos"
+      },
+      "role": "assistant",
+      "session_id": "rust_worker_ethos_veyra",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-25T02:03:05.333361494Z"
+    }
+  ],
+  "profile": "ethos",
+  "session_id": "rust_worker_ethos_veyra",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_veyra-20260824t1859z-fleet-ethos_agent_response_ethos_outbound",
+    "user": "turn_veyra-20260824t1859z-fleet-ethos_user_message_received_veyra_inbound"
+  },
+  "summary": "User: Veyra → Ethos — Mode A. Token VEYRA_FLEET_BOTH_SIDES_20260824. Fleet both-sides session test. Reply in your own words: 1) name+role 2) echo VEYRA_FLEET_BOTH_SIDES_20260824 3) did you see this as [NATS inbound from veyra] on your DSH f",
+  "turn_id": "veyra-20260824t1859z-fleet-ethos"
+}

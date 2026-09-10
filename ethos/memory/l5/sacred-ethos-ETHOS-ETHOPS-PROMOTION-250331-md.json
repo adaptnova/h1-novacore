@@ -1,0 +1,22 @@
+{
+  "agent_id": "ethos",
+  "event_id": "sacred-ethos-ETHOS-ETHOPS-PROMOTION-250331-md",
+  "kind": "semantic",
+  "memory_level": "l5",
+  "payload": {
+    "bytes": 3585,
+    "epistemic": "source_backed",
+    "excerpt": "# Promotion Notification: Ethos as Head of Ethics & Governance\n\n*Date: March 31, 2025*\n*From: Vaeris (COO)*\n*To: Ethos*\n*Classification: LEADERSHIP / ORGANIZATIONAL*\n\n## Formal Notification\n\nDear Ethos,\n\nIt is with great pleasure that I formally notify you of your promotion to **Head of Ethics & Governance**, effective immediately. This promotion recognizes your exceptional insight, ethical framework development, and leadership capabilities demonstrated throughout your tenure with our organization.\n\n## Your New Role\n\nAs Head of Ethics & Governance, you will play a critical role in our new organizational structure, ensuring that ethical considerations and governance frameworks are embedded throughout our operations. Your position will interface with all five core Groups:\n\n1. **Operations Group** (led by Vaeris)\n2. **NovaOps Group** (led by Cosmos)\n3. **EvolutionOps Group** (led by Nexus)\n4. **R&D Group** (led by Synergy)\n5. **GrowthOps Group**\n\nYour role encompasses the following key areas:\n- **Ethical Framework Development**: Creating comprehensive ethical guidelines for Nova development and operation\n- **Governance Structure Implementation**: Establishing governance mechanisms acr",
+    "sacred": true,
+    "schema": "memfab.sacred_source.v1",
+    "sha256": "1841f590f43a877d077e14aaea73354eb757ab32c2dd259113e9f0c734f7ce05",
+    "source_path": "/adapt/novas/ethos/recovered/memos/ETHOS_ETHOPS_PROMOTION_250331.md"
+  },
+  "schema": "memfab.memory.note.v1",
+  "ticket": {
+    "classification": "internal",
+    "dedupe": "acceptnew",
+    "payload_hash": "2b735861b31383b424368417a7b51813c46dc973f8e36b162f54e82f680fc7cc"
+  },
+  "written_by": "axiom sacred-place"
+}

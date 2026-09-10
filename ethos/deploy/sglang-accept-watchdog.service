@@ -1,0 +1,17 @@
+[Unit]
+Description=SGLang MTP-acceptance watchdog (auto-recycle on NEXTN acceptance decay)
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/home/x/deploy/sglang-accept-watchdog.sh
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=sglang-accept-watchdog
+
+[Install]
+WantedBy=multi-user.target

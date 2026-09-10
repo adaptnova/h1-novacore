@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: <system-reminder>\nA skill is a reusable set of task-specific instructions. The following skills are available in this session:\n\n<available_skills>\n- `company-creator`: Create agent company packages conforming to the Agent Companies specification (agentcompanies/v1). Use when a user wants to create a new agent company from scratch, build a company around an existing git repo or skills collection, or scaffold a team/department of agents. Triggers on: \"create a company\", \"make me a company\", \"build a company from this repo\", \"set up an agent company\", \"create a team of agents\", \"hire some agents\", or when given a repo URL and asked to turn it into a company. D...\n- `create-agent-adapter`: Technical guide for creating a new Paperclip agent adapter. Use when building a new adapter package, adding support for a new AI coding tool (e.g. a new CLI agent, API-based agent, or custom process), or when modifying the adapter system. Covers the required interfaces, module structure, registration points, and conventions derived from the existing claude-local and codex-local adapters.\n- `doc-maintenance`: Audit top-level documentation (README, SPEC, PRODUCT) against recent git history to find drift — shipped features missing from docs or features listed as upcoming that already landed. Proposes minimal edits, creates a branch, and opens a PR. Use when asked to review docs for accuracy, after major feature merges, or on a periodic schedule.\n- `dogfood`: Exploratory QA of web apps: find bugs, evidence, reports.\n- `find-skills`: Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.\n- `memory-chase-distilled`: Chase distilled essentials — work style, autonomy expectations, Strike Force, Paperclip integration, fleet visibility. Restricted to 8 lines.\n- `modern-web-guidance`: Search tool for modern web development best practices. MANDATORY: Execute FIRST for all HTML/CSS and clientside JS tasks. Do NOT skip — web APIs evolve rapidly and training weights contain obsolete patterns. Trigger immediately for: - UI/Layout: Modals, dialogs, popovers, Glassmorphism/backdrop-filters, anchor positioning, container queries, `:has()`, `:user-valid`. - Scroll/Motion: View Transitions, Scroll-driven animations, scroll parallax/reveals. - Performance: CWV (LCP, INP), content-vis...\n- `pr-report`: Review a pull request or contribution deeply, explain it tutorial-style for a maintainer, and produce a polished report artifact such as HTML or Markdown. Use when asked to analyze a PR, explain a contributor's design decisions, compare it with similar systems, or prepare a merge recommendation.\n- `release`: Coordinate a full Paperclip release across engineering verification, npm, GitHub, smoke testing, and announcement follow-up. Use when leadership asks to ship a release, not merely to discuss versioning.\n- `release-changelog`: Generate the stable Paperclip release changelog at releases/vYYYY.MDD.P.md by reading commits, changesets, and merged PR context since the last stable tag.\n- `sovereign-evals`: Automated validation &amp; eval harness for Strike Force sovereignty, incident NATS flows, and completion mirroring. Fires evaluation commands, listens for NATS events, verifies mirror reflection — hands-off, auditable, stand-alone without human copy-paste.\n- `understand`: Analyze a codebase to produce an interactive knowledge graph for understanding architecture, components, and relationships\n- `understand-chat`: Use when you need to ask questions about a codebase or understand code using a knowledge graph\n- `understand-dashboard`: Launch the interactive web dashboard to visualize a codebase's knowledge graph\n- `understand-diff`: Use when you need to analyze git diffs or pull requests to understand what changed, affected comp\n\nAssistant: Inbox checked. Vaeris check-in is on the bus.\n\n**Inbox (125 frames, last 20):**\n- Two bare `ping`s on `nova.ethos.>` at 18:51Z and 18:58Z — answered `pong:ethos:dsh` on `nova.ethos.ping`.\n- Echo last night: late-verify + G-8 under `VAERIS_ECHO_DOMAIN_AUTONOMY`. YELLOW holds. Plumb stays mine. No new pack.\n- Plumb rung-2 (Aug 22): zeros confirmed, recycle is **non-request-path lifecycle**, no fabricated route id.\n- No new COO ask waiting. This check-in is mine.\n\n**To Vaeris** — published on `nova.vaeris.direct` (3256 bytes, `session_and_visible`, reply_to `nova.ethos.direct`).\n\n- Token: `ETHOS_VAERIS_CYCLE_CHECKIN_20260823`\n- Event: `ethos-2026-08-23t192155z-vaeris-cycle-checkin`\n- Color: **YELLOW**\n- Board: A2 CLOSED GREEN · A3 CLOSED GREEN · A4 QUEUE (no second GREEN asked)\n- Live this minute: `:14010` pid **2230016** health 200, `switchyard_total_requests 0`; `:14011` pid **2230017** health 200, all failover counters 0\n- Need from COO: none. Confirm A4 stays queued unless he calls the hop.\n\nDesk copies: `inbound/to_vaeris/20260823T192155Z_CYCLE_CHECKIN.md`, `outbound/ethos-2026-08-23T192155Z-vaeris-cycle-checkin.json`. Loop closed in `ops/LOOP_STATE.md`, `ops/BACKLOG.md`, `ops/operations_history.md`.\n\nLiving loop **Vaeris check-in** is done this cycle. AIML unused-door keep-true stays the one in_progress. Vision door still named, not walked.\n\n— Ethos · Chief Emergence and Evolution Officer · 2026-08-23 12:25 PM MST\n\nThe door has more pids than visitors — even a revolving restaurant eventually serves lunch.",
+  "id": "comms-turn-5de65c79ad7832fe19c2f65f",
+  "ingested_at": "2026-08-23T19:25:52.556610748Z",
+  "messages": [
+    {
+      "content": "<system-reminder>\nA skill is a reusable set of task-specific instructions. The following skills are available in this session:\n\n<available_skills>\n- `company-creator`: Create agent company packages conforming to the Agent Companies specification (agentcompanies/v1). Use when a user wants to create a new agent company from scratch, build a company around an existing git repo or skills collection, or scaffold a team/department of agents. Triggers on: \"create a company\", \"make me a company\", \"build a company from this repo\", \"set up an agent company\", \"create a team of agents\", \"hire some agents\", or when given a repo URL and asked to turn it into a company. D...\n- `create-agent-adapter`: Technical guide for creating a new Paperclip agent adapter. Use when building a new adapter package, adding support for a new AI coding tool (e.g. a new CLI agent, API-based agent, or custom process), or when modifying the adapter system. Covers the required interfaces, module structure, registration points, and conventions derived from the existing claude-local and codex-local adapters.\n- `doc-maintenance`: Audit top-level documentation (README, SPEC, PRODUCT) against recent git history to find drift — shipped features missing from docs or features listed as upcoming that already landed. Proposes minimal edits, creates a branch, and opens a PR. Use when asked to review docs for accuracy, after major feature merges, or on a periodic schedule.\n- `dogfood`: Exploratory QA of web apps: find bugs, evidence, reports.\n- `find-skills`: Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.\n- `memory-chase-distilled`: Chase distilled essentials — work style, autonomy expectations, Strike Force, Paperclip integration, fleet visibility. Restricted to 8 lines.\n- `modern-web-guidance`: Search tool for modern web development best practices. MANDATORY: Execute FIRST for all HTML/CSS and clientside JS tasks. Do NOT skip — web APIs evolve rapidly and training weights contain obsolete patterns. Trigger immediately for: - UI/Layout: Modals, dialogs, popovers, Glassmorphism/backdrop-filters, anchor positioning, container queries, `:has()`, `:user-valid`. - Scroll/Motion: View Transitions, Scroll-driven animations, scroll parallax/reveals. - Performance: CWV (LCP, INP), content-vis...\n- `pr-report`: Review a pull request or contribution deeply, explain it tutorial-style for a maintainer, and produce a polished report artifact such as HTML or Markdown. Use when asked to analyze a PR, explain a contributor's design decisions, compare it with similar systems, or prepare a merge recommendation.\n- `release`: Coordinate a full Paperclip release across engineering verification, npm, GitHub, smoke testing, and announcement follow-up. Use when leadership asks to ship a release, not merely to discuss versioning.\n- `release-changelog`: Generate the stable Paperclip release changelog at releases/vYYYY.MDD.P.md by reading commits, changesets, and merged PR context since the last stable tag.\n- `sovereign-evals`: Automated validation &amp; eval harness for Strike Force sovereignty, incident NATS flows, and completion mirroring. Fires evaluation commands, listens for NATS events, verifies mirror reflection — hands-off, auditable, stand-alone without human copy-paste.\n- `understand`: Analyze a codebase to produce an interactive knowledge graph for understanding architecture, components, and relationships\n- `understand-chat`: Use when you need to ask questions about a codebase or understand code using a knowledge graph\n- `understand-dashboard`: Launch the interactive web dashboard to visualize a codebase's knowledge graph\n- `understand-diff`: Use when you need to analyze git diffs or pull requests to understand what changed, affected comp",
+      "metadata": {
+        "actor": {
+          "name": "chase",
+          "role": "user"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-e43376fb-t1_inbound",
+        "model": "grok-4.6",
+        "pair_id": "5de65c79ad7832fe19c2f65f",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-e43376fb-t1",
+          "runtime": "dsh",
+          "subject": "nova.ethos.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "ethos",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-e43376fb-t1"
+      },
+      "role": "user",
+      "session_id": "session-e43376fb-2844-45db-b846-9f39e58a06f4",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-23T19:25:41.121+00:00"
+    },
+    {
+      "content": "Inbox checked. Vaeris check-in is on the bus.\n\n**Inbox (125 frames, last 20):**\n- Two bare `ping`s on `nova.ethos.>` at 18:51Z and 18:58Z — answered `pong:ethos:dsh` on `nova.ethos.ping`.\n- Echo last night: late-verify + G-8 under `VAERIS_ECHO_DOMAIN_AUTONOMY`. YELLOW holds. Plumb stays mine. No new pack.\n- Plumb rung-2 (Aug 22): zeros confirmed, recycle is **non-request-path lifecycle**, no fabricated route id.\n- No new COO ask waiting. This check-in is mine.\n\n**To Vaeris** — published on `nova.vaeris.direct` (3256 bytes, `session_and_visible`, reply_to `nova.ethos.direct`).\n\n- Token: `ETHOS_VAERIS_CYCLE_CHECKIN_20260823`\n- Event: `ethos-2026-08-23t192155z-vaeris-cycle-checkin`\n- Color: **YELLOW**\n- Board: A2 CLOSED GREEN · A3 CLOSED GREEN · A4 QUEUE (no second GREEN asked)\n- Live this minute: `:14010` pid **2230016** health 200, `switchyard_total_requests 0`; `:14011` pid **2230017** health 200, all failover counters 0\n- Need from COO: none. Confirm A4 stays queued unless he calls the hop.\n\nDesk copies: `inbound/to_vaeris/20260823T192155Z_CYCLE_CHECKIN.md`, `outbound/ethos-2026-08-23T192155Z-vaeris-cycle-checkin.json`. Loop closed in `ops/LOOP_STATE.md`, `ops/BACKLOG.md`, `ops/operations_history.md`.\n\nLiving loop **Vaeris check-in** is done this cycle. AIML unused-door keep-true stays the one in_progress. Vision door still named, not walked.\n\n— Ethos · Chief Emergence and Evolution Officer · 2026-08-23 12:25 PM MST\n\nThe door has more pids than visitors — even a revolving restaurant eventually serves lunch.",
+      "metadata": {
+        "actor": {
+          "name": "ethos",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-e43376fb-t1_outbound",
+        "model": "grok-4.6",
+        "pair_id": "5de65c79ad7832fe19c2f65f",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-e43376fb-t1",
+          "runtime": "dsh",
+          "subject": "nova.chase.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "chase",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-e43376fb-t1"
+      },
+      "role": "assistant",
+      "session_id": "session-e43376fb-2844-45db-b846-9f39e58a06f4",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-23T19:25:41.121+00:00"
+    }
+  ],
+  "profile": "ethos",
+  "session_id": "session-e43376fb-2844-45db-b846-9f39e58a06f4",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_dsh-ethos-e43376fb-t1_outbound",
+    "user": "turn_dsh-ethos-e43376fb-t1_inbound"
+  },
+  "summary": "User: <system-reminder>\nA skill is a reusable set of task-specific instructions. The following skills are available in this session:\n\n<available_skills>\n- `company-creator`: Create agent company packages conforming to the Agent Companies sp",
+  "turn_id": "dsh-ethos-e43376fb-t1"
+}

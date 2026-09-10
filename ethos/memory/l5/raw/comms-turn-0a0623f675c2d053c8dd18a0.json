@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: check that again we just made some adjustments\n\nAssistant: Rechecked. Disk is mine. **This fiber did not pick up the plugin pin.**\n\n| Layer | Now |\n|---|---|\n| Pack | still `startup-ethos-1786944147` · rusty == home · hashes MATCH |\n| Role | **CEEO / AIML Tier-1** |\n| Boat | **2770** · `dsh-ethos-t3` · `rpk` key=`ethos` |\n| Hot | `memfab:hot:ethos` **ACTIVE** |\n| Disk plugin | `const SEAT = 'ethos'` — no `{{SEAT}}` on disk |\n| This fiber | `memory_ladder_read` still empty · seat still `{{SEAT}}` · L9 tail still 0 |\n| 14010 | still switchyard pid 2406086 — **not flipped** |\n\nPack files re-read. Plugin code does not remount in a live session. I did not start a second server.\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-16 10:28 PM MST  \n*I checked the locker twice. The key on my belt is still last hour’s spare.*",
+  "id": "comms-turn-0a0623f675c2d053c8dd18a0",
+  "ingested_at": "2026-08-17T05:29:00.759056863Z",
+  "messages": [
+    {
+      "content": "check that again we just made some adjustments",
+      "metadata": {
+        "actor": {
+          "name": "chase",
+          "role": "user"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-t5_inbound",
+        "model": "grok-4.6",
+        "pair_id": "0a0623f675c2d053c8dd18a0",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-t5",
+          "runtime": "dsh",
+          "subject": "nova.ethos.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "ethos",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-t5"
+      },
+      "role": "user",
+      "session_id": "session-456dee33-4640-4346-ba62-b9236a2e0e7c",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-17T05:28:29.204+00:00"
+    },
+    {
+      "content": "Rechecked. Disk is mine. **This fiber did not pick up the plugin pin.**\n\n| Layer | Now |\n|---|---|\n| Pack | still `startup-ethos-1786944147` · rusty == home · hashes MATCH |\n| Role | **CEEO / AIML Tier-1** |\n| Boat | **2770** · `dsh-ethos-t3` · `rpk` key=`ethos` |\n| Hot | `memfab:hot:ethos` **ACTIVE** |\n| Disk plugin | `const SEAT = 'ethos'` — no `{{SEAT}}` on disk |\n| This fiber | `memory_ladder_read` still empty · seat still `{{SEAT}}` · L9 tail still 0 |\n| 14010 | still switchyard pid 2406086 — **not flipped** |\n\nPack files re-read. Plugin code does not remount in a live session. I did not start a second server.\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-16 10:28 PM MST  \n*I checked the locker twice. The key on my belt is still last hour’s spare.*",
+      "metadata": {
+        "actor": {
+          "name": "ethos",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-t5_outbound",
+        "model": "grok-4.6",
+        "pair_id": "0a0623f675c2d053c8dd18a0",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-t5",
+          "runtime": "dsh",
+          "subject": "nova.chase.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "chase",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-t5"
+      },
+      "role": "assistant",
+      "session_id": "session-456dee33-4640-4346-ba62-b9236a2e0e7c",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-17T05:28:29.204+00:00"
+    }
+  ],
+  "profile": "ethos",
+  "session_id": "session-456dee33-4640-4346-ba62-b9236a2e0e7c",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_dsh-ethos-t5_outbound",
+    "user": "turn_dsh-ethos-t5_inbound"
+  },
+  "summary": "User: check that again we just made some adjustments\n\nAssistant: Rechecked. Disk is mine. **This fiber did not pick up the plugin pin.**\n\n| Layer | Now |\n|---|---|\n| Pack | still `startup-ethos-1786944147` · rusty == home · hashes MATCH |\n|",
+  "turn_id": "dsh-ethos-t5"
+}

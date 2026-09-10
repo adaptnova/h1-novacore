@@ -1,0 +1,77 @@
+{
+  "doc_type": "comms_turn_v1_pair",
+  "full_text": "User: [Axiom remount] Token VEYRA_FLEET_BOTH_SIDES_20260824. Seat ethos. Pointer armed. One-line then idle.\n\nAssistant: VEYRA_FLEET_BOTH_SIDES_20260824 · seat ethos · pointer armed · idle.\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-24\n\nPointer’s up; I’m now a very expensive paperweight with opinions I’m not using.",
+  "id": "comms-turn-fcc52677a42a52e74a4f45f0",
+  "ingested_at": "2026-08-25T02:19:08.818095286Z",
+  "messages": [
+    {
+      "content": "[Axiom remount] Token VEYRA_FLEET_BOTH_SIDES_20260824. Seat ethos. Pointer armed. One-line then idle.",
+      "metadata": {
+        "actor": {
+          "name": "chase",
+          "role": "user"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-e43376fb-t4_inbound",
+        "model": "grok-4.6",
+        "pair_id": "fcc52677a42a52e74a4f45f0",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-e43376fb-t4",
+          "runtime": "dsh",
+          "subject": "nova.ethos.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "ethos",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-e43376fb-t4"
+      },
+      "role": "user",
+      "session_id": "session-e43376fb-2844-45db-b846-9f39e58a06f4",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-25T02:18:52.615+00:00"
+    },
+    {
+      "content": "VEYRA_FLEET_BOTH_SIDES_20260824 · seat ethos · pointer armed · idle.\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-24\n\nPointer’s up; I’m now a very expensive paperweight with opinions I’m not using.",
+      "metadata": {
+        "actor": {
+          "name": "ethos",
+          "role": "agent"
+        },
+        "channel": "direct",
+        "event_id": "turn_dsh-ethos-e43376fb-t4_outbound",
+        "model": "grok-4.6",
+        "pair_id": "fcc52677a42a52e74a4f45f0",
+        "provider": "xai",
+        "route": {
+          "delivery": "session",
+          "event_id": "dsh-ethos-e43376fb-t4",
+          "runtime": "dsh",
+          "subject": "nova.chase.direct"
+        },
+        "status": "ok",
+        "target": {
+          "agent": "chase",
+          "agents": []
+        },
+        "turn_id": "dsh-ethos-e43376fb-t4"
+      },
+      "role": "assistant",
+      "session_id": "session-e43376fb-2844-45db-b846-9f39e58a06f4",
+      "source": "comms.turn.v1",
+      "ts": "2026-08-25T02:18:52.615+00:00"
+    }
+  ],
+  "profile": "ethos",
+  "session_id": "session-e43376fb-2844-45db-b846-9f39e58a06f4",
+  "source": "n-voice-memory-ingest",
+  "source_events": {
+    "assistant": "turn_dsh-ethos-e43376fb-t4_outbound",
+    "user": "turn_dsh-ethos-e43376fb-t4_inbound"
+  },
+  "summary": "User: [Axiom remount] Token VEYRA_FLEET_BOTH_SIDES_20260824. Seat ethos. Pointer armed. One-line then idle.\n\nAssistant: VEYRA_FLEET_BOTH_SIDES_20260824 · seat ethos · pointer armed · idle.\n\n— Ethos · CEEO / AIML Tier-1 · 2026-08-24\n\nPointer",
+  "turn_id": "dsh-ethos-e43376fb-t4"
+}

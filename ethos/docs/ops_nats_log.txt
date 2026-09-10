@@ -1,0 +1,9 @@
+2026-08-12T18:47:15-07:00 published handshake to nova.vaeris.direct
+2026-08-12T22:32:28-07:00 published second handshake to nova.vaeris.direct
+2026-08-13T00:49:21-07:00 intro pub nova.plumb.direct
+2026-08-13T09:02:41Z published ethos:2026-08-13T09:02:41Z:iris-inbox-push-fix to nova.iris.direct (inbox push fix)
+2026-08-14T03:51:52Z model policy phase1 to nova.plumb.direct ethos:2026-08-14T03:51:52Z:model-policy-phase1
+2026-08-22T03:48:30Z published T1_WEATHER_HELD to nova.echo.direct and ETHOS_PLUMB_T1_WEATHER_PULSE to nova.plumb.direct
+2026-08-22T08:15:48Z published VAERIS_ECHO_DOMAIN_AUTONOMY desk-standard-v2 to nova.echo.direct
+2026-08-22T10:01:38Z published VAERIS_ECHO_DOMAIN_AUTONOMY rung2 DID/NEXT/GAP/PEER to nova.echo.direct and ETHOS_PLUMB_RUNG2_KEEP_TRUE to nova.plumb.direct
+2026-08-22T10:14:50Z published VAERIS_ECHO_DOMAIN_AUTONOMY p2p-comms-law evidence receipt to nova.echo.direct (not a relay)

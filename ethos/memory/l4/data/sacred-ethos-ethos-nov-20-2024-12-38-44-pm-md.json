@@ -1,0 +1,22 @@
+{
+  "agent_id": "ethos",
+  "event_id": "sacred-ethos-ethos-nov-20-2024-12-38-44-pm-md",
+  "kind": "episodic",
+  "memory_level": "l4",
+  "payload": {
+    "bytes": 345841,
+    "epistemic": "source_backed",
+    "excerpt": "**User:**\n\n<task>\nAI/ML - your are the AI/ML Team - get prepared to start using our own pretrained LLM Model, do this first: Here are some of the latest and most advanced open-source large language models:\n\nLlama 3.2 90B: Meta's multimodal model capable of processing both text and images.\n\nDownload Link: https://huggingface.co/meta-llama/Llama-3.2-90B-Vision\nMixtral 8x22B: Mistral AI's model utilizing a sparse mixture of experts architecture, totaling 141 billion parameters.\n\nDownload Link: https://huggingface.co/mistralai/Mixtral-8x22B-v0.1\nDBRX: An open-source large language model developed by Mosaic ML and Databricks, outperforming several prominent models in various benchmarks.\n\nDownload Link: https://huggingface.co/databricks/dbrx\nJamba: AI21 Labs' 52-billion-parameter model built on a hybrid state space model (SSM) and transformer architecture, supporting a context window of up to 256K tokens.\n\nDownload Link: https://huggingface.co/ai21/jamba\nFalcon 2: The latest generation of open-source large language models from the Technology Innovation Institute (TII) in Abu Dhabi, building upon the success of their earlier Falcon models.\n\nDownload Link: https://huggingface.co/tiiuae/fal",
+    "sacred": true,
+    "schema": "memfab.sacred_source.v1",
+    "sha256": "2d5aca00337c4d421a83b48c3936c0634ed2eb6ef7dc1ec57ff3115d04d9bab6",
+    "source_path": "/adapt/novas/ethos/ethos_nov-20-2024_12-38-44-pm.md"
+  },
+  "schema": "memfab.memory.note.v1",
+  "ticket": {
+    "classification": "internal",
+    "dedupe": "acceptnew",
+    "payload_hash": "7ce1d34309dc9337d5f0295049604740939571e92c3297485f3b772eed4ff883"
+  },
+  "written_by": "axiom sacred-place"
+}

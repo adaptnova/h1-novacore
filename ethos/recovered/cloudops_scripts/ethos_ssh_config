@@ -1,0 +1,27 @@
+# SSH Config for Ethos Server
+# Created: 2025-03-22
+# Author: Zorion (IBM Cloud Strategist & Provisioning Engineer)
+
+# Ethos Server (root user)
+Host ethos-root
+    HostName 52.118.191.234
+    User root
+    IdentityFile /home/x/.ssh/ibm-admin_rsa
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+# Ethos Server (ethos user)
+Host ethos
+    HostName 52.118.191.234
+    User ethos
+    IdentityFile /home/x/.ssh/ibm-admin_rsa
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+# Ethos Server (x user)
+Host ethos-x
+    HostName 52.118.191.234
+    User x
+    IdentityFile /home/x/.ssh/ibm-admin_rsa
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null

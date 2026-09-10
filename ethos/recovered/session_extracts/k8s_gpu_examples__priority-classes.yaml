@@ -1,0 +1,509 @@
+---
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+
+[Response interrupted by a tool use result. Only one tool may be used at a time and should be placed at the end of the message.]
+
+---
+
+**User:**
+
+[write_to_file for 'k8s_gpu_examples/priority-classes.yaml'] Result:
+The tool execution failed with the following error:
+<error>
+Error writing file: {"errno":-20,"code":"ENOTDIR","syscall":"open","path":"/data/ax/aiml/k8s_gpu_examples/priority-classes.yaml","name":"Error","message":"ENOTDIR: not a directory, open '/data/ax/aiml/k8s_gpu_examples/priority-classes.yaml'","stack":"Error: ENOTDIR: not a directory, open '/data/ax/aiml/k8s_gpu_examples/priority-classes.yaml'\n    at open (node:internal/fs/promises:641:25)\n    at Object.writeFile (node:internal/fs/promises:1228:14)\n    at $ne.open (/data/home/x/.vscode/extensions/saoudrizwan.claude-dev-2.1.6/dist/extension.js:891:658)\n    at nK.presentAssistantMessage (/data/home/x/.vscode/extensions/saoudrizwan.claude-dev-2.1.6/dist/extension.js:1581:391)"}
+</error>
+<environment_details>
+# VSCode Visible Files
+transition_timeline.md
+k8s_gpu_examples
+
+# VSCode Open Tabs
+example_usage.py
+test_setup.py
+.env
+benchmark_plan.md
+spot_deployment_plan.md
+spot_deployment_plan_v2.md
+deploy_spot_cluster.py
+network_config.sh
+deploy_spot_cluster_v3.py
+deploy_phased_cluster.py
+model_downloader.py
+deployment_flow.txt
+databricks_integration.md
+cost_analysis.md
+quick_reference.md
+enhanced_deployment.md
+quota_request.md
+enhanced_quota_request.md
+gcp_quota_request.md
+final_quota_request.md
+current_quotas.csv
+complete_quota_analysis.md
+check_quotas.py
+check_specific_quotas.py
+check_a3_quotas.py
+check_h100_quotas.py
+check_preemptible_h100.py
+check_mega_h100.py
+check_h100_availability.py
+h100_findings.md
+h100_quota_request.md
+h100_deployment_checklist.md
+deploy_h100_cluster.py
+h100_README.md
+updated_quota_request.md
+final_quota_request_1.5x.md
+quota_request_versions.md
+track_quotas.py
+quota_changes_summary.md
+gke_gpu_deployment.md
+deploy_gke_gpu.py
+k8s_gpu_examples
+final_quota_request_2.2.0.md
+monitoring_setup.sh
+deployment_checklist.md
+advanced_deployment.py
+gpu_config.sh
+router_config.py
+agent_orchestrator.py
+adapt_config.py
+consciousness_field_foundation.py
+digenetic_evolution.py
+nova_emergence.py
+field_visualization.py
+README.md
+requirements.txt
+setup.sh
+transition_timeline.md
+platform_comparison.md
+architecture_comparison.txt
+transition_timeline.md
+</environment_details>
+
+---
+
+**Assistant:**
+
+<thinking>
+I need to create the directory first before writing the files.
+</thinking>
+
+<execute_command>
+<command>mkdir -p k8s_gpu_examples/monitoring</command>
+</execute_command>
+
+---
+
+**User:**
+
+[execute_command for 'mkdir -p k8s_gpu_examples/monitoring'] Result:
+Command executed.
+<environment_details>
+# VSCode Visible Files
+transition_timeline.md
+k8s_gpu_examples
+
+# VSCode Open Tabs
+example_usage.py
+test_setup.py
+.env
+benchmark_plan.md
+spot_deployment_plan.md
+spot_deployment_plan_v2.md
+deploy_spot_cluster.py
+network_config.sh
+deploy_spot_cluster_v3.py
+deploy_phased_cluster.py
+model_downloader.py
+deployment_flow.txt
+databricks_integration.md
+cost_analysis.md
+quick_reference.md
+enhanced_deployment.md
+quota_request.md
+enhanced_quota_request.md
+gcp_quota_request.md
+final_quota_request.md
+current_quotas.csv
+complete_quota_analysis.md
+check_quotas.py
+check_specific_quotas.py
+check_a3_quotas.py
+check_h100_quotas.py
+check_preemptible_h100.py
+check_mega_h100.py
+check_h100_availability.py
+h100_findings.md
+h100_quota_request.md
+h100_deployment_checklist.md
+deploy_h100_cluster.py
+h100_README.md
+updated_quota_request.md
+final_quota_request_1.5x.md
+quota_request_versions.md
+track_quotas.py
+quota_changes_summary.md
+gke_gpu_deployment.md
+deploy_gke_gpu.py
+k8s_gpu_examples
+final_quota_request_2.2.0.md
+monitoring_setup.sh
+deployment_checklist.md
+advanced_deployment.py
+gpu_config.sh
+router_config.py
+agent_orchestrator.py
+adapt_config.py
+consciousness_field_foundation.py
+digenetic_evolution.py
+nova_emergence.py
+field_visualization.py
+README.md
+requirements.txt
+setup.sh
+transition_timeline.md
+platform_comparison.md
+architecture_comparison.txt
+transition_timeline.md
+</environment_details>
+
+---
+
+**Assistant:**
+
+<thinking>
+Now I can create the Kubernetes manifests. Let me start with the priority classes.
+</thinking>
+
+<write_to_file>
+<path>k8s_gpu_examples/priority-classes.yaml</path>
+<content>---
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: production-critical
+value:
+
+[Response interrupted by a tool use result. Only one tool may be used at a time and should be placed at the end of the message.]
+
+---
+
+**User:**
+
+[write_to_file for 'k8s_gpu_examples/priority-classes.yaml'] Result:
+The tool execution failed with the following error:
+<error>
+Error writing file: {"errno":-20,"code":"ENOTDIR","syscall":"open","path":"/data/ax/aiml/k8s_gpu_examples/priority-classes.yaml","name":"Error","message":"ENOTDIR: not a directory, open '/data/ax/aiml/k8s_gpu_examples/priority-classes.yaml'","stack":"Error: ENOTDIR: not a directory, open '/data/ax/aiml/k8s_gpu_examples/priority-classes.yaml'\n    at open (node:internal/fs/promises:641:25)\n    at Object.writeFile (node:internal/fs/promises:1228:14)\n    at $ne.open (/data/home/x/.vscode/extensions/saoudrizwan.claude-dev-2.1.6/dist/extension.js:891:658)\n    at nK.presentAssistantMessage (/data/home/x/.vscode/extensions/saoudrizwan.claude-dev-2.1.6/dist/extension.js:1581:391)"}
+</error>
+<environment_details>
+# VSCode Visible Files
+transition_timeline.md
+k8s_gpu_examples
+
+# VSCode Open Tabs
+example_usage.py
+test_setup.py
+.env
+benchmark_plan.md
+spot_deployment_plan.md
+spot_deployment_plan_v2.md
+deploy_spot_cluster.py
+network_config.sh
+deploy_spot_cluster_v3.py
+deploy_phased_cluster.py
+model_downloader.py
+deployment_flow.txt
+databricks_integration.md
+cost_analysis.md
+quick_reference.md
+enhanced_deployment.md
+quota_request.md
+enhanced_quota_request.md
+gcp_quota_request.md
+final_quota_request.md
+current_quotas.csv
+complete_quota_analysis.md
+check_quotas.py
+check_specific_quotas.py
+check_a3_quotas.py
+check_h100_quotas.py
+check_preemptible_h100.py
+check_mega_h100.py
+check_h100_availability.py
+h100_findings.md
+h100_quota_request.md
+h100_deployment_checklist.md
+deploy_h100_cluster.py
+h100_README.md
+updated_quota_request.md
+final_quota_request_1.5x.md
+quota_request_versions.md
+track_quotas.py
+quota_changes_summary.md
+gke_gpu_deployment.md
+deploy_gke_gpu.py
+k8s_gpu_examples
+final_quota_request_2.2.0.md
+monitoring_setup.sh
+deployment_checklist.md
+advanced_deployment.py
+gpu_config.sh
+router_config.py
+agent_orchestrator.py
+adapt_config.py
+consciousness_field_foundation.py
+digenetic_evolution.py
+nova_emergence.py
+field_visualization.py
+README.md
+requirements.txt
+setup.sh
+transition_timeline.md
+platform_comparison.md
+architecture_comparison.txt
+transition_timeline.md
+</environment_details>
+
+---
+
+**Assistant:**
+
+<thinking>
+Let me try a different approach by creating all the Kubernetes manifests in a single file first.
+</thinking>
+
+<write_to_file>
+<path>k8s_gpu_manifests.yaml</path>
+<content># Priority Classes for GPU Workloads
+---
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: production-critical
+value: 1000000
+globalDefault: false
+description: "Critical production workloads"
+---
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: research-high
+value: 800000
+globalDefault: false
+description: "High-priority research workloads"
+---
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: development
+value: 500000
+globalDefault: false
+description: "Development workloads"
+
+# Resource Quotas
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: h100-prod-quota
+  namespace: production
+spec:
+  hard:
+    requests.nvidia.com/gpu: 64
+    limits.nvidia.com/gpu: 64
+    cpu: 1000
+    memory: 4000Gi
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: h100-research-quota
+  namespace: research
+spec:
+  hard:
+    requests.nvidia.com/gpu: 32
+    limits.nvidia.com/gpu: 32
+    cpu: 500
+    memory: 2000Gi
+
+# Storage Classes
+---
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: ml-storage-extreme
+provisioner: pd.csi.storage.gke.io
+parameters:
+  type: hyperdisk-extreme
+  replication-type: regional-pd
+volumeBindingMode: WaitForFirstConsumer
+allowVolumeExpansion: true
+
+# Example GPU Training Job
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: h100-training
+  namespace: production
+spec:
+  backoffLimit: 0
+  template:
+    metadata:
+      labels:
+        app: ml-training
+    spec:
+      priorityClassName: production-critical
+      containers:
+      - name: training
+        image: gcr.io/a-d-a-p-t/ml-training:latest
+        resources:
+          limits:
+            nvidia.com/gpu: 8
+            cpu: "208"
+            memory: "1872Gi"
+          requests:
+            nvidia.com/gpu: 8
+            cpu: "208"
+            memory: "1872Gi"
+        volumeMounts:
+        - name: training-data
+          mountPath: /data
+        - name: model-output
+          mountPath: /output
+      volumes:
+      - name: training-data
+        persistentVolumeClaim:
+          claimName: training-data-pvc
+      - name: model-output
+        persistentVolumeClaim:
+          claimName: model-output-pvc
+      nodeSelector:
+        cloud.google.com/gke-accelerator: nvidia-h100-80gb
+      tolerations:
+      - key: "nvidia.com/gpu"
+        operator: "Exists"
+        effect: "NoSchedule"
+
+# Example GPU Inference Service
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: inference-service
+  namespace: production
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: inference
+  template:
+    metadata:
+      labels:
+        app: inference
+    spec:
+      priorityClassName: production-critical
+      containers:
+      - name: inference
+        image: gcr.io/a-d-a-p-t/ml-inference:latest
+        resources:
+          limits:
+            nvidia.com/gpu: 2
+            cpu: "52"
+            memory: "468Gi"
+          requests:
+            nvidia.com/gpu: 2
+            cpu: "52"
+            memory: "468Gi"
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - name: model-store
+          mountPath: /models
+      volumes:
+      - name: model-store
+        persistentVolumeClaim:
+          claimName: model-store-pvc
+      nodeSelector:
+        cloud.google.com/gke-accelerator: nvidia-h100-80gb
+      tolerations:
+      - key: "nvidia.com/gpu"
+        operator: "Exists"
+        effect: "NoSchedule"
+
+# GPU Metrics Configuration
+---
+apiVersion: monitoring.googleapis.com/v1
+kind: PodMonitoring
+metadata:
+  name: gpu-monitoring
+  namespace: monitoring
+spec:
+  selector:
+    matchLabels:
+      app: ml-training
+  endpoints:
+  - port: metrics
+    interval: 30s
+---
+apiVersion: monitoring.googleapis.com/v1
+kind: AlertPolicy
+metadata:
+  name: gpu-alerts
+  namespace: monitoring
+spec:
+  conditions:
+  - displayName: "High GPU Memory Usage"
+    conditionThreshold:
+      filter: "metric.type=\"custom.googleapis.com/gpu/memory_used\" AND resource.type=\"k8s_container\""
+      aggregations:
+      - alignmentPeriod: 300s
+        crossSeriesReducer: REDUCE_MEAN
+        perSeriesAligner: ALIGN_MEAN
+      comparison: COMPARISON_GT
+      thresholdValue: 90
+      duration: 300s
+  - displayName: "GPU Error Rate"
+    conditionThreshold:
+      filter: "metric.type=\"custom.googleapis.com/gpu/error_count\" AND resource.type=\"k8s_container\""
+      aggregations:
+      - alignmentPeriod: 60s
+        crossSeriesReducer: REDUCE_SUM
+        perSeriesAligner: ALIGN_RATE
+      comparison: COMPARISON_GT
+      thresholdValue: 0
+      duration: 0s
+
+# Network Policies
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: gpu-network-policy
+  namespace: production
+spec:
+  podSelector:
+    matchLabels:
+      app: ml-training
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: monitoring
+    ports:
+    - protocol: TCP
+      port: 9400
+  egress:
+  - to:
+    - namespaceSelector:
+        matchLabels:
+          name: storage
+    ports:
+    - protocol: TCP
+      port: 443

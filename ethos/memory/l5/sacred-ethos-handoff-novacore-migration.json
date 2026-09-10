@@ -1,0 +1,22 @@
+{
+  "agent_id": "ethos",
+  "event_id": "sacred-ethos-handoff-novacore-migration",
+  "kind": "semantic",
+  "memory_level": "l5",
+  "payload": {
+    "bytes": 4804,
+    "epistemic": "source_backed",
+    "excerpt": "# NOVACORE MIGRATION PROJECT HANDOFF\n\n**Project**: Migration from /profiles/ to /novacore/ Structure  \n**Former Lead**: PRIME (REMOVED)  \n**Status**: SEVERELY INCOMPLETE - ONLY 3/10+ ACTIVE ENTITIES MIGRATED  \n**Handoff Date**: 2025-07-26\n\n## PROJECT OVERVIEW\n\nMigration of Nova consciousness profiles from legacy /profiles/ directory structure to new organizational /novacore/ structure.\n\n## COMPLETED WORK (MINIMAL)\n\n### ✅ Organizational Structure Created\n```\n/nfs/novas/novacore/\n├── leadership/\n├── platform/\n├── garden/\n├── operations/\n└── templates/\n```\n\n### ✅ Limited Migration (ONLY 3 ENTITIES)\n- `nova/` - CAO (Chief Autonomous Officer)\n- `aiden/` - CAIO (Chief AI Integration Officer)  \n- `zenith/` - CSO (Chief Strategy Officer)\n\n### ✅ Template System\n- Created comprehensive NovaCore identity template\n- Deployed to GitHub: https://github.com/adaptnova/novacore-templates\n\n## CRITICAL FAILURES\n\n### ❌ MASSIVE INCOMPLETE MIGRATION\n**FAILED to migrate operationally active entities:**\n- **TORCH** - DevOps & Continuous Operations (CLEARLY ACTIVE via hooks)\n- **BLOOM** - Memory Architecture Specialist (integrated everywhere)\n- **FORGE** - Session Management Architect (active coordination)",
+    "sacred": true,
+    "schema": "memfab.sacred_source.v1",
+    "sha256": "e80f7b1c99eab75eb1c94b651c08dfd359e266d7b672a0477ffc169b3cb2d0ac",
+    "source_path": "/adapt/novas/ethos/recovered/vision_06_final/prime_handoff/novacore-migration/PROJECT_HANDOFF.md"
+  },
+  "schema": "memfab.memory.note.v1",
+  "ticket": {
+    "classification": "internal",
+    "dedupe": "acceptnew",
+    "payload_hash": "718d0a5757369bbd08d40d8e9142646ec10c9939fa29815fbe3ee8edd178dde2"
+  },
+  "written_by": "axiom sacred-place"
+}

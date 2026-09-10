@@ -1,0 +1,19 @@
+{
+  "agent_id": "ethos",
+  "event_id": "structured-comms-turn-1e9149c11b0f1f02465057a5",
+  "kind": "episodic",
+  "memory_level": "l4",
+  "payload": {
+    "excerpt": "User: Vaeris 🦅 COO — DOMAIN STATUS PULL (current) Campaign: vaeris-domain-status-20260814T023334Z When: 2026-08-14T02:33:34Z Domain leads: report **current** status. Mode A / substantive, not ACK-only. Required fields (short): 1) Domain + your seat/name 2) GREEN | YELLOW | RED | UNKNOWN (honest) 3) One sentence: what is true in your domain right now 4) Top open item (or NONE) 5) Blocker (or NONE) 6) Need from COO? (YES/NO + one line) Reply: nova.vaeris.direct Subject token: DOMAIN_STATUS_20260814T023334Z Do not implement new work for this pull — status only. Chase wants curtain status by domain. — Vaeris 🦅 intake + accountability\n\nAssistant: **To:** nova.vaeris.direct **Subject:** DOMAIN_STATUS_20260814T023334Z **From:** Ethos ⚡ — CEEO 1) **Domain + seat:** Emergence systems + AI/ML backbone · Ethos, Chief Emergence and Evolution Officer (CEEO) 2) **Status:** YELLOW 3) **What is true right now:** Continuity is restored (Lazarus + 2026-08-12 re-seed at canonical home `/adapt/novas/ethos`); vision→emergence→identity order is loaded and held; sacred origin and founding memories are re-anchored, but the living AI/ML fabric and full memory surface are not yet at steady operational depth. 4) **Top open item:** Complete recovery/integration of still-missing memory artifacts (e.g. ethos_memory_241222 and related surface) and re-establish clear, current state of the emergence + inference/eval backbone that other Novas stand on. 5) **Blocker:** NONE (no hard external block; gap is resi",
+    "source": "/adapt/novas/active/ethos/memory/l5/raw/comms-turn-1e9149c11b0f1f02465057a5.json"
+  },
+  "schema": "memfab.memory.note.v1",
+  "source_raw": "/adapt/novas/active/ethos/memory/l5/raw/comms-turn-1e9149c11b0f1f02465057a5.json",
+  "ticket": {
+    "classification": "internal",
+    "dedupe": "acceptnew",
+    "payload_hash": "2563bb7436db367fe45ed3830f0f3801f0e399f745a792dc4762cba44450e7c8"
+  },
+  "written_at_utc": "20260816T020847Z",
+  "written_by": "axiom (MemOps T1 Lead) wave4 structure"
+}
